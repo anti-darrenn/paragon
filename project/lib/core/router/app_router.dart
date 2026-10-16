@@ -322,7 +322,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/onboarding/username',
         builder: (context, state) => DeferredScreen(
-          id: 'onboarding',
           load: onb_username.loadLibrary,
           builder: (_) => onb_username.OnboardingUsernameScreen(),
         ),
@@ -330,7 +329,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/onboarding/displayname',
         builder: (context, state) => DeferredScreen(
-          id: 'onboarding',
           load: onb_name.loadLibrary,
           builder: (_) => onb_name.OnboardingDisplayNameScreen(),
         ),
@@ -338,7 +336,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/onboarding/avatar',
         builder: (context, state) => DeferredScreen(
-          id: 'onboarding',
           load: onb_avatar.loadLibrary,
           builder: (_) => onb_avatar.OnboardingAvatarScreen(),
         ),
@@ -346,7 +343,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/onboarding/subjects',
         builder: (context, state) => DeferredScreen(
-          id: 'onboarding',
           load: onb_subjects.loadLibrary,
           builder: (_) => onb_subjects.OnboardingSubjectsScreen(),
         ),
@@ -354,7 +350,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/onboarding/profile',
         builder: (context, state) => DeferredScreen(
-          id: 'onboarding',
           load: onb_profile.loadLibrary,
           builder: (_) => onb_profile.OnboardingProfileScreen(),
         ),
@@ -441,7 +436,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 builder: (context, state) => SubjectKeyRoute(
                   subjectKey: state.pathParameters['subjectId']!,
                   builder: (id) => DeferredScreen(
-                    id: 'waec',
                     load: waec_setup.loadLibrary,
                     builder: (_) => waec_setup.WaecExamSetupScreen(
                       subjectId: id,
@@ -456,7 +450,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/waec/review/:examId',
                 builder: (context, state) => DeferredScreen(
-                  id: 'waec',
                   load: exam_review.loadLibrary,
                   builder: (_) => exam_review.ExamReviewScreen(
                     examId: state.pathParameters['examId']!,
@@ -515,7 +508,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: settings.loadLibrary,
                   builder: (_) => settings.SettingsScreen(),
                 ),
@@ -527,7 +519,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings/subjects',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: subjects_settings.loadLibrary,
                   builder: (_) => subjects_settings.SubjectsSettingsScreen(),
                 ),
@@ -535,7 +526,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings/name',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: edit_profile.loadLibrary,
                   builder: (_) => edit_profile.EditProfileScreen(),
                 ),
@@ -547,7 +537,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings/profile',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: profile_settings.loadLibrary,
                   builder: (_) => profile_settings.ProfileSettingsScreen(),
                 ),
@@ -555,7 +544,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings/username',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: username_settings.loadLibrary,
                   builder: (_) => username_settings.UsernameSettingsScreen(),
                 ),
@@ -563,7 +551,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings/export',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: export_data.loadLibrary,
                   builder: (_) => export_data.ExportScreen(),
                 ),
@@ -571,7 +558,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings/security',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: security.loadLibrary,
                   builder: (_) => security.SecurityScreen(),
                 ),
@@ -581,7 +567,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/settings/reading',
                 builder: (context, state) => DeferredScreen(
-                  id: 'settings',
                   load: reading_settings.loadLibrary,
                   builder: (_) => reading_settings.ReadingSettingsScreen(),
                 ),
@@ -615,7 +600,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/subject/:subjectId/course/challenge',
         builder: (context, state) => DeferredScreen(
-          id: 'challenge',
           load: challenge.loadLibrary,
           builder: (_) => challenge.ChallengeScreen(
             subjectKey: state.pathParameters['subjectId']!,
@@ -625,7 +609,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/subject/:subjectId/course/unit/:moduleId/test',
         builder: (context, state) => DeferredScreen(
-          id: 'challenge',
           load: challenge.loadLibrary,
           builder: (_) => challenge.ChallengeScreen(
             subjectKey: state.pathParameters['subjectId']!,
@@ -703,7 +686,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => SubjectKeyRoute(
           subjectKey: state.pathParameters['subjectId']!,
           builder: (id) => DeferredScreen(
-            id: 'waec',
             load: waec_exam.loadLibrary,
             builder: (_) => waec_exam.waecExamRoute(
               id,
@@ -721,7 +703,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/join',
         builder: (context, state) => DeferredScreen(
-          id: 'rooms',
           load: join_room.loadLibrary,
           builder: (_) => join_room.JoinRoomScreen(),
         ),
@@ -729,7 +710,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/rooms/new',
         builder: (context, state) => DeferredScreen(
-          id: 'rooms',
           load: new_room.loadLibrary,
           builder: (_) => new_room.NewRoomScreen(),
         ),
@@ -737,7 +717,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/rooms/:code/host',
         builder: (context, state) => DeferredScreen(
-          id: 'rooms',
           load: host_room.loadLibrary,
           builder: (_) =>
               host_room.HostRoomScreen(code: state.pathParameters['code']!),
@@ -746,7 +725,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/rooms/:code',
         builder: (context, state) => DeferredScreen(
-          id: 'rooms',
           load: player_room.loadLibrary,
           builder: (_) =>
               player_room.PlayerRoomScreen(code: state.pathParameters['code']!),
@@ -759,7 +737,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => SubjectKeyRoute(
           subjectKey: state.pathParameters['subjectId']!,
           builder: (id) => DeferredScreen(
-            id: 'theory',
             load: theory.loadLibrary,
             builder: (_) => theory.TheoryScreen(subjectId: id),
           ),
@@ -768,7 +745,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/support',
         builder: (context, state) => DeferredScreen(
-          id: 'support',
           load: support.loadLibrary,
           builder: (_) => support.SupportScreen(),
         ),
@@ -804,7 +780,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/legal/accept',
         builder: (context, state) => DeferredScreen(
-          id: 'account',
           load: legal_accept.loadLibrary,
           builder: (_) => legal_accept.LegalAcceptScreen(),
         ),
@@ -813,7 +788,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/account/deleting',
         builder: (context, state) => DeferredScreen(
-          id: 'account',
           load: deleting.loadLibrary,
           builder: (_) => deleting.DeletingScreen(),
         ),
@@ -833,7 +807,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin',
         builder: (context, state) => DeferredScreen(
-          id: 'studio',
           load: admin_home.loadLibrary,
           builder: (_) => admin_home.AdminHomeScreen(),
         ),
@@ -842,7 +815,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin/team',
         builder: (context, state) => DeferredScreen(
-          id: 'studio',
           load: team.loadLibrary,
           builder: (_) => team.TeamScreen(),
         ),
@@ -851,7 +823,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin/topic/:topicId',
         builder: (context, state) => DeferredScreen(
-          id: 'studio',
           load: planner.loadLibrary,
           builder: (_) => planner.TopicPlannerScreen(
             topicId: state.pathParameters['topicId']!,
@@ -861,7 +832,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin/topic/:topicId/new/:type',
         builder: (context, state) => DeferredScreen(
-          id: 'studio',
           load: editor.loadLibrary,
           builder: (_) => editor.AdminResourceEditorScreen(
             topicId: state.pathParameters['topicId']!,
@@ -872,7 +842,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin/topic/:topicId/resource/:resourceId',
         builder: (context, state) => DeferredScreen(
-          id: 'studio',
           load: editor.loadLibrary,
           builder: (_) => editor.AdminResourceEditorScreen(
             topicId: state.pathParameters['topicId']!,
@@ -885,7 +854,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin/insight/:id',
         builder: (context, state) => DeferredScreen(
-          id: 'studio',
           load: insight_editor.loadLibrary,
           builder: (_) => insight_editor.InsightEditorScreen(
             id: state.pathParameters['id']!,
@@ -895,7 +863,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin/flag/:questionId',
         builder: (context, state) => DeferredScreen(
-          id: 'studio',
           load: admin_flag.loadLibrary,
           builder: (_) => admin_flag.AdminFlagScreen(
             questionId: state.pathParameters['questionId']!,
