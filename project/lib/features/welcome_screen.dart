@@ -373,11 +373,18 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                               // waec_subject_screen.dart / waec_exam_setup_screen.dart.
                               Center(
                                 child: TextButton(
+                                  // A guest who came back to welcome (from
+                                  // the menu's "Welcome page") carries on
+                                  // where they were.
                                   onPressed: _isLoading
                                       ? null
+                                      : ref.watch(isGuestProvider)
+                                      ? () => context.go('/')
                                       : () => _handleGuestSignIn(),
                                   child: Text(
-                                    'Browse as Guest',
+                                    ref.watch(isGuestProvider)
+                                        ? 'Continue as guest'
+                                        : 'Browse as Guest',
                                     style: AppTheme.caption.copyWith(
                                       color: context.palette.textSecondary,
                                     ),

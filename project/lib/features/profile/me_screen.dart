@@ -15,6 +15,7 @@ import '../dashboard_screen.dart';
 import '../onboarding/profile_form.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/auth/sign_out.dart';
 
 /// Your own profile — `/me`.
 ///
@@ -203,6 +204,20 @@ class MeScreen extends ConsumerWidget {
                 title: 'About Paragon',
                 onTap: () => context.push('/about'),
               ),
+              // The phone's way to what the avatar menu offers a guest.
+              if (isGuest) ...[
+                ListRow(
+                  icon: Icons.waving_hand_outlined,
+                  title: 'Welcome page',
+                  onTap: () => context.go('/welcome'),
+                ),
+                ListRow(
+                  icon: Icons.logout_rounded,
+                  title: 'Leave guest mode',
+                  subtitle: 'Save your progress first to keep it',
+                  onTap: () => confirmLeaveGuestMode(context),
+                ),
+              ],
             ],
           ),
         ],

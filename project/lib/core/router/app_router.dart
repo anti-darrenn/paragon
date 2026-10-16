@@ -191,9 +191,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 
       // Not signed in and trying to reach any route other than welcome/sign-in
       // → send to the welcome (landing) screen
+      // Welcome's own `?next=` is the target; plain /welcome (signing out,
+      // or a guest choosing the welcome page) clears any older one.
       if (isOnWelcome) {
-        pendingNext =
-            safeNextPath(state.uri.queryParameters[kNextParam]) ?? pendingNext;
+        pendingNext = safeNextPath(state.uri.queryParameters[kNextParam]);
       }
       if (!isSignedIn && !isOnSignIn && !isOnWelcome && !isOnLegal) {
         pendingNext = safeNextPath(state.uri.toString()) ?? pendingNext;

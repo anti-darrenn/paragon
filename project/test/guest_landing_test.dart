@@ -105,4 +105,14 @@ void main() {
       );
     });
   });
+  testWidgets('plain welcome forgets an older target (signing out)', (
+    tester,
+  ) async {
+    final (router, context) = await setUp(tester, null);
+    await redirect(router, context, '/welcome?next=%2Fsettings');
+    // Signing out lands on plain /welcome: the old target is dropped.
+    expect(await redirect(router, context, '/welcome'), isNull);
+    final (guestRouter, guestContext) = await setUp(tester, _Guest());
+    expect(await redirect(guestRouter, guestContext, '/welcome'), '/');
+  });
 }

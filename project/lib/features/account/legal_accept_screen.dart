@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -10,6 +9,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'delete_account.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/auth/sign_out.dart';
 
 /// `/legal/accept` — the terms changed; accept to carry on.
 ///
@@ -184,7 +184,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                       TextButton(
                         onPressed: _busy
                             ? null
-                            : () => FirebaseAuth.instance.signOut(),
+                            : () => signOutToWelcome(context),
                         child: Text(
                           'Sign out',
                           style: AppTheme.bodyMd.copyWith(
