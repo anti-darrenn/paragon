@@ -29,6 +29,8 @@ service cloud.firestore {
              .hasOnly(['correctIndex', 'previousCorrectIndex', 'hasAnswer',
                        'reviewedAt', 'reviewedBy'])
         && request.resource.data.hasAnswer is bool
+        && request.resource.data.reviewedBy == request.auth.uid
+        && request.resource.data.reviewedAt == request.time
         && (!request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['correctIndex'])
             || (request.resource.data.correctIndex is int
@@ -75,19 +77,34 @@ service cloud.firestore {
     //    scope either, since both the old and new subjectId are checked.
     // The seeder still uses the Admin SDK, which bypasses rules.
     match /topics/{topicId}/resources/{resourceId} {
+      // The subject scope is checked against the subject of the topic the
+      // item sits under, not only the `subjectId` the client wrote: without
+      // this, a writer limited to one subject could file an item under
+      // another subject's topic by labelling it as their own.
+      function inItsTopic() {
+        return request.resource.data.subjectId
+          == get(/databases/$(database)/documents/topics/$(topicId)).data.subjectId;
+      }
       allow read: if request.auth != null
         && (resource.data.status == 'published' || isWriter());
-      allow create: if reviews(request.resource.data.subjectId)
-        || (writes(request.resource.data.subjectId)
-            && request.resource.data.status in ['draft', 'in_review']);
-      allow update: if (reviews(resource.data.subjectId)
+      allow create: if inItsTopic()
+        && (reviews(request.resource.data.subjectId)
+          || (writes(request.resource.data.subjectId)
+              && request.resource.data.status in ['draft', 'in_review']
+              && request.resource.data.createdBy == request.auth.uid));
+      // A writer may not rewrite `createdBy`: the delete rule below trusts
+      // it to say whose draft this is.
+      allow update: if inItsTopic()
+        && ((reviews(resource.data.subjectId)
             && reviews(request.resource.data.subjectId))
-        || (writes(resource.data.subjectId)
+          || (writes(resource.data.subjectId)
             && writes(request.resource.data.subjectId)
             && resource.data.status in writerStatuses()
             && request.resource.data.status in writerStatuses()
             && (request.resource.data.status != 'changes_requested'
-                || resource.data.status == 'changes_requested'));
+                || resource.data.status == 'changes_requested')
+            && request.resource.data.get('createdBy', null)
+                 == resource.data.get('createdBy', null)));
       allow delete: if reviews(resource.data.subjectId)
         || (writes(resource.data.subjectId)
             && resource.data.status == 'draft'
@@ -106,11 +123,13 @@ service cloud.firestore {
       match /comments/{commentId} {
         allow read: if isWriter();
         allow create: if writes(parentSubject(topicId, resourceId))
-          && request.resource.data.authorUid == request.auth.uid;
+          && request.resource.data.authorUid == request.auth.uid
+          && commentShapeOk(request.resource.data);
         allow update: if writes(parentSubject(topicId, resourceId))
           && (resource.data.authorUid == request.auth.uid
               || reviews(parentSubject(topicId, resourceId)))
-          && request.resource.data.authorUid == resource.data.authorUid;
+          && request.resource.data.authorUid == resource.data.authorUid
+          && commentShapeOk(request.resource.data);
         allow delete: if reviews(parentSubject(topicId, resourceId))
           || (isWriter() && resource.data.authorUid == request.auth.uid);
       }
@@ -137,7 +156,16 @@ service cloud.firestore {
              ['image/webp', 'image/jpeg', 'image/png', 'image/svg+xml']
         && request.resource.data.data is string
         && request.resource.data.data.size() <= 900000
-        && request.resource.data.createdBy == request.auth.uid;
+        && (!('width' in request.resource.data)
+            || (request.resource.data.width is int
+                && request.resource.data.width > 0
+                && request.resource.data.width <= 10000))
+        && (!('height' in request.resource.data)
+            || (request.resource.data.height is int
+                && request.resource.data.height > 0
+                && request.resource.data.height <= 10000))
+        && request.resource.data.createdBy == request.auth.uid
+        && request.resource.data.createdAt == request.time;
       allow update: if false;
       allow delete: if isReviewer();
     }
@@ -191,8 +219,13 @@ service cloud.firestore {
         && (request.resource.data.status == 'draft'
             || (request.resource.data.status == 'published'
                 && reviews(request.resource.data.subjectId)))
-        && (resource == null || resource.data.status == 'draft'
-            || reviews(resource.data.subjectId))
+        // An existing insight stays in its subject, and only someone who
+        // works on that subject may touch it.
+        && (resource == null
+            || ((resource.data.status == 'draft'
+                  || reviews(resource.data.subjectId))
+                && writes(resource.data.subjectId)
+                && request.resource.data.subjectId == resource.data.subjectId))
         && request.resource.data.keys().hasOnly(['kind', 'subjectId',
              'questionId', 'topicId', 'summary', 'commonWrongOption', 'tip',
              'reportYear', 'reportRef', 'years', 'status', 'updatedAt',
@@ -456,7 +489,13 @@ service cloud.firestore {
         // Forces the real serverTimestamp() sentinel rather than a
         // client-supplied value — the standard Firestore Rules idiom for
         // verifying serverTimestamp() was actually used.
-        && request.resource.data.createdAt == request.time;
+        && request.resource.data.createdAt == request.time
+        && emailIsOwn(request.resource.data)
+        && (!('isAnonymous' in request.resource.data)
+            || request.resource.data.isAnonymous is bool)
+        && (!('displayName' in request.resource.data)
+            || (request.resource.data.displayName is string
+                && request.resource.data.displayName.size() <= 256));
 
       allow update: if isOwner(uid)
         && usernameWriteIsValid(uid)
@@ -486,7 +525,17 @@ service cloud.firestore {
         || (after.legalVersion is string
           && after.legalVersion.size() <= 32
           && after.legalAcceptedAt == request.time);
+      // Fields that may predate these checks are tested only when they
+      // change, so an old document is never locked out of other edits.
+      let changed = request.resource.data.diff(resource.data).affectedKeys();
       return deletionStamp && legalStamp
+        && (!changed.hasAny(['email']) || emailIsOwn(after))
+        && (!changed.hasAny(['isAnonymous']) || after.isAnonymous is bool)
+        && (!changed.hasAny(['displayName'])
+          || (after.displayName is string && after.displayName.size() <= 256))
+        && (!changed.hasAny(['selectedSubjects'])
+          || (after.selectedSubjects is list
+            && after.selectedSubjects.size() <= 30))
         && (!('prefs' in after) || prefsAreValid(after.prefs))
         && (!('avatar' in after)
           || (after.avatar is string
@@ -494,6 +543,16 @@ service cloud.firestore {
         && (!('bio' in after)
           || (after.bio is string && after.bio.size() <= 160))
         && (!('profile' in after) || profileIsValid(after.profile));
+    }
+
+    // The email copied onto the user document is the account's own, from
+    // the ID token, or blank (a guest, or an account mid-link). Nothing
+    // server-side reads it, but nobody should be able to plant someone
+    // else's address on their account either.
+    function emailIsOwn(d) {
+      return !('email' in d)
+        || d.email == ''
+        || d.email == request.auth.token.get('email', '');
     }
 
     // School and class only (owner's decision, 2026-10-15). Age, gender,
@@ -578,6 +637,14 @@ service cloud.firestore {
       return get(/databases/$(database)/documents/topics/$(topicId)/resources/$(resourceId)).data.subjectId;
     }
 
+    // A review comment's free text, bounded. The name is the author's own
+    // (their staff profile or Auth name), so it is only sized.
+    function commentShapeOk(d) {
+      return (!('authorName' in d)
+          || (d.authorName is string && d.authorName.size() <= 200))
+        && (!('text' in d) || (d.text is string && d.text.size() <= 10000));
+    }
+
     // The statuses a writer may leave an item in. Everything but published.
     function writerStatuses() {
       return ['draft', 'in_review', 'changes_requested'];
@@ -651,9 +718,36 @@ service cloud.firestore {
         && get(/databases/$(database)/documents/usernames/$(after.usernameKey)).data.uid == uid;
     }
 
+    // Exactly what AttemptRepository writes, with the server's clock. The
+    // grading (`isCorrect`) is still the client's word: anything
+    // competitive must recompute it server-side first (see CLAUDE.md).
     match /attempts/{id} {
       allow create: if request.auth != null
-          && request.resource.data.userId == request.auth.uid;
+          && request.resource.data.userId == request.auth.uid
+          && request.resource.data.keys().hasOnly(['userId', 'questionId',
+               'topicId', 'subjectId', 'selectedIndex', 'isCorrect',
+               'source', 'timestamp', 'hintsUsed'])
+          && request.resource.data.keys().hasAll(['userId', 'questionId',
+               'topicId', 'subjectId', 'selectedIndex', 'isCorrect',
+               'source', 'timestamp'])
+          && request.resource.data.questionId is string
+          && request.resource.data.questionId.size() > 0
+          && request.resource.data.questionId.size() <= 128
+          && request.resource.data.topicId is string
+          && request.resource.data.topicId.size() <= 128
+          && request.resource.data.subjectId is string
+          && request.resource.data.subjectId.size() <= 128
+          && request.resource.data.selectedIndex is int
+          && request.resource.data.selectedIndex >= -1
+          && request.resource.data.selectedIndex <= 9
+          && request.resource.data.isCorrect is bool
+          && request.resource.data.source in ['drill', 'waec', 'test',
+               'exercise', 'review', 'challenge', 'challenge_link']
+          && request.resource.data.timestamp == request.time
+          && (!('hintsUsed' in request.resource.data)
+              || (request.resource.data.hintsUsed is int
+                  && request.resource.data.hintsUsed >= 0
+                  && request.resource.data.hintsUsed <= 20));
       allow read: if request.auth != null
           && resource.data.userId == request.auth.uid;
       // Delete-own exists so account deletion can actually remove a
@@ -768,9 +862,28 @@ service cloud.firestore {
     // open — reports filed before review existed, or by a cached build,
     // carry none. A student may file one only as open (or without a
     // status), so nobody can file a report that is already closed.
+    //
+    // `createdAt` must be the server's clock: notify_drafts.js pages
+    // through reports by it, so one report dated in the future would move
+    // its cursor past every real report still to come.
     match /flags/{id} {
       allow create: if request.auth != null
           && request.resource.data.userId == request.auth.uid
+          && request.resource.data.keys().hasOnly(['questionId', 'resourceId',
+               'topicId', 'userId', 'reason', 'createdAt', 'status'])
+          && request.resource.data.createdAt == request.time
+          && request.resource.data.reason is string
+          && request.resource.data.reason.size() <= 40
+          && (('questionId' in request.resource.data
+                && request.resource.data.questionId is string
+                && request.resource.data.questionId.size() > 0
+                && request.resource.data.questionId.size() <= 128)
+              || ('resourceId' in request.resource.data
+                && request.resource.data.resourceId is string
+                && request.resource.data.resourceId.size() > 0
+                && request.resource.data.resourceId.size() <= 128
+                && request.resource.data.topicId is string
+                && request.resource.data.topicId.size() <= 128))
           && (!('status' in request.resource.data)
               || request.resource.data.status == 'open');
       // Read-own and delete-own, narrowly: a deleting user has to be able
@@ -899,6 +1012,14 @@ service cloud.firestore {
       allow read: if request.auth != null;
 
       allow create: if request.auth != null
+        // Accounts only: guests never reach onboarding, and a reservation
+        // is permanent, so an anonymous sign-up must not be a free way to
+        // squat names.
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        // Names that would pass as Paragon itself — mirrors
+        // UsernameRules.isReserved.
+        && !normalised.matches('.*(admin|paragon|support|staff|moderator|official|waec|helpdesk|security|system).*')
+        && !(normalised in ['help', 'root', 'team', 'owner'])
         // Exactly these two fields, nothing smuggled alongside.
         && request.resource.data.keys().hasOnly(['uid', 'raw'])
         && request.resource.data.uid == request.auth.uid
