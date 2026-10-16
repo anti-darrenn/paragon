@@ -711,7 +711,7 @@ class _Review extends StatelessWidget {
                         color: palette.textPrimary,
                       ),
                     ),
-                  QuestionImage(assetId: questions[n].explanationImageId),
+                  QuestionImage.workedAnswer(assetId: questions[n].explanationImageId),
                 ],
               ),
             )

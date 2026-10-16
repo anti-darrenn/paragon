@@ -194,7 +194,7 @@ class _MistakesPracticeScreenState
                       ),
                     ),
                   ],
-                  QuestionImage(assetId: q.explanationImageId),
+                  QuestionImage.workedAnswer(assetId: q.explanationImageId),
                 ],
               ),
             ),

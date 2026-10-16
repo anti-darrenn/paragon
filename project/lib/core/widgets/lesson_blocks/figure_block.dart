@@ -20,10 +20,19 @@ import '../../theme/app_palette.dart';
 /// In low-data mode nothing is fetched until the student taps "Tap to load
 /// image", and a tap loads that one image only.
 class FigureView extends ConsumerStatefulWidget {
-  const FigureView({super.key, required this.block, required this.base});
+  const FigureView({
+    super.key,
+    required this.block,
+    required this.base,
+    this.semanticLabel,
+  });
 
   final FigureBlock block;
   final TextStyle base;
+
+  /// What a screen reader hears for the image when there is no caption to
+  /// read: a question's diagram has none, but is not just "Figure".
+  final String? semanticLabel;
 
   @override
   ConsumerState<FigureView> createState() => _FigureViewState();
@@ -74,7 +83,9 @@ class _FigureViewState extends ConsumerState<FigureView> {
           children: [
             Semantics(
               image: true,
-              label: block.caption.isEmpty ? 'Figure' : block.caption,
+              label: block.caption.isNotEmpty
+                  ? block.caption
+                  : widget.semanticLabel ?? 'Figure',
               child: GestureDetector(
                 onTap: () => _zoom(context, image),
                 child: ClipRRect(

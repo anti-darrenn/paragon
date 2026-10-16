@@ -338,7 +338,7 @@ class ExamReviewCard extends StatelessWidget {
                   color: context.palette.onHigh,
                 ),
               ),
-            QuestionImage(assetId: q.explanationImageId),
+            QuestionImage.workedAnswer(assetId: q.explanationImageId),
           ] else
             Text(
               'No worked answer yet for this question.',

@@ -470,7 +470,7 @@ class BankQuestionView extends ConsumerWidget {
                       children: [
                         if (q.explanation.trim().isNotEmpty)
                           FullLatexView(latex: q.explanation, textStyle: base),
-                        QuestionImage(assetId: q.explanationImageId),
+                        QuestionImage.workedAnswer(assetId: q.explanationImageId),
                       ],
                     ),
             ),

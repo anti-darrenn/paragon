@@ -11,9 +11,19 @@ import 'lesson_blocks/figure_block.dart';
 /// broken image that says so in place rather than taking the question
 /// down. Renders nothing when [assetId] is null — most questions have none.
 class QuestionImage extends StatelessWidget {
-  const QuestionImage({super.key, required this.assetId});
+  /// The diagram a question depends on (`questions.imageId`).
+  const QuestionImage({super.key, required this.assetId})
+    : label = 'Diagram for this question';
+
+  /// The picture in a worked answer (`questions.explanationImageId`).
+  const QuestionImage.workedAnswer({super.key, required this.assetId})
+    : label = 'Picture of the worked answer';
 
   final String? assetId;
+
+  /// What a screen reader hears; the static pages' alt text says the same
+  /// (`build_static_site.js`), with the stem, which here is read just before.
+  final String label;
 
   /// Past-paper diagrams are small scans; stretched across a desktop
   /// column they blur and push the options off screen.
@@ -35,6 +45,7 @@ class QuestionImage extends StatelessWidget {
             key: ValueKey(ref),
             block: FigureBlock(ref, '', 1, ref),
             base: AppTheme.bodyMd,
+            semanticLabel: label,
           ),
         ),
       ),
