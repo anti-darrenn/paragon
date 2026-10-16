@@ -87,6 +87,8 @@ class ProfileFormFields extends StatelessWidget {
           controller: controller.school,
           label: 'SCHOOL',
           hintText: 'Optional',
+          // firestore.rules refuses a longer one.
+          maxLength: 100,
         ),
         const SizedBox(height: 18),
         _Dropdown(

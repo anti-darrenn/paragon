@@ -353,10 +353,25 @@ async function usersAllowList(a, b) {
     await commit(
       a.idToken,
       write(`users/${a.uid}`, {
-        profile: map({ school: str('Kings College'), age: int(16) }),
+        profile: map({ school: str('Kings College'), classYear: str('SS2') }),
       }),
     ),
   );
+  // School and class only: a retired field cannot come back, and the two
+  // that remain are shape-checked.
+  for (const [why, profile] of [
+    ['an age', map({ school: str('Kings College'), age: int(16) })],
+    ['a gender', map({ gender: str('female') })],
+    ['an unknown class', map({ classYear: str('SS4') })],
+    ['a 101-character school', map({ school: str('s'.repeat(101)) })],
+    ['a school that is not a string', map({ school: int(1) })],
+  ]) {
+    expectOutcome(
+      `a profile with ${why} is refused`,
+      DENY,
+      await commit(a.idToken, write(`users/${a.uid}`, { profile })),
+    );
+  }
 
   // Avatar and bio: allow-listed, and shape-checked by
   // clientFieldsAreValid(). The denials are the content.
