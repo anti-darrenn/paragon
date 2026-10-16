@@ -65,6 +65,64 @@ assert.ok(rules({ text: "Find \\frac{1}{2}" }).includes("raw-latex-question"));
 assert.ok(!rules({ text: "It costs \\$5" }).includes("raw-latex-question"));
 assert.ok(rules({ text: "Q", explanation: "" }).includes("missing-explanation"));
 
+// ─── Answer suspects (Plan v2 §2.3) ──
+// The 2018 Mathematics question as stored: 68/111 is 0.612 recurring.
+const p612 = {
+  text: "Expression 0.612 in the form \\(\\frac{x}{y}\\), where x and y are integers and y \\(\\neq\\) 0",
+  options: ["\\(\\frac{153}{250}\\)", "\\(\\frac{68}{111}\\)", "\\(\\frac{61}{100}\\)", "\\(\\frac{21}{33}\\)"],
+  correctIndex: 0,
+};
+assert.ok(rules(p612).includes("recurring-decimal-suspect"));
+assert.ok(rules(p612).includes("stem-typo"));
+assert.match(R.recurringSuspect(p612), /B is 0\.\(612\) recurring; marked A/);
+// Control: no option is the recurring reading.
+assert.ok(!rules({ ...p612, options: ["\\(\\frac{153}{250}\\)", "\\(\\frac{3}{5}\\)", "\\(\\frac{61}{100}\\)", "\\(\\frac{21}{33}\\)"] }).includes("recurring-decimal-suspect"));
+// 0.1(6) is 1/6: a single repeating digit.
+assert.ok(R.recurringSuspect({ text: "Express 0.16 as a fraction", options: ["4/25", "1/6", "1/5", "2/9"], correctIndex: 0 }));
+assert.ok(!rules({ ...p612, text: "Express 0.612 in the form x/y" }).includes("stem-typo"));
+
+assert.strictEqual(R.numericValue("\\(\\frac{68}{111}\\)"), 68 / 111);
+assert.strictEqual(R.numericValue("-1\\(\\frac{1}{2}\\)"), -1.5); // the corpus's "-1\(\frac12\)"
+assert.strictEqual(R.numericValue("\\(-1\\frac{1}{2}\\)"), -1.5);
+assert.strictEqual(R.numericValue("\\(3.4 \\times 10^{-3}\\)"), 3.4e-3);
+assert.strictEqual(R.numericValue("0.0080 kg"), 0.008);
+assert.strictEqual(R.numericValue("4x-4"), null);
+assert.strictEqual(R.numericValue("12,345"), 12345);
+assert.strictEqual(R.roundDecimal("0.0125", 3), 0.013);
+assert.strictEqual(R.roundSignificant("0.007985", 3), 0.00799);
+assert.strictEqual(R.roundSignificant("398753", 3), 399000);
+
+// The significant-figures question the reviewer sampled: B is right.
+const sf = { text: "Correct 0.007985 to three significant figures", options: ["0.008", "0.00799", "0.00798", "0.0080"], correctIndex: 1 };
+assert.ok(!rules(sf).includes("answer-mismatch-suspect"));
+assert.ok(!rules(sf).includes("diagram-missing"));
+assert.match(R.answerMismatch({ ...sf, correctIndex: 2 }), /computed 0\.00799: that is B, marked C/);
+// 0.0080 has 2 figures, so it is not the 3-figure answer even though it equals 0.008.
+assert.deepStrictEqual(R.roundingAnswer({ ...sf, text: "Correct 0.007985 to 1 significant figure" }).matches, [0]);
+assert.deepStrictEqual(R.roundingAnswer({ ...sf, text: "Correct 0.007985 to 2 significant figures" }).matches, [3]);
+// Arithmetic in the stem is not this check's to work out.
+assert.strictEqual(R.roundingAnswer({ text: "Simplify 0.63954 ÷ 0.003 correct to two significant figures", options: ["210", "213"], correctIndex: 0 }), null);
+// Standard form wants 1 ≤ a < 10.
+assert.deepStrictEqual(
+  R.roundingAnswer({ text: "Express 0.0462 in standard form", options: ["\\(0.462 \\times 10^{-1}\\)", "\\(4.62 \\times 10^{-2}\\)", "\\(4.62 \\times 10^{2}\\)"], correctIndex: 1 }).matches,
+  [1],
+);
+
+assert.ok(rules({ text: "Q", options: ["\\(-\\frac{3}{2}\\)", "\\(-1\\frac{1}{2}\\)", "2", "3"] }).includes("equivalent-options"));
+assert.ok(!rules({ text: "Q", options: ["4 nodes", "4 antinodes", "2", "3"] }).includes("equivalent-options"));
+assert.ok(!rules({ text: "Correct 0.0080 to 2 significant figures", options: ["0.008", "0.0080", "1", "2"] }).includes("equivalent-options"));
+assert.ok(rules({ text: "Q", correctIndex: 4 }).includes("answer-out-of-range"));
+assert.ok(!rules({ text: "Q", correctIndex: -1 }).includes("answer-out-of-range"));
+
+assert.ok(rules({ text: "Evaluate 2^(x+1)" }).includes("needs-latex-question"));
+assert.ok(rules({ text: "Convert 32_four to base ten" }).includes("needs-latex-question"));
+assert.ok(rules({ text: "Find 3 x 4" }).includes("needs-latex-question"));
+assert.ok(!rules({ text: "Evaluate \\(2^{x+1}\\) if x = 2" }).includes("needs-latex-question"));
+assert.ok(!rules({ text: "Find x if 3x = 4" }).includes("needs-latex-question"));
+
+assert.ok(rules({ text: "Correct 2.346 to three significant figures", explanation: "To two significant figures, 2.3" }).includes("explanation-mismatch"));
+assert.ok(!rules({ text: "Correct 2.346 to three significant figures", explanation: "To three significant figures, 2.35" }).includes("explanation-mismatch"));
+
 const q = (id, year, text, options = ["a", "b", "c", "d"]) => ({ id, year, subjectId: "s", text, options });
 const corpus = R.checkCorpus([
   q("1", 2007, "Find x if 2x = 4"),
