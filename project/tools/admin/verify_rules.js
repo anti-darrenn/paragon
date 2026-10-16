@@ -913,6 +913,16 @@ async function feedbackAndUsage(a, b) {
     await readDoc(a.idToken, '_meta/usage'),
   );
   expectOutcome(
+    'a student cannot read the content audit',
+    DENY,
+    await readDoc(a.idToken, '_meta/contentAudit'),
+  );
+  expectOutcome(
+    'a student cannot write the content audit',
+    DENY,
+    await commit(a.idToken, write('_meta/contentAudit', { total: int(1) })),
+  );
+  expectOutcome(
     'a student cannot read the notify cursor',
     DENY,
     await readDoc(a.idToken, '_meta/notify'),

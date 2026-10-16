@@ -278,12 +278,12 @@ function build(data) {
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}${sDir}`], [String(year), `${root}${sDir}${year}/`]])}
 <p class="kicker">WAEC ${year} · ${R.escapeHtml(s.name)} · objective question</p>
 <h1 class="stem">${R.renderRich(q.text)}</h1>
-${imageTag(data.assets, q.imageId, `Diagram for this question`, root)}
+${imageTag(data.assets, q.imageId, `Diagram for the question: ${R.truncate(R.plainMath(q.text), 110)}`, root)}
 ${optionsList(q)}
 <details class="answer"><summary>Show answer</summary>
 <p><strong>Answer: ${answer}</strong></p>
-${q.explanation ? `<div class="explanation">${R.renderRich(q.explanation)}</div>` : ""}
-${imageTag(data.assets, q.explanationImageId, "Worked answer", root)}
+${q.explanation ? `<div class="explanation">${R.renderRich(q.explanation)}</div>` : q.explanationImageId ? "" : `<p class="muted">No worked answer yet for this question.</p>`}
+${imageTag(data.assets, q.explanationImageId, `Worked answer to: ${R.truncate(R.plainMath(q.text), 110)}`, root)}
 </details>
 <div class="cta">
 ${t ? `<a class="button" href="${appTopic(s, t)}">Practise ${R.escapeHtml(t.name)} in Paragon</a>` : ""}

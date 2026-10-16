@@ -74,6 +74,7 @@ h2 { font-size: 18px; margin-top: 28px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
 .grid li { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
 .count { color: var(--muted); font-size: 14px; }
+.muted { color: var(--muted); }
 .diagram { margin: 12px 0; }
 .diagram img { max-width: 100%; height: auto; background: #fff; border-radius: 8px; }
 .katex-display { overflow-x: auto; overflow-y: hidden; }

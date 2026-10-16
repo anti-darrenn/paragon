@@ -31,6 +31,7 @@
 const fs = require("fs");
 const { initAdmin } = require("./credential");
 const { mathProblems } = require("./content_lint");
+const { checkQuestion } = require("./question_rules");
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -64,6 +65,14 @@ function problemsWith(q, { thisYear = new Date().getFullYear() } = {}) {
   }
   for (const [where, text] of [["stem", q.text], ["explanation", q.explanation], ...opts.map((o, i) => [`option ${i + 1}`, o])]) {
     for (const p of mathProblems(text || "")) out.push(`${where}: ${p}`);
+  }
+  // The audit's meaning-changing rules (question_rules.js), so an import
+  // cannot bring back what the 15 Oct 2026 clean-up removed. Run
+  // fix_questions' rules over a file first to clear the mechanical ones.
+  for (const f of checkQuestion(q)) {
+    if (["lost-negative-power", "diagram-missing", "raw-latex-question", "raw-latex-options"].includes(f.rule)) {
+      out.push(`${f.rule}${f.detail ? `: ${f.detail}` : ""}`);
+    }
   }
   return out;
 }

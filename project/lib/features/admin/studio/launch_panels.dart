@@ -217,6 +217,157 @@ class _QuotaBar extends StatelessWidget {
   }
 }
 
+// ─── Content quality ────────────────────────────────────────────────
+
+/// One rule from `_meta/contentAudit`, written by
+/// `tools/admin/content_audit.js --publish` after a static-site refresh.
+class AuditRule {
+  const AuditRule(this.rule, this.level, this.count);
+  final String rule;
+
+  /// "A" changes what a question means; "B" is presentation.
+  final String level;
+  final int count;
+
+  String get label => rule.replaceAll('-', ' ');
+}
+
+class ContentAudit {
+  const ContentAudit({required this.total, required this.rules, this.at});
+  final int total;
+
+  /// Level A first, then the largest counts.
+  final List<AuditRule> rules;
+  final DateTime? at;
+
+  static ContentAudit? fromDocument(Map<String, dynamic>? d) {
+    if (d == null) return null;
+    final raw = d['rules'] is Map ? d['rules'] as Map : const {};
+    final rules =
+        [
+          for (final e in raw.entries)
+            if (e.value is Map)
+              AuditRule(
+                e.key.toString(),
+                asString((e.value as Map)['level'], fallback: 'B'),
+                asInt((e.value as Map)['count']),
+              ),
+        ]..sort((a, b) {
+          final byLevel = a.level.compareTo(b.level);
+          return byLevel != 0 ? byLevel : b.count.compareTo(a.count);
+        });
+    final at = d['at'];
+    return ContentAudit(
+      total: asInt(d['total']),
+      rules: rules,
+      at: at is Timestamp ? at.toDate() : null,
+    );
+  }
+}
+
+final contentAuditProvider = FutureProvider.autoDispose<ContentAudit?>((
+  ref,
+) async {
+  final snap = await FirebaseFirestore.instance
+      .doc('_meta/contentAudit')
+      .get()
+      .metered();
+  return ContentAudit.fromDocument(snap.data());
+});
+
+/// How the past-question bank stands against the content rules, so the
+/// team can see what to fix next and watch it fall (audit, section B).
+class ContentQualityPanel extends ConsumerWidget {
+  const ContentQualityPanel({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    final audit = ref.watch(contentAuditProvider);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Content quality',
+          style: AppTheme.heading3.copyWith(color: palette.textPrimary),
+        ),
+        const SizedBox(height: 12),
+        audit.when(
+          loading: () => const LinearProgressIndicator(minHeight: 2),
+          error: (e, _) => Text(
+            "Couldn't load the content audit.\n$e",
+            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          ),
+          data: (a) {
+            if (a == null) {
+              return Text(
+                'No audit published yet. Run tools/admin/content_audit.js '
+                '--cache --publish after a static-site refresh.',
+                style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+              );
+            }
+            return Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: palette.surface,
+                border: Border.all(color: palette.border),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  for (final r in a.rules)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 6),
+                      child: Row(
+                        children: [
+                          Text(
+                            r.level,
+                            style: AppTheme.caption.copyWith(
+                              color: r.level == 'A' && r.count > 0
+                                  ? AppColors.wrong
+                                  : palette.textSecondary,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              r.label,
+                              style: AppTheme.bodyMd.copyWith(
+                                color: palette.textPrimary,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '${r.count}',
+                            style: AppTheme.bodyMd.copyWith(
+                              color: palette.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  const SizedBox(height: 8),
+                  Text(
+                    '${a.total} past questions. A changes what a question '
+                    'means; B is presentation. List any rule with '
+                    'content_audit.js --cache --list=<rule>'
+                    '${a.at == null ? '' : '; checked ${_ago(a.at!)}'}.',
+                    style: AppTheme.caption.copyWith(
+                      color: palette.textSecondary,
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
 // ─── Feedback ───────────────────────────────────────────────────────
 
 class FeedbackPanel extends ConsumerWidget {
