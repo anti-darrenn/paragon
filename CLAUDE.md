@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**New here?** `project/docs/ARCHITECTURE.md` is the full map of the system: every
+service, route, collection, job and script. This file is the rulebook.
+
 **Launching?** Read `project/docs/LAUNCH_CHECKLIST.md` first: the PR merge order,
 the deploy and data steps, the decisions still open, and the browser click-through
 nobody has done yet. `PLAN.md` at the root records what was built for each review
@@ -560,10 +563,11 @@ theory, settings, account and onboarding.
 only for queries of three characters or more, so it costs no reads. Results open the
 static pages (`openSearchPath`).
 
-**Fonts.** Space Grotesk is bundled in `assets/google_fonts/` and
-`GoogleFonts.config.allowRuntimeFetching` is false: nothing is fetched from
-fonts.gstatic.com except Flutter's own Roboto. A new weight or font family needs its
-file added.
+**Fonts.** Space Grotesk and Atkinson Hyperlegible (the reading font) are bundled in
+`assets/google_fonts/`, and `GoogleFonts.config.allowRuntimeFetching` is false: nothing is
+fetched from fonts.gstatic.com except Flutter's own Roboto. A new weight or font family
+needs its file added, named as google_fonts expects (`Family-Variant.ttf`), or that text
+silently falls back. `bundled_fonts_test.dart` checks every `GoogleFonts.*` call in `lib/`.
 
 **`lib/core/config/site_config.dart`** holds `kSiteOrigin` and `kTagline`. Changing the
 origin is the code side of a domain move; `build_static_site.js` reads it.
