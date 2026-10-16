@@ -45,6 +45,14 @@ name: reclassify-questions
 on:
   workflow_dispatch: {}
 
+# Read-only unless a job says otherwise. Every third-party action is
+# pinned to a commit, not a tag a compromised upstream could move; the
+# comment names the tag it was taken from. Installs use `npm ci
+# --ignore-scripts`: the lockfile exactly, and no dependency's install
+# script runs next to the secrets (the repository is public).
+permissions:
+  contents: read
+
 jobs:
   reclassify:
     runs-on: ubuntu-latest
@@ -54,15 +62,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '20'
 
       - name: Install
         working-directory: project/tools/scraper
-        run: npm install --no-audit --no-fund
+        run: npm ci --ignore-scripts --omit=dev --no-audit --no-fund
 
       - name: Continue reclassification
         working-directory: project/tools/scraper
@@ -75,9 +85,14 @@ jobs:
       # starts over. They're data, not code — commit them back.
       - name: Commit progress
         working-directory: project/tools/scraper
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # No hooks: a dependency's files must not run with the token in reach.
+          git config core.hooksPath /dev/null
           git add data/reclassify_*.json
           git diff --cached --quiet || git commit -m "chore(scraper): reclassification progress [skip ci]"
-          git push
+          # The token reaches this step only, not the checkout's git config.
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"

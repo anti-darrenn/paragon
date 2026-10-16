@@ -1,8 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Only the debug and profile manifests asked for this, so a release
+         build could not reach Firebase at all. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- No cloud or adb backup of app data: it holds a signed-in session and
+         device-only notes, and a restore onto another phone should start
+         signed out. -->
     <application
         android:label="paragon"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false">
         <activity
             android:name=".MainActivity"
             android:exported="true"

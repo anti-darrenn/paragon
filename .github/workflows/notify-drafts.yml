@@ -15,11 +15,14 @@
 # Requires repository secrets:
 #   FIREBASE_SERVICE_ACCOUNT — already used by maintenance.yml
 #   RESEND_API_KEY           — from resend.com
-# Optional repository variables:
+#   NOTIFY_TO                — comma-separated recipients. A secret, not a
+#                              variable: variables are printed in the logs,
+#                              and this repository's logs are public. The
+#                              variable is still read until it is moved.
+# Optional repository variable:
 #   NOTIFY_FROM  — a sender on a Resend-verified domain. Until one is set,
 #                  Resend only delivers to the address the Resend account
 #                  was registered with.
-#   NOTIFY_TO    — comma-separated recipients (defaults in the script)
 name: notify-drafts
 
 on:
@@ -33,19 +36,29 @@ concurrency:
   group: notify-drafts
   cancel-in-progress: false
 
+# Read-only unless a job says otherwise. Every third-party action is
+# pinned to a commit, not a tag a compromised upstream could move; the
+# comment names the tag it was taken from. Installs use `npm ci
+# --ignore-scripts`: the lockfile exactly, and no dependency's install
+# script runs next to the secrets (the repository is public).
+permissions:
+  contents: read
+
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '20'
 
       - name: Install
         working-directory: project/tools/admin
-        run: npm install --no-audit --no-fund
+        run: npm ci --ignore-scripts --no-audit --no-fund
 
       # Content-team requests from the studio's Team page. Needs only the
       # service account, so it runs whether or not email is set up.
@@ -77,7 +90,7 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NOTIFY_FROM: ${{ vars.NOTIFY_FROM }}
-          NOTIFY_TO: ${{ vars.NOTIFY_TO }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO || vars.NOTIFY_TO }}
         # Until the secret exists, skip rather than fail: a failing
         # schedule sends a failure email every 15 minutes.
         run: |
