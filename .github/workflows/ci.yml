@@ -51,6 +51,14 @@ jobs:
           n=$(cat .dart_tool/flutter_build/*/web_plugin_registrant.dart | grep -c "WebYoutubePlayer\|SharedPreferencesPlugin")
           echo "registrant matches: $n"
           test "$n" -ge 2
+      # The first download. 4.75 MB unpacked after the rarely used screens
+      # were deferred (audit F1); this fails the build if it creeps back.
+      # Raise the budget on purpose, in the same PR as the reason.
+      - name: Main bundle size budget
+        run: |
+          size=$(stat -c %s build/web/main.dart.js)
+          echo "main.dart.js: $size bytes"
+          test "$size" -le 5000000
 
       - uses: actions/setup-node@v4
         with:

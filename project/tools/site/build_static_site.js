@@ -41,7 +41,16 @@ const args = Object.fromEntries(
     return [k, v ?? true];
   }),
 );
-const ORIGIN = String(args.origin || "https://paragon-hq.web.app").replace(/\/$/, "");
+/** The site address: `--origin`, else `kSiteOrigin` in the app's
+ *  lib/core/config/site_config.dart, the one place a domain move changes. */
+function siteOrigin() {
+  const file = path.resolve(__dirname, "..", "..", "lib", "core", "config", "site_config.dart");
+  const m = /kSiteOrigin\s*=\s*'([^']+)'/.exec(fs.readFileSync(file, "utf8"));
+  if (!m) throw new Error(`kSiteOrigin not found in ${file}`);
+  return m[1];
+}
+const ORIGIN = String(args.origin || siteOrigin()).replace(/\/$/, "");
+R.configure({ origin: ORIGIN });
 const OUT = path.resolve(__dirname, "..", "..", args.out || "build/web");
 const CACHE = path.join(__dirname, ".cache");
 const BASE = "past-questions";
@@ -245,7 +254,8 @@ function build(data) {
   }
 
   const qDir = (s, q) => `${BASE}/waec/${s.slug}/${q.year}/${q.id.slice(0, 10)}/`;
-  const appTopic = (s, t) => `/subject/${s.id}/course/topic/${t.id}`;
+  // Readable app links (audit C9): the app resolves slugs to ids.
+  const appTopic = (s, t) => `/subject/${s.slug}/course/topic/${R.slugify(t.name)}`;
   const heads = questionHeads(questions, subjects);
   // Readable in a list: maths as text, never TeX source (audit B3).
   const preview = (q) => R.escapeHtml(R.truncate(R.plainMath(q.text), 160));
@@ -287,7 +297,7 @@ ${imageTag(data.assets, q.explanationImageId, `Worked answer to: ${R.truncate(R.
 </details>
 <div class="cta">
 ${t ? `<a class="button" href="${appTopic(s, t)}">Practise ${R.escapeHtml(t.name)} in Paragon</a>` : ""}
-<a class="button secondary" href="/waec/${s.id}/setup">Sit a WAEC ${R.escapeHtml(s.name)} paper</a>
+<a class="button secondary" href="/waec/${s.slug}/setup">Sit a WAEC ${R.escapeHtml(s.name)} paper</a>
 </div>
 ${t && tSlug ? `<p>Topic: <a href="${root}${sDir}topic/${tSlug}/">${R.escapeHtml(t.name)}: every past question</a></p>` : ""}
 <nav class="pager">${prev ? `<a href="${root}${qDir(s, prev)}">← Previous</a>` : "<span></span>"}${next ? `<a href="${root}${qDir(s, next)}">Next →</a>` : "<span></span>"}</nav>`;
@@ -323,7 +333,7 @@ ${t && tSlug ? `<p>Topic: <a href="${root}${sDir}topic/${tSlug}/">${R.escapeHtml
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}${sDir}`], [String(year)]])}
 <h1>WAEC ${year} ${R.escapeHtml(s.name)}</h1>
 <p>${inYear.length} questions. Open one to see it in full, with its answer.</p>
-<div class="cta"><a class="button" href="/waec/${s.id}/setup">Sit these as a timed paper in Paragon</a></div>
+<div class="cta"><a class="button" href="/waec/${s.slug}/setup">Sit these as a timed paper in Paragon</a></div>
 <ol class="paper">${inYear
           .map((q) => `<li><a href="${root}${qDir(s, q)}">${preview(q)}</a></li>`)
           .join("\n")}</ol>`,
@@ -371,7 +381,7 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`]])}
 <h1>WAEC ${R.escapeHtml(s.name)} past questions</h1>
 <p>${list.length} objective questions, each with its answer.</p>
-<div class="cta"><a class="button" href="/waec/${s.id}/setup">Sit a timed paper in Paragon</a></div>
+<div class="cta"><a class="button" href="/waec/${s.slug}/setup">Sit a timed paper in Paragon</a></div>
 <h2>By year</h2>
 <ul class="grid">${years.map((y) => `<li><a href="${y}/">${y}</a> <span class="count">${list.filter((q) => q.year === y).length}</span></li>`).join("")}</ul>
 <h2>By topic</h2>
@@ -402,6 +412,19 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`]])}
   write(`${BASE}/waec/index.html`, index(), { sitemap: false });
 
   writeNotFound();
+
+  // The app's search over past questions (audit C13): a file on Hosting,
+  // fetched only when a student types a real query, so it costs no
+  // Firestore reads. Rows are [subject slug, year, plain stem, page id].
+  const searchIndex = {
+    subjects: Object.fromEntries(subjectCards.map((c) => [c.s.slug, c.s.name])),
+    questions: questions.map((q) => {
+      const s = subjects.get(q.subjectId);
+      return [s.slug, q.year, R.truncate(R.plainMath(q.text), 140), q.id.slice(0, 10)];
+    }),
+  };
+  write(`${BASE}/search.json`, JSON.stringify(searchIndex), { sitemap: false });
+
   return { questions: questions.length, subjects: subjectCards.length };
 }
 
@@ -573,6 +596,13 @@ async function main() {
   const trimmed = trimFonts(OUT);
   if (trimmed.files) {
     console.log(`Dropped ${trimmed.families} unused KaTeX font families (${trimmed.files} files, ${Math.round(trimmed.bytes / 1024)} KB).`);
+  }
+  // The app shell's canonical and share tags name the default address;
+  // point them at the configured one (a custom domain).
+  const shell = path.join(OUT, "index.html");
+  const html = fs.readFileSync(shell, "utf8");
+  if (ORIGIN !== "https://paragon-hq.web.app" && html.includes("https://paragon-hq.web.app")) {
+    fs.writeFileSync(shell, html.split("https://paragon-hq.web.app").join(ORIGIN));
   }
   fs.rmSync(path.join(OUT, BASE), { recursive: true, force: true });
   const legal = loadLegal();

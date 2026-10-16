@@ -139,8 +139,11 @@ pure Dart (no Flutter imports). In-app navigation still shows the Flutter screen
 **Hosting headers** (`firebase.json`):
 - `X-Frame-Options: DENY`, `frame-ancestors 'none'`, `nosniff`, a referrer policy and a
   permissions policy on every path except `/__/`. Firebase Auth frames `/__/auth/iframe`.
-- A full Content-Security-Policy is not set yet. It needs testing against CanvasKit,
-  Firebase and YouTube first.
+- A full **Content-Security-Policy** is enforced, after a clean report-only run on the
+  preview (2026-10-16) through sign-in, video and an exam. It allows the hosts the app
+  uses: gstatic (CanvasKit, Firebase JS), googleapis, Analytics, Auth's firebaseapp.com
+  iframe, and youtube-nocookie. **A new third-party host needs adding there first**, or
+  the browser blocks it.
 - App routes are `no-cache`, using the same regex as the rewrite.
 - `/past-questions/img/**` is immutable, because asset ids never change.
 
@@ -530,6 +533,39 @@ the phone's way in. Nothing about searches is stored or logged.
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
 
 **Real URLs.** Since 2026-10-14 the app uses path URLs (`usePathUrlStrategy()` in `main.dart`), and `GoRouter.optionURLReflectsImperativeAPIs = true` makes `context.push` update the address bar, so every screen's URL can be copied and shared. An inline script in `web/index.html` rewrites old `/#/…` links before Flutter starts; `firebase.json`'s SPA rewrite serves deep paths. A signed-out visitor bounced to welcome carries the target as `/welcome?next=…` (`return_to.dart`: `safeNextPath` allows in-app paths only — no open redirect), and signing in, finishing onboarding or "Browse as guest" goes there instead of `/`. `ShareLinkButton` shares a page (Web Share API on phones, else copy). `lib/core/web/browser.dart` holds the few browser APIs used (`setLeaveGuard` — "Leave site?" while a WAEC exam or a topic test with answers is open — `shareLink`, `appOrigin`), with no-op stand-ins off the web.
+
+**Readable URLs.** Links are built from slugs:
+- `/subject/mathematics/course/topic/indices`, with `/drill` and `/test` after it;
+- `/waec/mathematics/setup`.
+
+Build them with `Course.topicPath`, `drillPath`, `testPath` and `pathForTopicId`, never
+by hand from ids. `Course.findTopic` and `subjectIdForKeyProvider` accept an id or a slug,
+ids first, so old links keep working. `SubjectKeyRoute` and `CourseTopicRoute`
+(`features/route_keys.dart`) resolve a route's key from data already cached.
+
+**Deferred screens.** The router imports rarely used screens `deferred as` and builds
+them through `DeferredScreen`. That covers the studio, rooms, the WAEC exam, challenges,
+theory, settings, account and onboarding.
+- **The bundle budget.** `main.dart.js` is about 4.75 MB unpacked; CI fails above 5 MB.
+- **Split only by the router.** A deferred library must not be imported eagerly
+  anywhere else, or it is pulled back into the main bundle.
+- **No deferred types in `is` checks.** Put a route builder in the library instead, as
+  `waecExamRoute` does.
+- **Shared helpers stay eager.** Move them out first; the studio's paths live in
+  `admin_paths.dart` for this reason.
+
+**Search over past questions.** `build_static_site.js` writes
+`/past-questions/search.json`, with rows of subject, year, stem and id. Search fetches it
+only for queries of three characters or more, so it costs no reads. Results open the
+static pages (`openSearchPath`).
+
+**Fonts.** Space Grotesk is bundled in `assets/google_fonts/` and
+`GoogleFonts.config.allowRuntimeFetching` is false: nothing is fetched from
+fonts.gstatic.com except Flutter's own Roboto. A new weight or font family needs its
+file added.
+
+**`lib/core/config/site_config.dart`** holds `kSiteOrigin` and `kTagline`. Changing the
+origin is the code side of a domain move; `build_static_site.js` reads it.
 
 `app_router.dart` and `return_to.dart` are the only files in `lib/core/router/`. The top nav that used to
 live in `app_top_nav.dart` is now the shell's `TopBar`; that file is `page_layout.dart`. The old route-tree sketches

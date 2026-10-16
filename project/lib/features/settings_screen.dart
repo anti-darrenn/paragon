@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -15,6 +14,7 @@ import 'feedback/feedback_sheet.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/ui/ui.dart';
+import '../core/auth/sign_out.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -240,7 +240,7 @@ class SettingsScreen extends ConsumerWidget {
                       height: 48,
                       child: OutlinedButton(
                         onPressed: () async {
-                          await FirebaseAuth.instance.signOut();
+                          await signOutToWelcome(context);
                         },
                         style: OutlinedButton.styleFrom(
                           side: BorderSide(color: context.palette.border),
@@ -365,7 +365,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
       final user = ref.read(currentUserProvider);
       if (user == null) return;
       await ref.read(accountRepositoryProvider).scheduleDeletion(user.uid);
-      await FirebaseAuth.instance.signOut();
+      if (mounted) await signOutToWelcome(context);
     } catch (_) {
       if (mounted) {
         setState(

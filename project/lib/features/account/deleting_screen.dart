@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -10,6 +9,7 @@ import '../../core/theme/app_theme.dart';
 import 'delete_account.dart';
 import 'security_screen.dart' show formatDay;
 import '../../core/theme/app_palette.dart';
+import '../../core/auth/sign_out.dart';
 
 /// `/account/deleting` — where the router holds an account that is
 /// scheduled for deletion. Three ways out: restore it, delete it now, or
@@ -143,7 +143,7 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
                   TextButton(
                     onPressed: _busy
                         ? null
-                        : () => FirebaseAuth.instance.signOut(),
+                        : () => signOutToWelcome(context),
                     child: Text(
                       'Sign out',
                       style: AppTheme.bodyMd.copyWith(

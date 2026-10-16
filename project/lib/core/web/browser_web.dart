@@ -39,3 +39,15 @@ Future<bool> shareLink({required String title, required String url}) async {
 }
 
 String get appOrigin => web.window.location.origin;
+
+/// A text file from this site (the past-question search index), or null if
+/// it cannot be fetched.
+Future<String?> fetchText(String path) async {
+  try {
+    final res = await web.window.fetch(path.toJS).toDart;
+    if (!res.ok) return null;
+    return (await res.text().toDart).toDart;
+  } catch (_) {
+    return null;
+  }
+}

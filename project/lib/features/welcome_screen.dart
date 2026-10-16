@@ -17,6 +17,7 @@ import '../core/theme/app_palette.dart';
 import 'about_screen.dart';
 import '../core/widgets/paragon_logo.dart';
 import '../core/providers/analytics_provider.dart';
+import '../core/config/site_config.dart';
 
 /// Pre-auth landing screen — the front door for signed-out visitors.
 /// See the redirect logic in app_router.dart: any signed-out navigation
@@ -171,9 +172,11 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                               ),
                               const SizedBox(height: 16),
 
-                              // ── Tagline — Figma: Heading 1 (24/1.25, Bold)
+                              // ── Tagline — Figma: Heading 1 (24/1.25, Bold).
+                              // A plain placeholder until the owner picks one
+                              // of the options in docs/COPY.md (audit C15).
                               Text(
-                                'Learning the right way.',
+                                kTagline,
                                 textAlign: TextAlign.center,
                                 style: AppTheme.heading1.copyWith(
                                   color: context.palette.textSecondary,
@@ -370,11 +373,18 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                               // waec_subject_screen.dart / waec_exam_setup_screen.dart.
                               Center(
                                 child: TextButton(
+                                  // A guest who came back to welcome (from
+                                  // the menu's "Welcome page") carries on
+                                  // where they were.
                                   onPressed: _isLoading
                                       ? null
+                                      : ref.watch(isGuestProvider)
+                                      ? () => context.go('/')
                                       : () => _handleGuestSignIn(),
                                   child: Text(
-                                    'Browse as Guest',
+                                    ref.watch(isGuestProvider)
+                                        ? 'Continue as guest'
+                                        : 'Browse as Guest',
                                     style: AppTheme.caption.copyWith(
                                       color: context.palette.textSecondary,
                                     ),

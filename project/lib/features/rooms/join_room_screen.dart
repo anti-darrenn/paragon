@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/auth/feature_access.dart';
 import '../../core/data/read_meter.dart';
 import '../../core/providers/auth_provider.dart';
+import '../../core/rooms/join_throttle.dart';
 import '../../core/rooms/room.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
@@ -14,6 +15,10 @@ import '../../core/widgets/ui/ui.dart';
 
 /// `/join`: type the code on the board. Also where an account starts a
 /// room of its own.
+/// One throttle for the app session, so leaving and reopening the join
+/// screen does not reset it.
+final joinThrottleProvider = Provider<JoinThrottle>((ref) => JoinThrottle());
+
 class JoinRoomScreen extends ConsumerStatefulWidget {
   const JoinRoomScreen({super.key});
 
@@ -38,6 +43,15 @@ class _JoinRoomScreenState extends ConsumerState<JoinRoomScreen> {
       setState(() => _error = 'A room code is six letters and numbers.');
       return;
     }
+    final throttle = ref.read(joinThrottleProvider);
+    final wait = throttle.wait;
+    if (wait > Duration.zero) {
+      setState(
+        () => _error =
+            'Too many wrong codes. Try again in ${wait.inSeconds + 1} seconds.',
+      );
+      return;
+    }
     setState(() {
       _busy = true;
       _error = null;
@@ -47,9 +61,11 @@ class _JoinRoomScreenState extends ConsumerState<JoinRoomScreen> {
       final snap = await db.collection('rooms').doc(code).get().metered();
       final room = snap.exists ? Room.fromFirestore(snap) : null;
       if (room == null || room.state == RoomState.closed) {
+        throttle.miss();
         setState(() => _error = 'No open room has that code.');
         return;
       }
+      throttle.success();
       final players = await db
           .collection('rooms')
           .doc(code)

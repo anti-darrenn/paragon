@@ -306,7 +306,12 @@ function quizJsonLd({ q, subjectName, url, name }) {
 
 /** The site-wide share picture (`web/og-image.jpg`, 1200×630). WhatsApp
  *  and the rest show no preview image without one (audit E1). */
-const OG_IMAGE = "https://paragon-hq.web.app/og-image.jpg";
+let OG_IMAGE = "https://paragon-hq.web.app/og-image.jpg";
+
+/** Sets the site address the share picture is served from. */
+function configure({ origin }) {
+  OG_IMAGE = `${origin}/og-image.jpg`;
+}
 
 /** schema.org BreadcrumbList from `[label, absoluteUrl]` pairs (audit E7). */
 function breadcrumbJsonLd(items) {
@@ -384,6 +389,7 @@ module.exports = {
   renderRich,
   plainText,
   plainMath,
+  configure,
   breadcrumbJsonLd,
   itemListJsonLd,
   slugify,

@@ -35,6 +35,9 @@ String? parentPathFor(Uri uri) {
       final t,
       'test',
     ] => '/subject/$id/course/topic/$t',
+    // …and so do their readable paths (audit C9).
+    ['subject', final id, 'course', 'topic', final t, 'drill' || 'test'] =>
+      '/subject/$id/course/topic/$t',
     ['subject', final id, ...] => '/subject/$id/course',
     ['learn', ...] => '/courses',
 

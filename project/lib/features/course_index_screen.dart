@@ -164,7 +164,7 @@ class _CourseBody extends StatelessWidget {
             ),
             ShareLinkButton(
               title: '${course.name} on Paragon',
-              path: '/subject/${course.key}/course',
+              path: '/subject/${course.slug}/course',
             ),
           ],
         ),
@@ -217,7 +217,7 @@ class _CourseBody extends StatelessWidget {
           const SizedBox(height: 20),
           OutlinedButton.icon(
             onPressed: () =>
-                context.push('/subject/${course.key}/course/challenge'),
+                context.push('/subject/${course.slug}/course/challenge'),
             icon: Icon(Icons.emoji_events_outlined, color: accent),
             label: Text(
               'Course challenge',
@@ -266,14 +266,14 @@ class _CourseBody extends StatelessWidget {
                       onUnitTest:
                           canChallenge && !course.modules[i].isPlaceholder
                           ? () => context.push(
-                              '/subject/${course.key}/course/unit/'
+                              '/subject/${course.slug}/course/unit/'
                               '${course.modules[i].id}/test',
                             )
                           : null,
                       onTopicTap: course.modules[i].isPlaceholder
                           ? null
                           : (topic) => context.push(
-                              '/subject/${course.key}/course/topic/${topic.id}',
+                              course.topicPath(topic),
                             ),
                     ),
                   ],

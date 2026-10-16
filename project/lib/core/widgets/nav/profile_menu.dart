@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -8,6 +7,7 @@ import '../../theme/app_colors.dart';
 import '../../theme/app_palette.dart';
 import '../../theme/app_theme.dart';
 import '../user_avatar.dart';
+import '../../auth/sign_out.dart';
 
 /// The avatar at the end of the top bar, and the menu it opens: the
 /// student's profile and settings, the studio for the content team, and
@@ -132,6 +132,23 @@ class ProfileMenuButton extends ConsumerWidget {
             key: const ValueKey('menu.studio'),
           ),
         item(Icons.info_outline_rounded, 'About Paragon', () => go('/about')),
+        if (isGuest) ...[
+          const SizedBox(height: 4),
+          Divider(height: 1, color: context.palette.border),
+          const SizedBox(height: 4),
+          item(
+            Icons.waving_hand_outlined,
+            'Welcome page',
+            () => context.go('/welcome'),
+            key: const ValueKey('menu.welcome'),
+          ),
+          item(
+            Icons.logout_rounded,
+            'Leave guest mode',
+            () => confirmLeaveGuestMode(context),
+            key: const ValueKey('menu.leaveGuest'),
+          ),
+        ],
         if (!isGuest) ...[
           const SizedBox(height: 4),
           Divider(height: 1, color: context.palette.border),
@@ -139,7 +156,7 @@ class ProfileMenuButton extends ConsumerWidget {
           item(
             Icons.logout_rounded,
             'Sign out',
-            () => FirebaseAuth.instance.signOut(),
+            () => signOutToWelcome(context),
             key: const ValueKey('menu.signOut'),
           ),
         ],

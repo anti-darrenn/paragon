@@ -250,7 +250,7 @@ class _SubjectProgressCard extends StatelessWidget {
     }
 
     return SurfaceCard(
-      onTap: () => context.go('/subject/${course.key}/course'),
+      onTap: () => context.go('/subject/${course.slug}/course'),
       child: Row(
         children: [
           Container(

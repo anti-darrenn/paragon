@@ -73,9 +73,14 @@ void main() {
       (r) => headersOf(r).containsKey('X-Frame-Options'),
     );
     expect(headersOf(rule)['X-Frame-Options'], 'DENY');
+    // Enforced since a clean preview run (2026-10-16), and still refusing
+    // to be framed.
+    final csp = headersOf(rule)['Content-Security-Policy']!;
+    expect(csp, contains("frame-ancestors 'none'"));
+    expect(csp, contains("default-src 'self'"));
     expect(
-      headersOf(rule)['Content-Security-Policy'],
-      "frame-ancestors 'none'",
+      headersOf(rule),
+      isNot(contains('Content-Security-Policy-Report-Only')),
     );
     final scope = RegExp(rule['regex'] as String);
     for (final p in [
