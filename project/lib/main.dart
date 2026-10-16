@@ -22,13 +22,20 @@ void main() async {
   GoRouter.optionURLReflectsImperativeAPIs = true;
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Space Grotesk ships in assets/google_fonts/, so nothing is fetched from
-  // fonts.gstatic.com at startup (audit F2). A weight that is not bundled
-  // fails loudly in debug instead of quietly reaching for the network.
+  // Space Grotesk and the Atkinson Hyperlegible reading font ship in
+  // assets/google_fonts/, so nothing is fetched from fonts.gstatic.com
+  // (audit F2). A font or weight that is not bundled throws instead of
+  // reaching for the network, and the text falls back to the default font;
+  // test/bundled_fonts_test.dart fails first.
   GoogleFonts.config.allowRuntimeFetching = false;
   LicenseRegistry.addLicense(() async* {
-    final ofl = await rootBundle.loadString('assets/google_fonts/OFL.txt');
-    yield LicenseEntryWithLineBreaks(['google_fonts'], ofl);
+    for (final (name, file) in [
+      ('Space Grotesk', 'OFL.txt'),
+      ('Atkinson Hyperlegible', 'OFL-AtkinsonHyperlegible.txt'),
+    ]) {
+      final ofl = await rootBundle.loadString('assets/google_fonts/$file');
+      yield LicenseEntryWithLineBreaks(['google_fonts', name], ofl);
+    }
   });
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
