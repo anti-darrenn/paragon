@@ -30,8 +30,8 @@ live data and does not block a merge.
 
 Run everything from `project/`.
 
-1. **Clean first.** Plugins changed (`flutter_web_plugins` was added, `google_sign_in`
-   removed):
+1. **Clean first.** Plugins changed (`flutter_web_plugins` and `firebase_app_check`
+   were added, `google_sign_in` removed):
    ```powershell
    flutter clean; flutter pub get; flutter build web --release
    ```
@@ -46,7 +46,7 @@ Run everything from `project/`.
    node tools/site/build_static_site.js
    ```
 4. **Rules and indexes.** Deploy them, then verify against the live project. The
-   verification now runs **149** checks:
+   verification now runs **159** checks (security sweep, 2026-10-16):
    ```powershell
    firebase deploy --only firestore:rules,firestore:indexes
    node tools/admin/verify_rules.js
@@ -95,13 +95,57 @@ Every script is a dry run first. Read its output, then re-run it with `--apply`.
     addresses (audit G2). The static privacy page follows on the next build.
   - Submit the new sitemap in Search Console.
 - [x] **Content-Security-Policy** (audit G1): enforced after a clean preview run on
-  2026-10-16. A new third-party host must be added to it in `firebase.json`.
+  2026-10-16. A new third-party host must be added to it in `firebase.json`. The
+  security sweep found it reached only `/` until its path pattern was fixed (see below).
 - [ ] **Deploy the Firestore rules** (`_meta/contentAudit`), then run
   `node tools/admin/verify_rules.js`.
 - [ ] **Write to WAEC** about the past questions (audit G4): `docs/WAEC_OUTREACH.md`.
 - [ ] **Have the privacy policy read** by someone who knows the NDPA (audit G3). It now
   names the Act, the NDPC and the right to complain, and asks under-18s to check with a
   parent.
+
+### Security (sweep of 2026-10-16, `docs/audit/SECURITY_2026-10-16.md`)
+
+- [ ] **Before deploying**, run `node tools/admin/security_audit.js` (read-only). It
+  should end "Nothing needs attention."
+- [ ] **After deploying hosting**, check that the headers reach every path, not only `/`:
+  ```bash
+  curl -sI https://paragon-hq.web.app/welcome | grep -i "content-security\|x-frame"
+  ```
+  Then open a lesson video from a fresh tab on `/` and confirm it plays. Under the old
+  policy it could not.
+- [ ] **App Check** (the guard against a script spending the day's quota):
+  1. Firebase console → App Check → Apps → the web app → register with
+     **reCAPTCHA Enterprise**. Create the key in Google Cloud → reCAPTCHA (website
+     key, domain `paragon-hq.web.app`, plus a custom domain if there is one).
+  2. Put the site key in `kRecaptchaEnterpriseSiteKey`
+     (`lib/core/config/app_check_config.dart`), then build and deploy hosting.
+  3. Watch App Check → Firestore → **verified requests** for about a week. When nearly
+     every request is verified, press **Enforce** for Cloud Firestore. Until then
+     nothing is refused.
+  4. Running the app locally against production after enforcement: copy the debug
+     token from the browser console into App Check → Manage debug tokens.
+- [ ] **Branch protection** on `main` (Settings → Branches): require a pull request and
+  the `app`, `node` and `rules` checks. The repository is public, and `main` currently
+  accepts any push.
+- [ ] **Restrict the API keys** (Google Cloud → APIs & Services → Credentials):
+  - the browser key: HTTP referrers `paragon-hq.web.app/*`,
+    `paragon-hq.firebaseapp.com/*`, `localhost/*` (and a custom domain);
+  - the Android key: package name plus SHA-1.
+  They are public by design; a restriction stops another site from using them.
+- [ ] **Authentication → Settings**:
+  - turn on **email enumeration protection**;
+  - remove any authorised domain that is not yours;
+  - optionally raise the **password policy** to 8 characters, to match the app.
+- [ ] **`NOTIFY_TO` as a secret**: GitHub → Settings → Secrets and variables → Actions.
+  Create the secret `NOTIFY_TO` with the same value, then delete the variable. Variables
+  are printed in the public Actions logs.
+- [ ] **Android, before it ships**: a real signing key (release builds use the debug key)
+  and an application id other than `com.example.paragon`. Re-download
+  `google-services.json` for the new id. App Check on Android then needs Play Integrity.
+- [ ] **Decide: external lesson figures.** A lesson figure can be any `https:` image, so
+  its host learns the IP address of each student who opens the lesson. Either keep it,
+  or allow-list hosts (or uploads only) in `lesson_doc.dart`.
 
 **Batch app deploys** (audit F4). Every deploy that changes the app makes returning
 students download `main.dart.js` again (4.75 MB unpacked, 1.4 MB gzipped). Changes to

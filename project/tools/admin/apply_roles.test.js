@@ -1,6 +1,6 @@
 // node apply_roles.test.js — checks the pure claim logic of apply_roles.js.
 const assert = require("assert");
-const { nextClaims, isLowered } = require("./apply_roles");
+const { nextClaims, isLowered, grantRefusal, masked } = require("./apply_roles");
 
 // Granting.
 assert.deepStrictEqual(nextClaims({}, "writer", []), { writer: true });
@@ -25,5 +25,18 @@ assert.strictEqual(isLowered({ writer: true, subjects: ["m1", "p1"] }, { writer:
 assert.strictEqual(isLowered({ writer: true }, { reviewer: true }), false);
 assert.strictEqual(isLowered({ writer: true, subjects: ["m1"] }, { writer: true }), false);
 assert.strictEqual(isLowered({ writer: true, subjects: ["m1"] }, { writer: true, subjects: ["m1", "p1"] }), false);
+
+// A role is granted only to a verified email: whoever registered an
+// invited address first must not receive the invite.
+assert.ok(grantRefusal({ emailVerified: false }, "writer"));
+assert.ok(grantRefusal({ emailVerified: false }, "reviewer"));
+assert.ok(grantRefusal({}, "reviewer"));
+// Control: verified gets it, and removing a role never needs verifying.
+assert.strictEqual(grantRefusal({ emailVerified: true }, "reviewer"), null);
+assert.strictEqual(grantRefusal({ emailVerified: false }, "none"), null);
+
+// Emails are masked in the public logs.
+assert.strictEqual(masked("teacher@school.ng"), "t…@school.ng");
+assert.ok(!masked("teacher@school.ng").includes("teacher"));
 
 console.log("apply_roles: all checks passed");

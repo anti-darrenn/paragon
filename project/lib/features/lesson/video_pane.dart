@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/learn/youtube_id.dart';
 import '../../core/models/learn_resource.dart';
 import '../../core/providers/reading_settings_provider.dart';
 import '../../core/theme/app_theme.dart';
@@ -36,7 +37,10 @@ class VideoPane extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final id = resource.youtubeId?.trim() ?? '';
+    // Checked again here, not only when the editor saved it: the id is
+    // handed to the player's page, and a document written some other way
+    // should show the empty state rather than reach it.
+    final id = parseYouTubeId(resource.youtubeId ?? '') ?? '';
     final lowData = ref.watch(lowDataModeProvider);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,

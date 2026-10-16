@@ -29,14 +29,16 @@ void main() {
   });
 
   group('newPasswordProblem', () {
-    test('accepts a matching password of 6+', () {
-      expect(newPasswordProblem('secret1', 'secret1'), isNull);
+    test('accepts a matching password of 8+', () {
+      expect(newPasswordProblem('secret12', 'secret12'), isNull);
     });
     test('refuses one that is too short', () {
       expect(newPasswordProblem('abc', 'abc'), isNotNull);
+      // Firebase would take 6; new passwords need kMinPasswordLength.
+      expect(newPasswordProblem('secret1', 'secret1'), isNotNull);
     });
     test('refuses two that differ', () {
-      expect(newPasswordProblem('secret1', 'secret2'), isNotNull);
+      expect(newPasswordProblem('secret12', 'secret21'), isNotNull);
     });
   });
 

@@ -24,6 +24,11 @@ enum InviteState {
   /// as soon as they sign up.
   noAccount('no_account', 'Waiting for them to create an account'),
 
+  /// Their account's email is not verified, so the role is held back: an
+  /// unverified address proves nothing about who holds the account. The
+  /// job keeps checking, so it applies once they verify.
+  unverified('unverified', 'Waiting for them to verify their email'),
+
   /// Something went wrong; see the message.
   error('error', 'Failed');
 

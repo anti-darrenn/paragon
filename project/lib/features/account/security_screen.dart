@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/auth/password_rules.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/account_repository.dart';
 import '../../core/theme/app_colors.dart';
@@ -59,7 +60,8 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
   }
 
   String _messageFor(String code) => switch (code) {
-    'weak-password' => 'Use a password of at least 6 characters.',
+    'weak-password' =>
+      'Use a password of at least $kMinPasswordLength characters.',
     'invalid-email' => 'That is not a valid email address.',
     'email-already-in-use' => 'Another account already uses that email.',
     'credential-already-in-use' =>
@@ -501,9 +503,10 @@ class _NewPasswordDialogState extends State<_NewPasswordDialog> {
 }
 
 /// Null when [first] is an acceptable new password and [second] matches
-/// it; otherwise what to tell the student. Firebase's minimum is 6.
+/// it; otherwise what to tell the student. See [kMinPasswordLength].
 String? newPasswordProblem(String first, String second) {
-  if (first.length < 6) return 'Use at least 6 characters.';
+  final short = newPasswordTooShort(first);
+  if (short != null) return short;
   if (first != second) return 'The two passwords are different.';
   return null;
 }

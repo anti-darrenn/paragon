@@ -37,7 +37,10 @@
  *                    the Resend account was registered with; to reach
  *                    anyone else, verify a domain and set this to an
  *                    address on it.
- *   NOTIFY_TO        comma-separated recipients, default both reviewers
+ *   NOTIFY_TO        comma-separated recipients. Required: with none, the
+ *                    job skips. Kept out of the source and passed as a
+ *                    secret, because the repository and its Actions logs
+ *                    are public.
  *   APP_URL          default https://paragon-hq.web.app
  */
 const { initAdmin } = require("./credential");
@@ -45,7 +48,7 @@ const { initAdmin } = require("./credential");
 const DRY_RUN = process.argv.includes("--dry-run");
 const APP_URL = (process.env.APP_URL || "https://paragon-hq.web.app").replace(/\/+$/, "");
 const FROM = process.env.NOTIFY_FROM || "Paragon <onboarding@resend.dev>";
-const TO = (process.env.NOTIFY_TO || "darrenn.cp@gmail.com,darren.ohiomoba.adm@gmail.com")
+const TO = (process.env.NOTIFY_TO || "")
   .split(",")
   .map((s) => s.trim())
   .filter(Boolean);
@@ -178,13 +181,45 @@ function writerEmails(notices) {
   });
 }
 
-/** New reports since the cursor, grouped by question. */
-async function pendingReports(db, meta) {
-  const cursor = meta.exists ? meta.data().flagsNotifiedThrough : null;
+/**
+ * A stored cursor, or null when there is none or it lies in the future.
+ *
+ * Reports and feedback are paged by `createdAt`. The rules now pin it to
+ * the server's clock, but before they did, one report dated 9999 would
+ * have moved the cursor past every real report to come, silencing the
+ * emails for good. A future cursor can only come from such a report, so
+ * it is dropped (the next run re-sends at most MAX_REPORTS old items
+ * once) rather than trusted. Pure, tested.
+ */
+function usableCursor(cursor, now) {
+  if (!cursor || typeof cursor.toMillis !== "function") return null;
+  return cursor.toMillis() > now.toMillis() ? null : cursor;
+}
 
-  let query = db.collection("flags").orderBy("createdAt", "asc");
+/**
+ * Items created after [cursor] and not after [now], oldest first. The
+ * upper bound keeps a future-dated document from ever being the newest,
+ * so it can never become the cursor.
+ */
+function sinceCursor(db, collection, cursor, now) {
+  let query = db.collection(collection).where("createdAt", "<=", now).orderBy("createdAt", "asc");
   if (cursor) query = query.where("createdAt", ">", cursor);
-  const snap = await query.limit(MAX_REPORTS).get();
+  return query.limit(MAX_REPORTS).get();
+}
+
+function readCursor(meta, field, now) {
+  const stored = meta.exists ? meta.data()[field] : null;
+  const cursor = usableCursor(stored, now);
+  if (stored && !cursor) {
+    console.warn(`::warning::_meta/notify.${field} was in the future (${stored.toDate().toISOString()}); ignoring it.`);
+  }
+  return cursor;
+}
+
+/** New reports since the cursor, grouped by question. */
+async function pendingReports(db, meta, now) {
+  const cursor = readCursor(meta, "flagsNotifiedThrough", now);
+  const snap = await sinceCursor(db, "flags", cursor, now);
   console.log(`${snap.size} problem reports since ${cursor ? cursor.toDate().toISOString() : "the start"}`);
   if (snap.empty) return { questions: [], lessons: [], through: null, count: 0 };
 
@@ -235,11 +270,9 @@ async function pendingReports(db, meta) {
  * the same cursor scheme as reports. The message is the student's own
  * words, shortened; the privacy policy says the team reads them.
  */
-async function pendingFeedback(db, meta) {
-  const cursor = meta.exists ? meta.data().feedbackNotifiedThrough : null;
-  let query = db.collection("feedback").orderBy("createdAt", "asc");
-  if (cursor) query = query.where("createdAt", ">", cursor);
-  const snap = await query.limit(MAX_REPORTS).get();
+async function pendingFeedback(db, meta, now) {
+  const cursor = readCursor(meta, "feedbackNotifiedThrough", now);
+  const snap = await sinceCursor(db, "feedback", cursor, now);
   console.log(`${snap.size} feedback messages since ${cursor ? cursor.toDate().toISOString() : "the start"}`);
   if (snap.empty) return { items: [], through: null, count: 0 };
   const items = snap.docs.map((doc) => {
@@ -382,10 +415,15 @@ async function send(key, to, subject, text, html) {
   if (!res.ok) {
     throw new Error(`Resend refused the send (HTTP ${res.status}): ${JSON.stringify(body)}`);
   }
-  console.log(`Sent "${subject}" to ${to.join(", ")} (id ${body.id})`);
+  // No addresses or subject (it can name a writer): the logs are public.
+  console.log(`Sent an email to ${to.length} recipient(s) (id ${body.id})`);
 }
 
 async function main() {
+  if (TO.length === 0) {
+    console.log("::notice::NOTIFY_TO is not set; skipping notifications.");
+    return;
+  }
   const admin = initAdmin();
   const db = admin.firestore();
   const { FieldValue } = admin.firestore;
@@ -393,8 +431,9 @@ async function main() {
   const notices = await pendingNotices(db, admin.auth());
   // One read of the cursors, shared by reports and feedback.
   const meta = await db.collection("_meta").doc("notify").get();
-  const reports = await pendingReports(db, meta);
-  const feedback = await pendingFeedback(db, meta);
+  const now = admin.firestore.Timestamp.now();
+  const reports = await pendingReports(db, meta, now);
+  const feedback = await pendingFeedback(db, meta, now);
   const submitted = notices.filter((n) => n.status === "in_review");
   const verdicts = writerEmails(notices);
   if (notices.length === 0 && reports.count === 0 && feedback.count === 0) return;
@@ -448,9 +487,13 @@ async function main() {
   if (failures) throw new Error(`${failures} writer email(s) failed; they will be retried.`);
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((e) => {
-    console.error(e.message || e);
-    process.exit(1);
-  });
+if (require.main === module) {
+  main()
+    .then(() => process.exit(0))
+    .catch((e) => {
+      console.error(e.message || e);
+      process.exit(1);
+    });
+}
+
+module.exports = { usableCursor };

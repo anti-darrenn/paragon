@@ -119,6 +119,30 @@ async function signInAnonymously() {
   return { idToken: body.idToken, uid: body.localId };
 }
 
+/**
+ * A throwaway email/password account, for the rules that refuse guests
+ * (username reservations). The address is on example.com, which never
+ * receives mail; the account is deleted in teardown.
+ */
+async function signUpWithPassword() {
+  const email = `zz-verify-${Math.random().toString(36).slice(2, 10)}@example.com`;
+  const res = await fetch(
+    `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        password: `${Math.random().toString(36)}Aa1!${Date.now()}`,
+        returnSecureToken: true,
+      }),
+    },
+  );
+  const body = await res.json();
+  if (!res.ok) throw new Error(`password sign-up failed: ${JSON.stringify(body)}`);
+  return { idToken: body.idToken, uid: body.localId, email };
+}
+
 async function deleteAccount(idToken) {
   await fetch(
     `https://identitytoolkit.googleapis.com/v1/accounts:delete?key=${API_KEY}`,
@@ -198,7 +222,7 @@ async function seedResources() {
     });
     // The parent topic document, for the lessonCount update checks. No
     // unitId, so no course page ever lists it.
-    await verifyResources().parent.set({ name: 'zz verify', lessonCount: 0 });
+    await verifyResources().parent.set({ name: 'zz verify', subjectId: 'zz', lessonCount: 0 });
     return true;
   } catch (e) {
     console.log(`    (could not seed resources: ${e.message.slice(0, 80)})`);
@@ -549,10 +573,52 @@ async function usersAllowList(a, b) {
       write(`users/${a.uid}`, { displayName: str('hijacked') }),
     ),
   );
+
+  // The email copy is the token's own or blank; a guest's token has none.
+  expectOutcome(
+    "someone else's email cannot be planted on an account",
+    DENY,
+    await commit(a.idToken, write(`users/${a.uid}`, { email: str('victim@example.com') })),
+  );
+  expectOutcome(
+    'a display name over 256 characters is refused',
+    DENY,
+    await commit(a.idToken, write(`users/${a.uid}`, { displayName: str('n'.repeat(257)) })),
+  );
 }
 
-async function usernames(a, b, key) {
+/** Provisions a password account's user document, as createUserIfNew does. */
+async function provision(user) {
+  await commit(
+    user.idToken,
+    write(`users/${user.uid}`, { ...provisioningFields(user.uid), email: str(user.email), isAnonymous: bool(false) }, {
+      transforms: [serverTime('createdAt')],
+      precondition: { exists: false },
+    }),
+  );
+}
+
+async function usernames(a, b, key, guest) {
   suite('usernames/{key} — uniqueness and permanence');
+
+  // Reservations are permanent, so a guest sign-up must not be a free way
+  // to squat them, and nobody may take a name that passes as Paragon.
+  expectOutcome(
+    'a guest cannot reserve a name',
+    DENY,
+    await commit(
+      guest.idToken,
+      write(`usernames/${key}_g`, { uid: str(guest.uid), raw: str(`${key}_g`) }),
+    ),
+  );
+  expectOutcome(
+    'a name containing "paragon" is reserved',
+    DENY,
+    await commit(
+      a.idToken,
+      write('usernames/zz_paragon_team', { uid: str(a.uid), raw: str('zz_paragon_team') }),
+    ),
+  );
 
   // Claiming before reserving is the hole the two-phase write exists to
   // close: the rule reads committed data, so the reservation must already
@@ -743,12 +809,13 @@ async function attemptsAndFlags(a, b) {
     isCorrect: bool(true),
     source: str('drill'),
   });
+  const stamped = { transforms: [serverTime('timestamp')] };
 
   const attemptId = `verify_${a.uid.slice(0, 8)}`;
   expectOutcome(
     'an attempt can be recorded for yourself',
     ALLOW,
-    await commit(a.idToken, write(`attempts/${attemptId}`, attempt(a.uid))),
+    await commit(a.idToken, write(`attempts/${attemptId}`, attempt(a.uid), stamped)),
   );
 
   expectOutcome(
@@ -756,9 +823,23 @@ async function attemptsAndFlags(a, b) {
     DENY,
     await commit(
       b.idToken,
-      write(`attempts/${attemptId}_b`, attempt(a.uid)),
+      write(`attempts/${attemptId}_b`, attempt(a.uid), stamped),
     ),
   );
+
+  // Exactly AttemptRepository's shape, with the server's clock.
+  for (const [why, fields, opts] of [
+    ['an extra field', { ...attempt(a.uid), xp: int(50) }, stamped],
+    ['an unknown source', { ...attempt(a.uid), source: str('ranked') }, stamped],
+    ['a client-chosen time', { ...attempt(a.uid), timestamp: { timestampValue: '2020-01-01T00:00:00Z' } }, {}],
+    ['no time at all', attempt(a.uid), {}],
+  ]) {
+    expectOutcome(
+      `an attempt with ${why} is refused`,
+      DENY,
+      await commit(a.idToken, write(`attempts/${attemptId}_x`, fields, opts)),
+    );
+  }
 
   // An attempt is a record of what happened and must not be editable
   // after the fact — otherwise a wrong answer can be rewritten as right.
@@ -778,6 +859,7 @@ async function attemptsAndFlags(a, b) {
   );
 
   const flagId = `verify_${a.uid.slice(0, 8)}`;
+  const flagStamp = { transforms: [serverTime('createdAt')] };
   expectOutcome(
     'a problem report can be filed',
     ALLOW,
@@ -787,7 +869,36 @@ async function attemptsAndFlags(a, b) {
         userId: str(a.uid),
         questionId: str('q-verify'),
         reason: str('wrong_answer'),
+      }, flagStamp),
+    ),
+  );
+
+  // notify_drafts.js pages through reports by createdAt: one dated in the
+  // future would move its cursor past every real report to come.
+  expectOutcome(
+    'a problem report dated in the future is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`flags/${flagId}_future`, {
+        userId: str(a.uid),
+        questionId: str('q-verify'),
+        reason: str('wrong_answer'),
+        createdAt: { timestampValue: '9999-01-01T00:00:00Z' },
       }),
+    ),
+  );
+  expectOutcome(
+    'a problem report with an extra field is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`flags/${flagId}_extra`, {
+        userId: str(a.uid),
+        questionId: str('q-verify'),
+        reason: str('wrong_answer'),
+        note: str('x'.repeat(5000)),
+      }, flagStamp),
     ),
   );
 
@@ -816,7 +927,7 @@ async function attemptsAndFlags(a, b) {
         questionId: str('q-verify'),
         reason: str('wrong_answer'),
         status: str('dismissed'),
-      }),
+      }, flagStamp),
     ),
   );
 
@@ -1712,10 +1823,10 @@ async function content(a) {
  * one document and nothing else; if credentials are absent the key is
  * printed so it can be removed by hand.
  */
-async function teardown(a, b, usernameKey) {
+async function teardown(users, usernameKey) {
   console.log('\n  cleanup');
 
-  for (const user of [a, b]) {
+  for (const user of users) {
     await deleteDoc(user.idToken, `progress/${user.uid}`);
     await deleteDoc(user.idToken, `learn/${user.uid}`);
     await deleteDoc(user.idToken, `users/${user.uid}`);
@@ -1758,12 +1869,18 @@ async function teardown(a, b, usernameKey) {
 
   const a = await signInAnonymously();
   const b = await signInAnonymously();
+  // Reservations refuse guests, so that suite runs as two password
+  // accounts on example.com addresses, deleted in teardown.
+  const c = await signUpWithPassword();
+  const d = await signUpWithPassword();
   const usernameKey = randomKey();
-  console.log(`  two throwaway anonymous users; test handle "${usernameKey}"`);
+  console.log(`  two throwaway anonymous users, two password users; test handle "${usernameKey}"`);
 
   await usersCreate(a, b);
   await usersAllowList(a, b);
-  await usernames(a, b, usernameKey);
+  await provision(c);
+  await provision(d);
+  await usernames(c, d, usernameKey, a);
   await attemptsAndFlags(a, b);
   await feedbackAndUsage(a, b);
   await examResults(a, b);
@@ -1778,7 +1895,7 @@ async function teardown(a, b, usernameKey) {
   await learnGate(a, b);
   await content(a);
 
-  await teardown(a, b, usernameKey);
+  await teardown([a, b, c, d], usernameKey);
 
   console.log(`\n${passed} passed, ${failures.length} failed`);
   if (failures.length) {

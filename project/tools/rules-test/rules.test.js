@@ -105,6 +105,18 @@ async function main() {
     assertFails(updateDoc(doc(student(), "questions/q1"), { correctIndex: 0 })),
   );
   await check(
+    "a reviewer resolving a report signs it with their own uid and the server's time",
+    assertSucceeds(updateDoc(doc(reviewer(), "questions/q1"), {
+      correctIndex: 1, previousCorrectIndex: 1, hasAnswer: true, reviewedAt: serverTimestamp(), reviewedBy: "rev",
+    })),
+  );
+  await check(
+    "not in someone else's name",
+    assertFails(updateDoc(doc(reviewer(), "questions/q1"), {
+      hasAnswer: true, reviewedAt: serverTimestamp(), reviewedBy: "someone",
+    })),
+  );
+  await check(
     "a student cannot change a topic's counts",
     assertFails(updateDoc(doc(student(), "topics/t1"), { pastQuestionCount: 999 })),
   );
@@ -127,15 +139,54 @@ async function main() {
   );
   await check("another's progress is not readable", assertFails(getDoc(doc(student("ann"), "progress/bob"))));
 
-  console.log("\nattempts: your own only");
-  await check(
-    "a student records their own attempt",
-    assertSucceeds(setDoc(doc(student("ann"), "attempts/a1"), { userId: "ann", questionId: "q1", isCorrect: true })),
-  );
+  console.log("\nattempts: your own only, exactly AttemptRepository's shape");
+  const attempt = (uid, over = {}) => ({
+    userId: uid, questionId: "q1", topicId: "t1", subjectId: "s1", selectedIndex: 1,
+    isCorrect: true, source: "drill", timestamp: serverTimestamp(), ...over,
+  });
+  await check("a student records their own attempt", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1"), attempt("ann"))));
+  await check("a guest does too", assertSucceeds(setDoc(doc(guest("g1"), "attempts/a1g"), attempt("g1", { source: "waec" }))));
+  await check("with hints used", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1h"), attempt("ann", { hintsUsed: 2 }))));
   await check(
     "an attempt in someone else's name is refused",
-    assertFails(setDoc(doc(student("ann"), "attempts/a2"), { userId: "bob", questionId: "q1", isCorrect: true })),
+    assertFails(setDoc(doc(student("ann"), "attempts/a2"), attempt("bob"))),
   );
+  await check("an extra field is refused", assertFails(setDoc(doc(student("ann"), "attempts/a3"), attempt("ann", { xp: 50 }))));
+  await check("an unknown source is refused", assertFails(setDoc(doc(student("ann"), "attempts/a4"), attempt("ann", { source: "ranked" }))));
+  await check("a client-chosen time is refused", assertFails(setDoc(doc(student("ann"), "attempts/a5"), attempt("ann", { timestamp: new Date(0) }))));
+  await check(
+    "an oversized id is refused",
+    assertFails(setDoc(doc(student("ann"), "attempts/a6"), attempt("ann", { questionId: "q".repeat(129) }))),
+  );
+  await check("a missing field is refused", assertFails(setDoc(doc(student("ann"), "attempts/a7"), (() => {
+    const a = attempt("ann");
+    delete a.isCorrect;
+    return a;
+  })())));
+  await check("an attempt is never edited", assertFails(updateDoc(doc(student("ann"), "attempts/a1"), { isCorrect: false })));
+
+  console.log("\nflags: closed shape, the server's clock (the notify cursor)");
+  const flag = (uid, over = {}) => ({ questionId: "q1", userId: uid, reason: "wrong_answer", createdAt: serverTimestamp(), ...over });
+  await check("a student reports a question", assertSucceeds(setDoc(doc(student("ann"), "flags/f1"), flag("ann"))));
+  await check("a guest reports one", assertSucceeds(setDoc(doc(guest("g1"), "flags/f1g"), flag("g1"))));
+  await check(
+    "a lesson report",
+    assertSucceeds(setDoc(doc(student("ann"), "flags/f2"), {
+      resourceId: "live", topicId: "t1", userId: "ann", reason: "lesson_mistake", createdAt: serverTimestamp(),
+    })),
+  );
+  await check(
+    "a report dated in the future is refused",
+    assertFails(setDoc(doc(guest("g1"), "flags/f3"), flag("g1", { createdAt: new Date("9999-01-01") }))),
+  );
+  await check("an extra field is refused", assertFails(setDoc(doc(guest("g1"), "flags/f4"), flag("g1", { note: "x".repeat(5000) }))));
+  await check("a report filed already closed is refused", assertFails(setDoc(doc(guest("g1"), "flags/f5"), flag("g1", { status: "fixed" }))));
+  await check("a report about nothing is refused", assertFails(setDoc(doc(guest("g1"), "flags/f6"), (() => {
+    const f = flag("g1");
+    delete f.questionId;
+    return f;
+  })())));
+  await check("an oversized reason is refused", assertFails(setDoc(doc(guest("g1"), "flags/f7"), flag("g1", { reason: "r".repeat(41) }))));
 
   console.log("\nwaitlist/{uid}: accounts only (P1.5)");
   const list = (uid) => ({ userId: uid, subjects: ["biology"], updatedAt: serverTimestamp() });
@@ -240,6 +291,59 @@ async function main() {
     "a writer cannot edit a published one",
     assertFails(setDoc(doc(writer(), "insights/q1"), ins("draft", "wri"))),
   );
+  const mathsWriter = () =>
+    env.authenticatedContext("mwri", { writer: true, subjects: ["s2"], firebase: { sign_in_provider: "google.com" } }).firestore();
+  await check(
+    "a writer limited to another subject cannot take over a draft by relabelling it",
+    assertFails(setDoc(doc(mathsWriter(), "insights/qdraft"), { ...ins("draft", "mwri"), subjectId: "s2" })),
+  );
+  await check(
+    "control: they can draft one in their own subject",
+    assertSucceeds(setDoc(doc(mathsWriter(), "insights/q8"), { ...ins("draft", "mwri"), subjectId: "s2" })),
+  );
+
+  console.log("\nlesson items: the scope is the topic's subject, not the label");
+  const item = (over = {}) => ({
+    subjectId: "s1", topicId: "t1", title: "Index laws", type: "article", order: 3, body: "",
+    status: "draft", createdBy: "wri", updatedAt: serverTimestamp(), ...over,
+  });
+  await check("a writer drafts an item in their subject's topic", assertSucceeds(setDoc(doc(writer(), "topics/t1/resources/w1"), item())));
+  await check(
+    "a writer limited to s2 cannot file an item under an s1 topic labelled s2",
+    assertFails(setDoc(doc(mathsWriter(), "topics/t1/resources/w2"), item({ subjectId: "s2", createdBy: "mwri" }))),
+  );
+  await check(
+    "a reviewer cannot either: the label must match the topic",
+    assertFails(setDoc(doc(reviewer(), "topics/t1/resources/w3"), item({ subjectId: "s2", createdBy: "rev" }))),
+  );
+  await check(
+    "a writer cannot create a draft in someone else's name",
+    assertFails(setDoc(doc(writer(), "topics/t1/resources/w4"), item({ createdBy: "someone" }))),
+  );
+  await check(
+    "a writer cannot take over a draft's authorship",
+    assertFails(updateDoc(doc(writer(), "topics/t1/resources/draft"), { createdBy: "wri" })),
+  );
+  await check(
+    "control: a writer edits a draft",
+    assertSucceeds(updateDoc(doc(writer(), "topics/t1/resources/w1"), { title: "Laws of indices, again" })),
+  );
+
+  console.log("\nlesson images: typed, server time");
+  const asset = (over = {}) => ({
+    mime: "image/png", data: "iVBORw0KGgo=", width: 10, height: 10, createdBy: "wri", createdAt: serverTimestamp(), ...over,
+  });
+  await check("a writer uploads an image", assertSucceeds(setDoc(doc(writer(), "lessonAssets/i1"), asset())));
+  await check("a width that is not a number is refused", assertFails(setDoc(doc(writer(), "lessonAssets/i2"), asset({ width: "10\" onload=\"x" }))));
+  await check("a client-chosen time is refused", assertFails(setDoc(doc(writer(), "lessonAssets/i3"), asset({ createdAt: new Date(0) }))));
+  await check("a student cannot upload", assertFails(setDoc(doc(student("ann"), "lessonAssets/i4"), asset({ createdBy: "ann" }))));
+
+  console.log("\nusernames: accounts only, nothing that passes as Paragon");
+  await check("an account reserves a name", assertSucceeds(setDoc(doc(student("ann"), "usernames/ann_ade"), { uid: "ann", raw: "Ann_Ade" })));
+  await check("a guest cannot reserve one", assertFails(setDoc(doc(guest("g1"), "usernames/guest_name"), { uid: "g1", raw: "guest_name" })));
+  await check("'paragon_support' is reserved", assertFails(setDoc(doc(student("ann"), "usernames/paragon_support"), { uid: "ann", raw: "paragon_support" })));
+  await check("'admin' inside a name is reserved", assertFails(setDoc(doc(student("ann"), "usernames/the_admin"), { uid: "ann", raw: "the_admin" })));
+  await check("'help' alone is reserved", assertFails(setDoc(doc(student("ann"), "usernames/help"), { uid: "ann", raw: "help" })));
 
   console.log("\ncontributors: public bylines, Admin SDK only");
   await check("a student reads a byline", assertSucceeds(getDoc(doc(student(), "contributors/wri"))));
@@ -277,6 +381,23 @@ async function main() {
     assertFails(updateDoc(annDoc, { profile: { school: "Kings College", age: 16 } })));
   await check("an unknown class is refused", assertFails(updateDoc(annDoc, { profile: { classYear: "SS4" } })));
   await check("a 101-character school is refused", assertFails(updateDoc(annDoc, { profile: { school: "s".repeat(101) } })));
+  const annWithEmail = () =>
+    env.authenticatedContext("ann", { email: "ann@example.com", firebase: { sign_in_provider: "password" } }).firestore();
+  await check("control: the account's own email syncs", assertSucceeds(updateDoc(doc(annWithEmail(), "users/ann"), { email: "ann@example.com" })));
+  await check("someone else's email cannot be planted", assertFails(updateDoc(doc(annWithEmail(), "users/ann"), { email: "victim@example.com" })));
+  await check("a huge display name is refused", assertFails(updateDoc(annDoc, { displayName: "n".repeat(257) })));
+  await check(
+    "a new account provisions itself",
+    assertSucceeds(setDoc(doc(guest("g12"), "users/g12"), {
+      uid: "g12", email: "", displayName: "", isAnonymous: true, createdAt: serverTimestamp(),
+    })),
+  );
+  await check(
+    "not with someone else's email",
+    assertFails(setDoc(doc(guest("g13"), "users/g13"), {
+      uid: "g13", email: "victim@example.com", displayName: "", isAnonymous: true, createdAt: serverTimestamp(),
+    })),
+  );
 
   await env.cleanup();
   console.log(`\n${passed} passed, ${failures.length} failed`);

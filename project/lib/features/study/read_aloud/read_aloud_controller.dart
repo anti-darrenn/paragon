@@ -164,7 +164,7 @@ class ReadAloudController extends Notifier<ReadAloudState> {
 
   void _onError(Object error) {
     if (_disposed || !state.isActive) return;
-    debugPrint('read aloud: $error');
+    if (kDebugMode) debugPrint('read aloud: $error');
     _toIdle();
   }
 
@@ -174,7 +174,7 @@ class ReadAloudController extends Notifier<ReadAloudState> {
       await call();
       return true;
     } catch (e) {
-      debugPrint('read aloud: $e');
+      if (kDebugMode) debugPrint('read aloud: $e');
       return false;
     }
   }

@@ -161,6 +161,23 @@ class UsernameRules {
     if (key.length > maxLength) {
       return 'Usernames can be at most $maxLength characters.';
     }
+    if (isReserved(key)) {
+      return "That name is kept for Paragon's own accounts. Try another.";
+    }
     return null;
   }
+
+  /// Names that would pass as Paragon itself or its team. `firestore.rules`
+  /// refuses the same set (the `usernames` create rule), so change both
+  /// together; `tools/admin/security_audit.js` checks existing names
+  /// against it too. Reservations are permanent, so one squatted early
+  /// would be squatted for good.
+  static final RegExp _reservedPart = RegExp(
+    'admin|paragon|support|staff|moderator|official|waec|helpdesk|security|system',
+  );
+  static const Set<String> _reservedExact = {'help', 'root', 'team', 'owner'};
+
+  /// Whether the normalised [key] is reserved.
+  static bool isReserved(String key) =>
+      _reservedPart.hasMatch(key) || _reservedExact.contains(key);
 }

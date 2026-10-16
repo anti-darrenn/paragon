@@ -147,13 +147,34 @@ pure Dart (no Flutter imports). In-app navigation still shows the Flutter screen
 **Hosting headers** (`firebase.json`):
 - `X-Frame-Options: DENY`, `frame-ancestors 'none'`, `nosniff`, a referrer policy and a
   permissions policy on every path except `/__/`. Firebase Auth frames `/__/auth/iframe`.
+- **Hosting matches a header `regex` against the whole path.** Until 2026-10-16 the
+  pattern matched only `/` and one-letter paths, so no other path had these headers;
+  the test used a partial match and passed. `hosting_rewrite_test.dart` now matches the
+  whole path. Check with `curl -sI …/welcome` after a hosting deploy.
 - A full **Content-Security-Policy** is enforced, after a clean report-only run on the
   preview (2026-10-16) through sign-in, video and an exam. It allows the hosts the app
   uses: gstatic (CanvasKit, Firebase JS), googleapis, Analytics, Auth's firebaseapp.com
   iframe, and youtube-nocookie. **A new third-party host needs adding there first**, or
   the browser blocks it.
+  - `www.youtube.com` is in `script-src` because `youtube_player_iframe` draws the
+    player in a `srcdoc` iframe. That iframe inherits this policy and loads
+    `iframe_api`; without it every video is a grey box.
+  - The same page's inline script differs per player, which is why `'unsafe-inline'`
+    cannot be swapped for hashes.
+  - The reCAPTCHA hosts are there for App Check.
 - App routes are `no-cache`, using the same regex as the rewrite.
-- `/past-questions/img/**` is immutable, because asset ids never change.
+- `/past-questions/img/**` is immutable, because asset ids never change. It also gets
+  `default-src 'none'; sandbox`, since an SVG opened directly is a page on this origin.
+  `build_static_site.js` refuses unsafe SVGs (`tools/admin/svg_safety.js`, mirrored by
+  `svgProblem` in the studio's `image_upload.dart`; change both together).
+
+**App Check** (`lib/core/config/app_check_config.dart`) is the guard against a
+script spending the day's Spark quota as a guest. It is off while
+`kRecaptchaEnterpriseSiteKey` is empty, then monitor-only until enforced in the
+console (LAUNCH_CHECKLIST.md, "Security"). It is web only.
+
+**Security record:** `docs/audit/SECURITY_2026-10-16.md`. Run
+`node tools/admin/security_audit.js` (read-only) before a deploy.
 
 **After adding or removing any plugin, run `flutter clean` before the next release
 build.** The release build reuses a cached `web_plugin_registrant.dart` under
@@ -274,7 +295,8 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-149 checks. The denials are the content: a write that succeeds only proves something
+159 checks; the username suite signs up two throwaway `example.com` password
+accounts, because reservations refuse guests. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have. **CI does**: `.github/workflows/ci.yml` runs `tools/rules-test/rules.test.js`
 on the emulator for every pull request (`npm test` there; seeded fixtures, about 30 allow
@@ -350,7 +372,10 @@ there, a client can grant itself):
 (admin-only), and `tools/admin/apply_roles.js`, a step in the 15-minute
 notify-drafts workflow, sets the claims; the person signs out and in.
 `set_role.js --email=… --role=… [--subjects=Mathematics,Physics]` does the
-same at once from a terminal.
+same at once from a terminal. **Every grant needs a verified email**
+(`grantRefusal` in `apply_roles.js`, used by all four claim scripts). Password
+sign-up never proves an address, so whoever registered an invited email first
+would otherwise get the role; the invite waits as `unverified` instead.
 
 The rules check roles with `isWriter()` ⊃ `isReviewer()` ⊃ `isAdmin()`,
 and subjects with `writes(subjectId)` / `reviews(subjectId)` on every
@@ -701,13 +726,15 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `plan/{uid}` (weekly goal from `kWeeklyGoals` and exam date only; accounts only, owner-only), `insights/{id}` (examiner insights: per question by its id, per topic as `topic_<topicId>`; writers draft, reviewers publish, students *get* published ones only when `questions.hasInsight` / `topics.hasExaminerThemes` say one exists — stamped by `jobs.js --job=insights`), `contributors/{uid}` (public bylines `{displayName, role, credential}`; Admin-SDK-only via `tools/admin/set_contributor.js`, after consent and a credential check), `theoryQuestions/{id}` (Paper 2, Admin-SDK-written, published-only for students, hidden until a subject has `kTheoryMinQuestions` = 20; `subjects.theoryCount` from the counts job), `rooms/{code}` (live quiz: host-written `{hostUid, subjectId, topicId, topicName, questionIds ≤20, state, index, createdAt, results}`, plus `players/{uid}` nicknames and `answers/{uid_index}` accepted only while that question is live; guests join, accounts host; a day long, then `jobs.js --job=rooms`), `challenges/{id}` ("Challenge a friend": `{userId, name, subjectId, topicId, topicName, questionIds ≤10, score, total, createdAt}`; written once, *get* by anyone signed in, *list* and delete by the creator; deleted after 30 days by `jobs.js --job=challenges`), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `metrics/{day}` (daily aggregate counts from `jobs.js --job=metrics`, Lagos day; admins read them in the studio's Traction panel; no uid or name), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
 
-- `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
+- `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten. The create rule is a closed field set with `createdAt == request.time`. `notify_drafts.js` pages through reports by `createdAt`, so one report dated in the future would silence every report email after it; the job also ignores a cursor set in the future.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
 
+- `attempts` accepts exactly `AttemptRepository._attemptData`'s fields, with `source` from the seven values and `timestamp == request.time`. A new attempt field needs the rule first.
+- `usernames` refuses guests and names that pass as Paragon. The reserved list is in three places, kept in step: the rule, `UsernameRules.isReserved` and `security_audit.js`.
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.imageId` / `explanationImageId` are `lessonAssets` ids for a diagram the question depends on and a worked-answer picture. Only scraped past questions have them, set by `10_fetch_question_images.js`; `QuestionImage` renders them everywhere a question appears. A question whose diagram the source no longer serves is retired with `hasAnswer: false, needsDiagram: true` — to restore one, attach an image and flip `hasAnswer` back.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
-- `topics/{id}/resources/{id}.status` is `draft | in_review | changes_requested | published` (see `docs/CONTENT_ROLES.md`) and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug.
+- `topics/{id}/resources/{id}.status` is `draft | in_review | changes_requested | published` (see `docs/CONTENT_ROLES.md`) and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug. A client write must carry the **parent topic's** `subjectId` (the rule `get()`s it), or a subject-limited role could file items under another subject's topic. A writer's `createdBy` is their own uid and never changes, because the delete rule trusts it.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
 - `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only a reviewer; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
@@ -725,6 +752,9 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
   - **Guests link, not replace.** `/account/upgrade` links Google or email to the anonymous uid, so everything already stored stays; device-only notes/cards and in-memory lesson ticks are copied up (`guest_upgrade.dart`). An existing account cannot be merged: the student is told their guest progress stays behind. `jobs.js --job=guests` deletes guests idle 30+ days with everything they own.
   - **Usernames change once every 90 days** (rules and `UsernameRules.changeCooldown`); old reservations are never released.
   - **Deleting schedules** (30 days, `/account/deleting`, `jobs.js --job=deletions`) with "delete now" always offered; guests are deleted at once.
+  - **"Delete now" order:** first check that the sign-in is recent (`auth_time`), then delete the documents, then the Auth user.
+    - Deleting Auth first signs the client out, so every owner-only delete is refused; that is how it worked until 2026-10-16.
+    - `account_test.dart` pins the order.
   - **Terms:** bump `kLegalVersion` (and rewrite `kLegalChanges`) only for a significant change — every account is sent to `/legal/accept`.
   - `authStateProvider` is `userChanges()` filtered to account-level changes (uid, anonymous, email, verified, providers); unfiltered it would rebuild everything on the hourly token refresh.
   - Settings that follow an account: `account_prefs_sync.dart`. An analytics opt-out spreads to every device; an opt-in never does.

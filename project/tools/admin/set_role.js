@@ -20,7 +20,7 @@
  * an hour) or on a fresh sign-in. Lowering a role revokes refresh tokens.
  */
 const { initAdmin } = require("./credential");
-const { nextClaims, isLowered } = require("./apply_roles");
+const { nextClaims, isLowered, grantRefusal } = require("./apply_roles");
 
 const ROLES = ["writer", "reviewer", "none"];
 
@@ -59,6 +59,8 @@ async function main() {
   const current = user.customClaims || {};
   console.log(`${email} (uid ${user.uid}) — current claims: ${JSON.stringify(current)}`);
   if (role === undefined) return;
+  const refusal = grantRefusal(user, role);
+  if (refusal) throw new Error(`${email}: ${refusal}`);
 
   const subjects = subjectsArg ? await resolveSubjects(admin.firestore(), subjectsArg.split(",")) : [];
   const next = nextClaims(current, role, subjects);

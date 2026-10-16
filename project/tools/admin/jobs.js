@@ -56,10 +56,23 @@ const path = require("path");
 
 // ─── Credentials ─────────────────────────────────────────────────────
 
+/**
+ * The service account from FIREBASE_SERVICE_ACCOUNT. A parse error is
+ * rethrown without its message: Node quotes part of the input in it, and
+ * the Actions logs are public.
+ */
+function parseServiceAccount(text) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    throw new Error("FIREBASE_SERVICE_ACCOUNT is not valid JSON.");
+  }
+}
+
 function loadCredential() {
   if (process.env.FIREBASE_SERVICE_ACCOUNT) {
     return admin.credential.cert(
-      JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)
+      parseServiceAccount(process.env.FIREBASE_SERVICE_ACCOUNT)
     );
   }
   if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {

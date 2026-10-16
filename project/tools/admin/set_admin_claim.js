@@ -19,6 +19,7 @@
  * for up to an hour.
  */
 const { initAdmin } = require("./credential");
+const { grantRefusal } = require("./apply_roles");
 
 const args = process.argv.slice(2);
 const email = (args.find((a) => a.startsWith("--email=")) || "").split("=")[1];
@@ -35,6 +36,9 @@ async function main() {
   console.log(`${email} (uid ${user.uid}) — current claims: ${JSON.stringify(current)}`);
 
   if (!grant && !revoke) return;
+  // Admin is the widest role there is: never to an unverified address.
+  const refusal = grant ? grantRefusal(user, "admin") : null;
+  if (refusal) throw new Error(`${email}: ${refusal}`);
 
   const next = { ...current };
   if (grant) next.admin = true;

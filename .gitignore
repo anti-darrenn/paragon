@@ -2,3 +2,14 @@
 
 # Firebase CLI deploy cache: rewritten on every deploy, never shared
 project/.firebase/
+
+# Credentials, anywhere in the tree. The repository is public, and a key
+# copied into another folder would not be caught by a path-specific rule.
+**/serviceAccountKey*.json
+**/*service-account*.json
+**/*-firebase-adminsdk-*.json
+**/.env
+**/.env.*
+!**/.env.example
+# Admin-script backups of production data.
+**/.backups/

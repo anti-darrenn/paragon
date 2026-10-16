@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -265,7 +266,7 @@ class _LessonList extends ConsumerWidget {
 
     // A failed load must not masquerade as "no lessons yet": the
     // placeholder rows below would hide it completely.
-    if (resourcesAsync.hasError) {
+    if (resourcesAsync.hasError && kDebugMode) {
       debugPrint(
         'topicResourcesProvider(${topic.id}) failed: '
         '${resourcesAsync.error}',
