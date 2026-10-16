@@ -33,6 +33,46 @@ void main() {
     handle.dispose();
   });
 
+  testWidgets('Plan v2 4.1: in a drill-shaped page the stem is its own node, '
+      'not folded into the scroll view or the options', (tester) async {
+    // The reviewer's tree: "Back | 0 | Option A: 16 | …" with no stem. A
+    // stem inside a scroll view, above tappable options, as in drill.
+    const drillStem = r'Evaluate \(4^{\frac{3}{2}}\)';
+    final handle = tester.ensureSemantics();
+    await pump(
+      tester,
+      SingleChildScrollView(
+        child: Column(
+          children: [
+            const Text('Comes up in about 1 in 34 WAEC Mathematics questions'),
+            const FullLatexView(latex: drillStem),
+            for (final o in ['16', '6', '5', '8'])
+              Semantics(
+                button: true,
+                label: 'Option: $o',
+                onTap: () {},
+                excludeSemantics: true,
+                child: Text(o),
+              ),
+          ],
+        ),
+      ),
+    );
+    expect(speakText(drillStem), 'Evaluate 4 to the power three halves');
+    final node = tester.getSemantics(
+      find.bySemanticsLabel(speakText(drillStem)),
+    );
+    // Exactly the stem: not merged with the line above or an option.
+    expect(node.label, speakText(drillStem));
+    expect(
+      tester
+          .getSemantics(find.bySemanticsLabel(RegExp('Comes up in about')))
+          .label,
+      'Comes up in about 1 in 34 WAEC Mathematics questions',
+    );
+    handle.dispose();
+  });
+
   testWidgets('the light renderer is labelled the same way', (tester) async {
     final handle = tester.ensureSemantics();
     await pump(tester, const MathText(text: stem, useLightRenderer: true));
