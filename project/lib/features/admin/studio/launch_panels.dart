@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/content/subject_catalog.dart';
 import '../../../core/data/read_meter.dart';
@@ -13,6 +14,7 @@ import '../../../core/repositories/waitlist_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
+import '../admin_flag_screen.dart' show adminFlagPath;
 
 /// Studio panels that watch the live app rather than the content: how
 /// close today is to the Spark quota, and what students are telling us.
@@ -225,19 +227,54 @@ class AuditRule {
   const AuditRule(this.rule, this.level, this.count);
   final String rule;
 
-  /// "A" changes what a question means; "B" is presentation.
+  /// "S" is a suspect (the marked answer may be wrong, to check against the
+  /// paper), "A" changes what a question means, "B" is presentation.
   final String level;
   final int count;
 
   String get label => rule.replaceAll('-', ' ');
+
+  /// Suspects first, then meaning, then presentation (Plan v2 2.4.2).
+  static int rank(String level) => switch (level) {
+    'S' => 0,
+    'A' => 1,
+    'B' => 2,
+    _ => 3,
+  };
+}
+
+/// One question the audit says to open first, from `suspects`.
+class AuditSuspect {
+  const AuditSuspect({
+    required this.id,
+    required this.rule,
+    required this.level,
+    required this.subject,
+    required this.detail,
+    this.year,
+  });
+  final String id;
+  final String rule;
+  final String level;
+  final String subject;
+  final int? year;
+  final String detail;
 }
 
 class ContentAudit {
-  const ContentAudit({required this.total, required this.rules, this.at});
+  const ContentAudit({
+    required this.total,
+    required this.rules,
+    this.suspects = const [],
+    this.at,
+  });
   final int total;
 
-  /// Level A first, then the largest counts.
+  /// Level S, then A, then B, each with the largest counts first.
   final List<AuditRule> rules;
+
+  /// Questions to check first, in the audit's order (suspects, then A).
+  final List<AuditSuspect> suspects;
   final DateTime? at;
 
   static ContentAudit? fromDocument(Map<String, dynamic>? d) {
@@ -253,13 +290,30 @@ class ContentAudit {
                 asInt((e.value as Map)['count']),
               ),
         ]..sort((a, b) {
-          final byLevel = a.level.compareTo(b.level);
+          final byLevel = AuditRule.rank(
+            a.level,
+          ).compareTo(AuditRule.rank(b.level));
           return byLevel != 0 ? byLevel : b.count.compareTo(a.count);
         });
+    final rawSuspects = d['suspects'] is List
+        ? d['suspects'] as List
+        : const [];
     final at = d['at'];
     return ContentAudit(
       total: asInt(d['total']),
       rules: rules,
+      suspects: [
+        for (final e in rawSuspects)
+          if (e is Map && asString(e['id']).isNotEmpty)
+            AuditSuspect(
+              id: asString(e['id']),
+              rule: asString(e['rule']),
+              level: asString(e['level'], fallback: 'A'),
+              subject: asString(e['subject']),
+              year: asIntOrNull(e['year']),
+              detail: asString(e['detail']),
+            ),
+      ],
       at: at is Timestamp ? at.toDate() : null,
     );
   }
@@ -324,7 +378,7 @@ class ContentQualityPanel extends ConsumerWidget {
                           Text(
                             r.level,
                             style: AppTheme.caption.copyWith(
-                              color: r.level == 'A' && r.count > 0
+                              color: r.level != 'B' && r.count > 0
                                   ? AppColors.wrong
                                   : palette.textSecondary,
                               fontWeight: FontWeight.w700,
@@ -348,10 +402,38 @@ class ContentQualityPanel extends ConsumerWidget {
                         ],
                       ),
                     ),
+                  if (a.suspects.isNotEmpty) ...[
+                    const SizedBox(height: 12),
+                    Text(
+                      'Check these first',
+                      style: AppTheme.bodyMd.copyWith(
+                        color: palette.textPrimary,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    for (final q in a.suspects.take(20))
+                      InkWell(
+                        onTap: () => context.push(adminFlagPath(q.id)),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 6),
+                          child: Text(
+                            '${q.level}  ${q.subject} ${q.year ?? ''} · '
+                            '${q.rule.replaceAll('-', ' ')}: ${q.detail}',
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTheme.bodyMd.copyWith(
+                              color: palette.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
                   const SizedBox(height: 8),
                   Text(
-                    '${a.total} past questions. A changes what a question '
-                    'means; B is presentation. List any rule with '
+                    '${a.total} past questions. S may have the wrong answer '
+                    'marked, to check against the paper; A changes what a '
+                    'question means; B is presentation. List any rule with '
                     'content_audit.js --cache --list=<rule>'
                     '${a.at == null ? '' : '; checked ${_ago(a.at!)}'}.',
                     style: AppTheme.caption.copyWith(
@@ -520,17 +602,16 @@ class WaitlistPanel extends ConsumerWidget {
 /// The last fortnight of `metrics/{day}` (jobs.js --job=metrics): counts
 /// only, never a name. Admins only (the rules agree). "Copy" puts a plain
 /// table on the clipboard for a pitch deck or a funder's form.
-final _tractionProvider = FutureProvider.autoDispose<List<Map<String, dynamic>>>((
-  ref,
-) async {
-  final snap = await FirebaseFirestore.instance
-      .collection('metrics')
-      .orderBy(FieldPath.documentId, descending: true)
-      .limit(14)
-      .get()
-      .metered();
-  return [for (final d in snap.docs) d.data()];
-});
+final _tractionProvider =
+    FutureProvider.autoDispose<List<Map<String, dynamic>>>((ref) async {
+      final snap = await FirebaseFirestore.instance
+          .collection('metrics')
+          .orderBy(FieldPath.documentId, descending: true)
+          .limit(14)
+          .get()
+          .metered();
+      return [for (final d in snap.docs) d.data()];
+    });
 
 const _tractionColumns = [
   ('questionsAnswered', 'Answers'),
