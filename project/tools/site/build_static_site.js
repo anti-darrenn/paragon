@@ -125,8 +125,15 @@ function publishable(q) {
 // ─── Output ──────────────────────────────────────────────────────────
 
 const written = [];
-function write(rel, html, { sitemap = true } = {}) {
+/** Question pages over the warning size, listed after the build. */
+const heavyPages = [];
+function write(rel, html, { sitemap = true, budget = false } = {}) {
   const file = path.join(OUT, rel);
+  // Plan v2 6.6: a question page over budget stops the build.
+  if (budget && Buffer.byteLength(html) > R.PAGE_WARN) heavyPages.push([rel, Buffer.byteLength(html)]);
+  if (budget && Buffer.byteLength(html) > R.PAGE_BUDGET) {
+    throw new Error(`${rel} is ${Math.round(Buffer.byteLength(html) / 1024)} KB, over the ${R.PAGE_BUDGET / 1024} KB page budget`);
+  }
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
   if (sitemap && rel.endsWith("index.html")) {
@@ -265,6 +272,24 @@ function build(data) {
   const heads = questionHeads(questions, subjects);
   // Readable in a list: maths as text, never TeX source (audit B3).
   const preview = (q) => R.escapeHtml(R.truncate(R.plainMath(q.text), 160));
+  /** What a question page has that the archive it came from does not
+   *  (Plan v2 6.3): how often its topic is examined, and its nearest
+   *  neighbours in the topic. Each block appears only with data behind it. */
+  const valueBlocks = (q, t, s, inTopic, subjectTotal, root) => {
+    if (!t) return "";
+    const phrase = R.frequencyPhrase(inTopic.length, subjectTotal);
+    const similar = R.similarQuestions(inTopic, q);
+    const parts = [];
+    if (phrase) {
+      parts.push(`<h2>How often this comes up</h2>
+<p>${R.escapeHtml(t.name)}: ${phrase.replace("WAEC", `WAEC ${R.escapeHtml(s.name)}`)}, going by Paragon's past papers.</p>`);
+    }
+    if (similar.length) {
+      parts.push(`<h2>Similar questions</h2>
+<ul class="list">${similar.map((x) => `<li><a href="${root}${qDir(s, x)}">WAEC ${x.year}: ${preview(x)}</a></li>`).join("")}</ul>`);
+    }
+    return parts.length ? `<section class="related">${parts.join("\n")}</section>` : "";
+  };
   // The visible breadcrumb's trail as JSON-LD, with absolute URLs (E7).
   const crumbsLd = (items) =>
     R.breadcrumbJsonLd(items.map(([label, rel]) => [label, rel == null ? undefined : `${ORIGIN}/${rel}`]));
@@ -276,6 +301,13 @@ function build(data) {
     list.sort((a, b) => a.year - b.year || (a.id < b.id ? -1 : 1));
     const years = [...new Set(list.map((q) => q.year))].sort((a, b) => b - a);
     const sDir = `${BASE}/waec/${s.slug}/`;
+    // Each topic's questions in this subject, for the frequency line and
+    // "Similar questions" (Plan v2 6.3).
+    const byTopic = new Map();
+    for (const q of list) {
+      if (!byTopic.has(q.topicId)) byTopic.set(q.topicId, []);
+      byTopic.get(q.topicId).push(q);
+    }
 
     // One page per question.
     for (const year of years) {
@@ -306,6 +338,7 @@ ${t ? `<a class="button" href="${appTopic(s, t)}">Practise ${R.escapeHtml(t.name
 <a class="button secondary" href="/waec/${s.slug}/setup">Sit a WAEC ${R.escapeHtml(s.name)} paper</a>
 </div>
 ${t && tSlug ? `<p>Topic: <a href="${root}${sDir}topic/${tSlug}/">${R.escapeHtml(t.name)}: every past question</a></p>` : ""}
+${valueBlocks(q, t, s, byTopic.get(q.topicId) || [], list.length, root)}
 <nav class="pager">${prev ? `<a href="${root}${qDir(s, prev)}">← Previous</a>` : "<span></span>"}${next ? `<a href="${root}${qDir(s, next)}">Next →</a>` : "<span></span>"}</nav>`;
         write(`${dir}index.html`, R.page({
           // No question number: Paragon does not have the paper's own
@@ -320,7 +353,7 @@ ${t && tSlug ? `<p>Topic: <a href="${root}${sDir}topic/${tSlug}/">${R.escapeHtml
           ],
           root,
           hasMath: true,
-        }));
+        }), { budget: true });
       });
 
       // The year's paper: every question, answers on their own pages.
@@ -339,7 +372,7 @@ ${t && tSlug ? `<p>Topic: <a href="${root}${sDir}topic/${tSlug}/">${R.escapeHtml
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}${sDir}`], [String(year)]])}
 <h1>WAEC ${year} ${R.escapeHtml(s.name)}</h1>
 <p>${inYear.length} questions. Open one to see it in full, with its answer.</p>
-<div class="cta"><a class="button" href="/waec/${s.slug}/setup">Sit these as a timed paper in Paragon</a></div>
+<div class="cta"><a class="button" href="/waec/${s.slug}/setup?from=${year}&amp;to=${year}">Sit this paper in Paragon</a></div>
 <ol class="paper">${inYear
           .map((q) => `<li><a href="${root}${qDir(s, q)}">${preview(q)}</a></li>`)
           .join("\n")}</ol>`,
@@ -618,6 +651,10 @@ async function main() {
   writeLegalPages(legal);
   const urls = writeSitemaps();
   console.log(`Wrote ${questions} question pages across ${subjects} subjects; ${urls} URLs in the sitemap.`);
+  if (heavyPages.length) {
+    console.log(`${heavyPages.length} question pages over ${R.PAGE_WARN / 1024} KB (the build stops at ${R.PAGE_BUDGET / 1024} KB):`);
+    for (const [rel, n] of heavyPages.sort((a, b) => b[1] - a[1])) console.log(`  ${Math.round(n / 1024)} KB  ${rel}`);
+  }
   process.exit(0);
 }
 

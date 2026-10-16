@@ -384,7 +384,39 @@ ${body}
 `;
 }
 
+/**
+ * "about 1 in 34 WAEC questions" for a topic's share of a subject's past
+ * questions, or null when it is too rare to say. Mirrors the app's
+ * `frequencyPhrase` (lib/core/plan/study_plan.dart); change both together.
+ */
+function frequencyPhrase(topicCount, subjectCount) {
+  if (!(topicCount > 0) || !(subjectCount > 0)) return null;
+  const n = Math.round(subjectCount / topicCount);
+  if (n > 200) return null;
+  return n <= 1 ? "most WAEC questions" : `about 1 in ${n} WAEC questions`;
+}
+
+/** Up to [n] other questions from [list] (one topic), nearest in year to
+ *  [q] first, then by id so the choice is stable between builds. */
+function similarQuestions(list, q, n = 3) {
+  return list
+    .filter((x) => x.id !== q.id)
+    .sort((a, b) => Math.abs(a.year - q.year) - Math.abs(b.year - q.year) || b.year - a.year || (a.id < b.id ? -1 : 1))
+    .slice(0, n);
+}
+
+/** Question page sizes (Plan v2 6.6). The median page is 11 KB; a few
+ *  worked answers dense with KaTeX reach 97 KB (2026-10-16), so 60 KB is a
+ *  warning listed after the build, and only a page past 128 KB (an inlined
+ *  image, a whole topic pasted in) stops it. */
+const PAGE_WARN = 60 * 1024;
+const PAGE_BUDGET = 128 * 1024;
+
 module.exports = {
+  frequencyPhrase,
+  similarQuestions,
+  PAGE_BUDGET,
+  PAGE_WARN,
   escapeHtml,
   renderRich,
   plainText,

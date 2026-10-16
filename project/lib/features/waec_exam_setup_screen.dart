@@ -26,10 +26,19 @@ class WaecExamSetupScreen extends ConsumerStatefulWidget {
   /// The subject as the URL named it (a slug, say), for links onward, so
   /// the address stays readable. Defaults to [subjectId].
   final String? routeKey;
+
+  /// A year range to start on, from `?from=2018&to=2018` (a static
+  /// year page's "Sit this paper", Plan v2 6.4). Clamped to the years the
+  /// subject has; ignored when absent.
+  final int? initialYearFrom;
+  final int? initialYearTo;
+
   const WaecExamSetupScreen({
     super.key,
     required this.subjectId,
     this.routeKey,
+    this.initialYearFrom,
+    this.initialYearTo,
   });
 
   @override
@@ -166,11 +175,16 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         ),
         data: (range) {
           final (minYear, maxYear) = range;
-          _yearFrom ??= (maxYear - _defaultYearSpan + 1).clamp(
-            minYear,
-            maxYear,
+          final preset = presetYearRange(
+            widget.initialYearFrom,
+            widget.initialYearTo,
+            minYear: minYear,
+            maxYear: maxYear,
           );
-          _yearTo ??= maxYear;
+          _yearFrom ??=
+              preset?.$1 ??
+              (maxYear - _defaultYearSpan + 1).clamp(minYear, maxYear);
+          _yearTo ??= preset?.$2 ?? maxYear;
 
           final query = WaecYearRangeQuery(
             subjectId: widget.subjectId,
@@ -668,4 +682,21 @@ class _ResumeCard extends ConsumerWidget {
       ),
     );
   }
+}
+
+/// The range a link asked for, inside the subject's years, earlier year
+/// first; null when the link asked for none, or for years the subject
+/// does not have at all.
+(int, int)? presetYearRange(
+  int? from,
+  int? to, {
+  required int minYear,
+  required int maxYear,
+}) {
+  if (from == null && to == null) return null;
+  var a = from ?? to!;
+  var b = to ?? from!;
+  if (a > b) (a, b) = (b, a);
+  if (b < minYear || a > maxYear) return null;
+  return (a.clamp(minYear, maxYear), b.clamp(minYear, maxYear));
 }
