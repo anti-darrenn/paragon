@@ -11,9 +11,13 @@
  * the app, so this job does it. Run every 15 minutes by
  * `.github/workflows/notify-drafts.yml`, before the email step.
  *
- * For each request still `pending` or `no_account`:
+ * For each request still `pending`, `no_account` or `unverified`:
  *   - no account with that email yet → `no_account`, checked again next
  *     run, so it applies as soon as they sign up;
+ *   - an account whose email was never verified → `unverified`, checked
+ *     again next run. A role is never granted to an unverified address:
+ *     password sign-up does not prove the address, so whoever registered
+ *     an invited email first would otherwise get the invite;
  *   - otherwise the claims become `writer` or `reviewer`, plus `subjects`
  *     when the role is limited to some (absent = every subject). Other
  *     claims, `admin` included, are kept: this job never grants or removes
@@ -41,6 +45,24 @@ function nextClaims(current, role, subjects) {
   return next;
 }
 
+/**
+ * Why a role cannot be granted to [user], or null when it can. Granting
+ * needs a verified email — the invite is addressed to an email, and an
+ * unverified one proves nothing about who holds the account. Removing a
+ * role (`none`) is always allowed. Pure, tested; set_role.js and
+ * set_admin_claim.js use it too.
+ */
+function grantRefusal(user, role) {
+  if (role === "none") return null;
+  if (!user.emailVerified) {
+    return "Their email is not verified yet. They need to verify it (Settings → Account) before the role can be applied.";
+  }
+  return null;
+}
+
+/** An email as it may appear in a public Actions log: `a…@example.com`. */
+const masked = (email) => String(email).replace(/^(.)[^@]*@/, "$1…@");
+
 /** Whether [next] can do less than [current] — then old tokens are revoked. */
 function isLowered(current, next) {
   const rank = (c) => (c.reviewer ? 2 : c.writer ? 1 : 0);
@@ -59,7 +81,7 @@ async function main() {
   const auth = admin.auth();
   const { FieldValue } = admin.firestore;
 
-  const snap = await db.collection("staffInvites").where("status", "in", ["pending", "no_account"]).get();
+  const snap = await db.collection("staffInvites").where("status", "in", ["pending", "no_account", "unverified"]).get();
   console.log(`${snap.size} team request(s) to apply`);
 
   for (const doc of snap.docs) {
@@ -74,16 +96,23 @@ async function main() {
         throw e;
       });
       if (!user) {
-        console.log(`${email}: no account yet`);
+        console.log(`${masked(doc.id)}: no account yet`);
         if (!DRY_RUN) {
           await doc.ref.update({ status: "no_account", message: "No account uses this email yet." });
         }
         continue;
       }
+      const refusal = grantRefusal(user, role);
+      if (refusal) {
+        console.log(`uid ${user.uid}: email not verified, role not applied`);
+        if (!DRY_RUN) await doc.ref.update({ ...result, status: "unverified", message: refusal });
+        continue;
+      }
       const current = user.customClaims || {};
       const next = nextClaims(current, role, subjects);
       const lowered = isLowered(current, next);
-      console.log(`${email}: ${JSON.stringify(current)} -> ${JSON.stringify(next)}${lowered ? " (revoking tokens)" : ""}`);
+      // The uid, never the email: these logs are public on a public repo.
+      console.log(`uid ${user.uid}: ${JSON.stringify(current)} -> ${JSON.stringify(next)}${lowered ? " (revoking tokens)" : ""}`);
       if (DRY_RUN) continue;
       await auth.setCustomUserClaims(user.uid, next);
       if (lowered) await auth.revokeRefreshTokens(user.uid);
@@ -94,7 +123,7 @@ async function main() {
         message: "They need to sign out and in again to see it.",
       });
     } catch (e) {
-      console.error(`${email}: ${e.message || e}`);
+      console.error(`${masked(doc.id)}: ${e.message || e}`);
       if (!DRY_RUN) await doc.ref.update({ ...result, status: "error", message: String(e.message || e) });
     }
   }
@@ -109,4 +138,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { nextClaims, isLowered };
+module.exports = { nextClaims, isLowered, grantRefusal, masked };

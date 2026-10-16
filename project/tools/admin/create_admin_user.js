@@ -28,6 +28,7 @@
  */
 const crypto = require("crypto");
 const { initAdmin } = require("./credential");
+const { grantRefusal } = require("./apply_roles");
 
 const args = process.argv.slice(2);
 const arg = (name) =>
@@ -68,6 +69,10 @@ async function main() {
     if (e.code === "auth/user-not-found") return null;
     throw e;
   });
+  // An existing account becomes admin only if its email is proven: one
+  // made with password sign-up and never verified could be anyone's.
+  const refusal = existing && grantRefusal(existing, "admin");
+  if (refusal) throw new Error(`${email}: ${refusal}`);
   if (existing && !UPGRADE) {
     throw new Error(
       `${email} already has an account (uid ${existing.uid}). ` +
