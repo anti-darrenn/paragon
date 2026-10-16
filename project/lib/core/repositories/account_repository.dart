@@ -9,20 +9,25 @@ import 'package:paragon/core/data/read_meter.dart';
 /// worth knowing before reading the code.
 ///
 /// **Order matters.** Firebase refuses to delete an auth user whose
-/// sign-in is not recent, and the failure is only discoverable by trying.
-/// If we deleted the Firestore data first and *then* hit
-/// `requires-recent-login`, the student would be left signed in with all
-/// their history gone and their account still alive — the worst possible
-/// half-state. So the auth user goes first: if that fails, nothing has
-/// been destroyed and [AccountDeletionOutcome.needsRecentLogin] asks them
-/// to sign in again.
+/// sign-in is not recent. If we deleted the Firestore data first and *then*
+/// hit `requires-recent-login`, the student would be left signed in with
+/// their history gone and their account still alive. So the sign-in's age
+/// is checked first, from the ID token's `auth_time` (what Firebase itself
+/// checks): too old, and nothing is touched and
+/// [AccountDeletionOutcome.needsRecentLogin] asks them to confirm it is
+/// them.
 ///
-/// The residual risk runs the other way — auth deleted, then the network
-/// drops mid-cleanup, orphaning documents whose owner no longer exists.
-/// That is the better failure: no user is locked out of a broken account,
-/// and orphans are collectable server-side. [deleteAccount] returns
-/// [AccountDeletionOutcome.partial] when it happens so the UI can say so
-/// rather than claiming success.
+/// Then the documents, **while still signed in**, and only then the auth
+/// user. The other order — auth first — was used until 2026-10-16 and never
+/// worked: once the auth user is deleted the client is signed out, every
+/// owner-only delete is refused, and "Delete now" left everything for the
+/// nightly orphans job (reproduced against the emulators). A guest is
+/// deleted the same way minus the age check, since a guest cannot sign in
+/// again.
+///
+/// If a delete fails mid-way the auth user still goes, and the result is
+/// [AccountDeletionOutcome.partial] so the UI can say so; `jobs.js
+/// --job=orphans` collects what is left.
 ///
 /// **What is not deleted.** The `usernames/{key}` reservation stays. The
 /// rules make reservations permanent and the privacy policy says so: a
@@ -41,7 +46,9 @@ enum AccountDeletionOutcome {
   /// Auth user is gone but some documents survived an error mid-cleanup.
   partial,
 
-  /// Nothing was deleted; the user must sign in again and retry.
+  /// The account is not deleted; the user must confirm it is them (sign in
+  /// again) and retry. Usually nothing has been touched either; see the
+  /// class doc for the one case where the documents already went.
   needsRecentLogin,
 }
 
@@ -60,11 +67,34 @@ class AccountRepository {
   /// Firestore allows 500 writes per batch; stay clear of it.
   static const _batchChunkSize = 450;
 
+  /// How recent a sign-in Firebase accepts for deleting an account. Its
+  /// own window is five minutes; a little less here leaves room for the
+  /// requests in between.
+  static const recentSignIn = Duration(minutes: 4);
+
   Future<AccountDeletionOutcome> deleteAccount(User user) async {
     final uid = user.uid;
 
-    // 1. Auth first — see the class doc. This is the only step that can
-    //    fail in a way that should abort the whole operation.
+    // 1. Recent enough? Checked before anything is destroyed.
+    if (!user.isAnonymous) {
+      final authTime = (await user.getIdTokenResult()).authTime;
+      if (authTime == null ||
+          DateTime.now().difference(authTime) > recentSignIn) {
+        return AccountDeletionOutcome.needsRecentLogin;
+      }
+    }
+
+    // 2. Owned documents, while the rules still know who is asking.
+    var partial = false;
+    try {
+      await deleteOwnedDocuments(uid);
+    } catch (_) {
+      partial = true;
+    }
+
+    // 3. The auth user. A clock that disagrees with Firebase's can still
+    //    get `requires-recent-login` here; the documents are gone by then,
+    //    and the retry after confirming deletes the account.
     try {
       await user.delete();
     } on FirebaseAuthException catch (e) {
@@ -74,16 +104,9 @@ class AccountRepository {
       rethrow;
     }
 
-    // 2. Owned documents. The auth user is already gone, so a failure
-    //    here cannot strand anyone — it only leaves collectable orphans,
-    //    which the caller is told about rather than hidden from.
-    try {
-      await deleteOwnedDocuments(uid);
-    } catch (_) {
-      return AccountDeletionOutcome.partial;
-    }
-
-    return AccountDeletionOutcome.deleted;
+    return partial
+        ? AccountDeletionOutcome.partial
+        : AccountDeletionOutcome.deleted;
   }
 
   /// Removes every Firestore document owned by [uid].

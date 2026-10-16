@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -18,6 +19,14 @@ Future<String?> deleteAccountNow(BuildContext context, WidgetRef ref) async {
   try {
     final repo = ref.read(accountRepositoryProvider);
     var outcome = await repo.deleteAccount(user);
+    // A guest cannot sign in again to confirm. Their documents are already
+    // gone by now, so sign them out instead: the empty anonymous account is
+    // deleted by the guest clean-up job (`jobs.js --job=guests`).
+    if (outcome == AccountDeletionOutcome.needsRecentLogin &&
+        user.isAnonymous) {
+      await FirebaseAuth.instance.signOut();
+      return null;
+    }
     // Firebase wants a recent sign-in before deleting. Confirm it here
     // and try once more, rather than sending them away to sign out.
     if (outcome == AccountDeletionOutcome.needsRecentLogin && context.mounted) {

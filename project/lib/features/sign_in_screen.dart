@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:paragon/core/auth/password_rules.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/features/account/guest_upgrade.dart';
@@ -82,6 +83,14 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
   Future<void> _submitPassword({required bool createAccount}) async {
     final email = _emailController.text.trim();
     final password = _passwordController.text.trim();
+    final short = createAccount ? newPasswordTooShort(password) : null;
+    if (short != null) {
+      setState(() {
+        _messageIsError = true;
+        _message = short;
+      });
+      return;
+    }
 
     setState(() {
       _isLoading = true;
@@ -146,7 +155,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         case 'email-already-in-use':
           return 'An account with this email already exists.';
         case 'weak-password':
-          return 'Password is too weak. Use at least 6 characters.';
+          return 'Password is too weak. Use at least $kMinPasswordLength characters.';
         case 'invalid-email':
           return 'Enter a valid email address.';
         case 'too-many-requests':
@@ -169,6 +178,10 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     }
   }
 
+  static const _resetSent =
+      'If an account uses that email, a reset link is on its way. '
+      'Check your inbox and spam folder.';
+
   Future<void> _sendPasswordReset() async {
     final email = _emailController.text.trim();
     if (!_emailRegExp.hasMatch(email)) {
@@ -188,13 +201,15 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
       setState(() {
         _messageIsError = false;
-        _message = 'Password reset email sent — check your inbox.';
+        _message = _resetSent;
       });
     } on FirebaseAuthException catch (e) {
       setState(() {
-        _messageIsError = true;
+        // The same words whether or not the address has an account, so
+        // this box cannot be used to find out who studies on Paragon.
+        _messageIsError = e.code != 'user-not-found';
         _message = switch (e.code) {
-          'user-not-found' => 'No account found with that email.',
+          'user-not-found' => _resetSent,
           'invalid-email' => 'Enter a valid email address.',
           'too-many-requests' => 'Too many attempts. Try again later.',
           _ => "Couldn't send reset email. Please try again.",

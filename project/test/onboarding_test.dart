@@ -82,6 +82,23 @@ void main() {
       expect(UsernameRules.validate('a' * 20), isNull);
       expect(UsernameRules.validate('a' * 21), isNotNull);
     });
+
+    test('refuses names that would pass as Paragon (as the rules do)', () {
+      for (final name in [
+        'Paragon_Team',
+        'admin',
+        'the_admin',
+        'support_desk',
+        'waec_official',
+        'help',
+        'root',
+      ]) {
+        expect(UsernameRules.validate(name), isNotNull, reason: name);
+      }
+      // Control: a name merely near one is fine.
+      expect(UsernameRules.validate('helper_ade'), isNull);
+      expect(UsernameRules.validate('teamwork'), isNull);
+    });
   });
 
   group('resolveOnboardingStep', () {

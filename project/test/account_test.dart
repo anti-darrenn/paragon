@@ -1,4 +1,5 @@
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/repositories/account_repository.dart';
 
@@ -161,4 +162,102 @@ void main() {
       expect((await db.collection('users').doc('empty').get()).exists, isFalse);
     });
   });
+
+  group('AccountRepository.deleteAccount', () {
+    // The documents go while the student is still signed in, then the
+    // auth user. The other order never worked: once the auth user is gone
+    // the client is signed out and every owner-only delete is refused
+    // (reproduced against the emulators, 2026-10-16).
+    late FakeFirebaseFirestore db;
+    late AccountRepository repo;
+
+    setUp(() async {
+      db = FakeFirebaseFirestore();
+      repo = AccountRepository(db);
+      await db.collection('users').doc('u1').set({'uid': 'u1'});
+      await db.collection('attempts').add({'userId': 'u1'});
+    });
+
+    Future<bool> userDocExists() async =>
+        (await db.collection('users').doc('u1').get()).exists;
+
+    test('deletes the documents before the auth user', () async {
+      final user = _FakeUser(
+        authTime: DateTime.now().subtract(const Duration(minutes: 1)),
+        onDelete: userDocExists,
+      );
+      final outcome = await repo.deleteAccount(user);
+      expect(outcome, AccountDeletionOutcome.deleted);
+      expect(user.deleted, isTrue);
+      expect(
+        user.docExistedAtDelete,
+        isFalse,
+        reason: 'documents must be gone before the auth user is',
+      );
+      final left = await db.collection('attempts').get();
+      expect(left.docs, isEmpty);
+    });
+
+    test('a stale sign-in touches nothing and asks to confirm', () async {
+      final user = _FakeUser(
+        authTime: DateTime.now().subtract(const Duration(hours: 2)),
+        onDelete: userDocExists,
+      );
+      final outcome = await repo.deleteAccount(user);
+      expect(outcome, AccountDeletionOutcome.needsRecentLogin);
+      expect(user.deleted, isFalse);
+      expect(await userDocExists(), isTrue);
+    });
+
+    test('a guest is deleted without the age check', () async {
+      final user = _FakeUser(
+        authTime: DateTime.now().subtract(const Duration(days: 3)),
+        anonymous: true,
+        onDelete: userDocExists,
+      );
+      expect(await repo.deleteAccount(user), AccountDeletionOutcome.deleted);
+      expect(await userDocExists(), isFalse);
+    });
+  });
+}
+
+class _FakeToken implements IdTokenResult {
+  _FakeToken(this.authTime);
+  @override
+  final DateTime? authTime;
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+}
+
+class _FakeUser implements User {
+  _FakeUser({
+    required this.authTime,
+    required this.onDelete,
+    this.anonymous = false,
+  });
+
+  final DateTime authTime;
+  final Future<bool> Function() onDelete;
+  final bool anonymous;
+  bool deleted = false;
+  bool? docExistedAtDelete;
+
+  @override
+  String get uid => 'u1';
+
+  @override
+  bool get isAnonymous => anonymous;
+
+  @override
+  Future<IdTokenResult> getIdTokenResult([bool forceRefresh = false]) async =>
+      _FakeToken(authTime);
+
+  @override
+  Future<void> delete() async {
+    docExistedAtDelete = await onDelete();
+    deleted = true;
+  }
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

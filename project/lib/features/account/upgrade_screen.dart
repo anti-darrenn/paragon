@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/auth/password_rules.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
@@ -43,7 +44,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
 
   bool get _emailFormValid =>
       _emailRegExp.hasMatch(_email.text.trim()) &&
-      _password.text.trim().length >= 6;
+      newPasswordTooShort(_password.text.trim()) == null;
 
   Future<void> _run(
     Future<GuestUpgradeOutcome> Function() attempt, {
@@ -72,7 +73,8 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
   }
 
   String _messageFor(String code) => switch (code) {
-    'weak-password' => 'Use a password of at least 6 characters.',
+    'weak-password' =>
+      'Use a password of at least $kMinPasswordLength characters.',
     'invalid-email' => 'Enter a valid email address.',
     'too-many-requests' => 'Too many attempts. Try again later.',
     'network-request-failed' => 'No connection. Check it and try again.',
@@ -198,7 +200,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                     OnboardingTextField(
                       controller: _password,
                       label: 'PASSWORD',
-                      hintText: 'At least 6 characters',
+                      hintText: 'At least $kMinPasswordLength characters',
                       obscureText: _obscure,
                       onChanged: (_) => setState(() => _error = null),
                       suffix: IconButton(
