@@ -235,6 +235,15 @@ tested.
 - **Imports.** `import_questions.js` refuses the level-A rules.
 - **The studio.** Its Content quality panel reads the summary that
   `content_audit.js --publish` writes to `_meta/contentAudit`.
+  - **It runs nightly** in `maintenance.yml`, from Firestore. It used to run
+    only by hand.
+  - **A fix clears its finding at once.** A question saved after the audit
+    read it (`dataAt`) shows "Fixed since the audit", not the finding
+    (`ContentAudit.isCleared`).
+  - **"Mark checked"** in the workbench adds the rule to the question's
+    `auditDismissed`, with a note on its history, and the audit skips it.
+  - **Why.** Until 2026-10-17 a fixed question stayed flagged until someone
+    re-ran the audit, which looked like the fix had not taken.
 - **The record.** `docs/audit/CONTENT_REVIEW_2026-10-15.md` is what was decided and done.
 
 Generated practice comes from a few templates per topic. Indices has 300 questions from
@@ -721,7 +730,29 @@ cards**:
 **Plugins added in this work:** `flutter_tts` and `file_picker`. Run
 `flutter clean` before the next release build (see the top of this file).
 
-**LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
+**LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds.
+`docs/LATEX_RENDERING.md` is the full account.
+- **First, `normalizeTex`** (`lib/core/latex/tex_preprocess.dart`, pure,
+  idempotent, a no-op without a backslash). It turns Overleaf-style LaTeX into
+  the renderers' dialect:
+  - bare commands (`0.\overline{3}` typed without `\( \)`) become inline maths;
+  - `\emph`, lists, `tabular`, `align`, `gathered`, accents and macros convert;
+  - `\ce{}` (mhchem subset) and `\SI{}{}` (siunitx) convert.
+
+  Read-aloud, `checkDraft`, `lesson_check`, `question_rules.js` and
+  `content_lint.js` read through it too.
+- **The static site mirrors it.** `tools/site/tex_preprocess.js` is the copy,
+  and both test suites run `test/fixtures/tex_preprocess_cases.json`. Change
+  both together.
+- **Then one scanner draws it.** `latexSpans` in `full_latex_view.dart` draws
+  `\(...\)`, `\[...\]`, `$$...$$`, and nested `\textbf`/`\textit`/
+  `\underline`/`\texttt`, `\vspace` and `\$`, with a red monospace fallback on
+  parse errors.
+- **`MathText` shares the scanner** in both modes. `useLightRenderer: true` only
+  drops the sideways scroll box around wide maths.
+- **Editors use `MathField` and `MathToolbar`** (`lib/core/widgets/math_field/`):
+  Normal mode (calculator typing, `plainToLatex`) or LaTeX mode, never
+  rewriting a stored value on a mode switch.
 
 **Answer options.** Every multiple-choice option a student answers is `AnswerOption`
 (`lib/core/widgets/answer_option.dart`): drill, the topic test, exercises, the taster,
@@ -800,7 +831,7 @@ the light background. Change both files together. `og:image` is an absolute URL,
 
 Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with no equation on it, so `\textbf{..}`, `\textit{..}`, `\vspace{..}` and `\$` showed literally unless the same line also held math; `latex_render_test.dart` now pins both cases. Inline math is also wrapped in a horizontal scroll view, so an expression wider than a phone screen scrolls instead of overflowing. Article quotes: consecutive `>` lines are one quote block (a blank line separates two).
 
-`\emph` is **not** supported (use `\textit`), and a lone `$` is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. See `docs/LATEX_RENDERING.md`, which is now accurate.
+A lone `$` in stored text is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. An author typing `$x$` in the editor's LaTeX mode is converted to `\(x\)` when the box loses focus (`dollarMathToParens`), so stored text never relies on it.
 
 **Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` in dark — except `onLow`, raised from `white38`/`black38` to 50% white / 56% black so small text passes WCAG AA (4.5:1). **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
 

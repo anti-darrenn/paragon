@@ -15,9 +15,14 @@
 /// student should look at rather than reciting `\mathscr` at them.
 library;
 
+import '../latex/tex_preprocess.dart';
+
 /// [source] as spoken text: maths converted, prose left alone, whitespace
 /// collapsed.
-String speakText(String source) {
+String speakText(String raw) {
+  // Overleaf-style input (bare commands, chemistry, units, lists) in the
+  // dialect below first, so read-aloud says what the screen shows.
+  final source = normalizeTex(raw);
   final out = StringBuffer();
   var i = 0;
   while (i < source.length) {

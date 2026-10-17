@@ -270,6 +270,7 @@ class ContentAudit {
     this.suspects = const [],
     this.byRule = const {},
     this.at,
+    this.dataAt,
   });
   final int total;
 
@@ -284,6 +285,22 @@ class ContentAudit {
   /// 2026-10-17.
   final Map<String, List<String>> byRule;
   final DateTime? at;
+
+  /// When the audited questions were read. A run from the site cache reads
+  /// data hours or days older than [at]; null on audits before 2026-10-17.
+  final DateTime? dataAt;
+
+  /// Whether the audit's [rule] finding on [q] is out of date: a person
+  /// saved the question after the audit read it, or marked that rule
+  /// checked. Until 2026-10-17 a fixed question stayed flagged until
+  /// someone re-ran the audit by hand, which looked like the fix had not
+  /// taken.
+  bool isCleared(ReviewedQuestion q, String rule) {
+    if (q.auditDismissed.contains(rule)) return true;
+    final read = dataAt ?? at;
+    final touched = q.lastTouched;
+    return read != null && touched != null && touched.isAfter(read);
+  }
 
   /// What the audit found on one question: the rule, its level, and the
   /// detail when the audit kept one (suspects and level A).
@@ -329,6 +346,7 @@ class ContentAudit {
         : const [];
     final rawByRule = d['byRule'] is Map ? d['byRule'] as Map : const {};
     final at = d['at'];
+    final dataAt = d['dataAt'];
     return ContentAudit(
       total: asInt(d['total']),
       rules: rules,
@@ -352,6 +370,7 @@ class ContentAudit {
           ],
       },
       at: at is Timestamp ? at.toDate() : null,
+      dataAt: dataAt is Timestamp ? dataAt.toDate() : null,
     );
   }
 }
@@ -539,8 +558,16 @@ class _RuleTileState extends ConsumerState<_RuleTile> {
                 child: QuestionListCard(
                   question: q,
                   findings: [(widget.rule.rule, widget.rule.level)],
-                  onTap: () =>
-                      openQuestion(context, ref, q.question.id, list: ids),
+                  onTap: () async {
+                    await openQuestion(
+                      context,
+                      ref,
+                      q.question.id,
+                      list: ids,
+                    );
+                    // What was fixed there shows as fixed here.
+                    ref.invalidate(_auditQuestionsProvider);
+                  },
                 ),
               ),
             if (ids.length > _shown)

@@ -1,12 +1,17 @@
 /// A question as the studio edits it, and the checks it must pass before
-/// saving. Pure: no Firestore, no Flutter, so it is tested on its own
-/// (`question_draft_test.dart`).
+/// saving. No Firestore and no widgets, so it is tested on its own
+/// (`question_draft_test.dart`); maths is checked with flutter_math_fork's
+/// own parser, as `lesson_check.dart` does.
 ///
 /// The fields are exactly the ones `firestore.rules` lets a reviewer
 /// change (`editsQuestion`): stem, options, answer, explanation and
 /// whether students see it. Subject, topic, source, year and origin stay
 /// seeder-only.
 library;
+
+import 'package:flutter_math_fork/tex.dart';
+
+import '../latex/tex_preprocess.dart';
 
 /// The fields a studio edit can touch.
 class QuestionDraft {
@@ -148,6 +153,26 @@ int _unclosed(String s) {
 
 String _normal(String s) => s.replaceAll(RegExp(r'\s+|\$'), '').toLowerCase();
 
+final _mathSpan = RegExp(
+  r'\\\((.*?)\\\)|\\\[(.*?)\\\]|\$\$(.*?)\$\$',
+  dotAll: true,
+);
+
+/// The first maths in [value] that the renderer cannot draw, shortened for
+/// a message, or null when all of it renders.
+String? unrenderableMath(String value) {
+  if (!value.contains(r'\') && !value.contains(r'$$')) return null;
+  for (final m in _mathSpan.allMatches(normalizeTex(value))) {
+    final tex = m.group(1) ?? m.group(2) ?? m.group(3)!;
+    try {
+      TexParser(tex, const TexParserSettings()).parse();
+    } catch (_) {
+      return tex.length > 40 ? '${tex.substring(0, 37)}...' : tex;
+    }
+  }
+  return null;
+}
+
 /// Everything wrong with [d], most serious first. Mirrors the checks in
 /// `tools/admin/question_rules.js` that can be made while typing.
 List<DraftIssue> checkDraft(QuestionDraft d) {
@@ -242,6 +267,24 @@ List<DraftIssue> checkDraft(QuestionDraft d) {
         r' has unbalanced \( \).',
         field: 'options',
         index: i,
+      );
+    }
+  }
+  // Maths that will not render shows students red source. Checked the way
+  // the renderer reads it: through normalizeTex, then the real parser.
+  for (final (field, index, value) in [
+    ('text', null, d.text),
+    ('explanation', null, d.explanation),
+    for (var i = 0; i < d.options.length; i++) ('options', i, d.options[i]),
+  ]) {
+    final bad = unrenderableMath(value);
+    if (bad != null) {
+      final where = index == null ? '' : 'Option ${_letter(index)}: ';
+      add(
+        DraftLevel.block,
+        '${where}this maths won\'t render: $bad',
+        field: field,
+        index: index,
       );
     }
   }

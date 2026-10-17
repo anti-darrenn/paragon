@@ -1714,6 +1714,11 @@ async function content(a) {
       await commit(a.idToken, write(questionPath, { text: str('rewritten'), lastEditId: str('zz_verify') })),
     );
     expectOutcome(
+      'a student cannot mark a content-audit finding checked',
+      DENY,
+      await commit(a.idToken, write(questionPath, { auditDismissed: arr([str('raw-latex-question')]) })),
+    );
+    expectOutcome(
       "a student cannot write a question's edit history",
       DENY,
       await commit(

@@ -10,6 +10,7 @@
  * changes the meaning ("10-3" read as ten minus three) into maths.
  */
 const katex = require("katex");
+const { normalizeTex } = require("../site/tex_preprocess");
 
 // KaTeX warns on every Unicode character it has no metrics for (º, ∆…);
 // it still renders, so keep the reports readable.
@@ -219,10 +220,15 @@ const norm = (s) =>
     .replace(/\\[a-z]+/g, " ")
     .replace(/[^a-z0-9]+/g, "");
 
-/** Maths that KaTeX cannot render, or TeX commands sitting in plain text. */
+/**
+ * Maths that KaTeX cannot render, or TeX commands in plain text that the
+ * app cannot draw. Read the way the app reads it: through `normalizeTex`
+ * first, which wraps a bare `0.\overline{3}` as maths (so it renders and
+ * is no longer a finding) and converts `\emph`, lists and the rest.
+ */
 function brokenLatex(value) {
   const out = [];
-  for (const p of splitMath(value)) {
+  for (const p of splitMath(normalizeTex(String(value ?? "")))) {
     if (p.math) {
       try {
         katex.renderToString(p.tex, { throwOnError: true, strict: "ignore" });
@@ -230,7 +236,10 @@ function brokenLatex(value) {
         out.push(`won't render: ${p.tex.slice(0, 50)}`);
       }
     } else {
-      const stray = p.raw.replace(/\\\$/g, "").match(/\\[a-zA-Z]+/g);
+      const stray = p.raw
+        .replace(/\\\$/g, "")
+        .replace(/\\(textbf|textit|underline|texttt|vspace)(?![a-zA-Z])/g, "")
+        .match(/\\[a-zA-Z]+/g);
       if (stray) out.push(`TeX outside maths: ${[...new Set(stray)].join(" ")}`);
     }
   }

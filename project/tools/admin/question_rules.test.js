@@ -61,7 +61,11 @@ assert.ok(rules({ text: "In the diagram, find x" }).includes("diagram-missing"))
 assert.ok(!rules({ text: "In the diagram, find x", imageId: "a" }).includes("diagram-missing"));
 assert.ok(!rules({ text: "Correct 0.002473 to 3 significant figures" }).includes("diagram-missing"));
 assert.ok(rules({ text: "Find \\(\\fra{1}{2}\\)" }).includes("raw-latex-question"));
-assert.ok(rules({ text: "Find \\frac{1}{2}" }).includes("raw-latex-question"));
+// A bare maths command renders since normalizeTex (2026-10-17), so it is no
+// longer a finding; a bare command nothing can draw still is (the control).
+assert.ok(!rules({ text: "Find \\frac{1}{2}" }).includes("raw-latex-question"));
+assert.ok(!rules({ text: "Express 0.\\overline{3} as a fraction" }).includes("raw-latex-question"));
+assert.ok(rules({ text: "Find \\notacommand{1}" }).includes("raw-latex-question"));
 assert.ok(!rules({ text: "It costs \\$5" }).includes("raw-latex-question"));
 assert.ok(rules({ text: "Q", explanation: "" }).includes("missing-explanation"));
 
@@ -73,6 +77,18 @@ const p612 = {
   correctIndex: 0,
 };
 assert.ok(rules(p612).includes("recurring-decimal-suspect"));
+// Fixed the way a reviewer fixes it — the recurring digits marked in the
+// stem, the matching answer marked — and the suspect clears.
+assert.ok(!rules({
+  ...p612,
+  text: "Express 0.\\overline{612} in the form \\(\\frac{x}{y}\\), where x and y are integers and y \\(\\neq\\) 0",
+  correctIndex: 1,
+}).includes("recurring-decimal-suspect"));
+assert.ok(!rules({
+  ...p612,
+  text: "Express \\(0.\\dot{6}1\\dot{2}\\) in the form \\(\\frac{x}{y}\\)",
+  correctIndex: 1,
+}).includes("recurring-decimal-suspect"));
 assert.ok(rules(p612).includes("stem-typo"));
 assert.match(R.recurringSuspect(p612), /B is 0\.\(612\) recurring; marked A/);
 // Control: no option is the recurring reading.

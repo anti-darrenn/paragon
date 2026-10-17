@@ -22,6 +22,7 @@ import '../../core/widgets/question_image.dart';
 import '../../core/widgets/question_source_badge.dart' show DifficultyBadge;
 import '../../core/widgets/ui/ui.dart';
 import 'admin_paths.dart';
+import '../../core/widgets/math_field/math_field.dart';
 import 'studio/launch_panels.dart' show contentAuditProvider;
 import 'studio/question_widgets.dart';
 import 'studio/staff_profile.dart';
@@ -68,14 +69,19 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
   bool _closeReports = true;
   bool _busy = false;
 
-  /// The text box the maths toolbar types into.
-  TextEditingController? _active;
+  /// Normal or LaTeX typing, shared by the boxes and the maths toolbar.
+  /// LaTeX first here: the bank is already written in it.
+  final _math = MathEditing(
+    prefsKey: 'studio',
+    initialMode: MathInputMode.latex,
+  );
 
   @override
   void dispose() {
     for (final c in [_stem, _explanation, _reason, ..._options]) {
       c.dispose();
     }
+    _math.dispose();
     super.dispose();
   }
 
@@ -203,6 +209,46 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     }
   }
 
+  /// Marks one content-audit finding as looked at and not a problem, with
+  /// a note that goes on the question's history.
+  Future<void> _markChecked(String rule) async {
+    final uid = ref.read(currentUserProvider)?.uid;
+    final current = _original;
+    if (uid == null || current == null) return;
+    final note = await showDialog<String>(
+      context: context,
+      builder: (_) => _MarkCheckedDialog(rule: rule),
+    );
+    if (note == null || !mounted) return;
+    setState(() => _busy = true);
+    try {
+      await ref
+          .read(adminQuestionRepositoryProvider)
+          .markChecked(
+            questionId: widget.questionId,
+            current: current,
+            rule: rule,
+            note: note,
+            uid: uid,
+          );
+      ref.invalidate(adminFlaggedQuestionProvider(widget.questionId));
+      ref.invalidate(questionHistoryProvider(widget.questionId));
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Marked checked. The audit will skip it from now on.'),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Couldn't save: $e")));
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
   Future<void> _dismissReports(FlaggedQuestion row) async {
     final uid = ref.read(currentUserProvider)?.uid;
     if (uid == null) return;
@@ -225,28 +271,6 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     } finally {
       if (mounted) setState(() => _busy = false);
     }
-  }
-
-  /// Types [snippet] at the cursor of the last box used. `|` marks where
-  /// the cursor lands, inside the braces.
-  void _insert(String snippet) {
-    final c = _active ?? _stem;
-    final sel = c.selection.isValid
-        ? c.selection
-        : TextSelection.collapsed(offset: c.text.length);
-    final caret = snippet.indexOf('|');
-    final clean = snippet.replaceFirst('|', '');
-    final picked = sel.textInside(c.text);
-    // Wrapping a selection: `\(` + selection + `\)`.
-    final text = caret >= 0 && picked.isNotEmpty
-        ? clean.substring(0, caret) + picked + clean.substring(caret)
-        : clean;
-    c.value = TextEditingValue(
-      text: c.text.replaceRange(sel.start, sel.end, text),
-      selection: TextSelection.collapsed(
-        offset: sel.start + (caret >= 0 ? caret + picked.length : text.length),
-      ),
-    );
   }
 
   @override
@@ -496,15 +520,17 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             children: [
               _FieldLabel(
                 'Question',
-                trailing: canEdit ? _MathToolbar(onInsert: _insert) : null,
               ),
+              if (canEdit) ...[
+                MathToolbar(editing: _math),
+                const SizedBox(height: 8),
+              ],
               _Box(
                 controller: _stem,
+                editing: _math,
                 enabled: canEdit,
                 minLines: 3,
-                hint: r'Maths goes in \( … \), e.g. \(x^{2} + 1\)',
                 error: fieldError('text'),
-                onFocus: () => _active = _stem,
               ),
               QuestionImage(assetId: q.question.imageId),
               const SizedBox(height: 18),
@@ -527,7 +553,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                           _correct = d.correctIndex;
                         })
                       : null,
-                  onFocus: () => _active = _options[i],
+                  editing: _math,
                 ),
               if (canEdit && _options.length < QuestionDraft.maxOptions)
                 Align(
@@ -550,11 +576,11 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
               _FieldLabel('Worked answer'),
               _Box(
                 controller: _explanation,
+                editing: _math,
                 enabled: canEdit,
                 minLines: 4,
                 hint: 'How to get the answer, step by step, in your own words',
                 error: fieldError('explanation'),
-                onFocus: () => _active = _explanation,
               ),
               QuestionImage.workedAnswer(
                 assetId: q.question.explanationImageId,
@@ -603,7 +629,11 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
           ),
         ),
         const SizedBox(height: 16),
-        _ChecksCard(issues: issues, questionId: widget.questionId),
+        _ChecksCard(
+          issues: issues,
+          stored: q,
+          onMarkChecked: canEdit && !_busy ? _markChecked : null,
+        ),
       ],
     );
   }
@@ -762,10 +792,9 @@ class _Banner extends StatelessWidget {
 }
 
 class _FieldLabel extends StatelessWidget {
-  const _FieldLabel(this.text, {this.helper, this.trailing});
+  const _FieldLabel(this.text, {this.helper});
   final String text;
   final String? helper;
-  final Widget? trailing;
 
   @override
   Widget build(BuildContext context) => Padding(
@@ -789,47 +818,40 @@ class _FieldLabel extends StatelessWidget {
               ),
             ),
           ),
-        ] else
-          const Spacer(),
-        ?trailing,
+        ],
       ],
     ),
   );
 }
 
+/// One text box of the question, typed in Normal or LaTeX mode. The
+/// student's view beside the editor is the preview, so the box has none.
 class _Box extends StatelessWidget {
   const _Box({
     required this.controller,
+    required this.editing,
     required this.enabled,
-    required this.onFocus,
     this.minLines = 1,
     this.hint,
     this.error,
   });
 
   final TextEditingController controller;
+  final MathEditing editing;
   final bool enabled;
-  final VoidCallback onFocus;
   final int minLines;
   final String? hint;
   final String? error;
 
   @override
-  Widget build(BuildContext context) => Focus(
-    onFocusChange: (has) {
-      if (has) onFocus();
-    },
-    child: TextField(
-      controller: controller,
-      readOnly: !enabled,
-      minLines: minLines,
-      maxLines: null,
-      style: AppTheme.bodyMd.copyWith(
-        color: context.palette.textPrimary,
-        height: 1.5,
-      ),
-      decoration: InputDecoration(hintText: hint, errorText: error),
-    ),
+  Widget build(BuildContext context) => MathField(
+    controller: controller,
+    editing: editing,
+    enabled: enabled,
+    minLines: minLines,
+    hint: hint,
+    error: error,
+    showPreview: false,
   );
 }
 
@@ -840,7 +862,7 @@ class _OptionEditor extends StatelessWidget {
     required this.isAnswer,
     required this.enabled,
     required this.onMark,
-    required this.onFocus,
+    required this.editing,
     this.onRemove,
     this.error,
   });
@@ -850,7 +872,7 @@ class _OptionEditor extends StatelessWidget {
   final bool isAnswer;
   final bool enabled;
   final VoidCallback onMark;
-  final VoidCallback onFocus;
+  final MathEditing editing;
   final VoidCallback? onRemove;
   final String? error;
 
@@ -906,8 +928,8 @@ class _OptionEditor extends StatelessWidget {
           Expanded(
             child: _Box(
               controller: controller,
+              editing: editing,
               enabled: enabled,
-              onFocus: onFocus,
               hint: 'Option ${optionLetter(index)}',
               error: error,
             ),
@@ -928,80 +950,38 @@ class _OptionEditor extends StatelessWidget {
   }
 }
 
-/// One tap for the maths students' questions use most. Types at the
-/// cursor of the last box used; wraps a selection where that makes sense.
-class _MathToolbar extends StatelessWidget {
-  const _MathToolbar({required this.onInsert});
-  final void Function(String) onInsert;
-
-  static const _snippets = <(String, String, String)>[
-    (r'\( \)', r'\(|\)', 'Maths'),
-    ('a/b', r'\frac{|}{}', 'Fraction'),
-    ('xⁿ', '^{|}', 'Power'),
-    ('x₁', '_{|}', 'Subscript'),
-    ('√', r'\sqrt{|}', 'Square root'),
-    ('×', r'\times ', 'Times'),
-    ('÷', r'\div ', 'Divide'),
-    ('°', r'^\circ', 'Degrees'),
-    ('π', r'\pi ', 'Pi'),
-    ('θ', r'\theta ', 'Theta'),
-    ('≤', r'\leq ', 'Less than or equal'),
-    ('≥', r'\geq ', 'Greater than or equal'),
-  ];
-
-  @override
-  Widget build(BuildContext context) => Flexible(
-    child: SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      reverse: true,
-      child: Row(
-        children: [
-          for (final (label, snippet, tip) in _snippets)
-            Tooltip(
-              message: tip,
-              child: InkWell(
-                // Keeps focus (and the cursor) in the box being edited.
-                canRequestFocus: false,
-                onTap: () => onInsert(snippet),
-                borderRadius: BorderRadius.circular(6),
-                child: Container(
-                  margin: const EdgeInsets.only(left: 4),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 8,
-                    vertical: 4,
-                  ),
-                  decoration: BoxDecoration(
-                    border: Border.all(color: context.palette.border),
-                    borderRadius: BorderRadius.circular(6),
-                  ),
-                  child: Text(
-                    label,
-                    style: AppTheme.caption.copyWith(
-                      color: context.palette.textPrimary,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-        ],
-      ),
-    ),
-  );
-}
-
 /// What is wrong, live as you type, then what the last content audit
 /// found on the stored question.
 class _ChecksCard extends ConsumerWidget {
-  const _ChecksCard({required this.issues, required this.questionId});
+  const _ChecksCard({
+    required this.issues,
+    required this.stored,
+    this.onMarkChecked,
+  });
   final List<DraftIssue> issues;
-  final String questionId;
+
+  /// The question as saved: what the audit's findings are about.
+  final ReviewedQuestion stored;
+
+  /// Null when this reviewer cannot edit the question.
+  final void Function(String rule)? onMarkChecked;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final palette = context.palette;
     final audit = ref.watch(contentAuditProvider).asData?.value;
-    final found = audit?.findingsFor(questionId) ?? const [];
-    if (issues.isEmpty && found.isEmpty) {
+    final found = audit?.findingsFor(stored.question.id) ?? const [];
+    // Saved or marked checked since the audit read it: fixed, as far as
+    // anyone can tell until the next audit runs.
+    final live = [
+      for (final f in found)
+        if (!audit!.isCleared(stored, f.rule)) f,
+    ];
+    final cleared = [
+      for (final f in found)
+        if (audit!.isCleared(stored, f.rule)) f,
+    ];
+    if (issues.isEmpty && live.isEmpty && cleared.isEmpty) {
       return const _Banner(
         icon: Icons.check_circle_outline_rounded,
         color: AppColors.correct,
@@ -1020,24 +1000,104 @@ class _ChecksCard extends ConsumerWidget {
               color: i.blocks ? AppColors.wrong : AppColors.warning,
               text: i.message,
             ),
-          if (found.isNotEmpty) ...[
+          if (live.isNotEmpty) ...[
             if (issues.isNotEmpty) const Divider(height: 20),
             Text(
               'The last content audit (on the stored question)',
               style: AppTheme.caption.copyWith(color: palette.textSecondary),
             ),
             const SizedBox(height: 6),
-            for (final f in found)
+            for (final f in live)
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: _CheckLine(
+                      icon: Icons.manage_search_rounded,
+                      color: f.level == 'B'
+                          ? palette.textSecondary
+                          : AppColors.wrong,
+                      text:
+                          '${f.rule.replaceAll('-', ' ')}'
+                          '${f.detail.isEmpty ? '' : ': ${f.detail}'}',
+                    ),
+                  ),
+                  if (onMarkChecked != null)
+                    TextButton(
+                      onPressed: () => onMarkChecked!(f.rule),
+                      child: const Text('Mark checked'),
+                    ),
+                ],
+              ),
+            Text(
+              'Fix the question and save, or mark a finding checked if it '
+              'is not a problem. Either clears it here at once; the audit '
+              'itself re-runs nightly.',
+              style: AppTheme.caption.copyWith(color: palette.textSecondary),
+            ),
+          ],
+          if (cleared.isNotEmpty) ...[
+            if (issues.isNotEmpty || live.isNotEmpty) const Divider(height: 20),
+            for (final f in cleared)
               _CheckLine(
-                icon: Icons.manage_search_rounded,
-                color: f.level == 'B' ? palette.textSecondary : AppColors.wrong,
-                text:
-                    '${f.rule.replaceAll('-', ' ')}'
-                    '${f.detail.isEmpty ? '' : ': ${f.detail}'}',
+                icon: Icons.check_circle_outline_rounded,
+                color: AppColors.correct,
+                text: stored.auditDismissed.contains(f.rule)
+                    ? '${f.rule.replaceAll('-', ' ')}: marked checked'
+                    : '${f.rule.replaceAll('-', ' ')}: fixed since the last '
+                          'audit',
               ),
           ],
         ],
       ),
+    );
+  }
+}
+
+/// Asks why a finding is not a problem. The answer goes on the history.
+class _MarkCheckedDialog extends StatefulWidget {
+  const _MarkCheckedDialog({required this.rule});
+  final String rule;
+
+  @override
+  State<_MarkCheckedDialog> createState() => _MarkCheckedDialogState();
+}
+
+class _MarkCheckedDialogState extends State<_MarkCheckedDialog> {
+  final _note = TextEditingController();
+
+  @override
+  void dispose() {
+    _note.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: Text('Mark "${widget.rule.replaceAll('-', ' ')}" checked'),
+      content: TextField(
+        controller: _note,
+        autofocus: true,
+        maxLength: 300,
+        decoration: const InputDecoration(
+          labelText: 'Why it is not a problem',
+          hintText: 'e.g. Checked against the 2018 paper: 0.612 is as printed',
+        ),
+        onChanged: (_) => setState(() {}),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: const Text('Cancel'),
+        ),
+        FilledButton(
+          onPressed: _note.text.trim().length < 3
+              ? null
+              : () => Navigator.of(context).pop(_note.text.trim()),
+          child: const Text('Mark checked'),
+        ),
+      ],
     );
   }
 }
