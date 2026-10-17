@@ -85,6 +85,23 @@ void main() {
       r'2(x + 1)': '2 open bracket x plus 1 close bracket',
       r'\left( x \right)': 'open bracket x close bracket',
       r'1{,}000': '1,000',
+      // Matrices and vectors (6,828 in the generated questions)
+      r'\begin{pmatrix} 5 & 2 \\ 3 & -7 \end{pmatrix}':
+          'the matrix, row 1: 5, 2; row 2: 3, minus 7; end of matrix',
+      r'\begin{vmatrix} a & b \\ c & d \end{vmatrix}':
+          'the determinant, row 1: a, b; row 2: c, d; end of determinant',
+      r'\begin{pmatrix} 3 \\ -2 \end{pmatrix}': 'the column vector 3, minus 2',
+      r'\begin{pmatrix} \frac{1}{2} & 0 \\ 0 & 1 \end{pmatrix}':
+          'the matrix, row 1: one half, 0; row 2: 0, 1; end of matrix',
+      // Recurring dots, and the log's bar (WAEC's \(\overline{2}\).9250)
+      r'0.\dot{3}': '0 point 3 recurring',
+      r'0.1\dot{6}': '0 point 1, 6 recurring',
+      r'0.\dot{1}2\dot{3}': '0 point 1 2 3 recurring',
+      r'0.\overline{12}': '0 point 1 2 recurring',
+      r'\dot{x}': 'x dot',
+      r'\overline{2}': 'bar 2',
+      r'\overline{x}': 'x bar',
+      r'\overline{AB}': 'line A B',
       // Anything unknown is "expression", never a backslash
       r'\mathscr{L}': 'expression',
       r'\foo': 'expression',

@@ -542,7 +542,9 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                 error: fieldError('explanation'),
                 onFocus: () => _active = _explanation,
               ),
-              QuestionImage(assetId: q.question.explanationImageId),
+              QuestionImage.workedAnswer(
+                assetId: q.question.explanationImageId,
+              ),
               const SizedBox(height: 10),
               SwitchListTile.adaptive(
                 contentPadding: EdgeInsets.zero,
