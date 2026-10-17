@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../core/content/subject_catalog.dart';
 import '../../core/providers/auth_provider.dart';
+import '../../core/questions/difficulty.dart';
 import '../../core/questions/question_draft.dart';
 import '../../core/repositories/admin_flag_repository.dart';
 import '../../core/repositories/admin_question_repository.dart';
@@ -18,6 +19,7 @@ import '../../core/widgets/answer_option.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 import '../../core/widgets/question_image.dart';
+import '../../core/widgets/question_source_badge.dart' show DifficultyBadge;
 import '../../core/widgets/ui/ui.dart';
 import 'admin_paths.dart';
 import 'studio/launch_panels.dart' show contentAuditProvider;
@@ -57,6 +59,9 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
   final List<TextEditingController> _options = [];
   int _correct = -1;
   bool _live = true;
+
+  /// The reviewer's tier, or null for Paragon's estimate.
+  int? _difficulty;
   bool _closeReports = true;
   bool _busy = false;
 
@@ -77,6 +82,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     correctIndex: _correct,
     explanation: _explanation.text,
     hasAnswer: _live,
+    difficulty: _difficulty,
   );
 
   bool get _dirty =>
@@ -99,6 +105,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
       ..addAll([for (final o in d.options) _watched(o)]);
     _correct = d.correctIndex;
     _live = d.hasAnswer;
+    _difficulty = d.difficulty;
     _loading = false;
   }
 
@@ -250,6 +257,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
           correctIndex: q.question.correctIndex,
           explanation: q.question.explanation,
           hasAnswer: q.hasAnswer,
+          difficulty: q.question.difficulty,
         ),
         asOriginal: true,
       );
@@ -565,6 +573,17 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                     color: palette.textSecondary,
                   ),
                 ),
+              ),
+              const SizedBox(height: 8),
+              _DifficultyPicker(
+                value: _difficulty,
+                estimate: estimateDifficulty(
+                  _draft.text,
+                  _draft.options,
+                  hasDiagram: q.question.imageId != null,
+                ),
+                enabled: canEdit,
+                onChanged: (v) => setState(() => _difficulty = v),
               ),
             ],
           ),
@@ -1316,4 +1335,55 @@ String _date(DateTime d) {
     'Dec',
   ];
   return '${d.day} ${months[d.month - 1]} ${d.year}';
+}
+
+/// How hard the question is: Paragon's estimate unless a reviewer says
+/// otherwise. Students see it beside the question (never in a timed exam).
+class _DifficultyPicker extends StatelessWidget {
+  const _DifficultyPicker({
+    required this.value,
+    required this.estimate,
+    required this.enabled,
+    required this.onChanged,
+  });
+
+  final int? value;
+  final DifficultyTier estimate;
+  final bool enabled;
+  final ValueChanged<int?> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.palette;
+    final shown = DifficultyTier.fromLevel(value) ?? estimate;
+    return Wrap(
+      spacing: 12,
+      runSpacing: 4,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: [
+        Text(
+          'Difficulty',
+          style: AppTheme.bodyMd.copyWith(
+            color: palette.textPrimary,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        DifficultyBadge(tier: shown, estimated: value == null),
+        DropdownButton<int?>(
+          value: value,
+          underline: const SizedBox.shrink(),
+          dropdownColor: palette.surface,
+          onChanged: enabled ? onChanged : null,
+          items: [
+            DropdownMenuItem(
+              value: null,
+              child: Text("Paragon's estimate (${estimate.label})"),
+            ),
+            for (final t in DifficultyTier.values)
+              DropdownMenuItem(value: t.level, child: Text(t.label)),
+          ],
+        ),
+      ],
+    );
+  }
 }

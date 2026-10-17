@@ -44,20 +44,32 @@ void main() {
     expect(_q(source: 'drill').provenanceLabel, isNull);
   });
 
-  testWidgets('the badge shows the label and draws nothing when unknown', (
+  testWidgets('the badge shows the source and the difficulty tier', (
     tester,
   ) async {
-    Future<void> pump(Question q) => tester.pumpWidget(
-      MaterialApp(
-        theme: AppTheme.dark,
-        home: Scaffold(body: QuestionSourceBadge(question: q)),
-      ),
-    );
+    Future<void> pump(Question q, {bool showDifficulty = true}) =>
+        tester.pumpWidget(
+          MaterialApp(
+            theme: AppTheme.dark,
+            home: Scaffold(
+              body: QuestionSourceBadge(
+                question: q,
+                showDifficulty: showDifficulty,
+              ),
+            ),
+          ),
+        );
     await pump(_q(year: 2018));
     expect(find.text('WAEC 2018'), findsOneWidget);
+    expect(find.text(_q(year: 2018).tier.label), findsOneWidget);
     await pump(_q(source: 'drill', origin: 'ai_generated'));
     expect(find.text('Paragon practice'), findsOneWidget);
+    // An unclassified question has no source to name, but still a tier.
     await pump(_q(source: 'drill'));
+    expect(find.text('Paragon practice'), findsNothing);
+    expect(find.text(_q(source: 'drill').tier.label), findsOneWidget);
+    // CONTROL: the timed exam hides difficulty, so this draws nothing.
+    await pump(_q(source: 'drill'), showDifficulty: false);
     expect(find.byType(Text), findsNothing);
   });
 }

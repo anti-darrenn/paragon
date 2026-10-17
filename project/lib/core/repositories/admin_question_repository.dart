@@ -211,6 +211,9 @@ class AdminQuestionRepository {
       // So an answer change can still be reverted from the report screen.
       if (after.correctIndex != before.correctIndex)
         'previousCorrectIndex': before.correctIndex,
+      // Back to the estimate: the reviewer's level is removed.
+      if (after.difficulty == null && before.difficulty != null)
+        'difficulty': FieldValue.delete(),
       'editedAt': FieldValue.serverTimestamp(),
       'editedBy': uid,
       'lastEditId': history.id,

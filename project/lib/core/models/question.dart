@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../questions/difficulty.dart';
 import 'firestore_parsing.dart';
 
 class Question {
@@ -30,6 +31,10 @@ class Question {
   /// A picture belonging to the worked answer, shown with the explanation.
   final String? explanationImageId;
 
+  /// A reviewer's own difficulty level, 1–5, set in the studio; null on
+  /// almost every question, whose [tier] is then estimated.
+  final int? difficulty;
+
   const Question({
     required this.id,
     required this.topicId,
@@ -44,6 +49,7 @@ class Question {
     this.hasInsight = false,
     this.imageId,
     this.explanationImageId,
+    this.difficulty,
   });
 
   factory Question.fromFirestore(DocumentSnapshot doc) {
@@ -65,8 +71,18 @@ class Question {
       hasInsight: asBool(d['hasInsight']),
       imageId: asStringOrNull(d['imageId']),
       explanationImageId: asStringOrNull(d['explanationImageId']),
+      difficulty: asIntOrNull(d['difficulty']),
     );
   }
+
+  /// How hard this question is: the reviewer's level when one is set,
+  /// otherwise Paragon's estimate (`lib/core/questions/difficulty.dart`).
+  DifficultyTier get tier =>
+      DifficultyTier.fromLevel(difficulty) ??
+      estimateDifficulty(text, options, hasDiagram: imageId != null);
+
+  /// Whether [tier] is a person's judgement rather than the estimate.
+  bool get tierIsSet => DifficultyTier.fromLevel(difficulty) != null;
 
   /// Written by Paragon's generators, not taken from an exam paper.
   bool get isGenerated => origin == 'ai_generated';
@@ -104,6 +120,7 @@ class Question {
     'hasInsight': hasInsight,
     'imageId': imageId,
     'explanationImageId': explanationImageId,
+    'difficulty': difficulty,
   };
 
   /// The inverse of [toJson], as forgiving as [Question.fromFirestore]:
@@ -122,5 +139,6 @@ class Question {
     hasInsight: asBool(d['hasInsight']),
     imageId: asStringOrNull(d['imageId']),
     explanationImageId: asStringOrNull(d['explanationImageId']),
+    difficulty: asIntOrNull(d['difficulty']),
   );
 }

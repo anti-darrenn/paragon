@@ -10,6 +10,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
+import '../../../core/widgets/question_source_badge.dart' show DifficultyBadge;
 import '../admin_paths.dart';
 
 /// Pieces every question list in the studio shares: the browser, the
@@ -135,6 +136,7 @@ class QuestionListCard extends ConsumerWidget {
                               : AppColors.primary,
                         ),
                         if (topic != null) StudioTag(topic.name),
+                        DifficultyBadge(tier: q.tier, estimated: !q.tierIsSet),
                         if (!question.hasAnswer)
                           const StudioTag(
                             'Hidden from students',

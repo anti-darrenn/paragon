@@ -116,6 +116,41 @@ void main() {
     );
   });
 
+  test(
+    'a reviewer sets a difficulty tier, then hands it back to the estimate',
+    () async {
+      final db = await _seed();
+      final repo = AdminQuestionRepository(db);
+      final before = QuestionDraft.fromMap(
+        (await db.doc('questions/q1').get()).data()!,
+      );
+      expect(before.difficulty, isNull);
+      final spicy = before.copyWith(difficulty: () => 4);
+      expect(spicy.changedFrom(before), {'difficulty'});
+      await repo.save(
+        questionId: 'q1',
+        before: before,
+        after: spicy,
+        reason: 'Harder than it looks',
+        uid: 'rev',
+      );
+      expect((await db.doc('questions/q1').get()).data()!['difficulty'], 4);
+
+      final back = spicy.copyWith(difficulty: () => null);
+      await repo.save(
+        questionId: 'q1',
+        before: spicy,
+        after: back,
+        reason: 'Estimate is fine',
+        uid: 'rev',
+      );
+      expect(
+        (await db.doc('questions/q1').get()).data()!.containsKey('difficulty'),
+        isFalse,
+      );
+    },
+  );
+
   group('browse', () {
     test('a paper, a page at a time, in id order', () async {
       final repo = AdminQuestionRepository(await _seed());

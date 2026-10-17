@@ -16,6 +16,7 @@ class QuestionDraft {
     required this.correctIndex,
     required this.explanation,
     required this.hasAnswer,
+    this.difficulty,
   });
 
   final String text;
@@ -28,6 +29,10 @@ class QuestionDraft {
   /// False keeps the question out of drill, WAEC, tests and exercises.
   final bool hasAnswer;
 
+  /// A reviewer's difficulty level, 1–5; null leaves it to the estimate
+  /// (`difficulty.dart`).
+  final int? difficulty;
+
   /// The most options the rules accept (WAEC papers use four or five).
   static const maxOptions = 6;
   static const minOptions = 2;
@@ -38,12 +43,14 @@ class QuestionDraft {
     int? correctIndex,
     String? explanation,
     bool? hasAnswer,
+    int? Function()? difficulty,
   }) => QuestionDraft(
     text: text ?? this.text,
     options: options ?? this.options,
     correctIndex: correctIndex ?? this.correctIndex,
     explanation: explanation ?? this.explanation,
     hasAnswer: hasAnswer ?? this.hasAnswer,
+    difficulty: difficulty != null ? difficulty() : this.difficulty,
   );
 
   /// Removes option [i], keeping the marked answer on the same option (or
@@ -65,6 +72,7 @@ class QuestionDraft {
     'correctIndex': correctIndex,
     'explanation': explanation.trim(),
     'hasAnswer': hasAnswer,
+    'difficulty': ?difficulty,
   };
 
   /// Field names whose stored value differs from [other]'s.
@@ -86,6 +94,12 @@ class QuestionDraft {
     correctIndex: d['correctIndex'] is int ? d['correctIndex'] as int : -1,
     explanation: '${d['explanation'] ?? ''}',
     hasAnswer: d['hasAnswer'] == true,
+    difficulty:
+        d['difficulty'] is int &&
+            (d['difficulty'] as int) >= 1 &&
+            (d['difficulty'] as int) <= 5
+        ? d['difficulty'] as int
+        : null,
   );
 }
 
