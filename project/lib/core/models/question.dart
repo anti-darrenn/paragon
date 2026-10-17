@@ -35,6 +35,12 @@ class Question {
   /// almost every question, whose [tier] is then estimated.
   final int? difficulty;
 
+  /// Other topics this question also counts for (owner's decision,
+  /// 2026-10-17). [topicId] stays the main one: counts, the static site's
+  /// topic of record and mastery attribution follow it. Drill, topic tests
+  /// and exercises for any of these topics can serve it too.
+  final List<String> alsoTopicIds;
+
   const Question({
     required this.id,
     required this.topicId,
@@ -50,6 +56,7 @@ class Question {
     this.imageId,
     this.explanationImageId,
     this.difficulty,
+    this.alsoTopicIds = const [],
   });
 
   factory Question.fromFirestore(DocumentSnapshot doc) {
@@ -72,6 +79,7 @@ class Question {
       imageId: asStringOrNull(d['imageId']),
       explanationImageId: asStringOrNull(d['explanationImageId']),
       difficulty: asIntOrNull(d['difficulty']),
+      alsoTopicIds: asStringList(d['alsoTopicIds']),
     );
   }
 
@@ -121,6 +129,7 @@ class Question {
     'imageId': imageId,
     'explanationImageId': explanationImageId,
     'difficulty': difficulty,
+    'alsoTopicIds': alsoTopicIds,
   };
 
   /// The inverse of [toJson], as forgiving as [Question.fromFirestore]:
@@ -140,5 +149,6 @@ class Question {
     imageId: asStringOrNull(d['imageId']),
     explanationImageId: asStringOrNull(d['explanationImageId']),
     difficulty: asIntOrNull(d['difficulty']),
+    alsoTopicIds: asStringList(d['alsoTopicIds']),
   );
 }

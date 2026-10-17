@@ -68,17 +68,6 @@ final _searchRowsProvider = FutureProvider<List<_SearchRow>>((ref) async {
   }
 });
 
-/// Every topic of a subject, in course order, for the topic picker.
-final _subjectTopicsProvider = FutureProvider.family<List<Topic>, String>((
-  ref,
-  subjectId,
-) async {
-  final units = await ref.watch(unitsProvider(subjectId).future);
-  return [
-    for (final u in units) ...await ref.watch(topicsProvider(u.id).future),
-  ];
-});
-
 final _idPattern = RegExp(r'^[A-Za-z0-9]{20}$');
 
 class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
@@ -90,6 +79,9 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
   bool _live = true;
 
   final List<ReviewedQuestion> _rows = [];
+
+  /// Questions that also count for the chosen topic (main topic elsewhere).
+  List<ReviewedQuestion> _also = const [];
   DocumentSnapshot? _last;
   bool _hasMore = false;
   bool _loading = false;
@@ -120,6 +112,7 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
       _error = null;
       if (!more) {
         _rows.clear();
+        _also = const [];
         _last = null;
       }
     });
@@ -130,6 +123,7 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
       if (!mounted || _filter != f) return;
       setState(() {
         _rows.addAll(page.questions);
+        if (!more) _also = page.also;
         _last = page.last;
         _hasMore = page.hasMore;
         _loaded = f;
@@ -234,7 +228,7 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
         : ref.watch(waecYearRangeProvider(subjectId)).asData?.value;
     final topics = subjectId == null
         ? const <Topic>[]
-        : ref.watch(_subjectTopicsProvider(subjectId)).asData?.value ??
+        : ref.watch(subjectTopicsProvider(subjectId)).asData?.value ??
               const <Topic>[];
 
     return Wrap(
@@ -342,7 +336,10 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
               const <FlaggedQuestion>[])
         r.questionId: r.openReports.length,
     };
-    final ids = [for (final q in _rows) q.question.id];
+    final ids = [
+      for (final q in _rows) q.question.id,
+      for (final q in _also) q.question.id,
+    ];
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -366,6 +363,23 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
               onTap: () => openQuestion(context, ref, q.question.id, list: ids),
             ),
           ),
+        if (_also.isNotEmpty) ...[
+          const SizedBox(height: 12),
+          const GroupLabel('Also count for this topic'),
+          for (final q in _also)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: QuestionListCard(
+                question: q,
+                findings: (byId[q.question.id] ?? const [])
+                    .where((f) => f.$1 != 'missing-explanation')
+                    .toList(),
+                openReports: reports[q.question.id] ?? 0,
+                onTap: () =>
+                    openQuestion(context, ref, q.question.id, list: ids),
+              ),
+            ),
+        ],
         if (_hasMore)
           Center(
             child: OutlinedButton(

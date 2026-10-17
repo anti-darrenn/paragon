@@ -17,6 +17,7 @@ class QuestionDraft {
     required this.explanation,
     required this.hasAnswer,
     this.difficulty,
+    this.alsoTopicIds = const [],
   });
 
   final String text;
@@ -33,6 +34,12 @@ class QuestionDraft {
   /// (`difficulty.dart`).
   final int? difficulty;
 
+  /// Other topics it also counts for (never its own, at most
+  /// [maxAlsoTopics]); empty for almost every question.
+  final List<String> alsoTopicIds;
+
+  static const maxAlsoTopics = 5;
+
   /// The most options the rules accept (WAEC papers use four or five).
   static const maxOptions = 6;
   static const minOptions = 2;
@@ -44,6 +51,7 @@ class QuestionDraft {
     String? explanation,
     bool? hasAnswer,
     int? Function()? difficulty,
+    List<String>? alsoTopicIds,
   }) => QuestionDraft(
     text: text ?? this.text,
     options: options ?? this.options,
@@ -51,6 +59,7 @@ class QuestionDraft {
     explanation: explanation ?? this.explanation,
     hasAnswer: hasAnswer ?? this.hasAnswer,
     difficulty: difficulty != null ? difficulty() : this.difficulty,
+    alsoTopicIds: alsoTopicIds ?? this.alsoTopicIds,
   );
 
   /// Removes option [i], keeping the marked answer on the same option (or
@@ -73,6 +82,7 @@ class QuestionDraft {
     'explanation': explanation.trim(),
     'hasAnswer': hasAnswer,
     'difficulty': ?difficulty,
+    if (alsoTopicIds.isNotEmpty) 'alsoTopicIds': [...alsoTopicIds],
   };
 
   /// Field names whose stored value differs from [other]'s.
@@ -100,6 +110,11 @@ class QuestionDraft {
             (d['difficulty'] as int) <= 5
         ? d['difficulty'] as int
         : null,
+    alsoTopicIds: [
+      for (final t
+          in (d['alsoTopicIds'] is List ? d['alsoTopicIds'] as List : const []))
+        '$t',
+    ],
   );
 }
 

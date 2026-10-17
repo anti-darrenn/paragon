@@ -81,8 +81,17 @@ class QuestionFilter {
 }
 
 class QuestionPage {
-  const QuestionPage(this.questions, this.last, {required this.hasMore});
+  const QuestionPage(
+    this.questions,
+    this.last, {
+    required this.hasMore,
+    this.also = const [],
+  });
   final List<ReviewedQuestion> questions;
+
+  /// On a topic's first page: questions whose main topic is elsewhere but
+  /// which also count for this one (`alsoTopicIds`).
+  final List<ReviewedQuestion> also;
   final DocumentSnapshot? last;
   final bool hasMore;
 }
@@ -160,10 +169,29 @@ class AdminQuestionRepository {
     q = q.limit(pageSize + 1);
     final snap = await q.get().metered();
     final docs = snap.docs.take(pageSize).toList();
+    var also = const <ReviewedQuestion>[];
+    if (filter.topicId != null && after == null) {
+      try {
+        final extra = await _questions
+            .where('alsoTopicIds', arrayContains: filter.topicId)
+            .where('hasAnswer', isEqualTo: filter.live)
+            .limit(50)
+            .get()
+            .metered();
+        also = [
+          for (final d in extra.docs)
+            if ('${d.data()['source']}' == filter.kind.source)
+              ReviewedQuestion.fromFirestore(d),
+        ];
+      } on FirebaseException {
+        // The index still building: the topic's own questions still list.
+      }
+    }
     return QuestionPage(
       [for (final d in docs) ReviewedQuestion.fromFirestore(d)],
       docs.isEmpty ? null : docs.last,
       hasMore: snap.docs.length > pageSize,
+      also: also,
     );
   }
 
@@ -214,6 +242,8 @@ class AdminQuestionRepository {
       // Back to the estimate: the reviewer's level is removed.
       if (after.difficulty == null && before.difficulty != null)
         'difficulty': FieldValue.delete(),
+      if (after.alsoTopicIds.isEmpty && before.alsoTopicIds.isNotEmpty)
+        'alsoTopicIds': FieldValue.delete(),
       'editedAt': FieldValue.serverTimestamp(),
       'editedBy': uid,
       'lastEditId': history.id,
