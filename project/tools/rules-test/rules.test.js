@@ -27,6 +27,7 @@ const {
   query,
   where,
   serverTimestamp,
+  writeBatch,
 } = require("firebase/firestore");
 
 let passed = 0;
@@ -116,6 +117,41 @@ async function main() {
       hasAnswer: true, reviewedAt: serverTimestamp(), reviewedBy: "someone",
     })),
   );
+
+  console.log("\nQuestion edits in the studio: only with a history record");
+  // One batch: the question, and history/{lastEditId} signed by the editor.
+  const edit = (db, { id = "e1", by = "rev", q = {}, history = true } = {}) => {
+    const b = writeBatch(db);
+    if (history) {
+      b.set(doc(db, `questions/q1/history/${id}`), {
+        by, at: serverTimestamp(), reason: "typo", before: { text: "2+2?" }, after: { text: "What is 2 + 2?" },
+      });
+    }
+    b.update(doc(db, "questions/q1"), {
+      text: "What is 2 + 2?", options: ["3", "4"], correctIndex: 1, explanation: "", hasAnswer: true,
+      editedAt: serverTimestamp(), editedBy: "rev", lastEditId: id, ...q,
+    });
+    return b.commit();
+  };
+  const otherSubjectReviewer = () =>
+    env.authenticatedContext("rev", { reviewer: true, subjects: ["s2"], firebase: { sign_in_provider: "google.com" } }).firestore();
+  await check("a reviewer edits a question with its history record", assertSucceeds(edit(reviewer())));
+  await check("not without the record", assertFails(edit(reviewer(), { id: "e2", history: false })));
+  await check("not with a record signed by someone else", assertFails(edit(reviewer(), { id: "e3", by: "someone" })));
+  await check("not the topic (seeder-only)", assertFails(edit(reviewer(), { id: "e4", q: { topicId: "t2" } })));
+  await check("not an answer past the options", assertFails(edit(reviewer(), { id: "e5", q: { correctIndex: 2 } })));
+  await check(
+    "not live with no answer marked",
+    assertFails(edit(reviewer(), { id: "e6", q: { correctIndex: -1, hasAnswer: true } })),
+  );
+  await check("not in a subject outside the reviewer's", assertFails(edit(otherSubjectReviewer(), { id: "e7" })));
+  await check("a student cannot edit at all", assertFails(edit(student(), { id: "e8", by: "ann" })));
+  await check(
+    "history is append-only",
+    assertFails(updateDoc(doc(reviewer(), "questions/q1/history/e1"), { reason: "rewritten" })),
+  );
+  await check("a student cannot read the history", assertFails(getDoc(doc(student(), "questions/q1/history/e1"))));
+
   await check(
     "a student cannot change a topic's counts",
     assertFails(updateDoc(doc(student(), "topics/t1"), { pastQuestionCount: 999 })),

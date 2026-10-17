@@ -17,15 +17,40 @@ service cloud.firestore {
         && request.resource.data.lessonCount is int
         && request.resource.data.lessonCount >= 0;
     }
-    // Questions are Admin-SDK-only except for one path: a reviewer
-    // resolving a student's problem report in the studio. That can change
-    // the marked answer or retire the question, nothing else — stem,
-    // options and topic stay seeder-only. `previousCorrectIndex` is written
-    // alongside every answer change so a bad fix can be reverted.
+    // Questions are Admin-SDK-only except for two reviewer paths in the
+    // content studio, both limited to the reviewer's subjects:
+    //
+    // 1. Resolving a student's problem report: change the marked answer or
+    //    retire the question, nothing else. `previousCorrectIndex` is
+    //    written alongside every answer change so a bad fix can be reverted.
+    // 2. Editing the question (stem, options, answer, explanation): the
+    //    owner's decision, 2026-10-17. Every edit names a `lastEditId`, and
+    //    the same batch must create `history/{lastEditId}` signed by the same
+    //    reviewer with the before and after: no edit without a record, and
+    //    every record can be restored. Subject, topic, source, year and
+    //    origin stay seeder-only.
     match /questions/{id} {
       allow read: if request.auth != null;
       allow update: if reviews(resource.data.subjectId)
-        && request.resource.data.diff(resource.data).affectedKeys()
+        && (resolvesReport() || editsQuestion(id));
+
+      // The record of every studio edit. Append-only: a history that could
+      // be rewritten would prove nothing.
+      match /history/{editId} {
+        allow read: if isReviewer();
+        allow create: if reviews(get(/databases/$(database)/documents/questions/$(id)).data.subjectId)
+          && request.resource.data.keys().hasOnly(['by', 'at', 'reason', 'before', 'after'])
+          && request.resource.data.by == request.auth.uid
+          && request.resource.data.at == request.time
+          && request.resource.data.reason is string
+          && request.resource.data.reason.size() <= 500
+          && request.resource.data.before is map
+          && request.resource.data.after is map;
+      }
+    }
+
+    function resolvesReport() {
+      return request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['correctIndex', 'previousCorrectIndex', 'hasAnswer',
                        'reviewedAt', 'reviewedBy'])
         && request.resource.data.hasAnswer is bool
@@ -37,6 +62,28 @@ service cloud.firestore {
                 && request.resource.data.correctIndex >= 0
                 && request.resource.data.correctIndex
                      < resource.data.options.size()));
+    }
+
+    function editsQuestion(id) {
+      let q = request.resource.data;
+      return q.diff(resource.data).affectedKeys()
+             .hasOnly(['text', 'options', 'correctIndex', 'previousCorrectIndex',
+                       'explanation', 'hasAnswer', 'editedAt', 'editedBy',
+                       'lastEditId'])
+        && q.editedBy == request.auth.uid
+        && q.editedAt == request.time
+        && q.lastEditId is string
+        && q.text is string && q.text.size() > 0 && q.text.size() <= 5000
+        && q.options is list && q.options.size() >= 2 && q.options.size() <= 6
+        && q.explanation is string && q.explanation.size() <= 20000
+        && q.hasAnswer is bool
+        && q.correctIndex is int
+        && q.correctIndex >= -1
+        && q.correctIndex < q.options.size()
+        // A question students see must have a marked answer.
+        && (!q.hasAnswer || q.correctIndex >= 0)
+        && getAfter(/databases/$(database)/documents/questions/$(id)/history/$(q.lastEditId)).data.by
+             == request.auth.uid;
     }
 
     // ── LEARN RESOURCES ─────────────────────────────────────────

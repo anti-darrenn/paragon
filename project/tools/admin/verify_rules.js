@@ -1706,6 +1706,21 @@ async function content(a) {
       DENY,
       await commit(a.idToken, write(questionPath, { hasAnswer: bool(false) })),
     );
+    // The studio's edit path (2026-10-17) is reviewer-only, and needs a
+    // history record in the same batch; a student gets neither.
+    expectOutcome(
+      "a student cannot edit a question's text",
+      DENY,
+      await commit(a.idToken, write(questionPath, { text: str('rewritten'), lastEditId: str('zz_verify') })),
+    );
+    expectOutcome(
+      "a student cannot write a question's edit history",
+      DENY,
+      await commit(
+        a.idToken,
+        write(`${questionPath}/history/zz_verify`, { by: str(a.uid), reason: str('x') }),
+      ),
+    );
   }
 
   // ── The review workflow (docs/CONTENT_ROLES.md) ──
