@@ -310,7 +310,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-161 checks; the username suite signs up two throwaway `example.com` password
+168 checks; the username suite signs up two throwaway `example.com` password
 accounts, because reservations refuse guests. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have. **CI does**: `.github/workflows/ci.yml` runs `tools/rules-test/rules.test.js`
