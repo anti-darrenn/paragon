@@ -11,6 +11,7 @@ library;
 /// Firebase Auth needs it as an authorised domain (docs/LAUNCH_CHECKLIST.md).
 const String kSiteOrigin = 'https://paragon-hq.web.app';
 
-/// The line under the logo on the welcome screen. A plain placeholder
-/// while the owner chooses from the options in docs/COPY.md.
-const String kTagline = 'Free WAEC prep. Still a work in progress.';
+/// The line under the logo on the welcome screen. "To be determined" by
+/// the owner's choice (2026-10-17) until one of the options in
+/// docs/COPY.md is picked.
+const String kTagline = 'To be determined';
