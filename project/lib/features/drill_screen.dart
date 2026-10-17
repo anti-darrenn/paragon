@@ -451,7 +451,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                               fontSize: 14,
                             ),
                           ),
-                        QuestionImage(assetId: q.explanationImageId),
+                        QuestionImage.workedAnswer(assetId: q.explanationImageId),
                       ],
                     ),
                   ),

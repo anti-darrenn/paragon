@@ -38,9 +38,68 @@ String speakText(String source) {
 
 /// Pure maths (no delimiters) as spoken text.
 String speakMath(String latex) {
-  final parser = _MathParser(_tokenize(latex));
+  final parser = _MathParser(_tokenize(_speakEnvironments(latex)));
   final words = parser.parseSequence();
   return _tidy(_finishMath(words.join(' ')));
+}
+
+// ─── Matrices and recurring decimals ──────────────────────────────────
+
+/// A decimal with recurring digits: `0.\dot{3}`, `0.1\dot{6}`,
+/// `0.\dot{1}2\dot{3}` (dots over the first and last of the cycle), or a
+/// bar over them after the point, `0.\overline{12}`. A bar with no
+/// decimal point before it is a log characteristic and is left alone.
+final _recurring = RegExp(
+  r'(\d+)\.(\d*?)(?:\\dot\{?(\d)\}?(?:(\d*)\\dot\{?(\d)\}?)?|\\overline\{(\d+)\})',
+);
+
+final _environment = RegExp(
+  r'\\begin\{([pbvBV]?matrix|array)\}(?:\{[^}]*\})?(.*?)\\end\{\1\}',
+  dotAll: true,
+);
+
+/// Matrices and determinants, row by row, before the rest is parsed:
+/// "the matrix, row 1: 5, 2; row 2: 3, minus 7; end of matrix". A single
+/// column is a column vector. The words go back in as `\text{}`, so the
+/// parser reads them as they are.
+String _speakEnvironments(String latex) {
+  if (latex.contains(r'\dot') || latex.contains(r'\overline')) {
+    latex = latex.replaceAllMapped(_recurring, (m) {
+      String digits(String s) => s.split('').join(' ');
+      final head = m.group(2)!;
+      final cycle =
+          m.group(6) ?? '${m.group(3)}${m.group(4) ?? ''}${m.group(5) ?? ''}';
+      final lead = head.isEmpty
+          ? '${m.group(1)} point'
+          : '${m.group(1)} point ${digits(head)},';
+      return '\\text{$lead ${digits(cycle)} recurring}';
+    });
+  }
+  if (!latex.contains(r'\begin')) return latex;
+  return latex.replaceAllMapped(_environment, (m) {
+    final env = m.group(1)!;
+    final rows = m
+        .group(2)!
+        .split(r'\\')
+        .map((r) => r.trim())
+        .where((r) => r.isNotEmpty)
+        .map((r) => r.split('&').map((c) => speakMath(c.trim())).toList())
+        .toList();
+    if (rows.isEmpty) return '';
+    final determinant = env == 'vmatrix' || env == 'Vmatrix';
+    final String words;
+    if (!determinant && rows.every((r) => r.length == 1)) {
+      words = 'the column vector ${rows.map((r) => r.single).join(', ')},';
+    } else {
+      final name = determinant ? 'determinant' : 'matrix';
+      final body = [
+        for (var i = 0; i < rows.length; i++)
+          'row ${i + 1}: ${rows[i].join(', ')};',
+      ].join(' ');
+      words = 'the $name, $body end of $name,';
+    }
+    return '\\text{$words}';
+  });
 }
 
 // ─── Finding the maths ────────────────────────────────────────────────
@@ -419,12 +478,52 @@ const _words = {
 
 /// Commands that print nothing: spacing, sizing, style switches.
 const _silent = {
-  ',', ';', ':', '!', ' ', 'quad', 'qquad', 'displaystyle', 'textstyle',
-  'scriptstyle', 'limits', 'nolimits', 'left', 'right', 'big', 'Big',
-  'bigg', 'Bigg', 'bigl', 'bigr', 'Bigl', 'Bigr', 'middle', 'mathrm',
-  'mathbf', 'mathit', 'mathsf', 'mathtt', 'boldsymbol', 'bm', 'rm', 'bf',
-  'it', 'cancel', 'boxed', 'phantom', 'hline', 'nonumber', 'notag', 'tag',
-  'label', 'centering', 'small', 'large', 'Large', 'normalsize',
+  ',',
+  ';',
+  ':',
+  '!',
+  ' ',
+  'quad',
+  'qquad',
+  'displaystyle',
+  'textstyle',
+  'scriptstyle',
+  'limits',
+  'nolimits',
+  'left',
+  'right',
+  'big',
+  'Big',
+  'bigg',
+  'Bigg',
+  'bigl',
+  'bigr',
+  'Bigl',
+  'Bigr',
+  'middle',
+  'mathrm',
+  'mathbf',
+  'mathit',
+  'mathsf',
+  'mathtt',
+  'boldsymbol',
+  'bm',
+  'rm',
+  'bf',
+  'it',
+  'cancel',
+  'boxed',
+  'phantom',
+  'hline',
+  'nonumber',
+  'notag',
+  'tag',
+  'label',
+  'centering',
+  'small',
+  'large',
+  'Large',
+  'normalsize',
 };
 
 /// Trig, log and friends: spoken, then "of" their argument.
@@ -452,7 +551,9 @@ const _functions = {
 };
 
 String? _commandWord(String name) =>
-    _greek[name] ?? _words[name] ?? _functions[name] ??
+    _greek[name] ??
+    _words[name] ??
+    _functions[name] ??
     (_silent.contains(name) ? '' : null);
 
 const _symbols = {
@@ -499,13 +600,38 @@ const _symbols = {
 // ─── Number words ─────────────────────────────────────────────────────
 
 const _ones = [
-  'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
-  'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
-  'sixteen', 'seventeen', 'eighteen', 'nineteen',
+  'zero',
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine',
+  'ten',
+  'eleven',
+  'twelve',
+  'thirteen',
+  'fourteen',
+  'fifteen',
+  'sixteen',
+  'seventeen',
+  'eighteen',
+  'nineteen',
 ];
 const _tens = [
-  '', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy',
-  'eighty', 'ninety',
+  '',
+  '',
+  'twenty',
+  'thirty',
+  'forty',
+  'fifty',
+  'sixty',
+  'seventy',
+  'eighty',
+  'ninety',
 ];
 
 /// 0–99 in words; larger numbers as numerals, which every engine reads.
@@ -621,10 +747,7 @@ class _MathParser {
       if (t.kind == _K.sup) {
         _i++;
         final exp = _parseArgument();
-        base = _Spoken(
-          '${base!.words} ${_power(exp)}',
-          simple: false,
-        );
+        base = _Spoken('${base!.words} ${_power(exp)}', simple: false);
       } else if (t.kind == _K.sub) {
         _i++;
         final sub = _parseArgument();
@@ -770,7 +893,8 @@ class _MathParser {
           final idx = parseSequence(stop: (t) => t.isSymbol(']'));
           final single = _i - start == 1 ? toks[start].text : null;
           if (_peek?.isSymbol(']') ?? false) _i++;
-          rootName = _rootNames[single ?? ''] ??
+          rootName =
+              _rootNames[single ?? ''] ??
               (idx.isEmpty ? 'square' : '${idx.join(' ')}th');
         }
         return _Spoken(_root(rootName, _parseArgument()), simple: false);
@@ -780,8 +904,13 @@ class _MathParser {
         return _Spoken('${n.words} choose ${r.words}', simple: false);
       case 'bar':
       case 'overline':
-        // x̄ is "x bar"; a line over two points is the line segment.
+        // x̄ is "x bar"; a line over two points is the line segment. Over
+        // a digit it is a log's negative characteristic, \(\overline{2}\).9250
+        // read "bar two" — never a recurring decimal in this corpus.
         final arg = _parseArgument();
+        if (arg.raw != null && RegExp(r'^\d+$').hasMatch(arg.raw!)) {
+          return _Spoken('bar ${arg.words}', simple: false);
+        }
         return _Spoken(
           arg.simple ? '${arg.words} bar' : 'line ${arg.words}',
           simple: false,
@@ -790,7 +919,13 @@ class _MathParser {
       case 'widehat':
         return _Spoken('${_parseArgument().words} hat', simple: false);
       case 'dot':
-        return _Spoken('${_parseArgument().words} dot', simple: false);
+        // A dot over a digit marks it recurring (0.\dot{3}); over a letter
+        // it is a time derivative, "x dot".
+        final arg = _parseArgument();
+        if (arg.raw != null && RegExp(r'^\d+$').hasMatch(arg.raw!)) {
+          return _Spoken('${arg.words} recurring', simple: false);
+        }
+        return _Spoken('${arg.words} dot', simple: false);
       case 'vec':
       case 'overrightarrow':
         return _Spoken('vector ${_parseArgument().words}', simple: false);
@@ -798,17 +933,14 @@ class _MathParser {
         return _parseArgument();
       case 'mathbb':
         final arg = _parseArgument();
-        return _Spoken(
-          switch (arg.words) {
-            'R' => 'the real numbers',
-            'N' => 'the natural numbers',
-            'Z' => 'the integers',
-            'Q' => 'the rational numbers',
-            'C' => 'the complex numbers',
-            _ => arg.words,
-          },
-          simple: false,
-        );
+        return _Spoken(switch (arg.words) {
+          'R' => 'the real numbers',
+          'N' => 'the natural numbers',
+          'Z' => 'the integers',
+          'Q' => 'the rational numbers',
+          'C' => 'the complex numbers',
+          _ => arg.words,
+        }, simple: false);
       case 'sum':
       case 'prod':
       case 'int':
@@ -818,7 +950,9 @@ class _MathParser {
           'prod' => 'the product',
           _ => 'the integral',
         };
-        if (lower == null && upper == null) return _Spoken('$what of', simple: false);
+        if (lower == null && upper == null) {
+          return _Spoken('$what of', simple: false);
+        }
         final from = lower == null ? '' : ' from $lower';
         final to = upper == null ? '' : ' to $upper';
         return _Spoken('$what$from$to, of', simple: false);
@@ -896,8 +1030,10 @@ class _MathParser {
     if (next.isSymbol('(')) {
       return _Spoken('$head$joiner ${_bracketed()}', simple: false);
     }
-    if (next.kind == _K.symbol && _symbols[next.text] != null &&
-        !_vulgarFractions.containsKey(next.text) && next.text != '|') {
+    if (next.kind == _K.symbol &&
+        _symbols[next.text] != null &&
+        !_vulgarFractions.containsKey(next.text) &&
+        next.text != '|') {
       // Followed by an operator, not an argument: `\lim_{x \to 0}` etc.
       return _Spoken(head, simple: false);
     }

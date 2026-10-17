@@ -181,7 +181,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             const SizedBox(height: 6),
             MathText(text: q.question.explanation, style: secondary),
           ],
-          QuestionImage(assetId: q.question.explanationImageId),
+          QuestionImage.workedAnswer(assetId: q.question.explanationImageId),
           const SizedBox(height: 8),
           Text(
             q.question.correctIndex < 0

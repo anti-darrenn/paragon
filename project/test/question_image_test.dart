@@ -15,6 +15,7 @@ Future<List<String>> _pump(
   WidgetTester tester,
   String? assetId, {
   bool lowData = false,
+  bool workedAnswer = false,
 }) async {
   final fetched = <String>[];
   await tester.pumpWidget(
@@ -35,7 +36,11 @@ Future<List<String>> _pump(
         }),
       ],
       child: MaterialApp(
-        home: Scaffold(body: QuestionImage(assetId: assetId)),
+        home: Scaffold(
+          body: workedAnswer
+              ? QuestionImage.workedAnswer(assetId: assetId)
+              : QuestionImage(assetId: assetId),
+        ),
       ),
     ),
   );
@@ -71,5 +76,21 @@ void main() {
   testWidgets('a missing diagram says so instead of failing', (tester) async {
     await _pump(tester, 'gone');
     expect(find.text("This image couldn't be loaded."), findsOneWidget);
+  });
+
+  testWidgets('a screen reader hears what the image is, not just "Figure"', (
+    tester,
+  ) async {
+    final handle = tester.ensureSemantics();
+    await _pump(tester, 'diag1');
+    expect(find.bySemanticsLabel('Diagram for this question'), findsOneWidget);
+    await _pump(tester, 'diag1', workedAnswer: true);
+    expect(
+      find.bySemanticsLabel('Picture of the worked answer'),
+      findsOneWidget,
+    );
+    // CONTROL: neither falls back to the generic word.
+    expect(find.bySemanticsLabel('Figure'), findsNothing);
+    handle.dispose();
   });
 }

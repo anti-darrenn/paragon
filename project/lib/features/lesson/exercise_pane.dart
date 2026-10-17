@@ -415,7 +415,7 @@ class _Feedback extends StatelessWidget {
                     color: context.palette.onHigh,
                   ),
                 ),
-              QuestionImage(assetId: question.explanationImageId),
+              QuestionImage.workedAnswer(assetId: question.explanationImageId),
             ],
           ],
         ),
