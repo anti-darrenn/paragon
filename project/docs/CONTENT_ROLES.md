@@ -10,8 +10,8 @@ Roles are **custom claims on the Auth token**, set only with the Admin SDK. They
 
 | Claim | Can |
 |---|---|
-| `writer` | Create and edit items that aren't published, upload images, comment, submit for review, start a revision of a published item |
-| `reviewer` | Everything a writer can, plus approve and publish, request changes, unpublish, delete, reorder, handle problem reports |
+| `writer` | Create and edit items that aren't published, upload images, comment, submit for review, start a revision of a published item, browse questions (read-only) |
+| `reviewer` | Everything a writer can, plus approve and publish, request changes, unpublish, delete, reorder, handle problem reports, and edit questions in the question workbench (stem, options, answer, explanation, shown or hidden), each save kept in `questions/{id}/history` with its reason |
 | `admin` (existing) | Everything a reviewer can; the only role that can be set up by `create_admin_user.js` |
 
 Rule helpers: `isWriter()` = writer ∨ reviewer ∨ admin; `isReviewer()` = reviewer ∨ admin.
