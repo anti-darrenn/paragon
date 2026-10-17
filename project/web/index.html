@@ -140,5 +140,15 @@
     });
   </script>
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Keeps the app shell for repeat visits on a bad connection
+    // (paragon_sw.js). After the page has loaded, so it never competes
+    // with the first download.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/paragon_sw.js').catch(function () {});
+      });
+    }
+  </script>
 </body>
 </html>
