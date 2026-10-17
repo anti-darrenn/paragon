@@ -822,7 +822,20 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/admin',
         builder: (context, state) => DeferredScreen(
           load: admin_home.loadLibrary,
-          builder: (_) => admin_home.AdminHomeScreen(),
+          // `?s=questions`: the studio section (`StudioSection.name`).
+          builder: (_) => admin_home.AdminHomeScreen(
+            section: state.uri.queryParameters['s'],
+          ),
+        ),
+      ),
+      // The question workbench: edit, preview, reports, history.
+      GoRoute(
+        path: '/admin/question/:questionId',
+        builder: (context, state) => DeferredScreen(
+          load: admin_flag.loadLibrary,
+          builder: (_) => admin_flag.AdminFlagScreen(
+            questionId: state.pathParameters['questionId']!,
+          ),
         ),
       ),
       // Who writes and reviews, and for which subjects. Admins only.
