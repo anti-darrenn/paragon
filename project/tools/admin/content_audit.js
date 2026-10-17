@@ -135,10 +135,20 @@ async function main() {
     // One write, read by the studio's Content quality panel (reviewers).
     const { initAdmin } = require("./credential");
     const admin = require("firebase-admin").apps.length ? require("firebase-admin") : initAdmin();
+    // Every rule's question ids, so the studio can open the questions
+    // behind a count (capped per rule; ~1,000 findings is ~30 KB).
+    const byRule = {};
+    for (const f of findings) (byRule[f.rule] ??= []).length < 1000 && byRule[f.rule].push(f.id);
+    byRule["duplicate-in-paper"] = corpus.exact.flat().slice(0, 1000);
+    byRule["near-duplicate-in-paper"] = corpus.near.flat().slice(0, 1000);
+    byRule["same-question-two-years"] = corpus.repeats.flat().map((s) => String(s).split(":").pop()).slice(0, 1000);
+    for (const k of Object.keys(byRule)) byRule[k] = [...new Set(byRule[k])];
     await admin.firestore().doc("_meta/contentAudit").set({
       at: admin.firestore.FieldValue.serverTimestamp(),
       total: questions.length,
       rules: summary,
+      suspects,
+      byRule,
     });
     console.log("\nPublished to _meta/contentAudit.");
   }

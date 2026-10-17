@@ -12,3 +12,10 @@ String adminResourcePath(String topicId, String resourceId) =>
 
 String adminNewResourcePath(String topicId, LearnResourceType type) =>
     '/admin/topic/$topicId/new/${type.name}';
+
+/// The question workbench: edit, preview, reports and history.
+String adminQuestionPath(String questionId) => '/admin/question/$questionId';
+
+/// The studio home open on one section (`StudioSection.name`).
+String adminSectionPath(String section) =>
+    section == 'overview' ? '/admin' : '/admin?s=$section';

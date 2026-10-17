@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../../core/content/subject_catalog.dart';
 import '../../../core/data/read_meter.dart';
@@ -14,7 +13,10 @@ import '../../../core/repositories/waitlist_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
-import '../admin_flag_screen.dart' show adminFlagPath;
+import '../../../core/repositories/admin_flag_repository.dart';
+import '../../../core/repositories/admin_question_repository.dart';
+import '../../../core/widgets/ui/ui.dart';
+import 'question_widgets.dart';
 
 /// Studio panels that watch the live app rather than the content: how
 /// close today is to the Spark quota, and what students are telling us.
@@ -266,6 +268,7 @@ class ContentAudit {
     required this.total,
     required this.rules,
     this.suspects = const [],
+    this.byRule = const {},
     this.at,
   });
   final int total;
@@ -275,7 +278,33 @@ class ContentAudit {
 
   /// Questions to check first, in the audit's order (suspects, then A).
   final List<AuditSuspect> suspects;
+
+  /// Every rule's question ids (`byRule`, capped per rule), so a count can
+  /// open the questions behind it. Empty for an audit published before
+  /// 2026-10-17.
+  final Map<String, List<String>> byRule;
   final DateTime? at;
+
+  /// What the audit found on one question: the rule, its level, and the
+  /// detail when the audit kept one (suspects and level A).
+  List<({String rule, String level, String detail})> findingsFor(String id) {
+    final level = {for (final r in rules) r.rule: r.level};
+    final detail = {
+      for (final s in suspects)
+        if (s.id == id) s.rule: s.detail,
+    };
+    return [
+      for (final e in byRule.entries)
+        if (e.value.contains(id))
+          (
+            rule: e.key,
+            level: level[e.key] ?? 'B',
+            detail: detail[e.key] ?? '',
+          ),
+    ]..sort(
+      (a, b) => AuditRule.rank(a.level).compareTo(AuditRule.rank(b.level)),
+    );
+  }
 
   static ContentAudit? fromDocument(Map<String, dynamic>? d) {
     if (d == null) return null;
@@ -298,6 +327,7 @@ class ContentAudit {
     final rawSuspects = d['suspects'] is List
         ? d['suspects'] as List
         : const [];
+    final rawByRule = d['byRule'] is Map ? d['byRule'] as Map : const {};
     final at = d['at'];
     return ContentAudit(
       total: asInt(d['total']),
@@ -314,14 +344,19 @@ class ContentAudit {
               detail: asString(e['detail']),
             ),
       ],
+      byRule: {
+        for (final e in rawByRule.entries)
+          e.key.toString(): [
+            for (final id in asStringList(e.value))
+              if (id.isNotEmpty) id,
+          ],
+      },
       at: at is Timestamp ? at.toDate() : null,
     );
   }
 }
 
-final contentAuditProvider = FutureProvider.autoDispose<ContentAudit?>((
-  ref,
-) async {
+final contentAuditProvider = FutureProvider<ContentAudit?>((ref) async {
   final snap = await FirebaseFirestore.instance
       .doc('_meta/contentAudit')
       .get()
@@ -329,8 +364,16 @@ final contentAuditProvider = FutureProvider.autoDispose<ContentAudit?>((
   return ContentAudit.fromDocument(snap.data());
 });
 
-/// How the past-question bank stands against the content rules, so the
-/// team can see what to fix next and watch it fall (audit, section B).
+/// The questions behind one audit rule, a page at a time; keyed by the
+/// ids joined with commas.
+final _auditQuestionsProvider = FutureProvider.autoDispose
+    .family<List<ReviewedQuestion>, String>(
+      (ref, joined) =>
+          ref.read(adminQuestionRepositoryProvider).byIds(joined.split(',')),
+    );
+
+/// What the content rules say about the past-question bank, each rule
+/// opening onto its questions so they can be fixed on the spot.
 class ContentQualityPanel extends ConsumerWidget {
   const ContentQualityPanel({super.key});
 
@@ -338,117 +381,185 @@ class ContentQualityPanel extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final palette = context.palette;
     final audit = ref.watch(contentAuditProvider);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          'Content quality',
-          style: AppTheme.heading3.copyWith(color: palette.textPrimary),
-        ),
-        const SizedBox(height: 12),
-        audit.when(
-          loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load the content audit.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+    return audit.when(
+      loading: () => const StudioListSkeleton(),
+      error: (e, _) => Text(
+        "Couldn't load the content audit.\n$e",
+        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+      ),
+      data: (a) {
+        if (a == null) {
+          return const EmptyState(
+            icon: Icons.manage_search_rounded,
+            title: 'No audit published yet',
+            message:
+                'Run node tools/admin/content_audit.js --cache --publish after '
+                'a static-site refresh.',
+          );
+        }
+        final groups = [
+          ('S', 'Answer may be wrong', 'Check against the original paper.'),
+          (
+            'A',
+            'Changes what a question means',
+            'A student can be marked wrong for a right answer.',
           ),
-          data: (a) {
-            if (a == null) {
-              return Text(
-                'No audit published yet. Run tools/admin/content_audit.js '
-                '--cache --publish after a static-site refresh.',
-                style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
-              );
-            }
-            return Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: palette.surface,
-                border: Border.all(color: palette.border),
-                borderRadius: BorderRadius.circular(12),
+          ('B', 'Presentation', 'Readable, but untidy or incomplete.'),
+        ];
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              '${groupThousandsLocal(a.total)} past questions checked'
+              '${a.at == null ? '' : ' ${_ago(a.at!)}'}. Open a rule to see its '
+              'questions; open a question to fix it.',
+              style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+            ),
+            if (a.byRule.isEmpty) ...[
+              const SizedBox(height: 8),
+              Text(
+                'This audit was published before questions could be listed. '
+                'Publish it again to open the questions behind each count.',
+                style: AppTheme.caption.copyWith(color: AppColors.warning),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  for (final r in a.rules)
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 6),
-                      child: Row(
-                        children: [
-                          Text(
-                            r.level,
-                            style: AppTheme.caption.copyWith(
-                              color: r.level != 'B' && r.count > 0
-                                  ? AppColors.wrong
-                                  : palette.textSecondary,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: Text(
-                              r.label,
-                              style: AppTheme.bodyMd.copyWith(
-                                color: palette.textPrimary,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '${r.count}',
-                            style: AppTheme.bodyMd.copyWith(
-                              color: palette.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  if (a.suspects.isNotEmpty) ...[
-                    const SizedBox(height: 12),
-                    Text(
-                      'Check these first',
-                      style: AppTheme.bodyMd.copyWith(
-                        color: palette.textPrimary,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    for (final q in a.suspects.take(20))
-                      InkWell(
-                        onTap: () => context.push(adminFlagPath(q.id)),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 6),
-                          child: Text(
-                            '${q.level}  ${q.subject} ${q.year ?? ''} · '
-                            '${q.rule.replaceAll('-', ' ')}: ${q.detail}',
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppTheme.bodyMd.copyWith(
-                              color: palette.textSecondary,
-                            ),
-                          ),
-                        ),
-                      ),
-                  ],
-                  const SizedBox(height: 8),
-                  Text(
-                    '${a.total} past questions. S may have the wrong answer '
-                    'marked, to check against the paper; A changes what a '
-                    'question means; B is presentation. List any rule with '
-                    'content_audit.js --cache --list=<rule>'
-                    '${a.at == null ? '' : '; checked ${_ago(a.at!)}'}.',
-                    style: AppTheme.caption.copyWith(
-                      color: palette.textSecondary,
-                    ),
+            ],
+            for (final (level, title, help) in groups)
+              if (a.rules.any((r) => r.level == level && r.count > 0)) ...[
+                const SizedBox(height: 20),
+                SectionHeader(title, subtitle: help),
+                SurfaceCard(
+                  padding: EdgeInsets.zero,
+                  child: Column(
+                    children: [
+                      for (final r in a.rules.where(
+                        (r) => r.level == level && r.count > 0,
+                      ))
+                        _RuleTile(rule: r, ids: a.byRule[r.rule] ?? const []),
+                    ],
                   ),
-                ],
-              ),
-            );
-          },
-        ),
-      ],
+                ),
+              ],
+          ],
+        );
+      },
     );
   }
 }
+
+class _RuleTile extends ConsumerStatefulWidget {
+  const _RuleTile({required this.rule, required this.ids});
+  final AuditRule rule;
+  final List<String> ids;
+
+  @override
+  ConsumerState<_RuleTile> createState() => _RuleTileState();
+}
+
+class _RuleTileState extends ConsumerState<_RuleTile> {
+  static const _page = 8;
+  bool _open = false;
+  int _shown = _page;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.palette;
+    final r = widget.rule;
+    final colour = switch (r.level) {
+      'S' => AppColors.wrong,
+      'A' => AppColors.warning,
+      _ => palette.textSecondary,
+    };
+    final ids = widget.ids;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        InkWell(
+          onTap: ids.isEmpty ? null : () => setState(() => _open = !_open),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            child: Row(
+              children: [
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    color: colour,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    r.label[0].toUpperCase() + r.label.substring(1),
+                    style: AppTheme.bodyMd.copyWith(
+                      color: palette.textPrimary,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                Text(
+                  '${r.count}',
+                  style: AppTheme.bodyMd.copyWith(
+                    color: palette.textSecondary,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Icon(
+                  _open ? Icons.expand_less_rounded : Icons.expand_more_rounded,
+                  color: ids.isEmpty ? palette.border : palette.textSecondary,
+                ),
+              ],
+            ),
+          ),
+        ),
+        if (_open) _questions(ids),
+        Divider(height: 1, color: palette.border.withAlpha(150)),
+      ],
+    );
+  }
+
+  Widget _questions(List<String> ids) {
+    final shown = ids.take(_shown).toList();
+    final async = ref.watch(_auditQuestionsProvider(shown.join(',')));
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 0, 16, 14),
+      child: async.when(
+        loading: () => const StudioListSkeleton(count: 2),
+        error: (e, _) => Text(
+          "Couldn't load these questions.\n$e",
+          style: AppTheme.caption.copyWith(color: AppColors.wrong),
+        ),
+        data: (list) => Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            for (final q in list)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: QuestionListCard(
+                  question: q,
+                  findings: [(widget.rule.rule, widget.rule.level)],
+                  onTap: () =>
+                      openQuestion(context, ref, q.question.id, list: ids),
+                ),
+              ),
+            if (ids.length > _shown)
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton(
+                  onPressed: () => setState(() => _shown += _page),
+                  child: Text('Show more (${ids.length - _shown} left)'),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+String groupThousandsLocal(int n) =>
+    n.toString().replaceAllMapped(RegExp(r'\B(?=(\d{3})+(?!\d))'), (_) => ',');
 
 // ─── Feedback ───────────────────────────────────────────────────────
 
