@@ -105,7 +105,7 @@
         ]
       },
       {
-        "source": "**/@(main.dart.js|flutter_bootstrap.js|flutter.js|flutter_service_worker.js|version.json|manifest.json)",
+        "source": "**/@(main.dart.js|flutter_bootstrap.js|flutter.js|flutter_service_worker.js|paragon_sw.js|version.json|manifest.json)",
         "headers": [
           {
             "key": "Cache-Control",
