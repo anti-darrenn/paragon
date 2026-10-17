@@ -459,7 +459,9 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`]])}
     subjects: Object.fromEntries(subjectCards.map((c) => [c.s.slug, c.s.name])),
     questions: questions.map((q) => {
       const s = subjects.get(q.subjectId);
-      return [s.slug, q.year, R.truncate(R.plainMath(q.text), 140), q.id.slice(0, 10)];
+      // The fifth entry, the full id, lets the content studio open a
+      // search result without a query; the app's search reads only four.
+      return [s.slug, q.year, R.truncate(R.plainMath(q.text), 140), q.id.slice(0, 10), q.id];
     }),
   };
   write(`${BASE}/search.json`, JSON.stringify(searchIndex), { sitemap: false });
