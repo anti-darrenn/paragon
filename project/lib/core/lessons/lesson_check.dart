@@ -1,5 +1,7 @@
 import 'package:flutter_math_fork/tex.dart';
 
+import '../latex/tex_preprocess.dart';
+
 import 'lesson_doc.dart';
 
 /// Everything wrong with a lesson body that an author should fix: the
@@ -89,7 +91,8 @@ List<LessonIssue> mathIssues(String body) {
 
   void check(String tex, int at) {
     try {
-      TexParser(tex, const TexParserSettings()).parse();
+      // As the renderer reads it: through the preprocessor first.
+      TexParser(normalizeMath(tex), const TexParserSettings()).parse();
     } catch (e) {
       final shown = tex.length > 40 ? '${tex.substring(0, 37)}...' : tex;
       out.add(LessonIssue(lineAt(at), 'Maths won\'t render: $shown'));

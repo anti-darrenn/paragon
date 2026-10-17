@@ -68,9 +68,28 @@ class ReviewedQuestion {
     required this.hasAnswer,
     required this.origin,
     this.previousCorrectIndex,
+    this.editedAt,
+    this.reviewedAt,
+    this.auditDismissed = const [],
   });
 
   final Question question;
+
+  /// The last studio save, and the last report resolution.
+  final DateTime? editedAt;
+  final DateTime? reviewedAt;
+
+  /// Content-audit rules a reviewer marked checked on this question: looked
+  /// at, and not a problem. The audit skips them.
+  final List<String> auditDismissed;
+
+  /// When a person last changed this question in the studio.
+  DateTime? get lastTouched {
+    final a = editedAt, b = reviewedAt;
+    if (a == null) return b;
+    if (b == null) return a;
+    return a.isAfter(b) ? a : b;
+  }
 
   /// False means drill, WAEC and tests all skip it — retired, or never
   /// had a verified answer.
@@ -92,6 +111,9 @@ class ReviewedQuestion {
       hasAnswer: asBool(d['hasAnswer']),
       origin: asString(d['origin']),
       previousCorrectIndex: asIntOrNull(d['previousCorrectIndex']),
+      editedAt: _date(d['editedAt']),
+      reviewedAt: _date(d['reviewedAt']),
+      auditDismissed: asStringList(d['auditDismissed']),
     );
   }
 }
@@ -378,3 +400,5 @@ final adminLessonReportsProvider = FutureProvider<List<LessonItemReport>>((
 ) {
   return ref.watch(adminFlagRepositoryProvider).lessonReports();
 });
+
+DateTime? _date(Object? v) => v is Timestamp ? v.toDate() : null;

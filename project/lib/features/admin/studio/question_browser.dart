@@ -104,6 +104,31 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
           live: _live,
         );
 
+  /// Opens a question, then re-reads the rows on screen: a fix made in the
+  /// workbench shows at once, without losing the page. Until 2026-10-17 the
+  /// list kept the old stem and findings until the filter changed.
+  Future<void> _open(String id, List<String> ids) async {
+    await openQuestion(context, ref, id, list: ids);
+    if (!mounted || (_rows.isEmpty && _also.isEmpty)) return;
+    try {
+      final fresh = {
+        for (final q in await ref
+            .read(adminQuestionRepositoryProvider)
+            .byIds([for (final q in [..._rows, ..._also]) q.question.id]))
+          q.question.id: q,
+      };
+      if (!mounted) return;
+      setState(() {
+        for (var i = 0; i < _rows.length; i++) {
+          _rows[i] = fresh[_rows[i].question.id] ?? _rows[i];
+        }
+        _also = [for (final q in _also) fresh[q.question.id] ?? q];
+      });
+    } catch (_) {
+      // The old rows stay; a filter change reloads them.
+    }
+  }
+
   Future<void> _fetch({bool more = false}) async {
     final f = _filter;
     if (f == null || !f.isQueryable) return;
@@ -360,7 +385,7 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
                   .where((f) => f.$1 != 'missing-explanation')
                   .toList(),
               openReports: reports[q.question.id] ?? 0,
-              onTap: () => openQuestion(context, ref, q.question.id, list: ids),
+              onTap: () => _open(q.question.id, ids),
             ),
           ),
         if (_also.isNotEmpty) ...[
@@ -375,8 +400,7 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
                     .where((f) => f.$1 != 'missing-explanation')
                     .toList(),
                 openReports: reports[q.question.id] ?? 0,
-                onTap: () =>
-                    openQuestion(context, ref, q.question.id, list: ids),
+                onTap: () => _open(q.question.id, ids),
               ),
             ),
         ],

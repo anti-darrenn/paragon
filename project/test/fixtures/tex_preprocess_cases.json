@@ -1,0 +1,214 @@
+[
+  {
+    "in": "Express 0.\\overline{3} as a fraction.",
+    "out": "Express \\(0.\\overline{3}\\) as a fraction."
+  },
+  {
+    "in": "What is \\frac{1}{2}+\\frac{1}{3}?",
+    "out": "What is \\(\\frac{1}{2}+\\frac{1}{3}\\)?"
+  },
+  {
+    "in": "Find x if x \\times 3 = 12.",
+    "out": "Find x if \\(x \\times 3\\) = 12."
+  },
+  {
+    "in": "\\sin x + \\cos x",
+    "out": "\\(\\sin x\\) + \\(\\cos x\\)"
+  },
+  {
+    "in": "The value of \\(\\overline{AB}\\) is 3.",
+    "out": "The value of \\(\\overline{AB}\\) is 3."
+  },
+  {
+    "in": "Water is \\ce{H2O} and sulfate is \\ce{SO4^2-}.",
+    "out": "Water is \\(\\mathrm{H}_{2}\\mathrm{O}\\) and sulfate is \\(\\mathrm{SO}_{4}^{2-}\\)."
+  },
+  {
+    "in": "\\ce{2H2 + O2 -> 2H2O}",
+    "out": "\\(2\\,\\mathrm{H}_{2} + \\mathrm{O}_{2} \\rightarrow 2\\,\\mathrm{H}_{2}\\mathrm{O}\\)"
+  },
+  {
+    "in": "\\ce{N2 + 3H2 <=>[Fe][450 C] 2NH3}",
+    "out": "\\(\\mathrm{N}_{2} + 3\\,\\mathrm{H}_{2} \\underset{\\text{450 C}}{\\overset{\\text{Fe}}{\\rightleftharpoons}} 2\\,\\mathrm{NH}_{3}\\)"
+  },
+  {
+    "in": "\\ce{CuSO4.5H2O(s)}",
+    "out": "\\(\\mathrm{CuSO}_{4}\\cdot 5\\mathrm{H}_{2}\\mathrm{O}\\,(\\mathrm{s})\\)"
+  },
+  {
+    "in": "g = \\SI{9.8}{\\metre\\per\\second\\squared}",
+    "out": "g = \\(9.8\\,\\mathrm{m}\\,\\mathrm{s}^{-2}\\)"
+  },
+  {
+    "in": "\\(v = \\SI{20}{m/s}\\)",
+    "out": "\\(v = 20\\,\\mathrm{m}/\\mathrm{s}\\)"
+  },
+  {
+    "in": "\\(\\qty{3.0e8}{\\metre\\per\\second}\\)",
+    "out": "\\(3.0\\times10^{8}\\,\\mathrm{m}\\,\\mathrm{s}^{-1}\\)"
+  },
+  {
+    "in": "\\emph{Note:} use \\textsc{waec} rules -- see below.",
+    "out": "\\textit{Note:} use WAEC rules – see below."
+  },
+  {
+    "in": "\\section*{Indices} Some text.",
+    "out": "\\textbf{Indices}\nSome text."
+  },
+  {
+    "in": "\\begin{itemize}\n\\item One\n\\item Two \\(x^2\\)\n\\end{itemize}",
+    "out": "• One\n• Two \\(x^2\\)"
+  },
+  {
+    "in": "\\begin{enumerate}\\item A \\item B\\end{enumerate}",
+    "out": "1. A\n2. B"
+  },
+  {
+    "in": "\\begin{tabular}{|c|c|}\\hline x & \\(y\\) \\\\ \\hline 1 & 2 \\\\ \\hline\\end{tabular}",
+    "out": "\\[\\begin{array}{|c|c|}\\hline \\text{x}&y\\\\\\hline \\text{1}&\\text{2}\\\\\\hline \\end{array}\\]"
+  },
+  {
+    "in": "\\begin{align*} a &= b \\\\ c &= d \\end{align*}",
+    "out": "\\[\\begin{aligned}a &= b \\\\ c &= d\\end{aligned}\\]"
+  },
+  {
+    "in": "\\[\\begin{gathered} a \\\\ b \\end{gathered}\\]",
+    "out": "\\[\\begin{array}{c} a \\\\ b \\end{array}\\]"
+  },
+  {
+    "in": "\\newcommand{\\R}{\\mathbb{R}} Let \\(x \\in \\R\\).",
+    "out": "Let \\(x \\in \\mathbb{R}\\)."
+  },
+  {
+    "in": "\\newcommand{\\vect}[1]{\\mathbf{#1}} \\(\\vect{v}\\)",
+    "out": "\\(\\mathbf{v}\\)"
+  },
+  {
+    "in": "Café is spelt Caf\\'e and na\\\"{i}ve.",
+    "out": "Café is spelt Café and naïve."
+  },
+  {
+    "in": "``Quoted'' text",
+    "out": "``Quoted'' text"
+  },
+  {
+    "in": "Price is $5 and \\$10",
+    "out": "Price is $5 and \\$10"
+  },
+  {
+    "in": "Line one\\\\Line two",
+    "out": "Line one\nLine two"
+  },
+  {
+    "in": "\\textbf{Bold \\emph{and italic}}",
+    "out": "\\textbf{Bold \\textit{and italic}}"
+  },
+  {
+    "in": "{\\bf old bold} text",
+    "out": "\\textbf{old bold} text"
+  },
+  {
+    "in": "\\(25\\degree\\) and \\(30\\celsius\\)",
+    "out": "\\(25{}^{\\circ}\\) and \\(30{}^{\\circ}\\mathrm{C}\\)"
+  },
+  {
+    "in": "\\(\\recurring{3}\\)",
+    "out": "\\(\\overline{3}\\)"
+  },
+  {
+    "in": "\\(\\nicefrac{1}{2}\\)",
+    "out": "\\({}^{1}\\!/_{2}\\)"
+  },
+  {
+    "in": "\\(\\tag{1} x = 2 \\label{eq:x}\\)",
+    "out": "\\( x = 2 \\qquad(1)\\)"
+  },
+  {
+    "in": "H\\textsubscript{2}O and x\\textsuperscript{2}",
+    "out": "H\\(_{\\text{2}}\\)O and x\\(^{\\text{2}}\\)"
+  },
+  {
+    "in": "\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix} is a matrix",
+    "out": "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\) is a matrix"
+  },
+  {
+    "in": "\\left(\\frac{a}{b}\\right)^2 is a square",
+    "out": "\\(\\left(\\frac{a}{b}\\right)^2\\) is a square"
+  },
+  {
+    "in": "\\sqrt[3]{27} = 3",
+    "out": "\\(\\sqrt[3]{27}\\) = 3"
+  },
+  {
+    "in": "A WAEC blank ------ stays.",
+    "out": "A WAEC blank ------ stays."
+  },
+  {
+    "in": "Plain stem with no TeX -- unchanged ~ approx.",
+    "out": "Plain stem with no TeX -- unchanged ~ approx."
+  },
+  {
+    "in": "Angle \\ang{30;15;}",
+    "out": "Angle \\(30^{\\circ}15'\\)"
+  },
+  {
+    "in": "\\(\\num{1.2e-3}\\)",
+    "out": "\\(1.2\\times10^{-3}\\)"
+  },
+  {
+    "in": "\\(\\si{\\kilo\\gram\\metre\\per\\second\\squared}\\)",
+    "out": "\\(\\mathrm{kg}\\,\\mathrm{m}\\,\\mathrm{s}^{-2}\\)"
+  },
+  {
+    "in": "\\(\\pu{1.5 mol/dm^3}\\)",
+    "out": "\\(1.5\\,\\mathrm{mol}/\\mathrm{dm}^{3}\\)"
+  },
+  {
+    "in": "\\(\\operatorname*{argmax}_x f\\)",
+    "out": "\\(\\operatorname*{argmax}_x f\\)"
+  },
+  {
+    "in": "\\(\\substack{a\\\\b}\\)",
+    "out": "\\(\\begin{array}{c}a\\\\b\\end{array}\\)"
+  },
+  {
+    "in": "\\(\\begin{array}{p{2cm}@{}c}a&b\\end{array}\\)",
+    "out": "\\(\\begin{array}{lc}a&b\\end{array}\\)"
+  },
+  {
+    "in": "\\(\\textcolor{red}{x}\\)",
+    "out": "\\(\\textcolor{red}{x}\\)"
+  },
+  {
+    "in": "\\(\\pmb{x}\\)",
+    "out": "\\(\\boldsymbol{x}\\)"
+  },
+  {
+    "in": "\\alpha particles",
+    "out": "\\(\\alpha\\) particles"
+  },
+  {
+    "in": "\\pi r^2 is the area",
+    "out": "\\(\\pi r^2\\) is the area"
+  },
+  {
+    "in": "See \\href{https://x.y}{this link} and \\url{a.b}.",
+    "out": "See this link and a.b."
+  },
+  {
+    "in": "Footnote\\footnote{a note}.",
+    "out": "Footnote (a note)."
+  },
+  {
+    "in": "\\(\\lim_{x\\to 0}\\frac{\\sin x}{x}\\)",
+    "out": "\\(\\lim_{x\\to 0}\\frac{\\sin x}{x}\\)"
+  },
+  {
+    "in": "\\DeclareMathOperator{\\lcm}{lcm} \\(\\lcm(4,6)\\)",
+    "out": "\\(\\operatorname{lcm}(4,6)\\)"
+  },
+  {
+    "in": "\\def\\half{\\frac12} \\(\\half\\)",
+    "out": "\\(\\frac12\\)"
+  }
+]

@@ -58,6 +58,9 @@ const QUESTION_FIELDS = [
   // Other topics a question also counts for (studio, 2026-10-17); read on
   // the next --refresh.
   "alsoTopicIds",
+  // Audit rules a reviewer marked checked on this question, so
+  // `content_audit.js --cache` skips them as the Firestore path does.
+  "auditDismissed",
 ];
 
 async function loadData() {

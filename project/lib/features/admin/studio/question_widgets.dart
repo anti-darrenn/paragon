@@ -13,6 +13,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
 import '../../../core/widgets/question_source_badge.dart' show DifficultyBadge;
 import '../admin_paths.dart';
+import 'launch_panels.dart' show contentAuditProvider;
 
 /// Pieces every question list in the studio shares: the browser, the
 /// report queue and the content-quality findings.
@@ -30,14 +31,16 @@ final subjectTopicsProvider = FutureProvider.family<List<Topic>, String>((
 
 /// Opens the workbench on [id], remembering [list] so it can step through
 /// the rest with Previous and Next.
-void openQuestion(
+/// Completes when the workbench is closed, so a list can refresh what was
+/// edited there.
+Future<void> openQuestion(
   BuildContext context,
   WidgetRef ref,
   String id, {
   List<String> list = const [],
-}) {
+}) async {
   ref.read(studioWorkListProvider.notifier).set(list.isEmpty ? [id] : list);
-  context.push(adminQuestionPath(id));
+  await context.push(adminQuestionPath(id));
 }
 
 /// A small outlined label: "WAEC 2018", "Retired", "3 reports".
@@ -111,6 +114,14 @@ class QuestionListCard extends ConsumerWidget {
     final q = question.question;
     final palette = context.palette;
     final topic = ref.watch(topicByIdProvider(q.topicId)).asData?.value;
+    // A finding the question was saved or marked checked after is shown as
+    // fixed, not as still wrong.
+    final audit = ref.watch(contentAuditProvider).asData?.value;
+    final live = [
+      for (final f in findings)
+        if (audit == null || !audit.isCleared(question, f.$1)) f,
+    ];
+    final fixed = findings.length - live.length;
     final answer = q.correctIndex >= 0 && q.correctIndex < q.options.length
         ? optionLetter(q.correctIndex)
         : null;
@@ -120,7 +131,7 @@ class QuestionListCard extends ConsumerWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(14),
         side: BorderSide(
-          color: findings.any((f) => f.$2 != 'B') || openReports > 0
+          color: live.any((f) => f.$2 != 'B') || openReports > 0
               ? AppColors.warning.withAlpha(150)
               : palette.border,
         ),
@@ -161,7 +172,13 @@ class QuestionListCard extends ConsumerWidget {
                             color: AppColors.warning,
                             icon: Icons.flag_outlined,
                           ),
-                        for (final (rule, level) in findings.take(3))
+                        if (fixed > 0 && live.isEmpty)
+                          const StudioTag(
+                            'Fixed since the audit',
+                            color: AppColors.correct,
+                            icon: Icons.check_circle_outline_rounded,
+                          ),
+                        for (final (rule, level) in live.take(3))
                           StudioTag(
                             rule.replaceAll('-', ' '),
                             color: level == 'B'

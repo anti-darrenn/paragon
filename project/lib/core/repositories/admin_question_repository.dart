@@ -259,6 +259,41 @@ class AdminQuestionRepository {
     return history.id;
   }
 
+  /// Records that a reviewer looked at the content audit's [rule] finding
+  /// on a question and it is not a problem — a suspect checked against the
+  /// paper, say. The audit skips the rule on this question from then on.
+  /// Written like a save, with a history record and no content change, so
+  /// it is on the question's history and can be questioned later.
+  Future<void> markChecked({
+    required String questionId,
+    required QuestionDraft current,
+    required String rule,
+    required String note,
+    required String uid,
+  }) async {
+    final ref = _questions.doc(questionId);
+    final history = ref.collection('history').doc();
+    final reason = 'Checked "${rule.replaceAll('-', ' ')}": ${note.trim()}';
+    final batch = _db.batch();
+    batch.set(history, {
+      'by': uid,
+      'at': FieldValue.serverTimestamp(),
+      'reason': reason.length > 500 ? reason.substring(0, 500) : reason,
+      'before': current.toMap(),
+      'after': current.toMap(),
+    });
+    batch.update(ref, {
+      // The content as it is: unchanged, but present, which the edit rule
+      // checks (an old scraped question may have no explanation field).
+      ...current.toMap(),
+      'auditDismissed': FieldValue.arrayUnion([rule]),
+      'editedAt': FieldValue.serverTimestamp(),
+      'editedBy': uid,
+      'lastEditId': history.id,
+    });
+    await batch.commit();
+  }
+
   /// Every recorded edit of a question, newest first.
   Future<List<QuestionEdit>> history(String questionId) async {
     final snap = await _questions

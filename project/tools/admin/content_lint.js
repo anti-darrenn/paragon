@@ -21,6 +21,7 @@
  * hundred reads at most.
  */
 const katex = require("katex");
+const { normalizeMath } = require("../site/tex_preprocess");
 const { initAdmin } = require("./credential");
 
 const JSON_OUT = process.argv.includes("--json");
@@ -41,7 +42,8 @@ function mathProblems(body) {
   let pos = 0;
   const check = (tex) => {
     try {
-      katex.renderToString(tex, { throwOnError: true, strict: "ignore" });
+      // As the app draws it: through the preprocessor (ce, SI, gathered).
+      katex.renderToString(normalizeMath(tex), { throwOnError: true, strict: "ignore" });
     } catch (e) {
       out.push(`maths won't render: ${tex.slice(0, 40)}`);
     }

@@ -4,11 +4,14 @@
  * testable on its own (`node render.test.js`).
  *
  * The text dialect is the corpus's, read the way `FullLatexView` reads it:
- * inline maths `\(...\)`, display `\[...\]` or `$$...$$`, `\textbf{}`,
- * `\textit{}`, `\vspace{}` and `\$` outside maths, and a lone `$` is a
+ * everything goes through `normalizeTex` first (`tex_preprocess.js`, the
+ * mirror of the app's preprocessor), then inline maths `\(...\)`, display
+ * `\[...\]` or `$$...$$`, `\textbf{}`, `\textit{}`, `\underline{}`,
+ * `\texttt{}`, `\vspace{}` and `\$` outside maths, and a lone `$` is a
  * dollar sign, never maths. Change both together.
  */
 const katex = require("katex");
+const { normalizeTex } = require("./tex_preprocess");
 
 const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
 const escapeHtml = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ESC[c]);
@@ -27,19 +30,28 @@ function renderMath(tex, display) {
   }
 }
 
-/** Text outside maths: escape, then the few text macros the app supports. */
+const TEXT_TAGS = { textbf: "strong", textit: "em", underline: "u", texttt: "code" };
+const STYLED = /\\(textbf|textit|underline|texttt)\{([^{}]*)\}/;
+
+/**
+ * Text outside maths: escape, then the text macros the app draws. Styles
+ * nest (`\textbf{a \textit{b}}`), as they do in `latexSpans`, so the
+ * innermost is replaced first until none is left.
+ */
 function renderText(s) {
-  return escapeHtml(s)
+  let html = escapeHtml(s)
     .replace(/\\\$/g, "$")
-    .replace(/\\textbf\{([^{}]*)\}/g, "<strong>$1</strong>")
-    .replace(/\\textit\{([^{}]*)\}/g, "<em>$1</em>")
     .replace(/\\vspace\{[^{}]*\}/g, "<br>")
     .replace(/\r?\n/g, "<br>");
+  while (STYLED.test(html)) {
+    html = html.replace(STYLED, (_, cmd, body) => `<${TEXT_TAGS[cmd]}>${body}</${TEXT_TAGS[cmd]}>`);
+  }
+  return html;
 }
 
 /** Mixed text and maths to HTML. */
 function renderRich(source) {
-  const s = String(source ?? "");
+  const s = normalizeTex(String(source ?? ""));
   let out = "";
   let text = "";
   let i = 0;
@@ -82,10 +94,11 @@ function renderRich(source) {
 
 /** Plain text for titles, descriptions and JSON-LD: maths kept as source. */
 function plainText(source) {
-  return String(source ?? "")
+  let s = normalizeTex(String(source ?? ""));
+  while (STYLED.test(s)) s = s.replace(STYLED, "$2");
+  return s
     .replace(/\\[()[\]]/g, "")
     .replace(/\$\$/g, "")
-    .replace(/\\textbf\{([^{}]*)\}|\\textit\{([^{}]*)\}/g, "$1$2")
     .replace(/\\vspace\{[^{}]*\}/g, " ")
     .replace(/\\\$/g, "$")
     .replace(/\s+/g, " ")
@@ -119,7 +132,7 @@ const RELATIONS = new Set([
 // Commands whose argument is kept as it is.
 const UNWRAP = new Set([
   "text", "textrm", "textbf", "textit", "mathrm", "mathbf", "mathit", "operatorname",
-  "boldsymbol", "vec", "hat", "overline", "underline", "widehat", "overrightarrow", "mbox", "bm",
+  "boldsymbol", "vec", "hat", "underline", "widehat", "overrightarrow", "mbox", "bm",
 ]);
 const SUP = { 0: "⁰", 1: "¹", 2: "²", 3: "³", 4: "⁴", 5: "⁵", 6: "⁶", 7: "⁷", 8: "⁸", 9: "⁹", "+": "⁺", "-": "⁻", "=": "⁼", "(": "⁽", ")": "⁾", n: "ⁿ", i: "ⁱ", x: "ˣ", y: "ʸ" };
 const SUB = { 0: "₀", 1: "₁", 2: "₂", 3: "₃", 4: "₄", 5: "₅", 6: "₆", 7: "₇", 8: "₈", 9: "₉", "+": "₊", "-": "₋", "=": "₌", "(": "₍", ")": "₎" };
@@ -180,6 +193,13 @@ function texToPlain(s) {
         const [a, j] = readArg(s, i);
         out += `${texToPlain(a)}̄`;
         i = j;
+      } else if (name === "overline" || name === "dot") {
+        // The bar or dot over a recurring decimal is the meaning: 0.\overline{3}
+        // is a third, not 0.3. A combining mark on every digit keeps it.
+        const [a, j] = readArg(s, i);
+        const mark = name === "overline" ? "̅" : "̇";
+        out += [...texToPlain(a)].map((ch) => `${ch}${mark}`).join("");
+        i = j;
       } else if (UNWRAP.has(name)) {
         const [a, j] = readArg(s, i);
         out += texToPlain(a);
@@ -224,7 +244,7 @@ function texToPlain(s) {
  * lone `$` stays a dollar sign, as everywhere in this dialect.
  */
 function plainMath(source) {
-  const s = String(source ?? "");
+  const s = normalizeTex(String(source ?? ""));
   let out = "";
   let i = 0;
   while (i < s.length) {
