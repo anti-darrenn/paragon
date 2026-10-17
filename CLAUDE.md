@@ -731,6 +731,21 @@ one node, in a mutually exclusive group, with its own tap action. The verdict un
 question is `AnswerVerdict`, in words and an icon, in a live region. Don't build a new
 option tile inline; drill's had no accessible name at all (audit D1–D4).
 
+**Difficulty tiers** (owner's decision, 2026-10-17): Easy peasy, Warming up, Brain stretch,
+Spicy, Unnecessarily hard (levels 1–5, `lib/core/questions/difficulty.dart`).
+- **Where it comes from.** `Question.tier` is a reviewer's `questions.difficulty` when
+  one is set in the studio workbench (allowed by `editsQuestion`). Otherwise it is
+  `estimateDifficulty`, which scores the question's maths, its unknowns, the stem
+  length, any diagram and what kind of options it has.
+- **The boundaries** are anchored to the WAEC past papers. They split about
+  25/30/22/14/10% from easiest to hardest, and practice lands where it lands (mostly
+  "Brain stretch").
+- **Tests.** `difficulty_test.dart` pins the two ends on real questions. Its control
+  fails if the generated bank stops reaching all five tiers.
+- **On screen.** `QuestionSourceBadge` shows the tier as five pips. The timed WAEC
+  exam passes `showDifficulty: false`, and the tier is labelled an estimate unless a
+  reviewer set it.
+
 **"Practised" topics** (Home's count, a course's "N of M topics started") are
 `practisedTopicIds`: drill answers in `progress` or a topic test in `learn`. It is display
 only.

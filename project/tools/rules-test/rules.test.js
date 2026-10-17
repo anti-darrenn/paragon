@@ -145,6 +145,8 @@ async function main() {
     assertFails(edit(reviewer(), { id: "e6", q: { correctIndex: -1, hasAnswer: true } })),
   );
   await check("not in a subject outside the reviewer's", assertFails(edit(otherSubjectReviewer(), { id: "e7" })));
+  await check("a reviewer sets a difficulty tier", assertSucceeds(edit(reviewer(), { id: "e9", q: { difficulty: 4 } })));
+  await check("not a tier past 5", assertFails(edit(reviewer(), { id: "e10", q: { difficulty: 9 } })));
   await check("a student cannot edit at all", assertFails(edit(student(), { id: "e8", by: "ann" })));
   await check(
     "history is append-only",

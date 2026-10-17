@@ -702,7 +702,14 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Expanded(child: QuestionSourceBadge(question: q)),
+                          Expanded(
+                            // No difficulty in a timed paper: WAEC does
+                            // not say which questions are the hard ones.
+                            child: QuestionSourceBadge(
+                              question: q,
+                              showDifficulty: false,
+                            ),
+                          ),
                           _FlagButton(
                             flagged: _flagged.contains(_currentIndex),
                             onPressed: _toggleFlag,
