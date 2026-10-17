@@ -742,6 +742,20 @@ heard "If F = " then "C + 32". When you add `excludeSemantics` to a tappable thi
 the `Semantics` its own `onTap`, or the action disappears with the children
 (`exam_ux_test.dart` caught exactly that on the exam options).
 
+**The service worker** (owner's decision, 2026-10-17) is `web/paragon_sw.js`, registered
+from `index.html` after load.
+- **What it serves:**
+  - pages and the app's code network-first, falling back to the cached copy offline or
+    after four slow seconds;
+  - immutable files (question images, CanvasKit and fonts on gstatic) cache-first;
+  - everything else of ours stale-while-revalidate;
+  - never `/__/`, non-GET requests or other origins (Firestore, YouTube).
+- **The route table** is `routeFor`, tested by `tools/site/sw.test.js`.
+- **Flutter's own worker.** `web/flutter_bootstrap.js` calls `_flutter.loader.load()`
+  with **no** `serviceWorkerSettings`: Flutter's worker is deprecated, and its stub
+  unregisters whatever is at `/`, ours included.
+- **To make every device drop its caches,** bump `VERSION` in `paragon_sw.js`.
+
 **`web/index.html` must not load MathJax.** Maths is drawn on the canvas by
 `flutter_math_fork`; a MathJax `<script>` sat in the page head until 2026-09-25,
 1.2 MB of render-blocking download that nothing used. The page now carries only
