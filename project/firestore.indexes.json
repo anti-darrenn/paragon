@@ -1,6 +1,14 @@
 {
   "indexes": [
     {
+      "collectionGroup": "questions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "alsoTopicIds", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "hasAnswer", "order": "ASCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "units",
       "queryScope": "COLLECTION",
       "fields": [

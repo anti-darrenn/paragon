@@ -55,6 +55,9 @@ const BASE = "past-questions";
 const QUESTION_FIELDS = [
   "text", "options", "correctIndex", "explanation", "year",
   "subjectId", "topicId", "imageId", "explanationImageId",
+  // Other topics a question also counts for (studio, 2026-10-17); read on
+  // the next --refresh.
+  "alsoTopicIds",
 ];
 
 async function loadData() {
@@ -382,7 +385,9 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}
     // One page per topic: its past questions across the years.
     const topicLinks = [];
     for (const t of data.topics.filter((t) => t.subjectId === subjectId).sort((a, b) => a.order - b.order)) {
-      const inTopic = list.filter((q) => q.topicId === t.id).sort((a, b) => b.year - a.year);
+      const inTopic = list
+        .filter((q) => q.topicId === t.id || (Array.isArray(q.alsoTopicIds) && q.alsoTopicIds.includes(t.id)))
+        .sort((a, b) => b.year - a.year);
       if (inTopic.length === 0) continue;
       const slug = topicSlug.get(t.id);
       const dir = `${sDir}topic/${slug}/`;

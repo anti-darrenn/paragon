@@ -8,6 +8,7 @@ import '../data/read_meter.dart';
 import '../models/learn_resource.dart';
 import '../models/lesson_asset.dart';
 import '../models/question.dart';
+import 'also_in_topic.dart';
 
 /// Learn mode's reads: a topic's ordered resource list, and the question
 /// sets that the inline exercises and the topic test serve.
@@ -131,8 +132,13 @@ Future<List<Question>> _rotatedTopicQuestions(
     ];
   }
 
-  final shuffled = docs.toList()..shuffle();
-  return shuffled.map((d) => Question.fromFirestore(d)).toList();
+  // A quarter at most from questions that also count for this topic.
+  final also = await alsoInTopic(db, topicId, limit ~/ 4);
+  return mergeAlso(
+    [for (final d in docs) Question.fromFirestore(d)],
+    also,
+    limit,
+  )..shuffle();
 }
 
 /// The family key for [challengeQuestionsProvider]: a plan written as

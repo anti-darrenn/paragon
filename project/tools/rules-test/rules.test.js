@@ -147,6 +147,8 @@ async function main() {
   await check("not in a subject outside the reviewer's", assertFails(edit(otherSubjectReviewer(), { id: "e7" })));
   await check("a reviewer sets a difficulty tier", assertSucceeds(edit(reviewer(), { id: "e9", q: { difficulty: 4 } })));
   await check("not a tier past 5", assertFails(edit(reviewer(), { id: "e10", q: { difficulty: 9 } })));
+  await check("a question counts for another topic too", assertSucceeds(edit(reviewer(), { id: "e11", q: { alsoTopicIds: ["t2"] } })));
+  await check("not its own main topic as an extra", assertFails(edit(reviewer(), { id: "e12", q: { alsoTopicIds: ["t1"] } })));
   await check("a student cannot edit at all", assertFails(edit(student(), { id: "e8", by: "ann" })));
   await check(
     "history is append-only",

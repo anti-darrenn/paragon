@@ -62,6 +62,9 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
 
   /// The reviewer's tier, or null for Paragon's estimate.
   int? _difficulty;
+
+  /// Other topics the question also counts for.
+  List<String> _also = const [];
   bool _closeReports = true;
   bool _busy = false;
 
@@ -83,6 +86,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     explanation: _explanation.text,
     hasAnswer: _live,
     difficulty: _difficulty,
+    alsoTopicIds: _also,
   );
 
   bool get _dirty =>
@@ -106,6 +110,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     _correct = d.correctIndex;
     _live = d.hasAnswer;
     _difficulty = d.difficulty;
+    _also = d.alsoTopicIds;
     _loading = false;
   }
 
@@ -258,6 +263,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
           explanation: q.question.explanation,
           hasAnswer: q.hasAnswer,
           difficulty: q.question.difficulty,
+          alsoTopicIds: q.question.alsoTopicIds,
         ),
         asOriginal: true,
       );
@@ -584,6 +590,14 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                 ),
                 enabled: canEdit,
                 onChanged: (v) => setState(() => _difficulty = v),
+              ),
+              const SizedBox(height: 12),
+              _AlsoTopicsPicker(
+                subjectId: q.question.subjectId,
+                mainTopicId: q.question.topicId,
+                value: _also,
+                enabled: canEdit,
+                onChanged: (v) => setState(() => _also = v),
               ),
             ],
           ),
@@ -1381,6 +1395,90 @@ class _DifficultyPicker extends StatelessWidget {
             ),
             for (final t in DifficultyTier.values)
               DropdownMenuItem(value: t.level, child: Text(t.label)),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+/// The topics a question also counts for, beyond its main one: it is then
+/// served in their drill, topic tests and exercises too. Its own subject's
+/// topics only.
+class _AlsoTopicsPicker extends ConsumerWidget {
+  const _AlsoTopicsPicker({
+    required this.subjectId,
+    required this.mainTopicId,
+    required this.value,
+    required this.enabled,
+    required this.onChanged,
+  });
+
+  final String subjectId;
+  final String mainTopicId;
+  final List<String> value;
+  final bool enabled;
+  final ValueChanged<List<String>> onChanged;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    final topics =
+        ref.watch(subjectTopicsProvider(subjectId)).asData?.value ?? const [];
+    final name = {for (final t in topics) t.id: t.name};
+    final addable = [
+      for (final t in topics)
+        if (t.id != mainTopicId && !value.contains(t.id)) t,
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Also counts for',
+          style: AppTheme.bodyMd.copyWith(
+            color: palette.textPrimary,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          'Main topic: ${name[mainTopicId] ?? mainTopicId}. Add others that '
+          'this question also tests; it then turns up in their practice too.',
+          style: AppTheme.caption.copyWith(color: palette.textSecondary),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            for (final id in value)
+              InputChip(
+                label: Text(name[id] ?? id),
+                onDeleted: enabled
+                    ? () => onChanged([...value]..remove(id))
+                    : null,
+              ),
+            if (enabled &&
+                value.length < QuestionDraft.maxAlsoTopics &&
+                addable.isNotEmpty)
+              PopupMenuButton<String>(
+                tooltip: 'Add a topic',
+                onSelected: (id) => onChanged([...value, id]),
+                itemBuilder: (_) => [
+                  for (final t in addable)
+                    PopupMenuItem(value: t.id, child: Text(t.name)),
+                ],
+                child: Chip(
+                  avatar: const Icon(Icons.add_rounded, size: 16),
+                  label: const Text('Add a topic'),
+                ),
+              ),
+            if (value.isEmpty && !enabled)
+              Text(
+                'None',
+                style: AppTheme.caption.copyWith(color: palette.textSecondary),
+              ),
           ],
         ),
       ],

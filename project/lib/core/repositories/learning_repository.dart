@@ -10,6 +10,7 @@ import '../models/subject.dart';
 import '../models/unit.dart';
 import '../models/topic.dart';
 import '../models/question.dart';
+import 'also_in_topic.dart';
 
 final _firestoreProvider = Provider<FirebaseFirestore>((ref) {
   return FirebaseFirestore.instance;
@@ -145,12 +146,16 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
     docs = [...docs, ...additions];
   }
 
-  final shuffled = docs.toList()..shuffle();
+  // Questions whose main topic is elsewhere but which also count here,
+  // up to a quarter of the session, in place of the last primary ones.
+  final also = await alsoInTopic(db, topicId, _drillSessionSize ~/ 4);
+  final merged = mergeAlso(
+    [for (final d in docs) Question.fromFirestore(d)],
+    also,
+    _drillSessionSize,
+  )..shuffle();
   // Spread generator templates out, and cap them (audit A8).
-  return mixSession(
-    shuffled.map((d) => Question.fromFirestore(d)).toList(),
-    (q) => q.text,
-  );
+  return mixSession(merged, (q) => q.text);
 });
 
 // Safety net only — real per-subject bounds always come from

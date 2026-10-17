@@ -731,6 +731,20 @@ one node, in a mutually exclusive group, with its own tap action. The verdict un
 question is `AnswerVerdict`, in words and an icon, in a live region. Don't build a new
 option tile inline; drill's had no accessible name at all (audit D1–D4).
 
+**A question can count for several topics** (owner's decision, 2026-10-17).
+- **The fields.** `topicId` stays the main one, and `alsoTopicIds` (at most five, never
+  the main one) lists the others. Reviewers set them in the workbench's "Also counts
+  for", allowed by `editsQuestion`.
+- **What follows `alsoTopicIds`:**
+  - drill, topic tests and exercises for those topics add them, up to a quarter of a
+    session (`alsoInTopic` and `mergeAlso` in `also_in_topic.dart`, one small query
+    on the `alsoTopicIds + hasAnswer` index);
+  - the studio browser lists them under the topic;
+  - the static topic pages include them after `--refresh`.
+- **What follows the main topic only:** counts, the "1 in N" frequency line and
+  mastery attribution. A drill answer counts for the topic being drilled, whatever
+  the question's main topic.
+
 **Difficulty tiers** (owner's decision, 2026-10-17): Easy peasy, Warming up, Brain stretch,
 Spicy, Unnecessarily hard (levels 1–5, `lib/core/questions/difficulty.dart`).
 - **Where it comes from.** `Question.tier` is a reviewer's `questions.difficulty` when

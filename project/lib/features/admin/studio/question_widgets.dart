@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/questions/question_draft.dart';
 import '../../../core/repositories/admin_flag_repository.dart';
 import '../../../core/repositories/admin_question_repository.dart';
+import '../../../core/models/topic.dart';
 import '../../../core/repositories/learning_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
@@ -15,6 +16,17 @@ import '../admin_paths.dart';
 
 /// Pieces every question list in the studio shares: the browser, the
 /// report queue and the content-quality findings.
+
+/// Every topic of a subject, in course order, for the topic picker.
+final subjectTopicsProvider = FutureProvider.family<List<Topic>, String>((
+  ref,
+  subjectId,
+) async {
+  final units = await ref.watch(unitsProvider(subjectId).future);
+  return [
+    for (final u in units) ...await ref.watch(topicsProvider(u.id).future),
+  ];
+});
 
 /// Opens the workbench on [id], remembering [list] so it can step through
 /// the rest with Previous and Next.

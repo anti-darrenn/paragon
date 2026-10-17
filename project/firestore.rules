@@ -69,7 +69,7 @@ service cloud.firestore {
       return q.diff(resource.data).affectedKeys()
              .hasOnly(['text', 'options', 'correctIndex', 'previousCorrectIndex',
                        'explanation', 'hasAnswer', 'editedAt', 'editedBy',
-                       'lastEditId', 'difficulty'])
+                       'lastEditId', 'difficulty', 'alsoTopicIds'])
         && q.editedBy == request.auth.uid
         && q.editedAt == request.time
         && q.lastEditId is string
@@ -82,6 +82,12 @@ service cloud.firestore {
         && q.correctIndex < q.options.size()
         // A question students see must have a marked answer.
         && (!q.hasAnswer || q.correctIndex >= 0)
+        // Other topics it also counts for: a few, never its main one.
+        // (Rules cannot read each id; the studio offers only the
+        // question's own subject's topics.)
+        && (!('alsoTopicIds' in q)
+            || (q.alsoTopicIds is list && q.alsoTopicIds.size() <= 5
+                && !(resource.data.topicId in q.alsoTopicIds)))
         // A reviewer's difficulty tier, 1 (easy peasy) to 5.
         && (!('difficulty' in q)
             || (q.difficulty is int && q.difficulty >= 1 && q.difficulty <= 5))
