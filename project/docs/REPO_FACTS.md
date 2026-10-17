@@ -279,3 +279,16 @@ numbers** to show. These are still open:
 6. **The indexing policy:** noindex question pages without an original explanation
    (6.1).
 7. **A service worker** (8.8).
+
+### Decided (2026-10-17)
+
+| # | Decision |
+|---|---|
+| 1 | **No custom domain for now.** `paragon-hq.web.app` stays; `docs/DOMAIN_SETUP.md` waits. |
+| 2 | **Open.** The owner asked what is wrong with the present arrangement; see `docs/QUESTION_SOURCES.md`. |
+| 3 | **Reviewers edit questions in the studio**, every edit kept in `questions/{id}/history` (PR #59). |
+| 4 | **A question may count for several topics**: one primary `topicId`, plus `alsoTopicIds`. |
+| 5 | **Difficulty tiers, from "Easy peasy" to "Unnecessarily hard"**, shown on questions. They are estimated in code; a reviewer can set a question's tier by hand. |
+| 6 | **Nothing is hidden from search.** Every question page stays indexed (no `noindex`). |
+| 7 | **A service worker** that keeps the app shell for repeat visits on bad connections. |
+| — | **Tagline:** "To be determined" until one from `docs/COPY.md` is chosen. |
