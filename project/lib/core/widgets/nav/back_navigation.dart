@@ -44,7 +44,9 @@ String? parentPathFor(Uri uri) {
     // WAEC.
     ['waec', ...] => '/waec',
 
-    // Review.
+    // Study (the Review tab).
+    ['review', 'flashcards', _, ...] => '/review/flashcards',
+    ['review', ...] => '/review',
     ['mistakes', 'practice'] => '/mistakes',
     ['mistakes'] ||
     ['saved'] ||
@@ -62,6 +64,9 @@ String? parentPathFor(Uri uri) {
     ['join'] => '/',
     ['rooms', 'new'] => '/join',
     ['rooms', ...] => '/join',
+    ['quizzes'] => '/rooms/new',
+    ['quizzes', _] => '/quizzes',
+    ['me', 'history'] => '/me',
 
     // The studio.
     ['admin'] => '/',

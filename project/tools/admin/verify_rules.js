@@ -994,6 +994,50 @@ async function feedbackAndUsage(a, b) {
     DENY,
     await readDoc(b.idToken, `difficultyVotes/${id}`),
   );
+  // Hosts' own quizzes (2026-10-17) are written by accounts only.
+  expectOutcome(
+    'a guest cannot write a quiz',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `quizzes/zz_verify_${a.uid.slice(0, 8)}`,
+        { userId: str(a.uid), title: str('Indices'), questions: arr([]) },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
+  // Profile photos (2026-10-17) are accounts only.
+  expectOutcome(
+    'a guest cannot upload a profile photo',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `avatarImages/${a.uid}`,
+        { mime: str('image/jpeg'), data: str('abc') },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
+  // Flashcard decks (2026-10-17) are accounts only; a guest's stay on
+  // the device.
+  expectOutcome(
+    'a guest cannot save a flashcard deck',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `decks/${id}`,
+        {
+          userId: str(a.uid),
+          title: str('Indices'),
+          cards: arr([]),
+        },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
   expectOutcome(
     'the owner can delete their ratings',
     ALLOW,

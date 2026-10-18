@@ -83,3 +83,10 @@ The writes are about 650: 30 joins, 600 answers, and the host's transitions.
 So a classroom game costs about 5% of Spark's daily reads. Players never listen to each
 other or to the answers, or 30 phones would cost about 18,000 reads. Rooms never touch
 `attempts` or `progress`.
+
+**Rooms v2 (2026-10-17), worked out, not yet measured.** The room document now also changes
+once more per question (the reveal carries the scores), so each phone reads about 20 more
+changes a game: about 600 more reads for 30 players, so about **3,200 reads** a game.
+A host's own quiz is one read per phone (`quizzes/{id}`), and its diagrams one each. The
+end of a game adds one `quizHistory` write per player and the host (31). A profile photo is
+read once by the host per player who has one.

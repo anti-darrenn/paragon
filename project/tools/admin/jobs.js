@@ -141,6 +141,11 @@ const OWNED = [
   ["examResults", "userId"],
   ["challenges", "userId"],
   ["difficultyVotes", "userId"],
+  ["decks", "userId"],
+  ["quizzes", "userId"],
+  ["quizAssets", "createdBy"],
+  ["quizHistory", "userId"],
+  ["rooms", "hostUid"],
   ["progress", null],
   ["learn", null],
   ["study", null],
@@ -148,6 +153,9 @@ const OWNED = [
   ["staffProfiles", null],
   ["waitlist", null],
   ["plan", null],
+  ["avatarImages", null],
+  // A takedown record goes with the account (Admin SDK only).
+  ["avatarBlocks", null],
   // Public bylines are Admin-SDK-written, so the app cannot delete them;
   // scheduled deletion and the orphan sweep do.
   ["contributors", null],

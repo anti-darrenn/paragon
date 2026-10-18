@@ -74,17 +74,39 @@ formats were checked on 2026-10-16 against the WAEC syllabuses (question counts)
 - **`QuestionRunner`** (`lib/core/widgets/question_runner.dart`) is the shared
   instant-feedback runner for both.
 
-**Live quiz rooms** (`lib/core/rooms/`, `features/rooms/`):
-- **Routes.** `/join`, `/rooms/new`, `/rooms/:code/host` (the projector) and
-  `/rooms/:code` (a phone).
-- **Scoring** is the pure model `room.dart`: one point per right answer, no speed bonus.
-  The host's client totals the score at the podium.
-- **Reads.** A player listens to the room and nothing else, so a 30-player game is about
-  2,600 reads. The figures are in `docs/audit/QUOTA.md`.
+**Live quiz rooms** (`lib/core/rooms/`, `features/rooms/`; v2 on 2026-10-17):
+- **Routes.** `/join`, `/rooms/new`, `/rooms/:code/host` (the projector), `/rooms/:code`
+  (a phone), `/quizzes` and `/quizzes/:id` (a host's own quizzes), `/me/history`.
+- **What a room asks.** `items` is the order, up to 30: `b:<id>` for a bank question
+  (vetted only) and `q:<i>` for question i of the host's `quizzes/{quizId}`. Bank
+  questions come from up to 10 topics via `buildCustomQuiz`. Rooms made before v2
+  have only `questionIds`, and `Room.order` reads both. `roomItemsProvider` loads them.
+- **Scoring** is the pure model `room.dart`.
+  - **Classic:** one point a right answer.
+  - **Speed:** `speedPoints`, 1000 falling to 500 at the limit, plus `streakBonus`.
+  - **Who scores.** The host's client scores each question at the reveal
+    (`scoreQuestion`, from the server's `questionStartedAt` and answer `at`). It writes
+    running `scores` and `streaks` into the room, and `results` at the podium.
+    `_revealed` stops a question being scored twice.
+- **The timer.** `timeLimit` is 10–90 s (0 means none, classic only). A question also
+  ends when every player has answered. The answer rule refuses an answer after
+  `questionStartedAt + timeLimit + 2 s`, and `questionStartedAt` must be `request.time`.
+- **Hosts' quizzes** live in `quizzes/{id}` (any account; get by anyone signed in;
+  ≤ 50 questions, 2–5 options), written in the Normal/LaTeX editor. Diagrams go in
+  `quizAssets` as `quiz:<id>`, which `lessonAssetProvider` reads. They never enter
+  the bank.
+- **History.** At the podium each phone writes `quizHistory/{code}_{uid}`. The rules
+  check a player's score against the room's `results`, and the host's role against
+  `hostUid`.
+- **The look.** `room_ui.dart` has the shape tiles (`AppColors.room*`, one semantics
+  node each), `CountdownRing`, `Leaderboard`, `PodiumSteps`, `Confetti` and
+  `GetReady`. All of them respect reduced motion.
+- **Reads.** A player listens to the room and nothing else; a 30-player game is about
+  3,200 reads (`docs/audit/QUOTA.md`).
 - **Never** `attempts` or `progress`.
 - **The answer rule** reads the room with `get()`. An answer is accepted only when the
-  room's `state` is `question` at that index, once, from a joined player. The emulator
-  suite walks through a whole game.
+  room's `state` is `question` at that index, in time, once, from a joined player. The
+  emulator suite walks through whole games.
 
 **Content structure** (Wave I):
 - **Examiner insights.** Shown as "What examiners saw" under a worked answer in drill
@@ -113,7 +135,7 @@ formats were checked on 2026-10-16 against the WAEC syllabuses (question counts)
   labels.
 - **The privacy policy** has a "legal basis" section. It is still a draft for a
   lawyer's review.
-- **The terms** are at `kLegalVersion` `2026-10-15`, so every account re-accepts once.
+- **The terms** are at `kLegalVersion` `2026-10-18` (photos, quiz history, own quizzes, flashcards, ratings), so every account re-accepts once.
 - **Taglines.** `docs/COPY.md` holds five options for the owner to choose from.
 
 **Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
@@ -718,6 +740,25 @@ subject by "Rebuild search, glossary & cards", and for every subject by
 check a production document actually has `lessons`. Card ids are `topic:resource:key`
 with dots replaced, because they are map keys in `study/{uid}.cards`.
 
+**The Study tab** (renamed from Review, 2026-10-17; the path is still `/review`) is the
+study-tools hub. Its screens are deferred, and their paths live in
+`features/study/hub/study_paths.dart` so the hub can link without loading them.
+- **Custom quiz** (`/review/quiz`): a subject, up to 10 topics, 10, 20 or 30
+  questions, an optional tier. Built by `buildCustomQuiz` from the topics' drill pools
+  and run by `QuestionRunner` with ratings. Attempts use `source: 'quiz'`, and
+  `quizMasterySessions` adds to `progress` **only for topics whose drill is open**, so
+  a quiz is never a way past a topic test.
+- **My flashcards** (`/review/flashcards`).
+  - **Storage.** One `decks/{id}` per deck holds `{userId, title, subjectId?,
+    cards ≤ 300, updatedAt}`: one read to open, one write to save. Accounts only; a
+    guest's decks are in `LocalDeckStore` and are copied up by `guest_upgrade.dart`.
+  - **Studying** uses the revision cards' Leitner schedule in `study/{uid}.cards`,
+    under `deck_<deck>_<card>`.
+  - **"Quiz me"** is `quizFromDeck`: other cards' backs as the wrong options; it
+    needs four different answers and records nothing.
+- **Tools** (`/review/tools/:toolId`): any `studyTools` entry on its own page, in the
+  learning context, with a subject picker where the tool needs one.
+
 **Study tools** go through `StudyDock`, which wraps the lesson, drill,
 topic test and WAEC exam screens. Tools implement `StudyTool` and add one
 line to `study_tool_registry.dart`.
@@ -880,7 +921,7 @@ A lone `$` in stored text is a literal dollar sign, **not** an inline-math delim
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `plan/{uid}` (weekly goal from `kWeeklyGoals` and exam date only; accounts only, owner-only), `insights/{id}` (examiner insights: per question by its id, per topic as `topic_<topicId>`; writers draft, reviewers publish, students *get* published ones only when `questions.hasInsight` / `topics.hasExaminerThemes` say one exists — stamped by `jobs.js --job=insights`), `contributors/{uid}` (public bylines `{displayName, role, credential}`; Admin-SDK-only via `tools/admin/set_contributor.js`, after consent and a credential check), `theoryQuestions/{id}` (Paper 2, Admin-SDK-written, published-only for students, hidden until a subject has `kTheoryMinQuestions` = 20; `subjects.theoryCount` from the counts job), `rooms/{code}` (live quiz: host-written `{hostUid, subjectId, topicId, topicName, questionIds ≤20, state, index, createdAt, results}`, plus `players/{uid}` nicknames and `answers/{uid_index}` accepted only while that question is live; guests join, accounts host; a day long, then `jobs.js --job=rooms`), `challenges/{id}` ("Challenge a friend": `{userId, name, subjectId, topicId, topicName, questionIds ≤10, score, total, createdAt}`; written once, *get* by anyone signed in, *list* and delete by the creator; deleted after 30 days by `jobs.js --job=challenges`), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `difficultyVotes/{id}` (one session of "how hard was this?" ratings, `{userId, createdAt, votes}`; guests allowed, owner read/delete; tallied and deleted nightly by `jobs.js --job=difficulty`), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `metrics/{day}` (daily aggregate counts from `jobs.js --job=metrics`, Lagos day; admins read them in the studio's Traction panel; no uid or name), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `plan/{uid}` (weekly goal from `kWeeklyGoals` and exam date only; accounts only, owner-only), `insights/{id}` (examiner insights: per question by its id, per topic as `topic_<topicId>`; writers draft, reviewers publish, students *get* published ones only when `questions.hasInsight` / `topics.hasExaminerThemes` say one exists — stamped by `jobs.js --job=insights`), `contributors/{uid}` (public bylines `{displayName, role, credential}`; Admin-SDK-only via `tools/admin/set_contributor.js`, after consent and a credential check), `theoryQuestions/{id}` (Paper 2, Admin-SDK-written, published-only for students, hidden until a subject has `kTheoryMinQuestions` = 20; `subjects.theoryCount` from the counts job), `rooms/{code}` (live quiz: host-written `{hostUid, subjectId, topicId, topicName, questionIds ≤20, state, index, createdAt, results}`, plus `players/{uid}` nicknames and `answers/{uid_index}` accepted only while that question is live; guests join, accounts host; a day long, then `jobs.js --job=rooms`), `challenges/{id}` ("Challenge a friend": `{userId, name, subjectId, topicId, topicName, questionIds ≤10, score, total, createdAt}`; written once, *get* by anyone signed in, *list* and delete by the creator; deleted after 30 days by `jobs.js --job=challenges`), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `avatarImages/{uid}` (a profile photo, a small JPEG; signed-in get, owner write, reviewer delete), `avatarBlocks/{uid}` (a takedown: reviewer create, admin delete; blocks new uploads), `quizzes/{id}` (a host's own quiz for live rooms; author writes, anyone signed in gets), `quizAssets/{id}` (its diagrams), `quizHistory/{code_uid}` (a finished live quiz, per person; score checked against the room), `decks/{id}` (a student's flashcard deck, all its cards inside; accounts only, owner-only), `difficultyVotes/{id}` (one session of "how hard was this?" ratings, `{userId, createdAt, votes}`; guests allowed, owner read/delete; tallied and deleted nightly by `jobs.js --job=difficulty`), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `metrics/{day}` (daily aggregate counts from `jobs.js --job=metrics`, Lagos day; admins read them in the studio's Traction panel; no uid or name), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten. The create rule is a closed field set with `createdAt == request.time`. `notify_drafts.js` pages through reports by `createdAt`, so one report dated in the future would silence every report email after it; the job also ignores a cursor set in the future.
 - `questions` take two client writes, both reviewer-only and within the reviewer's subjects.
@@ -901,7 +942,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
     `rules.test.js` walks the edit path's allows and denials.
   - **Static pages** pick up studio edits only after `build_static_site.js --refresh`.
 
-- `attempts` accepts exactly `AttemptRepository._attemptData`'s fields, with `source` from the seven values and `timestamp == request.time`. A new attempt field needs the rule first.
+- `attempts` accepts exactly `AttemptRepository._attemptData`'s fields, with `source` from the eight values and `timestamp == request.time`. A new attempt field needs the rule first.
 - `usernames` refuses guests and names that pass as Paragon. The reserved list is in three places, kept in step: the rule, `UsernameRules.isReserved` and `security_audit.js`.
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.imageId` / `explanationImageId` are `lessonAssets` ids for a diagram the question depends on and a worked-answer picture. Only scraped past questions have them, set by `10_fetch_question_images.js`; `QuestionImage` renders them everywhere a question appears. A question whose diagram the source no longer serves is retired with `hasAnswer: false, needsDiagram: true` — to restore one, attach an image and flip `hasAnswer` back.
@@ -917,10 +958,19 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - **Placeholders.** `checkPublishable` (`lesson_check.dart`) refuses to publish a placeholder title (`test2`, `test_article`, `Sample`…), an empty article or a linkless video; a reviewer can override with a reason kept as a comment. `tools/admin/content_lint.js` applies the same rules to what is live, read-only, exiting non-zero — keep the two regexes in step.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
-- `attempts.source` is now one of `drill | waec | test | exercise | review | challenge | challenge_link` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
+- `attempts.source` is now one of `drill | waec | test | exercise | review | challenge | challenge_link | quiz` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`** — and to `_ownedById`/`_ownedByQuery` (the export) and `OWNED` in `tools/admin/jobs.js` (guest cleanup, scheduled deletions, orphans). `export_test.dart` checks export and deletion cover the same set. Forgetting leaves a student who asked to be deleted, and mostly was.
 - **The account system** (`lib/features/account/`, `lib/features/profile/`). `users/{uid}` also carries `avatar` (`preset:<id>` or `initials:<colour>`), `bio` (≤160, private), `usernameChangedAt`, `deletionRequestedAt`, `legalVersion`/`legalAcceptedAt` and `prefs`; every one is allow-listed and shape-checked in `clientFieldsAreValid()`, and every timestamp must be the server's clock.
   - **Profiles are private.** `/me` and the bio are seen only by their owner; nothing social reads `users/{uid}`. A future public profile must be a separate opt-in document.
+  - **Profile photos** (owner's decision, 2026-10-17: shown to others, moderated by reports).
+    - **Storage.** `users/{uid}.avatar` is `photo:<version>`. The image is a 256 px JPEG
+      in `avatarImages/{uid}` (≤ 120k base64 characters, any signed-in reader, accounts
+      only), prepared on the device by the deferred `photo_upload.dart`. No Cloud Storage.
+    - **Where others see it.** In quiz rooms only: `players/{uid}.avatar` and the
+      lobby's `PlayerChip`, where the host can hide a photo and anyone can report it.
+    - **Reports** are `flags` with `avatarUid`. Reviewers handle them in Reports →
+      Reported photos (`picture_reports.dart`). "Remove" deletes the image and writes
+      `avatarBlocks/{uid}`, which stops new uploads; only an admin lifts it.
   - **Guests link, not replace.** `/account/upgrade` links Google or email to the anonymous uid, so everything already stored stays; device-only notes/cards and in-memory lesson ticks are copied up (`guest_upgrade.dart`). An existing account cannot be merged: the student is told their guest progress stays behind. `jobs.js --job=guests` deletes guests idle 30+ days with everything they own.
   - **Usernames change once every 90 days** (rules and `UsernameRules.changeCooldown`); old reservations are never released.
   - **Deleting schedules** (30 days, `/account/deleting`, `jobs.js --job=deletions`) with "delete now" always offered; guests are deleted at once.

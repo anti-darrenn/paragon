@@ -412,12 +412,18 @@ service cloud.firestore {
 
       allow get: if request.auth != null;
       allow list: if false;
+      // Rooms v2 (2026-10-17): `items` is the order (`b:<id>` bank,
+      // `q:<i>` the host's `quizId`), up to 30; `mode` speed or classic;
+      // `timeLimit` seconds a question (0 = none); the host stamps
+      // `questionStartedAt` with the server's clock each question and
+      // writes running `scores` and `streaks` at each reveal.
       allow create: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
         && code.matches('^[A-HJKMNP-Z2-9]{6}$')
         && request.resource.data.keys().hasOnly(['hostUid', 'subjectId',
-             'topicId', 'topicName', 'questionIds', 'state', 'index',
-             'createdAt', 'results'])
+             'topicId', 'topicName', 'questionIds', 'items', 'quizId',
+             'mode', 'timeLimit', 'state', 'index', 'createdAt', 'results',
+             'scores', 'streaks'])
         && request.resource.data.hostUid == request.auth.uid
         && request.resource.data.state == 'lobby'
         && request.resource.data.index == 0
@@ -426,17 +432,38 @@ service cloud.firestore {
         && request.resource.data.topicName is string
         && request.resource.data.topicName.size() <= 120
         && request.resource.data.questionIds is list
-        && request.resource.data.questionIds.size() > 0
-        && request.resource.data.questionIds.size() <= 20;
+        && request.resource.data.questionIds.size() <= 30
+        && request.resource.data.items is list
+        && request.resource.data.items.size() > 0
+        && request.resource.data.items.size() <= 30
+        && request.resource.data.mode in ['speed', 'classic']
+        && request.resource.data.timeLimit is int
+        && request.resource.data.timeLimit >= 0
+        && request.resource.data.timeLimit <= 120
+        && (!('quizId' in request.resource.data)
+            || request.resource.data.quizId is string)
+        && request.resource.data.scores == {}
+        && request.resource.data.streaks == {};
       allow update: if request.auth != null
         && resource.data.hostUid == request.auth.uid
         && request.resource.data.diff(resource.data).affectedKeys()
-             .hasOnly(['state', 'index', 'results'])
+             .hasOnly(['state', 'index', 'results', 'questionStartedAt',
+                       'scores', 'streaks'])
         && request.resource.data.state in ['lobby', 'question', 'reveal', 'podium', 'closed']
         && request.resource.data.index is int
         && request.resource.data.index >= 0
-        && request.resource.data.index < resource.data.questionIds.size()
-        && request.resource.data.results is map;
+        && request.resource.data.index < ('items' in resource.data
+             ? resource.data.items.size()
+             : resource.data.questionIds.size())
+        && request.resource.data.results is map
+        // The question clock is the server's, never the host's.
+        && (!request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(['questionStartedAt'])
+            || request.resource.data.questionStartedAt == request.time)
+        && (!('scores' in request.resource.data)
+            || request.resource.data.scores is map)
+        && (!('streaks' in request.resource.data)
+            || request.resource.data.streaks is map);
       allow delete: if request.auth != null
         && resource.data.hostUid == request.auth.uid;
 
@@ -445,7 +472,11 @@ service cloud.firestore {
         allow get, list: if request.auth != null;
         allow create: if isOwner(uid)
           && roomOpen()
-          && request.resource.data.keys().hasOnly(['nickname', 'joinedAt'])
+          && request.resource.data.keys().hasOnly(['nickname', 'joinedAt', 'avatar'])
+          && (!('avatar' in request.resource.data)
+              || (request.resource.data.avatar is string
+                  && request.resource.data.avatar.matches(
+                       '^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$')))
           && request.resource.data.nickname is string
           && request.resource.data.nickname.size() > 0
           && request.resource.data.nickname.size() <= 20
@@ -473,7 +504,13 @@ service cloud.firestore {
           && request.resource.data.at == request.time
           && exists(/databases/$(database)/documents/rooms/$(code)/players/$(request.auth.uid))
           && roomData().state == 'question'
-          && roomData().index == request.resource.data.index;
+          && roomData().index == request.resource.data.index
+          // A timed question takes answers until its time is up, plus
+          // two seconds for the network.
+          && (!('timeLimit' in roomData()) || roomData().timeLimit == 0
+              || !('questionStartedAt' in roomData())
+              || request.time < roomData().questionStartedAt
+                   + duration.value(roomData().timeLimit + 2, 's'));
       }
     }
 
@@ -581,7 +618,7 @@ service cloud.firestore {
         && (!('avatar' in request.resource.data)
           || (request.resource.data.avatar is string
             && request.resource.data.avatar
-                 .matches('^(preset|initials):[a-z_]{2,20}$')))
+                 .matches('^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$')))
         && request.resource.data.updatedAt == request.time;
     }
 
@@ -692,7 +729,7 @@ service cloud.firestore {
         && (!('prefs' in after) || prefsAreValid(after.prefs))
         && (!('avatar' in after)
           || (after.avatar is string
-              && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
+              && after.avatar.matches('^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$')))
         && (!('bio' in after)
           || (after.bio is string && after.bio.size() <= 160))
         && (!('profile' in after) || profileIsValid(after.profile));
@@ -895,7 +932,8 @@ service cloud.firestore {
           && request.resource.data.selectedIndex <= 9
           && request.resource.data.isCorrect is bool
           && request.resource.data.source in ['drill', 'waec', 'test',
-               'exercise', 'review', 'challenge', 'challenge_link']
+               'exercise', 'review', 'challenge', 'challenge_link',
+               'quiz']
           && request.resource.data.timestamp == request.time
           && (!('hintsUsed' in request.resource.data)
               || (request.resource.data.hintsUsed is int
@@ -1023,7 +1061,7 @@ service cloud.firestore {
       allow create: if request.auth != null
           && request.resource.data.userId == request.auth.uid
           && request.resource.data.keys().hasOnly(['questionId', 'resourceId',
-               'topicId', 'userId', 'reason', 'createdAt', 'status'])
+               'topicId', 'avatarUid', 'userId', 'reason', 'createdAt', 'status'])
           && request.resource.data.createdAt == request.time
           && request.resource.data.reason is string
           && request.resource.data.reason.size() <= 40
@@ -1036,7 +1074,13 @@ service cloud.firestore {
                 && request.resource.data.resourceId.size() > 0
                 && request.resource.data.resourceId.size() <= 128
                 && request.resource.data.topicId is string
-                && request.resource.data.topicId.size() <= 128))
+                && request.resource.data.topicId.size() <= 128)
+              // A profile photo (2026-10-17), never your own.
+              || ('avatarUid' in request.resource.data
+                && request.resource.data.avatarUid is string
+                && request.resource.data.avatarUid.size() > 0
+                && request.resource.data.avatarUid.size() <= 128
+                && request.resource.data.avatarUid != request.auth.uid))
           && (!('status' in request.resource.data)
               || request.resource.data.status == 'open');
       // Read-own and delete-own, narrowly: a deleting user has to be able
@@ -1052,6 +1096,141 @@ service cloud.firestore {
           && request.resource.data.diff(resource.data).affectedKeys()
                .hasOnly(['status', 'resolvedAt', 'resolvedBy'])
           && request.resource.data.status in ['open', 'fixed', 'dismissed'];
+    }
+
+    // ── HOSTS' OWN QUIZZES (2026-10-17) ─────────────────────────
+    // One document per quiz, every question inside. Written by its author
+    // (any account); anyone signed in may get one by id, because the
+    // phones in a room need its questions. Never part of the bank.
+    match /quizzes/{id} {
+      allow get: if request.auth != null;
+      allow list: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow create, update: if request.auth != null
+          && request.auth.token.firebase.sign_in_provider != 'anonymous'
+          && request.resource.data.userId == request.auth.uid
+          && (resource == null || resource.data.userId == request.auth.uid)
+          && request.resource.data.keys().hasOnly(
+               ['userId', 'title', 'subjectId', 'questions', 'updatedAt'])
+          && request.resource.data.title is string
+          && request.resource.data.title.size() > 0
+          && request.resource.data.title.size() <= 120
+          && (!('subjectId' in request.resource.data)
+              || request.resource.data.subjectId is string)
+          && request.resource.data.questions is list
+          && request.resource.data.questions.size() <= 50
+          && request.resource.data.updatedAt == request.time;
+      allow delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+    }
+
+    // Diagrams in those quizzes: the lesson-image shape, any account,
+    // kept apart from the lesson library.
+    match /quizAssets/{id} {
+      allow get: if request.auth != null;
+      allow list: if request.auth != null
+          && resource.data.createdBy == request.auth.uid;
+      allow create: if request.auth != null
+          && request.auth.token.firebase.sign_in_provider != 'anonymous'
+          && request.resource.data.keys().hasOnly(
+               ['mime', 'data', 'width', 'height', 'createdBy', 'createdAt'])
+          && request.resource.data.mime in
+               ['image/webp', 'image/jpeg', 'image/png', 'image/svg+xml']
+          && request.resource.data.data is string
+          && request.resource.data.data.size() <= 900000
+          && request.resource.data.createdBy == request.auth.uid
+          && request.resource.data.createdAt == request.time;
+      allow delete: if request.auth != null
+          && resource.data.createdBy == request.auth.uid;
+    }
+
+    // ── QUIZ HISTORY (2026-10-17) ───────────────────────────────
+    // One entry per person per finished room: `{code}_{uid}`. A player's
+    // score must be the one the room's results give them, so nobody can
+    // record a better game than they played. Guests too.
+    match /quizHistory/{id} {
+      function finishedRoom() {
+        return get(/databases/$(database)/documents/rooms/$(request.resource.data.roomCode)).data;
+      }
+      allow read: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null
+          && request.resource.data.keys().hasOnly(['userId', 'roomCode',
+               'title', 'role', 'score', 'place', 'players', 'total', 'mode',
+               'at'])
+          && request.resource.data.userId == request.auth.uid
+          && id == request.resource.data.roomCode + '_' + request.auth.uid
+          && request.resource.data.at == request.time
+          && request.resource.data.title is string
+          && request.resource.data.title.size() <= 120
+          && request.resource.data.score is int
+          && request.resource.data.place is int
+          && request.resource.data.players is int
+          && request.resource.data.total is int
+          && request.resource.data.mode in ['speed', 'classic']
+          && finishedRoom().state in ['podium', 'closed']
+          && ((request.resource.data.role == 'host'
+                && finishedRoom().hostUid == request.auth.uid)
+              || (request.resource.data.role == 'player'
+                && finishedRoom().results.get(request.auth.uid, -1)
+                     == request.resource.data.score));
+    }
+
+    // ── PROFILE PHOTOS ──────────────────────────────────────────
+    // A student's photo (2026-10-17): a small JPEG as base64, owner-written,
+    // readable by anyone signed in (it is shown in quiz rooms). Accounts
+    // only, and never while `avatarBlocks/{uid}` exists: a reviewer who
+    // removes a reported photo writes it, and the owner cannot remove it.
+    match /avatarImages/{uid} {
+      allow get: if request.auth != null;
+      allow list: if false;
+      allow create, update: if isOwner(uid)
+          && request.auth.token.firebase.sign_in_provider != 'anonymous'
+          && !exists(/databases/$(database)/documents/avatarBlocks/$(uid))
+          && request.resource.data.keys().hasOnly(['mime', 'data', 'updatedAt'])
+          && request.resource.data.mime == 'image/jpeg'
+          && request.resource.data.data is string
+          && request.resource.data.data.size() > 0
+          && request.resource.data.data.size() <= 120000
+          && request.resource.data.updatedAt == request.time;
+      allow delete: if isOwner(uid) || isReviewer();
+    }
+
+    match /avatarBlocks/{uid} {
+      allow get: if isOwner(uid) || isReviewer();
+      allow list: if isReviewer();
+      allow create: if isReviewer()
+          && request.resource.data.keys().hasOnly(['by', 'at', 'reason'])
+          && request.resource.data.by == request.auth.uid
+          && request.resource.data.at == request.time
+          && request.resource.data.reason is string
+          && request.resource.data.reason.size() <= 300;
+      allow delete: if isAdmin();
+    }
+
+    // ── FLASHCARD DECKS ─────────────────────────────────────────
+    // A student's own flashcards (2026-10-17): one document per deck,
+    // every card inside it, so a deck is one read and one write. Accounts
+    // only (a guest's decks stay on the device); owner-only both ways.
+    match /decks/{id} {
+      allow read, delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow create, update: if request.auth != null
+          && request.auth.token.firebase.sign_in_provider != 'anonymous'
+          && request.resource.data.userId == request.auth.uid
+          && (resource == null || resource.data.userId == request.auth.uid)
+          && request.resource.data.keys().hasOnly(
+               ['userId', 'title', 'subjectId', 'cards', 'updatedAt'])
+          && request.resource.data.title is string
+          && request.resource.data.title.size() > 0
+          && request.resource.data.title.size() <= 80
+          && (!('subjectId' in request.resource.data)
+              || request.resource.data.subjectId is string)
+          && request.resource.data.cards is list
+          && request.resource.data.cards.size() <= 300
+          && request.resource.data.updatedAt == request.time;
     }
 
     // ── DIFFICULTY VOTES ────────────────────────────────────────

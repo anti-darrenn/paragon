@@ -46,6 +46,20 @@ class FlagRepository {
       'createdAt': FieldValue.serverTimestamp(),
     });
   }
+
+  /// A report about someone's profile photo (2026-10-17). Reviewers see
+  /// these in the studio's Pictures queue and can remove the photo.
+  Future<void> reportAvatar({
+    required String userId,
+    required String avatarUid,
+  }) {
+    return _db.collection('flags').add({
+      'avatarUid': avatarUid,
+      'userId': userId,
+      'reason': 'inappropriate_photo',
+      'createdAt': FieldValue.serverTimestamp(),
+    });
+  }
 }
 
 /// Why a student is reporting a lesson item (an article or a video).

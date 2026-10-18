@@ -186,6 +186,12 @@ class MeScreen extends ConsumerWidget {
                 onTap: () => context.push('/saved'),
               ),
               ListRow(
+                icon: Icons.emoji_events_outlined,
+                title: 'Quiz history',
+                subtitle: 'Live quizzes you played, won and hosted',
+                onTap: () => context.push('/me/history'),
+              ),
+              ListRow(
                 icon: Icons.text_fields_rounded,
                 title: 'Reading & display',
                 subtitle: 'Text size, font, low-data mode',

@@ -41,6 +41,20 @@ class AppColors {
   /// BuildContext to ask the palette: a status with nothing to report, a
   /// fallback swatch, a canvas outline. Never body text.
   static const neutral = Color(0xFF8B949E);
+
+  /// Live quiz answer tiles (2026-10-17): one colour and shape per option,
+  /// so a room can say "the blue diamond" across a classroom. Strong enough
+  /// for white text (WCAG AA at the tile sizes used) in both themes.
+  static const roomRed = Color(0xFFD1344B);
+  static const roomBlue = Color(0xFF1F6FD1);
+  static const roomYellow = Color(0xFFB7791F);
+  static const roomGreen = Color(0xFF248A3D);
+  static const roomPurple = Color(0xFF7A3FD1);
+
+  /// The podium's first, second and third steps.
+  static const medalGold = Color(0xFFE3B341);
+  static const medalSilver = Color(0xFFB8C4D0);
+  static const medalBronze = Color(0xFFC97B4A);
   static const accentBlue = Color(
     0xFF58A6FF,
   ); // informational accent (stats, links)

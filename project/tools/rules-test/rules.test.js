@@ -244,6 +244,8 @@ async function main() {
   await check("a student records their own attempt", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1"), attempt("ann"))));
   await check("a guest does too", assertSucceeds(setDoc(doc(guest("g1"), "attempts/a1g"), attempt("g1", { source: "waec" }))));
   await check("with hints used", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1h"), attempt("ann", { hintsUsed: 2 }))));
+  await check("a custom quiz's answer", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1q"), attempt("ann", { source: "quiz" }))));
+  await check("not an unknown source", assertFails(setDoc(doc(student("ann"), "attempts/a1x"), attempt("ann", { source: "cheat" }))));
   await check(
     "an attempt in someone else's name is refused",
     assertFails(setDoc(doc(student("ann"), "attempts/a2"), attempt("bob"))),
@@ -297,6 +299,53 @@ async function main() {
   await check("nobody else reads them", assertFails(getDoc(doc(student("bob"), "difficultyVotes/v1"))));
   await check("the owner can delete theirs", assertSucceeds(deleteDoc(doc(student("ann"), "difficultyVotes/v1"))));
 
+  console.log("\ndecks: a student's own flashcards, accounts only");
+  const deck = (uid, over = {}) => ({ userId: uid, title: "Indices", cards: [{ id: "c1", front: "a^0", back: "1" }], updatedAt: serverTimestamp(), ...over });
+  await check("a student saves a deck", assertSucceeds(setDoc(doc(student("ann"), "decks/d1"), deck("ann"))));
+  await check("and updates it", assertSucceeds(setDoc(doc(student("ann"), "decks/d1"), deck("ann", { title: "Laws of indices" }))));
+  await check("a guest cannot (their decks stay on the device)", assertFails(setDoc(doc(guest("g1"), "decks/d2"), deck("g1"))));
+  await check("not in someone else's name", assertFails(setDoc(doc(student("ann"), "decks/d3"), deck("bob"))));
+  await check("nobody else reads it", assertFails(getDoc(doc(student("bob"), "decks/d1"))));
+  await check("nobody else overwrites it", assertFails(setDoc(doc(student("bob"), "decks/d1"), deck("bob"))));
+  const tooMany = Array.from({ length: 301 }, (_, i) => ({ id: `c${i}`, front: "f", back: "b" }));
+  await check("not more than 300 cards", assertFails(setDoc(doc(student("ann"), "decks/d4"), deck("ann", { cards: tooMany }))));
+  await check("not with an extra field", assertFails(setDoc(doc(student("ann"), "decks/d5"), deck("ann", { shared: true }))));
+  await check("the owner deletes it", assertSucceeds(deleteDoc(doc(student("ann"), "decks/d1"))));
+
+  console.log("\nprofile photos: owner-written, seen in rooms, removable after a report");
+  const photo = (over = {}) => ({ mime: "image/jpeg", data: "abc", updatedAt: serverTimestamp(), ...over });
+  await check("a student uploads their photo", assertSucceeds(setDoc(doc(student("ann"), "avatarImages/ann"), photo())));
+  await check("anyone signed in can see it (it shows in quiz rooms)", assertSucceeds(getDoc(doc(student("bob"), "avatarImages/ann"))));
+  await check("nobody can list them", assertFails(getDocs(collection(student("bob"), "avatarImages"))));
+  await check("not someone else's", assertFails(setDoc(doc(student("bob"), "avatarImages/ann"), photo())));
+  await check("a guest cannot upload one", assertFails(setDoc(doc(guest("g1"), "avatarImages/g1"), photo())));
+  await check("not a PNG or anything else", assertFails(setDoc(doc(student("ann"), "avatarImages/ann"), photo({ mime: "image/svg+xml" }))));
+  await check("not a large file", assertFails(setDoc(doc(student("ann"), "avatarImages/ann"), photo({ data: "x".repeat(120001) }))));
+  await check(
+    "the user may point their avatar at a photo",
+    assertSucceeds(updateDoc(doc(student("ann"), "users/ann"), { avatar: "photo:1760700000000" })),
+  );
+  await check("not a made-up avatar value", assertFails(updateDoc(doc(student("ann"), "users/ann"), { avatar: "photo:abc" })));
+  await check(
+    "a student reports someone else's photo",
+    assertSucceeds(setDoc(doc(student("bob"), "flags/p1"), { avatarUid: "ann", userId: "bob", reason: "inappropriate_photo", createdAt: serverTimestamp() })),
+  );
+  await check(
+    "not their own",
+    assertFails(setDoc(doc(student("ann"), "flags/p2"), { avatarUid: "ann", userId: "ann", reason: "inappropriate_photo", createdAt: serverTimestamp() })),
+  );
+  const takedown = (db) => {
+    const b2 = writeBatch(db);
+    b2.delete(doc(db, "avatarImages/ann"));
+    b2.set(doc(db, "avatarBlocks/ann"), { by: "rev", at: serverTimestamp(), reason: "Removed after a report" });
+    return b2.commit();
+  };
+  await check("a student cannot take a photo down", assertFails(takedown(student("bob"))));
+  await check("a reviewer removes it and blocks new ones", assertSucceeds(takedown(reviewer())));
+  await check("the owner can see they were blocked", assertSucceeds(getDoc(doc(student("ann"), "avatarBlocks/ann"))));
+  await check("and cannot upload again", assertFails(setDoc(doc(student("ann"), "avatarImages/ann"), photo())));
+  await check("nor lift the block", assertFails(deleteDoc(doc(student("ann"), "avatarBlocks/ann"))));
+
   console.log("\nwaitlist/{uid}: accounts only (P1.5)");
   const list = (uid) => ({ userId: uid, subjects: ["biology"], updatedAt: serverTimestamp() });
   await check("an account joins a waitlist", assertSucceeds(setDoc(doc(student("ann"), "waitlist/ann"), list("ann"))));
@@ -346,8 +395,9 @@ async function main() {
   console.log("\nrooms: host writes, one live answer per player per question");
   const roomDoc = (host, over = {}) => ({
     hostUid: host, subjectId: "s1", topicId: "t1", topicName: "Indices",
-    questionIds: ["q1", "q2"], state: "lobby", index: 0, createdAt: serverTimestamp(),
-    results: {}, ...over,
+    questionIds: ["q1", "q2"], items: ["b:q1", "b:q2"], mode: "classic", timeLimit: 0,
+    state: "lobby", index: 0, createdAt: serverTimestamp(),
+    results: {}, scores: {}, streaks: {}, ...over,
   });
   await check("an account opens a room", assertSucceeds(setDoc(doc(student("ann"), "rooms/ABC234"), roomDoc("ann"))));
   await check("a guest cannot host", assertFails(setDoc(doc(guest("g7"), "rooms/ABC235"), roomDoc("g7"))));
@@ -363,7 +413,14 @@ async function main() {
     assertFails(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_0"), ans("g8", 0))),
   );
   await check("a player cannot run the room", assertFails(updateDoc(doc(guest("g8"), "rooms/ABC234"), { state: "question" })));
-  await check("the host starts question 1", assertSucceeds(updateDoc(doc(student("ann"), "rooms/ABC234"), { state: "question", index: 0 })));
+  await check(
+    "the host starts question 1, on the server's clock",
+    assertSucceeds(updateDoc(doc(student("ann"), "rooms/ABC234"), { state: "question", index: 0, questionStartedAt: serverTimestamp() })),
+  );
+  await check(
+    "not on a clock of the host's own",
+    assertFails(updateDoc(doc(student("ann"), "rooms/ABC234"), { questionStartedAt: new Date("2020-01-01") })),
+  );
   await check("the host cannot rewrite the questions", assertFails(updateDoc(doc(student("ann"), "rooms/ABC234"), { questionIds: ["x"] })));
   await check("a player answers the live question", assertSucceeds(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_0"), ans("g8", 0))));
   await check("not twice", assertFails(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_0"), ans("g8", 0, 2))));
@@ -380,6 +437,80 @@ async function main() {
     "and a late answer is refused",
     assertFails(setDoc(doc(guest("g11"), "rooms/ABC234/answers/g11_0"), ans("g11", 0))),
   );
+
+  await check(
+    "the host writes the scores at the reveal",
+    assertSucceeds(updateDoc(doc(student("ann"), "rooms/ABC234"), { scores: { g8: 1 }, streaks: { g8: 1 } })),
+  );
+  await check("a room of more than 30 questions is refused", assertFails(setDoc(
+    doc(student("ann"), "rooms/ABC237"),
+    roomDoc("ann", { items: Array.from({ length: 31 }, (_, i) => `b:q${i}`) }),
+  )));
+
+  console.log("\nrooms v2: the timer, and history that cannot be forged");
+  await check(
+    "a speed room with a 10 s timer",
+    assertSucceeds(setDoc(doc(student("ann"), "rooms/TMN234"), roomDoc("ann", { mode: "speed", timeLimit: 10 }))),
+  );
+  await check("a player joins it", assertSucceeds(setDoc(doc(guest("g20"), "rooms/TMN234/players/g20"), nick)));
+  await check("and so does another", assertSucceeds(setDoc(doc(guest("g21"), "rooms/TMN234/players/g21"), nick)));
+  await check(
+    "the host shows question 1",
+    assertSucceeds(updateDoc(doc(student("ann"), "rooms/TMN234"), { state: "question", index: 0, questionStartedAt: serverTimestamp() })),
+  );
+  await check("an answer in time counts", assertSucceeds(setDoc(doc(guest("g20"), "rooms/TMN234/answers/g20_0"), ans("g20", 0))));
+  await env.withSecurityRulesDisabled(async (ctx) => {
+    // The question was shown a minute ago.
+    await updateDoc(doc(ctx.firestore(), "rooms/TMN234"), { questionStartedAt: new Date(Date.now() - 60000) });
+  });
+  await check(
+    "an answer after the time is up is refused",
+    assertFails(setDoc(doc(guest("g21"), "rooms/TMN234/answers/g21_0"), ans("g21", 0))),
+  );
+  const entry = (uid, over = {}) => ({
+    userId: uid, roomCode: "TMN234", title: "Indices", role: "player", score: 950, place: 1,
+    players: 2, total: 2, mode: "speed", at: serverTimestamp(), ...over,
+  });
+  await check(
+    "no history before the podium",
+    assertFails(setDoc(doc(guest("g20"), "quizHistory/TMN234_g20"), entry("g20"))),
+  );
+  await check(
+    "the host ends the game",
+    assertSucceeds(updateDoc(doc(student("ann"), "rooms/TMN234"), { state: "podium", results: { g20: 950, g21: 0 } })),
+  );
+  await check("a player records their game", assertSucceeds(setDoc(doc(guest("g20"), "quizHistory/TMN234_g20"), entry("g20"))));
+  await check(
+    "not a better score than the room gave",
+    assertFails(setDoc(doc(guest("g21"), "quizHistory/TMN234_g21"), entry("g21", { score: 5000 }))),
+  );
+  await check(
+    "not as the host when they were not",
+    assertFails(setDoc(doc(guest("g21"), "quizHistory/TMN234_g21"), entry("g21", { role: "host", score: 0 }))),
+  );
+  await check(
+    "the host records hosting",
+    assertSucceeds(setDoc(doc(student("ann"), "quizHistory/TMN234_ann"), entry("ann", { role: "host", score: 0, place: 0 }))),
+  );
+  await check("nobody reads another's history", assertFails(getDoc(doc(guest("g21"), "quizHistory/TMN234_g20"))));
+
+  console.log("\nquizzes: a host's own questions, readable by the room");
+  const quiz = (uid, over = {}) => ({
+    userId: uid, title: "SS2 indices", questions: [{ text: "2^3?", options: ["6", "8"], correctIndex: 1 }],
+    updatedAt: serverTimestamp(), ...over,
+  });
+  await check("an account writes a quiz", assertSucceeds(setDoc(doc(student("ann"), "quizzes/qz1"), quiz("ann"))));
+  await check("a guest cannot", assertFails(setDoc(doc(guest("g22"), "quizzes/qz2"), quiz("g22"))));
+  await check("a player in the room can read it", assertSucceeds(getDoc(doc(guest("g22"), "quizzes/qz1"))));
+  await check("nobody else edits it", assertFails(setDoc(doc(student("bob"), "quizzes/qz1"), quiz("bob"))));
+  await check("not more than 50 questions", assertFails(setDoc(doc(student("ann"), "quizzes/qz3"), quiz("ann", {
+    questions: Array.from({ length: 51 }, () => ({ text: "x", options: ["a", "b"], correctIndex: 0 })),
+  }))));
+  const quizAsset = (uid, over = {}) => ({ mime: "image/png", data: "abc", createdBy: uid, createdAt: serverTimestamp(), ...over });
+  await check("an account uploads a quiz diagram", assertSucceeds(setDoc(doc(student("ann"), "quizAssets/a1"), quizAsset("ann"))));
+  await check("not in another's name", assertFails(setDoc(doc(student("ann"), "quizAssets/a2"), quizAsset("bob"))));
+  await check("not a guest", assertFails(setDoc(doc(guest("g22"), "quizAssets/a3"), quizAsset("g22"))));
+  await check("the author deletes the quiz", assertSucceeds(deleteDoc(doc(student("ann"), "quizzes/qz1"))));
 
   console.log("\ninsights: students read published ones by id; staff write");
   const writer = () =>

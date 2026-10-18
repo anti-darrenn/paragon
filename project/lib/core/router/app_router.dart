@@ -26,6 +26,16 @@ import 'package:paragon/features/admin/admin_flag_screen.dart'
     deferred as admin_flag;
 import 'package:paragon/features/admin/studio/new_question_screen.dart'
     deferred as new_question;
+import 'package:paragon/features/study/quiz/custom_quiz_screen.dart'
+    deferred as custom_quiz;
+import 'package:paragon/features/study/flashcards/decks_screen.dart'
+    deferred as decks;
+import 'package:paragon/features/study/flashcards/deck_editor_screen.dart'
+    deferred as deck_editor;
+import 'package:paragon/features/study/flashcards/deck_study_screen.dart'
+    deferred as deck_study;
+import 'package:paragon/features/study/hub/standalone_tool_screen.dart'
+    deferred as standalone_tool;
 import 'package:paragon/features/admin/admin_paths.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart'
     deferred as admin_home;
@@ -87,6 +97,10 @@ import 'package:paragon/features/rooms/join_room_screen.dart'
     deferred as join_room;
 import 'package:paragon/features/rooms/new_room_screen.dart'
     deferred as new_room;
+import 'package:paragon/features/rooms/quiz_editor_screen.dart'
+    deferred as quiz_editor;
+import 'package:paragon/features/rooms/quiz_history_screen.dart'
+    deferred as quiz_history;
 import 'package:paragon/features/rooms/host_room_screen.dart'
     deferred as host_room;
 import 'package:paragon/features/rooms/player_room_screen.dart'
@@ -499,6 +513,57 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   subjectId: state.pathParameters['subjectId']!,
                 ),
               ),
+              // The Study tab's own tools (2026-10-17).
+              GoRoute(
+                path: '/review/quiz',
+                builder: (context, state) => DeferredScreen(
+                  load: custom_quiz.loadLibrary,
+                  builder: (_) => custom_quiz.CustomQuizScreen(),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards',
+                builder: (context, state) => DeferredScreen(
+                  load: decks.loadLibrary,
+                  builder: (_) => decks.DecksScreen(),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards/:deckId',
+                builder: (context, state) => DeferredScreen(
+                  load: deck_editor.loadLibrary,
+                  builder: (_) => deck_editor.DeckEditorScreen(
+                    deckId: state.pathParameters['deckId']!,
+                  ),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards/:deckId/study',
+                builder: (context, state) => DeferredScreen(
+                  load: deck_study.loadLibrary,
+                  builder: (_) => deck_study.DeckStudyScreen(
+                    deckId: state.pathParameters['deckId']!,
+                  ),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards/:deckId/quiz',
+                builder: (context, state) => DeferredScreen(
+                  load: deck_study.loadLibrary,
+                  builder: (_) => deck_study.DeckQuizScreen(
+                    deckId: state.pathParameters['deckId']!,
+                  ),
+                ),
+              ),
+              GoRoute(
+                path: '/review/tools/:toolId',
+                builder: (context, state) => DeferredScreen(
+                  load: standalone_tool.loadLibrary,
+                  builder: (_) => standalone_tool.StandaloneToolScreen(
+                    toolId: state.pathParameters['toolId']!,
+                  ),
+                ),
+              ),
               // Topics saved for offline reading. Per device.
               GoRoute(
                 path: '/settings/offline',
@@ -515,6 +580,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/me',
                 builder: (context, state) => const MeScreen(),
+              ),
+              // Live quizzes played and hosted (2026-10-17).
+              GoRoute(
+                path: '/me/history',
+                builder: (context, state) => DeferredScreen(
+                  load: quiz_history.loadLibrary,
+                  builder: (_) => quiz_history.QuizHistoryScreen(),
+                ),
               ),
               GoRoute(
                 path: '/settings',
@@ -718,6 +791,23 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           // `/join?code=ABC234` from a host's shared link fills the box.
           builder: (_) => join_room.JoinRoomScreen(
             initialCode: state.uri.queryParameters['code'],
+          ),
+        ),
+      ),
+      // A host's own quizzes for live rooms (2026-10-17).
+      GoRoute(
+        path: '/quizzes',
+        builder: (context, state) => DeferredScreen(
+          load: quiz_editor.loadLibrary,
+          builder: (_) => quiz_editor.MyQuizzesScreen(),
+        ),
+      ),
+      GoRoute(
+        path: '/quizzes/:quizId',
+        builder: (context, state) => DeferredScreen(
+          load: quiz_editor.loadLibrary,
+          builder: (_) => quiz_editor.QuizEditorScreen(
+            quizId: state.pathParameters['quizId']!,
           ),
         ),
       ),

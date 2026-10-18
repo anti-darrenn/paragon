@@ -5,6 +5,7 @@ import '../data/read_meter.dart';
 import '../models/firestore_parsing.dart';
 import '../models/question.dart';
 import 'room.dart';
+import 'teacher_quiz.dart';
 
 /// Reads and writes for live quiz rooms (`room.dart`). Every write is the
 /// exact shape `firestore.rules` checks.
@@ -21,12 +22,20 @@ class RoomRepository {
       _db.collection('rooms').doc(code);
 
   /// Makes a room and returns its code. Retries on the (rare) collision.
+  ///
+  /// [items] is the order (`b:<id>` bank, `q:<i>` the host's [quizId]);
+  /// [questionIds] the bank ids among them. [topicName] is the room's
+  /// title: a topic, several, or the quiz's name.
   Future<String> create({
     required String hostUid,
     required String subjectId,
     required String topicId,
     required String topicName,
     required List<String> questionIds,
+    List<String> items = const [],
+    String? quizId,
+    RoomMode mode = RoomMode.classic,
+    int timeLimit = 0,
   }) async {
     for (var attempt = 0; attempt < 5; attempt++) {
       final code = newRoomCode();
@@ -39,10 +48,16 @@ class RoomRepository {
         'topicId': topicId,
         'topicName': topicName,
         'questionIds': questionIds,
+        'items': items.isEmpty ? [for (final id in questionIds) 'b:$id'] : items,
+        'quizId': ?quizId,
+        'mode': mode.name,
+        'timeLimit': timeLimit,
         'state': RoomState.lobby.name,
         'index': 0,
         'createdAt': FieldValue.serverTimestamp(),
         'results': <String, int>{},
+        'scores': <String, int>{},
+        'streaks': <String, int>{},
       });
       return code;
     }
@@ -53,19 +68,25 @@ class RoomRepository {
     code,
   ).snapshots().metered().map((s) => s.exists ? Room.fromFirestore(s) : null);
 
-  Stream<Map<String, String>> watchPlayers(String code) => _room(code)
+  /// Every player, by uid: nickname and avatar (`preset:…`,
+  /// `initials:…` or `photo:<version>`, 2026-10-17).
+  Stream<Map<String, RoomPlayer>> watchPlayers(String code) => _room(code)
       .collection('players')
       .snapshots()
       .metered()
       .map(
         (q) => {
           for (final d in q.docs)
-            d.id: asString(d.data()['nickname'], fallback: 'Player'),
+            d.id: (
+              nickname: asString(d.data()['nickname'], fallback: 'Player'),
+              avatar: asStringOrNull(d.data()['avatar']),
+            ),
         },
       );
 
-  /// Every answer in the room — the host's view.
-  Stream<List<RoomAnswer>> watchAnswers(String code) => _room(code)
+  /// Every answer in the room — the host's view — with when it arrived
+  /// (the server's clock), for speed scoring.
+  Stream<List<TimedAnswer>> watchAnswers(String code) => _room(code)
       .collection('answers')
       .snapshots()
       .metered()
@@ -76,6 +97,9 @@ class RoomRepository {
               uid: asString(d.data()['uid']),
               index: asInt(d.data()['index']),
               selected: asInt(d.data()['selectedIndex'], fallback: -1),
+              at: d.data()['at'] is Timestamp
+                  ? (d.data()['at'] as Timestamp).toDate()
+                  : null,
             ),
         ],
       );
@@ -103,10 +127,16 @@ class RoomRepository {
     return s.exists ? asIntOrNull(s.data()?['selectedIndex']) : null;
   }
 
-  Future<void> join(String code, String uid, String nickname) => _room(code)
-      .collection('players')
-      .doc(uid)
-      .set({'nickname': nickname, 'joinedAt': FieldValue.serverTimestamp()});
+  Future<void> join(
+    String code,
+    String uid,
+    String nickname, {
+    String? avatar,
+  }) => _room(code).collection('players').doc(uid).set({
+    'nickname': nickname,
+    'joinedAt': FieldValue.serverTimestamp(),
+    'avatar': ?avatar,
+  });
 
   Future<void> answer(String code, String uid, int index, int selected) =>
       _room(code).collection('answers').doc(answerId(uid, index)).set({
@@ -118,11 +148,24 @@ class RoomRepository {
 
   // ── Host transitions ─────────────────────────────────────────────
 
-  Future<void> showQuestion(String code, int index) =>
-      _room(code).update({'state': RoomState.question.name, 'index': index});
+  /// Shows question [index], stamping when (the server's clock), which
+  /// starts the timer every phone counts down from.
+  Future<void> showQuestion(String code, int index) => _room(code).update({
+    'state': RoomState.question.name,
+    'index': index,
+    'questionStartedAt': FieldValue.serverTimestamp(),
+  });
 
-  Future<void> reveal(String code) =>
-      _room(code).update({'state': RoomState.reveal.name});
+  /// The reveal, with the scores and runs after this question.
+  Future<void> reveal(
+    String code, {
+    Map<String, int>? scores,
+    Map<String, int>? streaks,
+  }) => _room(code).update({
+    'state': RoomState.reveal.name,
+    'scores': ?scores,
+    'streaks': ?streaks,
+  });
 
   Future<void> podium(String code, Map<String, int> results) =>
       _room(code).update({'state': RoomState.podium.name, 'results': results});
@@ -159,20 +202,49 @@ final roomProvider = StreamProvider.autoDispose.family<Room?, String>(
 );
 
 final roomPlayersProvider = StreamProvider.autoDispose
-    .family<Map<String, String>, String>(
+    .family<Map<String, RoomPlayer>, String>(
       (ref, code) => ref.read(roomRepositoryProvider).watchPlayers(code),
     );
 
 final roomAnswersProvider = StreamProvider.autoDispose
-    .family<List<RoomAnswer>, String>(
+    .family<List<TimedAnswer>, String>(
       (ref, code) => ref.read(roomRepositoryProvider).watchAnswers(code),
     );
 
-/// A room's questions, loaded once: keyed by the ids themselves
-/// (`room.questionIds.join(',')`), not by the room, so the room changing
-/// state forty times a game does not re-read them forty times.
-final roomQuestionsProvider = FutureProvider.autoDispose
-    .family<List<Question>, String>((ref, idsKey) {
-      if (idsKey.isEmpty) return Future.value(const []);
-      return ref.read(roomRepositoryProvider).questions(idsKey.split(','));
+/// One player in a room: what they called themselves, and their avatar.
+typedef RoomPlayer = ({String nickname, String? avatar});
+
+/// A room's questions in its order: bank questions (vetted only) and the
+/// host's own quiz questions, mixed as [Room.order] says. Keyed by the
+/// order and quiz id joined, so a state change never re-reads them.
+final roomItemsProvider = FutureProvider.autoDispose
+    .family<List<Question>, String>((ref, key) async {
+      final parts = key.split('|');
+      final quizId = parts.first;
+      final order = parts.length > 1 && parts[1].isNotEmpty
+          ? parts[1].split(',')
+          : const <String>[];
+      final bankIds = [
+        for (final i in order)
+          if (i.startsWith('b:')) i.substring(2),
+      ];
+      final bank = bankIds.isEmpty
+          ? const <Question>[]
+          : await ref.read(roomRepositoryProvider).questions(bankIds);
+      final byId = {for (final q in bank) q.id: q};
+      final quiz = quizId.isEmpty
+          ? null
+          : await ref.read(teacherQuizProvider(quizId).future);
+      return [
+        for (final i in order)
+          if (i.startsWith('b:'))
+            ?byId[i.substring(2)]
+          else if (i.startsWith('q:') && quiz != null)
+            if (int.tryParse(i.substring(2)) case final n?
+                when n >= 0 && n < quiz.questions.length)
+              quiz.asQuestion(n),
+      ];
     });
+
+/// The key for [roomItemsProvider].
+String roomItemsKey(Room room) => '${room.quizId ?? ''}|${room.order.join(',')}';

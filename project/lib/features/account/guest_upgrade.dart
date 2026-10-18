@@ -10,6 +10,7 @@ import '../study/cards/card_store.dart';
 import '../study/notes/study_store.dart';
 import '../study/notes/study_providers.dart';
 import '../../core/providers/analytics_provider.dart';
+import '../study/flashcards/deck_store.dart';
 
 /// Turning a guest session into an account, without losing it.
 ///
@@ -124,6 +125,8 @@ Future<int> _copyOnce(FirebaseFirestore db, String uid) {
     study: FirestoreStudyStore(db, uid),
     localCards: LocalCardStore(uid),
     cards: FirestoreCardStore(db, uid),
+    localDecks: LocalDeckStore(uid),
+    decks: FirestoreDeckStore(db, uid),
   ).whenComplete(() => _copies.remove(uid));
 }
 
@@ -141,6 +144,8 @@ Future<int> copyGuestStudyData({
   required StudyStore study,
   required LocalCardStore localCards,
   required CardStore cards,
+  LocalDeckStore? localDecks,
+  DeckStore? decks,
 }) async {
   var copied = 0;
 
@@ -162,6 +167,16 @@ Future<int> copyGuestStudyData({
     await cards.save(schedule);
     copied += schedule.length;
     await localCards.clear();
+  }
+
+  // Flashcard decks: keyed by id, so copying one again only rewrites it;
+  // each leaves the device once it is across.
+  if (localDecks != null && decks != null) {
+    for (final deck in await localDecks.list()) {
+      await decks.save(deck);
+      await localDecks.delete(deck.id);
+      copied++;
+    }
   }
 
   return copied;

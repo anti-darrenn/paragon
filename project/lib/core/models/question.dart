@@ -127,9 +127,13 @@ class Question {
   /// Adding NECO or JAMB later is one case here.
   String? get provenanceLabel {
     if (isGenerated) return 'Paragon practice';
+    if (origin == 'flashcards') return 'Your flashcards';
+    if (origin == 'teacher') return 'From your quiz host';
     if (isPastQuestion) {
       return year == null ? 'WAEC past question' : 'WAEC $year';
     }
+    // Written in the founder's question bank as practice (2026-10-17).
+    if (origin == 'authored') return 'Paragon practice';
     return null;
   }
 
