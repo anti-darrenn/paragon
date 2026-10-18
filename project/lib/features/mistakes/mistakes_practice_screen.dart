@@ -5,11 +5,13 @@ import 'package:go_router/go_router.dart';
 import '../../core/models/question.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/attempt_repository.dart';
+import '../../core/repositories/difficulty_vote_repository.dart';
 import '../../core/repositories/mistakes_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/answer_option.dart';
+import '../../core/widgets/difficulty_rating.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/question_source_badge.dart';
 import '../../core/widgets/question_image.dart';
@@ -45,6 +47,9 @@ class _MistakesPracticeScreenState
   bool _checked = false;
   final _answers = <AttemptDraft>[];
 
+  /// "How hard was this?" answers, sent with the session's attempts.
+  final Map<String, int> _ratings = {};
+
   bool _saving = false;
   bool _saved = false;
   bool _saveFailed = false;
@@ -79,6 +84,12 @@ class _MistakesPracticeScreenState
   Future<void> _save() async {
     final user = ref.read(currentUserProvider);
     if (user == null || _answers.isEmpty) return;
+    if (_ratings.isNotEmpty) {
+      ref
+          .read(difficultyVoteRepositoryProvider)
+          .submit(uid: user.uid, votes: Map.of(_ratings))
+          .ignore();
+    }
     setState(() {
       _saving = true;
       _saveFailed = false;
@@ -226,6 +237,15 @@ class _MistakesPracticeScreenState
             style: AppTheme.btnLabel.copyWith(color: Colors.white),
           ),
         ),
+        // Optional and below the button, so it never pushes "Next" away.
+        if (_checked)
+          Align(
+            alignment: Alignment.centerLeft,
+            child: DifficultyRating(
+              selected: _ratings[q.id],
+              onRate: (level) => setState(() => _ratings[q.id] = level),
+            ),
+          ),
       ],
     );
   }

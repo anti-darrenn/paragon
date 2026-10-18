@@ -67,7 +67,11 @@ class QuestionSourceBadge extends StatelessWidget {
               ),
             ),
           if (showDifficulty)
-            DifficultyBadge(tier: tier, estimated: !question.tierIsSet),
+            DifficultyBadge(
+              tier: tier,
+              estimated: !question.tierIsSet,
+              ratedBy: question.tierIsSet ? 0 : question.crowdVotes,
+            ),
         ],
       ),
     );
@@ -77,9 +81,17 @@ class QuestionSourceBadge extends StatelessWidget {
 /// A difficulty tier as five pips and its name, with the tier's line on
 /// hover or long press.
 class DifficultyBadge extends StatelessWidget {
-  const DifficultyBadge({super.key, required this.tier, this.estimated = true});
+  const DifficultyBadge({
+    super.key,
+    required this.tier,
+    this.estimated = true,
+    this.ratedBy = 0,
+  });
 
   final DifficultyTier tier;
+
+  /// How many students' ratings went into an estimated tier.
+  final int ratedBy;
 
   /// Paragon's estimate, as opposed to a reviewer's judgement; said so to
   /// a screen reader and in the tooltip.
@@ -94,16 +106,22 @@ class DifficultyBadge extends StatelessWidget {
     DifficultyTier.unnecessarilyHard => AppColors.wrong,
   };
 
+  /// "Paragon's estimate", or with students' ratings in it, how many.
+  String _estimateNote() => ratedBy <= 0
+      ? 'Paragon\'s estimate'
+      : 'estimated, rated by $ratedBy student${ratedBy == 1 ? '' : 's'}';
+
   @override
   Widget build(BuildContext context) {
     final colour = colourOf(tier);
     final text = context.palette.textSecondary;
     return Tooltip(
-      message: '${tier.blurb}${estimated ? ' (Paragon\'s estimate)' : ''}',
+      message:
+          '${tier.blurb}${estimated ? ' (${_estimateNote()})' : ''}',
       child: Semantics(
         label:
             'Difficulty: ${tier.label}, ${tier.level} of 5'
-            '${estimated ? ', estimated' : ''}',
+            '${estimated ? ', ${ratedBy <= 0 ? 'estimated' : _estimateNote()}' : ''}',
         excludeSemantics: true,
         child: Row(
           mainAxisSize: MainAxisSize.min,

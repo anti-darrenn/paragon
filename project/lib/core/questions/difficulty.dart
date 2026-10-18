@@ -170,3 +170,30 @@ DifficultyTier estimateDifficulty(
   }
   return DifficultyTier.values[i];
 }
+
+// ─── Students' ratings ────────────────────────────────────────────────
+
+/// How many students' ratings the [baseline] tier is worth. With eight, one
+/// student who calls an "Easy peasy" question "Unnecessarily hard" moves
+/// nothing; twenty who agree move it most of the way.
+const kCrowdPriorWeight = 8;
+
+/// The tier students' ratings say, starting from [baseline] (Paragon's
+/// estimate): a Bayesian mean, with the estimate counted as
+/// [kCrowdPriorWeight] ratings at its own level, so the existing tiers stay
+/// the baseline and only a body of agreement moves a question. [votes]
+/// ratings summing to [sum] come from `questions.crowdDifficulty`, totted
+/// up nightly (`jobs.js --job=difficulty`). A reviewer's tier always wins
+/// over this; see `Question.tier`.
+DifficultyTier blendTier(
+  DifficultyTier baseline, {
+  required int votes,
+  required int sum,
+}) {
+  if (votes <= 0) return baseline;
+  // Sums outside what votes could make are ignored rather than trusted.
+  if (sum < votes || sum > votes * 5) return baseline;
+  final mean =
+      (baseline.level * kCrowdPriorWeight + sum) / (kCrowdPriorWeight + votes);
+  return DifficultyTier.fromLevel(mean.round().clamp(1, 5))!;
+}

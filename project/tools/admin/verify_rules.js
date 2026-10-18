@@ -962,6 +962,44 @@ async function feedbackAndUsage(a, b) {
   const at = { transforms: [serverTime('createdAt')] };
   const id = `verify_${a.uid.slice(0, 8)}`;
 
+  // "How hard was this?" ratings (2026-10-17): one document per session.
+  const rating = (uid, n = 1) => ({
+    userId: str(uid),
+    votes: map(
+      Object.fromEntries(
+        Array.from({ length: n }, (_, i) => [`zz_verify_q${i}`, int(3)]),
+      ),
+    ),
+  });
+  expectOutcome(
+    'a session of difficulty ratings can be sent, by a guest too',
+    ALLOW,
+    await commit(a.idToken, write(`difficultyVotes/${id}`, rating(a.uid), at)),
+  );
+  expectOutcome(
+    'difficulty ratings cannot be sent as another student',
+    DENY,
+    await commit(b.idToken, write(`difficultyVotes/${id}_b`, rating(a.uid), at)),
+  );
+  expectOutcome(
+    'a session cannot send more than 30 ratings',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`difficultyVotes/${id}_many`, rating(a.uid, 31), at),
+    ),
+  );
+  expectOutcome(
+    "nobody reads another student's ratings",
+    DENY,
+    await readDoc(b.idToken, `difficultyVotes/${id}`),
+  );
+  expectOutcome(
+    'the owner can delete their ratings',
+    ALLOW,
+    await commit(a.idToken, { delete: `${RESOURCE}/difficultyVotes/${id}` }),
+  );
+
   expectOutcome(
     'feedback can be sent, by a guest too',
     ALLOW,

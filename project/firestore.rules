@@ -962,6 +962,26 @@ service cloud.firestore {
           && request.resource.data.status in ['open', 'fixed', 'dismissed'];
     }
 
+    // ── DIFFICULTY VOTES ────────────────────────────────────────
+    // "How hard was this?" after a practice answer: one document per
+    // session, `{userId, createdAt, votes: {questionId: 1..5}}`. Guests may
+    // rate. Rules cannot check each value in a map; `jobs.js
+    // --job=difficulty` ignores anything outside 1–5 when it adds them into
+    // `questions.crowdDifficulty`, then deletes the document. Read-own and
+    // delete-own so account deletion can find and remove them.
+    match /difficultyVotes/{id} {
+      allow create: if request.auth != null
+          && request.resource.data.keys().hasOnly(['userId', 'createdAt', 'votes'])
+          && request.resource.data.keys().hasAll(['userId', 'createdAt', 'votes'])
+          && request.resource.data.userId == request.auth.uid
+          && request.resource.data.createdAt == request.time
+          && request.resource.data.votes is map
+          && request.resource.data.votes.size() > 0
+          && request.resource.data.votes.size() <= 30;
+      allow read, delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+    }
+
     // ── FEEDBACK ────────────────────────────────────────────────
     // "Send feedback" from Settings, About and the end of a first session:
     // anything a student wants to tell us that is not a report against one
