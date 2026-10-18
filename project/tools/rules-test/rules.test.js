@@ -244,6 +244,8 @@ async function main() {
   await check("a student records their own attempt", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1"), attempt("ann"))));
   await check("a guest does too", assertSucceeds(setDoc(doc(guest("g1"), "attempts/a1g"), attempt("g1", { source: "waec" }))));
   await check("with hints used", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1h"), attempt("ann", { hintsUsed: 2 }))));
+  await check("a custom quiz's answer", assertSucceeds(setDoc(doc(student("ann"), "attempts/a1q"), attempt("ann", { source: "quiz" }))));
+  await check("not an unknown source", assertFails(setDoc(doc(student("ann"), "attempts/a1x"), attempt("ann", { source: "cheat" }))));
   await check(
     "an attempt in someone else's name is refused",
     assertFails(setDoc(doc(student("ann"), "attempts/a2"), attempt("bob"))),
@@ -296,6 +298,19 @@ async function main() {
   await check("not with an extra field", assertFails(setDoc(doc(student("ann"), "difficultyVotes/v6"), votes("ann", { weight: 100 }))));
   await check("nobody else reads them", assertFails(getDoc(doc(student("bob"), "difficultyVotes/v1"))));
   await check("the owner can delete theirs", assertSucceeds(deleteDoc(doc(student("ann"), "difficultyVotes/v1"))));
+
+  console.log("\ndecks: a student's own flashcards, accounts only");
+  const deck = (uid, over = {}) => ({ userId: uid, title: "Indices", cards: [{ id: "c1", front: "a^0", back: "1" }], updatedAt: serverTimestamp(), ...over });
+  await check("a student saves a deck", assertSucceeds(setDoc(doc(student("ann"), "decks/d1"), deck("ann"))));
+  await check("and updates it", assertSucceeds(setDoc(doc(student("ann"), "decks/d1"), deck("ann", { title: "Laws of indices" }))));
+  await check("a guest cannot (their decks stay on the device)", assertFails(setDoc(doc(guest("g1"), "decks/d2"), deck("g1"))));
+  await check("not in someone else's name", assertFails(setDoc(doc(student("ann"), "decks/d3"), deck("bob"))));
+  await check("nobody else reads it", assertFails(getDoc(doc(student("bob"), "decks/d1"))));
+  await check("nobody else overwrites it", assertFails(setDoc(doc(student("bob"), "decks/d1"), deck("bob"))));
+  const tooMany = Array.from({ length: 301 }, (_, i) => ({ id: `c${i}`, front: "f", back: "b" }));
+  await check("not more than 300 cards", assertFails(setDoc(doc(student("ann"), "decks/d4"), deck("ann", { cards: tooMany }))));
+  await check("not with an extra field", assertFails(setDoc(doc(student("ann"), "decks/d5"), deck("ann", { shared: true }))));
+  await check("the owner deletes it", assertSucceeds(deleteDoc(doc(student("ann"), "decks/d1"))));
 
   console.log("\nwaitlist/{uid}: accounts only (P1.5)");
   const list = (uid) => ({ userId: uid, subjects: ["biology"], updatedAt: serverTimestamp() });

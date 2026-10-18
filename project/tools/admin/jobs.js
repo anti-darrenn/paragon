@@ -141,6 +141,7 @@ const OWNED = [
   ["examResults", "userId"],
   ["challenges", "userId"],
   ["difficultyVotes", "userId"],
+  ["decks", "userId"],
   ["progress", null],
   ["learn", null],
   ["study", null],

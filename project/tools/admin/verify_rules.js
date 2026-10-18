@@ -994,6 +994,24 @@ async function feedbackAndUsage(a, b) {
     DENY,
     await readDoc(b.idToken, `difficultyVotes/${id}`),
   );
+  // Flashcard decks (2026-10-17) are accounts only; a guest's stay on
+  // the device.
+  expectOutcome(
+    'a guest cannot save a flashcard deck',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `decks/${id}`,
+        {
+          userId: str(a.uid),
+          title: str('Indices'),
+          cards: arr([]),
+        },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
   expectOutcome(
     'the owner can delete their ratings',
     ALLOW,

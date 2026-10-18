@@ -22,9 +22,11 @@ enum NavTab {
     Icons.assignment_outlined,
     Icons.assignment_rounded,
   ),
+  /// "Study" since 2026-10-17 (it was "Review"): the study tools hub.
+  /// The path stays `/review`, so links and bookmarks keep working.
   review(
-    'Review',
-    'Review',
+    'Study',
+    'Study',
     '/review',
     Icons.style_outlined,
     Icons.style_rounded,

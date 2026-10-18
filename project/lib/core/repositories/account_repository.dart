@@ -135,6 +135,10 @@ class AccountRepository {
     await _deleteQuery(
       _db.collection('feedback').where('userId', isEqualTo: uid),
     );
+    // Flashcard decks the student made.
+    await _deleteQuery(
+      _db.collection('decks').where('userId', isEqualTo: uid),
+    );
     // "How hard was this?" ratings not yet added up by the nightly job.
     await _deleteQuery(
       _db.collection('difficultyVotes').where('userId', isEqualTo: uid),
@@ -207,6 +211,7 @@ class AccountRepository {
     'examResults',
     'challenges',
     'difficultyVotes',
+    'decks',
   ];
   static const _ownedById = [
     'users',

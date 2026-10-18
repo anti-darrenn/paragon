@@ -13,11 +13,21 @@ import '../study/cards/card_providers.dart';
 import '../study/cards/card_review_screen.dart' show cardsPath;
 import '../study/notes/study_providers.dart';
 import '../study/offline/saved_topics_store.dart';
+import '../../core/study/study_tool_registry.dart';
+import '../study/flashcards/deck_store.dart';
+import '../study/hub/study_paths.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 
-/// `/review`: everything for going back over what you have learnt, in one
-/// place — the mistakes notebook, revision cards, saved lessons and
-/// questions, and topics kept for offline.
+/// `/review`, the **Study** tab (renamed from Review, 2026-10-17): every
+/// study tool in one place.
+///
+/// - **Practise:** a custom quiz over any mix of topics, the mistakes
+///   notebook, and the student's own flashcards (with a quiz made from
+///   them).
+/// - **Revise:** revision cards from published lessons.
+/// - **Tools:** calculator, tables, periodic table, constants, scratchpad,
+///   glossary and formula sheet, each on a page of its own.
+/// - **Kept:** saved lessons and questions, and topics kept for offline.
 ///
 /// Stores nothing of its own and reads nothing new: each card opens a
 /// screen that already existed, and the counts come from documents those
@@ -31,11 +41,12 @@ class ReviewScreen extends ConsumerWidget {
     final bookmarks = ref.watch(bookmarksProvider).asData?.value.length;
     final offline = ref.watch(savedTopicsProvider).length;
     final subjects = ref.watch(subjectsProvider).asData?.value ?? const [];
+    final decks = ref.watch(decksProvider).asData?.value.length;
 
     return Scaffold(
       backgroundColor: context.palette.background,
       appBar: const ParagonAppBar(
-        title: Text('Review'),
+        title: Text('Study'),
         collapseWhenWide: true,
         actions: [SearchAction()],
       ),
@@ -43,10 +54,10 @@ class ReviewScreen extends ConsumerWidget {
         maxWidth: kContentMaxWidth,
         children: [
           const PageIntro(
-            title: 'Review',
+            title: 'Study',
             subtitle:
-                'Go back over what you have learnt. Short, regular '
-                'review is what makes it stick.',
+                'Practise, revise and work things out. Short, regular '
+                'study is what makes it stick.',
           ),
           LayoutBuilder(
             builder: (context, box) {
@@ -88,11 +99,37 @@ class ReviewScreen extends ConsumerWidget {
                 onTap: () => context.push('/settings/offline'),
               );
               final cardsPanel = _CardsPanel(subjects: subjects);
+              final quiz = _ReviewCard(
+                key: const ValueKey('review.quiz'),
+                icon: Icons.shuffle_rounded,
+                accent: AppColors.primary,
+                title: 'Custom quiz',
+                subtitle:
+                    'Pick topics, a length and a difficulty. Instant '
+                    'feedback on every answer.',
+                onTap: () => context.push(kCustomQuizPath),
+              );
+              final flashcards = _ReviewCard(
+                key: const ValueKey('review.flashcards'),
+                icon: Icons.style_rounded,
+                accent: AppColors.secondary,
+                title: 'My flashcards',
+                subtitle: switch (decks) {
+                  null || 0 => 'Make your own cards, then study or quiz them',
+                  1 => '1 deck',
+                  final n => '$n decks',
+                },
+                onTap: () => context.push(kDecksPath),
+              );
               if (box.maxWidth < 760) {
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    quiz,
+                    const SizedBox(height: 12),
                     mistakes,
+                    const SizedBox(height: 12),
+                    flashcards,
                     const SizedBox(height: 12),
                     cardsPanel,
                     const SizedBox(height: 12),
@@ -110,6 +147,8 @@ class ReviewScreen extends ConsumerWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
+                        quiz,
+                        const SizedBox(height: 12),
                         mistakes,
                         const SizedBox(height: 12),
                         cardsPanel,
@@ -121,6 +160,8 @@ class ReviewScreen extends ConsumerWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
+                        flashcards,
+                        const SizedBox(height: 12),
                         saved,
                         const SizedBox(height: 12),
                         offlineCard,
@@ -130,6 +171,23 @@ class ReviewScreen extends ConsumerWidget {
                 ],
               );
             },
+          ),
+          const SizedBox(height: 28),
+          const SectionHeader(
+            'Tools',
+            subtitle: 'The same tools as beside a lesson, on their own.',
+          ),
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              for (final t in studyTools)
+                ActionChip(
+                  avatar: Icon(t.icon, size: 18),
+                  label: Text(t.label),
+                  onPressed: () => context.push(studyToolPath(t.id)),
+                ),
+            ],
           ),
         ],
       ),
