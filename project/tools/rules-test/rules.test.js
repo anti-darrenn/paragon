@@ -149,6 +149,14 @@ async function main() {
   await check("not a tier past 5", assertFails(edit(reviewer(), { id: "e10", q: { difficulty: 9 } })));
   await check("a question counts for another topic too", assertSucceeds(edit(reviewer(), { id: "e11", q: { alsoTopicIds: ["t2"] } })));
   await check("not its own main topic as an extra", assertFails(edit(reviewer(), { id: "e12", q: { alsoTopicIds: ["t1"] } })));
+  await check(
+    "a reviewer marks an audit finding checked",
+    assertSucceeds(edit(reviewer(), { id: "e13", q: { auditDismissed: ["recurring-decimal-suspect"] } })),
+  );
+  await check(
+    "not a string for the checked rules",
+    assertFails(edit(reviewer(), { id: "e14", q: { auditDismissed: "all" } })),
+  );
   await check("a student cannot edit at all", assertFails(edit(student(), { id: "e8", by: "ann" })));
   await check(
     "history is append-only",

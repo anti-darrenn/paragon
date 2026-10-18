@@ -44,6 +44,11 @@ jobs:
         working-directory: project/tools/admin
         run: npm ci --ignore-scripts --no-audit --no-fund
 
+      # content_audit.js renders maths with the site's KaTeX.
+      - name: Install (site)
+        working-directory: project/tools/site
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
       # Scheduled runs always apply. A manual run defaults to a dry run so
       # the workflow can be exercised safely from the Actions tab.
       - name: Run jobs
@@ -56,3 +61,15 @@ jobs:
           else
             node jobs.js --job=all
           fi
+
+      # The content audit the studio's Quality section reads, refreshed
+      # nightly from Firestore (about 4,500 reads, one write), so a fixed or
+      # checked question drops out by the next morning. Until 2026-10-17 it
+      # ran only by hand. Scheduled runs only: a manual dry run writes
+      # nothing.
+      - name: Content audit
+        if: github.event_name == 'schedule' || inputs.apply == true
+        working-directory: project/tools/admin
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node content_audit.js --publish

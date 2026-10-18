@@ -40,7 +40,7 @@ const csvCell = (v) => (/[",\n]/.test(String(v ?? "")) ? `"${String(v).replace(/
 async function load() {
   if (args.cache) {
     const d = JSON.parse(fs.readFileSync(CACHE, "utf8"));
-    return { subjects: d.subjects, questions: d.questions };
+    return { subjects: d.subjects, questions: d.questions, dataAt: d.readAt ? new Date(d.readAt) : null };
   }
   const { initAdmin } = require("./credential");
   const db = initAdmin().firestore();
@@ -50,21 +50,27 @@ async function load() {
       .collection("questions")
       .where("source", "==", "waec")
       .where("hasAnswer", "==", true)
-      .select("text", "options", "correctIndex", "explanation", "year", "subjectId", "topicId", "imageId")
+      .select("text", "options", "correctIndex", "explanation", "year", "subjectId", "topicId", "imageId", "auditDismissed")
       .get(),
   ]);
   return {
+    dataAt: new Date(),
     subjects: subjects.docs.map((d) => ({ id: d.id, name: d.data().name })),
     questions: questions.docs.map((d) => ({ id: d.id, ...d.data() })),
   };
 }
 
 async function main() {
-  const { subjects, questions } = await load();
+  const { subjects, questions, dataAt } = await load();
   const name = Object.fromEntries(subjects.map((s) => [s.id, s.name]));
   const findings = [];
   for (const q of questions) {
-    for (const f of R.checkQuestion(q)) findings.push({ id: q.id, subject: name[q.subjectId], year: q.year, ...f });
+    // A reviewer's "Mark checked" in the studio: that rule, on that
+    // question, was looked at and is not a problem.
+    const dismissed = new Set(Array.isArray(q.auditDismissed) ? q.auditDismissed : []);
+    for (const f of R.checkQuestion(q)) {
+      if (!dismissed.has(f.rule)) findings.push({ id: q.id, subject: name[q.subjectId], year: q.year, ...f });
+    }
   }
   const corpus = R.checkCorpus(questions);
 
@@ -145,6 +151,9 @@ async function main() {
     for (const k of Object.keys(byRule)) byRule[k] = [...new Set(byRule[k])];
     await admin.firestore().doc("_meta/contentAudit").set({
       at: admin.firestore.FieldValue.serverTimestamp(),
+      // When the questions were read: the studio treats a question saved
+      // after this as fixed, not still flagged, until the next audit.
+      dataAt: dataAt ? admin.firestore.Timestamp.fromDate(dataAt) : null,
       total: questions.length,
       rules: summary,
       suspects,

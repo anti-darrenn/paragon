@@ -25,6 +25,26 @@ void main() {
     expect(checkDraft(good), isEmpty);
   });
 
+  group('maths that will not render', () {
+    test('blocks the save, naming the field', () {
+      final issues = checkDraft(good.copyWith(text: r'Find \(\frac{1}\)'));
+      final bad = issues.where((i) => i.blocks && i.field == 'text');
+      expect(bad.single.message, contains("won't render"));
+    });
+    test('an option is named by its letter', () {
+      expect(
+        blocks(good.copyWith(options: ['3/5', r'\(\sqrt{\)', '6/10', '1/6'])),
+        contains(startsWith('Option B: ')),
+      );
+    });
+    test('CONTROL: a bare recurring bar and \\ce render, so they pass', () {
+      expect(
+        blocks(good.copyWith(text: r'Express 0.\overline{3} as \ce{H2O}')),
+        isEmpty,
+      );
+    });
+  });
+
   group('blocks the save', () {
     test('an empty stem', () {
       expect(

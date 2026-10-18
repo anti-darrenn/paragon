@@ -28,7 +28,8 @@ service cloud.firestore {
     //    the same batch must create `history/{lastEditId}` signed by the same
     //    reviewer with the before and after: no edit without a record, and
     //    every record can be restored. Subject, topic, source, year and
-    //    origin stay seeder-only.
+    //    origin stay seeder-only. "Mark checked" on a content-audit finding
+    //    is the same path, adding the rule to `auditDismissed`.
     match /questions/{id} {
       allow read: if request.auth != null;
       allow update: if reviews(resource.data.subjectId)
@@ -69,7 +70,8 @@ service cloud.firestore {
       return q.diff(resource.data).affectedKeys()
              .hasOnly(['text', 'options', 'correctIndex', 'previousCorrectIndex',
                        'explanation', 'hasAnswer', 'editedAt', 'editedBy',
-                       'lastEditId', 'difficulty', 'alsoTopicIds'])
+                       'lastEditId', 'difficulty', 'alsoTopicIds',
+                       'auditDismissed'])
         && q.editedBy == request.auth.uid
         && q.editedAt == request.time
         && q.lastEditId is string
@@ -91,6 +93,9 @@ service cloud.firestore {
         // A reviewer's difficulty tier, 1 (easy peasy) to 5.
         && (!('difficulty' in q)
             || (q.difficulty is int && q.difficulty >= 1 && q.difficulty <= 5))
+        // Content-audit rules a reviewer marked checked on this question.
+        && (!('auditDismissed' in q)
+            || (q.auditDismissed is list && q.auditDismissed.size() <= 30))
         && getAfter(/databases/$(database)/documents/questions/$(id)/history/$(q.lastEditId)).data.by
              == request.auth.uid;
     }
