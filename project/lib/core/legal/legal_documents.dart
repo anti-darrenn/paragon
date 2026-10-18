@@ -56,7 +56,7 @@ bool get legalPlaceholdersRemain => [
 ].any((value) => value.contains(unconfirmedMarker));
 
 /// Shown on both documents. Update when the content changes materially.
-const String legalLastUpdated = '15 October 2026';
+const String legalLastUpdated = '18 October 2026';
 
 /// The version of the terms and privacy policy a student agrees to,
 /// recorded on `users/{uid}` as `legalVersion` with the time.
@@ -66,24 +66,23 @@ const String legalLastUpdated = '15 October 2026';
 /// to accept again before going on (`/legal/accept`), so bumping it for a
 /// typo would interrupt every student for nothing. [legalLastUpdated] can
 /// move without it.
-const String kLegalVersion = '2026-10-15';
+const String kLegalVersion = '2026-10-18';
 
 /// What changed in [kLegalVersion], in a sentence each, for the accept
 /// screen. Rewrite this list whenever the version is bumped.
 const List<String> kLegalChanges = [
-  'We no longer ask for your age, gender, country or state, and we are '
-      'deleting any we already had. School and class stay optional.',
-  'You can set a weekly goal and your exam date. They are stored with your '
-      'account, and only you can see them.',
-  'You can challenge a friend with a link. Anyone with the link sees your '
-      'first name and your score, and the link expires after 30 days.',
-  'You can join a live quiz with a nickname. The room and everything in it '
-      'is deleted a day later.',
-  'You can ask to be told when a subject is ready. We keep the subjects you '
-      'ask about.',
-  'Usage analytics now include when practice, exams and sign-ups start, and '
-      'the sign-in method (never the address).',
-  'Lesson writers who agree can be credited by name under their lessons.',
+  'You can upload a profile photo. We keep a small copy without location '
+      'details. Others see it only in a live quiz you join, anyone there can '
+      'report it, and we may remove a reported photo.',
+  'In a live quiz, your nickname and picture are shown to the room. When it '
+      'ends, we keep your score and place in your quiz history, which only '
+      'you can see.',
+  'You can write quizzes of your own for rooms you host. Players in your '
+      'rooms see the questions and any diagrams you add.',
+  'You can make your own flashcards. They are kept with your account, and '
+      'only you can see them.',
+  'You can rate how hard a practice question was. Ratings are added up '
+      'without your name each night, then deleted.',
 ];
 
 class LegalSection {

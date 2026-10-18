@@ -14,7 +14,7 @@ Six stacked PRs. Merge them oldest first, each after CI is green.
 | #66 | Students rate difficulty | rules, then hosting |
 | #67 | The founder's question bank and vetting | **see below; this empties the site until you vet** |
 | #68 | Study tab: custom quiz, flashcards, tools | rules (decks, `quiz` attempts), then hosting |
-| #69 | Profile photos, reported and removable | rules, then hosting. **Decide** whether to bump `kLegalVersion` (photos are new personal data, shown to others) |
+| #69 | Profile photos, reported and removable | rules, then hosting. Terms bumped to `2026-10-18` in #71: every account re-accepts once |
 | #70 | Quiz rooms v2: speed scoring, timer, many topics, own quizzes, history | rules, then hosting. Rooms open at deploy time keep working (old shape) |
 
 **The vetting PR, in this order:**

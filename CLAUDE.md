@@ -135,7 +135,7 @@ formats were checked on 2026-10-16 against the WAEC syllabuses (question counts)
   labels.
 - **The privacy policy** has a "legal basis" section. It is still a draft for a
   lawyer's review.
-- **The terms** are at `kLegalVersion` `2026-10-15`, so every account re-accepts once.
+- **The terms** are at `kLegalVersion` `2026-10-18` (photos, quiz history, own quizzes, flashcards, ratings), so every account re-accepts once.
 - **Taglines.** `docs/COPY.md` holds five options for the owner to choose from.
 
 **Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
