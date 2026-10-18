@@ -53,14 +53,19 @@ class RoomRepository {
     code,
   ).snapshots().metered().map((s) => s.exists ? Room.fromFirestore(s) : null);
 
-  Stream<Map<String, String>> watchPlayers(String code) => _room(code)
+  /// Every player, by uid: nickname and avatar (`preset:…`,
+  /// `initials:…` or `photo:<version>`, 2026-10-17).
+  Stream<Map<String, RoomPlayer>> watchPlayers(String code) => _room(code)
       .collection('players')
       .snapshots()
       .metered()
       .map(
         (q) => {
           for (final d in q.docs)
-            d.id: asString(d.data()['nickname'], fallback: 'Player'),
+            d.id: (
+              nickname: asString(d.data()['nickname'], fallback: 'Player'),
+              avatar: asStringOrNull(d.data()['avatar']),
+            ),
         },
       );
 
@@ -103,10 +108,16 @@ class RoomRepository {
     return s.exists ? asIntOrNull(s.data()?['selectedIndex']) : null;
   }
 
-  Future<void> join(String code, String uid, String nickname) => _room(code)
-      .collection('players')
-      .doc(uid)
-      .set({'nickname': nickname, 'joinedAt': FieldValue.serverTimestamp()});
+  Future<void> join(
+    String code,
+    String uid,
+    String nickname, {
+    String? avatar,
+  }) => _room(code).collection('players').doc(uid).set({
+    'nickname': nickname,
+    'joinedAt': FieldValue.serverTimestamp(),
+    'avatar': ?avatar,
+  });
 
   Future<void> answer(String code, String uid, int index, int selected) =>
       _room(code).collection('answers').doc(answerId(uid, index)).set({
@@ -159,7 +170,7 @@ final roomProvider = StreamProvider.autoDispose.family<Room?, String>(
 );
 
 final roomPlayersProvider = StreamProvider.autoDispose
-    .family<Map<String, String>, String>(
+    .family<Map<String, RoomPlayer>, String>(
       (ref, code) => ref.read(roomRepositoryProvider).watchPlayers(code),
     );
 
@@ -176,3 +187,6 @@ final roomQuestionsProvider = FutureProvider.autoDispose
       if (idsKey.isEmpty) return Future.value(const []);
       return ref.read(roomRepositoryProvider).questions(idsKey.split(','));
     });
+
+/// One player in a room: what they called themselves, and their avatar.
+typedef RoomPlayer = ({String nickname, String? avatar});

@@ -14,6 +14,7 @@ Six stacked PRs. Merge them oldest first, each after CI is green.
 | #66 | Students rate difficulty | rules, then hosting |
 | #67 | The founder's question bank and vetting | **see below; this empties the site until you vet** |
 | #68 | Study tab: custom quiz, flashcards, tools | rules (decks, `quiz` attempts), then hosting |
+| #69 | Profile photos, reported and removable | rules, then hosting. **Decide** whether to bump `kLegalVersion` (photos are new personal data, shown to others) |
 
 **The vetting PR, in this order:**
 1. **Grant yourself the founder claim**, on an account that is already admin:

@@ -15,6 +15,9 @@ import '../../core/widgets/math_text.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 import '../../core/widgets/share_link_button.dart';
 import '../../core/widgets/ui/ui.dart';
+import '../../core/models/avatar.dart';
+import '../../core/repositories/flag_repository.dart';
+import '../../core/widgets/user_avatar.dart';
 
 /// `/rooms/:code/host`: the screen on the projector. Lobby with the big
 /// code, then each question with a live count of answers, the reveal with
@@ -183,7 +186,7 @@ class _Lobby extends StatelessWidget {
 
   final String code;
   final String topic;
-  final Map<String, String> players;
+  final Map<String, RoomPlayer> players;
   final VoidCallback? onStart;
 
   @override
@@ -230,7 +233,10 @@ class _Lobby extends StatelessWidget {
           spacing: 8,
           runSpacing: 8,
           alignment: WrapAlignment.center,
-          children: [for (final n in players.values) Chip(label: Text(n))],
+          children: [
+            for (final e in players.entries)
+              PlayerChip(uid: e.key, player: e.value),
+          ],
         ),
         const SizedBox(height: 24),
         SizedBox(
@@ -356,7 +362,7 @@ class _Podium extends StatelessWidget {
   });
 
   final Map<String, int> results;
-  final Map<String, String> players;
+  final Map<String, RoomPlayer> players;
   final int total;
   final Widget? action;
 
@@ -372,13 +378,84 @@ class _Podium extends StatelessWidget {
             for (final r in rows)
               ListRow(
                 leading: CircleAvatar(child: Text('${r.place}')),
-                title: players[r.uid] ?? 'Player',
+                title: players[r.uid]?.nickname ?? 'Player',
                 trailing: Text('${r.score}/$total', style: AppTheme.heading3),
               ),
           ],
         ),
         if (action != null) ...[const SizedBox(height: 16), action!],
       ],
+    );
+  }
+}
+
+/// A player in the lobby: their avatar (a photo too, 2026-10-17) and
+/// nickname. The host can hide a photo on this screen at once, and anyone
+/// can report one; a report goes to the studio's Pictures queue.
+class PlayerChip extends ConsumerStatefulWidget {
+  const PlayerChip({super.key, required this.uid, required this.player});
+
+  final String uid;
+  final RoomPlayer player;
+
+  @override
+  ConsumerState<PlayerChip> createState() => _PlayerChipState();
+}
+
+class _PlayerChipState extends ConsumerState<PlayerChip> {
+  bool _hidden = false;
+
+  Future<void> _report() async {
+    final me = ref.read(currentUserProvider)?.uid;
+    if (me == null) return;
+    try {
+      await ref
+          .read(flagRepositoryProvider)
+          .reportAvatar(userId: me, avatarUid: widget.uid);
+      if (!mounted) return;
+      setState(() => _hidden = true);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Reported. The Paragon team will look at it.'),
+        ),
+      );
+    } catch (_) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Couldn't send the report.")),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final avatar = Avatar.parse(widget.player.avatar, seed: widget.uid);
+    final shown = _hidden && avatar.isPhoto
+        ? Avatar.parse(null, seed: widget.uid)
+        : avatar;
+    final chip = Chip(
+      avatar: AvatarDisc(
+        avatar: shown,
+        initials: initialsFor(widget.player.nickname),
+        size: 24,
+        uid: widget.uid,
+      ),
+      label: Text(widget.player.nickname),
+    );
+    if (!avatar.isPhoto) return chip;
+    return PopupMenuButton<String>(
+      tooltip: 'Photo options for ${widget.player.nickname}',
+      onSelected: (v) => v == 'hide'
+          ? setState(() => _hidden = !_hidden)
+          : _report(),
+      itemBuilder: (_) => [
+        PopupMenuItem(
+          value: 'hide',
+          child: Text(_hidden ? 'Show photo' : 'Hide photo'),
+        ),
+        const PopupMenuItem(value: 'report', child: Text('Report picture')),
+      ],
+      child: chip,
     );
   }
 }

@@ -312,6 +312,40 @@ async function main() {
   await check("not with an extra field", assertFails(setDoc(doc(student("ann"), "decks/d5"), deck("ann", { shared: true }))));
   await check("the owner deletes it", assertSucceeds(deleteDoc(doc(student("ann"), "decks/d1"))));
 
+  console.log("\nprofile photos: owner-written, seen in rooms, removable after a report");
+  const photo = (over = {}) => ({ mime: "image/jpeg", data: "abc", updatedAt: serverTimestamp(), ...over });
+  await check("a student uploads their photo", assertSucceeds(setDoc(doc(student("ann"), "avatarImages/ann"), photo())));
+  await check("anyone signed in can see it (it shows in quiz rooms)", assertSucceeds(getDoc(doc(student("bob"), "avatarImages/ann"))));
+  await check("nobody can list them", assertFails(getDocs(collection(student("bob"), "avatarImages"))));
+  await check("not someone else's", assertFails(setDoc(doc(student("bob"), "avatarImages/ann"), photo())));
+  await check("a guest cannot upload one", assertFails(setDoc(doc(guest("g1"), "avatarImages/g1"), photo())));
+  await check("not a PNG or anything else", assertFails(setDoc(doc(student("ann"), "avatarImages/ann"), photo({ mime: "image/svg+xml" }))));
+  await check("not a large file", assertFails(setDoc(doc(student("ann"), "avatarImages/ann"), photo({ data: "x".repeat(120001) }))));
+  await check(
+    "the user may point their avatar at a photo",
+    assertSucceeds(updateDoc(doc(student("ann"), "users/ann"), { avatar: "photo:1760700000000" })),
+  );
+  await check("not a made-up avatar value", assertFails(updateDoc(doc(student("ann"), "users/ann"), { avatar: "photo:abc" })));
+  await check(
+    "a student reports someone else's photo",
+    assertSucceeds(setDoc(doc(student("bob"), "flags/p1"), { avatarUid: "ann", userId: "bob", reason: "inappropriate_photo", createdAt: serverTimestamp() })),
+  );
+  await check(
+    "not their own",
+    assertFails(setDoc(doc(student("ann"), "flags/p2"), { avatarUid: "ann", userId: "ann", reason: "inappropriate_photo", createdAt: serverTimestamp() })),
+  );
+  const takedown = (db) => {
+    const b2 = writeBatch(db);
+    b2.delete(doc(db, "avatarImages/ann"));
+    b2.set(doc(db, "avatarBlocks/ann"), { by: "rev", at: serverTimestamp(), reason: "Removed after a report" });
+    return b2.commit();
+  };
+  await check("a student cannot take a photo down", assertFails(takedown(student("bob"))));
+  await check("a reviewer removes it and blocks new ones", assertSucceeds(takedown(reviewer())));
+  await check("the owner can see they were blocked", assertSucceeds(getDoc(doc(student("ann"), "avatarBlocks/ann"))));
+  await check("and cannot upload again", assertFails(setDoc(doc(student("ann"), "avatarImages/ann"), photo())));
+  await check("nor lift the block", assertFails(deleteDoc(doc(student("ann"), "avatarBlocks/ann"))));
+
   console.log("\nwaitlist/{uid}: accounts only (P1.5)");
   const list = (uid) => ({ userId: uid, subjects: ["biology"], updatedAt: serverTimestamp() });
   await check("an account joins a waitlist", assertSucceeds(setDoc(doc(student("ann"), "waitlist/ann"), list("ann"))));

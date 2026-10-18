@@ -69,9 +69,9 @@ void main() {
   });
 
   test('exportSize counts owned documents only', () async {
-    // 8 keyed-by-uid slots + 2 attempts + 1 note + 1 flag + 1 feedback
+    // 9 keyed-by-uid slots + 2 attempts + 1 note + 1 flag + 1 feedback
     // + 1 exam.
-    expect(await repo.exportSize('u1'), 14);
+    expect(await repo.exportSize('u1'), 15);
   });
 
   test('covers everything deletion removes', () async {
@@ -85,6 +85,13 @@ void main() {
     await db.collection('plan').doc('u1').set({
       'userId': 'u1',
       'weeklyGoal': 100,
+    });
+    // Added 2026-10-17: a photo, a flashcard deck, unsent ratings.
+    await db.collection('avatarImages').doc('u1').set({'data': 'x'});
+    await db.collection('decks').add({'userId': 'u1', 'title': 'D'});
+    await db.collection('difficultyVotes').add({
+      'userId': 'u1',
+      'votes': {'q1': 3},
     });
     final before = await repo.exportOwnedDocuments('u1');
     await repo.deleteOwnedDocuments('u1');
@@ -100,6 +107,9 @@ void main() {
         'staffProfiles',
         'waitlist',
         'plan',
+        'avatarImages',
+        'decks',
+        'difficultyVotes',
       ]),
     );
     // ...and deletion left nothing the export can find.
@@ -112,6 +122,7 @@ void main() {
       'staffProfiles',
       'waitlist',
       'plan',
+      'avatarImages',
     ]) {
       expect(after.containsKey(key), isFalse, reason: key);
     }
@@ -122,6 +133,8 @@ void main() {
       'feedback',
       'examResults',
       'challenges',
+      'decks',
+      'difficultyVotes',
     ]) {
       expect(after[key], isEmpty, reason: key);
     }

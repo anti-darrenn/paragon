@@ -5,17 +5,23 @@ import '../theme/app_colors.dart';
 /// A student's avatar: one of a fixed set of presets, or their initials
 /// on a colour they chose.
 ///
-/// Stored as a single string on `users/{uid}.avatar` — `preset:<id>` or
-/// `initials:<colorKey>` — and nothing else. There are deliberately no
-/// uploads: most students are minors, and a picture only they can see is
-/// not worth a moderation queue. `firestore.rules` checks the same shape
-/// (`^(preset|initials):[a-z_]{2,20}$`), so the two must change together.
+/// Stored as a single string on `users/{uid}.avatar`: `preset:<id>`,
+/// `initials:<colorKey>`, or, since 2026-10-17, `photo:<version>` for an
+/// uploaded photo (owner's decision: photos are shown in quiz rooms and
+/// moderated by reports; see `avatar_photo_repository.dart`).
+/// `firestore.rules` checks the same shape
+/// (`^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$`), as does the
+/// room join in `player_room_screen.dart`; change them together.
 ///
 /// Everything here is pure, so the parse and the fallback are testable
 /// without a widget tree.
 @immutable
 class Avatar {
-  const Avatar._({required this.preset, required this.colorKey});
+  const Avatar._({
+    required this.preset,
+    required this.colorKey,
+    this.photoVersion,
+  });
 
   /// Set for a preset avatar, null for initials.
   final AvatarPreset? preset;
@@ -26,11 +32,27 @@ class Avatar {
 
   bool get isPreset => preset != null;
 
+  /// An uploaded photo (2026-10-17): stored as `photo:<version>`, the
+  /// image itself in `avatarImages/{uid}`. The version changes with each
+  /// upload, so a cached old photo is never shown. While the photo loads,
+  /// or if it was removed, the initials on [colorKey] stand in.
+  final int? photoVersion;
+  bool get isPhoto => photoVersion != null;
+
   Color get color => avatarSwatch(colorKey);
 
   /// The stored form, or what would be stored.
-  String get storageValue =>
-      preset != null ? 'preset:${preset!.id}' : 'initials:$colorKey';
+  String get storageValue => photoVersion != null
+      ? 'photo:$photoVersion'
+      : preset != null
+      ? 'preset:${preset!.id}'
+      : 'initials:$colorKey';
+
+  static Avatar photo(int version, {required String seed}) => Avatar._(
+    preset: null,
+    colorKey: fallbackColorKey(seed),
+    photoVersion: version,
+  );
 
   static Avatar forPreset(AvatarPreset preset) =>
       Avatar._(preset: preset, colorKey: preset.colorKey);
@@ -58,6 +80,9 @@ class Avatar {
         } else if (kind == 'initials' &&
             AppColors.avatarSwatches.containsKey(value)) {
           return Avatar._(preset: null, colorKey: value);
+        } else if (kind == 'photo' &&
+            RegExp(r'^[0-9]{1,13}$').hasMatch(value)) {
+          return photo(int.parse(value), seed: seed);
         }
       }
     }

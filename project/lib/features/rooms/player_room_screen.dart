@@ -84,7 +84,23 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
       _error = null;
     });
     try {
-      await ref.read(roomRepositoryProvider).join(widget.code, uid, name);
+      // The avatar goes with the nickname, so a photo shows on the host's
+      // screen. Anything the rules would refuse is left out.
+      final avatar = ref.read(userDataProvider).asData?.value?['avatar'];
+      await ref
+          .read(roomRepositoryProvider)
+          .join(
+            widget.code,
+            uid,
+            name,
+            avatar:
+                avatar is String &&
+                    RegExp(
+                      r'^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$',
+                    ).hasMatch(avatar)
+                ? avatar
+                : null,
+          );
       ref.read(analyticsProvider).roomJoined();
       if (mounted) setState(() => _joined = true);
     } catch (_) {

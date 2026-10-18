@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/avatar.dart';
 import '../providers/auth_provider.dart';
+import '../repositories/avatar_photo_repository.dart';
 
 /// The only thing that draws an avatar.
 ///
@@ -41,6 +42,7 @@ class UserAvatar extends ConsumerWidget {
         avatar: Avatar.parse(_raw, seed: _seed!),
         initials: initialsFor(_name),
         size: size,
+        uid: _seed,
       );
     }
 
@@ -53,27 +55,67 @@ class UserAvatar extends ConsumerWidget {
         fallback: data?['username'] as String?,
       ),
       size: size,
+      uid: user?.uid,
     );
   }
 }
 
 /// A resolved [Avatar] drawn as a disc. Separate from [UserAvatar] so the
 /// picker can draw candidates that are not saved yet.
-class AvatarDisc extends StatelessWidget {
+class AvatarDisc extends ConsumerWidget {
   const AvatarDisc({
     super.key,
     required this.avatar,
     required this.initials,
     this.size = 40,
+    this.uid,
   });
 
   final Avatar avatar;
   final String initials;
   final double size;
 
+  /// Whose photo, when [avatar] is one (`avatarImages/{uid}`). Without it
+  /// a photo avatar draws its initials.
+  final String? uid;
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final preset = avatar.preset;
+    final photo = avatar.isPhoto && uid != null && uid!.isNotEmpty
+        ? ref
+              .watch(avatarPhotoProvider('${uid!}@${avatar.photoVersion}'))
+              .asData
+              ?.value
+        : null;
+    if (photo != null) {
+      return Container(
+        width: size,
+        height: size,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          border: Border.all(
+            color: avatar.color,
+            width: size >= 64 ? 2.5 : 1.5,
+          ),
+        ),
+        child: ClipOval(
+          child: Image.memory(
+            photo,
+            width: size,
+            height: size,
+            fit: BoxFit.cover,
+            gaplessPlayback: true,
+            // A photo that will not decode falls back to the initials.
+            errorBuilder: (_, _, _) => _initials(avatar, null),
+          ),
+        ),
+      );
+    }
+    return _initials(avatar, preset);
+  }
+
+  Widget _initials(Avatar avatar, AvatarPreset? preset) {
     return Container(
       width: size,
       height: size,

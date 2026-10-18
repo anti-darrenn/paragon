@@ -9,6 +9,8 @@ import '../../core/theme/app_theme.dart';
 import '../../core/widgets/user_avatar.dart';
 import '../onboarding/onboarding_scaffold.dart';
 import 'avatar_picker.dart';
+import 'photo_upload.dart' deferred as photo_upload;
+import '../../core/repositories/avatar_photo_repository.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 import '../../core/widgets/ui/ui.dart';
@@ -47,7 +49,40 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
   String _storedBio = '';
 
   bool _isSaving = false;
+  bool _uploading = false;
   String? _error;
+
+  /// Picks a photo, shrinks it on the device and stores it straight away
+  /// (`avatarImages/{uid}`); the profile points at it when saved.
+  Future<void> _uploadPhoto() async {
+    final user = ref.read(currentUserProvider);
+    if (user == null || user.isAnonymous) return;
+    setState(() {
+      _uploading = true;
+      _error = null;
+    });
+    try {
+      await photo_upload.loadLibrary();
+      final jpeg = await photo_upload.pickAvatarPhoto();
+      if (jpeg == null) return;
+      final value = await ref
+          .read(avatarPhotoRepositoryProvider)
+          .upload(user.uid, jpeg);
+      if (!mounted) return;
+      setState(() => _avatar = Avatar.parse(value, seed: user.uid));
+    } catch (e) {
+      if (!mounted) return;
+      final blocked = '$e'.contains('permission-denied');
+      setState(
+        () => _error = blocked
+            ? 'Your photo was removed by the Paragon team, so a new one '
+                  'cannot be added. Choose a picture or your initials.'
+            : "Couldn't use that photo. ${e is Exception ? '$e' : 'Try another.'}",
+      );
+    } finally {
+      if (mounted) setState(() => _uploading = false);
+    }
+  }
 
   @override
   void dispose() {
@@ -94,6 +129,19 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                         avatar: avatar,
                         initials: initials,
                         size: 88,
+                        uid: user?.uid,
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    _PhotoChoice(
+                      isPhoto: avatar.isPhoto,
+                      uploading: _uploading,
+                      onUpload: _uploadPhoto,
+                      onRemove: () => setState(
+                        () => _avatar = Avatar.parse(
+                          null,
+                          seed: user?.uid ?? '',
+                        ),
                       ),
                     ),
                     const SizedBox(height: 24),
@@ -208,6 +256,11 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
     try {
       if (avatar != null && avatar != _storedAvatar) {
         await repo.setAvatar(uid: user.uid, avatar: avatar);
+        // A photo no longer used is deleted, not left behind.
+        final wasPhoto = (_storedAvatar ?? '').startsWith('photo:');
+        if (wasPhoto && !(_avatar?.isPhoto ?? false)) {
+          await ref.read(avatarPhotoRepositoryProvider).remove(user.uid);
+        }
       }
       if (name != _storedName) {
         await repo.setDisplayName(uid: user.uid, displayName: name);
@@ -226,5 +279,73 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
     } finally {
       if (mounted) setState(() => _isSaving = false);
     }
+  }
+}
+
+/// "Upload a photo" (accounts only) and, when a photo is chosen, "Remove".
+/// Says who will see it: a photo is the one part of a profile others see,
+/// in quiz rooms.
+class _PhotoChoice extends ConsumerWidget {
+  const _PhotoChoice({
+    required this.isPhoto,
+    required this.uploading,
+    required this.onUpload,
+    required this.onRemove,
+  });
+
+  final bool isPhoto;
+  final bool uploading;
+  final VoidCallback onUpload;
+  final VoidCallback onRemove;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    if (ref.watch(isGuestProvider)) {
+      return Text(
+        'Make an account to use a photo of your own.',
+        textAlign: TextAlign.center,
+        style: AppTheme.caption.copyWith(color: palette.textSecondary),
+      );
+    }
+    final blocked = ref.watch(avatarBlockedProvider).asData?.value ?? false;
+    if (blocked) {
+      return Text(
+        'Your photo was removed by the Paragon team after a report, so a new '
+        'one cannot be added. Choose a picture or your initials.',
+        textAlign: TextAlign.center,
+        style: AppTheme.caption.copyWith(color: AppColors.warning),
+      );
+    }
+    return Column(
+      children: [
+        Wrap(
+          alignment: WrapAlignment.center,
+          spacing: 8,
+          children: [
+            OutlinedButton.icon(
+              onPressed: uploading ? null : onUpload,
+              icon: uploading
+                  ? const SizedBox(
+                      width: 16,
+                      height: 16,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    )
+                  : const Icon(Icons.photo_camera_outlined, size: 18),
+              label: Text(isPhoto ? 'Change photo' : 'Upload a photo'),
+            ),
+            if (isPhoto)
+              TextButton(onPressed: onRemove, child: const Text('Remove')),
+          ],
+        ),
+        const SizedBox(height: 6),
+        Text(
+          'Others in a live quiz see your photo. Use one of yourself or '
+          'something you like, nothing anyone would report.',
+          textAlign: TextAlign.center,
+          style: AppTheme.caption.copyWith(color: palette.textSecondary),
+        ),
+      ],
+    );
   }
 }

@@ -994,6 +994,19 @@ async function feedbackAndUsage(a, b) {
     DENY,
     await readDoc(b.idToken, `difficultyVotes/${id}`),
   );
+  // Profile photos (2026-10-17) are accounts only.
+  expectOutcome(
+    'a guest cannot upload a profile photo',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `avatarImages/${a.uid}`,
+        { mime: str('image/jpeg'), data: str('abc') },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
   // Flashcard decks (2026-10-17) are accounts only; a guest's stay on
   // the device.
   expectOutcome(
