@@ -196,6 +196,11 @@ const LegalDocument privacyPolicy = LegalDocument(
             'your browser, and are not sent to us unless you create an '
             'account from that guest session, when they are moved into it '
             'and removed from the device.',
+        'Your flashcards. When you make a deck, we store its name, the '
+            'subject you chose and each card\'s two sides with your account, '
+            'and when each card is next due. Only you can see them, and they '
+            'are deleted when you delete the deck or your account. As a '
+            'guest they stay on your device until you create an account.',
         'Problem reports. If you report a problem with a question, we record '
             'which question, the reason you selected, and your account '
             'identifier.',

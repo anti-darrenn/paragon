@@ -5,6 +5,7 @@ import '../theme/app_colors.dart';
 import '../theme/app_palette.dart';
 import '../theme/app_theme.dart';
 import 'answer_option.dart';
+import 'difficulty_rating.dart';
 import 'full_latex_view.dart';
 import 'question_image.dart';
 import 'question_source_badge.dart';
@@ -21,7 +22,16 @@ class QuestionRunner extends StatefulWidget {
     super.key,
     required this.questions,
     required this.onFinished,
+    this.showDifficulty = true,
+    this.ratings,
   });
+
+  /// Off for questions made from a student's own flashcards.
+  final bool showDifficulty;
+
+  /// When given, "How hard was this?" is offered under each answer and the
+  /// choices land here, for the caller to send once (practice only).
+  final Map<String, int>? ratings;
 
   final List<Question> questions;
   final void Function(List<({Question question, int selected, bool correct})>)
@@ -85,7 +95,7 @@ class _QuestionRunnerState extends State<QuestionRunner> {
           color: AppColors.primary,
         ),
         const SizedBox(height: 16),
-        QuestionSourceBadge(question: q),
+        QuestionSourceBadge(question: q, showDifficulty: widget.showDifficulty),
         FullLatexView(
           latex: q.text,
           textStyle: AppTheme.bodyLg.copyWith(
@@ -125,6 +135,14 @@ class _QuestionRunnerState extends State<QuestionRunner> {
               ),
             ),
           ),
+          if (widget.ratings case final ratings?)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: DifficultyRating(
+                selected: ratings[q.id],
+                onRate: (level) => setState(() => ratings[q.id] = level),
+              ),
+            ),
         ],
       ],
     );

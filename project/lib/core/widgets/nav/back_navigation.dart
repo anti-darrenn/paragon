@@ -44,7 +44,9 @@ String? parentPathFor(Uri uri) {
     // WAEC.
     ['waec', ...] => '/waec',
 
-    // Review.
+    // Study (the Review tab).
+    ['review', 'flashcards', _, ...] => '/review/flashcards',
+    ['review', ...] => '/review',
     ['mistakes', 'practice'] => '/mistakes',
     ['mistakes'] ||
     ['saved'] ||

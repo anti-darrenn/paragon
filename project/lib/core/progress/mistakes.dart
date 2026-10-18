@@ -73,5 +73,6 @@ String mistakeSourceLabel(String source) => switch (source) {
   'exercise' => 'Lesson exercise',
   'review' => 'Mistakes practice',
   'challenge_link' => "A friend's challenge",
+  'quiz' => 'Custom quiz',
   _ => 'Practice',
 };

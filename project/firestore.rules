@@ -895,7 +895,8 @@ service cloud.firestore {
           && request.resource.data.selectedIndex <= 9
           && request.resource.data.isCorrect is bool
           && request.resource.data.source in ['drill', 'waec', 'test',
-               'exercise', 'review', 'challenge', 'challenge_link']
+               'exercise', 'review', 'challenge', 'challenge_link',
+               'quiz']
           && request.resource.data.timestamp == request.time
           && (!('hintsUsed' in request.resource.data)
               || (request.resource.data.hintsUsed is int
@@ -1052,6 +1053,29 @@ service cloud.firestore {
           && request.resource.data.diff(resource.data).affectedKeys()
                .hasOnly(['status', 'resolvedAt', 'resolvedBy'])
           && request.resource.data.status in ['open', 'fixed', 'dismissed'];
+    }
+
+    // ── FLASHCARD DECKS ─────────────────────────────────────────
+    // A student's own flashcards (2026-10-17): one document per deck,
+    // every card inside it, so a deck is one read and one write. Accounts
+    // only (a guest's decks stay on the device); owner-only both ways.
+    match /decks/{id} {
+      allow read, delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow create, update: if request.auth != null
+          && request.auth.token.firebase.sign_in_provider != 'anonymous'
+          && request.resource.data.userId == request.auth.uid
+          && (resource == null || resource.data.userId == request.auth.uid)
+          && request.resource.data.keys().hasOnly(
+               ['userId', 'title', 'subjectId', 'cards', 'updatedAt'])
+          && request.resource.data.title is string
+          && request.resource.data.title.size() > 0
+          && request.resource.data.title.size() <= 80
+          && (!('subjectId' in request.resource.data)
+              || request.resource.data.subjectId is string)
+          && request.resource.data.cards is list
+          && request.resource.data.cards.size() <= 300
+          && request.resource.data.updatedAt == request.time;
     }
 
     // ── DIFFICULTY VOTES ────────────────────────────────────────

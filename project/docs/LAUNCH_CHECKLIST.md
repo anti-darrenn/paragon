@@ -13,6 +13,7 @@ Six stacked PRs. Merge them oldest first, each after CI is green.
 | #65 | LaTeX everywhere, Normal/LaTeX editor, audit flags clear on fix | rules, then hosting; `build_static_site.js --refresh` once |
 | #66 | Students rate difficulty | rules, then hosting |
 | #67 | The founder's question bank and vetting | **see below; this empties the site until you vet** |
+| #68 | Study tab: custom quiz, flashcards, tools | rules (decks, `quiz` attempts), then hosting |
 
 **The vetting PR, in this order:**
 1. **Grant yourself the founder claim**, on an account that is already admin:

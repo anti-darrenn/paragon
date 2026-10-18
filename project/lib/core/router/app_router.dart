@@ -26,6 +26,16 @@ import 'package:paragon/features/admin/admin_flag_screen.dart'
     deferred as admin_flag;
 import 'package:paragon/features/admin/studio/new_question_screen.dart'
     deferred as new_question;
+import 'package:paragon/features/study/quiz/custom_quiz_screen.dart'
+    deferred as custom_quiz;
+import 'package:paragon/features/study/flashcards/decks_screen.dart'
+    deferred as decks;
+import 'package:paragon/features/study/flashcards/deck_editor_screen.dart'
+    deferred as deck_editor;
+import 'package:paragon/features/study/flashcards/deck_study_screen.dart'
+    deferred as deck_study;
+import 'package:paragon/features/study/hub/standalone_tool_screen.dart'
+    deferred as standalone_tool;
 import 'package:paragon/features/admin/admin_paths.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart'
     deferred as admin_home;
@@ -497,6 +507,57 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 path: '/cards/:subjectId',
                 builder: (context, state) => CardReviewScreen(
                   subjectId: state.pathParameters['subjectId']!,
+                ),
+              ),
+              // The Study tab's own tools (2026-10-17).
+              GoRoute(
+                path: '/review/quiz',
+                builder: (context, state) => DeferredScreen(
+                  load: custom_quiz.loadLibrary,
+                  builder: (_) => custom_quiz.CustomQuizScreen(),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards',
+                builder: (context, state) => DeferredScreen(
+                  load: decks.loadLibrary,
+                  builder: (_) => decks.DecksScreen(),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards/:deckId',
+                builder: (context, state) => DeferredScreen(
+                  load: deck_editor.loadLibrary,
+                  builder: (_) => deck_editor.DeckEditorScreen(
+                    deckId: state.pathParameters['deckId']!,
+                  ),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards/:deckId/study',
+                builder: (context, state) => DeferredScreen(
+                  load: deck_study.loadLibrary,
+                  builder: (_) => deck_study.DeckStudyScreen(
+                    deckId: state.pathParameters['deckId']!,
+                  ),
+                ),
+              ),
+              GoRoute(
+                path: '/review/flashcards/:deckId/quiz',
+                builder: (context, state) => DeferredScreen(
+                  load: deck_study.loadLibrary,
+                  builder: (_) => deck_study.DeckQuizScreen(
+                    deckId: state.pathParameters['deckId']!,
+                  ),
+                ),
+              ),
+              GoRoute(
+                path: '/review/tools/:toolId',
+                builder: (context, state) => DeferredScreen(
+                  load: standalone_tool.loadLibrary,
+                  builder: (_) => standalone_tool.StandaloneToolScreen(
+                    toolId: state.pathParameters['toolId']!,
+                  ),
                 ),
               ),
               // Topics saved for offline reading. Per device.
