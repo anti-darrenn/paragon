@@ -34,6 +34,8 @@ import '../core/widgets/session_title.dart';
 import '../core/challenge/challenge_link.dart';
 import 'challenge_link/challenge_share.dart';
 import '../core/widgets/examiner_insight_panel.dart';
+import '../core/repositories/difficulty_vote_repository.dart';
+import '../core/widgets/difficulty_rating.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -109,6 +111,10 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   /// a student's decision to turn collection off mid-session.
   Analytics? _analytics;
   ProgressRepository? _progress;
+  DifficultyVoteRepository? _votes;
+
+  /// "How hard was this?" answers, by question: sent once with the session.
+  final Map<String, int> _ratings = {};
 
   @override
   void initState() {
@@ -121,6 +127,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     super.didChangeDependencies();
     _analytics ??= ref.read(analyticsProvider);
     _progress ??= ref.read(progressRepositoryProvider);
+    _votes ??= ref.read(difficultyVoteRepositoryProvider);
   }
 
   @override
@@ -154,6 +161,9 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     );
 
     final uid = _uid;
+    if (uid != null && _ratings.isNotEmpty) {
+      _votes?.submit(uid: uid, votes: Map.of(_ratings));
+    }
     if (uid != null) {
       _progress?.addSession(
         uid: uid,
@@ -451,7 +461,9 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                               fontSize: 14,
                             ),
                           ),
-                        QuestionImage.workedAnswer(assetId: q.explanationImageId),
+                        QuestionImage.workedAnswer(
+                          assetId: q.explanationImageId,
+                        ),
                       ],
                     ),
                   ),
@@ -513,6 +525,15 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     ),
                   ),
                 ),
+                // Optional and below the button, so it never pushes "Next" away.
+                if (_submitted)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: DifficultyRating(
+                      selected: _ratings[q.id],
+                      onRate: (level) => setState(() => _ratings[q.id] = level),
+                    ),
+                  ),
               ],
             ),
           );

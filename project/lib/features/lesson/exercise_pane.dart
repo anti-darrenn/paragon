@@ -19,6 +19,8 @@ import '../../core/theme/app_palette.dart';
 import '../../core/learn/hints.dart';
 import '../../core/widgets/hint_panel.dart';
 import '../../core/widgets/question_image.dart';
+import '../../core/repositories/difficulty_vote_repository.dart';
+import '../../core/widgets/difficulty_rating.dart';
 
 /// An in-lesson exercise: a short set of questions with immediate
 /// feedback, Khan-style. The rules live in [ExerciseSession].
@@ -55,6 +57,12 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
   List<Question>? _sessionFor;
   final _focus = FocusNode();
 
+  /// "How hard was this?" answers for this set, sent once: when the set is
+  /// finished, or when the student leaves part-way.
+  final Map<String, int> _ratings = {};
+  DifficultyVoteRepository? _votes;
+  String? _uid;
+
   LearnResource get r => widget.resource;
 
   bool get _pinned => r.questionIds.isNotEmpty;
@@ -66,9 +74,25 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
   );
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Held: Riverpod 3 forbids `ref` in dispose().
+    _votes ??= ref.read(difficultyVoteRepositoryProvider);
+    _uid = ref.read(currentUserProvider)?.uid;
+  }
+
+  @override
   void dispose() {
+    _sendRatings();
     _focus.dispose();
     super.dispose();
+  }
+
+  void _sendRatings() {
+    final uid = _uid;
+    if (uid == null || _ratings.isEmpty) return;
+    _votes?.submit(uid: uid, votes: Map.of(_ratings));
+    _ratings.clear();
   }
 
   void _newSet() {
@@ -81,6 +105,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
 
   Future<void> _finish(ExerciseSession s) async {
     widget.onFinished?.call();
+    _sendRatings();
     if (!widget.recordAttempts) return;
 
     ref
@@ -284,6 +309,15 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
               color: context.palette.textSecondary,
             ),
           ),
+          // Optional and below the button, so it never pushes "Next" away.
+          if (resolved)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: DifficultyRating(
+                selected: _ratings[q.id],
+                onRate: (level) => setState(() => _ratings[q.id] = level),
+              ),
+            ),
         ],
       ),
     );

@@ -203,6 +203,11 @@ const LegalDocument privacyPolicy = LegalDocument(
             'kind you chose, which screen of the app you sent it from, and '
             'your account identifier. The Paragon team reads it, and it is '
             'deleted when your account is deleted.',
+        'Difficulty ratings. If you rate how hard a practice question was, '
+            'we record your ratings with your account identifier. Each '
+            'night they are added, without your name or identifier, into a '
+            'count on each question, and the record of your ratings is '
+            'deleted. Ratings not yet counted are deleted with your account.',
         'Challenges. If you challenge a friend, we store the questions, '
             'your score on them, the topic and your first name, so that '
             'whoever opens the link can see what to beat. Anyone with the '

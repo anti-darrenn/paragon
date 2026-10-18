@@ -135,6 +135,10 @@ class AccountRepository {
     await _deleteQuery(
       _db.collection('feedback').where('userId', isEqualTo: uid),
     );
+    // "How hard was this?" ratings not yet added up by the nightly job.
+    await _deleteQuery(
+      _db.collection('difficultyVotes').where('userId', isEqualTo: uid),
+    );
     // One document per finished WAEC exam, for its review and history.
     await _deleteQuery(
       _db.collection('examResults').where('userId', isEqualTo: uid),
@@ -202,6 +206,7 @@ class AccountRepository {
     'feedback',
     'examResults',
     'challenges',
+    'difficultyVotes',
   ];
   static const _ownedById = [
     'users',

@@ -37,6 +37,7 @@
  *   node jobs.js --job=rooms    [--apply]
  *   node jobs.js --job=insights [--apply]
  *   node jobs.js --job=metrics  [--apply]
+ *   node jobs.js --job=difficulty [--apply]
  *   node jobs.js --job=all      [--apply]
  *
  * And one that is deliberately NOT in `all`, to be run once by hand:
@@ -139,6 +140,7 @@ const OWNED = [
   ["notes", "userId"],
   ["examResults", "userId"],
   ["challenges", "userId"],
+  ["difficultyVotes", "userId"],
   ["progress", null],
   ["learn", null],
   ["study", null],
@@ -735,6 +737,46 @@ async function jobRooms() {
   }
 }
 
+// ─── Job: students' difficulty ratings ───────────────────────────────
+
+/**
+ * Adds the "how hard was this?" ratings sent since the last run into each
+ * question's `crowdDifficulty {n, sum}`, then deletes the vote documents.
+ * Oldest first, and capped so one night touches at most 3,000 questions
+ * (one write each); the rest wait for the next run. The app blends the
+ * tally with Paragon's estimate (`blendTier`), so the estimate stays the
+ * baseline. A rating for a question that no longer exists is dropped.
+ */
+async function jobDifficulty() {
+  log(`\n── Students' difficulty ratings [${mode()}]`);
+  const { tally, takeWithin } = require("./difficulty_votes");
+  const snap = await db.collection("difficultyVotes").orderBy("createdAt").limit(1000).get();
+  const docs = takeWithin(
+    snap.docs.map((d) => ({ ref: d.ref, ...d.data() })),
+    3000,
+  );
+  const totals = tally(docs);
+  log(`   ${docs.length} session(s), ${totals.size} question(s) rated`);
+  if (!APPLY || !docs.length) return;
+  const inc = admin.firestore.FieldValue.increment;
+  const entries = [...totals];
+  for (let i = 0; i < entries.length; i += 400) {
+    const batch = db.batch();
+    const chunk = entries.slice(i, i + 400);
+    const refs = chunk.map(([qid]) => db.collection("questions").doc(qid));
+    const exists = await db.getAll(...refs, { fieldMask: ["topicId"] });
+    chunk.forEach(([, t], k) => {
+      if (!exists[k].exists) return;
+      batch.update(refs[k], {
+        "crowdDifficulty.n": inc(t.n),
+        "crowdDifficulty.sum": inc(t.sum),
+      });
+    });
+    await batch.commit();
+  }
+  await deleteDocs(docs.map((d) => d.ref));
+}
+
 // ─── Main ────────────────────────────────────────────────────────────
 
 async function main() {
@@ -749,6 +791,7 @@ async function main() {
   if (JOB === "rooms" || JOB === "all") await jobRooms();
   if (JOB === "insights" || JOB === "all") await jobInsights();
   if (JOB === "metrics" || JOB === "all") await jobMetrics();
+  if (JOB === "difficulty" || JOB === "all") await jobDifficulty();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
   if (JOB === "resourcestatus") await jobResourceStatus();

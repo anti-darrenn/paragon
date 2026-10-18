@@ -41,6 +41,11 @@ class Question {
   /// and exercises for any of these topics can serve it too.
   final List<String> alsoTopicIds;
 
+  /// Students' ratings so far, from `questions.crowdDifficulty` ({n, sum}),
+  /// totted up nightly. Zero on a question nobody has rated.
+  final int crowdVotes;
+  final int crowdSum;
+
   const Question({
     required this.id,
     required this.topicId,
@@ -57,6 +62,8 @@ class Question {
     this.explanationImageId,
     this.difficulty,
     this.alsoTopicIds = const [],
+    this.crowdVotes = 0,
+    this.crowdSum = 0,
   });
 
   factory Question.fromFirestore(DocumentSnapshot doc) {
@@ -80,14 +87,21 @@ class Question {
       explanationImageId: asStringOrNull(d['explanationImageId']),
       difficulty: asIntOrNull(d['difficulty']),
       alsoTopicIds: asStringList(d['alsoTopicIds']),
+      crowdVotes: _crowd(d, 'n'),
+      crowdSum: _crowd(d, 'sum'),
     );
   }
 
   /// How hard this question is: the reviewer's level when one is set,
-  /// otherwise Paragon's estimate (`lib/core/questions/difficulty.dart`).
+  /// otherwise Paragon's estimate (`lib/core/questions/difficulty.dart`)
+  /// moved by students' ratings, if enough of them agree (`blendTier`).
   DifficultyTier get tier =>
       DifficultyTier.fromLevel(difficulty) ??
-      estimateDifficulty(text, options, hasDiagram: imageId != null);
+      blendTier(
+        estimateDifficulty(text, options, hasDiagram: imageId != null),
+        votes: crowdVotes,
+        sum: crowdSum,
+      );
 
   /// Whether [tier] is a person's judgement rather than the estimate.
   bool get tierIsSet => DifficultyTier.fromLevel(difficulty) != null;
@@ -130,6 +144,7 @@ class Question {
     'explanationImageId': explanationImageId,
     'difficulty': difficulty,
     'alsoTopicIds': alsoTopicIds,
+    'crowdDifficulty': {'n': crowdVotes, 'sum': crowdSum},
   };
 
   /// The inverse of [toJson], as forgiving as [Question.fromFirestore]:
@@ -150,5 +165,13 @@ class Question {
     explanationImageId: asStringOrNull(d['explanationImageId']),
     difficulty: asIntOrNull(d['difficulty']),
     alsoTopicIds: asStringList(d['alsoTopicIds']),
+    crowdVotes: _crowd(d, 'n'),
+    crowdSum: _crowd(d, 'sum'),
   );
+}
+
+/// One field of `crowdDifficulty`, the students' ratings tally.
+int _crowd(Map<String, dynamic> d, String key) {
+  final c = d['crowdDifficulty'];
+  return c is Map ? asInt(c[key]) : 0;
 }

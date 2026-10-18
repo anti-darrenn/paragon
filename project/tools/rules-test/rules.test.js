@@ -22,6 +22,7 @@ const {
   getDoc,
   setDoc,
   updateDoc,
+  deleteDoc,
   collection,
   getDocs,
   query,
@@ -235,6 +236,18 @@ async function main() {
     return f;
   })())));
   await check("an oversized reason is refused", assertFails(setDoc(doc(guest("g1"), "flags/f7"), flag("g1", { reason: "r".repeat(41) }))));
+
+  console.log("\ndifficultyVotes: one per session, your own, the server's clock");
+  const votes = (uid, over = {}) => ({ userId: uid, createdAt: serverTimestamp(), votes: { q1: 4 }, ...over });
+  await check("a student rates a session", assertSucceeds(setDoc(doc(student("ann"), "difficultyVotes/v1"), votes("ann"))));
+  await check("a guest rates too", assertSucceeds(setDoc(doc(guest("g1"), "difficultyVotes/v2"), votes("g1"))));
+  await check("not in someone else's name", assertFails(setDoc(doc(student("ann"), "difficultyVotes/v3"), votes("bob"))));
+  await check("not an empty session", assertFails(setDoc(doc(student("ann"), "difficultyVotes/v4"), votes("ann", { votes: {} }))));
+  const many = Object.fromEntries(Array.from({ length: 31 }, (_, i) => [`q${i}`, 3]));
+  await check("not more than 30 ratings", assertFails(setDoc(doc(student("ann"), "difficultyVotes/v5"), votes("ann", { votes: many }))));
+  await check("not with an extra field", assertFails(setDoc(doc(student("ann"), "difficultyVotes/v6"), votes("ann", { weight: 100 }))));
+  await check("nobody else reads them", assertFails(getDoc(doc(student("bob"), "difficultyVotes/v1"))));
+  await check("the owner can delete theirs", assertSucceeds(deleteDoc(doc(student("ann"), "difficultyVotes/v1"))));
 
   console.log("\nwaitlist/{uid}: accounts only (P1.5)");
   const list = (uid) => ({ userId: uid, subjects: ["biology"], updatedAt: serverTimestamp() });

@@ -133,4 +133,26 @@ void main() {
       );
     }
   });
+
+  // Students' ratings (owner's decision, 2026-10-17): the estimate stays
+  // the baseline; only a body of agreement moves a question.
+  group('blendTier', () {
+    const easy = DifficultyTier.easyPeasy;
+    test('no ratings: the baseline', () {
+      expect(blendTier(easy, votes: 0, sum: 0), easy);
+    });
+    test('CONTROL: one student saying "unnecessarily hard" moves nothing', () {
+      expect(blendTier(easy, votes: 1, sum: 5), easy);
+    });
+    test('twenty who agree move it most of the way', () {
+      expect(
+        blendTier(easy, votes: 20, sum: 100),
+        DifficultyTier.spicy,
+      );
+    });
+    test('a tally no set of ratings could make is ignored', () {
+      expect(blendTier(easy, votes: 3, sum: 40), easy);
+      expect(blendTier(easy, votes: 3, sum: 1), easy);
+    });
+  });
 }
