@@ -438,20 +438,30 @@ async function jobResourceStatus() {
  * `source: 'drill'`, so the two never overlap. `Question.isPastQuestion`
  * in the app reads the same fields — change both together.
  */
+/**
+ * What students can be served in a topic — answered **and vetted** (the
+ * app's `servable()`, owner's decision 2026-10-17) — split into past
+ * (source waec) and practice (source drill: generated and studio-written),
+ * plus `pendingCount`, the answered questions still waiting for the
+ * founder, which the question bank shows.
+ */
 async function countTopicQuestions(topicId) {
-  const base = db
+  const answered = db
     .collection("questions")
     .where("topicId", "==", topicId)
     .where("hasAnswer", "==", true);
-  const [total, past, practice] = await Promise.all([
+  const base = answered.where("vetted", "==", true);
+  const [all, total, past, practice] = await Promise.all([
+    answered.count().get(),
     base.count().get(),
     base.where("source", "==", "waec").count().get(),
-    base.where("origin", "==", "ai_generated").count().get(),
+    base.where("source", "==", "drill").count().get(),
   ]);
   return {
     questionCount: total.data().count,
     pastQuestionCount: past.data().count,
     practiceQuestionCount: practice.data().count,
+    pendingCount: all.data().count - total.data().count,
   };
 }
 
@@ -502,7 +512,7 @@ async function jobTopicCounts() {
       .collection("topics")
       .where("subjectId", "==", subject.id)
       .get();
-    const sum = { questionCount: 0, pastQuestionCount: 0, practiceQuestionCount: 0 };
+    const sum = { questionCount: 0, pastQuestionCount: 0, practiceQuestionCount: 0, pendingCount: 0 };
     for (const topic of topics.docs) {
       const actual = await countTopicQuestions(topic.id);
       for (const k of Object.keys(sum)) sum[k] += actual[k];

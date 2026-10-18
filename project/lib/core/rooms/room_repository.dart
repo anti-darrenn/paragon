@@ -141,7 +141,9 @@ class RoomRepository {
           .get()
           .metered();
       for (final d in snap.docs) {
-        out[d.id] = Question.fromFirestore(d);
+        final q = Question.fromFirestore(d);
+        // Only vetted questions reach students (servable.dart).
+        if (q.vetted) out[d.id] = q;
       }
     }
     return [for (final id in ids) ?out[id]];

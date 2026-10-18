@@ -151,7 +151,8 @@ class ChallengeRepository {
     final byId = {for (final d in snap.docs) d.id: Question.fromFirestore(d)};
     return [
       for (final id in c.questionIds)
-        if (byId[id] case final q? when q.correctIndex >= 0) q,
+        // Unvetted questions are not shown to students (servable.dart).
+        if (byId[id] case final q? when q.correctIndex >= 0 && q.vetted) q,
     ];
   }
 }

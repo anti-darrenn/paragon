@@ -22,6 +22,7 @@ import 'studio/question_widgets.dart';
 import 'studio/review_panels.dart';
 import 'studio/staff_profile.dart';
 import 'studio/topic_planner_screen.dart';
+import 'studio/question_bank.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 
@@ -54,6 +55,12 @@ enum StudioSection {
     'Site',
     Icons.insights_outlined,
     'The day\'s Firestore quota, waiting lists and traction.',
+  ),
+  bank(
+    'Question bank',
+    Icons.inventory_2_outlined,
+    'Vet questions before students see them, and write new ones. Only '
+        'vetted questions are used anywhere on Paragon.',
   );
 
   const StudioSection(this.label, this.icon, this.summary);
@@ -62,8 +69,10 @@ enum StudioSection {
   final String summary;
 
   /// Writers draft lessons and browse questions; the rest is review work.
-  bool visibleTo(StaffRole role) => switch (this) {
+  /// The question bank is the founder's alone.
+  bool visibleTo(StaffRole role, {bool founder = false}) => switch (this) {
     overview || lessons || questions => true,
+    bank => founder,
     _ => role.canReview,
   };
 
@@ -90,11 +99,12 @@ class AdminHomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final role = ref.watch(staffRoleProvider);
+    final founder = ref.watch(staffAccessProvider).isFounder;
     // Publishes this member's name and avatar for the rest of the team.
     ref.watch(staffProfileSyncProvider);
     final sections = [
       for (final s in StudioSection.values)
-        if (s.visibleTo(role)) s,
+        if (s.visibleTo(role, founder: founder)) s,
     ];
     var current = StudioSection.parse(section);
     if (!sections.contains(current)) current = StudioSection.overview;
@@ -392,6 +402,7 @@ class _SectionBody extends StatelessWidget {
         ],
       ),
       StudioSection.quality => const ContentQualityPanel(),
+      StudioSection.bank => const QuestionBankPanel(),
       StudioSection.site => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

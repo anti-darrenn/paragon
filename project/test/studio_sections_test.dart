@@ -73,8 +73,11 @@ void main() {
   ) async {
     await pump(tester, StaffRole.reviewer);
     for (final s in StudioSection.values) {
+      if (s == StudioSection.bank) continue;
       expect(find.text(s.label), findsWidgets, reason: s.label);
     }
+    // The question bank is the founder's alone.
+    expect(find.text(StudioSection.bank.label), findsNothing);
     // The overview's counts, from lists the studio loads anyway.
     expect(find.text('Questions students reported'), findsOneWidget);
     expect(find.text('Answers that may be wrong'), findsOneWidget);
@@ -90,6 +93,15 @@ void main() {
     expect(find.text('Reports'), findsNothing);
     expect(find.text('Quality'), findsNothing);
     expect(find.text('Answers that may be wrong'), findsNothing);
+  });
+
+  test('only the founder has the question bank', () {
+    expect(
+      StudioSection.bank.visibleTo(StaffRole.admin, founder: true),
+      isTrue,
+    );
+    expect(StudioSection.bank.visibleTo(StaffRole.admin), isFalse);
+    expect(StudioSection.bank.visibleTo(StaffRole.reviewer), isFalse);
   });
 
   test('a section is its own address; anything else is the overview', () {

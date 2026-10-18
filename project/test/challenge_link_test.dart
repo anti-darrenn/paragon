@@ -31,6 +31,7 @@ Question _q(String id, int correct) => Question(
   correctIndex: correct,
   explanation: '',
   source: 'drill',
+  vetted: true,
 );
 
 void main() {

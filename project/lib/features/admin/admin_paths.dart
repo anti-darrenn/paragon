@@ -19,3 +19,11 @@ String adminQuestionPath(String questionId) => '/admin/question/$questionId';
 /// The studio home open on one section (`StudioSection.name`).
 String adminSectionPath(String section) =>
     section == 'overview' ? '/admin' : '/admin?s=$section';
+
+/// The founder's "Write a question" (question bank), optionally with the
+/// subject and topic already chosen.
+String adminNewQuestionPath({required String subjectId, String? topicId}) =>
+    Uri(
+      path: '/admin/new-question',
+      queryParameters: {'subject': subjectId, 'topic': ?topicId},
+    ).toString();

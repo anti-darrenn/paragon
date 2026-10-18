@@ -71,7 +71,19 @@ class ReviewedQuestion {
     this.editedAt,
     this.reviewedAt,
     this.auditDismissed = const [],
+    this.vettedAt,
+    this.vettedBy,
+    this.sourceRef = '',
   });
+
+  /// The founder's check: when, and by whom. [Question.vetted] says whether.
+  final DateTime? vettedAt;
+  final String? vettedBy;
+
+  /// Where a question written in the studio came from: a book and page.
+  final String sourceRef;
+
+  bool get vetted => question.vetted;
 
   final Question question;
 
@@ -114,6 +126,9 @@ class ReviewedQuestion {
       editedAt: _date(d['editedAt']),
       reviewedAt: _date(d['reviewedAt']),
       auditDismissed: asStringList(d['auditDismissed']),
+      vettedAt: _date(d['vettedAt']),
+      vettedBy: asStringOrNull(d['vettedBy']),
+      sourceRef: asString(d['sourceRef']),
     );
   }
 }

@@ -214,6 +214,12 @@ class AdminQuestionRepository {
 
   /// Saves [after] over [before], with the history record in the same
   /// batch, and closes [closeReports] as fixed. Returns the edit's id.
+  ///
+  /// [placement] is the founder's: subject, topic, source, year, book
+  /// reference and diagrams (`foundersEdit` in the rules). [vet] true vets
+  /// the question in the same batch, false sends it back to pending; a
+  /// reviewer may only ever pass false (a changed vetted question goes
+  /// back to the founder).
   Future<String> save({
     required String questionId,
     required QuestionDraft before,
@@ -221,6 +227,8 @@ class AdminQuestionRepository {
     required String reason,
     required String uid,
     List<ProblemReport> closeReports = const [],
+    QuestionPlacement? placement,
+    bool? vet,
   }) async {
     final ref = _questions.doc(questionId);
     final history = ref.collection('history').doc();
@@ -247,6 +255,8 @@ class AdminQuestionRepository {
       'editedAt': FieldValue.serverTimestamp(),
       'editedBy': uid,
       'lastEditId': history.id,
+      ...?placement?.toUpdate(),
+      ...?_vetting(vet, uid),
     });
     for (final r in closeReports) {
       batch.update(_db.collection('flags').doc(r.id), {
@@ -294,6 +304,110 @@ class AdminQuestionRepository {
     await batch.commit();
   }
 
+  Map<String, Object>? _vetting(bool? vet, String uid) => switch (vet) {
+    true => {
+      'vetted': true,
+      'vettedAt': FieldValue.serverTimestamp(),
+      'vettedBy': uid,
+    },
+    false => {
+      'vetted': false,
+      'vettedAt': FieldValue.delete(),
+      'vettedBy': FieldValue.delete(),
+    },
+    null => null,
+  };
+
+  /// A new question from the founder's bank, with its history record, in
+  /// one batch. Always pending (`vetted: false`) and `origin: 'authored'`.
+  /// Returns its id.
+  Future<String> create({
+    required QuestionDraft draft,
+    required QuestionPlacement placement,
+    required String uid,
+  }) async {
+    final ref = _questions.doc();
+    final history = ref.collection('history').doc();
+    final batch = _db.batch();
+    final content = draft.toMap();
+    batch.set(ref, {
+      ...content,
+      ...placement.toCreate(),
+      'origin': 'authored',
+      'vetted': false,
+      'createdBy': uid,
+      'createdAt': FieldValue.serverTimestamp(),
+      'editedAt': FieldValue.serverTimestamp(),
+      'editedBy': uid,
+      'lastEditId': history.id,
+    });
+    batch.set(history, {
+      'by': uid,
+      'at': FieldValue.serverTimestamp(),
+      'reason': 'Written in the question bank',
+      'before': <String, Object>{},
+      'after': content,
+    });
+    await batch.commit();
+    return ref.id;
+  }
+
+  /// A page of a topic's questions still waiting for the founder: answered
+  /// (`hasAnswer`) and not vetted. A missing `vetted` means pending, and
+  /// Firestore cannot query for a missing field, so this reads the topic's
+  /// answered questions in id order and keeps the unvetted ones, refilling
+  /// until it has a page or the topic runs out.
+  Future<QuestionPage> pendingPage(
+    String topicId, {
+    DocumentSnapshot? after,
+  }) async {
+    final found = <ReviewedQuestion>[];
+    var cursor = after;
+    var exhausted = false;
+    for (var round = 0; round < 8 && found.length < pageSize; round++) {
+      var q = _questions
+          .where('topicId', isEqualTo: topicId)
+          .where('hasAnswer', isEqualTo: true)
+          .orderBy(FieldPath.documentId);
+      if (cursor != null) q = q.startAfterDocument(cursor);
+      final snap = await q.limit(pageSize * 2).get().metered();
+      for (final d in snap.docs) {
+        final r = ReviewedQuestion.fromFirestore(d);
+        if (!r.vetted) found.add(r);
+        cursor = d;
+        if (found.length == pageSize) break;
+      }
+      if (snap.docs.length < pageSize * 2) {
+        exhausted = true;
+        break;
+      }
+    }
+    return QuestionPage(
+      found,
+      cursor,
+      hasMore: !exhausted || found.length == pageSize,
+    );
+  }
+
+  /// A page of a topic's vetted questions, in id order.
+  Future<QuestionPage> vettedPage(
+    String topicId, {
+    DocumentSnapshot? after,
+  }) async {
+    var q = _questions
+        .where('topicId', isEqualTo: topicId)
+        .where('vetted', isEqualTo: true)
+        .orderBy(FieldPath.documentId);
+    if (after != null) q = q.startAfterDocument(after);
+    final snap = await q.limit(pageSize + 1).get().metered();
+    final docs = snap.docs.take(pageSize).toList();
+    return QuestionPage(
+      [for (final d in docs) ReviewedQuestion.fromFirestore(d)],
+      docs.isEmpty ? null : docs.last,
+      hasMore: snap.docs.length > pageSize,
+    );
+  }
+
   /// Every recorded edit of a question, newest first.
   Future<List<QuestionEdit>> history(String questionId) async {
     final snap = await _questions
@@ -329,3 +443,60 @@ class StudioWorkList extends Notifier<List<String>> {
 final studioWorkListProvider = NotifierProvider<StudioWorkList, List<String>>(
   StudioWorkList.new,
 );
+
+/// Where a question sits and comes from: the founder's fields
+/// (`foundersEdit` / `foundersCreate` in the rules). Reviewers never send
+/// these.
+class QuestionPlacement {
+  const QuestionPlacement({
+    required this.subjectId,
+    required this.topicId,
+    required this.source,
+    this.year,
+    this.sourceRef = '',
+    this.imageId,
+    this.explanationImageId,
+    this.previousTopicId,
+  });
+
+  final String subjectId;
+  final String topicId;
+
+  /// `waec` for a past paper, `drill` for practice.
+  final String source;
+  final int? year;
+
+  /// A book and page, for a question typed in from a textbook.
+  final String sourceRef;
+  final String? imageId;
+  final String? explanationImageId;
+
+  /// The topic it moved from, kept so a retag can be undone.
+  final String? previousTopicId;
+
+  Map<String, Object?> _fields() => {
+    'subjectId': subjectId,
+    'topicId': topicId,
+    'source': source,
+    'year': source == 'waec' ? year : null,
+  };
+
+  Map<String, Object> toCreate() => {
+    for (final e in _fields().entries)
+      if (e.value != null) e.key: e.value!,
+    if (sourceRef.trim().isNotEmpty) 'sourceRef': sourceRef.trim(),
+    'imageId': ?imageId,
+    'explanationImageId': ?explanationImageId,
+  };
+
+  Map<String, Object> toUpdate() => {
+    for (final e in _fields().entries)
+      e.key: e.value ?? FieldValue.delete(),
+    'sourceRef': sourceRef.trim().isEmpty
+        ? FieldValue.delete()
+        : sourceRef.trim(),
+    'imageId': imageId ?? FieldValue.delete(),
+    'explanationImageId': explanationImageId ?? FieldValue.delete(),
+    'previousTopicId': ?previousTopicId,
+  };
+}

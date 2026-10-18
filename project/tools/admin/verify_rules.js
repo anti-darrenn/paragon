@@ -1751,6 +1751,23 @@ async function content(a) {
       DENY,
       await commit(a.idToken, write(questionPath, { text: str('rewritten'), lastEditId: str('zz_verify') })),
     );
+    // The question bank (2026-10-17): only the founder vets or writes.
+    expectOutcome(
+      'a student cannot vet a question',
+      DENY,
+      await commit(a.idToken, write(questionPath, { vetted: bool(true) })),
+    );
+    expectOutcome(
+      'a student cannot write a new question',
+      DENY,
+      await commit(
+        a.idToken,
+        write(`questions/zz_verify_${a.uid.slice(0, 8)}`, {
+          text: str('What is 2 + 2?'),
+          vetted: bool(false),
+        }),
+      ),
+    );
     expectOutcome(
       'a student cannot mark a content-audit finding checked',
       DENY,

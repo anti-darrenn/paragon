@@ -35,12 +35,18 @@ enum StaffRole {
 /// never limited — exactly as `inScope()` in `firestore.rules` reads it.
 /// Outside its subjects an account can look but not change anything.
 class StaffAccess {
-  const StaffAccess(this.role, [this.subjects]);
+  const StaffAccess(this.role, [this.subjects, this.isFounder = false]);
 
   final StaffRole role;
 
   /// Null means every subject.
   final Set<String>? subjects;
+
+  /// The founder: an admin holding the `founder` claim (set only by
+  /// `tools/admin/set_founder_claim.js`). Opens the question bank, vets
+  /// questions and writes new ones; `isFounder()` in the rules is the
+  /// protection.
+  final bool isFounder;
 
   static const none = StaffAccess(StaffRole.none);
 
@@ -57,7 +63,10 @@ class StaffAccess {
   static StaffAccess fromClaims(Map<String, dynamic>? claims) {
     final role = StaffRole.fromClaims(claims);
     final raw = claims?['subjects'];
-    if (role == StaffRole.admin || raw is! List) return StaffAccess(role);
+    if (role == StaffRole.admin) {
+      return StaffAccess(role, null, claims?['founder'] == true);
+    }
+    if (raw is! List) return StaffAccess(role);
     return StaffAccess(role, {for (final s in raw) '$s'});
   }
 }

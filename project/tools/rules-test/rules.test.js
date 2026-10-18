@@ -61,6 +61,8 @@ async function main() {
     await setDoc(doc(db, "insights/qdraft"), { kind: "question", subjectId: "s1", status: "draft", summary: "y" });
     await setDoc(doc(db, "users/ann"), { uid: "ann", displayName: "Ann" });
     await setDoc(doc(db, "topics/t1"), { subjectId: "s1", name: "Indices", lessonCount: 1 });
+    await setDoc(doc(db, "topics/t2"), { subjectId: "s1", name: "Logarithms" });
+    await setDoc(doc(db, "topics/tx"), { subjectId: "s2", name: "Kinematics" });
     await setDoc(doc(db, "topics/t1/resources/live"), {
       subjectId: "s1", topicId: "t1", status: "published", title: "Laws of indices", type: "article", order: 1,
     });
@@ -80,6 +82,10 @@ async function main() {
   const reviewer = () =>
     env.authenticatedContext("rev", { reviewer: true, firebase: { sign_in_provider: "google.com" } }).firestore();
   const nobody = env.unauthenticatedContext().firestore();
+  const founder = () =>
+    env.authenticatedContext("boss", { admin: true, founder: true, firebase: { sign_in_provider: "google.com" } }).firestore();
+  const plainAdmin = () =>
+    env.authenticatedContext("adm", { admin: true, firebase: { sign_in_provider: "google.com" } }).firestore();
 
   console.log("\nLearn content: drafts never reach students (P1.1)");
   await check("a student reads a published item", assertSucceeds(getDoc(doc(student(), "topics/t1/resources/live"))));
@@ -159,6 +165,48 @@ async function main() {
     assertFails(edit(reviewer(), { id: "e14", q: { auditDismissed: "all" } })),
   );
   await check("a student cannot edit at all", assertFails(edit(student(), { id: "e8", by: "ann" })));
+
+  console.log("\nThe question bank: only the founder vets, retags and writes (2026-10-17)");
+  const vet = (by, extra = {}) => ({ vetted: true, vettedBy: by, vettedAt: serverTimestamp(), ...extra });
+  await check("a reviewer cannot vet a question", assertFails(edit(reviewer(), { id: "b1", q: vet("rev") })));
+  await check(
+    "an admin without the founder claim cannot vet",
+    assertFails(edit(plainAdmin(), { id: "b2", by: "adm", q: { ...vet("adm"), editedBy: "adm" } })),
+  );
+  await check(
+    "the founder vets a question, with the history record",
+    assertSucceeds(edit(founder(), { id: "b3", by: "boss", q: { ...vet("boss"), editedBy: "boss" } })),
+  );
+  await check(
+    "not vetted in someone else's name",
+    assertFails(edit(founder(), { id: "b4", by: "boss", q: { ...vet("rev"), editedBy: "boss" } })),
+  );
+  await check(
+    "a reviewer's edit can send a vetted question back to pending",
+    assertSucceeds(edit(reviewer(), { id: "b5", q: { vetted: false } })),
+  );
+  await check(
+    "the founder moves a question to another topic of its subject",
+    assertSucceeds(edit(founder(), { id: "b6", by: "boss", q: { editedBy: "boss", topicId: "t2", previousTopicId: "t1", alsoTopicIds: [] } })),
+  );
+  await check(
+    "not to a topic of another subject",
+    assertFails(edit(founder(), { id: "b7", by: "boss", q: { editedBy: "boss", topicId: "tx" } })),
+  );
+  const create = (db, by, id, over = {}) => {
+    const b = writeBatch(db);
+    b.set(doc(db, `questions/${id}/history/h`), { by, at: serverTimestamp(), reason: "new", before: {}, after: {} });
+    b.set(doc(db, `questions/${id}`), {
+      text: "What is 3 + 4?", options: ["6", "7", "8", "9"], correctIndex: 1, explanation: "", hasAnswer: true,
+      subjectId: "s1", topicId: "t1", source: "drill", origin: "authored", vetted: false,
+      createdBy: by, createdAt: serverTimestamp(), editedBy: by, editedAt: serverTimestamp(), lastEditId: "h", ...over,
+    });
+    return b.commit();
+  };
+  await check("the founder writes a new question, pending", assertSucceeds(create(founder(), "boss", "new1")));
+  await check("not born vetted", assertFails(create(founder(), "boss", "new2", { vetted: true })));
+  await check("not under another subject's topic", assertFails(create(founder(), "boss", "new3", { topicId: "tx" })));
+  await check("a reviewer cannot write one", assertFails(create(reviewer(), "rev", "new4")));
   await check(
     "history is append-only",
     assertFails(updateDoc(doc(reviewer(), "questions/q1/history/e1"), { reason: "rewritten" })),

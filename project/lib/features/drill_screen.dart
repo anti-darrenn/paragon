@@ -352,7 +352,14 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
         data: (questions) {
           if (questions.isEmpty) {
             return const Center(
-              child: Text('No questions for this topic yet.'),
+              child: Padding(
+                padding: EdgeInsets.all(24),
+                child: Text(
+                  'This topic\x27s questions are still being checked by our '
+                  'team. Coming soon.',
+                  textAlign: TextAlign.center,
+                ),
+              ),
             );
           }
           if (_showSummary) {

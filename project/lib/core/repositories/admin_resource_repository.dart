@@ -5,6 +5,7 @@ import '../data/read_meter.dart';
 import '../learn/youtube_id.dart';
 import '../models/learn_resource.dart';
 import '../models/question.dart';
+import '../questions/servable.dart';
 
 /// Writes and admin-only reads for the in-app content editor.
 ///
@@ -98,7 +99,7 @@ class AdminResourceRepository {
     Query<Map<String, dynamic>> q = _db
         .collection('questions')
         .where('topicId', isEqualTo: topicId)
-        .where('hasAnswer', isEqualTo: true)
+        .servable()
         .orderBy(FieldPath.documentId)
         .limit(limit);
     if (startAfterId != null) q = q.startAfter([startAfterId]);

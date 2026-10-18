@@ -8,6 +8,7 @@ import '../data/read_meter.dart';
 import '../models/learn_resource.dart';
 import '../models/lesson_asset.dart';
 import '../models/question.dart';
+import '../questions/servable.dart';
 import 'also_in_topic.dart';
 
 /// Learn mode's reads: a topic's ordered resource list, and the question
@@ -113,7 +114,7 @@ Future<List<Question>> _rotatedTopicQuestions(
   final base = db
       .collection('questions')
       .where('topicId', isEqualTo: topicId)
-      .where('hasAnswer', isEqualTo: true);
+      .servable();
 
   final forward = await base
       .orderBy(FieldPath.documentId)
@@ -226,7 +227,10 @@ final pinnedQuestionsProvider = FutureProvider.family<List<Question>, String>((
   return [
     for (final id in ids)
       if (byId[id] case final q?)
-        if (q.correctIndex >= 0 && q.correctIndex < q.options.length) q,
+        if (q.vetted &&
+            q.correctIndex >= 0 &&
+            q.correctIndex < q.options.length)
+          q,
   ];
 });
 

@@ -61,6 +61,7 @@ const QUESTION_FIELDS = [
   // Audit rules a reviewer marked checked on this question, so
   // `content_audit.js --cache` skips them as the Firestore path does.
   "auditDismissed",
+  "vetted",
 ];
 
 async function loadData() {
@@ -77,6 +78,9 @@ async function loadData() {
     db.collection("questions")
       .where("source", "==", "waec")
       .where("hasAnswer", "==", true)
+      // Only questions the founder has vetted are published (2026-10-17),
+      // as in the app. Until some are, the site has no question pages.
+      .where("vetted", "==", true)
       .select(...QUESTION_FIELDS)
       .get(),
   ]);
@@ -117,6 +121,9 @@ async function loadData() {
 /** A question is published only if a student could check it. */
 function publishable(q) {
   return (
+    // Vetted by the founder (2026-10-17). A cache read before the field
+    // existed publishes nothing until `--refresh`.
+    q.vetted === true &&
     Number.isInteger(q.year) &&
     Array.isArray(q.options) &&
     q.options.length >= 2 &&

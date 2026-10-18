@@ -11,6 +11,7 @@ import '../models/unit.dart';
 import '../models/topic.dart';
 import '../models/question.dart';
 import 'also_in_topic.dart';
+import '../questions/servable.dart';
 
 final _firestoreProvider = Provider<FirebaseFirestore>((ref) {
   return FirebaseFirestore.instance;
@@ -121,7 +122,7 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
   final base = db
       .collection('questions')
       .where('topicId', isEqualTo: topicId)
-      .where('hasAnswer', isEqualTo: true);
+      .servable();
 
   final randomStart = _randomAutoId(Random());
   final forward = await base
@@ -176,7 +177,7 @@ final waecYearRangeProvider = FutureProvider.family<(int min, int max), String>(
         .collection('questions')
         .where('subjectId', isEqualTo: subjectId)
         .where('source', isEqualTo: 'waec')
-        .where('hasAnswer', isEqualTo: true);
+        .servable();
 
     final earliest = await base.orderBy('year').limit(1).get().metered();
     final latest = await base
@@ -232,7 +233,7 @@ final waecAvailableCountProvider =
           .collection('questions')
           .where('subjectId', isEqualTo: query.subjectId)
           .where('source', isEqualTo: 'waec')
-          .where('hasAnswer', isEqualTo: true)
+          .servable()
           .where('year', isGreaterThanOrEqualTo: query.yearFrom)
           .where('year', isLessThanOrEqualTo: query.yearTo)
           .count()
@@ -293,7 +294,7 @@ final waecExamQuestionsProvider =
           .collection('questions')
           .where('subjectId', isEqualTo: config.subjectId)
           .where('source', isEqualTo: 'waec')
-          .where('hasAnswer', isEqualTo: true);
+          .servable();
 
       if (!config.shuffle) {
         final snap = await base
