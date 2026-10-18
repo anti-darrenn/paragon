@@ -994,6 +994,19 @@ async function feedbackAndUsage(a, b) {
     DENY,
     await readDoc(b.idToken, `difficultyVotes/${id}`),
   );
+  // Hosts' own quizzes (2026-10-17) are written by accounts only.
+  expectOutcome(
+    'a guest cannot write a quiz',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `quizzes/zz_verify_${a.uid.slice(0, 8)}`,
+        { userId: str(a.uid), title: str('Indices'), questions: arr([]) },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
   // Profile photos (2026-10-17) are accounts only.
   expectOutcome(
     'a guest cannot upload a profile photo',

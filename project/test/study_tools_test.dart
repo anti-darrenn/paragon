@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/models/question.dart';
 import 'package:paragon/core/questions/difficulty.dart';
 import 'package:paragon/features/study/flashcards/deck.dart';
+import 'package:paragon/core/content/quiz_mix.dart';
 import 'package:paragon/features/study/quiz/custom_quiz_screen.dart';
 
 Question _q(String id, String topic, {String text = 'Q', int? level}) =>

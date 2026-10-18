@@ -135,6 +135,19 @@ class AccountRepository {
     await _deleteQuery(
       _db.collection('feedback').where('userId', isEqualTo: uid),
     );
+    // Live quizzes: the student's own quizzes, their diagrams, and the
+    // record of games played and hosted. (Hosted rooms themselves cannot
+    // be listed by a client; they expire in a day, and jobs.js removes
+    // them with the account.)
+    await _deleteQuery(
+      _db.collection('quizzes').where('userId', isEqualTo: uid),
+    );
+    await _deleteQuery(
+      _db.collection('quizAssets').where('createdBy', isEqualTo: uid),
+    );
+    await _deleteQuery(
+      _db.collection('quizHistory').where('userId', isEqualTo: uid),
+    );
     // Flashcard decks the student made.
     await _deleteQuery(
       _db.collection('decks').where('userId', isEqualTo: uid),
@@ -214,6 +227,8 @@ class AccountRepository {
     'challenges',
     'difficultyVotes',
     'decks',
+    'quizzes',
+    'quizHistory',
   ];
   static const _ownedById = [
     'users',

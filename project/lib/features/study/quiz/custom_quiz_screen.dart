@@ -1,9 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../core/content/session_mix.dart';
+import '../../../core/content/quiz_mix.dart';
 import '../../../core/learn/topic_test.dart' show DrillAccess;
 import '../../../core/models/question.dart';
 import '../../../core/providers/auth_provider.dart';
@@ -23,38 +21,6 @@ import '../../../core/widgets/ui/ui.dart';
 
 /// The most topics one quiz mixes; each is one drill-pool read.
 const kMaxQuizTopics = 10;
-
-/// A custom quiz's questions from [pools] (one per chosen topic): the
-/// chosen [tier] only, when one is chosen, spread across the topics in
-/// turn so no topic crowds the rest out, at most [length]. Pure.
-List<Question> buildCustomQuiz(
-  List<List<Question>> pools, {
-  required int length,
-  DifficultyTier? tier,
-  Random? random,
-}) {
-  final r = random ?? Random();
-  final filtered = [
-    for (final p in pools)
-      [
-        for (final q in p)
-          if (tier == null || q.tier == tier) q,
-      ]..shuffle(r),
-  ];
-  final out = <Question>[];
-  final seen = <String>{};
-  for (var round = 0; out.length < length; round++) {
-    var took = false;
-    for (final p in filtered) {
-      if (round < p.length && out.length < length && seen.add(p[round].id)) {
-        out.add(p[round]);
-        took = true;
-      }
-    }
-    if (!took) break;
-  }
-  return mixSession(out..shuffle(r), (q) => q.text);
-}
 
 /// What a finished quiz adds to mastery: one session per topic, **only
 /// for topics whose drill is already open** ([isOpen], `drillAccessFor`).

@@ -108,6 +108,12 @@ String pageTitleFor(String pattern, Map<String, String> params) {
       return t('Join a live quiz');
     case '/rooms/new':
       return t('Host a live quiz');
+    case '/quizzes':
+      return t('My quizzes');
+    case '/quizzes/:quizId':
+      return t('Edit quiz');
+    case '/me/history':
+      return t('Quiz history');
     case '/rooms/:code/host':
     case '/rooms/:code':
       return t('Live quiz');
