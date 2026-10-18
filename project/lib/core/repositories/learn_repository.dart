@@ -254,14 +254,18 @@ final exerciseQuestionsProvider =
 
 /// One lesson image, `lessonAssets/{id}`. Null when it does not exist —
 /// the figure then says so instead of failing the whole article.
+///
+/// An id `quiz:<id>` is a diagram in a host's own quiz (`quizAssets`,
+/// 2026-10-17); the same shape, kept apart from the lesson library.
 final lessonAssetProvider = FutureProvider.family<LessonAsset?, String>((
   ref,
   id,
 ) async {
+  final quiz = id.startsWith('quiz:');
   final doc = await ref
       .read(_firestoreProvider)
-      .collection('lessonAssets')
-      .doc(id)
+      .collection(quiz ? 'quizAssets' : 'lessonAssets')
+      .doc(quiz ? id.substring(5) : id)
       .get()
       .metered();
   return doc.exists ? LessonAsset.fromFirestore(doc) : null;

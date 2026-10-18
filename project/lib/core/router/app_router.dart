@@ -97,6 +97,10 @@ import 'package:paragon/features/rooms/join_room_screen.dart'
     deferred as join_room;
 import 'package:paragon/features/rooms/new_room_screen.dart'
     deferred as new_room;
+import 'package:paragon/features/rooms/quiz_editor_screen.dart'
+    deferred as quiz_editor;
+import 'package:paragon/features/rooms/quiz_history_screen.dart'
+    deferred as quiz_history;
 import 'package:paragon/features/rooms/host_room_screen.dart'
     deferred as host_room;
 import 'package:paragon/features/rooms/player_room_screen.dart'
@@ -577,6 +581,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 path: '/me',
                 builder: (context, state) => const MeScreen(),
               ),
+              // Live quizzes played and hosted (2026-10-17).
+              GoRoute(
+                path: '/me/history',
+                builder: (context, state) => DeferredScreen(
+                  load: quiz_history.loadLibrary,
+                  builder: (_) => quiz_history.QuizHistoryScreen(),
+                ),
+              ),
               GoRoute(
                 path: '/settings',
                 builder: (context, state) => DeferredScreen(
@@ -779,6 +791,23 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           // `/join?code=ABC234` from a host's shared link fills the box.
           builder: (_) => join_room.JoinRoomScreen(
             initialCode: state.uri.queryParameters['code'],
+          ),
+        ),
+      ),
+      // A host's own quizzes for live rooms (2026-10-17).
+      GoRoute(
+        path: '/quizzes',
+        builder: (context, state) => DeferredScreen(
+          load: quiz_editor.loadLibrary,
+          builder: (_) => quiz_editor.MyQuizzesScreen(),
+        ),
+      ),
+      GoRoute(
+        path: '/quizzes/:quizId',
+        builder: (context, state) => DeferredScreen(
+          load: quiz_editor.loadLibrary,
+          builder: (_) => quiz_editor.QuizEditorScreen(
+            quizId: state.pathParameters['quizId']!,
           ),
         ),
       ),

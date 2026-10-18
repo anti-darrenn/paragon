@@ -140,6 +140,11 @@ class _JoinRoomScreenState extends ConsumerState<JoinRoomScreen> {
                     ),
                   ),
                 ),
+                if (canHost)
+                  TextButton(
+                    onPressed: () => context.push('/quizzes'),
+                    child: const Text('My quizzes'),
+                  ),
                 TextButton(
                   onPressed: () =>
                       context.push(canHost ? '/rooms/new' : '/account/upgrade'),

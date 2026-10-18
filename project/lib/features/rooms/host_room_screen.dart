@@ -1,9 +1,14 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/models/avatar.dart';
 import '../../core/models/question.dart';
 import '../../core/providers/auth_provider.dart';
+import '../../core/repositories/flag_repository.dart';
+import '../../core/rooms/quiz_history.dart';
 import '../../core/rooms/room.dart';
 import '../../core/rooms/room_repository.dart';
 import '../../core/theme/app_colors.dart';
@@ -11,17 +16,24 @@ import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/web/browser.dart';
 import '../../core/widgets/full_latex_view.dart';
-import '../../core/widgets/math_text.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/question_image.dart';
 import '../../core/widgets/share_link_button.dart';
 import '../../core/widgets/ui/ui.dart';
-import '../../core/models/avatar.dart';
-import '../../core/repositories/flag_repository.dart';
 import '../../core/widgets/user_avatar.dart';
+import 'room_ui.dart';
 
-/// `/rooms/:code/host`: the screen on the projector. Lobby with the big
-/// code, then each question with a live count of answers, the reveal with
-/// how the room split, and the podium.
+/// `/rooms/:code/host`: the screen on the projector.
+///
+/// Lobby with the big code and players popping in → 3-2-1 → each question
+/// with a countdown ring (in a timed room) that reveals by itself at zero
+/// or once everyone has answered → the reveal, with how the room split and
+/// the leaderboard → the podium, with confetti.
+///
+/// **Scoring happens here.** At each reveal the host's client works out the
+/// question's points (`scoreQuestion`: speed from the server's timestamps
+/// on the question and each answer) and writes the running `scores` and
+/// `streaks` into the room, so every phone can show its total and place.
 class HostRoomScreen extends ConsumerStatefulWidget {
   const HostRoomScreen({super.key, required this.code});
 
@@ -33,6 +45,15 @@ class HostRoomScreen extends ConsumerStatefulWidget {
 
 class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
   bool _busy = false;
+  bool _countingIn = false;
+  bool _recorded = false;
+
+  /// The question last scored, so the clock, "everyone answered" and the
+  /// button can never score the same question twice.
+  int _revealed = -1;
+
+  /// Scores before the last reveal, for the "+points" on the leaderboard.
+  Map<String, int> _before = const {};
 
   @override
   void initState() {
@@ -47,6 +68,7 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
   }
 
   Future<void> _do(Future<void> Function() action) async {
+    if (_busy) return;
     setState(() => _busy = true);
     try {
       await action();
@@ -60,6 +82,37 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
       if (mounted) setState(() => _busy = false);
     }
   }
+
+  /// The reveal: score this question, then show the answer.
+  Future<void> _reveal(
+    Room room,
+    Map<String, RoomPlayer> players,
+    List<TimedAnswer> answers,
+    Question q,
+  ) => _do(() async {
+    if (room.state != RoomState.question || _revealed == room.index) return;
+    _revealed = room.index;
+    final next = scoreQuestion(
+      scores: room.scores,
+      streaks: room.streaks,
+      players: players.keys,
+      answers: answers,
+      index: room.index,
+      correctIndex: q.correctIndex,
+      mode: room.mode,
+      timeLimit: room.timeLimit,
+      startedAt: room.questionStartedAt,
+    );
+    _before = room.scores;
+    try {
+      await ref
+          .read(roomRepositoryProvider)
+          .reveal(room.code, scores: next.scores, streaks: next.streaks);
+    } catch (_) {
+      _revealed = -1; // let the host try again
+      rethrow;
+    }
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -86,165 +139,232 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
     final answers =
         ref.watch(roomAnswersProvider(widget.code)).asData?.value ?? const [];
     final questions =
-        ref
-            .watch(roomQuestionsProvider(room.questionIds.join(',')))
-            .asData
-            ?.value ??
+        ref.watch(roomItemsProvider(roomItemsKey(room))).asData?.value ??
         const <Question>[];
     final repo = ref.read(roomRepositoryProvider);
     final q = room.index < questions.length ? questions[room.index] : null;
+    final names = {for (final e in players.entries) e.key: e.value.nickname};
+
+    // The room's record in the host's history, once.
+    if (room.state == RoomState.podium && !_recorded && uid != null) {
+      _recorded = true;
+      ref
+          .read(quizHistoryRepositoryProvider)
+          .record(uid: uid, room: room, players: players.length)
+          .ignore();
+    }
 
     Widget body;
-    switch (room.state) {
-      case RoomState.lobby:
-        body = _Lobby(
-          code: room.code,
-          topic: room.topicName,
-          players: players,
-          onStart: players.isEmpty || questions.isEmpty || _busy
-              ? null
-              : () => _do(() => repo.showQuestion(room.code, 0)),
-        );
-      case RoomState.question:
-        final answered = answers.where((a) => a.index == room.index).length;
-        body = _QuestionView(
-          question: q,
-          number: room.index + 1,
-          total: room.questionIds.length,
-          footer: '$answered of ${players.length} answered',
-          action: ElevatedButton(
-            onPressed: _busy ? null : () => _do(() => repo.reveal(room.code)),
-            child: const Text('Show the answer'),
-          ),
-        );
-      case RoomState.reveal:
-        final counts = q == null
-            ? const <int>[]
-            : optionCounts(answers, room.index, q.options.length);
-        body = _QuestionView(
-          question: q,
-          number: room.index + 1,
-          total: room.questionIds.length,
-          counts: counts,
-          action: ElevatedButton(
-            onPressed: _busy
+    if (_countingIn) {
+      body = SizedBox(
+        height: 420,
+        child: GetReady(
+          title: room.topicName,
+          onDone: () {
+            setState(() => _countingIn = false);
+            _do(() => repo.showQuestion(room.code, 0));
+          },
+        ),
+      );
+    } else {
+      switch (room.state) {
+        case RoomState.lobby:
+          body = _Lobby(
+            room: room,
+            players: players,
+            questions: questions.length,
+            onStart: players.isEmpty || questions.isEmpty || _busy
                 ? null
-                : () => _do(() async {
-                    if (room.isLast) {
-                      await repo.podium(
-                        room.code,
-                        roomScores(
-                          players: players.keys,
-                          answers: answers,
-                          correctIndexes: [
-                            for (final x in questions) x.correctIndex,
-                          ],
-                        ),
-                      );
-                    } else {
-                      await repo.showQuestion(room.code, room.index + 1);
-                    }
-                  }),
-            child: Text(room.isLast ? 'See the scores' : 'Next question'),
-          ),
-        );
-      case RoomState.podium:
-      case RoomState.closed:
-        body = _Podium(
-          results: room.results,
-          players: players,
-          total: room.questionIds.length,
-          action: room.state == RoomState.closed
-              ? null
-              : TextButton(
-                  onPressed: () async {
-                    await repo.close(room.code);
-                    setLeaveGuard(false);
-                    if (context.mounted) context.go('/');
-                  },
-                  child: const Text('Close the room'),
-                ),
-        );
+                : () => setState(() => _countingIn = true),
+          );
+        case RoomState.question:
+          final answered = answers.where((a) => a.index == room.index).length;
+          final everyone = players.isNotEmpty && answered >= players.length;
+          if (everyone && q != null && !_busy) {
+            // Everyone is in: no need to wait for the clock.
+            scheduleMicrotask(() => _reveal(room, players, answers, q));
+          }
+          body = _QuestionStage(
+            room: room,
+            question: q,
+            answered: answered,
+            players: players.length,
+            onTimeUp: q == null
+                ? null
+                : () => _reveal(room, players, answers, q),
+            action: FilledButton(
+              onPressed: _busy || q == null
+                  ? null
+                  : () => _reveal(room, players, answers, q),
+              child: const Text('Show the answer'),
+            ),
+          );
+        case RoomState.reveal:
+          final counts = q == null
+              ? const <int>[]
+              : optionCounts(
+                  [
+                    for (final a in answers)
+                      (uid: a.uid, index: a.index, selected: a.selected),
+                  ],
+                  room.index,
+                  q.options.length,
+                );
+          body = _RevealStage(
+            room: room,
+            question: q,
+            counts: counts,
+            names: names,
+            before: _before,
+            action: FilledButton(
+              onPressed: _busy
+                  ? null
+                  : () => _do(() async {
+                      if (room.isLast) {
+                        await repo.podium(room.code, {
+                          for (final p in players.keys)
+                            p: room.scores[p] ?? 0,
+                        });
+                      } else {
+                        await repo.showQuestion(room.code, room.index + 1);
+                      }
+                    }),
+              child: Text(room.isLast ? 'See the podium' : 'Next question'),
+            ),
+          );
+        case RoomState.podium:
+        case RoomState.closed:
+          body = _PodiumStage(
+            room: room,
+            names: names,
+            players: players,
+            action: room.state == RoomState.closed
+                ? null
+                : TextButton(
+                    onPressed: () async {
+                      await repo.close(room.code);
+                      setLeaveGuard(false);
+                      if (context.mounted) context.go('/');
+                    },
+                    child: const Text('Close the room'),
+                  ),
+          );
+      }
     }
 
     return Scaffold(
       appBar: ParagonAppBar(
         title: Text('Room ${room.code} · ${room.topicName}'),
       ),
-      body: PageBody(maxWidth: 1000, children: [body]),
+      body: PageBody(maxWidth: 1100, children: [body]),
     );
   }
 }
 
 class _Lobby extends StatelessWidget {
   const _Lobby({
-    required this.code,
-    required this.topic,
+    required this.room,
     required this.players,
+    required this.questions,
     required this.onStart,
   });
 
-  final String code;
-  final String topic;
+  final Room room;
   final Map<String, RoomPlayer> players;
+  final int questions;
   final VoidCallback? onStart;
 
   @override
   Widget build(BuildContext context) {
     final palette = context.palette;
+    final code = room.code;
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const SizedBox(height: 24),
         Text(
           'Go to ${appOrigin.replaceFirst(RegExp(r'^https?://'), '')}/join',
+          textAlign: TextAlign.center,
           style: AppTheme.heading3.copyWith(color: palette.textSecondary),
         ),
         const SizedBox(height: 8),
         Semantics(
           label: 'Room code ${code.split('').join(' ')}',
-          excludeSemantics: true,
           child: SelectableText(
             code,
-            style: AppTheme.displayLg.copyWith(
-              fontSize: 72,
-              letterSpacing: 12,
+            textAlign: TextAlign.center,
+            style: AppTheme.heading1.copyWith(
+              fontSize: 76,
+              letterSpacing: 14,
               color: AppColors.primary,
+              fontWeight: FontWeight.w900,
             ),
           ),
         ),
-        ShareLinkButton.labelled(
-          title: 'Join my Paragon quiz',
-          path: roomJoinPath(code),
-          label: 'Share join link',
+        Center(
+          child: ShareLinkButton.labelled(
+            title: 'Join my Paragon quiz',
+            path: roomJoinPath(code),
+            label: 'Share join link',
+          ),
         ),
-        const SizedBox(height: 8),
-        Text(
-          topic,
-          style: AppTheme.heading3.copyWith(color: palette.textPrimary),
+        const SizedBox(height: 16),
+        Wrap(
+          alignment: WrapAlignment.center,
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            Chip(
+              avatar: Icon(
+                room.mode == RoomMode.speed ? Icons.bolt_rounded : Icons.check,
+                size: 18,
+              ),
+              label: Text(
+                room.mode == RoomMode.speed
+                    ? 'Speed: faster right answers score more'
+                    : 'Classic: one point a right answer',
+              ),
+            ),
+            Chip(
+              avatar: const Icon(Icons.timer_outlined, size: 18),
+              label: Text(
+                room.timeLimit > 0
+                    ? '${room.timeLimit} s a question'
+                    : 'No timer',
+              ),
+            ),
+            Chip(label: Text('$questions questions')),
+          ],
         ),
-        const SizedBox(height: 24),
+        const SizedBox(height: 20),
         Text(
           '${players.length} ${players.length == 1 ? 'player' : 'players'} '
           '(up to $kMaxRoomPlayers)',
-          style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+          textAlign: TextAlign.center,
+          style: AppTheme.bodyLg.copyWith(color: palette.textPrimary),
         ),
         const SizedBox(height: 12),
         Wrap(
+          alignment: WrapAlignment.center,
           spacing: 8,
           runSpacing: 8,
-          alignment: WrapAlignment.center,
           children: [
             for (final e in players.entries)
-              PlayerChip(uid: e.key, player: e.value),
+              _PopIn(
+                key: ValueKey(e.key),
+                child: PlayerChip(uid: e.key, player: e.value),
+              ),
           ],
         ),
-        const SizedBox(height: 24),
-        SizedBox(
-          height: 52,
-          width: 260,
-          child: ElevatedButton(
-            onPressed: onStart,
-            child: const Text('Start the quiz'),
+        const SizedBox(height: 28),
+        Center(
+          child: SizedBox(
+            width: 280,
+            height: 56,
+            child: FilledButton.icon(
+              onPressed: onStart,
+              icon: const Icon(Icons.play_arrow_rounded),
+              label: const Text('Start the quiz'),
+            ),
           ),
         ),
       ],
@@ -252,138 +372,225 @@ class _Lobby extends StatelessWidget {
   }
 }
 
-class _QuestionView extends StatelessWidget {
-  const _QuestionView({
+/// A player's chip arrives with a small bounce.
+class _PopIn extends StatelessWidget {
+  const _PopIn({super.key, required this.child});
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    if (reduceMotion(context)) return child;
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0.4, end: 1),
+      duration: const Duration(milliseconds: 420),
+      curve: Curves.elasticOut,
+      builder: (context, s, child) => Transform.scale(scale: s, child: child),
+      child: child,
+    );
+  }
+}
+
+class _QuestionStage extends StatelessWidget {
+  const _QuestionStage({
+    required this.room,
     required this.question,
-    required this.number,
-    required this.total,
+    required this.answered,
+    required this.players,
     required this.action,
-    this.footer,
-    this.counts,
+    this.onTimeUp,
   });
 
+  final Room room;
   final Question? question;
-  final int number;
-  final int total;
+  final int answered;
+  final int players;
   final Widget action;
-  final String? footer;
-
-  /// Set at the reveal: how many chose each option.
-  final List<int>? counts;
+  final VoidCallback? onTimeUp;
 
   @override
   Widget build(BuildContext context) {
     final palette = context.palette;
     final q = question;
     if (q == null) return const Center(child: CircularProgressIndicator());
-    final most = counts == null || counts!.isEmpty
-        ? 1
-        : counts!.reduce((a, b) => a > b ? a : b).clamp(1, 1 << 30);
+    final started = room.questionStartedAt;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          'Question $number of $total',
-          style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                'Question ${room.index + 1} of ${room.questionCount}',
+                style: AppTheme.bodyLg.copyWith(color: palette.textSecondary),
+              ),
+            ),
+            if (room.timeLimit > 0 && started != null)
+              CountdownRing(
+                key: ValueKey('${room.index}-$started'),
+                startedAt: started,
+                seconds: room.timeLimit,
+                onDone: onTimeUp,
+              ),
+          ],
         ),
         const SizedBox(height: 12),
         FullLatexView(
           latex: q.text,
           textStyle: AppTheme.heading2.copyWith(color: palette.textPrimary),
         ),
+        QuestionImage(assetId: q.imageId),
         const SizedBox(height: 20),
-        for (var i = 0; i < q.options.length; i++)
-          Container(
-            margin: const EdgeInsets.only(bottom: 10),
-            padding: const EdgeInsets.all(14),
-            decoration: BoxDecoration(
-              color: counts != null && i == q.correctIndex
-                  ? AppColors.correct.withAlpha(40)
-                  : palette.surface,
-              border: Border.all(
-                color: counts != null && i == q.correctIndex
-                    ? AppColors.correct
-                    : palette.border,
-                width: 1.5,
+        ShapeGrid(
+          count: q.options.length,
+          tile: (i) => ShapeTile(index: i, text: q.options[i]),
+        ),
+        const SizedBox(height: 20),
+        Row(
+          children: [
+            Icon(Icons.how_to_vote_outlined, color: palette.textSecondary),
+            const SizedBox(width: 8),
+            AnimatedSwitcher(
+              duration: reduceMotion(context)
+                  ? Duration.zero
+                  : const Duration(milliseconds: 250),
+              transitionBuilder: (child, a) =>
+                  ScaleTransition(scale: a, child: child),
+              child: Text(
+                '$answered',
+                key: ValueKey(answered),
+                style: AppTheme.heading2.copyWith(color: AppColors.primary),
               ),
-              borderRadius: BorderRadius.circular(10),
             ),
-            child: Row(
-              children: [
-                Text(
-                  String.fromCharCode(65 + i),
-                  style: AppTheme.heading3.copyWith(color: AppColors.primary),
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: MathText(
-                    text: q.options[i],
-                    useLightRenderer: true,
-                    style: AppTheme.bodyLg.copyWith(color: palette.textPrimary),
-                  ),
-                ),
-                if (counts != null) ...[
-                  SizedBox(
-                    width: 120,
-                    child: LinearProgressIndicator(
-                      value: counts![i] / most,
-                      minHeight: 10,
-                      backgroundColor: palette.track,
-                      color: i == q.correctIndex
-                          ? AppColors.correct
-                          : palette.onLow,
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  Text('${counts![i]}', style: AppTheme.bodyLg),
-                ],
-              ],
+            Text(
+              ' of $players answered',
+              style: AppTheme.bodyLg.copyWith(color: palette.textPrimary),
             ),
-          ),
-        if (footer != null)
-          Text(
-            footer!,
-            textAlign: TextAlign.center,
-            style: AppTheme.bodyLg.copyWith(color: palette.textSecondary),
-          ),
-        const SizedBox(height: 16),
-        Center(child: SizedBox(height: 52, width: 260, child: action)),
+            const Spacer(),
+            action,
+          ],
+        ),
       ],
     );
   }
 }
 
-class _Podium extends StatelessWidget {
-  const _Podium({
-    required this.results,
-    required this.players,
-    required this.total,
+class _RevealStage extends StatelessWidget {
+  const _RevealStage({
+    required this.room,
+    required this.question,
+    required this.counts,
+    required this.names,
+    required this.before,
     required this.action,
   });
 
-  final Map<String, int> results;
+  final Room room;
+  final Question? question;
+  final List<int> counts;
+  final Map<String, String> names;
+  final Map<String, int> before;
+  final Widget action;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.palette;
+    final q = question;
+    if (q == null) return const Center(child: CircularProgressIndicator());
+    final most = counts.isEmpty ? 1 : counts.reduce((a, b) => a > b ? a : b);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Question ${room.index + 1} of ${room.questionCount}',
+          style: AppTheme.bodyLg.copyWith(color: palette.textSecondary),
+        ),
+        const SizedBox(height: 8),
+        FullLatexView(
+          latex: q.text,
+          textStyle: AppTheme.heading3.copyWith(color: palette.textPrimary),
+        ),
+        const SizedBox(height: 16),
+        ShapeGrid(
+          count: q.options.length,
+          tile: (i) => ShapeTile(
+            index: i,
+            text: q.options[i],
+            state: i == q.correctIndex ? TileState.correct : TileState.faded,
+            count: i < counts.length ? counts[i] : 0,
+            countMax: most,
+          ),
+        ),
+        if (q.explanation.trim().isNotEmpty) ...[
+          const SizedBox(height: 12),
+          SurfaceCard(
+            child: FullLatexView(
+              latex: q.explanation,
+              textStyle: AppTheme.bodyMd.copyWith(color: palette.textPrimary),
+            ),
+          ),
+        ],
+        const SizedBox(height: 24),
+        const SectionHeader('Leaderboard'),
+        Leaderboard(scores: room.scores, names: names, before: before),
+        const SizedBox(height: 16),
+        Align(alignment: Alignment.centerRight, child: action),
+      ],
+    );
+  }
+}
+
+class _PodiumStage extends StatelessWidget {
+  const _PodiumStage({
+    required this.room,
+    required this.names,
+    required this.players,
+    required this.action,
+  });
+
+  final Room room;
+  final Map<String, String> names;
   final Map<String, RoomPlayer> players;
-  final int total;
   final Widget? action;
 
   @override
   Widget build(BuildContext context) {
-    final rows = standings(results);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+    final rows = standings(room.results);
+    return Stack(
       children: [
-        const PageIntro(title: 'Scores'),
-        RowGroup(
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            for (final r in rows)
-              ListRow(
-                leading: CircleAvatar(child: Text('${r.place}')),
-                title: players[r.uid]?.nickname ?? 'Player',
-                trailing: Text('${r.score}/$total', style: AppTheme.heading3),
+            const PageIntro(title: 'The podium'),
+            PodiumSteps(
+              scores: room.results,
+              names: names,
+              avatar: (uid, size) => AvatarDisc(
+                avatar: Avatar.parse(players[uid]?.avatar, seed: uid),
+                initials: initialsFor(names[uid]),
+                size: size,
+                uid: uid,
               ),
+            ),
+            const SizedBox(height: 20),
+            RowGroup(
+              children: [
+                for (final r in rows)
+                  ListRow(
+                    leading: CircleAvatar(child: Text('${r.place}')),
+                    title: names[r.uid] ?? 'Player',
+                    trailing: Text(
+                      room.mode == RoomMode.speed
+                          ? '${r.score}'
+                          : '${r.score}/${room.questionCount}',
+                      style: AppTheme.heading3,
+                    ),
+                  ),
+              ],
+            ),
+            if (action != null) ...[const SizedBox(height: 16), action!],
           ],
         ),
-        if (action != null) ...[const SizedBox(height: 16), action!],
+        const Positioned.fill(child: Confetti()),
       ],
     );
   }
@@ -445,9 +652,8 @@ class _PlayerChipState extends ConsumerState<PlayerChip> {
     if (!avatar.isPhoto) return chip;
     return PopupMenuButton<String>(
       tooltip: 'Photo options for ${widget.player.nickname}',
-      onSelected: (v) => v == 'hide'
-          ? setState(() => _hidden = !_hidden)
-          : _report(),
+      onSelected: (v) =>
+          v == 'hide' ? setState(() => _hidden = !_hidden) : _report(),
       itemBuilder: (_) => [
         PopupMenuItem(
           value: 'hide',

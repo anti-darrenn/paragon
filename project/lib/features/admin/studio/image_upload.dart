@@ -238,3 +238,36 @@ Future<String?> pickAndUploadLessonImage({
   });
   return doc.id;
 }
+
+/// The same, for a diagram in a host's own quiz (2026-10-17): stored in
+/// `quizAssets`, which any account may write, so a teacher's pictures never
+/// mix with the lesson library. Returns the id the quiz stores
+/// (`quiz:<id>`), or null if nothing was picked.
+Future<String?> pickAndUploadQuizImage({
+  required FirebaseFirestore db,
+  required String uid,
+}) async {
+  final files = await FilePicker.pickFiles(
+    type: FileType.custom,
+    allowedExtensions: const ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'],
+  );
+  if (files.isEmpty) return null;
+  final file = files.first;
+  final size = await file.length();
+  if (size != null && size > kMaxUploadBytes) {
+    throw const ImageTooLarge(
+      'That file is over 20 MB. Export a smaller copy and try again.',
+    );
+  }
+  final prepared = prepareLessonImage(await file.readAsBytes(), file.name);
+  final doc = db.collection('quizAssets').doc();
+  await doc.set({
+    'mime': prepared.mime,
+    'data': prepared.data,
+    'width': ?prepared.width,
+    'height': ?prepared.height,
+    'createdBy': uid,
+    'createdAt': FieldValue.serverTimestamp(),
+  });
+  return 'quiz:${doc.id}';
+}

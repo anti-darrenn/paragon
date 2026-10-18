@@ -128,6 +128,7 @@ class Question {
   String? get provenanceLabel {
     if (isGenerated) return 'Paragon practice';
     if (origin == 'flashcards') return 'Your flashcards';
+    if (origin == 'teacher') return 'From your quiz host';
     if (isPastQuestion) {
       return year == null ? 'WAEC past question' : 'WAEC $year';
     }

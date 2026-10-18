@@ -64,6 +64,9 @@ String? parentPathFor(Uri uri) {
     ['join'] => '/',
     ['rooms', 'new'] => '/join',
     ['rooms', ...] => '/join',
+    ['quizzes'] => '/rooms/new',
+    ['quizzes', _] => '/quizzes',
+    ['me', 'history'] => '/me',
 
     // The studio.
     ['admin'] => '/',

@@ -204,6 +204,12 @@ const LegalDocument privacyPolicy = LegalDocument(
             'can report it; the Paragon team may remove a reported photo and '
             'stop that account adding another. You can remove your photo at '
             'any time, and it is deleted with your account.',
+        'Live quizzes you write and play. A quiz you write for your own '
+            'rooms is stored with your account, with any diagrams you add; '
+            'players in a room you host can see its questions. When a live '
+            'quiz ends we keep a record for you of the quiz name, your score '
+            'and place, and how many played, so you can see your history and '
+            'wins. Only you can see it, and it is deleted with your account.',
         'Your flashcards. When you make a deck, we store its name, the '
             'subject you chose and each card\'s two sides with your account, '
             'and when each card is next due. Only you can see them, and they '

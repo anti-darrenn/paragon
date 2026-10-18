@@ -31,6 +31,19 @@ enum RoomState {
   );
 }
 
+/// How a room scores (2026-10-17).
+enum RoomMode {
+  /// One point per right answer, the original rooms.
+  classic,
+
+  /// Kahoot-style: up to [kSpeedMaxPoints] for a right answer, less the
+  /// longer it took, plus a bonus for a run of right answers.
+  speed;
+
+  static RoomMode parse(Object? v) =>
+      v == 'speed' ? RoomMode.speed : RoomMode.classic;
+}
+
 class Room {
   const Room({
     required this.code,
@@ -43,7 +56,39 @@ class Room {
     required this.index,
     this.results = const {},
     this.createdAt,
+    this.items = const [],
+    this.quizId,
+    this.mode = RoomMode.classic,
+    this.timeLimit = 0,
+    this.questionStartedAt,
+    this.scores = const {},
+    this.streaks = const {},
   });
+
+  /// The questions in order: `b:<questionId>` from the bank, `q:<i>`
+  /// the i-th of the host's own quiz ([quizId]). Rooms made before
+  /// 2026-10-17 have none, and [questionIds] is the order.
+  final List<String> items;
+  final String? quizId;
+  final RoomMode mode;
+
+  /// Seconds per question; 0 means no timer (the host reveals by hand).
+  final int timeLimit;
+
+  /// When the live question was shown, by the server's clock; the rules
+  /// refuse an answer after [timeLimit] (and two seconds' grace).
+  final DateTime? questionStartedAt;
+
+  /// Running totals and runs of right answers, written by the host at
+  /// each reveal, so every phone can show its score and place.
+  final Map<String, int> scores;
+  final Map<String, int> streaks;
+
+  /// The room's questions in order, as items, whatever its age.
+  List<String> get order =>
+      items.isNotEmpty ? items : [for (final id in questionIds) 'b:$id'];
+
+  int get questionCount => order.length;
 
   final String code;
   final String hostUid;
@@ -62,7 +107,7 @@ class Room {
   /// Rooms last a day from this (rules and `jobs.js --job=rooms`).
   final DateTime? createdAt;
 
-  bool get isLast => index >= questionIds.length - 1;
+  bool get isLast => index >= questionCount - 1;
 
   factory Room.fromFirestore(DocumentSnapshot doc) {
     final d = docData(doc);
@@ -81,9 +126,22 @@ class Room {
           ? {for (final e in raw.entries) '${e.key}': asInt(e.value)}
           : const {},
       createdAt: created is Timestamp ? created.toDate() : null,
+      items: asStringList(d['items']),
+      quizId: asStringOrNull(d['quizId']),
+      mode: RoomMode.parse(d['mode']),
+      timeLimit: asInt(d['timeLimit']),
+      questionStartedAt: d['questionStartedAt'] is Timestamp
+          ? (d['questionStartedAt'] as Timestamp).toDate()
+          : null,
+      scores: _intMap(d['scores']),
+      streaks: _intMap(d['streaks']),
     );
   }
 }
+
+Map<String, int> _intMap(Object? raw) => raw is Map
+    ? {for (final e in raw.entries) '${e.key}': asInt(e.value)}
+    : const {};
 
 /// The most players a room takes. Not enforceable in the rules (they
 /// cannot count), so the join screen checks it; a few extra cost reads,
@@ -184,3 +242,75 @@ List<int> optionCounts(Iterable<RoomAnswer> answers, int index, int options) {
   }
   return counts;
 }
+
+// ─── Speed scoring (2026-10-17) ───────────────────────────────────────
+
+const kSpeedMaxPoints = 1000;
+const kSpeedMinPoints = 500;
+const kStreakStep = 100;
+const kStreakCap = 500;
+
+/// The time limits a host can choose, in seconds.
+const kRoomTimeLimits = [10, 20, 30, 60, 90];
+
+/// A right answer's points in a speed room: [kSpeedMaxPoints] at once,
+/// falling in a straight line to [kSpeedMinPoints] at the time limit.
+/// Measured from the server's clock at both ends, so a phone's clock
+/// changes nothing.
+int speedPoints(Duration elapsed, int limitSeconds) {
+  if (limitSeconds <= 0) return kSpeedMaxPoints;
+  final f = (elapsed.inMilliseconds / (limitSeconds * 1000)).clamp(0.0, 1.0);
+  return (kSpeedMaxPoints - (kSpeedMaxPoints - kSpeedMinPoints) * f).round();
+}
+
+/// The bonus for the [run]-th right answer in a row: nothing for the
+/// first, then [kStreakStep] more each time, up to [kStreakCap].
+int streakBonus(int run) =>
+    run <= 1 ? 0 : ((run - 1) * kStreakStep).clamp(0, kStreakCap);
+
+typedef TimedAnswer = ({String uid, int index, int selected, DateTime? at});
+
+/// The scores and runs after question [index]: what the host writes at
+/// the reveal. A player with no answer, or a wrong one, loses their run.
+/// Answers from anyone not in [players] are ignored. Pure.
+({Map<String, int> scores, Map<String, int> streaks}) scoreQuestion({
+  required Map<String, int> scores,
+  required Map<String, int> streaks,
+  required Iterable<String> players,
+  required Iterable<TimedAnswer> answers,
+  required int index,
+  required int correctIndex,
+  required RoomMode mode,
+  required int timeLimit,
+  DateTime? startedAt,
+}) {
+  final byUid = {
+    for (final a in answers)
+      if (a.index == index) a.uid: a,
+  };
+  final nextScores = <String, int>{};
+  final nextStreaks = <String, int>{};
+  for (final p in players) {
+    final a = byUid[p];
+    final right = a != null && a.selected == correctIndex;
+    final run = right ? (streaks[p] ?? 0) + 1 : 0;
+    var gained = 0;
+    if (right) {
+      if (mode == RoomMode.classic) {
+        gained = 1;
+      } else {
+        final elapsed = (a.at != null && startedAt != null)
+            ? a.at!.difference(startedAt)
+            : Duration.zero;
+        gained = speedPoints(elapsed, timeLimit) + streakBonus(run);
+      }
+    }
+    nextScores[p] = (scores[p] ?? 0) + gained;
+    nextStreaks[p] = run;
+  }
+  return (scores: nextScores, streaks: nextStreaks);
+}
+
+/// What a phone shows after a reveal: the points just earned.
+int pointsEarned(Map<String, int> before, Map<String, int> after, String uid) =>
+    (after[uid] ?? 0) - (before[uid] ?? 0);
