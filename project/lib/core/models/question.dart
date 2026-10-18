@@ -46,6 +46,11 @@ class Question {
   final int crowdVotes;
   final int crowdSum;
 
+  /// The founder has checked this question (`questions.vetted`, 2026-10-17).
+  /// Only vetted questions reach students; every student query filters on
+  /// it, and anything loaded by id is dropped when it is false.
+  final bool vetted;
+
   const Question({
     required this.id,
     required this.topicId,
@@ -64,6 +69,7 @@ class Question {
     this.alsoTopicIds = const [],
     this.crowdVotes = 0,
     this.crowdSum = 0,
+    this.vetted = false,
   });
 
   factory Question.fromFirestore(DocumentSnapshot doc) {
@@ -89,6 +95,7 @@ class Question {
       alsoTopicIds: asStringList(d['alsoTopicIds']),
       crowdVotes: _crowd(d, 'n'),
       crowdSum: _crowd(d, 'sum'),
+    vetted: asBool(d['vetted']),
     );
   }
 
@@ -145,6 +152,7 @@ class Question {
     'difficulty': difficulty,
     'alsoTopicIds': alsoTopicIds,
     'crowdDifficulty': {'n': crowdVotes, 'sum': crowdSum},
+    'vetted': vetted,
   };
 
   /// The inverse of [toJson], as forgiving as [Question.fromFirestore]:
@@ -167,6 +175,7 @@ class Question {
     alsoTopicIds: asStringList(d['alsoTopicIds']),
     crowdVotes: _crowd(d, 'n'),
     crowdSum: _crowd(d, 'sum'),
+    vetted: asBool(d['vetted']),
   );
 }
 

@@ -5,6 +5,7 @@ import '../../../core/data/read_meter.dart';
 import '../../../core/models/learn_resource.dart';
 import '../../../core/models/question.dart';
 import 'offline_plan.dart';
+import '../../../core/questions/servable.dart';
 
 /// The server reads that fill Firestore's persistent cache for a topic.
 ///
@@ -84,7 +85,10 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
           .where(FieldPath.documentId, whereIn: chunk)
           .get(_server)
           .metered();
-      saved.addAll(snap.docs.map(Question.fromFirestore));
+      // Only vetted questions are kept for a student (servable.dart).
+      saved.addAll(
+        snap.docs.map(Question.fromFirestore).where((q) => q.vetted),
+      );
     }
     return saved;
   }
@@ -98,7 +102,7 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
     final snap = await _db
         .collection('questions')
         .where('topicId', isEqualTo: topicId)
-        .where('hasAnswer', isEqualTo: true)
+        .servable()
         .orderBy(FieldPath.documentId)
         .limit(limit)
         .get(_server)

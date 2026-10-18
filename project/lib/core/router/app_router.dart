@@ -24,6 +24,8 @@ import 'package:paragon/features/admin/admin_resource_editor_screen.dart'
     deferred as editor;
 import 'package:paragon/features/admin/admin_flag_screen.dart'
     deferred as admin_flag;
+import 'package:paragon/features/admin/studio/new_question_screen.dart'
+    deferred as new_question;
 import 'package:paragon/features/admin/admin_paths.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart'
     deferred as admin_home;
@@ -835,6 +837,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           load: admin_flag.loadLibrary,
           builder: (_) => admin_flag.AdminFlagScreen(
             questionId: state.pathParameters['questionId']!,
+          ),
+        ),
+      ),
+      // The founder writes a question into the bank (2026-10-17).
+      GoRoute(
+        path: '/admin/new-question',
+        builder: (context, state) => DeferredScreen(
+          load: new_question.loadLibrary,
+          builder: (_) => new_question.NewQuestionScreen(
+            subjectId: state.uri.queryParameters['subject'] ?? '',
+            topicId: state.uri.queryParameters['topic'],
           ),
         ),
       ),

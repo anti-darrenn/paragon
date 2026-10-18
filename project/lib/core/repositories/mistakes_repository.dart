@@ -6,6 +6,7 @@ import '../models/firestore_parsing.dart';
 import '../models/question.dart';
 import '../progress/mistakes.dart';
 import '../providers/auth_provider.dart';
+import '../questions/servable.dart';
 
 /// Reads for the mistakes notebook. See `lib/core/progress/mistakes.dart`
 /// for what counts as a mistake.
@@ -58,7 +59,8 @@ class MistakesRepository {
           .get()
           .metered();
       for (final doc in snap.docs) {
-        if (!asBool(docData(doc)['hasAnswer'])) continue;
+        // Retired or not yet vetted: not something to practise.
+        if (!isServable(docData(doc))) continue;
         final q = Question.fromFirestore(doc);
         if (q.correctIndex < 0 || q.correctIndex >= q.options.length) continue;
         out[q.id] = q;

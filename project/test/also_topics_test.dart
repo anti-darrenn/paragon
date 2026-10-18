@@ -51,6 +51,7 @@ void main() {
             'options': ['a', 'b'],
             'correctIndex': 0,
             'hasAnswer': true,
+            'vetted': true,
             ...d,
           });
       await put('tagged', {
@@ -59,6 +60,11 @@ void main() {
       await put('hidden', {
         'alsoTopicIds': ['indices'],
         'hasAnswer': false,
+      });
+      // Pending (not vetted by the founder): never served.
+      await put('pending', {
+        'alsoTopicIds': ['indices'],
+        'vetted': false,
       });
       await put('elsewhere', {
         'alsoTopicIds': ['logs'],

@@ -24,6 +24,7 @@ import '../../core/widgets/ui/ui.dart';
 import 'admin_paths.dart';
 import '../../core/widgets/math_field/math_field.dart';
 import 'studio/launch_panels.dart' show contentAuditProvider;
+import 'studio/founder_question_tools.dart';
 import 'studio/question_widgets.dart';
 import 'studio/staff_profile.dart';
 
@@ -95,8 +96,20 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     alsoTopicIds: _also,
   );
 
-  bool get _dirty =>
+  /// The founder's fields: where the question sits and comes from. Null
+  /// for everyone else, who cannot change them.
+  QuestionPlacement? _placement;
+  QuestionPlacement? _storedPlacement;
+
+  bool get _contentDirty =>
       _original != null && _draft.changedFrom(_original!).isNotEmpty;
+
+  bool get _placementDirty =>
+      _placement != null &&
+      _storedPlacement != null &&
+      !samePlacement(_placement!, _storedPlacement!);
+
+  bool get _dirty => _contentDirty || _placementDirty;
 
   /// Loads [d] into the boxes. Used on first load, after a save, and to
   /// restore an earlier version from the history.
@@ -164,10 +177,24 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     context.pushReplacement(adminQuestionPath(id));
   }
 
-  Future<void> _save(FlaggedQuestion row) async {
+  /// Saves the edits. [vet] true is the founder's "Approve" (vetting the
+  /// question in the same batch), false sends it back to pending. A
+  /// reviewer's change to a vetted question always sends it back: the
+  /// founder checks what students will see.
+  Future<void> _save(FlaggedQuestion row, {bool? vet}) async {
     final uid = ref.read(currentUserProvider)?.uid;
     final before = _original;
-    if (uid == null || before == null) return;
+    final stored = row.question;
+    if (uid == null || before == null || stored == null) return;
+    final founder = ref.read(staffAccessProvider).isFounder;
+    final placement = founder && _placementDirty ? _placement : null;
+    final sendBack = !founder && stored.vetted && _contentDirty;
+    var reason = _reason.text.trim();
+    if (reason.length < 3) {
+      reason = vet == true
+          ? (_dirty ? 'Vetted, with edits' : 'Vetted')
+          : 'Sent back to pending';
+    }
     setState(() => _busy = true);
     try {
       final after = _draft;
@@ -177,10 +204,27 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             questionId: widget.questionId,
             before: before,
             after: after,
-            reason: _reason.text,
+            reason: reason,
             uid: uid,
             closeReports: _closeReports ? row.openReports : const [],
+            placement: placement == null
+                ? null
+                : QuestionPlacement(
+                    subjectId: placement.subjectId,
+                    topicId: placement.topicId,
+                    source: placement.source,
+                    year: placement.year,
+                    sourceRef: placement.sourceRef,
+                    imageId: placement.imageId,
+                    explanationImageId: placement.explanationImageId,
+                    previousTopicId:
+                        placement.topicId != _storedPlacement?.topicId
+                        ? _storedPlacement?.topicId
+                        : null,
+                  ),
+            vet: vet ?? (sendBack ? false : null),
           );
+      _storedPlacement = _placement;
       ref.invalidate(adminFlaggedQuestionProvider(widget.questionId));
       ref.invalidate(questionHistoryProvider(widget.questionId));
       ref.invalidate(adminFlagQueueProvider);
@@ -192,13 +236,25 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            _closeReports && row.openReports.isNotEmpty
+            vet == true
+                ? 'Vetted. Students can see it now.'
+                : vet == false
+                ? 'Sent back to pending.'
+                : sendBack
+                ? 'Saved. It goes back to the founder to vet again.'
+                : _closeReports && row.openReports.isNotEmpty
                 ? 'Saved, and ${row.openReports.length} report'
                       '${row.openReports.length == 1 ? '' : 's'} closed'
                 : 'Saved',
           ),
         ),
       );
+      // Approving moves on through the list, as vetting is done in runs.
+      if (vet == true) {
+        final list = ref.read(studioWorkListProvider);
+        final at = list.indexOf(widget.questionId);
+        if (at >= 0 && at < list.length - 1) await _go(list[at + 1]);
+      }
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(
@@ -291,7 +347,11 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
         ),
         asOriginal: true,
       );
+      if (ref.read(staffAccessProvider).isFounder) {
+        _storedPlacement = _placement = placementOf(q);
+      }
     }
+    final founder = ref.watch(staffAccessProvider).isFounder;
     final canEdit =
         q != null &&
         ref.watch(staffAccessProvider).roleIn(q.question.subjectId).canReview;
@@ -307,6 +367,12 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
         !blocked &&
         !_busy &&
         _reason.text.trim().length >= 3;
+    final canApprove =
+        founder &&
+        !blocked &&
+        _live &&
+        _correct >= 0 &&
+        (_placement?.topicId.isNotEmpty ?? true);
 
     return CallbackShortcuts(
       bindings: {
@@ -315,6 +381,11 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
         },
         const SingleActivator(LogicalKeyboardKey.keyS, meta: true): () {
           if (canSave && row != null) _save(row);
+        },
+        const SingleActivator(LogicalKeyboardKey.enter, control: true): () {
+          if (canApprove && !_busy && row != null && row.question != null) {
+            if (!row.question!.vetted) _save(row, vet: true);
+          }
         },
         const SingleActivator(LogicalKeyboardKey.arrowLeft, alt: true): () {
           if (prev != null) _go(prev);
@@ -329,7 +400,10 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
           if (didPop) return;
           if (await _confirmDiscard() && context.mounted) {
             // Clean again, so the next frame's PopScope lets the pop through.
-            setState(() => _original = _draft);
+            setState(() {
+              _original = _draft;
+              _storedPlacement = _placement;
+            });
             WidgetsBinding.instance.addPostFrameCallback((_) {
               if (context.mounted) context.popOrGo();
             });
@@ -382,7 +456,10 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                   openReports: row.openReports.length,
                   closeReports: _closeReports,
                   onCloseReports: (v) => setState(() => _closeReports = v),
-                  onDiscard: () => setState(() => _load(_original!)),
+                  onDiscard: () => setState(() {
+                    _load(_original!);
+                    _placement = _storedPlacement;
+                  }),
                   onSave: () => _save(row),
                 ),
           body: async.when(
@@ -492,6 +569,33 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
       children: [
         _Header(question: q),
         const SizedBox(height: 16),
+        if (ref.watch(staffAccessProvider).isFounder) ...[
+          VetBar(
+            question: q,
+            busy: _busy,
+            canApprove:
+                !issues.any((i) => i.blocks) &&
+                _live &&
+                _correct >= 0 &&
+                (_placement?.topicId.isNotEmpty ?? true),
+            hasNext: () {
+              final list = ref.read(studioWorkListProvider);
+              final at = list.indexOf(widget.questionId);
+              return at >= 0 && at < list.length - 1;
+            }(),
+            onApprove: () => _save(row, vet: true),
+            onUnvet: () => _save(row, vet: false),
+          ),
+          const SizedBox(height: 16),
+          if (_placement != null) ...[
+            PlacementCard(
+              value: _placement!,
+              onChanged: (p) => setState(() => _placement = p),
+              enabled: !_busy,
+            ),
+            const SizedBox(height: 16),
+          ],
+        ],
         if (!canEdit)
           Padding(
             padding: const EdgeInsets.only(bottom: 16),

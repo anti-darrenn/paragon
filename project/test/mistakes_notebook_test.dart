@@ -46,6 +46,7 @@ Future<void> _question(
   FakeFirebaseFirestore db,
   String id, {
   bool hasAnswer = true,
+  bool vetted = true,
 }) => db.collection('questions').doc(id).set({
   'topicId': 't1',
   'subjectId': 's1',
@@ -55,6 +56,7 @@ Future<void> _question(
   'explanation': 'Because right$id.',
   'source': 'drill',
   'hasAnswer': hasAnswer,
+  'vetted': vetted,
 });
 
 void main() {
@@ -101,9 +103,11 @@ void main() {
       },
     );
 
-    test('a retired or deleted question is left out', () async {
+    test('a retired, unvetted or deleted question is left out', () async {
       await _question(db, 'q3', hasAnswer: false);
+      await _question(db, 'q5', vetted: false);
       await _attempt(db, 'q3', false, 1);
+      await _attempt(db, 'q5', false, 1);
       await _attempt(db, 'gone', false, 2);
       await _attempt(db, 'q4', false, 3);
       expect(await notebook(), ['q4']);

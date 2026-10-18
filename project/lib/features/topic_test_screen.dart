@@ -756,8 +756,8 @@ class _EmptyBank extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            'This topic has no questions with a verified answer yet, so '
-            'there is no test to take.',
+            'This topic\x27s questions are still being checked by our team, '
+            'so there is no test to take yet. Check back soon.',
             textAlign: TextAlign.center,
             style: AppTheme.bodyLg.copyWith(
               color: context.palette.textSecondary,

@@ -10,11 +10,15 @@ class Topic {
   final String name;
   final int questionCount;
 
-  /// Past questions from real papers and Paragon's generated practice
-  /// questions, both `hasAnswer: true`, from `jobs.js --job=counts`. Both
+  /// Past questions from real papers and Paragon's practice questions,
+  /// answered and vetted (what students are served), from `jobs.js --job=counts`. Both
   /// zero means "not split yet" — see [QuestionCounts].
   final int pastQuestionCount;
   final int practiceQuestionCount;
+
+  /// Answered questions waiting for the founder to vet them (2026-10-17),
+  /// for the studio's question bank. Students never see them.
+  final int pendingCount;
   final int order;
 
   /// Published, openable Learn items. Zero means "not known", never "no
@@ -40,6 +44,7 @@ class Topic {
     required this.order,
     this.pastQuestionCount = 0,
     this.practiceQuestionCount = 0,
+    this.pendingCount = 0,
     this.lessonCount = 0,
     this.hasExaminerThemes = false,
     this.hasNotes = false,
@@ -62,6 +67,7 @@ class Topic {
       questionCount: asInt(d['questionCount']),
       pastQuestionCount: asInt(d['pastQuestionCount']),
       practiceQuestionCount: asInt(d['practiceQuestionCount']),
+      pendingCount: asInt(d['pendingCount']),
       order: asInt(d['order']),
       lessonCount: asInt(d['lessonCount']),
       hasExaminerThemes: asBool(d['hasExaminerThemes']),

@@ -4,6 +4,33 @@ The handover for the production-readiness waves (PLAN.md, waves A–K). The code
 and on stacked PRs. What is left is deploying it, a few decisions, and a person clicking
 through it. Tick each step as it is done.
 
+## 0. The 2026-10-17 feature round
+
+Six stacked PRs. Merge them oldest first, each after CI is green.
+
+| PR | What | Deploy |
+| --- | --- | --- |
+| #65 | LaTeX everywhere, Normal/LaTeX editor, audit flags clear on fix | rules, then hosting; `build_static_site.js --refresh` once |
+| #66 | Students rate difficulty | rules, then hosting |
+| #67 | The founder's question bank and vetting | **see below; this empties the site until you vet** |
+
+**The vetting PR, in this order:**
+1. **Grant yourself the founder claim**, on an account that is already admin:
+   `node tools/admin/set_founder_claim.js --email=<you> --grant`. Then sign out and in.
+2. **Deploy the indexes first**, and wait until the console shows them **Enabled**
+   (several minutes): `firebase deploy --only firestore:indexes`. Every student query
+   now filters `vetted == true`, and without its index each one fails.
+3. **Deploy the rules**, then run `node tools/admin/verify_rules.js`.
+4. **Deploy hosting.** From this moment students see **no questions** until you vet
+   some. That was your decision ("everything pending, enforced on deploy").
+5. **Recount** so courses stop advertising questions they cannot serve:
+   `node tools/admin/jobs.js --job=counts --apply`, then `check_counts.js`.
+6. **Rebuild the static site** with `build_static_site.js --refresh`. It publishes
+   vetted past questions only, so `/past-questions/` pages disappear until you vet
+   (search engines will drop them; they return as you vet).
+7. **Vet.** Open Studio → Question bank, pick a subject, and press **Vet** on a topic.
+   "Approve & next" (Ctrl+Enter) saves any edits and moves on. Counts refresh nightly.
+
 ## 1. Merge the stack, in order
 
 Each PR is based on the one before it. Merge them oldest first and delete each branch as

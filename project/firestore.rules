@@ -17,29 +17,38 @@ service cloud.firestore {
         && request.resource.data.lessonCount is int
         && request.resource.data.lessonCount >= 0;
     }
-    // Questions are Admin-SDK-only except for two reviewer paths in the
-    // content studio, both limited to the reviewer's subjects:
+    // Questions are Admin-SDK-only except for these studio paths:
     //
-    // 1. Resolving a student's problem report: change the marked answer or
-    //    retire the question, nothing else. `previousCorrectIndex` is
-    //    written alongside every answer change so a bad fix can be reverted.
-    // 2. Editing the question (stem, options, answer, explanation): the
-    //    owner's decision, 2026-10-17. Every edit names a `lastEditId`, and
-    //    the same batch must create `history/{lastEditId}` signed by the same
-    //    reviewer with the before and after: no edit without a record, and
-    //    every record can be restored. Subject, topic, source, year and
-    //    origin stay seeder-only. "Mark checked" on a content-audit finding
-    //    is the same path, adding the rule to `auditDismissed`.
+    // 1. Resolving a student's problem report (reviewers, in their
+    //    subjects): change the marked answer or retire the question, nothing
+    //    else. `previousCorrectIndex` is written alongside every answer
+    //    change so a bad fix can be reverted.
+    // 2. Editing the question (reviewers, in their subjects; the owner's
+    //    decision, 2026-10-17): stem, options, answer, explanation, tier,
+    //    other topics, diagrams, audit checks. Every edit names a
+    //    `lastEditId`, and the same batch must create `history/{lastEditId}`
+    //    signed by the same person with the before and after: no edit
+    //    without a record, and every record can be restored. A reviewer can
+    //    only ever set `vetted` to false: changing a vetted question sends
+    //    it back to the founder.
+    // 3. The founder's question bank (2026-10-17): the founder (an admin
+    //    holding the `founder` claim) may also change subject, topic,
+    //    source, year, origin and the book reference, vet a question, and
+    //    create new ones (always pending). Only vetted questions reach
+    //    students: every student query filters `vetted == true`.
     match /questions/{id} {
       allow read: if request.auth != null;
-      allow update: if reviews(resource.data.subjectId)
-        && (resolvesReport() || editsQuestion(id));
+      allow update: if (reviews(resource.data.subjectId)
+          && (resolvesReport() || editsQuestion(id)))
+        || foundersEdit(id);
+      allow create: if foundersCreate(id);
 
       // The record of every studio edit. Append-only: a history that could
       // be rewritten would prove nothing.
       match /history/{editId} {
         allow read: if isReviewer();
-        allow create: if reviews(get(/databases/$(database)/documents/questions/$(id)).data.subjectId)
+        allow create: if (isFounder()
+            || reviews(get(/databases/$(database)/documents/questions/$(id)).data.subjectId))
           && request.resource.data.keys().hasOnly(['by', 'at', 'reason', 'before', 'after'])
           && request.resource.data.by == request.auth.uid
           && request.resource.data.at == request.time
@@ -65,14 +74,11 @@ service cloud.firestore {
                      < resource.data.options.size()));
     }
 
-    function editsQuestion(id) {
+    // What every studio edit and create must leave true of a question,
+    // signed by the editor with a history record in the same batch.
+    function questionIsValid(id) {
       let q = request.resource.data;
-      return q.diff(resource.data).affectedKeys()
-             .hasOnly(['text', 'options', 'correctIndex', 'previousCorrectIndex',
-                       'explanation', 'hasAnswer', 'editedAt', 'editedBy',
-                       'lastEditId', 'difficulty', 'alsoTopicIds',
-                       'auditDismissed'])
-        && q.editedBy == request.auth.uid
+      return q.editedBy == request.auth.uid
         && q.editedAt == request.time
         && q.lastEditId is string
         && q.text is string && q.text.size() > 0 && q.text.size() <= 5000
@@ -89,15 +95,101 @@ service cloud.firestore {
         // question's own subject's topics.)
         && (!('alsoTopicIds' in q)
             || (q.alsoTopicIds is list && q.alsoTopicIds.size() <= 5
-                && !(resource.data.topicId in q.alsoTopicIds)))
+                && !(q.topicId in q.alsoTopicIds)))
         // A reviewer's difficulty tier, 1 (easy peasy) to 5.
         && (!('difficulty' in q)
             || (q.difficulty is int && q.difficulty >= 1 && q.difficulty <= 5))
         // Content-audit rules a reviewer marked checked on this question.
         && (!('auditDismissed' in q)
             || (q.auditDismissed is list && q.auditDismissed.size() <= 30))
+        // Diagrams are lessonAssets ids.
+        && (!('imageId' in q) || q.imageId is string)
+        && (!('explanationImageId' in q) || q.explanationImageId is string)
         && getAfter(/databases/$(database)/documents/questions/$(id)/history/$(q.lastEditId)).data.by
              == request.auth.uid;
+    }
+
+    function editsQuestion(id) {
+      let q = request.resource.data;
+      return q.diff(resource.data).affectedKeys()
+             .hasOnly(['text', 'options', 'correctIndex', 'previousCorrectIndex',
+                       'explanation', 'hasAnswer', 'editedAt', 'editedBy',
+                       'lastEditId', 'difficulty', 'alsoTopicIds',
+                       'auditDismissed', 'imageId', 'explanationImageId',
+                       'vetted'])
+        // A reviewer can send a question back to pending, never vet it.
+        && (!q.diff(resource.data).affectedKeys().hasAny(['vetted'])
+            || q.vetted == false)
+        && questionIsValid(id);
+    }
+
+    // The founder: an admin with the `founder` claim, set only by
+    // tools/admin/set_founder_claim.js. Never limited by subject.
+    function isFounder() {
+      return isAdmin() && request.auth.token.founder == true;
+    }
+
+    // A question's topic must belong to its subject (the rule reads it).
+    function topicFitsSubject() {
+      let q = request.resource.data;
+      return q.topicId is string && q.subjectId is string
+        && get(/databases/$(database)/documents/topics/$(q.topicId)).data.subjectId
+             == q.subjectId;
+    }
+
+    // Vetting is the founder's mark, at the server's time, or its removal.
+    function vettingIsValid() {
+      let q = request.resource.data;
+      return !('vetted' in q) || q.vetted == false
+        || (q.vetted == true && q.vettedBy == request.auth.uid
+            && q.vettedAt == request.time && q.hasAnswer == true);
+    }
+
+    function foundersSourceIsValid() {
+      let q = request.resource.data;
+      return (!('source' in q) || q.source in ['waec', 'drill'])
+        && (!('year' in q) || q.year == null
+            || (q.year is int && q.year >= 1950 && q.year <= 2100))
+        && (!('origin' in q) || q.origin in ['', 'ai_generated', 'authored', 'scraped'])
+        && (!('sourceRef' in q) || (q.sourceRef is string && q.sourceRef.size() <= 200));
+    }
+
+    function foundersEdit(id) {
+      let q = request.resource.data;
+      let changed = q.diff(resource.data).affectedKeys();
+      return isFounder()
+        && changed.hasOnly(['text', 'options', 'correctIndex', 'previousCorrectIndex',
+                            'explanation', 'hasAnswer', 'editedAt', 'editedBy',
+                            'lastEditId', 'difficulty', 'alsoTopicIds',
+                            'auditDismissed', 'imageId', 'explanationImageId',
+                            'subjectId', 'topicId', 'previousTopicId', 'source',
+                            'year', 'origin', 'sourceRef', 'needsDiagram',
+                            'vetted', 'vettedAt', 'vettedBy'])
+        && (!changed.hasAny(['subjectId', 'topicId']) || topicFitsSubject())
+        && foundersSourceIsValid()
+        && vettingIsValid()
+        && questionIsValid(id);
+    }
+
+    // A new question from the founder's bank: always pending, written as
+    // `origin: 'authored'` with who made it and when.
+    function foundersCreate(id) {
+      let q = request.resource.data;
+      return isFounder()
+        && q.keys().hasOnly(['text', 'options', 'correctIndex', 'explanation',
+                             'hasAnswer', 'difficulty', 'alsoTopicIds',
+                             'imageId', 'explanationImageId', 'subjectId',
+                             'topicId', 'source', 'year', 'origin', 'sourceRef',
+                             'vetted', 'createdBy', 'createdAt', 'editedAt',
+                             'editedBy', 'lastEditId'])
+        && q.vetted == false
+        && q.source in ['waec', 'drill']
+        && q.origin == 'authored'
+        && q.createdBy == request.auth.uid
+        && q.createdAt == request.time
+        && topicFitsSubject()
+        && foundersSourceIsValid()
+        && questionIsValid(id);
     }
 
     // ── LEARN RESOURCES ─────────────────────────────────────────

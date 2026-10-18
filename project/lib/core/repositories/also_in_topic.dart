@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../data/read_meter.dart';
 import '../models/question.dart';
+import '../questions/servable.dart';
 
 /// Up to [limit] answerable questions that list [topicId] in
 /// `alsoTopicIds` (a second topic they count for), in random order. One
@@ -17,7 +18,7 @@ Future<List<Question>> alsoInTopic(
     final snap = await db
         .collection('questions')
         .where('alsoTopicIds', arrayContains: topicId)
-        .where('hasAnswer', isEqualTo: true)
+        .servable()
         .limit(limit * 3)
         .get()
         .metered();

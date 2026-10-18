@@ -13,7 +13,7 @@
  */
 const { initAdmin } = require("./credential");
 
-const FIELDS = ["questionCount", "pastQuestionCount", "practiceQuestionCount"];
+const FIELDS = ["questionCount", "pastQuestionCount", "practiceQuestionCount", "pendingCount"];
 
 /** Pure: the mismatches for one subject and its topics. */
 function mismatches(subject, topics) {

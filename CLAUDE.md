@@ -383,6 +383,37 @@ place `progress/{uid}` touches *access*; it stays honest only because it is
 one-way — it can grant access, never withhold it — so a missing or stale
 progress document can never cost a student anything.
 
+**Vetting: only vetted questions reach students** (owner's decision, 2026-10-17:
+everything pending, enforced on deploy).
+- **The test.** Every student query ends in `.servable()` (`hasAnswer` **and**
+  `vetted == true`, `lib/core/questions/servable.dart`). Paths that load by id use
+  `isServable` or `Question.vetted`: rooms, challenge links, mistakes, pinned exercises,
+  offline. Exam review and bookmarks still show what was answered or saved.
+- **Pending.** A missing `vetted` means pending, and there is no backfill. Firestore
+  cannot query a missing field, so the bank's pending list reads a topic's answered
+  questions and keeps the unvetted ones (`pendingPage`).
+- **The founder** is an admin with the `founder` claim (`set_founder_claim.js`;
+  `isFounder()` in the rules, `StaffAccess.isFounder` in the UI). The founder:
+  - vets and un-vets questions (`vetted`, `vettedAt`, `vettedBy`);
+  - edits any question's subject, topic (it must belong to the subject), source,
+    year, book reference (`sourceRef`) and diagrams (`foundersEdit`);
+  - writes new questions, always pending, `origin: 'authored'` (`foundersCreate`).
+- **Reviewers** keep `editsQuestion`, which now also covers diagrams. A reviewer's
+  content change to a vetted question sends it back to pending; the rules let a
+  reviewer set `vetted` to false only.
+- **The studio.**
+  - The **Question bank** section (`?s=bank`, founder only) shows per-topic pending
+    and vetted counts (`topics.pendingCount`, `questionCount`).
+  - **Vet** opens the workbench on the topic's pending questions, where the
+    `VetBar` has "Approve & next" (Ctrl+Enter) and the `PlacementCard` holds the
+    placement fields.
+  - `/admin/new-question` writes a new question.
+- **Counts.** `jobs.js --job=counts` counts vetted questions only, splits practice
+  as `source == 'drill'` (so authored questions count), and writes `pendingCount`.
+  The static site publishes vetted past questions only.
+- **Indexes.** Every query shape has a `vetted` index after `hasAnswer`; deploy and
+  build them before hosting (LAUNCH_CHECKLIST §0).
+
 **Content team and the studio.** Three roles, all custom claims on the
 Auth token and never fields on `users/{uid}` (anything a client can write
 there, a client can grant itself):
