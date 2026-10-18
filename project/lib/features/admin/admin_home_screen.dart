@@ -22,6 +22,7 @@ import 'studio/question_widgets.dart';
 import 'studio/review_panels.dart';
 import 'studio/staff_profile.dart';
 import 'studio/topic_planner_screen.dart';
+import 'studio/picture_reports.dart';
 import 'studio/question_bank.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
@@ -399,6 +400,8 @@ class _SectionBody extends StatelessWidget {
           _LessonReports(),
           SizedBox(height: 32),
           FeedbackPanel(),
+          SizedBox(height: 32),
+          PictureReportsPanel(),
         ],
       ),
       StudioSection.quality => const ContentQualityPanel(),

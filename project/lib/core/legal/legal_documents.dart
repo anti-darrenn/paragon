@@ -146,11 +146,12 @@ const LegalDocument privacyPolicy = LegalDocument(
             'school and your class or year, which tell us which schools and '
             'classes use Paragon so we can work with schools and write for '
             'the right level, a short '
-            'bio of up to 160 characters, and a profile picture chosen from '
-            'a set of built-in pictures or your initials (you cannot upload '
-            'a photo). Every one of those optional fields can be left blank, '
-            'and skipping them does not limit your use of the app. Your '
-            'bio, picture and optional details are shown only to you.',
+            'bio of up to 160 characters, and a profile picture: one of a set '
+            'of built-in pictures, your initials, or a photo you upload (see '
+            '"Your profile photo"). Every one of those optional fields can be '
+            'left blank, and skipping them does not limit your use of the '
+            'app. Your bio and optional details are shown only to you; your '
+            'picture is also shown to others in a live quiz you join.',
         'How you use Paragon. For each question you answer we record which '
             'question it was, which option you chose, whether it was '
             'correct, how many hints you used, when you answered, and '
@@ -196,6 +197,13 @@ const LegalDocument privacyPolicy = LegalDocument(
             'your browser, and are not sent to us unless you create an '
             'account from that guest session, when they are moved into it '
             'and removed from the device.',
+        'Your profile photo. If you upload one, we keep a small square copy '
+            '(we resize it on your device and keep no location or camera '
+            'details). It is the one part of your profile other people see: '
+            'players and the host in a live quiz you join. Anyone who sees it '
+            'can report it; the Paragon team may remove a reported photo and '
+            'stop that account adding another. You can remove your photo at '
+            'any time, and it is deleted with your account.',
         'Your flashcards. When you make a deck, we store its name, the '
             'subject you chose and each card\'s two sides with your account, '
             'and when each card is next due. Only you can see them, and they '

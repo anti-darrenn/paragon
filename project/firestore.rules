@@ -445,7 +445,11 @@ service cloud.firestore {
         allow get, list: if request.auth != null;
         allow create: if isOwner(uid)
           && roomOpen()
-          && request.resource.data.keys().hasOnly(['nickname', 'joinedAt'])
+          && request.resource.data.keys().hasOnly(['nickname', 'joinedAt', 'avatar'])
+          && (!('avatar' in request.resource.data)
+              || (request.resource.data.avatar is string
+                  && request.resource.data.avatar.matches(
+                       '^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$')))
           && request.resource.data.nickname is string
           && request.resource.data.nickname.size() > 0
           && request.resource.data.nickname.size() <= 20
@@ -581,7 +585,7 @@ service cloud.firestore {
         && (!('avatar' in request.resource.data)
           || (request.resource.data.avatar is string
             && request.resource.data.avatar
-                 .matches('^(preset|initials):[a-z_]{2,20}$')))
+                 .matches('^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$')))
         && request.resource.data.updatedAt == request.time;
     }
 
@@ -692,7 +696,7 @@ service cloud.firestore {
         && (!('prefs' in after) || prefsAreValid(after.prefs))
         && (!('avatar' in after)
           || (after.avatar is string
-              && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
+              && after.avatar.matches('^((preset|initials):[a-z_]{2,20}|photo:[0-9]{1,13})$')))
         && (!('bio' in after)
           || (after.bio is string && after.bio.size() <= 160))
         && (!('profile' in after) || profileIsValid(after.profile));
@@ -1024,7 +1028,7 @@ service cloud.firestore {
       allow create: if request.auth != null
           && request.resource.data.userId == request.auth.uid
           && request.resource.data.keys().hasOnly(['questionId', 'resourceId',
-               'topicId', 'userId', 'reason', 'createdAt', 'status'])
+               'topicId', 'avatarUid', 'userId', 'reason', 'createdAt', 'status'])
           && request.resource.data.createdAt == request.time
           && request.resource.data.reason is string
           && request.resource.data.reason.size() <= 40
@@ -1037,7 +1041,13 @@ service cloud.firestore {
                 && request.resource.data.resourceId.size() > 0
                 && request.resource.data.resourceId.size() <= 128
                 && request.resource.data.topicId is string
-                && request.resource.data.topicId.size() <= 128))
+                && request.resource.data.topicId.size() <= 128)
+              // A profile photo (2026-10-17), never your own.
+              || ('avatarUid' in request.resource.data
+                && request.resource.data.avatarUid is string
+                && request.resource.data.avatarUid.size() > 0
+                && request.resource.data.avatarUid.size() <= 128
+                && request.resource.data.avatarUid != request.auth.uid))
           && (!('status' in request.resource.data)
               || request.resource.data.status == 'open');
       // Read-own and delete-own, narrowly: a deleting user has to be able
@@ -1053,6 +1063,38 @@ service cloud.firestore {
           && request.resource.data.diff(resource.data).affectedKeys()
                .hasOnly(['status', 'resolvedAt', 'resolvedBy'])
           && request.resource.data.status in ['open', 'fixed', 'dismissed'];
+    }
+
+    // ── PROFILE PHOTOS ──────────────────────────────────────────
+    // A student's photo (2026-10-17): a small JPEG as base64, owner-written,
+    // readable by anyone signed in (it is shown in quiz rooms). Accounts
+    // only, and never while `avatarBlocks/{uid}` exists: a reviewer who
+    // removes a reported photo writes it, and the owner cannot remove it.
+    match /avatarImages/{uid} {
+      allow get: if request.auth != null;
+      allow list: if false;
+      allow create, update: if isOwner(uid)
+          && request.auth.token.firebase.sign_in_provider != 'anonymous'
+          && !exists(/databases/$(database)/documents/avatarBlocks/$(uid))
+          && request.resource.data.keys().hasOnly(['mime', 'data', 'updatedAt'])
+          && request.resource.data.mime == 'image/jpeg'
+          && request.resource.data.data is string
+          && request.resource.data.data.size() > 0
+          && request.resource.data.data.size() <= 120000
+          && request.resource.data.updatedAt == request.time;
+      allow delete: if isOwner(uid) || isReviewer();
+    }
+
+    match /avatarBlocks/{uid} {
+      allow get: if isOwner(uid) || isReviewer();
+      allow list: if isReviewer();
+      allow create: if isReviewer()
+          && request.resource.data.keys().hasOnly(['by', 'at', 'reason'])
+          && request.resource.data.by == request.auth.uid
+          && request.resource.data.at == request.time
+          && request.resource.data.reason is string
+          && request.resource.data.reason.size() <= 300;
+      allow delete: if isAdmin();
     }
 
     // ── FLASHCARD DECKS ─────────────────────────────────────────
