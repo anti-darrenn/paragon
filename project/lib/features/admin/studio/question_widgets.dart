@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/providers/auth_provider.dart';
 import '../../../core/questions/question_draft.dart';
 import '../../../core/repositories/admin_flag_repository.dart';
 import '../../../core/repositories/admin_question_repository.dart';
@@ -264,4 +265,120 @@ class StudioListSkeleton extends StatelessWidget {
         ),
     ],
   );
+}
+
+/// The question's content as stored, for a write that changes nothing in
+/// it (marking a finding checked writes the content back unchanged, as
+/// the edit rule requires).
+QuestionDraft storedDraftOf(ReviewedQuestion q) => QuestionDraft(
+  text: q.question.text,
+  options: q.question.options,
+  correctIndex: q.question.correctIndex,
+  explanation: q.question.explanation,
+  hasAnswer: q.hasAnswer,
+  difficulty: q.question.difficulty,
+  alsoTopicIds: q.question.alsoTopicIds,
+);
+
+/// Asks why a content-audit finding is not a problem. The answer goes on
+/// the question's history. [initialNote] fills the box, selected, so a
+/// quick dismissal from a list is one Enter.
+class MarkCheckedDialog extends StatefulWidget {
+  const MarkCheckedDialog({super.key, required this.rule, this.initialNote});
+  final String rule;
+  final String? initialNote;
+
+  @override
+  State<MarkCheckedDialog> createState() => _MarkCheckedDialogState();
+}
+
+class _MarkCheckedDialogState extends State<MarkCheckedDialog> {
+  late final _note = TextEditingController(text: widget.initialNote)
+    ..selection = TextSelection(
+      baseOffset: 0,
+      extentOffset: widget.initialNote?.length ?? 0,
+    );
+
+  @override
+  void dispose() {
+    _note.dispose();
+    super.dispose();
+  }
+
+  void _done() {
+    if (_note.text.trim().length >= 3) {
+      Navigator.of(context).pop(_note.text.trim());
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: Text('Mark "${widget.rule.replaceAll('-', ' ')}" checked'),
+      content: TextField(
+        controller: _note,
+        autofocus: true,
+        maxLength: 300,
+        decoration: const InputDecoration(
+          labelText: 'Why it is not a problem',
+          hintText: 'e.g. Checked against the 2018 paper: 0.612 is as printed',
+        ),
+        onChanged: (_) => setState(() {}),
+        onSubmitted: (_) => _done(),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: const Text('Cancel'),
+        ),
+        FilledButton(
+          onPressed: _note.text.trim().length < 3 ? null : _done,
+          child: const Text('Mark checked'),
+        ),
+      ],
+    );
+  }
+}
+
+/// "Nothing wrong" on a question in a findings list: marks the audit's
+/// [rule] checked on [q] without opening the workbench. The same write as
+/// the workbench's "Mark checked", history and all, so the audit skips it
+/// from then on. True when it was saved.
+Future<bool> dismissFinding(
+  BuildContext context,
+  WidgetRef ref,
+  ReviewedQuestion q,
+  String rule,
+) async {
+  final uid = ref.read(currentUserProvider)?.uid;
+  if (uid == null) return false;
+  final note = await showDialog<String>(
+    context: context,
+    builder: (_) => MarkCheckedDialog(
+      rule: rule,
+      initialNote: 'Looked at it in the studio: nothing wrong.',
+    ),
+  );
+  if (note == null || !context.mounted) return false;
+  final messenger = ScaffoldMessenger.of(context);
+  try {
+    await ref
+        .read(adminQuestionRepositoryProvider)
+        .markChecked(
+          questionId: q.question.id,
+          current: storedDraftOf(q),
+          rule: rule,
+          note: note,
+          uid: uid,
+        );
+    messenger.showSnackBar(
+      const SnackBar(
+        content: Text('Dismissed. The audit will skip it from now on.'),
+      ),
+    );
+    return true;
+  } catch (e) {
+    messenger.showSnackBar(SnackBar(content: Text("Couldn't dismiss: $e")));
+    return false;
+  }
 }

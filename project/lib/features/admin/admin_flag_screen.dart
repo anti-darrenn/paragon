@@ -273,7 +273,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     if (uid == null || current == null) return;
     final note = await showDialog<String>(
       context: context,
-      builder: (_) => _MarkCheckedDialog(rule: rule),
+      builder: (_) => MarkCheckedDialog(rule: rule),
     );
     if (note == null || !mounted) return;
     setState(() => _busy = true);
@@ -335,18 +335,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     final row = async.asData?.value;
     final q = row?.question;
     if (q != null && _original == null) {
-      _load(
-        QuestionDraft(
-          text: q.question.text,
-          options: q.question.options,
-          correctIndex: q.question.correctIndex,
-          explanation: q.question.explanation,
-          hasAnswer: q.hasAnswer,
-          difficulty: q.question.difficulty,
-          alsoTopicIds: q.question.alsoTopicIds,
-        ),
-        asOriginal: true,
-      );
+      _load(storedDraftOf(q), asOriginal: true);
       if (ref.read(staffAccessProvider).isFounder) {
         _storedPlacement = _placement = placementOf(q);
       }
@@ -622,9 +611,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              _FieldLabel(
-                'Question',
-              ),
+              _FieldLabel('Question'),
               if (canEdit) ...[
                 MathToolbar(editing: _math),
                 const SizedBox(height: 8),
@@ -1154,54 +1141,6 @@ class _ChecksCard extends ConsumerWidget {
           ],
         ],
       ),
-    );
-  }
-}
-
-/// Asks why a finding is not a problem. The answer goes on the history.
-class _MarkCheckedDialog extends StatefulWidget {
-  const _MarkCheckedDialog({required this.rule});
-  final String rule;
-
-  @override
-  State<_MarkCheckedDialog> createState() => _MarkCheckedDialogState();
-}
-
-class _MarkCheckedDialogState extends State<_MarkCheckedDialog> {
-  final _note = TextEditingController();
-
-  @override
-  void dispose() {
-    _note.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: Text('Mark "${widget.rule.replaceAll('-', ' ')}" checked'),
-      content: TextField(
-        controller: _note,
-        autofocus: true,
-        maxLength: 300,
-        decoration: const InputDecoration(
-          labelText: 'Why it is not a problem',
-          hintText: 'e.g. Checked against the 2018 paper: 0.612 is as printed',
-        ),
-        onChanged: (_) => setState(() {}),
-      ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
-        ),
-        FilledButton(
-          onPressed: _note.text.trim().length < 3
-              ? null
-              : () => Navigator.of(context).pop(_note.text.trim()),
-          child: const Text('Mark checked'),
-        ),
-      ],
     );
   }
 }
