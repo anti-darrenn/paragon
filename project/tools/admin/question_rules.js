@@ -509,7 +509,7 @@ function checkQuestion(q) {
   }
   if (/\d\s?o(?=C\b|[\s,.;:)]|$)/.test(plain)) add("degree-as-o", "B", "");
   if (/\b\d+(\.\d+)?\s?(cm|m|km|mm)(2|3)\b/.test(plain)) add("flat-units", "B", "");
-  if (/\b(diagram|(?<!significant )figure|venn|sketch|(shown|illustrated) (above|below))\b/i.test(q.text) && !q.imageId) {
+  if (/\b(diagram|(?<!significant |-)figure|venn|sketch|(shown|illustrated) (above|below))\b/i.test(q.text) && !q.imageId) {
     add("diagram-missing", "A", String(q.text).slice(0, 80));
   }
   if (/\b(the table|table (shows|below|above))\b/i.test(q.text) && !q.imageId && !/\\begin\{array\}/.test(q.text)) {

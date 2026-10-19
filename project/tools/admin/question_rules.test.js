@@ -60,6 +60,9 @@ assert.ok(rules({ text: "Find 4 x 10-3" }).includes("lost-negative-power"));
 assert.ok(rules({ text: "In the diagram, find x" }).includes("diagram-missing"));
 assert.ok(!rules({ text: "In the diagram, find x", imageId: "a" }).includes("diagram-missing"));
 assert.ok(!rules({ text: "Correct 0.002473 to 3 significant figures" }).includes("diagram-missing"));
+// "Three-figure bearing" and "four-figure tables" name no picture.
+assert.ok(!rules({ text: "Express the direction S47°W as a three-figure bearing." }).includes("diagram-missing"));
+assert.ok(rules({ text: "The figure shows a triangle; find x" }).includes("diagram-missing"));
 assert.ok(rules({ text: "Find \\(\\fra{1}{2}\\)" }).includes("raw-latex-question"));
 // A bare maths command renders since normalizeTex (2026-10-17), so it is no
 // longer a finding; a bare command nothing can draw still is (the control).

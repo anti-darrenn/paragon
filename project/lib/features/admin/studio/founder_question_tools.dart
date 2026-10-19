@@ -12,6 +12,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/question_image.dart';
 import '../../../core/widgets/ui/ui.dart';
 import 'image_upload.dart' deferred as image_upload;
+import '../../../core/questions/servable.dart' show kBulkVetTag;
 import 'question_widgets.dart' show subjectTopicsProvider;
 import 'staff_profile.dart';
 
@@ -66,8 +67,12 @@ class VetBar extends ConsumerWidget {
     final palette = context.palette;
     final vetted = question.vetted;
     final by = question.vettedBy;
+    // `claude-check` is the bulk pass (tools/admin/vet_bank.js), not an
+    // account, so it has no staff profile to read.
     final name = by == null
         ? null
+        : by == kBulkVetTag
+        ? 'the automatic check'
         : ref.watch(staffProfileProvider(by)).asData?.value?.displayName;
     final when = question.vettedAt;
     final colour = vetted ? AppColors.correct : AppColors.warning;
