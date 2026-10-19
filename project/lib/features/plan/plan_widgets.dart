@@ -5,12 +5,9 @@ import 'package:go_router/go_router.dart';
 import '../../core/auth/feature_access.dart';
 import '../../core/exam/waec_grade.dart';
 import '../../core/plan/study_plan.dart';
-import '../../core/plan/weekly_goal.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/course_repository.dart';
-import '../../core/repositories/plan_repository.dart';
 import '../../core/repositories/progress_repository.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/ui/ui.dart';
@@ -28,108 +25,6 @@ List<PlanTopic> planTopicsFor(Course course, UserProgress progress) => [
           progress: progress.forTopic(t.id),
         ),
 ];
-
-/// "This week" on Home: the weekly goal's ring, the countdown to the exam,
-/// and the way into the plan. Accounts only; a guest sees nothing here
-/// (the guest notice above already invites them to keep their progress).
-class ThisWeekCard extends ConsumerWidget {
-  const ThisWeekCard({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    if (!canUse(Feature.studyPlan, isGuest: ref.watch(isGuestProvider))) {
-      return const SizedBox.shrink();
-    }
-    final plan =
-        ref.watch(planSettingsProvider).asData?.value ?? PlanSettings.none;
-    final weekly = ref.watch(weeklyAttemptsCountProvider);
-    // Plan v2 7.3: no "0 of 50" before the count has arrived.
-    final counted = weekly.hasValue || weekly.hasError;
-    final done = weekly.asData?.value ?? 0;
-    final goal = WeeklyGoalProgress(goal: plan.weeklyGoal, done: done);
-    final exam = plan.examDate;
-    final weeks = exam == null ? null : weeksUntil(exam, DateTime.now());
-    final palette = context.palette;
-
-    return Padding(
-      padding: const EdgeInsets.only(bottom: kSectionGap),
-      child: SurfaceCard(
-        onTap: () => context.push('/plan'),
-        child: Row(
-          children: [
-            Semantics(
-              label: !counted
-                  ? 'This week: loading'
-                  : '$done of ${goal.goal} questions this week'
-                        '${goal.met ? ', goal met' : ''}',
-              excludeSemantics: true,
-              child: SizedBox(
-                width: 56,
-                height: 56,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    CircularProgressIndicator(
-                      value: counted ? goal.fraction : 0,
-                      strokeWidth: 6,
-                      backgroundColor: palette.track,
-                      color: goal.met ? AppColors.correct : AppColors.primary,
-                    ),
-                    Icon(
-                      goal.met ? Icons.check_rounded : Icons.flag_outlined,
-                      size: 20,
-                      color: goal.met ? AppColors.correct : palette.textPrimary,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'This week',
-                    style: AppTheme.heading3.copyWith(
-                      color: palette.textPrimary,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  if (!counted)
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 3),
-                      child: SkeletonBox(width: 160),
-                    )
-                  else
-                    Text(
-                      goal.met
-                          ? 'Goal met: $done questions. Well done.'
-                          : '$done of ${goal.goal} questions · ${goal.left} to go',
-                      style: AppTheme.bodyMd.copyWith(
-                        color: palette.textSecondary,
-                      ),
-                    ),
-                  Text(
-                    weeks == null
-                        ? 'Set your exam date to plan your weeks'
-                        : weeks == 0
-                        ? 'Your exam is this week. Good luck.'
-                        : '$weeks ${weeks == 1 ? 'week' : 'weeks'} to your exam',
-                    style: AppTheme.caption.copyWith(
-                      color: palette.textSecondary,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Icon(Icons.chevron_right_rounded, color: palette.textSecondary),
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 /// For one course: the grade estimate from practice and the shortest path
 /// up. On the course page, where the outline is already loaded, and on
