@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../latex/tex_preprocess.dart';
@@ -90,6 +91,7 @@ class MathField extends StatefulWidget {
     this.showPreview = true,
     this.style,
     this.onFocus,
+    this.paragraphs = false,
   });
 
   final TextEditingController controller;
@@ -103,6 +105,10 @@ class MathField extends StatefulWidget {
   final bool showPreview;
   final TextStyle? style;
   final VoidCallback? onFocus;
+
+  /// A box of steps (a worked answer): Enter starts a new step, a blank
+  /// line, and Shift+Enter a plain new line ([paragraphBreak]).
+  final bool paragraphs;
 
   @override
   State<MathField> createState() => _MathFieldState();
@@ -118,6 +124,10 @@ class _MathFieldState extends State<MathField> {
 
   /// Whether Normal mode can show the current value.
   bool _fits = true;
+
+  /// What the box being typed in held before the last keystroke, to tell
+  /// a single Enter from anything else.
+  String _lastTyped = '';
 
   @override
   void initState() {
@@ -178,6 +188,9 @@ class _MathFieldState extends State<MathField> {
   void _focusChanged() {
     if (_focus.hasFocus) {
       widget.editing._focused = this;
+      _lastTyped = widget.editing.isLatex
+          ? widget.controller.text
+          : _plain.text;
       widget.onFocus?.call();
       return;
     }
@@ -197,6 +210,23 @@ class _MathFieldState extends State<MathField> {
   }
 
   void _plainEdited(String plain) => _write(plainToLatex(plain));
+
+  /// In a box of steps, one Enter typed into [box] becomes a blank line.
+  /// Returns the new text when it did, having put it in the box.
+  String? _doubledEnter(TextEditingController box, String typed) {
+    if (!widget.paragraphs || HardwareKeyboard.instance.isShiftPressed) {
+      return null;
+    }
+    final sel = box.selection;
+    if (!sel.isValid || !sel.isCollapsed) return null;
+    final r = paragraphBreak(_lastTyped, typed, sel.baseOffset);
+    if (r == null) return null;
+    box.value = TextEditingValue(
+      text: r.text,
+      selection: TextSelection.collapsed(offset: r.caret),
+    );
+    return r.text;
+  }
 
   void _insert(MathSnippet s) {
     final latex = widget.editing.isLatex;
@@ -244,9 +274,13 @@ class _MathFieldState extends State<MathField> {
           style: latex || locked
               ? style.copyWith(fontFamily: 'monospace', fontSize: 14)
               : style,
-          onChanged: latex
-              ? (v) => _wrote = v
-              : (v) => _plainEdited(v),
+          onChanged: (v) {
+            final box = latex ? widget.controller : _plain;
+            final doubled = _doubledEnter(box, v);
+            if (doubled != null) v = doubled;
+            _lastTyped = v;
+            latex ? _wrote = v : _plainEdited(v);
+          },
           decoration: InputDecoration(
             hintText:
                 widget.hint ??

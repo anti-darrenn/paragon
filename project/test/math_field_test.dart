@@ -13,6 +13,7 @@ void main() {
     WidgetTester tester, {
     String text = '',
     MathInputMode mode = MathInputMode.normal,
+    bool paragraphs = false,
   }) async {
     final c = TextEditingController(text: text);
     final e = MathEditing(prefsKey: 'test', initialMode: mode);
@@ -22,7 +23,7 @@ void main() {
           body: Column(
             children: [
               MathToolbar(editing: e),
-              MathField(controller: c, editing: e),
+              MathField(controller: c, editing: e, paragraphs: paragraphs),
             ],
           ),
         ),
@@ -51,6 +52,28 @@ void main() {
     FocusManager.instance.primaryFocus?.unfocus();
     await tester.pump();
     expect(c.text, r'Find \(x^2\)');
+  });
+
+  for (final mode in MathInputMode.values) {
+    testWidgets('a worked answer: one Enter starts a new step (${mode.name})', (
+      tester,
+    ) async {
+      final (c, _) = await pump(tester, mode: mode, paragraphs: true);
+      await tester.enterText(find.byType(TextField), 'Step one');
+      await tester.enterText(find.byType(TextField), 'Step one\n');
+      await tester.pump();
+      expect(c.text, 'Step one\n\n');
+    });
+  }
+
+  testWidgets('CONTROL: other boxes keep one Enter as one new line', (
+    tester,
+  ) async {
+    final (c, _) = await pump(tester, mode: MathInputMode.latex);
+    await tester.enterText(find.byType(TextField), 'Step one');
+    await tester.enterText(find.byType(TextField), 'Step one\n');
+    await tester.pump();
+    expect(c.text, 'Step one\n');
   });
 
   testWidgets('a matrix is not rewritten by opening it in Normal mode', (

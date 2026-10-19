@@ -533,6 +533,35 @@ String _mathToPlain(String tex) {
 String _group(String inner) =>
     RegExp(r'^-?[A-Za-z0-9.]+$').hasMatch(inner) ? inner : '($inner)';
 
+// ─── Steps in a worked answer ─────────────────────────────────────────
+
+/// A worked answer is steps separated by a blank line: the generators
+/// write them that way, and hints (`hints.dart`) offer one step at a time.
+/// Authors had to press Enter twice for every step (owner's request,
+/// 2026-10-19), so in a box that holds steps one Enter starts a new step.
+///
+/// Given the box's text before and after one keystroke and the cursor, the
+/// text with the new line doubled, or null to leave it as typed. Left as
+/// typed: anything but a single newline typed at the cursor, a newline at
+/// the very start or next to another one (Enter on an empty line stays
+/// one line, so a third Enter is still possible), and one inside maths,
+/// where a blank line would break the expression.
+({String text, int caret})? paragraphBreak(
+  String before,
+  String after,
+  int caret,
+) {
+  if (after.length != before.length + 1) return null;
+  if (caret < 2 || caret > after.length || after[caret - 1] != '\n') {
+    return null;
+  }
+  if (after.replaceRange(caret - 1, caret, '') != before) return null;
+  if (after[caret - 2] == '\n') return null;
+  if (caret < after.length && after[caret] == '\n') return null;
+  if (isInsideMath(after, caret - 1)) return null;
+  return (text: after.replaceRange(caret, caret, '\n'), caret: caret + 1);
+}
+
 // ─── Inserting from the toolbar ───────────────────────────────────────
 
 /// One toolbar button: what it shows, and what it types in each mode. `|`
@@ -583,7 +612,10 @@ const kMathSnippets = <MathSnippet>[
 bool isInsideMath(String text, int offset) {
   final span = RegExp(r'\\\(.*?(\\\)|$)|\\\[.*?(\\\]|$)', dotAll: true);
   for (final m in span.allMatches(text)) {
-    if (offset > m.start + 1 && offset <= m.end - (m.group(1) == '' ? 0 : 2)) {
+    // The closing delimiter is group 1 for \( and group 2 for \[; empty
+    // while the maths is still open.
+    final closed = (m.group(1) ?? m.group(2) ?? '').isNotEmpty;
+    if (offset > m.start + 1 && offset <= m.end - (closed ? 2 : 0)) {
       return true;
     }
     if (m.start > offset) break;

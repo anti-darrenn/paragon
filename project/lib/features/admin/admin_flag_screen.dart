@@ -672,6 +672,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                 minLines: 4,
                 hint: 'How to get the answer, step by step, in your own words',
                 error: fieldError('explanation'),
+                paragraphs: true,
               ),
               QuestionImage.workedAnswer(
                 assetId: q.question.explanationImageId,
@@ -925,6 +926,7 @@ class _Box extends StatelessWidget {
     this.minLines = 1,
     this.hint,
     this.error,
+    this.paragraphs = false,
   });
 
   final TextEditingController controller;
@@ -933,6 +935,7 @@ class _Box extends StatelessWidget {
   final int minLines;
   final String? hint;
   final String? error;
+  final bool paragraphs;
 
   @override
   Widget build(BuildContext context) => MathField(
@@ -943,6 +946,7 @@ class _Box extends StatelessWidget {
     hint: hint,
     error: error,
     showPreview: false,
+    paragraphs: paragraphs,
   );
 }
 

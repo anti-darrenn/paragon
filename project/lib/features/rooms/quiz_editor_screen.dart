@@ -578,6 +578,7 @@ class _QuestionCard extends StatelessWidget {
               controller: boxes.explanation,
               editing: editing,
               hint: 'Worked answer (shown after the reveal; optional)',
+              paragraphs: true,
             ),
             if (issues.isNotEmpty) ...[
               const SizedBox(height: 8),

@@ -224,6 +224,7 @@ class _NewQuestionScreenState extends ConsumerState<NewQuestionScreen> {
                         editing: _math,
                         minLines: 4,
                         hint: 'How to get the answer, step by step',
+                        paragraphs: true,
                       ),
                     ],
                   ),
