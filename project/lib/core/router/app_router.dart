@@ -28,6 +28,8 @@ import 'package:paragon/features/admin/studio/new_question_screen.dart'
     deferred as new_question;
 import 'package:paragon/features/study/quiz/custom_quiz_screen.dart'
     deferred as custom_quiz;
+import 'package:paragon/features/study/planner/planner_screen.dart'
+    deferred as study_planner;
 import 'package:paragon/features/study/flashcards/decks_screen.dart'
     deferred as decks;
 import 'package:paragon/features/study/flashcards/deck_editor_screen.dart'
@@ -519,6 +521,15 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 builder: (context, state) => DeferredScreen(
                   load: custom_quiz.loadLibrary,
                   builder: (_) => custom_quiz.CustomQuizScreen(),
+                ),
+              ),
+              // The study planner (2026-10-19). Guests too: it is kept on
+              // the device.
+              GoRoute(
+                path: '/review/planner',
+                builder: (context, state) => DeferredScreen(
+                  load: study_planner.loadLibrary,
+                  builder: (_) => study_planner.PlannerScreen(),
                 ),
               ),
               GoRoute(

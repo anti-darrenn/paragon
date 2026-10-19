@@ -288,6 +288,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'device, not sent to us, so you can carry on after losing your '
             'connection or closing the app. It is removed when you submit '
             'or exit the exam, or after a day.',
+        'Your study planner (what you plan to study each day, and what you '
+            'have ticked off) is kept only on your device, for the account '
+            'you made it with. It is not sent to us, and plans older than '
+            'four weeks are removed.',
       ],
     ),
     LegalSection(

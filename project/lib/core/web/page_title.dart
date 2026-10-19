@@ -86,6 +86,8 @@ String pageTitleFor(String pattern, Map<String, String> params) {
       return t('Study');
     case '/review/quiz':
       return t('Custom quiz');
+    case '/review/planner':
+      return t('Planner');
     case '/review/flashcards':
       return t('My flashcards');
     case '/review/flashcards/:deckId':
