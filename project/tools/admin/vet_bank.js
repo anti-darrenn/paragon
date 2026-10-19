@@ -432,6 +432,20 @@ function status() {
 
 // ── Writes ───────────────────────────────────────────────────────────────
 
+/**
+ * A wording fix carried by the vetting write, so it costs nothing extra. The
+ * generators' shared "only one statement is correct" explanation said the
+ * other two "misstate the physics" in every subject (fixed in
+ * gen/concept.js on 2026-10-19).
+ */
+const WRONG_SUBJECT = "both misstate the physics.";
+function explanationFix(q) {
+  const e = q.explanation;
+  return typeof e === "string" && e.includes(WRONG_SUBJECT)
+    ? { explanation: e.split(WRONG_SUBJECT).join("both misstate the facts.") }
+    : {};
+}
+
 async function apply() {
   const { FieldValue, Timestamp } = require("firebase-admin").firestore;
   const meta = readJson("meta.json", { subjects: {} });
@@ -456,7 +470,10 @@ async function apply() {
   const backups = path.join(__dirname, ".backups");
   fs.mkdirSync(backups, { recursive: true });
   const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-  fs.writeFileSync(path.join(backups, `vet_bank_${stamp}.json`), JSON.stringify(batch.map((q) => q.id)));
+  fs.writeFileSync(
+    path.join(backups, `vet_bank_${stamp}.json`),
+    JSON.stringify(batch.map((q) => (explanationFix(q).explanation ? { id: q.id, explanation: q.explanation } : { id: q.id })))
+  );
 
   const log = fs.createWriteStream(file("applied.jsonl"), { flags: "a" });
   const writer = db().bulkWriter();
@@ -470,7 +487,7 @@ async function apply() {
     writer
       .update(
         db().collection("questions").doc(q.id),
-        { vetted: true, vettedAt: FieldValue.serverTimestamp(), vettedBy: TAG },
+        { vetted: true, vettedAt: FieldValue.serverTimestamp(), vettedBy: TAG, ...explanationFix(q) },
         { lastUpdateTime: new Timestamp(q.updated[0], q.updated[1]) }
       )
       .then(() => {

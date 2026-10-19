@@ -22,7 +22,7 @@ function oneCorrectOfThree(subject, trues, falses) {
     return {
       text: `Which of the following statements about ${subject} is correct? ${items.map((it, i) => `${ROMAN[i]}. ${it.s}`).join(' ')}`,
       ...o,
-      explanation: `${t} — this is correct.\n\nThe other two statements are not true: "${f[0]}" and "${f[1]}" both misstate the physics.\n\nSo only ${ROMAN[idx]} is correct.`,
+      explanation: `${t} — this is correct.\n\nThe other two statements are not true: "${f[0]}" and "${f[1]}" both misstate the facts.\n\nSo only ${ROMAN[idx]} is correct.`,
     };
   };
 }
