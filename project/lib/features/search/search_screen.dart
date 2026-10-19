@@ -23,6 +23,9 @@ class SearchScreen extends ConsumerStatefulWidget {
 class _SearchScreenState extends ConsumerState<SearchScreen> {
   late final _controller = TextEditingController(text: widget.initialQuery);
 
+  /// Whether the past questions are unfolded.
+  bool _questionsOpen = false;
+
   @override
   void dispose() {
     _controller.dispose();
@@ -47,7 +50,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           onChanged: (_) => setState(() {}),
           style: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
           decoration: InputDecoration(
-            hintText: 'Search courses, topics, lessons, past questions',
+            hintText: 'Search lessons, videos, topics and past questions',
             hintStyle: AppTheme.bodyLg.copyWith(
               color: context.palette.textSecondary,
             ),
@@ -82,6 +85,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               : SearchResultsView(
                   query: query,
                   results: results,
+                  questionsOpen: _questionsOpen,
+                  onToggleQuestions: () =>
+                      setState(() => _questionsOpen = !_questionsOpen),
                   onOpen: (item) => openSearchPath(context, item.path),
                 ),
         ),

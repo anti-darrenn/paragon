@@ -57,7 +57,9 @@ void main() {
       final r = searchCatalog('wave', corpus);
       expect(r.courses, isEmpty);
       expect(titles(r.lessons), ['What is a wave?']);
-      expect(r.all.first.kind, SearchKind.topic);
+      // Lessons and videos lead; topics follow.
+      expect(r.all.first.kind, SearchKind.lesson);
+      expect(r.all[1].kind, SearchKind.topic);
     });
 
     test('is case- and accent-insensitive', () {
