@@ -435,6 +435,15 @@ everything pending, enforced on deploy).
   The static site publishes vetted past questions only.
 - **Indexes.** Every query shape has a `vetted` index after `hasAnswer`; deploy and
   build them before hosting (LAUNCH_CHECKLIST §0).
+- **The bulk pass** (owner's decision, 2026-10-19): `tools/admin/vet_bank.js` vets
+  what passes review, as `vettedBy: "claude-check"` (`kBulkVetTag`; the studio says
+  "the automatic check").
+  - **Review.** Past questions were solved blind, and every disagreement got a
+    second look. Generated questions follow a review of their generator.
+  - **What waits.** Anything doubtful stays pending, listed in `.vetting/held.csv`.
+  - **Writes.** About 17k a day, sharing the seeders' budget. Each write is skipped
+    if the question changed since the export.
+  - **Undo.** `--revert --commit` sends the whole pass back to pending.
 
 **Content team and the studio.** Three roles, all custom claims on the
 Auth token and never fields on `users/{uid}` (anything a client can write
