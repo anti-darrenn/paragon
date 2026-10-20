@@ -12,6 +12,7 @@
  *   node vet_bank.js --status
  *   node vet_bank.js --apply [--subject=Mathematics] [--max-writes=N] [--commit]
  *   node vet_bank.js --report
+ *   node vet_bank.js --notes [--commit]       # held reasons → vetNote, for the studio
  *   node vet_bank.js --revert [--commit]
  *
  * **Passing a question.** Every question must pass the mechanical checks:
@@ -519,6 +520,60 @@ async function revert() {
   console.log(`${docs.length} back to pending${docs.length < snap.size ? "; run again tomorrow for the rest" : ""}`);
 }
 
+/**
+ * Writes each held question's reason as `vetNote`, which the studio's vet bar
+ * shows while the question is pending, so the founder sees why it was left
+ * for them. Vetted questions are never touched.
+ */
+async function notes() {
+  const rows = heldRows();
+  const cap = Math.min(budget.remaining(), Number(args["max-writes"] || Infinity));
+  console.log(`${rows.length} held questions get a note; this run: ${Math.min(rows.length, cap)} (${budget.summary()})`);
+  if (!COMMIT) return console.log("Dry run. Add --commit to write.");
+  const writer = db().bulkWriter();
+  let ok = 0;
+  writer.onWriteError(() => false);
+  for (const r of rows.slice(0, cap)) {
+    writer
+      .update(db().collection("questions").doc(r.id), { vetNote: r.reason.slice(0, 600) })
+      .then(() => ok++)
+      .catch(() => {});
+  }
+  await writer.close();
+  budget.spend(Math.min(rows.length, cap));
+  console.log(`${ok} notes written`);
+}
+
+const REASONS = {
+  "check-failed": "Failed a content check",
+  "review-held": "Second look",
+  "generator-held": "Its generator topic was held",
+  "template-held": "Its question pattern was held",
+  "statement-held": "It uses a statement the review found wrong",
+  "not-reviewed": "Not reviewed",
+  "no-answer": "No marked answer",
+};
+
+/** Every question the pass leaves for the founder, with a plain reason. */
+function heldRows() {
+  const checks = readJson("checks.json", {});
+  const v = verdicts();
+  const gens = readJson("generators.json", {});
+  const d = decide();
+  const out = [];
+  for (const [id, what] of Object.entries(d)) {
+    if (!REASONS[what]) continue;
+    const c = checks[id];
+    const detail =
+      what === "check-failed" ? c.problems.join("; ")
+      : what === "review-held" ? v[id]?.note || ""
+      : ["generator-held", "template-held", "statement-held"].includes(what) ? gens[c.generator]?.note || ""
+      : "";
+    out.push({ id, what, reason: detail ? `${REASONS[what]}: ${detail}` : REASONS[what] });
+  }
+  return out;
+}
+
 // ── The owner's report ───────────────────────────────────────────────────
 
 function report() {
@@ -561,6 +616,7 @@ function report() {
       for (const s of args.source ? [args.source] : SOURCES) await exportSource(s);
     } else if (args.check) check();
     else if (args.ingest) ingest();
+    else if (args.notes) await notes();
     else if (args.batches) await batches();
     else if (args.apply) await apply();
     else if (args.report) report();

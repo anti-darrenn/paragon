@@ -113,6 +113,14 @@ class VetBar extends ConsumerWidget {
               'Ctrl+Enter approves, saving any edits with it.',
               style: AppTheme.caption.copyWith(color: palette.textSecondary),
             ),
+          if (!vetted && (question.vetNote ?? '').isNotEmpty)
+            SizedBox(
+              width: double.infinity,
+              child: Text(
+                'Held by the automatic check: ${question.vetNote}',
+                style: AppTheme.bodyMd.copyWith(color: palette.textPrimary),
+              ),
+            ),
         ],
       ),
     );
