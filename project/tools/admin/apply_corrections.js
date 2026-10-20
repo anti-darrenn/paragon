@@ -6,6 +6,7 @@
  *
  *   node apply_corrections.js --file=corrections/2026-10-15-latex.js            # dry run
  *   node apply_corrections.js --file=corrections/2026-10-15-latex.js --commit
+ *   node apply_corrections.js --file=… --commit --vet   # also vet each corrected question (owner-approved files)
  *   node apply_corrections.js --revert=.backups/<file>.json
  *
  * Reads only the questions named (one read each, dry run included, since
@@ -59,7 +60,22 @@ function correct(q, entries) {
       fields.previousTopicId = q.topicId; // as reclassification records it
       continue;
     }
+    if (e.field === "correctIndex") {
+      // A corrected answer key, recorded as the studio's report review does.
+      const n = (q.options || []).length;
+      if (!Number.isInteger(e.set) || e.set < 0 || e.set >= n) problems.push(`correctIndex ${e.set} is not one of the ${n} options`);
+      else if (e.set === q.correctIndex) problems.push(`correctIndex is already ${e.set}`);
+      else {
+        fields.correctIndex = e.set;
+        fields.previousCorrectIndex = q.correctIndex;
+      }
+      continue;
+    }
     const raw = fields[e.field] ?? read(q, e.field);
+    if (e.set != null && raw == null) {
+      fields[e.field] = e.set; // a field the question did not have, such as a missing explanation
+      continue;
+    }
     if (typeof raw !== "string") {
       problems.push(`${e.field} is missing`);
       continue;
@@ -95,13 +111,16 @@ async function main() {
 
   if (args.revert) {
     const backup = JSON.parse(fs.readFileSync(path.resolve(__dirname, String(args.revert)), "utf8"));
-    const batch = db.batch();
     const { FieldValue } = admin.firestore;
-    for (const [id, before] of Object.entries(backup.questions)) {
-      const restore = Object.fromEntries(Object.entries(before).map(([k, v]) => [k, v === null ? FieldValue.delete() : v]));
-      batch.update(db.collection("questions").doc(id), restore);
+    const entries = Object.entries(backup.questions);
+    for (let i = 0; i < entries.length; i += 400) {
+      const batch = db.batch();
+      for (const [id, before] of entries.slice(i, i + 400)) {
+        const restore = Object.fromEntries(Object.entries(before).map(([k, v]) => [k, v === null ? FieldValue.delete() : v]));
+        batch.update(db.collection("questions").doc(id), restore);
+      }
+      await batch.commit();
     }
-    await batch.commit();
     console.log(`Restored ${Object.keys(backup.questions).length} questions.`);
     return;
   }
@@ -142,10 +161,15 @@ async function main() {
     return;
   }
 
+  // --vet: the owner approved this file as the check, so each corrected
+  // question is vetted in the same write, tagged like vet_bank.js's pass,
+  // and the note saying why it was held goes.
+  const VET = args.vet === true;
+  const VET_FIELDS = ["vetted", "vettedAt", "vettedBy", "vetNote"];
   const backup = { takenAt: new Date().toISOString(), file: String(args.file), questions: {} };
   for (const { q, fields } of ready) {
     const before = {};
-    for (const f of Object.keys(fields)) {
+    for (const f of [...Object.keys(fields), ...(VET ? VET_FIELDS : [])]) {
       if (f.startsWith("options.")) before.options = q.options;
       // A field that did not exist is restored as deleted.
       else before[f] = q[f] === undefined ? null : q[f];
@@ -155,19 +179,26 @@ async function main() {
   fs.mkdirSync(BACKUPS, { recursive: true });
   const file = path.join(BACKUPS, `corrections-${backup.takenAt.replace(/[:.]/g, "-")}.json`);
   fs.writeFileSync(file, JSON.stringify(backup));
-  const batch = db.batch();
-  for (const { q, fields } of ready) {
-    const update = { contentCorrectedAt: admin.firestore.FieldValue.serverTimestamp() };
-    for (const [f, v] of Object.entries(fields)) {
-      if (f.startsWith("options.")) {
-        update.options ??= [...q.options];
-        update.options[Number(f.split(".")[1])] = v;
-      } else update[f] = v;
+  const { FieldValue } = admin.firestore;
+  // A batch takes at most 500 writes.
+  for (let i = 0; i < ready.length; i += 400) {
+    const batch = db.batch();
+    for (const { q, fields } of ready.slice(i, i + 400)) {
+      const update = { contentCorrectedAt: FieldValue.serverTimestamp() };
+      for (const [f, v] of Object.entries(fields)) {
+        if (f.startsWith("options.")) {
+          update.options ??= [...q.options];
+          update.options[Number(f.split(".")[1])] = v;
+        } else update[f] = v;
+      }
+      if (VET) {
+        Object.assign(update, { vetted: true, vettedAt: FieldValue.serverTimestamp(), vettedBy: "claude-check", vetNote: FieldValue.delete() });
+      }
+      batch.update(db.collection("questions").doc(q.id), update);
     }
-    batch.update(db.collection("questions").doc(q.id), update);
+    await batch.commit();
   }
-  await batch.commit();
-  console.log(`Wrote ${ready.length}. Backup: ${path.relative(__dirname, file)}`);
+  console.log(`Wrote ${ready.length}${VET ? ", vetted" : ""}. Backup: ${path.relative(__dirname, file)}`);
 }
 
 main().catch((e) => {

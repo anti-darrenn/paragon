@@ -20,3 +20,9 @@ extension ServableQuestions<T> on Query<T> {
 /// bookmarks): an unvetted or retired question is dropped.
 bool isServable(Map<String, dynamic>? data) =>
     data != null && data['hasAnswer'] == true && data['vetted'] == true;
+
+/// The `vettedBy` of questions passed by the bulk check
+/// (`tools/admin/vet_bank.js`, owner's decision 2026-10-19) rather than by a
+/// person. It names no account, so the studio shows it as the automatic
+/// check, and `vet_bank.js --revert` finds them all by it.
+const String kBulkVetTag = 'claude-check';

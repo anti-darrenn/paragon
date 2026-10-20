@@ -74,7 +74,13 @@ class ReviewedQuestion {
     this.vettedAt,
     this.vettedBy,
     this.sourceRef = '',
+    this.vetNote,
   });
+
+  /// Why the bulk check (`tools/admin/vet_bank.js`) left this question for
+  /// the founder: a doubtful answer key, a broken question, a held generator
+  /// pattern. Written by the Admin SDK and shown while the question is pending.
+  final String? vetNote;
 
   /// The founder's check: when, and by whom. [Question.vetted] says whether.
   final DateTime? vettedAt;
@@ -129,6 +135,7 @@ class ReviewedQuestion {
       vettedAt: _date(d['vettedAt']),
       vettedBy: asStringOrNull(d['vettedBy']),
       sourceRef: asString(d['sourceRef']),
+      vetNote: asStringOrNull(d['vetNote']),
     );
   }
 }
