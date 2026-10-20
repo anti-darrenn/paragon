@@ -4,7 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/plan/planner.dart';
+import '../core/plan/study_plan.dart' show weeksUntil;
 import '../core/providers/auth_provider.dart';
+import '../core/repositories/plan_repository.dart';
 import 'lesson/continue_learning.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
@@ -18,33 +21,91 @@ import '../core/widgets/ui/ui.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
-import '../core/auth/feature_access.dart';
-import '../core/learn/topic_test.dart';
-import '../core/progress/course_progress.dart';
-import '../core/repositories/learn_progress_repository.dart';
-import 'plan/plan_widgets.dart';
+import 'study/hub/study_paths.dart';
+import 'study/planner/planner_store.dart';
 
-/// What home says to the student: a greeting and a line under it, one
-/// pair picked at random each visit so the page does not read the same
-/// every time. `{name}` is replaced with the student's display name.
-const kHomeGreetings = [
-  ('Hey, {name}', 'Pick up where you left off.'),
-  ('Welcome back, {name}', 'Ready when you are.'),
-  ('Good to see you, {name}', "Here's where you got to."),
-  ('Hi, {name}', 'A little practice goes a long way.'),
-  ("Let's go, {name}", 'Your next step is below.'),
+/// The part of the day a greeting is for, by the device's clock.
+enum DayPart { morning, afternoon, evening, late }
+
+DayPart dayPartAt(int hour) => switch (hour) {
+  >= 5 && < 12 => DayPart.morning,
+  >= 12 && < 17 => DayPart.afternoon,
+  >= 17 && < 22 => DayPart.evening,
+  _ => DayPart.late,
+};
+
+/// What home says to the student: a greeting and a line under it, for the
+/// time of day, one pair picked at random each visit so the page does not
+/// read the same every time. `{name}` is replaced with the student's
+/// display name. Warm, a little cheeky, never an emoji.
+const kHomeGreetingsByPart = <DayPart, List<(String, String)>>{
+  DayPart.morning: [
+    ('Good morning, {name}', 'Fresh brain, fresh start. What are we learning?'),
+    ('Morning, {name}', 'Twenty minutes before the day gets busy?'),
+    ('Rise and shine, {name}', 'Early study sticks. Let us make it count.'),
+  ],
+  DayPart.afternoon: [
+    ('Good afternoon, {name}', 'A short session now beats a long one never.'),
+    ('Afternoon, {name}', 'Pick up where you left off.'),
+    (
+      'Hey, {name}',
+      'Halfway through the day. One topic before the next thing?',
+    ),
+  ],
+  DayPart.evening: [
+    ('Good evening, {name}', 'One topic tonight, and tomorrow is easier.'),
+    ('Evening, {name}', "Let's make today count."),
+    ('Welcome back, {name}', 'Settle in. Your next step is below.'),
+  ],
+  DayPart.late: [
+    (
+      'Still up, {name}?',
+      'Keep it short, then sleep: memory sets while you rest.',
+    ),
+    ('Night owl mode, {name}', 'Ten questions, then bed. Deal?'),
+    ('Burning the midnight oil, {name}?', 'Respect. Small steps, then rest.'),
+  ],
+};
+
+/// Every greeting, in one list.
+final kHomeGreetings = [
+  for (final lines in kHomeGreetingsByPart.values) ...lines,
 ];
 
 /// Picked once per app session, not per build: a greeting that changed
 /// every time the page redrew would flicker.
-final greetingIndexProvider = Provider<int>(
-  (ref) => Random().nextInt(kHomeGreetings.length),
-);
+final greetingIndexProvider = Provider<int>((ref) => Random().nextInt(1000));
 
-/// The greeting at [index] (wrapped into range) for [name].
-(String, String) homeGreeting(String name, int index) {
-  final (title, subtitle) = kHomeGreetings[index % kHomeGreetings.length];
+/// The greeting at [index] (wrapped into range) for [name]: from the
+/// lines for [part] when given, otherwise from all of them.
+(String, String) homeGreeting(String name, int index, {DayPart? part}) {
+  final lines = part == null ? kHomeGreetings : kHomeGreetingsByPart[part]!;
+  final (title, subtitle) = lines[index % lines.length];
   return (title.replaceAll('{name}', name), subtitle);
+}
+
+/// Paragon's tip of the day: one a day, the same all day.
+const kStudyTips = [
+  'Little and often wins. Three 20-minute sessions beat one long cram.',
+  'Got one wrong? Good. The mistakes notebook turns it into one you get '
+      'right.',
+  'Read the question twice. Examiners love a "NOT" in the stem.',
+  'Teach it to a friend. If you can explain it, you know it.',
+  'Sleep is study too: your brain files away the day while you rest.',
+  'Start with the topic you have been avoiding. It is usually smaller '
+      'than it looks.',
+  'In an objective question, rule out the two silly options first.',
+  'Show your working, even to yourself. That is where Paper 2 marks hide.',
+  'Past questions repeat their ideas. Sit a paper and you will see which.',
+  'Take a break before you need one. Five minutes away, then back.',
+  'Say a formula out loud as you write it. It sticks twice as well.',
+  'Plan tomorrow tonight. Waking up to a plan is half the battle.',
+];
+
+/// The tip for [day]: by day of the year, so it changes at midnight.
+String tipFor(DateTime day) {
+  final n = day.difference(DateTime(day.year)).inDays;
+  return kStudyTips[n % kStudyTips.length];
 }
 
 class DashboardScreen extends ConsumerWidget {
@@ -82,23 +143,16 @@ class DashboardScreen extends ConsumerWidget {
           return PageBody(
             maxWidth: kContentMaxWidth,
             children: [
-              Builder(
-                builder: (context) {
-                  final (title, subtitle) = homeGreeting(
-                    displayName,
-                    ref.watch(greetingIndexProvider),
-                  );
-                  return PageIntro(title: title, subtitle: subtitle);
-                },
-              ),
-              // The counters below are real, written to a real uid — and
-              // that uid is easily lost. A guest watching them climb
-              // deserves to know that before they find out by losing them.
+              _HomeHero(name: displayName),
+              const SizedBox(height: kSectionGap),
+              // What the student does here is real, written to a real uid,
+              // and that uid is easily lost. A guest deserves to know that
+              // before they find out by losing it.
               if (isGuest) ...[const GuestNotice(), const SizedBox(height: 20)],
               LayoutBuilder(
                 builder: (context, box) {
                   // Two columns once there is room: what to do next on the
-                  // left, how it is going and where else to go on the right.
+                  // left, where else to go on the right.
                   if (box.maxWidth >= 820) {
                     return const Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,7 +161,11 @@ class DashboardScreen extends ConsumerWidget {
                           flex: 3,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [_ContinueLearning(), YourSubjects()],
+                            children: [
+                              _ContinueLearning(),
+                              _TodayCard(),
+                              YourSubjects(),
+                            ],
                           ),
                         ),
                         SizedBox(width: 24),
@@ -115,12 +173,7 @@ class DashboardScreen extends ConsumerWidget {
                           flex: 2,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              ThisWeekCard(),
-                              _Stats(),
-                              SizedBox(height: kSectionGap),
-                              _QuickLinks(),
-                            ],
+                            children: [_QuickStart(columns: 2), _SupportLine()],
                           ),
                         ),
                       ],
@@ -130,11 +183,10 @@ class DashboardScreen extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       _ContinueLearning(),
-                      ThisWeekCard(),
-                      _Stats(),
-                      SizedBox(height: kSectionGap),
+                      _TodayCard(),
+                      _QuickStart(columns: 2),
                       YourSubjects(),
-                      _QuickLinks(),
+                      _SupportLine(),
                     ],
                   );
                 },
@@ -142,6 +194,506 @@ class DashboardScreen extends ConsumerWidget {
             ],
           );
         },
+      ),
+    );
+  }
+}
+
+const _weekdayNames = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];
+const _monthNames = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
+/// The top of Home: the date, a greeting for the time of day, the exam
+/// countdown when the student has set one, and the tip of the day. Brand
+/// colours washed over the surface, so it reads in light and dark alike.
+class _HomeHero extends ConsumerWidget {
+  const _HomeHero({required this.name});
+  final String name;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    final now = DateTime.now();
+    final (title, subtitle) = homeGreeting(
+      name,
+      ref.watch(greetingIndexProvider),
+      part: dayPartAt(now.hour),
+    );
+    // Accounts only; a guest's settings are always `none`.
+    final exam = ref.watch(planSettingsProvider).asData?.value.examDate;
+    final days = exam == null
+        ? null
+        : DateTime(
+            exam.year,
+            exam.month,
+            exam.day,
+          ).difference(DateTime(now.year, now.month, now.day)).inDays;
+
+    return Container(
+      key: const ValueKey('home.hero'),
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        color: palette.surface,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: palette.border),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color.alphaBlend(AppColors.primary.withAlpha(34), palette.surface),
+            palette.surface,
+            Color.alphaBlend(
+              AppColors.secondary.withAlpha(30),
+              palette.surface,
+            ),
+          ],
+          stops: const [0, 0.55, 1],
+        ),
+      ),
+      child: Stack(
+        children: [
+          // A little sparkle in the corner, decoration only.
+          Positioned(
+            right: -18,
+            top: -18,
+            child: ExcludeSemantics(
+              child: Icon(
+                Icons.auto_awesome_rounded,
+                size: 120,
+                color: AppColors.primary.withAlpha(26),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(22, 20, 22, 18),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '${_weekdayNames[now.weekday - 1]} ${now.day} '
+                          '${_monthNames[now.month - 1]}'
+                      .toUpperCase(),
+                  style: AppTheme.caption.copyWith(
+                    color: AppColors.primary,
+                    letterSpacing: 1.1,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Semantics(
+                  header: true,
+                  child: Text(
+                    title,
+                    style: AppTheme.displayLg.copyWith(
+                      color: palette.textStrong,
+                      height: 1.15,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  subtitle,
+                  style: AppTheme.bodyLg.copyWith(color: palette.textSecondary),
+                ),
+                if (days != null && days >= 0) ...[
+                  const SizedBox(height: 14),
+                  _Pill(
+                    icon: Icons.event_rounded,
+                    color: AppColors.primary,
+                    text: days == 0
+                        ? 'Exam day. You have got this.'
+                        : days < 14
+                        ? '$days ${days == 1 ? 'day' : 'days'} to your exam'
+                        : '${weeksUntil(exam!, now)} weeks to your exam',
+                    onTap: () => context.push('/plan'),
+                  ),
+                ],
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 10,
+                  ),
+                  decoration: BoxDecoration(
+                    color: palette.background.withAlpha(150),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: palette.border),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(
+                        Icons.lightbulb_outline_rounded,
+                        size: 18,
+                        color: AppColors.warning,
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: 'Tip of the day  ',
+                                style: AppTheme.label.copyWith(
+                                  color: palette.textPrimary,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              TextSpan(
+                                text: tipFor(now),
+                                style: AppTheme.label.copyWith(
+                                  color: palette.textSecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Pill extends StatelessWidget {
+  const _Pill({
+    required this.icon,
+    required this.color,
+    required this.text,
+    this.onTap,
+  });
+
+  final IconData icon;
+  final Color color;
+  final String text;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: color.withAlpha(30),
+      shape: StadiumBorder(side: BorderSide(color: color.withAlpha(110))),
+      child: InkWell(
+        customBorder: const StadiumBorder(),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, size: 16, color: color),
+              const SizedBox(width: 6),
+              Text(
+                text,
+                style: AppTheme.label.copyWith(
+                  color: color,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "Today": what the planner says for today, ticked off right here. Kept
+/// on the device, so it costs nothing to show.
+class _TodayCard extends ConsumerWidget {
+  const _TodayCard();
+
+  static const _shown = 4;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    final tasks = ref.watch(plannerProvider).on(dayKey(DateTime.now()));
+    final done = tasks.where((t) => t.done).length;
+    final allDone = tasks.isNotEmpty && done == tasks.length;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: kSectionGap),
+      child: SurfaceCard(
+        key: const ValueKey('home.today'),
+        padding: const EdgeInsets.fromLTRB(18, 14, 10, 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                const IconTile(
+                  icon: Icons.event_note_rounded,
+                  color: AppColors.accentBlue,
+                  size: 36,
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Today',
+                        style: AppTheme.heading3.copyWith(
+                          color: palette.textPrimary,
+                        ),
+                      ),
+                      Text(
+                        tasks.isEmpty
+                            ? 'Nothing planned yet'
+                            : allDone
+                            ? 'All done. Brilliant.'
+                            : '$done of ${tasks.length} done',
+                        style: AppTheme.caption.copyWith(
+                          color: allDone
+                              ? AppColors.correct
+                              : palette.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                TextButton(
+                  onPressed: () => context.push(kPlannerPath),
+                  child: Text(tasks.isEmpty ? 'Plan my week' : 'Planner'),
+                ),
+              ],
+            ),
+            if (tasks.isEmpty)
+              Padding(
+                padding: const EdgeInsets.only(top: 8, right: 8),
+                child: Text(
+                  'Give today a plan and Paragon will keep score. Or let it '
+                  'pick the topics worth the most marks.',
+                  style: AppTheme.label.copyWith(color: palette.textSecondary),
+                ),
+              )
+            else ...[
+              const SizedBox(height: 4),
+              for (final t in tasks.take(_shown))
+                CheckboxListTile(
+                  key: ValueKey('home.today.${t.id}'),
+                  dense: true,
+                  contentPadding: EdgeInsets.zero,
+                  controlAffinity: ListTileControlAffinity.leading,
+                  activeColor: AppColors.correct,
+                  value: t.done,
+                  onChanged: (_) =>
+                      ref.read(plannerProvider.notifier).toggle(t.id),
+                  title: Text(
+                    t.title,
+                    style: AppTheme.bodyMd.copyWith(
+                      color: t.done
+                          ? palette.textSecondary
+                          : palette.textPrimary,
+                      decoration: t.done
+                          ? TextDecoration.lineThrough
+                          : TextDecoration.none,
+                    ),
+                  ),
+                  subtitle: t.subject.isEmpty && t.minutes == 0
+                      ? null
+                      : Text(
+                          [
+                            if (t.subject.isNotEmpty) t.subject,
+                            if (t.minutes > 0) '${t.minutes} min',
+                          ].join(' · '),
+                          style: AppTheme.caption.copyWith(
+                            color: palette.textSecondary,
+                          ),
+                        ),
+                ),
+              if (tasks.length > _shown)
+                Padding(
+                  padding: const EdgeInsets.only(left: 4, top: 2),
+                  child: Text(
+                    'and ${tasks.length - _shown} more in the planner',
+                    style: AppTheme.caption.copyWith(
+                      color: palette.textSecondary,
+                    ),
+                  ),
+                ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Where to go from home, as tiles: each one a thing to do, said plainly.
+class _QuickStart extends StatelessWidget {
+  const _QuickStart({required this.columns});
+  final int columns;
+
+  @override
+  Widget build(BuildContext context) {
+    final tiles = [
+      _Tile(
+        key: const ValueKey('home.quick.quiz'),
+        icon: Icons.bolt_rounded,
+        color: AppColors.primary,
+        title: 'Quick quiz',
+        line: 'Your topics, instant feedback',
+        onTap: () => context.push(kCustomQuizPath),
+      ),
+      _Tile(
+        key: const ValueKey('home.quick.waec'),
+        icon: Icons.assignment_rounded,
+        color: AppColors.accentBlue,
+        title: 'Sit a past paper',
+        line: 'The real thing, timed',
+        onTap: () => context.go('/waec'),
+      ),
+      _Tile(
+        key: const ValueKey('home.quick.mistakes'),
+        icon: Icons.replay_rounded,
+        color: AppColors.wrong,
+        title: 'Mistakes',
+        line: 'Turn wrongs into rights',
+        onTap: () => context.push('/mistakes'),
+      ),
+      _Tile(
+        key: const ValueKey('home.quick.planner'),
+        icon: Icons.event_note_rounded,
+        color: AppColors.correct,
+        title: 'Planner',
+        line: 'Plan the week, tick it off',
+        onTap: () => context.push(kPlannerPath),
+      ),
+      _Tile(
+        key: const ValueKey('home.quick.flashcards'),
+        icon: Icons.style_rounded,
+        color: AppColors.secondary,
+        title: 'Flashcards',
+        line: 'Make them, flip them',
+        onTap: () => context.push(kDecksPath),
+      ),
+      _Tile(
+        key: const ValueKey('home.quick.live'),
+        icon: Icons.groups_rounded,
+        color: AppColors.warning,
+        title: 'Live quiz',
+        line: 'Play with your class',
+        onTap: () => context.push('/join'),
+      ),
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SectionHeader('Jump in'),
+        LayoutBuilder(
+          builder: (context, box) {
+            const gap = 10.0;
+            final width = (box.maxWidth - gap * (columns - 1)) / columns;
+            return Wrap(
+              spacing: gap,
+              runSpacing: gap,
+              children: [
+                for (final t in tiles) SizedBox(width: width, child: t),
+              ],
+            );
+          },
+        ),
+        const SizedBox(height: kSectionGap),
+      ],
+    );
+  }
+}
+
+class _Tile extends StatelessWidget {
+  const _Tile({
+    super.key,
+    required this.icon,
+    required this.color,
+    required this.title,
+    required this.line,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final Color color;
+  final String title;
+  final String line;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.palette;
+    return SurfaceCard(
+      onTap: onTap,
+      padding: const EdgeInsets.all(14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          IconTile(icon: icon, color: color, size: 34),
+          const SizedBox(height: 10),
+          Text(
+            title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTheme.bodyMd.copyWith(
+              color: palette.textPrimary,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          Text(
+            line,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: AppTheme.caption.copyWith(color: palette.textSecondary),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// One quiet line at the bottom: how Paragon stays free.
+class _SupportLine extends StatelessWidget {
+  const _SupportLine();
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.palette;
+    return Padding(
+      padding: const EdgeInsets.only(top: 4, bottom: 8),
+      child: TextButton.icon(
+        style: TextButton.styleFrom(
+          alignment: Alignment.centerLeft,
+          foregroundColor: palette.textSecondary,
+        ),
+        onPressed: () => context.push('/support'),
+        icon: const Icon(Icons.volunteer_activism_outlined, size: 18),
+        label: const Text(
+          'Paragon is free for every student. Here is how it stays that way.',
+        ),
       ),
     );
   }
@@ -491,199 +1043,6 @@ class _SubjectsSkeleton extends StatelessWidget {
           ),
         ],
         const SizedBox(height: kSectionGap),
-      ],
-    );
-  }
-}
-
-/// Two numbers about the student's practice. Both come from documents
-/// already being streamed (`progress/{uid}` and the week's attempt
-/// count), and both are recomputable from `attempts` — unlike the day
-/// streak they replaced, which came from the device clock.
-class _Stats extends ConsumerWidget {
-  const _Stats();
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final progressAsync = ref.watch(userProgressProvider);
-    final testsAsync = ref.watch(topicTestProgressProvider);
-    // Plan v2 7.3: a 0 is shown only once the documents have loaded and
-    // say 0; until then the tile pulses. An error reads as nothing yet.
-    final loaded =
-        (progressAsync.hasValue || progressAsync.hasError) &&
-        (testsAsync.hasValue || testsAsync.hasError);
-    final progress = progressAsync.asData?.value ?? UserProgress.empty;
-    // Drill or a topic test: passing a test is practising a topic too.
-    final practised = practisedTopicIds(
-      progress,
-      testsAsync.asData?.value ?? TopicTestProgress.empty,
-    ).length;
-    // An account's week is on the "This week" card above, against its
-    // goal; only a guest, who has no plan, sees the bare count here.
-    final showWeek = !canUse(
-      Feature.studyPlan,
-      isGuest: ref.watch(isGuestProvider),
-    );
-    final weekly = ref.watch(weeklyAttemptsCountProvider);
-    final String? week = weekly.when(
-      // Keeps the last number while it refreshes, rather than a dash.
-      skipLoadingOnReload: true,
-      loading: () => null,
-      error: (_, _) => '0',
-      data: (n) => '$n',
-    );
-
-    // Stretched to the taller tile, so the two cards' edges line up
-    // whichever one has the longer caption.
-    return IntrinsicHeight(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Expanded(
-            child: _StatTile(
-              icon: Icons.donut_large_rounded,
-              color: AppColors.primary,
-              value: loaded ? '$practised' : null,
-              label: 'Topics practised',
-              detail: !loaded
-                  ? ''
-                  : practised == 0
-                  ? 'Start one today'
-                  : '${progress.completedTopicCount} at proficient',
-            ),
-          ),
-          if (showWeek) const SizedBox(width: 12),
-          if (showWeek)
-            Expanded(
-              child: _StatTile(
-                icon: Icons.check_circle_outline_rounded,
-                color: AppColors.accentBlue,
-                value: week,
-                label: 'Questions this week',
-                detail: 'Practice, tests and exams',
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-}
-
-class _StatTile extends StatelessWidget {
-  const _StatTile({
-    required this.icon,
-    required this.color,
-    required this.value,
-    required this.label,
-    required this.detail,
-  });
-
-  final IconData icon;
-  final Color color;
-
-  /// Null while loading: a placeholder, never a 0 that is not true yet.
-  final String? value;
-  final String label;
-  final String detail;
-
-  @override
-  Widget build(BuildContext context) {
-    return SurfaceCard(
-      padding: const EdgeInsets.all(18),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          IconTile(icon: icon, color: color, size: 36),
-          const SizedBox(height: 14),
-          if (value case final v?)
-            Text(
-              v,
-              style: AppTheme.displayLg.copyWith(
-                color: context.palette.textStrong,
-                height: 1,
-              ),
-            )
-          else
-            Semantics(
-              label: '$label: loading',
-              child: const SkeletonBox(width: 48, height: 32),
-            ),
-          const SizedBox(height: 6),
-          Text(
-            label,
-            style: AppTheme.label.copyWith(color: context.palette.textPrimary),
-          ),
-          Text(
-            detail,
-            style: AppTheme.caption.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Where else to go from home, as one tidy list.
-class _QuickLinks extends StatelessWidget {
-  const _QuickLinks();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        const SectionHeader('Keep going'),
-        RowGroup(
-          children: [
-            ListRow(
-              icon: Icons.auto_stories_rounded,
-              iconColor: AppColors.primary,
-              title: 'Browse courses',
-              subtitle: 'Pick a topic and keep learning',
-              onTap: () => context.go('/courses'),
-            ),
-            // No count here on purpose: counting means reading the
-            // student's recent attempts, and home opens far more often
-            // than the notebook.
-            ListRow(
-              icon: Icons.replay_rounded,
-              iconColor: AppColors.wrong,
-              title: 'Mistakes notebook',
-              subtitle: 'Go back over questions you got wrong',
-              onTap: () => context.push('/mistakes'),
-            ),
-            ListRow(
-              icon: Icons.style_rounded,
-              iconColor: AppColors.secondary,
-              title: 'Review',
-              subtitle: 'Revision cards, saved lessons and notes',
-              onTap: () => context.go('/review'),
-            ),
-            ListRow(
-              icon: Icons.assignment_rounded,
-              iconColor: AppColors.accentBlue,
-              title: 'WAEC exam mode',
-              subtitle: 'Timed past-paper practice',
-              onTap: () => context.go('/waec'),
-            ),
-            ListRow(
-              icon: Icons.groups_rounded,
-              iconColor: AppColors.secondary,
-              title: 'Live quiz',
-              subtitle: 'Join with a code, or host one for your class',
-              onTap: () => context.push('/join'),
-            ),
-            ListRow(
-              icon: Icons.volunteer_activism_outlined,
-              iconColor: AppColors.primary,
-              title: 'Support Paragon',
-              subtitle: 'Free for every student: how it stays that way',
-              onTap: () => context.push('/support'),
-            ),
-          ],
-        ),
       ],
     );
   }

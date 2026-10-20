@@ -94,6 +94,9 @@ class _SearchPaletteState extends ConsumerState<SearchPalette> {
   /// Index into [_visible]; -1 is none.
   int _highlight = -1;
 
+  /// Whether the past questions are unfolded.
+  bool _questionsOpen = false;
+
   @override
   void dispose() {
     _focus.dispose();
@@ -101,11 +104,13 @@ class _SearchPaletteState extends ConsumerState<SearchPalette> {
     super.dispose();
   }
 
+  /// The rows on screen, in order: what the arrow keys move through.
   List<SearchItem> _visible(SearchResults r) => [
-    ...r.courses.take(kSearchPalettePerGroup),
-    ...r.topics.take(kSearchPalettePerGroup),
     ...r.lessons.take(kSearchPalettePerGroup),
-    ...r.pastQuestions.take(kSearchPalettePerGroup),
+    ...r.topics.take(kSearchPalettePerGroup),
+    ...r.courses.take(kSearchPalettePerGroup),
+    if (SearchResultsView.showsQuestions(r, _questionsOpen))
+      ...r.pastQuestions.take(kSearchPalettePerGroup),
   ];
 
   KeyEventResult _onKey(FocusNode _, KeyEvent e) {
@@ -203,7 +208,7 @@ class _SearchPaletteState extends ConsumerState<SearchPalette> {
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText:
-                                'Search courses, topics, lessons, past questions',
+                                'Search lessons, videos, topics and past questions',
                             hintStyle: AppTheme.bodyLg.copyWith(
                               color: context.palette.textSecondary,
                               fontSize: 17,
@@ -236,6 +241,13 @@ class _SearchPaletteState extends ConsumerState<SearchPalette> {
                           results: results,
                           perGroup: kSearchPalettePerGroup,
                           highlighted: highlighted,
+                          questionsOpen: _questionsOpen,
+                          onToggleQuestions: () => setState(() {
+                            _questionsOpen = !_questionsOpen;
+                            _highlight = -1;
+                            // Back to the field, so typing carries on.
+                            _focus.requestFocus();
+                          }),
                           shrinkWrap: true,
                           onOpen: (item) =>
                               Navigator.of(context).pop(item.path),

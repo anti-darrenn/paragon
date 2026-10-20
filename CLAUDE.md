@@ -64,8 +64,16 @@ formats were checked on 2026-10-16 against the WAEC syllabuses (question counts)
 - **The grade estimate.** It is a range until 50 drill answers in the subject, hidden
   below 20, and always shown beside `kGradeEstimateNote`. It reads `progress` for display
   only, which is allowed because it is private and nothing competitive uses it.
-- **Screens.** `/plan`, Home's "This week" card and the course page's plan panel cost no
-  reads of their own: the outlines and progress are already loaded.
+- **Screens.** `/plan` and the course page's plan panel cost no reads of their own: the
+  outlines and progress are already loaded. Home no longer shows the weekly goal or any
+  count of questions answered (owner's decision, 2026-10-19); the goal lives on `/plan`.
+- **The planner** (`/review/planner`, 2026-10-19). `lib/core/plan/planner.dart` is the
+  pure model, and `planner_store.dart` keeps it **on the device only**, per account
+  (shared_preferences `planner.v1.<uid>`): no Firestore, no rule, guests included.
+  - Days are the device's calendar days, and plans older than four weeks are pruned.
+  - "Plan my week for me" spreads each subject's `shortestPath` over the days left.
+  - Home's "Today" card shows today's tasks. Ticks are not attempts and never touch
+    `progress`.
 - **Challenge links.** `/c/:id` (`ChallengeLinkScreen`) records a friend's answers as
   `source: 'challenge_link'`, which **never** reaches `progress`
   (`challenge_link_test.dart` asserts it).
@@ -263,7 +271,10 @@ tested.
     read it (`dataAt`) shows "Fixed since the audit", not the finding
     (`ContentAudit.isCleared`).
   - **"Mark checked"** in the workbench adds the rule to the question's
-    `auditDismissed`, with a note on its history, and the audit skips it.
+    `auditDismissed`, with a note on its history, and the audit skips it. The
+    Quality list's "Nothing wrong: dismiss" does the same without opening the
+    workbench, and the Reports list dismisses a question's open reports in one
+    tap.
   - **Why.** Until 2026-10-17 a fixed question stayed flagged until someone
     re-ran the audit, which looked like the fix had not taken.
 - **The record.** `docs/audit/CONTENT_REVIEW_2026-10-15.md` is what was decided and done.
@@ -660,7 +671,10 @@ from `AppTheme`, so don't restyle them inline.
 
 **Search** (`lib/core/search/search.dart`, pure; `features/search/`) covers courses,
 topics and lessons from the course catalog plus each live subject's `subjectIndex`
-document — one cached read per subject, never a collection scan. The top bar's Search
+document — one cached read per subject, never a collection scan. Results lead with
+videos and lessons, then topics, then courses; matching past questions sit in a
+"Questions" fold that opens on a tap, or open already when nothing else matched
+(owner's request, 2026-10-19). The top bar's Search
 opens a palette over the page (also Ctrl/⌘+K from anywhere; arrows, Enter, Esc); `/search?q=` is the full page and
 the phone's way in. Nothing about searches is stored or logged.
 
@@ -825,6 +839,10 @@ cards**:
 - **Editors use `MathField` and `MathToolbar`** (`lib/core/widgets/math_field/`):
   Normal mode (calculator typing, `plainToLatex`) or LaTeX mode, never
   rewriting a stored value on a mode switch.
+  - **A worked answer's box starts a new step on Enter** (`paragraphs: true`,
+    `paragraphBreak`, 2026-10-19). Steps are separated by a blank line, which is
+    what hints split on, so one Enter types the blank line; Shift+Enter, Enter
+    on an empty line and Enter inside maths stay a single newline.
 
 **Answer options.** Every multiple-choice option a student answers is `AnswerOption`
 (`lib/core/widgets/answer_option.dart`): drill, the topic test, exercises, the taster,
