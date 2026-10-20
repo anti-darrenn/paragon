@@ -102,6 +102,7 @@ Future<GoRouter> _pump(
   bool guest = false,
   bool online = true,
   List<SearchItem> corpus = const [],
+  List<SearchItem> pastQuestions = const [],
 }) async {
   tester.view.physicalSize = Size(width, 900);
   tester.view.devicePixelRatio = 1;
@@ -117,6 +118,7 @@ Future<GoRouter> _pump(
         isGuestProvider.overrideWithValue(guest),
         staffRoleProvider.overrideWithValue(role),
         searchCorpusProvider.overrideWith((ref) async => corpus),
+        pastQuestionCorpusProvider.overrideWith((ref) async => pastQuestions),
         isOnlineProvider.overrideWith((ref) => Stream.value(online)),
         continueLearningProvider.overrideWithValue(null),
         courseCatalogProvider.overrideWith((ref) async => _catalog),
@@ -275,6 +277,68 @@ void main() {
       await tester.testTextInput.receiveAction(TextInputAction.search);
       await tester.pumpAndSettle();
       expect(find.text('search page'), findsOneWidget);
+    });
+
+    testWidgets('lessons lead; past questions wait in a fold', (tester) async {
+      await _pump(
+        tester,
+        width: 1280,
+        corpus: [
+          SearchItem(kind: SearchKind.course, title: 'Waves', path: '/c'),
+          SearchItem(
+            kind: SearchKind.lesson,
+            title: 'Waves explained',
+            detail: 'Video',
+            path: '/l',
+          ),
+        ],
+        pastQuestions: [
+          SearchItem(
+            kind: SearchKind.pastQuestion,
+            title: 'Which of these waves is longitudinal?',
+            path: '/past-questions/x/',
+          ),
+        ],
+      );
+      await openAndType(tester, 'waves');
+      final lesson = find.textContaining('explained', findRichText: true);
+      expect(lesson, findsOneWidget);
+      expect(find.text('VIDEOS AND LESSONS'), findsOneWidget);
+      // The lesson is above the course.
+      expect(
+        tester.getTopLeft(find.text('VIDEOS AND LESSONS')).dy,
+        lessThan(tester.getTopLeft(find.text('COURSES')).dy),
+      );
+      final question = find.textContaining('longitudinal', findRichText: true);
+      expect(question, findsNothing);
+      await tester.tap(find.byKey(const ValueKey('search.questionsFold')));
+      await tester.pumpAndSettle();
+      expect(question, findsOneWidget);
+      // The palette is one at a time, app-wide: close it for the next test.
+      await tester.sendKeyEvent(LogicalKeyboardKey.escape);
+      await tester.pumpAndSettle();
+    });
+
+    testWidgets('CONTROL: questions alone show unfolded', (tester) async {
+      await _pump(
+        tester,
+        width: 1280,
+        pastQuestions: [
+          SearchItem(
+            kind: SearchKind.pastQuestion,
+            title: 'Which of these waves is longitudinal?',
+            path: '/past-questions/x/',
+          ),
+        ],
+      );
+      await openAndType(tester, 'longitudinal');
+      expect(find.byKey(const ValueKey('search.questionsFold')), findsNothing);
+      expect(
+        find.textContaining('longitudinal', findRichText: true),
+        findsWidgets,
+      );
+      await tester.sendKeyEvent(LogicalKeyboardKey.escape);
+      await tester.pumpAndSettle();
     });
 
     testWidgets('Ctrl+K opens the palette from anywhere', (tester) async {

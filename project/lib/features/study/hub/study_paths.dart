@@ -7,6 +7,8 @@ import '../../../core/content/subject_tools.dart';
 
 const kCustomQuizPath = '/review/quiz';
 
+const kPlannerPath = '/review/planner';
+
 const kDecksPath = '/review/flashcards';
 String deckEditPath(String deckId) => '$kDecksPath/$deckId';
 String deckStudyPath(String deckId) => '$kDecksPath/$deckId/study';

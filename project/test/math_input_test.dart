@@ -111,4 +111,31 @@ void main() {
       expect(r.caret, 3);
     });
   });
+
+  // Owner's request, 2026-10-19: one Enter starts a new step.
+  group('paragraphBreak', () {
+    test('one Enter after a line becomes a blank line', () {
+      final r = paragraphBreak('Step one', 'Step one\n', 9)!;
+      expect(r.text, 'Step one\n\n');
+      expect(r.caret, 10);
+    });
+
+    test('in the middle of the text too', () {
+      final r = paragraphBreak('A. B.', 'A.\n B.', 3)!;
+      expect(r.text, 'A.\n\n B.');
+    });
+
+    test('CONTROL: left alone where a blank line would be wrong', () {
+      // Enter on a line that is already empty: a third newline is allowed.
+      expect(paragraphBreak('a\n\n', 'a\n\n\n', 4), isNull);
+      // At the very start, and just before an existing newline.
+      expect(paragraphBreak('a', '\na', 1), isNull);
+      expect(paragraphBreak('a\nb', 'a\n\nb', 2), isNull);
+      // Inside maths, where a blank line breaks the expression.
+      expect(paragraphBreak(r'\[x = 1', '\\[x = 1\n', 8), isNull);
+      // Not a single newline typed: a paste, or another character.
+      expect(paragraphBreak('a', 'a\nb', 3), isNull);
+      expect(paragraphBreak('a', 'ab', 2), isNull);
+    });
+  });
 }

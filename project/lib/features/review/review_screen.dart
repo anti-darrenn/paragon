@@ -16,11 +16,14 @@ import '../study/offline/saved_topics_store.dart';
 import '../../core/study/study_tool_registry.dart';
 import '../study/flashcards/deck_store.dart';
 import '../study/hub/study_paths.dart';
+import '../study/planner/planner_store.dart';
+import '../../core/plan/planner.dart' show dayKey;
 import '../../core/widgets/nav/back_navigation.dart';
 
 /// `/review`, the **Study** tab (renamed from Review, 2026-10-17): every
 /// study tool in one place.
 ///
+/// - **Plan:** the week's planner, kept on the device.
 /// - **Practise:** a custom quiz over any mix of topics, the mistakes
 ///   notebook, and the student's own flashcards (with a quiz made from
 ///   them).
@@ -42,6 +45,8 @@ class ReviewScreen extends ConsumerWidget {
     final offline = ref.watch(savedTopicsProvider).length;
     final subjects = ref.watch(subjectsProvider).asData?.value ?? const [];
     final decks = ref.watch(decksProvider).asData?.value.length;
+    final today = ref.watch(plannerProvider).on(dayKey(DateTime.now()));
+    final todayDone = today.where((t) => t.done).length;
 
     return Scaffold(
       backgroundColor: context.palette.background,
@@ -98,6 +103,18 @@ class ReviewScreen extends ConsumerWidget {
                 },
                 onTap: () => context.push('/settings/offline'),
               );
+              final planner = _ReviewCard(
+                key: const ValueKey('review.planner'),
+                icon: Icons.event_note_rounded,
+                accent: AppColors.accentBlue,
+                title: 'Planner',
+                subtitle: today.isEmpty
+                    ? 'Plan your week a day at a time, or let Paragon fill it'
+                    : todayDone == today.length
+                    ? 'Today: all ${today.length} done. Lovely.'
+                    : 'Today: $todayDone of ${today.length} done',
+                onTap: () => context.push(kPlannerPath),
+              );
               final cardsPanel = _CardsPanel(subjects: subjects);
               final quiz = _ReviewCard(
                 key: const ValueKey('review.quiz'),
@@ -125,6 +142,8 @@ class ReviewScreen extends ConsumerWidget {
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    planner,
+                    const SizedBox(height: 12),
                     quiz,
                     const SizedBox(height: 12),
                     mistakes,
@@ -160,6 +179,8 @@ class ReviewScreen extends ConsumerWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
+                        planner,
+                        const SizedBox(height: 12),
                         flashcards,
                         const SizedBox(height: 12),
                         saved,

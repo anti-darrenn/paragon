@@ -549,37 +549,78 @@ class _RuleTileState extends ConsumerState<_RuleTile> {
           "Couldn't load these questions.\n$e",
           style: AppTheme.caption.copyWith(color: AppColors.wrong),
         ),
-        data: (list) => Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+        data: (list) {
+          final rule = widget.rule.rule;
+          // Dismissed ones leave the list; what was fixed stays, marked.
+          final open = [
             for (final q in list)
-              Padding(
-                padding: const EdgeInsets.only(bottom: 10),
-                child: QuestionListCard(
-                  question: q,
-                  findings: [(widget.rule.rule, widget.rule.level)],
-                  onTap: () async {
-                    await openQuestion(
-                      context,
-                      ref,
-                      q.question.id,
-                      list: ids,
-                    );
-                    // What was fixed there shows as fixed here.
-                    ref.invalidate(_auditQuestionsProvider);
-                  },
+              if (!q.auditDismissed.contains(rule)) q,
+          ];
+          final dismissed = list.length - open.length;
+          final access = ref.watch(staffAccessProvider);
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (dismissed > 0)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Text(
+                    '$dismissed dismissed as nothing wrong',
+                    style: AppTheme.caption.copyWith(color: AppColors.correct),
+                  ),
                 ),
-              ),
-            if (ids.length > _shown)
-              Align(
-                alignment: Alignment.centerLeft,
-                child: TextButton(
-                  onPressed: () => setState(() => _shown += _page),
-                  child: Text('Show more (${ids.length - _shown} left)'),
+              for (final q in open)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      QuestionListCard(
+                        question: q,
+                        findings: [(rule, widget.rule.level)],
+                        onTap: () async {
+                          await openQuestion(
+                            context,
+                            ref,
+                            q.question.id,
+                            list: ids,
+                          );
+                          // What was fixed there shows as fixed here.
+                          ref.invalidate(_auditQuestionsProvider);
+                        },
+                      ),
+                      if (access.roleIn(q.question.subjectId).canReview)
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: TextButton.icon(
+                            key: ValueKey('quality.dismiss.${q.question.id}'),
+                            onPressed: () async {
+                              final done = await dismissFinding(
+                                context,
+                                ref,
+                                q,
+                                rule,
+                              );
+                              if (done) ref.invalidate(_auditQuestionsProvider);
+                            },
+                            icon: const Icon(Icons.done_rounded, size: 18),
+                            label: const Text('Nothing wrong: dismiss'),
+                          ),
+                        ),
+                    ],
+                  ),
                 ),
-              ),
-          ],
-        ),
+              if (ids.length > _shown)
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: TextButton(
+                    onPressed: () => setState(() => _shown += _page),
+                    child: Text('Show more (${ids.length - _shown} left)'),
+                  ),
+                ),
+            ],
+          );
+        },
       ),
     );
   }

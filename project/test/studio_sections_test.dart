@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:paragon/core/auth/staff_role.dart';
+import 'package:paragon/core/models/question.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/admin_flag_repository.dart';
 import 'package:paragon/core/repositories/admin_resource_repository.dart';
@@ -13,12 +14,16 @@ import 'package:paragon/features/admin/studio/launch_panels.dart';
 
 /// The studio's sections: who sees which, and the overview's counts.
 void main() {
-  Future<void> pump(WidgetTester tester, StaffRole role) async {
+  Future<void> pump(
+    WidgetTester tester,
+    StaffRole role, {
+    String location = '/admin',
+  }) async {
     tester.view.physicalSize = const Size(1400, 1200);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     final router = GoRouter(
-      initialLocation: '/admin',
+      initialLocation: location,
       routes: [
         GoRoute(
           path: '/admin',
@@ -36,6 +41,20 @@ void main() {
             (ref) async => [
               const FlaggedQuestion(
                 questionId: 'q1',
+                question: ReviewedQuestion(
+                  question: Question(
+                    id: 'q1',
+                    topicId: 't1',
+                    subjectId: 'maths',
+                    text: 'What is 2 + 2?',
+                    options: ['3', '4', '5', '6'],
+                    correctIndex: 1,
+                    explanation: '',
+                    source: 'waec',
+                  ),
+                  hasAnswer: true,
+                  origin: '',
+                ),
                 reports: [
                   ProblemReport(
                     id: 'f1',
@@ -59,6 +78,7 @@ void main() {
             }),
           ),
           subjectsProvider.overrideWith((ref) async => const []),
+          topicByIdProvider.overrideWith((ref, id) async => null),
           userDataProvider.overrideWith((ref) => Stream.value(null)),
           currentUserProvider.overrideWithValue(null),
         ],
@@ -93,6 +113,15 @@ void main() {
     expect(find.text('Reports'), findsNothing);
     expect(find.text('Quality'), findsNothing);
     expect(find.text('Answers that may be wrong'), findsNothing);
+  });
+
+  testWidgets('a reported question can be dismissed from the list', (
+    tester,
+  ) async {
+    await pump(tester, StaffRole.reviewer, location: '/admin?s=reports');
+    expect(find.text('What is 2 + 2?'), findsOneWidget);
+    expect(find.byKey(const ValueKey('reports.dismiss.q1')), findsOneWidget);
+    expect(find.text('Nothing wrong: dismiss the report'), findsOneWidget);
   });
 
   test('only the founder has the question bank', () {

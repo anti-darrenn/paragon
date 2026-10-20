@@ -69,12 +69,18 @@ class SearchResults {
   int get total =>
       courses.length + topics.length + lessons.length + pastQuestions.length;
 
-  /// Courses, then topics, then lessons, then past questions: the order on
-  /// screen, and the order arrow keys move through.
+  /// Everything but past questions, which search shows folded away.
+  bool get hasLearning =>
+      courses.isNotEmpty || topics.isNotEmpty || lessons.isNotEmpty;
+
+  /// Lessons and videos, then topics, then courses, then past questions:
+  /// the order on screen, and the order arrow keys move through (owner's
+  /// request, 2026-10-19: what teaches comes first, and the questions sit
+  /// in a section of their own that opens on demand).
   List<SearchItem> get all => [
-    ...courses,
-    ...topics,
     ...lessons,
+    ...topics,
+    ...courses,
     ...pastQuestions,
   ];
 }

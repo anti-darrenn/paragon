@@ -5,14 +5,22 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 
-/// Search results in their three groups. Used by the top bar's dropdown
-/// and by the `/search` page, so the two always look the same.
+/// Search results, grouped. Used by the top bar's palette and by the
+/// `/search` page, so the two always look the same.
+///
+/// Lessons and videos come first, then topics, then courses, all open.
+/// Past questions sit below in a section of their own, folded away until
+/// [questionsOpen] (owner's request, 2026-10-19): a search for "waves"
+/// should lead with the lesson on waves, not twenty question stems. When
+/// questions are all that matched, they show open.
 class SearchResultsView extends StatelessWidget {
   const SearchResultsView({
     super.key,
     required this.query,
     required this.results,
     required this.onOpen,
+    required this.questionsOpen,
+    required this.onToggleQuestions,
     this.highlighted,
     this.perGroup,
     this.shrinkWrap = false,
@@ -22,6 +30,10 @@ class SearchResultsView extends StatelessWidget {
   final SearchResults results;
   final ValueChanged<SearchItem> onOpen;
 
+  /// Whether the past questions are unfolded.
+  final bool questionsOpen;
+  final VoidCallback onToggleQuestions;
+
   /// The row the arrow keys are on, if any.
   final SearchItem? highlighted;
 
@@ -29,17 +41,29 @@ class SearchResultsView extends StatelessWidget {
   final int? perGroup;
   final bool shrinkWrap;
 
+  /// Whether [results] shows its past questions, given the fold.
+  static bool showsQuestions(SearchResults results, bool questionsOpen) =>
+      questionsOpen || !results.hasLearning;
+
   @override
   Widget build(BuildContext context) {
     List<SearchItem> cap(List<SearchItem> l) =>
         perGroup == null ? l : l.take(perGroup!).toList();
 
     final groups = [
-      ('Courses', cap(results.courses)),
+      ('Videos and lessons', cap(results.lessons)),
       ('Topics', cap(results.topics)),
-      ('Lessons', cap(results.lessons)),
-      ('WAEC past questions', cap(results.pastQuestions)),
+      ('Courses', cap(results.courses)),
     ];
+    final questions = cap(results.pastQuestions);
+    final open = showsQuestions(results, questionsOpen);
+
+    Widget tile(SearchItem item) => SearchResultTile(
+      item: item,
+      query: query,
+      isHighlighted: identical(item, highlighted),
+      onTap: () => onOpen(item),
+    );
 
     return ListView(
       shrinkWrap: shrinkWrap,
@@ -47,25 +71,136 @@ class SearchResultsView extends StatelessWidget {
       children: [
         for (final (label, items) in groups)
           if (items.isNotEmpty) ...[
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
-              child: Text(
-                label.toUpperCase(),
-                style: AppTheme.caption.copyWith(
-                  color: context.palette.textSecondary,
-                  letterSpacing: 0.8,
-                ),
+            _GroupLabel(label),
+            for (final item in items) tile(item),
+          ],
+        if (questions.isNotEmpty) ...[
+          if (results.hasLearning)
+            _QuestionsFold(
+              // The index keeps the best twenty; say so rather than
+              // promise an exact count.
+              count: results.pastQuestions.length,
+              open: open,
+              onTap: onToggleQuestions,
+            )
+          else
+            const _GroupLabel('Past questions'),
+          if (open)
+            for (final item in questions) tile(item),
+        ],
+      ],
+    );
+  }
+}
+
+class _GroupLabel extends StatelessWidget {
+  const _GroupLabel(this.label);
+  final String label;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
+    child: Text(
+      label.toUpperCase(),
+      style: AppTheme.caption.copyWith(
+        color: context.palette.textSecondary,
+        letterSpacing: 0.8,
+      ),
+    ),
+  );
+}
+
+/// "Questions (20)", folded: tap to see the past questions that match.
+class _QuestionsFold extends StatelessWidget {
+  const _QuestionsFold({
+    required this.count,
+    required this.open,
+    required this.onTap,
+  });
+
+  final int count;
+  final bool open;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.palette;
+    final n = count >= 20 ? '20+' : '$count';
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(8, 8, 8, 2),
+      child: Semantics(
+        button: true,
+        expanded: open,
+        label: 'Past questions, $n matches',
+        excludeSemantics: true,
+        onTap: onTap,
+        child: Material(
+          color: palette.background,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            side: BorderSide(color: palette.border),
+          ),
+          child: InkWell(
+            key: const ValueKey('search.questionsFold'),
+            borderRadius: BorderRadius.circular(10),
+            onTap: onTap,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 9),
+              child: Row(
+                children: [
+                  Container(
+                    width: 30,
+                    height: 30,
+                    decoration: BoxDecoration(
+                      color: AppColors.accentBlue.withAlpha(36),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Icon(
+                      Icons.history_edu_rounded,
+                      size: 17,
+                      color: AppColors.accentBlue,
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Questions',
+                            style: AppTheme.bodyMd.copyWith(
+                              color: palette.textPrimary,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          TextSpan(
+                            text: '  $n WAEC past questions match',
+                            style: AppTheme.label.copyWith(
+                              color: palette.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                  AnimatedRotation(
+                    turns: open ? 0.5 : 0,
+                    duration: MediaQuery.disableAnimationsOf(context)
+                        ? Duration.zero
+                        : const Duration(milliseconds: 180),
+                    child: Icon(
+                      Icons.expand_more_rounded,
+                      color: palette.textSecondary,
+                    ),
+                  ),
+                ],
               ),
             ),
-            for (final item in items)
-              SearchResultTile(
-                item: item,
-                query: query,
-                isHighlighted: identical(item, highlighted),
-                onTap: () => onOpen(item),
-              ),
-          ],
-      ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -224,7 +359,7 @@ class SearchEmptyMessage extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             blank
-                ? 'Search courses, topics, lessons and past questions'
+                ? 'Search lessons, videos, topics, courses and past questions'
                 : 'Nothing matches “${query.trim()}”',
             textAlign: TextAlign.center,
             style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),

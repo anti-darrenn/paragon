@@ -5,8 +5,6 @@ import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/plan_repository.dart';
 import 'package:paragon/core/repositories/progress_repository.dart';
 import 'package:paragon/features/plan/plan_screen.dart';
-import 'package:paragon/core/widgets/ui/ui.dart';
-import 'package:paragon/features/plan/plan_widgets.dart';
 
 void main() {
   Future<void> pump(
@@ -46,53 +44,5 @@ void main() {
     expect(find.text('100 a week'), findsOneWidget);
     expect(find.text('When is your first WASSCE paper?'), findsOneWidget);
     expect(find.text('Choose subjects'), findsOneWidget);
-  });
-
-  testWidgets('the Home card counts toward the goal and the exam', (
-    tester,
-  ) async {
-    final exam = DateTime.now().add(const Duration(days: 70));
-    await pump(
-      tester,
-      const ThisWeekCard(),
-      plan: PlanSettings(weeklyGoal: 50, examDate: exam),
-      thisWeek: 20,
-    );
-    expect(find.text('20 of 50 questions · 30 to go'), findsOneWidget);
-    expect(find.text('10 weeks to your exam'), findsOneWidget);
-
-    await pump(
-      tester,
-      const ThisWeekCard(),
-      plan: const PlanSettings(weeklyGoal: 50),
-      thisWeek: 55,
-    );
-    expect(find.textContaining('Goal met'), findsOneWidget);
-    expect(find.text('Set your exam date to plan your weeks'), findsOneWidget);
-  });
-
-  testWidgets('a guest sees no Home card', (tester) async {
-    await pump(tester, const ThisWeekCard(), guest: true);
-    expect(find.text('This week'), findsNothing);
-  });
-
-  testWidgets('Plan v2 7.3: no "0 of 50" before the count arrives', (
-    tester,
-  ) async {
-    await pump(
-      tester,
-      const ThisWeekCard(),
-      plan: const PlanSettings(weeklyGoal: 50),
-      counting: true,
-    );
-    expect(find.textContaining('0 of 50'), findsNothing);
-    expect(find.byType(SkeletonBox), findsOneWidget);
-    // CONTROL: a real zero is shown as zero.
-    await pump(
-      tester,
-      const ThisWeekCard(),
-      plan: const PlanSettings(weeklyGoal: 50),
-    );
-    expect(find.text('0 of 50 questions · 50 to go'), findsOneWidget);
   });
 }

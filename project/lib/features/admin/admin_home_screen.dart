@@ -1225,14 +1225,49 @@ class _FlagQueueState extends ConsumerState<_FlagQueue> {
   }
 }
 
-/// A reported question: why students reported it, above the question.
-class _ReportedQuestion extends StatelessWidget {
+/// A reported question: why students reported it, above the question,
+/// and, while reports are open, a way to dismiss them from the list when
+/// the question is right (the workbench's "Nothing to fix", one tap).
+class _ReportedQuestion extends ConsumerStatefulWidget {
   const _ReportedQuestion({required this.row, required this.onTap});
   final FlaggedQuestion row;
   final VoidCallback onTap;
 
   @override
+  ConsumerState<_ReportedQuestion> createState() => _ReportedQuestionState();
+}
+
+class _ReportedQuestionState extends ConsumerState<_ReportedQuestion> {
+  bool _busy = false;
+
+  Future<void> _dismiss() async {
+    final uid = ref.read(currentUserProvider)?.uid;
+    if (uid == null) return;
+    final messenger = ScaffoldMessenger.of(context);
+    setState(() => _busy = true);
+    try {
+      await ref
+          .read(adminFlagRepositoryProvider)
+          .dismiss(row: widget.row, uid: uid);
+      ref.invalidate(adminFlagQueueProvider);
+      messenger.showSnackBar(
+        const SnackBar(content: Text('Reports dismissed: the answer stands')),
+      );
+    } catch (e) {
+      messenger.showSnackBar(SnackBar(content: Text("Couldn't dismiss: $e")));
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final row = widget.row;
+    final open = row.openReports.length;
+    final canReview = ref
+        .watch(staffAccessProvider)
+        .roleIn(row.question!.question.subjectId)
+        .canReview;
     final reasons = row.openReasonCounts
         .map((e) => '${e.$2} × ${e.$1.label}')
         .join(' · ');
@@ -1252,9 +1287,22 @@ class _ReportedQuestion extends StatelessWidget {
           ),
         QuestionListCard(
           question: row.question!,
-          openReports: row.openReports.length,
-          onTap: onTap,
+          openReports: open,
+          onTap: widget.onTap,
         ),
+        if (open > 0 && canReview)
+          Align(
+            alignment: Alignment.centerRight,
+            child: TextButton.icon(
+              key: ValueKey('reports.dismiss.${row.questionId}'),
+              onPressed: _busy ? null : _dismiss,
+              icon: const Icon(Icons.done_rounded, size: 18),
+              label: Text(
+                'Nothing wrong: dismiss '
+                '${open == 1 ? 'the report' : '$open reports'}',
+              ),
+            ),
+          ),
       ],
     );
   }
