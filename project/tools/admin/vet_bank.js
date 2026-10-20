@@ -480,7 +480,10 @@ async function apply() {
   const writer = db().bulkWriter();
   let ok = 0;
   const skipped = [];
+  // Retry what the network dropped (DEADLINE_EXCEEDED, UNAVAILABLE): on
+  // 2026-10-20 an outage timed out a whole night's batch.
   writer.onWriteError((e) => {
+    if ((e.code === 4 || e.code === 14) && e.failedAttempts < 6) return true;
     skipped.push({ id: e.documentRef.id, why: e.code === 9 ? "changed since the export" : e.message });
     return false;
   });
@@ -499,7 +502,8 @@ async function apply() {
   }
   await writer.close();
   await new Promise((r) => log.end(r));
-  budget.spend(batch.length);
+  // Only writes that landed cost quota.
+  budget.spend(ok);
   if (skipped.length) writeJson(`skipped_${stamp}.json`, skipped);
   console.log(`vetted ${ok}; skipped ${skipped.length}${skipped.length ? ` (see .vetting/skipped_${stamp}.json)` : ""}`);
 }
