@@ -33,6 +33,14 @@ Six stacked PRs. Merge them oldest first, each after CI is green.
    (search engines will drop them; they return as you vet).
 7. **Vet.** Open Studio → Question bank, pick a subject, and press **Vet** on a topic.
    "Approve & next" (Ctrl+Enter) saves any edits and moves on. Counts refresh nightly.
+   - **The bulk pass** (2026-10-19 to 22, `tools/admin/vet_bank.js`) vetted about 67k
+     questions as "the automatic check". About 1,300 wait for you, each with a
+     `vetNote` (shown in the vet bar).
+   - **580 of those already carry a drafted fix** ("Fixed by the automatic check,
+     waiting for your approval"). Approve each one, or edit it first.
+   - **The last batch.** If the final day's batch hasn't run, finish it from `project/`:
+     `node tools/admin/vet_bank.js --apply --commit`, then
+     `node tools/admin/jobs.js --job=counts --apply`.
 
 ## 1. Merge the stack, in order
 
