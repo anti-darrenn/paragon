@@ -13,8 +13,9 @@
 #            the URL. Live deploys stay manual: the owner runs them.
 #
 # Firestore reads: `content` costs ~250 (lint + counts). The static pages
-# read ~4,500 documents once, then come from a cache keyed by ISO week, so
-# a busy week of pull requests reads them once.
+# read ~4,500 documents, and only on a push to main (cached by ISO week,
+# which pull requests can then reuse). A pull request never reads them
+# from Firestore; see the post-build step.
 name: ci
 
 on:
@@ -86,7 +87,11 @@ jobs:
         run: |
           (cd tools/admin && npm ci --ignore-scripts --no-audit --no-fund)
           (cd tools/site && npm ci --ignore-scripts --no-audit --no-fund)
-          if [ -n "$FIREBASE_SERVICE_ACCOUNT" ] || [ -f tools/site/.cache/data.json ]; then
+          # A cold cache costs ~4,500 Firestore reads. On 2026-10-15 a day of
+          # pull-request runs spent most of Spark's 50k and took the live app
+          # down until the quota reset. So only a push to main reads Firestore
+          # here; a pull request uses main's warm cache or skips the pages.
+          if [ -f tools/site/.cache/data.json ] || { [ "${{ github.event_name }}" = "push" ] && [ -n "$FIREBASE_SERVICE_ACCOUNT" ]; }; then
             node tools/site/build_static_site.js
           else
             node -e "const {trimFonts}=require('./tools/site/trim_fonts');console.log(trimFonts('build/web'))"
