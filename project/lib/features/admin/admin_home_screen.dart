@@ -1347,18 +1347,13 @@ class _LessonReports extends ConsumerWidget {
           error: (e, _) =>
               StudioError(message: "Couldn't load lesson reports.", error: e),
           data: (list) => list.isEmpty
-              ? Text(
-                  'No open lesson reports.',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.textSecondary,
-                  ),
+              ? const EmptyState(
+                  compact: true,
+                  icon: Icons.check_circle_outline_rounded,
+                  title: 'No open lesson reports',
                 )
-              : Container(
-                  decoration: BoxDecoration(
-                    color: context.palette.surface,
-                    border: Border.all(color: context.palette.border),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
+              : SurfaceCard(
+                  padding: EdgeInsets.zero,
                   child: Column(
                     children: [
                       for (final r in list)
@@ -1376,11 +1371,11 @@ class _LessonReports extends ConsumerWidget {
                               color: context.palette.textPrimary,
                             ),
                           ),
-                          subtitle: Text(
-                            r.resourceId,
-                            style: AppTheme.caption.copyWith(
-                              color: context.palette.textSecondary,
-                            ),
+                          // The lesson's title, not its id: one metered read
+                          // per open report, staff only.
+                          subtitle: _ResourceTitle(
+                            topicId: r.topicId,
+                            resourceId: r.resourceId,
                           ),
                           trailing: Wrap(
                             children: [
@@ -1401,6 +1396,30 @@ class _LessonReports extends ConsumerWidget {
                 ),
         ),
       ],
+    );
+  }
+}
+
+/// A reported lesson's title, read once; its id while it loads or if it
+/// has gone.
+class _ResourceTitle extends ConsumerWidget {
+  const _ResourceTitle({required this.topicId, required this.resourceId});
+
+  final String topicId;
+  final String resourceId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final resource = ref
+        .watch(adminResourceProvider((topicId: topicId, resourceId: resourceId)))
+        .asData
+        ?.value;
+    final title = resource?.title.trim() ?? '';
+    return Text(
+      title.isEmpty ? resourceId : '${resource!.type.label}: $title',
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+      style: AppTheme.label.copyWith(color: context.palette.textSecondary),
     );
   }
 }

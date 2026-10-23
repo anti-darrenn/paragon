@@ -990,6 +990,9 @@ follows `prefers-reduced-motion`. `Confetti` lives in `core/widgets/motion/`.
   every tone is 4.5:1 on both backgrounds, with orange-on-white as its control.
 - **White text sits on `AppColors.successStrong` / `dangerStrong`**, never on `correct` or
   `wrong`.
+- **Text and icons on an orange fill are `AppColors.onPrimary`** (near-black, 6.2:1), never
+  white (2.7:1, which fails). Buttons get it from the theme; set it only on a hand-made
+  orange fill.
 - In a dialog builder, read the palette from the dialog's own context: the screen's
   context may be closing (the topic test's Leave dialog threw).
 

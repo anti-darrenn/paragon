@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 class AppColors {
   // ── Primary brand color ───────────────────────────────────────────
   static const primary = Color(0xFFFF7700); // Orange — from Figma
+
+  /// Words and icons on an orange fill: a primary button, a selected
+  /// option's letter. Near-black, 6.2:1 on the orange; white was 2.7:1,
+  /// which fails WCAG AA for text (UI pass, 2026-10-23). Also reads on the
+  /// subject colours and the medal colours.
+  static const onPrimary = Color(0xFF1B1F24);
   static const primaryDark = Color(
     0xFFCC5F00,
   ); // Pressed shade — primary at 80% (~20% darker)
