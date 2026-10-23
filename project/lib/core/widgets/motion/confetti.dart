@@ -21,7 +21,11 @@ const kConfettiColours = <Color>[
 /// Lay it over a screen in a `Stack` (it fills its box and ignores taps).
 /// It falls once.
 class Confetti extends StatefulWidget {
-  const Confetti({super.key, this.pieces = 90, this.colours = kConfettiColours});
+  const Confetti({
+    super.key,
+    this.pieces = 90,
+    this.colours = kConfettiColours,
+  });
 
   final int pieces;
   final List<Color> colours;
@@ -81,7 +85,9 @@ class _ConfettiState extends State<Confetti>
 
 class _ConfettiPainter extends CustomPainter {
   _ConfettiPainter(this.bits, this.t);
-  final List<({double x, double delay, double speed, double spin, Color colour})>
+  final List<
+    ({double x, double delay, double speed, double spin, Color colour})
+  >
   bits;
   final double t;
 

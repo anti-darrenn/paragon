@@ -138,10 +138,8 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                       uploading: _uploading,
                       onUpload: _uploadPhoto,
                       onRemove: () => setState(
-                        () => _avatar = Avatar.parse(
-                          null,
-                          seed: user?.uid ?? '',
-                        ),
+                        () =>
+                            _avatar = Avatar.parse(null, seed: user?.uid ?? ''),
                       ),
                     ),
                     const SizedBox(height: 24),
@@ -188,7 +186,9 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                       const SizedBox(height: 14),
                       Text(
                         _error!,
-                        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
+                        style: AppTheme.bodyMd.copyWith(
+                          color: context.palette.dangerFg,
+                        ),
                       ),
                     ],
                     const SizedBox(height: 24),

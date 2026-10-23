@@ -398,7 +398,9 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
             if (available == 0) {
               return Text(
                 'No questions found for this combination.',
-                style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
+                style: AppTheme.caption.copyWith(
+                  color: context.palette.dangerFg,
+                ),
               );
             }
             final base = Text(
@@ -424,7 +426,9 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                   ),
                   child: Text(
                     'Only $available available — your exam will have $available questions.',
-                    style: AppTheme.caption.copyWith(color: context.palette.warningFg),
+                    style: AppTheme.caption.copyWith(
+                      color: context.palette.warningFg,
+                    ),
                   ),
                 ),
               ],

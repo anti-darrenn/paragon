@@ -162,7 +162,9 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
             onPressed: () => Navigator.of(context).pop(true),
             child: Text(
               'Sign out everywhere',
-              style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.dangerFg,
+              ),
             ),
           ),
         ],
@@ -247,7 +249,9 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
             },
             child: Text(
               'Send link',
-              style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.primaryFg,
+              ),
             ),
           ),
         ],

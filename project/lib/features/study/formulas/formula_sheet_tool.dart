@@ -72,7 +72,9 @@ class FormulaSheetScreen extends StatelessWidget {
               padding: const EdgeInsets.only(top: 16, bottom: 6),
               child: Text(
                 t.topicName.isEmpty ? t.topicId : t.topicName,
-                style: AppTheme.label.copyWith(color: context.palette.primaryFg),
+                style: AppTheme.label.copyWith(
+                  color: context.palette.primaryFg,
+                ),
               ),
             ),
           );

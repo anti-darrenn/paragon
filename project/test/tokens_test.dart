@@ -59,12 +59,21 @@ void main() {
     // Control: the bright brand orange is exactly what fails on white, so
     // this test would catch the light palette pointing back at it.
     test('control: bright orange fails as text on white', () {
-      expect(contrast(AppColors.primary, AppPalette.light.surface), lessThan(3));
+      expect(
+        contrast(AppColors.primary, AppPalette.light.surface),
+        lessThan(3),
+      );
     });
 
     test('strong fills carry white text', () {
-      expect(contrast(Colors.white, AppColors.successStrong), greaterThanOrEqualTo(4.5));
-      expect(contrast(Colors.white, AppColors.dangerStrong), greaterThanOrEqualTo(4.5));
+      expect(
+        contrast(Colors.white, AppColors.successStrong),
+        greaterThanOrEqualTo(4.5),
+      );
+      expect(
+        contrast(Colors.white, AppColors.dangerStrong),
+        greaterThanOrEqualTo(4.5),
+      );
     });
   });
 
@@ -101,12 +110,18 @@ void main() {
     testWidgets('confetti draws nothing under reduced motion', (tester) async {
       await tester.pumpWidget(_app(const Confetti(), still: true));
       expect(
-        find.descendant(of: find.byType(Confetti), matching: find.byType(CustomPaint)),
+        find.descendant(
+          of: find.byType(Confetti),
+          matching: find.byType(CustomPaint),
+        ),
         findsNothing,
       );
       await tester.pumpWidget(_app(const Confetti(key: ValueKey('moving'))));
       expect(
-        find.descendant(of: find.byType(Confetti), matching: find.byType(CustomPaint)),
+        find.descendant(
+          of: find.byType(Confetti),
+          matching: find.byType(CustomPaint),
+        ),
         findsOneWidget,
       );
       await tester.pumpAndSettle();

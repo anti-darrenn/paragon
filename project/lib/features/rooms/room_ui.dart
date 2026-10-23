@@ -24,7 +24,11 @@ final kRoomConfettiColours = [for (final s in roomShapes) s.color];
 
 /// One shape and colour per option, A to E.
 const roomShapes = <({IconData icon, Color color, String name})>[
-  (icon: Icons.change_history_rounded, color: AppColors.roomRed, name: 'triangle'),
+  (
+    icon: Icons.change_history_rounded,
+    color: AppColors.roomRed,
+    name: 'triangle',
+  ),
   (icon: Icons.diamond_rounded, color: AppColors.roomBlue, name: 'diamond'),
   (icon: Icons.circle, color: AppColors.roomYellow, name: 'circle'),
   (icon: Icons.square_rounded, color: AppColors.roomGreen, name: 'square'),
@@ -109,7 +113,8 @@ class ShapeTile extends StatelessWidget {
                     vertical: 12,
                   ),
                   decoration: BoxDecoration(
-                    border: state == TileState.selected ||
+                    border:
+                        state == TileState.selected ||
                             state == TileState.correct
                         ? Border.all(color: Colors.white, width: 3)
                         : null,
@@ -140,7 +145,9 @@ class ShapeTile extends StatelessWidget {
                       if (count != null)
                         Text(
                           '$count',
-                          style: AppTheme.heading3.copyWith(color: Colors.white),
+                          style: AppTheme.heading3.copyWith(
+                            color: Colors.white,
+                          ),
                         ),
                       if (state == TileState.correct)
                         const Padding(
@@ -174,7 +181,10 @@ class ShapeGrid extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             for (var i = 0; i < count; i++)
-              Padding(padding: const EdgeInsets.only(bottom: 10), child: tile(i)),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: tile(i),
+              ),
           ],
         );
       }
@@ -286,7 +296,11 @@ class _CountdownRingState extends State<CountdownRing>
 }
 
 class _RingPainter extends CustomPainter {
-  _RingPainter({required this.fraction, required this.colour, required this.track});
+  _RingPainter({
+    required this.fraction,
+    required this.colour,
+    required this.track,
+  });
   final double fraction;
   final Color colour;
   final Color track;
@@ -299,7 +313,13 @@ class _RingPainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke
       ..strokeCap = StrokeCap.round;
-    canvas.drawArc(rect.deflate(stroke / 2), 0, 2 * pi, false, paint..color = track);
+    canvas.drawArc(
+      rect.deflate(stroke / 2),
+      0,
+      2 * pi,
+      false,
+      paint..color = track,
+    );
     canvas.drawArc(
       rect.deflate(stroke / 2),
       -pi / 2,
@@ -375,10 +395,13 @@ class Leaderboard extends StatelessWidget {
                           child: Container(
                             height: 40,
                             decoration: BoxDecoration(
-                              color: (r.uid == highlight
-                                      ? AppColors.primary
-                                      : AppColors.accentBlue)
-                                  .withAlpha(r.uid == highlight ? 200 : 140),
+                              color:
+                                  (r.uid == highlight
+                                          ? AppColors.primary
+                                          : AppColors.accentBlue)
+                                      .withAlpha(
+                                        r.uid == highlight ? 200 : 140,
+                                      ),
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
@@ -432,7 +455,12 @@ class Leaderboard extends StatelessWidget {
 
 /// The first three on steps that rise, with confetti behind.
 class PodiumSteps extends StatelessWidget {
-  const PodiumSteps({super.key, required this.scores, required this.names, required this.avatar});
+  const PodiumSteps({
+    super.key,
+    required this.scores,
+    required this.names,
+    required this.avatar,
+  });
 
   final Map<String, int> scores;
   final Map<String, String> names;
@@ -477,12 +505,16 @@ class PodiumSteps extends StatelessWidget {
                   ),
                   Text(
                     '${r.score}',
-                    style: AppTheme.caption.copyWith(color: palette.textSecondary),
+                    style: AppTheme.caption.copyWith(
+                      color: palette.textSecondary,
+                    ),
                   ),
                   const SizedBox(height: 6),
                   TweenAnimationBuilder<double>(
                     tween: Tween(begin: still ? height : 0, end: height),
-                    duration: Duration(milliseconds: still ? 0 : 600 + rank * 300),
+                    duration: Duration(
+                      milliseconds: still ? 0 : 600 + rank * 300,
+                    ),
                     curve: Curves.easeOutBack,
                     builder: (context, h, _) => Container(
                       height: h.clamp(0, height),
@@ -553,7 +585,9 @@ class _GetReadyState extends State<GetReady> {
             Text(
               widget.title!,
               textAlign: TextAlign.center,
-              style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
+              style: AppTheme.heading2.copyWith(
+                color: context.palette.textPrimary,
+              ),
             ),
           const SizedBox(height: 24),
           AnimatedSwitcher(

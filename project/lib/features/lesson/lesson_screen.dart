@@ -330,7 +330,9 @@ class _SidebarHeader extends StatelessWidget {
               onTap: () => context.go(path),
               child: Text(
                 '← Topic overview',
-                style: AppTheme.caption.copyWith(color: context.palette.primaryFg),
+                style: AppTheme.caption.copyWith(
+                  color: context.palette.primaryFg,
+                ),
               ),
             ),
           const SizedBox(height: 10),

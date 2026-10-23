@@ -47,7 +47,9 @@ class DecksScreen extends ConsumerWidget {
             Text(
               'Your decks are kept on this device. Make an account to keep '
               'them everywhere.',
-              style: AppTheme.caption.copyWith(color: context.palette.warningFg),
+              style: AppTheme.caption.copyWith(
+                color: context.palette.warningFg,
+              ),
             ),
           ],
           const SizedBox(height: 20),

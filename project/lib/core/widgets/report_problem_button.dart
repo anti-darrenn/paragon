@@ -26,7 +26,8 @@ class ReportProblemButton extends ConsumerStatefulWidget {
   final bool isGenerated;
 
   @override
-  ConsumerState<ReportProblemButton> createState() => _ReportProblemButtonState();
+  ConsumerState<ReportProblemButton> createState() =>
+      _ReportProblemButtonState();
 }
 
 class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
@@ -39,7 +40,9 @@ class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
 
     setState(() => _sending = true);
     try {
-      await ref.read(flagRepositoryProvider).create(
+      await ref
+          .read(flagRepositoryProvider)
+          .create(
             userId: user.uid,
             questionId: widget.questionId,
             reason: reason,
@@ -48,7 +51,9 @@ class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
     } catch (_) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Couldn't send your report. Try again.")),
+          const SnackBar(
+            content: Text("Couldn't send your report. Try again."),
+          ),
         );
       }
     } finally {

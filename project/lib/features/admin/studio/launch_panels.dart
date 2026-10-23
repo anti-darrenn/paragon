@@ -439,7 +439,9 @@ class ContentQualityPanel extends ConsumerWidget {
               Text(
                 'This audit was published before questions could be listed. '
                 'Publish it again to open the questions behind each count.',
-                style: AppTheme.caption.copyWith(color: context.palette.warningFg),
+                style: AppTheme.caption.copyWith(
+                  color: context.palette.warningFg,
+                ),
               ),
             ],
             for (final (level, title, help) in groups)
@@ -566,7 +568,9 @@ class _RuleTileState extends ConsumerState<_RuleTile> {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
                     '$dismissed dismissed as nothing wrong',
-                    style: AppTheme.caption.copyWith(color: context.palette.successFg),
+                    style: AppTheme.caption.copyWith(
+                      color: context.palette.successFg,
+                    ),
                   ),
                 ),
               for (final q in open)

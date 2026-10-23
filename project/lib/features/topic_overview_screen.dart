@@ -756,7 +756,9 @@ class _Breadcrumb extends StatelessWidget {
                 onTap: () => context.go(crumbs[i].path!),
                 child: Text(
                   crumbs[i].label,
-                  style: AppTheme.label.copyWith(color: context.palette.primaryFg),
+                  style: AppTheme.label.copyWith(
+                    color: context.palette.primaryFg,
+                  ),
                 ),
               ),
             ),
@@ -802,7 +804,9 @@ class _NotFound extends StatelessWidget {
               ),
               child: Text(
                 'Back to courses',
-                style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
+                style: AppTheme.btnLabel.copyWith(
+                  color: context.palette.primaryFg,
+                ),
               ),
             ),
           ],
@@ -833,4 +837,3 @@ class _OnFirstBuildState extends State<_OnFirstBuild> {
   @override
   Widget build(BuildContext context) => widget.child;
 }
-

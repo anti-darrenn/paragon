@@ -245,7 +245,9 @@ class _MistakeCard extends StatelessWidget {
                   tilePadding: EdgeInsets.zero,
                   title: Text(
                     'Show the working',
-                    style: AppTheme.bodyMd.copyWith(color: context.palette.primaryFg),
+                    style: AppTheme.bodyMd.copyWith(
+                      color: context.palette.primaryFg,
+                    ),
                   ),
                   children: [
                     if (q.explanation.trim().isNotEmpty)

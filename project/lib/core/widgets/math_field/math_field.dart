@@ -295,7 +295,9 @@ class _MathFieldState extends State<MathField> {
             child: Text(
               'This has LaTeX that Normal mode cannot show. Switch to LaTeX '
               'to edit it.',
-              style: AppTheme.caption.copyWith(color: context.palette.warningFg),
+              style: AppTheme.caption.copyWith(
+                color: context.palette.warningFg,
+              ),
             ),
           ),
         if (widget.showPreview && hasMaths && stored.trim().isNotEmpty)

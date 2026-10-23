@@ -55,10 +55,7 @@ class OnboardingScaffold extends StatelessWidget {
         body: SafeArea(
           child: Center(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 24,
-                vertical: 32,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 460),
                 child: Column(
@@ -250,7 +247,9 @@ class OnboardingTextField extends StatelessWidget {
         if (label != null) ...[
           Text(
             label!,
-            style: AppTheme.label.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.label.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 8),
         ],

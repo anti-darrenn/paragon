@@ -75,8 +75,7 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
         style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
       ),
       data: (list) {
-        final subjectId =
-            _subjectId ?? (list.isEmpty ? null : list.first.id);
+        final subjectId = _subjectId ?? (list.isEmpty ? null : list.first.id);
         final topics = subjectId == null
             ? null
             : ref.watch(subjectTopicsProvider(subjectId));
@@ -115,7 +114,9 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
                 loading: () => const StudioListSkeleton(),
                 error: (e, _) => Text(
                   "Couldn't load the topics.\n$e",
-                  style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
+                  style: AppTheme.bodyMd.copyWith(
+                    color: context.palette.dangerFg,
+                  ),
                 ),
                 data: (ts) {
                   final pending = ts.fold<int>(0, (n, t) => n + t.pendingCount);

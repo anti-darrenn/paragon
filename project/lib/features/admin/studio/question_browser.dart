@@ -112,9 +112,9 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
     if (!mounted || (_rows.isEmpty && _also.isEmpty)) return;
     try {
       final fresh = {
-        for (final q in await ref
-            .read(adminQuestionRepositoryProvider)
-            .byIds([for (final q in [..._rows, ..._also]) q.question.id]))
+        for (final q in await ref.read(adminQuestionRepositoryProvider).byIds([
+          for (final q in [..._rows, ..._also]) q.question.id,
+        ]))
           q.question.id: q,
       };
       if (!mounted) return;

@@ -59,13 +59,13 @@ class WaecExamSessionData {
 /// cannot be used in the router's `is` check.
 Widget waecExamRoute(String subjectId, Object? extra, {String? routeKey}) =>
     WaecExamScreen(
-  subjectId: subjectId,
-  routeKey: routeKey,
-  // Direct URL / bad deep link with no route extra is handled inside
-  // WaecExamScreen itself (redirects back to setup) rather than crashing
-  // on a bad cast — see its initState.
-  session: extra is WaecExamSessionData ? extra : null,
-);
+      subjectId: subjectId,
+      routeKey: routeKey,
+      // Direct URL / bad deep link with no route extra is handled inside
+      // WaecExamScreen itself (redirects back to setup) rather than crashing
+      // on a bad cast — see its initState.
+      session: extra is WaecExamSessionData ? extra : null,
+    );
 
 class WaecExamScreen extends ConsumerStatefulWidget {
   final String subjectId;
@@ -132,7 +132,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       // on `extra` validation) via addPostFrameCallback, since calling
       // context.go() during the current build would throw.
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) context.go('/waec/${widget.routeKey ?? widget.subjectId}/setup');
+        if (mounted)
+          context.go('/waec/${widget.routeKey ?? widget.subjectId}/setup');
       });
       return;
     }

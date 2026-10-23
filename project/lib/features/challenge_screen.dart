@@ -446,9 +446,7 @@ class _SittingState extends ConsumerState<_Sitting> {
                         color: AppColors.correct,
                       )
                     : null,
-                onTap: () => context.push(
-                  widget.course.pathForTopicId(e.key),
-                ),
+                onTap: () => context.push(widget.course.pathForTopicId(e.key)),
               ),
             const SizedBox(height: 20),
             Text(

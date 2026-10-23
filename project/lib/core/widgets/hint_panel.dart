@@ -77,7 +77,9 @@ class HintPanel extends StatelessWidget {
                   shown == 0
                       ? 'Get a hint'
                       : 'Next hint (${shown + 1} of ${steps.length})',
-                  style: AppTheme.bodyMd.copyWith(color: context.palette.infoFg),
+                  style: AppTheme.bodyMd.copyWith(
+                    color: context.palette.infoFg,
+                  ),
                 ),
               ),
             ),

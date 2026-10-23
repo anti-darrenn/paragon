@@ -87,7 +87,9 @@ class _UsernameSettingsScreenState
             onPressed: () => Navigator.of(context).pop(true),
             child: Text(
               'Change it',
-              style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.primaryFg,
+              ),
             ),
           ),
         ],

@@ -335,7 +335,9 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
             onPressed: () => Navigator.of(context).pop(_DeleteChoice.now),
             child: Text(
               isGuest ? 'Delete everything' : 'Delete now',
-              style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.dangerFg,
+              ),
             ),
           ),
           if (!isGuest)
@@ -344,7 +346,9 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
                   Navigator.of(context).pop(_DeleteChoice.scheduled),
               child: Text(
                 'Delete in $days days',
-                style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
+                style: AppTheme.btnLabel.copyWith(
+                  color: context.palette.dangerFg,
+                ),
               ),
             ),
         ],
@@ -435,7 +439,9 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
                     )
                   : Text(
                       'Delete my account',
-                      style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
+                      style: AppTheme.btnLabel.copyWith(
+                        color: context.palette.dangerFg,
+                      ),
                     ),
             ),
           ),

@@ -189,7 +189,11 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
               ],
             )
           else if (_questions case final qs?)
-            QuestionRunner(questions: qs, ratings: _ratings, onFinished: _finish)
+            QuestionRunner(
+              questions: qs,
+              ratings: _ratings,
+              onFinished: _finish,
+            )
           else
             _setup(palette),
         ],
@@ -199,7 +203,8 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
 
   Widget _setup(AppPalette palette) {
     final subjects = ref.watch(subjectsProvider).asData?.value ?? const [];
-    final subjectId = _subjectId ?? (subjects.isEmpty ? null : subjects.first.id);
+    final subjectId =
+        _subjectId ?? (subjects.isEmpty ? null : subjects.first.id);
     final course = subjectId == null
         ? null
         : ref.watch(courseProvider(subjectId)).asData?.value;
@@ -334,7 +339,9 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
             padding: const EdgeInsets.only(top: 8),
             child: Text(
               'Choose at least one topic.',
-              style: AppTheme.caption.copyWith(color: context.palette.warningFg),
+              style: AppTheme.caption.copyWith(
+                color: context.palette.warningFg,
+              ),
             ),
           ),
       ],

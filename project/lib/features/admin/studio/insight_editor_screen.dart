@@ -305,7 +305,9 @@ class _InsightEditorScreenState extends ConsumerState<InsightEditorScreen> {
                   const SizedBox(height: 12),
                   Text(
                     _error!,
-                    style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
+                    style: AppTheme.bodyMd.copyWith(
+                      color: context.palette.dangerFg,
+                    ),
                   ),
                 ],
                 const SizedBox(height: 16),

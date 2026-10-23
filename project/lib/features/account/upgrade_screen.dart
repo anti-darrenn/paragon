@@ -215,7 +215,9 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                       const SizedBox(height: 14),
                       Text(
                         _error!,
-                        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
+                        style: AppTheme.bodyMd.copyWith(
+                          color: context.palette.dangerFg,
+                        ),
                       ),
                     ],
                     const SizedBox(height: 20),

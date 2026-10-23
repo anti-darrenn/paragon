@@ -267,7 +267,9 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              mine == null ? 'Pick an answer.' : 'Locked in. Wait for the reveal.',
+              mine == null
+                  ? 'Pick an answer.'
+                  : 'Locked in. Wait for the reveal.',
               textAlign: TextAlign.center,
               style: AppTheme.bodyLg.copyWith(
                 color: palette.textPrimary,
@@ -281,9 +283,7 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
         final right = mine != null && mine == q.correctIndex;
         // Exact when this phone saw the question; unknown after a reload.
         final before = _scoreAtQuestion[room.index];
-        final gained = before == null
-            ? 0
-            : (room.scores[uid] ?? 0) - before;
+        final gained = before == null ? 0 : (room.scores[uid] ?? 0) - before;
         final rows = standings(room.scores);
         final me = rows.where((r) => r.uid == uid).firstOrNull;
         final run = room.streaks[uid] ?? 0;
@@ -373,7 +373,8 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
                 ),
               ],
             ),
-            if (top) Positioned.fill(
+            if (top)
+              Positioned.fill(
                 child: Confetti(pieces: 60, colours: kRoomConfettiColours),
               ),
           ],
@@ -465,4 +466,3 @@ class _Verdict extends StatelessWidget {
     );
   }
 }
-

@@ -155,7 +155,9 @@ class _TapToLoad extends StatelessWidget {
               ),
               Text(
                 'Tap to load image',
-                style: AppTheme.caption.copyWith(color: context.palette.primaryFg),
+                style: AppTheme.caption.copyWith(
+                  color: context.palette.primaryFg,
+                ),
               ),
             ],
           ),

@@ -55,8 +55,7 @@ class PageBody extends StatelessWidget {
         child: ListView(
           controller: controller,
           padding:
-              padding ??
-              EdgeInsets.fromLTRB(side, compact ? 16 : 24, side, 48),
+              padding ?? EdgeInsets.fromLTRB(side, compact ? 16 : 24, side, 48),
           children: children,
         ),
       ),

@@ -154,7 +154,9 @@ class GlossaryScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 16, bottom: 4),
                 child: Text(
                   l,
-                  style: AppTheme.label.copyWith(color: context.palette.primaryFg),
+                  style: AppTheme.label.copyWith(
+                    color: context.palette.primaryFg,
+                  ),
                 ),
               ),
             );

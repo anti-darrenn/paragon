@@ -222,8 +222,7 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
                   : () => _do(() async {
                       if (room.isLast) {
                         await repo.podium(room.code, {
-                          for (final p in players.keys)
-                            p: room.scores[p] ?? 0,
+                          for (final p in players.keys) p: room.scores[p] ?? 0,
                         });
                       } else {
                         await repo.showQuestion(room.code, room.index + 1);
@@ -458,7 +457,9 @@ class _QuestionStage extends StatelessWidget {
               child: Text(
                 '$answered',
                 key: ValueKey(answered),
-                style: AppTheme.heading2.copyWith(color: context.palette.primaryFg),
+                style: AppTheme.heading2.copyWith(
+                  color: context.palette.primaryFg,
+                ),
               ),
             ),
             Text(

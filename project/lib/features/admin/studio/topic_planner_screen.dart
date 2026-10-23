@@ -204,7 +204,9 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                 padding: const EdgeInsets.all(20),
                 child: Text(
                   "Couldn't load this topic.\n$e",
-                  style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
+                  style: AppTheme.bodyMd.copyWith(
+                    color: context.palette.dangerFg,
+                  ),
                 ),
               ),
               data: (loaded) {
@@ -360,7 +362,9 @@ class _StudentPreview extends StatelessWidget {
                 ),
                 child: Text(
                   'Preview including drafts. Students see only published items. Revisions are not shown; they replace their original when approved.',
-                  style: AppTheme.caption.copyWith(color: context.palette.warningFg),
+                  style: AppTheme.caption.copyWith(
+                    color: context.palette.warningFg,
+                  ),
                 ),
               ),
               for (final r in shown) ...[
@@ -422,7 +426,10 @@ class _ItemMenu extends ConsumerWidget {
         if (canDelete)
           PopupMenuItem(
             value: 'delete',
-            child: Text('Delete', style: TextStyle(color: context.palette.dangerFg)),
+            child: Text(
+              'Delete',
+              style: TextStyle(color: context.palette.dangerFg),
+            ),
           ),
       ],
     );

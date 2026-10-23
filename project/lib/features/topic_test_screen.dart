@@ -573,7 +573,9 @@ class _Result extends StatelessWidget {
                 'Your score above is right, but it could not be saved — so '
                 'this attempt has not unlocked anything yet. Check your '
                 'connection and take the test again.',
-                style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
+                style: AppTheme.bodyMd.copyWith(
+                  color: context.palette.dangerFg,
+                ),
               ),
             ),
           ],
@@ -711,7 +713,9 @@ class _Review extends StatelessWidget {
                         color: palette.textPrimary,
                       ),
                     ),
-                  QuestionImage.workedAnswer(assetId: questions[n].explanationImageId),
+                  QuestionImage.workedAnswer(
+                    assetId: questions[n].explanationImageId,
+                  ),
                 ],
               ),
             )
@@ -771,7 +775,9 @@ class _EmptyBank extends StatelessWidget {
             ),
             child: Text(
               'Back',
-              style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.primaryFg,
+              ),
             ),
           ),
         ],

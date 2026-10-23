@@ -457,7 +457,9 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
               padding: const EdgeInsets.all(20),
               child: Text(
                 "Couldn't load this question.\n$e",
-                style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
+                style: AppTheme.bodyMd.copyWith(
+                  color: context.palette.dangerFg,
+                ),
               ),
             ),
             data: (row) => LayoutBuilder(
@@ -660,7 +662,9 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                   padding: const EdgeInsets.only(top: 4),
                   child: Text(
                     e,
-                    style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
+                    style: AppTheme.caption.copyWith(
+                      color: context.palette.dangerFg,
+                    ),
                   ),
                 ),
               const SizedBox(height: 18),
