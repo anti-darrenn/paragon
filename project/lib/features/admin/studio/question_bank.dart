@@ -15,6 +15,7 @@ import '../../../core/widgets/ui/ui.dart';
 import '../admin_paths.dart';
 import 'question_widgets.dart';
 import 'studio_error.dart';
+import 'subject_picker.dart';
 
 /// The founder's question bank (owner's decision, 2026-10-17).
 ///
@@ -79,20 +80,13 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                for (final s in list)
-                  ChoiceChip(
-                    label: Text(s.name),
-                    selected: s.id == subjectId,
-                    onSelected: (_) => setState(() {
-                      _subjectId = s.id;
-                      _openTopic = null;
-                    }),
-                  ),
-              ],
+            StudioSubjectPicker(
+              subjects: list,
+              selected: subjectId,
+              onSelected: (id) => setState(() {
+                _subjectId = id;
+                _openTopic = null;
+              }),
             ),
             const SizedBox(height: 16),
             if (subjectId != null)

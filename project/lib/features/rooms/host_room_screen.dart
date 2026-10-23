@@ -22,6 +22,8 @@ import '../../core/widgets/share_link_button.dart';
 import '../../core/widgets/ui/ui.dart';
 import '../../core/widgets/user_avatar.dart';
 import 'room_ui.dart';
+import '../../core/sound/play_cue.dart';
+import '../../core/sound/sfx.dart';
 
 /// `/rooms/:code/host`: the screen on the projector.
 ///
@@ -68,6 +70,8 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
   }
 
   Future<void> _do(Future<void> Function() action) async {
+    // Every host action is a tap: wake the audio for the podium's fanfare.
+    Sfx.unlock();
     if (_busy) return;
     setState(() => _busy = true);
     try {
@@ -632,7 +636,13 @@ class _PodiumStage extends StatelessWidget {
             if (action != null) ...[const SizedBox(height: 16), action!],
           ],
         ),
-        Positioned.fill(child: Confetti(colours: kRoomConfettiColours)),
+        // The projector's fanfare, if sound is on on that device.
+        Positioned.fill(
+          child: PlayCue(
+            cue: SfxCue.celebrate,
+            child: Confetti(colours: kRoomConfettiColours),
+          ),
+        ),
       ],
     );
   }
