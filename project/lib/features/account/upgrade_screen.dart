@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/widgets/auth/google_button.dart';
 import '../../core/auth/password_rules.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/theme/app_colors.dart';
@@ -137,39 +138,11 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                       ),
                     ),
                     const SizedBox(height: 28),
-                    SizedBox(
-                      height: 52,
-                      child: ElevatedButton(
-                        onPressed: _isLoading
-                            ? null
-                            : () => _run(
-                                () => GuestUpgrade.withGoogle(ref),
-                                isGoogle: true,
-                              ),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColors.buttonLight,
-                          elevation: 0,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              'assets/icons/google_g.png',
-                              width: 28,
-                              height: 28,
-                            ),
-                            const SizedBox(width: 10),
-                            Text(
-                              'Continue with Google',
-                              style: AppTheme.btnLabel.copyWith(
-                                color: context.palette.background,
-                              ),
-                            ),
-                          ],
-                        ),
+                    GoogleSignInButton(
+                      loading: _isLoading,
+                      onPressed: () => _run(
+                        () => GuestUpgrade.withGoogle(ref),
+                        isGoogle: true,
                       ),
                     ),
                     const SizedBox(height: 24),

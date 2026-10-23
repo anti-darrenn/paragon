@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/widgets/ui/ui.dart';
 import '../../core/onboarding/onboarding_step.dart';
 import '../../core/providers/analytics_provider.dart';
 import '../../core/providers/auth_provider.dart';
@@ -90,13 +91,15 @@ class _OnboardingSubjectsScreenState
       primaryLabel: 'Continue',
       onPrimary: _selected.length >= _minSubjects ? _submit : null,
       child: catalogAsync.when(
-        loading: () => const Padding(
-          padding: EdgeInsets.symmetric(vertical: 40),
-          child: Center(child: CircularProgressIndicator()),
-        ),
-        error: (_, _) => Text(
-          "Couldn't load subjects. Check your connection and try again.",
-          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+        loading: () => const SkeletonPage(title: false, count: 4, cardHeight: 64),
+        error: (_, _) => InlineAlert(
+          tone: Tone.danger,
+          message:
+              "Couldn't load subjects. Check your connection and try again.",
+          action: TextButton(
+            onPressed: () => ref.invalidate(courseCatalogProvider),
+            child: const Text('Try again'),
+          ),
         ),
         data: (courses) {
           final live = courses.where((c) => c.isLive).toList();
