@@ -27,6 +27,7 @@ import 'studio/question_bank.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 import 'studio/studio_error.dart';
+import 'studio/subject_picker.dart';
 
 /// The studio's sections, in the rail's order. [name] is the `?s=` value
 /// (`adminSectionPath`), so every section has its own address.
@@ -679,26 +680,16 @@ class _LessonsSectionState extends ConsumerState<_LessonsSection> {
           'Course map',
           subtitle:
               'Every topic and the state of its lesson. Open one to plan it.',
-          action: subjects.isEmpty
-              ? null
-              : DropdownButton<String>(
-                  value: subjectId,
-                  dropdownColor: context.palette.surface,
-                  underline: const SizedBox.shrink(),
-                  items: [
-                    for (final s in subjects)
-                      DropdownMenuItem(
-                        value: s.id,
-                        child: Text(
-                          access.covers(s.id)
-                              ? s.name
-                              : '${s.name} (read-only)',
-                        ),
-                      ),
-                  ],
-                  onChanged: (id) => setState(() => _subjectId = id),
-                ),
         ),
+        if (subjects.isNotEmpty) ...[
+          StudioSubjectPicker(
+            subjects: subjects,
+            selected: subjectId,
+            readOnly: (id) => !access.covers(id),
+            onSelected: (id) => setState(() => _subjectId = id),
+          ),
+          const SizedBox(height: 16),
+        ],
         if (subjectId != null) _CourseMap(subjectId: subjectId),
       ],
     );

@@ -20,6 +20,7 @@ import '../../../core/web/browser.dart';
 import '../../../core/widgets/ui/ui.dart';
 import 'launch_panels.dart' show contentAuditProvider;
 import 'question_widgets.dart';
+import 'subject_picker.dart';
 
 /// The studio's question selector: find any question by its words, its
 /// paper, or its topic, then open it in the workbench.
@@ -261,11 +262,13 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
       runSpacing: 12,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        _Picker<String?>(
-          label: 'Subject',
-          value: subjectId,
-          items: [for (final s in subjects) (s.id, s.name)],
-          onChanged: (v) => _changed(() {
+        // Its own line: the shared studio picker, chips not a dropdown.
+        SizedBox(
+          width: double.infinity,
+          child: StudioSubjectPicker(
+          subjects: subjects,
+          selected: subjectId,
+          onSelected: (v) => _changed(() {
             _subjectId = v;
             _year = null;
             _topicId = null;
@@ -273,6 +276,7 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
               (_) => _maybeDefault(),
             );
           }),
+          ),
         ),
         SegmentedButton<QuestionKind>(
           segments: [

@@ -17,6 +17,8 @@ import '../../core/widgets/ui/ui.dart';
 import '../../core/rooms/quiz_history.dart';
 import 'room_paths.dart';
 import 'room_ui.dart';
+import '../../core/sound/play_cue.dart';
+import '../../core/sound/sfx.dart';
 
 /// `/rooms/:code`: a player's phone. Pick a nickname, wait, then answer
 /// each question as the host shows it, see whether it was right at the
@@ -79,6 +81,8 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
   }
 
   Future<void> _join() async {
+    // Inside the tap: browsers only start audio after one.
+    Sfx.unlock();
     final uid = ref.read(currentUserProvider)?.uid;
     final name = _nickname.text.trim();
     if (uid == null) return;
@@ -120,6 +124,7 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
   }
 
   Future<void> _answer(Room room, int option) async {
+    Sfx.unlock();
     final uid = ref.read(currentUserProvider)?.uid;
     if (uid == null || _mine.containsKey(room.index)) return;
     setState(() => _mine[room.index] = option);
@@ -318,12 +323,17 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            _Verdict(
-              right: right,
-              answered: mine != null,
-              gained: gained,
-              speed: room.mode == RoomMode.speed,
-              run: run,
+            // A cue when the answer is revealed, once per question.
+            PlayCue(
+              key: ValueKey('verdict-${room.index}'),
+              cue: right ? SfxCue.correct : SfxCue.wrong,
+              child: _Verdict(
+                right: right,
+                answered: mine != null,
+                gained: gained,
+                speed: room.mode == RoomMode.speed,
+                run: run,
+              ),
             ),
             const SizedBox(height: 16),
             if (me != null)
@@ -403,7 +413,10 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
             ),
             if (top)
               Positioned.fill(
-                child: Confetti(pieces: 60, colours: kRoomConfettiColours),
+                child: PlayCue(
+                  cue: SfxCue.celebrate,
+                  child: Confetti(pieces: 60, colours: kRoomConfettiColours),
+                ),
               ),
           ],
         );
