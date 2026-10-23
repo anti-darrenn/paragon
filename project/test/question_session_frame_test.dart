@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -202,5 +204,22 @@ void main() {
         findsNothing,
       );
     });
+  });
+
+  // Modes never merge: a test marked at the end shows no verdict and makes
+  // no sound until it is submitted. These screens may use the frame, but
+  // only its marked-at-the-end bar.
+  test('tests marked at the end never use the instant-feedback bar', () {
+    for (final path in [
+      'lib/features/topic_test_screen.dart',
+      'lib/features/challenge_screen.dart',
+      'lib/features/waec_exam_screen.dart',
+    ]) {
+      final source = File(path).readAsStringSync();
+      expect(source, contains('SessionNavBar'), reason: path);
+      expect(source, isNot(contains('SessionActionBar')), reason: path);
+      expect(source, isNot(contains('Sfx.play')), reason: path);
+      expect(source, isNot(contains('SegmentState.right')), reason: path);
+    }
   });
 }

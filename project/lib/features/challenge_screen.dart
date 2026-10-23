@@ -13,15 +13,13 @@ import '../core/repositories/course_repository.dart';
 import '../core/repositories/learn_progress_repository.dart';
 import '../core/repositories/learn_repository.dart';
 import '../core/repositories/progress_repository.dart';
-import '../core/theme/app_colors.dart';
 import '../core/theme/app_palette.dart';
-import '../core/theme/app_theme.dart';
 import '../core/widgets/answer_option.dart';
-import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/load_error.dart';
-import '../core/widgets/question_image.dart';
 import 'exam_review_screen.dart' show ExamReviewCard;
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/session/session_frame.dart';
+import '../core/widgets/session/session_summary.dart';
 import '../core/widgets/ui/ui.dart';
 
 /// A unit test (`/subject/:s/course/unit/:moduleId/test`) or the course
@@ -49,18 +47,26 @@ class ChallengeScreen extends ConsumerWidget {
     final user = ref.watch(currentUserProvider);
     if (user == null ||
         !canUse(Feature.challenges, isGuest: ref.watch(isGuestProvider))) {
-      body = _Note(
-        text:
-            'Unit tests and course challenges need an account, because '
-            'what they unlock is saved to it.',
-        action: 'Make an account',
-        onAction: () => context.go('/account/upgrade'),
+      body = Center(
+        child: SingleChildScrollView(
+          child: EmptyState(
+            icon: Icons.lock_outline_rounded,
+            title: 'This needs an account',
+            message:
+                'Unit tests and course challenges need an account, because '
+                'what they unlock is saved to it.',
+            action: AppButton(
+              label: 'Make an account',
+              onPressed: () => context.go('/account/upgrade'),
+            ),
+          ),
+        ),
       );
     } else {
       body = ref
           .watch(courseProvider(subjectKey))
           .when(
-            loading: () => const Center(child: CircularProgressIndicator()),
+            loading: () => const LoadingView(label: 'Loading your test'),
             error: (e, _) => LoadError(
               error: e,
               onRetry: () => ref.invalidate(courseProvider(subjectKey)),
@@ -73,10 +79,18 @@ class ChallengeScreen extends ConsumerWidget {
                       if (!t.isPlaceholder && t.questionCount > 0) t,
               ];
               if (!course.isLive || topics.isEmpty) {
-                return _Note(
-                  text: 'There is nothing to test here yet.',
-                  action: 'Back to the course',
-                  onAction: () => context.popOrGo(),
+                return Center(
+                  child: SingleChildScrollView(
+                    child: EmptyState(
+                      illustration: IllustrationAsset.empty,
+                      title: 'Nothing to test yet',
+                      message: 'There is nothing to test here yet.',
+                      action: AppButton(
+                        label: 'Back to the course',
+                        onPressed: () => context.popOrGo(),
+                      ),
+                    ),
+                  ),
                 );
               }
               return _Sitting(
@@ -265,16 +279,24 @@ class _SittingState extends ConsumerState<_Sitting> {
     return ref
         .watch(challengeQuestionsProvider(_planKey))
         .when(
-          loading: () => const Center(child: CircularProgressIndicator()),
+          loading: () => const LoadingView(label: 'Loading your test'),
           error: (e, _) => LoadError(
             error: e,
             onRetry: () => ref.invalidate(challengeQuestionsProvider(_planKey)),
           ),
           data: (questions) => questions.isEmpty
-              ? _Note(
-                  text: 'No questions could be found for this test.',
-                  action: 'Back to the course',
-                  onAction: () => context.popOrGo(),
+              ? Center(
+                  child: SingleChildScrollView(
+                    child: EmptyState(
+                      illustration: IllustrationAsset.empty,
+                      title: 'No questions for this test yet',
+                      message: 'No questions could be found for this test.',
+                      action: AppButton(
+                        label: 'Back to the course',
+                        onPressed: () => context.popOrGo(),
+                      ),
+                    ),
+                  ),
                 )
               : _sitting(context, questions),
         );
@@ -283,77 +305,45 @@ class _SittingState extends ConsumerState<_Sitting> {
   Widget _sitting(BuildContext context, List<Question> questions) {
     final q = questions[_index];
     final last = _index == questions.length - 1;
-    return Center(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 12, 16, 40),
-          children: [
-            LinearProgressIndicator(
-              value: (_index + 1) / questions.length,
-              backgroundColor: context.palette.track,
-              valueColor: const AlwaysStoppedAnimation(AppColors.primary),
-              minHeight: 3,
-            ),
-            const SizedBox(height: 12),
-            Text(
-              'Question ${_index + 1} of ${questions.length} · marked at the end',
-              style: AppTheme.caption.copyWith(
-                color: context.palette.textSecondary,
-              ),
-            ),
-            const SizedBox(height: 12),
-            FullLatexView(
-              latex: q.text,
-              textStyle: AppTheme.bodyLg.copyWith(
-                color: context.palette.textPrimary,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            QuestionImage(assetId: q.imageId),
-            const SizedBox(height: 20),
-            // No right/wrong colouring: like the topic test and the WAEC
-            // exam, this is marked at the end.
-            for (var i = 0; i < q.options.length; i++)
-              AnswerOption(
-                index: i,
-                text: q.options[i],
-                state: _answers[_index] == i
-                    ? AnswerOptionState.selected
-                    : AnswerOptionState.idle,
-                onTap: () => setState(() => _answers[_index] = i),
-              ),
-            const SizedBox(height: 8),
-            Row(
-              children: [
-                if (_index > 0)
-                  TextButton(
-                    onPressed: () => setState(() => _index--),
-                    child: const Text('Back'),
-                  ),
-                const Spacer(),
-                ElevatedButton(
-                  onPressed: _answers[_index] == null
-                      ? null
-                      : () => last
-                            ? _submit(questions)
-                            : setState(() => _index++),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 28,
-                      vertical: 14,
-                    ),
-                  ),
-                  child: Text(
-                    last ? 'Finish' : 'Next',
-                    style: AppTheme.btnLabel.copyWith(color: Colors.white),
-                  ),
-                ),
-              ],
-            ),
+    final VoidCallback? next = _answers[_index] == null
+        ? null
+        : () => last ? _submit(questions) : setState(() => _index++);
+    return SessionKeys(
+      optionCount: q.options.length,
+      onSelect: (i) => setState(() => _answers[_index] = i),
+      onEnter: next,
+      child: SessionLayout(
+        header: SessionHeader(
+          index: _index,
+          total: questions.length,
+          // Answered or not — never right or wrong: marked at the end.
+          states: [
+            for (var i = 0; i < questions.length; i++)
+              _answers[i] != null
+                  ? SegmentState.answered
+                  : SegmentState.pending,
           ],
+          note: 'marked at the end',
         ),
+        bar: SessionNavBar(
+          nextLabel: last ? 'Finish' : 'Next',
+          onNext: next,
+          onBack: _index > 0 ? () => setState(() => _index--) : null,
+        ),
+        children: [
+          QuestionCard(question: q, showSource: false),
+          // No right/wrong colouring: like the topic test and the WAEC
+          // exam, this is marked at the end.
+          for (var i = 0; i < q.options.length; i++)
+            AnswerOption(
+              index: i,
+              text: q.options[i],
+              state: _answers[_index] == i
+                  ? AnswerOptionState.selected
+                  : AnswerOptionState.idle,
+              onTap: () => setState(() => _answers[_index] = i),
+            ),
+        ],
       ),
     );
   }
@@ -362,145 +352,106 @@ class _SittingState extends ConsumerState<_Sitting> {
     final right = _tallies.values.fold(0, (s, t) => s + t.correct);
     final total = _questions.length;
     final names = {for (final t in widget.topics) t.id: t.name};
-    return Center(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 24, 16, 40),
-          children: [
-            Text(
-              '$right / $total',
-              textAlign: TextAlign.center,
-              style: AppTheme.heading1.copyWith(
-                color: context.palette.textPrimary,
-              ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              '${topicTestScore(correct: right, total: total)}% correct',
-              textAlign: TextAlign.center,
-              style: AppTheme.bodyMd.copyWith(
-                color: context.palette.textSecondary,
-              ),
-            ),
-            if (_unlocked.isNotEmpty) ...[
-              const SizedBox(height: 16),
-              Text(
-                _unlocked.length == 1
-                    ? 'You unlocked practice for 1 topic.'
-                    : 'You unlocked practice for ${_unlocked.length} topics.',
-                textAlign: TextAlign.center,
-                style: AppTheme.bodyMd.copyWith(
-                  color: context.palette.successFg,
-                  fontWeight: FontWeight.w700,
+    final unit = widget.kind != ChallengeKind.courseChallenge;
+    return SingleChildScrollView(
+      padding: const EdgeInsets.fromLTRB(20, 32, 20, 40),
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              SessionSummary(
+                title: unit ? 'Unit test done' : 'Course challenge done',
+                correct: right,
+                total: total,
+                subtitle:
+                    '${topicTestScore(correct: right, total: total)}% correct',
+                celebrate:
+                    _unlocked.isNotEmpty ||
+                    SessionSummary.isWorthCelebrating(
+                      correct: right,
+                      total: total,
+                    ),
+                details: [
+                  if (_unlocked.isNotEmpty)
+                    InlineAlert(
+                      tone: Tone.success,
+                      icon: Icons.lock_open_rounded,
+                      announce: true,
+                      message: _unlocked.length == 1
+                          ? 'You unlocked practice for 1 topic.'
+                          : 'You unlocked practice for '
+                                '${_unlocked.length} topics.',
+                    ),
+                  if (!unit)
+                    const InlineAlert(
+                      tone: Tone.neutral,
+                      message:
+                          'A course challenge has too few questions per topic '
+                          'to unlock practice. A unit test can.',
+                    ),
+                  if (_saving)
+                    const LoadingView(
+                      label: 'Saving your results',
+                      delay: Duration.zero,
+                      padding: EdgeInsets.zero,
+                    )
+                  else if (_saveFailed)
+                    InlineAlert(
+                      tone: Tone.danger,
+                      announce: true,
+                      message:
+                          "Your results couldn't be saved. Check your "
+                          'connection.',
+                      action: TextButton(
+                        onPressed: _save,
+                        child: const Text('Try again'),
+                      ),
+                    ),
+                ],
+                primary: AppButton(
+                  label: 'Back to the course',
+                  expand: true,
+                  onPressed: () => context.popOrGo(),
                 ),
               ),
-            ],
-            if (widget.kind == ChallengeKind.courseChallenge) ...[
-              const SizedBox(height: 12),
-              Text(
-                'A course challenge has too few questions per topic to '
-                'unlock practice. A unit test can.',
-                textAlign: TextAlign.center,
-                style: AppTheme.caption.copyWith(
-                  color: context.palette.textSecondary,
-                ),
+              const SizedBox(height: 32),
+              const SectionHeader('By topic'),
+              RowGroup(
+                children: [
+                  for (final e in _tallies.entries)
+                    ListRow(
+                      title: names[e.key] ?? 'A topic',
+                      subtitle: '${e.value.correct} of ${e.value.total} right',
+                      trailing: _unlocked.contains(e.key)
+                          ? const Tag(
+                              'Unlocked',
+                              tone: Tone.success,
+                              icon: Icons.lock_open_rounded,
+                            )
+                          : null,
+                      onTap: () =>
+                          context.push(widget.course.pathForTopicId(e.key)),
+                    ),
+                ],
               ),
-            ],
-            if (_saving)
-              const Padding(
-                padding: EdgeInsets.only(top: 16),
-                child: Center(child: CircularProgressIndicator()),
-              )
-            else if (_saveFailed)
-              _Note(
-                text: "Your results couldn't be saved. Check your connection.",
-                action: 'Try again',
-                onAction: _save,
-              ),
-            const SizedBox(height: 20),
-            Text(
-              'By topic',
-              style: AppTheme.heading3.copyWith(
-                color: context.palette.textPrimary,
-              ),
-            ),
-            for (final e in _tallies.entries)
-              ListTile(
-                contentPadding: EdgeInsets.zero,
-                title: Text(
-                  names[e.key] ?? 'A topic',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.textPrimary,
+              const SizedBox(height: kSectionGap),
+              const SectionHeader('Your answers'),
+              for (var i = 0; i < _questions.length; i++)
+                ExamReviewCard(
+                  number: i + 1,
+                  item: ExamItem(
+                    questionId: _questions[i].id,
+                    topicId: _questions[i].topicId,
+                    selected: _answers[i] ?? -1,
                   ),
+                  question: _questions[i],
                 ),
-                subtitle: Text(
-                  '${e.value.correct} of ${e.value.total} right',
-                  style: AppTheme.caption.copyWith(
-                    color: context.palette.textSecondary,
-                  ),
-                ),
-                trailing: _unlocked.contains(e.key)
-                    ? const Icon(
-                        Icons.lock_open_rounded,
-                        color: AppColors.correct,
-                      )
-                    : null,
-                onTap: () => context.push(widget.course.pathForTopicId(e.key)),
-              ),
-            const SizedBox(height: 20),
-            Text(
-              'Your answers',
-              style: AppTheme.heading3.copyWith(
-                color: context.palette.textPrimary,
-              ),
-            ),
-            const SizedBox(height: 8),
-            for (var i = 0; i < _questions.length; i++)
-              ExamReviewCard(
-                number: i + 1,
-                item: ExamItem(
-                  questionId: _questions[i].id,
-                  topicId: _questions[i].topicId,
-                  selected: _answers[i] ?? -1,
-                ),
-                question: _questions[i],
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _Note extends StatelessWidget {
-  const _Note({
-    required this.text,
-    required this.action,
-    required this.onAction,
-  });
-
-  final String text;
-  final String action;
-  final VoidCallback onAction;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            text,
-            textAlign: TextAlign.center,
-            style: AppTheme.bodyMd.copyWith(
-              color: context.palette.textSecondary,
-            ),
+            ],
           ),
-          const SizedBox(height: 12),
-          TextButton(onPressed: onAction, child: Text(action)),
-        ],
+        ),
       ),
     );
   }

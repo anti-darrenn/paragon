@@ -13,6 +13,9 @@ import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/full_latex_view.dart';
+import '../core/widgets/session/session_frame.dart';
+import '../core/widgets/session/session_summary.dart';
+import '../core/widgets/ui/ui.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/answer_option.dart';
 import '../core/widgets/report_problem_button.dart';
@@ -242,7 +245,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
         title: SessionTitle(kind: 'Topic test', topicId: widget.topicId),
       ),
       body: questionsAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const LoadingView(label: 'Loading your test'),
         error: (e, _) => LoadError(
           error: e,
           onRetry: () =>
@@ -310,6 +313,8 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
       child: StudyDock(
         subjectId: widget.subjectId,
         studyContext: StudyContext.topicTest,
+        // Above the Back/Next bar while the test is open.
+        bottomInset: _submitted ? 0 : kSessionBarHeight,
         child: scaffold,
       ),
     );
@@ -342,61 +347,47 @@ class _Questions extends StatelessWidget {
     final q = questions[index];
     final selected = answers[index];
     final isLast = index == questions.length - 1;
+    final unanswered = questions.length - answeredCount;
+    final VoidCallback next = isLast ? onSubmit : () => onIndex(index + 1);
 
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+    return SessionKeys(
+      optionCount: q.options.length,
+      onSelect: onSelect,
+      onEnter: next,
+      child: SessionLayout(
+        header: SessionHeader(
+          index: index,
+          total: questions.length,
+          // Answered or not — never right or wrong: marked at the end.
+          states: [
+            for (var i = 0; i < questions.length; i++)
+              answers.containsKey(i)
+                  ? SegmentState.answered
+                  : SegmentState.pending,
+          ],
+          note: '$answeredCount answered · marked at the end',
+        ),
+        bar: SessionNavBar(
+          nextLabel: isLast ? 'Submit test' : 'Next',
+          onNext: next,
+          onBack: index > 0 ? () => onIndex(index - 1) : null,
+        ),
         children: [
-          LinearProgressIndicator(
-            value: answeredCount / questions.length,
-            backgroundColor: context.palette.track,
-            valueColor: const AlwaysStoppedAnimation<Color>(
-              AppColors.secondary,
+          // Said up front, not on the results screen: a student is
+          // entitled to know the pass mark before they sit the thing. Once,
+          // before the first answer, rather than above all ten questions.
+          if (answeredCount == 0 && index == 0) ...[
+            const InlineAlert(
+              tone: Tone.info,
+              title: 'Marked at the end',
+              message:
+                  'Score $kTopicTestPassPercent% or more to unlock drill '
+                  'practice. No feedback until the end. Unlimited retakes.',
             ),
-            minHeight: 3,
-          ),
-          const SizedBox(height: 12),
-          Row(
-            children: [
-              Text(
-                'Question ${index + 1} of ${questions.length}',
-                style: AppTheme.caption.copyWith(
-                  color: context.palette.textSecondary,
-                ),
-              ),
-              const Spacer(),
-              Text(
-                '$answeredCount answered',
-                style: AppTheme.caption.copyWith(
-                  color: context.palette.textSecondary,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 4),
-          // Said up front, not on the results screen. A student is
-          // entitled to know the pass mark before they sit the thing.
-          Text(
-            'Score $kTopicTestPassPercent% or more to unlock drill practice. '
-            'No feedback until the end. Unlimited retakes.',
-            style: AppTheme.caption.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-          // No guest notice here: it sat between the rules and the
-          // question on every one of the ten. It is on the result.
-          const SizedBox(height: 16),
-
-          FullLatexView(
-            latex: q.text,
-            textStyle: AppTheme.bodyLg.copyWith(
-              color: context.palette.textPrimary,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          QuestionImage(assetId: q.imageId),
-          const SizedBox(height: 20),
+            const SizedBox(height: 16),
+          ],
+          // No source badge: a test shows the question and nothing else.
+          QuestionCard(question: q, showSource: false),
 
           // No correct/incorrect colouring anywhere here — that is the
           // whole difference between this and a drill. Selected or not.
@@ -410,61 +401,28 @@ class _Questions extends StatelessWidget {
               onTap: () => onSelect(i),
             ),
 
-          const SizedBox(height: 8),
-          Row(
-            children: [
-              if (index > 0)
-                OutlinedButton(
-                  onPressed: () => onIndex(index - 1),
-                  style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: context.palette.border),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 14,
-                    ),
-                  ),
-                  child: Text(
-                    'Back',
-                    style: AppTheme.btnLabel.copyWith(
-                      color: context.palette.textSecondary,
-                    ),
-                  ),
-                ),
-              if (index > 0) const SizedBox(width: 12),
-              Expanded(
-                child: ElevatedButton(
-                  onPressed: isLast ? onSubmit : () => onIndex(index + 1),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: isLast
-                        ? AppColors.secondary
-                        : AppColors.primary,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                  ),
-                  child: Text(
-                    isLast ? 'Submit test' : 'Next',
-                    style: AppTheme.btnLabel.copyWith(color: Colors.white),
-                  ),
-                ),
-              ),
-            ],
-          ),
-          if (isLast && answeredCount < questions.length) ...[
-            const SizedBox(height: 10),
-            // Warned, not blocked. Unanswered questions count as wrong, so
-            // a student is free to submit an incomplete test — they should
-            // just not be surprised by the result.
-            Text(
-              '${questions.length - answeredCount} unanswered. '
-              'Blank answers count as wrong.',
-              style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
+          // Warned, not blocked. Unanswered questions count as wrong, so a
+          // student is free to submit an incomplete test — they should
+          // just not be surprised by the result.
+          if (isLast && unanswered > 0) ...[
+            const SizedBox(height: 4),
+            InlineAlert(
+              tone: Tone.warning,
+              message:
+                  '$unanswered unanswered. Blank answers count as wrong.',
             ),
           ],
-          const SizedBox(height: 16),
+          const SizedBox(height: 8),
           // No bookmark here: a question saved mid-test shows its answer
           // on the Saved page, which would turn the gate into a lookup.
           // Drill and exercises offer the same questions to bookmark.
-          ReportProblemButton(questionId: q.id, isGenerated: q.isGenerated),
-          const SizedBox(height: 24),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: ReportProblemButton(
+              questionId: q.id,
+              isGenerated: q.isGenerated,
+            ),
+          ),
         ],
       ),
     );
@@ -498,42 +456,40 @@ class _Result extends StatelessWidget {
   Widget build(BuildContext context) {
     final score = topicTestScore(correct: correct, total: total);
     final passed = topicTestPassed(correct: correct, total: total);
-    final accent = passed ? AppColors.correct : AppColors.primary;
+    final p = context.palette;
+
+    final done = AppButton(
+      label: 'Done',
+      tone: passed ? ButtonTone.primary : ButtonTone.ghost,
+      expand: true,
+      onPressed: onDone,
+    );
+    final retake = AppButton(
+      label: passed ? 'Take it again' : 'Retake the test',
+      tone: passed ? ButtonTone.ghost : ButtonTone.primary,
+      icon: Icons.refresh_rounded,
+      expand: true,
+      onPressed: onRetake,
+    );
+    // Which ones were wrong, and why: the score alone left a student to
+    // guess what to go back over (audit C2).
+    final review = AppButton(
+      label: 'Review answers',
+      tone: ButtonTone.secondary,
+      expand: true,
+      onPressed: onReview,
+    );
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: 16),
-          Icon(
-            passed ? Icons.verified_rounded : Icons.refresh_rounded,
-            size: 56,
-            color: accent,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            '$score%',
-            textAlign: TextAlign.center,
-            style: AppTheme.displayLg.copyWith(color: accent, fontSize: 48),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            '$correct of $total correct',
-            textAlign: TextAlign.center,
-            style: AppTheme.bodyMd.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-          const SizedBox(height: 20),
-          Text(
-            passed ? 'Passed — drill unlocked' : 'Not passed yet',
-            textAlign: TextAlign.center,
-            style: AppTheme.heading2.copyWith(
-              color: context.palette.textPrimary,
-            ),
-          ),
-          const SizedBox(height: 8),
+      padding: const EdgeInsets.fromLTRB(20, 32, 20, 32),
+      child: SessionSummary(
+        title: passed ? 'Passed — drill unlocked' : 'Not passed yet',
+        correct: correct,
+        total: total,
+        scoreLabel: '$score%',
+        subtitle: '$correct of $total correct',
+        celebrate: passed,
+        details: [
           Text(
             passed
                 ? 'You can now drill this topic as much as you like. Your '
@@ -545,91 +501,41 @@ class _Result extends StatelessWidget {
                       'unlimited and a new set of questions is drawn each '
                       'time.',
             textAlign: TextAlign.center,
-            style: AppTheme.bodyMd.copyWith(
-              color: context.palette.textSecondary,
-            ),
+            style: AppTheme.bodyMd.copyWith(color: p.textSecondary),
           ),
-
-          if (saving) ...[
-            const SizedBox(height: 20),
-            const Center(
-              child: SizedBox(
-                width: 18,
-                height: 18,
-                child: CircularProgressIndicator(strokeWidth: 2),
-              ),
+          if (saving)
+            const LoadingView(
+              label: 'Saving your result',
+              delay: Duration.zero,
+              padding: EdgeInsets.zero,
             ),
-          ],
-          if (saveFailed) ...[
-            const SizedBox(height: 20),
-            Container(
-              padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                color: AppColors.wrong.withAlpha((0.12 * 255).round()),
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: AppColors.wrong),
-              ),
-              child: Text(
-                'Your score above is right, but it could not be saved — so '
-                'this attempt has not unlocked anything yet. Check your '
-                'connection and take the test again.',
-                style: AppTheme.bodyMd.copyWith(
-                  color: context.palette.dangerFg,
-                ),
-              ),
+          if (saveFailed)
+            const InlineAlert(
+              tone: Tone.danger,
+              announce: true,
+              message:
+                  'Your score above is right, but it could not be saved — so '
+                  'this attempt has not unlocked anything yet. Check your '
+                  'connection and take the test again.',
             ),
-          ],
-          if (isGuest) ...[const SizedBox(height: 20), const GuestNotice()],
-
-          const SizedBox(height: 28),
-          ElevatedButton(
-            onPressed: onDone,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.primary,
-              padding: const EdgeInsets.symmetric(vertical: 16),
-            ),
-            child: Text(
-              'Done',
-              style: AppTheme.btnLabel.copyWith(color: Colors.white),
-            ),
-          ),
-          const SizedBox(height: 12),
-          // Which ones were wrong, and why: the score alone left a student
-          // to guess what to go back over (audit C2).
-          OutlinedButton(
-            onPressed: onReview,
-            style: OutlinedButton.styleFrom(
-              side: BorderSide(color: context.palette.border),
-              padding: const EdgeInsets.symmetric(vertical: 16),
-            ),
-            child: Text(
-              'Review answers',
-              style: AppTheme.btnLabel.copyWith(
-                color: context.palette.textPrimary,
-              ),
-            ),
-          ),
-          const SizedBox(height: 12),
-          OutlinedButton(
-            onPressed: onRetake,
-            style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: AppColors.secondary),
-              padding: const EdgeInsets.symmetric(vertical: 16),
-            ),
-            child: Text(
-              passed ? 'Take it again' : 'Retake the test',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.secondary),
-            ),
-          ),
-          if (correct < total) ...[
-            const SizedBox(height: 8),
-            TextButton(
-              onPressed: () => context.push('/mistakes'),
-              child: const Text('Practise what you got wrong'),
-            ),
-          ],
-          const SizedBox(height: 32),
+          if (isGuest) const GuestNotice(),
         ],
+        // A pass is done; a fail's next step is the retake.
+        primary: passed ? done : retake,
+        secondary: review,
+        tertiary: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            passed ? retake : done,
+            if (correct < total)
+              AppButton(
+                label: 'Practise what you got wrong',
+                tone: ButtonTone.ghost,
+                expand: true,
+                onPressed: () => context.push('/mistakes'),
+              ),
+          ],
+        ),
       ),
     );
   }
