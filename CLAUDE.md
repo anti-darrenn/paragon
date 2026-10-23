@@ -678,6 +678,19 @@ lead with a `PageIntro(wideOnly: true)`. Lay pages out with `lib/core/widgets/ui
 `kPageMaxWidth`; component styling (buttons, fields, dialogs, snackbars, chips) comes
 from `AppTheme`, so don't restyle them inline.
 
+**The component kit** (UI pass, 2026-10-23; `ui.dart` re-exports it, one import). Use these
+instead of styling Material widgets inline:
+- `AppButton` (tones primary/secondary/ghost/destructive/success, sizes 36/48/56, `icon`,
+  `loading`, `expand`), or `AppButtonStyle.of` on an existing button.
+- `InlineAlert` / `PageBanner` and `showToast`, in `Tone`s (info/success/warning/danger).
+- `EmptyState` with an `illustration` and a `secondaryAction`; `LoadingView` (a spinner
+  after 350 ms) where a skeleton doesn't fit; `AppProgressBar`, `SegmentedProgress`.
+- `Tag`, `Breadcrumbs`, and `confirmDialog(destructive:)`, whose labels name the action.
+- `Illustration`: the SVGs in `assets/illustrations/`, written by
+  `tools/illustrations/make.py` in marker colours that a `ColorMapper` swaps for the
+  palette. Edit the script, never the files, and re-run it. `illustrations_test.dart`
+  checks each is small, script-free, and uses only the markers. Low-data mode hides them.
+
 **Search** (`lib/core/search/search.dart`, pure; `features/search/`) covers courses,
 topics and lessons from the course catalog plus each live subject's `subjectIndex`
 document — one cached read per subject, never a collection scan. Results lead with
