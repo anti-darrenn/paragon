@@ -5,7 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/sound/sfx.dart';
 import 'package:paragon/core/theme/app_theme.dart';
+import 'package:paragon/core/models/question.dart';
 import 'package:paragon/core/widgets/motion/confetti.dart';
+import 'package:paragon/core/widgets/question_runner.dart';
 import 'package:paragon/core/widgets/session/session_frame.dart';
 import 'package:paragon/core/widgets/session/session_summary.dart';
 import 'package:paragon/core/widgets/ui/ui.dart';
@@ -221,5 +223,88 @@ void main() {
       expect(source, isNot(contains('Sfx.play')), reason: path);
       expect(source, isNot(contains('SegmentState.right')), reason: path);
     }
+  });
+
+  // The largest app-wide text size (Reading and display) on a narrow
+  // phone: the bar, the card, the options and the finish screen must still
+  // lay out without overflowing.
+  group('at the largest text size on a small phone', () {
+    Widget big(Widget child) => MaterialApp(
+      theme: AppTheme.light,
+      home: Builder(
+        builder: (context) => MediaQuery(
+          data: MediaQuery.of(
+            context,
+          ).copyWith(textScaler: const TextScaler.linear(1.5)),
+          child: Scaffold(body: child),
+        ),
+      ),
+    );
+
+    Question q(String id) => Question(
+      id: id,
+      topicId: 't',
+      subjectId: 's',
+      text:
+          'A trader buys goods for 2,400 naira and sells them at a profit '
+          'of 15 per cent. What is the selling price?',
+      options: const [
+        '2,640 naira',
+        '2,760 naira',
+        '2,580 naira',
+        '3,000 naira',
+      ],
+      correctIndex: 1,
+      explanation: '15% of 2,400 is 360, so 2,400 + 360 = 2,760.',
+      source: 'drill',
+    );
+
+    testWidgets('a question, checked', (tester) async {
+      tester.view.physicalSize = const Size(360, 740);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(
+        big(QuestionRunner(questions: [q('a'), q('b')], onFinished: (_) {})),
+      );
+      await tester.tap(find.text('2,580 naira'));
+      await tester.pump();
+      await tester.tap(find.text('Check'));
+      await tester.pumpAndSettle();
+      expect(tester.takeException(), isNull);
+      expect(find.text('Continue'), findsOneWidget);
+    });
+
+    testWidgets('the finish screen', (tester) async {
+      tester.view.physicalSize = const Size(360, 740);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(
+        big(
+          SingleChildScrollView(
+            padding: const EdgeInsets.all(20),
+            child: SessionSummary(
+              title: 'Session complete',
+              correct: 18,
+              total: 20,
+              subtitle: '90% correct · 2 with hints',
+              sound: false,
+              primary: AppButton(
+                label: 'Practise again',
+                expand: true,
+                onPressed: () {},
+              ),
+              secondary: AppButton(
+                label: 'Challenge a friend',
+                tone: ButtonTone.ghost,
+                expand: true,
+                onPressed: () {},
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(tester.takeException(), isNull);
+    });
   });
 }

@@ -366,7 +366,7 @@ class _ActionButton extends ConsumerWidget {
                   child: Text(
                     label,
                     style: AppTheme.btnLabel.copyWith(
-                      color: Colors.white,
+                      color: AppColors.onPrimary,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -382,7 +382,7 @@ class _ActionButton extends ConsumerWidget {
                         ? Icons.cloud_upload_outlined
                         : Icons.arrow_forward_rounded,
                     size: 18,
-                    color: Colors.white,
+                    color: AppColors.onPrimary,
                   ),
                 ),
               ],

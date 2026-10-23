@@ -208,13 +208,13 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                                 height: 20,
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2,
-                                  color: Colors.white,
+                                  color: AppColors.onPrimary,
                                 ),
                               )
                             : Text(
                                 'Save',
                                 style: AppTheme.btnLabel.copyWith(
-                                  color: Colors.white,
+                                  color: AppColors.onPrimary,
                                 ),
                               ),
                       ),

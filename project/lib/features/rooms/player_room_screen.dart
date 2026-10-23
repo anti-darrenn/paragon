@@ -442,7 +442,8 @@ class _Verdict extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colour = right ? AppColors.correct : AppColors.wrong;
+    // The strong fills: white on `correct`/`wrong` was 2.5:1 and 3.4:1.
+    final colour = right ? AppColors.successStrong : AppColors.dangerStrong;
     final still = reduceMotion(context);
     return Semantics(
       liveRegion: true,
