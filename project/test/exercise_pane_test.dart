@@ -105,27 +105,35 @@ void main() {
   }
 
   /// q1 right first time; q2 wrong, then wrong again (revealed).
+  /// Scrolls a button or option into view, then taps it: the exercise
+  /// sits in a scroll view, as in the lesson, and its bar is below the
+  /// question.
+  Future<void> tapText(WidgetTester tester, String text) async {
+    await tester.ensureVisible(find.text(text));
+    await tester.tap(find.text(text));
+  }
+
   Future<void> playSet(WidgetTester tester) async {
-    await tester.tap(find.text('right1'));
+    await tapText(tester, 'right1');
     await tester.pump();
-    await tester.tap(find.text('Check'));
+    await tapText(tester, 'Check');
     await tester.pump();
     expect(find.text('Correct!'), findsOneWidget);
     expect(find.text('Because right1.'), findsOneWidget);
-    await tester.tap(find.text('Next question'));
+    await tapText(tester, 'Continue');
     await tester.pump();
 
-    await tester.tap(find.text('wrong2'));
+    await tapText(tester, 'wrong2');
     await tester.pump();
-    await tester.tap(find.text('Check'));
+    await tapText(tester, 'Check');
     await tester.pump();
     expect(find.text('Not quite — try again.'), findsOneWidget);
-    await tester.tap(find.text('xq2'));
+    await tapText(tester, 'xq2');
     await tester.pump();
-    await tester.tap(find.text('Check'));
+    await tapText(tester, 'Check');
     await tester.pump();
     expect(find.text('The right answer is A.'), findsOneWidget);
-    await tester.tap(find.text('Finish'));
+    await tapText(tester, 'See results');
     await tester.pumpAndSettle();
   }
 
@@ -200,7 +208,7 @@ void main() {
     await tester.pump();
     await tester.tap(find.text('Check'));
     await tester.pump();
-    expect(find.text('Next question'), findsOneWidget);
+    expect(find.text('Continue'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 

@@ -8,6 +8,7 @@ import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import '../../../core/widgets/session/session_summary.dart';
 import '../../../core/widgets/question_runner.dart';
 import '../../../core/widgets/ui/ui.dart';
 import '../cards/card_deck.dart' show kCardsPerSession;
@@ -279,34 +280,48 @@ class _DeckQuizScreenState extends ConsumerState<DeckQuizScreen> {
     return Scaffold(
       backgroundColor: context.palette.background,
       appBar: ParagonAppBar(title: Text(deck?.title ?? 'Quiz')),
-      body: PageBody(
-        children: [
-          if (deck == null || questions.isEmpty)
-            const EmptyState(
-              icon: Icons.quiz_outlined,
-              title: 'Not enough cards for a quiz',
-              message: 'A quiz needs four cards with different answers.',
-            )
-          else if (_score != null)
-            Column(
+      body: deck == null || questions.isEmpty
+          ? const PageBody(
               children: [
                 EmptyState(
-                  icon: Icons.emoji_events_outlined,
-                  title: '$_score of $_total',
-                  message: 'Quizzes from your flashcards are just for you: '
-                      'nothing is recorded.',
+                  illustration: IllustrationAsset.empty,
+                  title: 'Not enough cards for a quiz',
+                  message: 'A quiz needs four cards with different answers.',
                 ),
-                FilledButton(
+              ],
+            )
+          : _score != null
+          ? SingleChildScrollView(
+              padding: const EdgeInsets.fromLTRB(20, 32, 20, 32),
+              child: SessionSummary(
+                title: 'Round done',
+                correct: _score!,
+                total: _total,
+                subtitle:
+                    'Quizzes from your flashcards are just for you: '
+                    'nothing is recorded.',
+                celebrate: SessionSummary.isWorthCelebrating(
+                  correct: _score!,
+                  total: _total,
+                ),
+                primary: AppButton(
+                  label: 'Another round',
+                  expand: true,
                   onPressed: () => setState(() {
                     _score = null;
                     _round++;
                   }),
-                  child: const Text('Another round'),
                 ),
-              ],
+                secondary: AppButton(
+                  label: 'Back to my decks',
+                  tone: ButtonTone.secondary,
+                  expand: true,
+                  onPressed: () => context.popOrGo(),
+                ),
+              ),
             )
-          else
-            QuestionRunner(
+          // The quiz fills the page, so its Check bar pins to the bottom.
+          : QuestionRunner(
               key: ValueKey(_round),
               questions: [...questions],
               showDifficulty: false,
@@ -315,8 +330,6 @@ class _DeckQuizScreenState extends ConsumerState<DeckQuizScreen> {
                 _total = results.length;
               }),
             ),
-        ],
-      ),
     );
   }
 }

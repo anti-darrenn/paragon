@@ -15,6 +15,8 @@ import '../../../core/repositories/progress_repository.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import 'package:go_router/go_router.dart';
+import '../../../core/widgets/session/session_summary.dart';
 import '../../../core/widgets/question_runner.dart';
 import '../../../core/widgets/ui/ui.dart';
 
@@ -166,38 +168,47 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
     return Scaffold(
       backgroundColor: palette.background,
       appBar: const ParagonAppBar(title: Text('Custom quiz')),
-      body: PageBody(
-        children: [
-          if (_result case final r?)
-            Column(
-              children: [
-                EmptyState(
-                  icon: Icons.emoji_events_outlined,
-                  title: '${r.correct} of ${r.total}',
-                  message: r.correct == r.total
-                      ? 'Every one. Try a harder difficulty next.'
-                      : 'Your wrong answers are in the mistakes notebook.',
-                ),
-                FilledButton(
-                  onPressed: () => setState(() {
-                    _result = null;
-                    _questions = null;
-                    _ratings.clear();
-                  }),
-                  child: const Text('New quiz'),
-                ),
-              ],
-            )
-          else if (_questions case final qs?)
-            QuestionRunner(
-              questions: qs,
-              ratings: _ratings,
-              onFinished: _finish,
-            )
-          else
-            _setup(palette),
-        ],
-      ),
+      body: switch ((_result, _questions)) {
+        (final r?, _) => SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(20, 32, 20, 32),
+          child: SessionSummary(
+            title: r.correct == r.total ? 'Every one right' : 'Quiz done',
+            correct: r.correct,
+            total: r.total,
+            subtitle: r.correct == r.total
+                ? 'Every one. Try a harder difficulty next.'
+                : 'Your wrong answers are in the mistakes notebook.',
+            celebrate: SessionSummary.isWorthCelebrating(
+              correct: r.correct,
+              total: r.total,
+            ),
+            primary: AppButton(
+              label: 'New quiz',
+              expand: true,
+              onPressed: () => setState(() {
+                _result = null;
+                _questions = null;
+                _ratings.clear();
+              }),
+            ),
+            secondary: r.correct == r.total
+                ? null
+                : AppButton(
+                    label: 'Open the mistakes notebook',
+                    tone: ButtonTone.secondary,
+                    expand: true,
+                    onPressed: () => context.push('/mistakes'),
+                  ),
+          ),
+        ),
+        // The quiz fills the page, so its Check bar pins to the bottom.
+        (null, final qs?) => QuestionRunner(
+          questions: qs,
+          ratings: _ratings,
+          onFinished: _finish,
+        ),
+        _ => PageBody(children: [_setup(palette)]),
+      },
     );
   }
 

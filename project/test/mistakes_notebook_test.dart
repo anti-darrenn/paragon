@@ -201,14 +201,14 @@ void main() {
       await tester.tap(find.text('Check'));
       await tester.pump();
       expect(find.text('Right this time.'), findsOneWidget);
-      await tester.tap(find.text('Next'));
+      await tester.tap(find.text('Continue'));
       await tester.pump();
       await tester.tap(find.text('wrongq2'));
       await tester.pump();
       await tester.tap(find.text('Check'));
       await tester.pump();
       expect(find.text('Not yet.'), findsOneWidget);
-      await tester.tap(find.text('Finish'));
+      await tester.tap(find.text('See results'));
       await tester.pumpAndSettle();
     }
 

@@ -88,14 +88,20 @@ void main() {
     );
     await tester.tap(find.text('x')); // right
     await tester.pump();
+    // Choosing is not answering: nothing is marked until Check.
+    expect(find.text('Correct.'), findsNothing);
+    await tester.tap(find.text('Check'));
+    await tester.pump();
     expect(find.text('Correct.'), findsOneWidget);
-    await tester.tap(find.text('Next'));
+    await tester.tap(find.text('Continue'));
     await tester.pump();
     await tester.tap(find.text('w')); // wrong
     await tester.pump();
+    await tester.tap(find.text('Check'));
+    await tester.pump();
     // Says which one was right, not only that this one was wrong.
     expect(find.text('Not quite. The answer is C.'), findsOneWidget);
-    await tester.tap(find.text('See how you did'));
+    await tester.tap(find.text('See results'));
     expect(got!.map((r) => r.correct), [true, false]);
   });
 
@@ -137,10 +143,12 @@ void main() {
     for (final _ in [1, 2]) {
       await tester.tap(find.text('w')); // option A, right
       await tester.pump();
+      await tester.tap(find.text('Check'));
+      await tester.pump();
       await tester.tap(
-        find.text('Next').evaluate().isNotEmpty
-            ? find.text('Next')
-            : find.text('See how you did'),
+        find.text('Continue').evaluate().isNotEmpty
+            ? find.text('Continue')
+            : find.text('See results'),
       );
       await tester.pumpAndSettle();
     }
