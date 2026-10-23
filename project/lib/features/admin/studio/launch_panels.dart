@@ -17,6 +17,7 @@ import '../../../core/repositories/admin_flag_repository.dart';
 import '../../../core/repositories/admin_question_repository.dart';
 import '../../../core/widgets/ui/ui.dart';
 import 'question_widgets.dart';
+import 'studio_error.dart';
 
 /// Studio panels that watch the live app rather than the content: how
 /// close today is to the Spark quota, and what students are telling us.
@@ -97,10 +98,7 @@ class UsagePanel extends ConsumerWidget {
         const SizedBox(height: 12),
         usage.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load usage.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-          ),
+          error: (e, _) => StudioError(message: "Couldn't load usage.", error: e),
           data: (u) {
             if (u == null || u.days.isEmpty) {
               return Text(
@@ -402,10 +400,7 @@ class ContentQualityPanel extends ConsumerWidget {
     final audit = ref.watch(contentAuditProvider);
     return audit.when(
       loading: () => const StudioListSkeleton(),
-      error: (e, _) => Text(
-        "Couldn't load the content audit.\n$e",
-        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-      ),
+      error: (e, _) => StudioError(message: "Couldn't load the content audit.", error: e),
       data: (a) {
         if (a == null) {
           return const EmptyState(
@@ -660,10 +655,7 @@ class FeedbackPanel extends ConsumerWidget {
         const SizedBox(height: 12),
         feedback.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load feedback.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-          ),
+          error: (e, _) => StudioError(message: "Couldn't load feedback.", error: e),
           data: (all) {
             final open = all.where((f) => f.isOpen).toList();
             if (open.isEmpty) {
@@ -877,10 +869,7 @@ class TractionPanel extends ConsumerWidget {
         const SizedBox(height: 12),
         async.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load metrics.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-          ),
+          error: (e, _) => StudioError(message: "Couldn't load metrics.", error: e),
           data: (days) => days.isEmpty
               ? Text(
                   'No metrics yet. The nightly job writes yesterday\'s.',

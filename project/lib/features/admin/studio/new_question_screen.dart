@@ -14,6 +14,7 @@ import '../../../core/widgets/nav/back_navigation.dart';
 import '../../../core/widgets/ui/ui.dart';
 import '../admin_paths.dart';
 import 'founder_question_tools.dart';
+import 'studio_error.dart';
 
 /// `/admin/new-question`: the founder writes a question, typically from a
 /// textbook, into the bank (2026-10-17).
@@ -83,9 +84,7 @@ class _NewQuestionScreenState extends ConsumerState<NewQuestionScreen> {
       context.pushReplacement(adminQuestionPath(id));
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text("Couldn't save: $e")));
+      showStudioFailure(context, "Couldn't save.", e);
     } finally {
       if (mounted) setState(() => _busy = false);
     }

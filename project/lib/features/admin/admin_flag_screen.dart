@@ -27,6 +27,7 @@ import 'studio/launch_panels.dart' show contentAuditProvider;
 import 'studio/founder_question_tools.dart';
 import 'studio/question_widgets.dart';
 import 'studio/staff_profile.dart';
+import 'studio/studio_error.dart';
 
 /// Deep link to one flagged question. The report digest email links here;
 /// keep `tools/admin/notify_drafts.js` in step if it changes. It opens the
@@ -257,9 +258,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
       }
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text("Couldn't save: $e")));
+      showStudioFailure(context, "Couldn't save.", e);
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -297,9 +296,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
       );
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text("Couldn't save: $e")));
+      showStudioFailure(context, "Couldn't save.", e);
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -320,9 +317,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't dismiss: $e")));
+        showStudioFailure(context, "Couldn't dismiss.", e);
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -372,6 +367,12 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
           if (canSave && row != null) _save(row);
         },
         const SingleActivator(LogicalKeyboardKey.enter, control: true): () {
+          if (canApprove && !_busy && row != null && row.question != null) {
+            if (!row.question!.vetted) _save(row, vet: true);
+          }
+        },
+        // Cmd+Enter on a Mac, as Cmd+S already is.
+        const SingleActivator(LogicalKeyboardKey.enter, meta: true): () {
           if (canApprove && !_busy && row != null && row.question != null) {
             if (!row.question!.vetted) _save(row, vet: true);
           }
@@ -455,12 +456,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             loading: () => const Center(child: CircularProgressIndicator()),
             error: (e, _) => Padding(
               padding: const EdgeInsets.all(20),
-              child: Text(
-                "Couldn't load this question.\n$e",
-                style: AppTheme.bodyMd.copyWith(
-                  color: context.palette.dangerFg,
-                ),
-              ),
+              child: StudioError(message: "Couldn't load this question.", error: e),
             ),
             data: (row) => LayoutBuilder(
               builder: (context, box) {

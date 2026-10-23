@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/widgets/ui/ui.dart';
 import '../../../core/models/learn_resource.dart';
 import '../../../core/providers/auth_provider.dart';
 import '../../../core/repositories/admin_resource_repository.dart';
@@ -18,6 +19,8 @@ import '../admin_home_screen.dart' show ResourceRow, StatusBadge;
 import '../admin_resource_editor_screen.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import 'question_widgets.dart' show StudioListSkeleton;
+import 'studio_error.dart';
 
 String topicPlannerPath(String topicId) => '/admin/topic/$topicId';
 
@@ -72,9 +75,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
       ref.invalidate(topicResourcesProvider(widget.topicId));
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't reorder: $e")));
+        showStudioFailure(context, "Couldn't reorder.", e);
       }
     } finally {
       if (mounted) {
@@ -147,9 +148,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't delete: $e")));
+        showStudioFailure(context, "Couldn't delete.", e);
       }
     } finally {
       if (mounted) setState(() => _saving = false);
@@ -170,14 +169,14 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
       appBar: ParagonAppBar(
         title: Text(topic?.name ?? 'Topic', overflow: TextOverflow.ellipsis),
         actions: [
-          TextButton.icon(
-            onPressed: () =>
-                context.push('/admin/insight/topic_${widget.topicId}'),
-            icon: const Icon(Icons.fact_check_outlined, size: 18),
-            label: const Text('Where students lose marks'),
-          ),
-          TextButton.icon(
-            onPressed: () {
+          PopupMenuButton<String>(
+            tooltip: 'More',
+            icon: const Icon(Icons.more_vert_rounded),
+            onSelected: (v) {
+              if (v == 'insight') {
+                context.push('/admin/insight/topic_${widget.topicId}');
+                return;
+              }
               final items = itemsAsync.asData?.value;
               if (items == null) return;
               Navigator.of(context).push(
@@ -189,8 +188,22 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                 ),
               );
             },
-            icon: const Icon(Icons.visibility_outlined, size: 18),
-            label: const Text('Preview as student'),
+            itemBuilder: (_) => const [
+              PopupMenuItem(
+                value: 'preview',
+                child: ListTile(
+                  leading: Icon(Icons.visibility_outlined),
+                  title: Text('Preview as student'),
+                ),
+              ),
+              PopupMenuItem(
+                value: 'insight',
+                child: ListTile(
+                  leading: Icon(Icons.fact_check_outlined),
+                  title: Text('Where students lose marks'),
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -199,15 +212,13 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 760),
             child: itemsAsync.when(
-              loading: () => const Center(child: CircularProgressIndicator()),
+              loading: () => const Padding(
+                padding: EdgeInsets.all(20),
+                child: StudioListSkeleton(),
+              ),
               error: (e, _) => Padding(
                 padding: const EdgeInsets.all(20),
-                child: Text(
-                  "Couldn't load this topic.\n$e",
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.dangerFg,
-                  ),
-                ),
+                child: StudioError(message: "Couldn't load this topic.", error: e),
               ),
               data: (loaded) {
                 final items = _pending ?? loaded;
@@ -235,18 +246,14 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                           ),
                           (LearnResourceType.exercise, Icons.edit_note_rounded),
                         ])
-                          ElevatedButton.icon(
+                          AppButton(
+                            label: 'New ${type.label.toLowerCase()}',
+                            icon: icon,
+                            tone: type == LearnResourceType.article
+                                ? ButtonTone.primary
+                                : ButtonTone.secondary,
                             onPressed: () => context.push(
                               adminNewResourcePath(widget.topicId, type),
-                            ),
-                            icon: Icon(icon, size: 18),
-                            label: Text('New ${type.label.toLowerCase()}'),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.primary,
-                              foregroundColor: Colors.white,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8),
-                              ),
                             ),
                           ),
                       ],
@@ -254,14 +261,11 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                     const SizedBox(height: 16),
                     if (_saving) const LinearProgressIndicator(minHeight: 2),
                     if (items.isEmpty)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 24),
-                        child: Text(
-                          'No lesson items yet. Start with an article.',
-                          style: AppTheme.bodyMd.copyWith(
-                            color: context.palette.textSecondary,
-                          ),
-                        ),
+                      const EmptyState(
+                        compact: true,
+                        icon: Icons.article_outlined,
+                        title: 'No lesson items yet',
+                        message: 'Start with an article.',
                       )
                     else if (canReorder)
                       ReorderableListView(
