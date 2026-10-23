@@ -8,7 +8,7 @@ export 'sfx_score.dart' show SfxCue;
 /// Sound effects: short synthesised tones for a right or wrong answer and
 /// a finished session.
 ///
-/// **On by default**, with a switch in Settings → Reading and display
+/// **Off by default**, with a switch in Settings → Reading and display
 /// (`soundEffectsProvider`, kept on the device only), which `app.dart`
 /// mirrors into [enabled]. A static facade rather than a provider, so a
 /// session widget can play a cue without a ProviderScope.
@@ -17,7 +17,7 @@ export 'sfx_score.dart' show SfxCue;
 /// those screens do not call it (`waec_exam_screen.dart` is checked by a
 /// test for any mention of `Sfx`).
 abstract final class Sfx {
-  static bool enabled = true;
+  static bool enabled = false;
 
   /// Master volume, 0 to 1. Quiet on purpose: these play in classrooms.
   static double volume = 0.15;

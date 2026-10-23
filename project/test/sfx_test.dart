@@ -9,8 +9,10 @@ import 'package:paragon/core/sound/sound_setting.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
+  // Sounds are off by default; these tests switch them on.
+  setUp(() => Sfx.enabled = true);
   tearDown(() {
-    Sfx.enabled = true;
+    Sfx.enabled = false;
     Sfx.debugSink = null;
   });
 
@@ -42,22 +44,22 @@ void main() {
       return c;
     }
 
-    test('is on when nothing is stored', () async {
+    test('is off when nothing is stored', () async {
       final c = await container({});
-      expect(c.read(soundEffectsProvider), isTrue);
+      expect(c.read(soundEffectsProvider), isFalse);
     });
 
-    test('remembers being turned off, on this device', () async {
+    test('remembers being turned on, on this device', () async {
       final c = await container({});
-      await c.read(soundEffectsProvider.notifier).setEnabled(false);
-      expect(c.read(soundEffectsProvider), isFalse);
+      await c.read(soundEffectsProvider.notifier).setEnabled(true);
+      expect(c.read(soundEffectsProvider), isTrue);
       final prefs = await SharedPreferences.getInstance();
-      expect(prefs.getBool(SoundEffectsNotifier.key), isFalse);
+      expect(prefs.getBool(SoundEffectsNotifier.key), isTrue);
     });
 
     test('reads a stored choice', () async {
-      final c = await container({SoundEffectsNotifier.key: false});
-      expect(c.read(soundEffectsProvider), isFalse);
+      final c = await container({SoundEffectsNotifier.key: true});
+      expect(c.read(soundEffectsProvider), isTrue);
     });
   });
 

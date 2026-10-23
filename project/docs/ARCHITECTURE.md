@@ -402,7 +402,7 @@ Every screen is built from one kit, so a change of look is made once:
   `FeedbackPanel`, `SessionKeys`, `SessionActionBar` (instant feedback: Check, then
   Continue), `SessionNavBar` (marked at the end) and `SessionSummary` (score ring,
   confetti only for a result worth it).
-- **Sound** (`core/sound/`): synthesised by Web Audio, on by default, a device-only
+- **Sound** (`core/sound/`): synthesised by Web Audio, off by default, a device-only
   switch in Reading and display, silent off the web and never in the WAEC exam.
 - **Studio errors** (`features/admin/studio/studio_error.dart`): raw text for staff,
   folded under Details.
