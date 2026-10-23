@@ -100,7 +100,7 @@ void main() {
       await pump(tester);
       await tester.tap(find.text('3')); // wrong
       await tester.pumpAndSettle();
-      await tester.tap(find.text('Submit Answer'));
+      await tester.tap(find.text('Check'));
       await tester.pumpAndSettle();
       expect(find.text('Not quite. The answer is B.'), findsOneWidget);
       expect(find.byIcon(Icons.cancel), findsWidgets);

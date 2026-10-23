@@ -82,9 +82,9 @@ void main() {
   Future<void> answer(WidgetTester tester, {required bool last}) async {
     await tester.tap(find.text('4'));
     await tester.pumpAndSettle();
-    await tester.tap(find.text('Submit Answer'));
+    await tester.tap(find.text('Check'));
     await tester.pumpAndSettle();
-    await tester.tap(find.text(last ? 'See results' : 'Next Question'));
+    await tester.tap(find.text(last ? 'See results' : 'Continue'));
     await tester.pumpAndSettle();
   }
 

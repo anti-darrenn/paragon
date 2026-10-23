@@ -6,8 +6,6 @@ import '../core/repositories/attempt_repository.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/models/question.dart';
 import '../core/theme/app_colors.dart';
-import '../core/widgets/full_latex_view.dart';
-import '../core/widgets/question_source_badge.dart';
 import '../core/widgets/answer_option.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/report_problem_button.dart';
@@ -28,7 +26,6 @@ import '../core/study/study_tool.dart';
 import '../core/theme/app_palette.dart';
 import '../core/learn/hints.dart';
 import '../core/widgets/hint_panel.dart';
-import '../core/widgets/question_image.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/session_title.dart';
 import '../core/challenge/challenge_link.dart';
@@ -36,6 +33,11 @@ import 'challenge_link/challenge_share.dart';
 import '../core/widgets/examiner_insight_panel.dart';
 import '../core/repositories/difficulty_vote_repository.dart';
 import '../core/widgets/difficulty_rating.dart';
+import '../core/sound/sfx.dart';
+import '../core/theme/tokens.dart';
+import '../core/widgets/session/session_frame.dart';
+import '../core/widgets/session/session_summary.dart';
+import '../core/widgets/ui/ui.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -116,6 +118,12 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   /// "How hard was this?" answers, by question: sent once with the session.
   final Map<String, int> _ratings = {};
 
+  /// Right or wrong for each answered question, for the progress segments.
+  final List<bool> _rights = [];
+
+  final _scroll = ScrollController();
+  final _feedbackKey = GlobalKey();
+
   @override
   void initState() {
     super.initState();
@@ -135,6 +143,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     // Catches the back arrow, and anything else that takes the screen away
     // without passing through Done. A no-op if Done already flushed.
     _flushSession();
+    _scroll.dispose();
     super.dispose();
   }
 
@@ -183,14 +192,17 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     final isCorrect = _selected == q.correctIndex;
     final hintsUsed = _hintsShown;
 
+    Sfx.play(isCorrect ? SfxCue.correct : SfxCue.wrong);
     setState(() {
       _submitted = true;
       _answered++;
+      _rights.add(isCorrect);
       _results.add((questionId: q.id, correct: isCorrect && hintsUsed == 0));
       if (isCorrect && hintsUsed == 0) _correct++;
       if (isCorrect && hintsUsed > 0) _hintedCorrect++;
     });
     _sessionSubjectId ??= q.subjectId;
+    _revealFeedback();
 
     if (user != null) {
       _uid = user.uid;
@@ -207,6 +219,35 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
             hintsUsed: hintsUsed,
           );
     }
+  }
+
+  /// Picks an option. The first tap also wakes the browser's audio, which
+  /// only starts inside a gesture.
+  void _pick(int i) {
+    if (_submitted) return;
+    Sfx.unlock();
+    setState(() => _selected = i);
+  }
+
+  /// Brings the worked answer into view once it has been laid out, if the
+  /// options pushed it below the bar.
+  void _revealFeedback() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final target = _feedbackKey.currentContext;
+      if (target == null || !mounted) return;
+      Scrollable.ensureVisible(
+        target,
+        alignment: 0.1,
+        alignmentPolicy: ScrollPositionAlignmentPolicy.keepVisibleAtEnd,
+        duration: Motion.of(context, Motion.medium),
+        curve: Motion.curve,
+      );
+    });
+  }
+
+  void _finish() {
+    _flushSession();
+    setState(() => _showSummary = true);
   }
 
   /// Makes a challenge link from this session's questions and offers it
@@ -245,9 +286,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       );
     } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Couldn't create the challenge.")),
-        );
+        showToast(context, "Couldn't create the challenge.", tone: Tone.danger);
       }
     }
   }
@@ -268,6 +307,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       _showSummary = false;
       _answered = 0;
       _results.clear();
+      _rights.clear();
       _correct = 0;
       _hintedCorrect = 0;
       _hintsShown = 0;
@@ -284,6 +324,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
         _submitted = false;
         _hintsShown = 0;
       });
+      if (_scroll.hasClients) _scroll.jumpTo(0);
     }
   }
 
@@ -344,7 +385,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
         title: SessionTitle(kind: 'Drill', topicId: widget.topicId),
       ),
       body: questionsAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const LoadingView(label: 'Loading questions'),
         error: (e, _) => LoadError(
           error: e,
           onRetry: () => ref.invalidate(drillQuestionsProvider(widget.topicId)),
@@ -352,12 +393,13 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
         data: (questions) {
           if (questions.isEmpty) {
             return const Center(
-              child: Padding(
-                padding: EdgeInsets.all(24),
-                child: Text(
-                  'This topic\x27s questions are still being checked by our '
-                  'team. Coming soon.',
-                  textAlign: TextAlign.center,
+              child: SingleChildScrollView(
+                child: EmptyState(
+                  illustration: IllustrationAsset.empty,
+                  title: 'Questions on the way',
+                  message:
+                      'This topic\x27s questions are still being checked by '
+                      'our team. Coming soon.',
                 ),
               ),
             );
@@ -380,39 +422,46 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
 
           final q = questions[_index];
           final isLast = _index == questions.length - 1;
+          final right = _submitted && _selected == q.correctIndex;
+          final VoidCallback? primary = !_submitted
+              ? (_selected != null ? () => _submit(questions) : null)
+              : (isLast ? _finish : () => _next(questions));
 
-          final progressValue =
-              (_index + (_submitted ? 1 : 0)) / questions.length;
-
-          return SingleChildScrollView(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+          return SessionKeys(
+            optionCount: q.options.length,
+            onSelect: _submitted ? null : _pick,
+            onEnter: primary,
+            child: SessionLayout(
+              controller: _scroll,
+              header: SessionHeader(
+                index: _index,
+                total: questions.length,
+                states: [
+                  for (var i = 0; i < questions.length; i++)
+                    i < _rights.length
+                        ? (_rights[i] ? SegmentState.right : SegmentState.wrong)
+                        : SegmentState.pending,
+                ],
+              ),
+              bar: SessionActionBar(
+                verdict: !_submitted
+                    ? SessionVerdict.none
+                    : (right ? SessionVerdict.right : SessionVerdict.wrong),
+                label: !_submitted
+                    ? 'Check'
+                    : (isLast ? 'See results' : 'Continue'),
+                onPressed: primary,
+                optionCount: q.options.length,
+                message: _submitted
+                    ? AnswerVerdict(
+                        right: right,
+                        correctIndex: q.correctIndex,
+                        padding: EdgeInsets.zero,
+                      )
+                    : null,
+              ),
               children: [
-                // Top progress bar
-                LinearProgressIndicator(
-                  value: progressValue,
-                  backgroundColor: context.palette.track,
-                  valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
-                  minHeight: 3,
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  'Question ${_index + 1} of ${questions.length}',
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: context.palette.onMedium,
-                  ),
-                ),
-                const SizedBox(height: 12),
-                QuestionSourceBadge(question: q),
-                FullLatexView(
-                  latex: q.text,
-                  textStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                QuestionImage(assetId: q.imageId),
-                const SizedBox(height: 24),
+                QuestionCard(question: q),
                 for (var i = 0; i < q.options.length; i++)
                   AnswerOption(
                     index: i,
@@ -426,14 +475,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                         : i == _selected
                         ? AnswerOptionState.wrong
                         : AnswerOptionState.idle,
-                    onTap: _submitted
-                        ? null
-                        : () => setState(() => _selected = i),
-                  ),
-                if (_submitted)
-                  AnswerVerdict(
-                    right: _selected == q.correctIndex,
-                    correctIndex: q.correctIndex,
+                    onTap: _submitted ? null : () => _pick(i),
                   ),
                 // Hints come out of the explanation, so they give way to it
                 // once the question is answered.
@@ -443,55 +485,11 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     shown: _hintsShown,
                     onShowNext: () => setState(() => _hintsShown++),
                   ),
-                // only render once there's a worked solution to show — an empty
-                // box reads as a rendering failure next to a marked answer
-                if (_submitted &&
-                    (q.explanation.trim().isNotEmpty ||
-                        q.explanationImageId != null)) ...[
-                  Container(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
-                      color: AppColors.correct.withAlpha((0.1 * 255).round()),
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: AppColors.correct.withAlpha((0.4 * 255).round()),
-                      ),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        if (q.explanation.trim().isNotEmpty)
-                          FullLatexView(
-                            latex: q.explanation,
-                            textStyle: TextStyle(
-                              color: context.palette.onHigh,
-                              fontSize: 14,
-                            ),
-                          ),
-                        QuestionImage.workedAnswer(
-                          assetId: q.explanationImageId,
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                ] else if (_submitted) ...[
-                  // Said, rather than left blank: about one past question
-                  // in five has no worked answer yet (audit B1).
-                  Text(
-                    'No worked answer yet for this question.',
-                    style: AppTheme.bodyMd.copyWith(
-                      color: context.palette.textSecondary,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                ],
-                if (_submitted)
+                if (_submitted) ...[
+                  FeedbackPanel(key: _feedbackKey, question: q, right: right),
                   ExaminerInsightPanel(question: q, selected: _selected),
-                // outside the explanation block on purpose — most questions
-                // have no worked solution, and those are the ones most worth
-                // reporting
-                if (_submitted)
+                  // Outside the worked answer on purpose: most questions
+                  // have none, and those are the ones most worth reporting.
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Wrap(
@@ -505,35 +503,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                       ],
                     ),
                   ),
-                const SizedBox(height: 24),
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: _submitted
-                        ? (isLast
-                              ? () {
-                                  _flushSession();
-                                  setState(() => _showSummary = true);
-                                }
-                              : () => _next(questions))
-                        : (_selected != null ? () => _submit(questions) : null),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.primary,
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                    ),
-                    child: Text(
-                      _submitted
-                          ? (isLast ? 'See results' : 'Next Question')
-                          : 'Submit Answer',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
-                // Optional and below the button, so it never pushes "Next" away.
-                if (_submitted)
+                  // Optional, and in the page rather than the bar, so it
+                  // never stands between the student and Continue.
                   Align(
                     alignment: Alignment.centerLeft,
                     child: DifficultyRating(
@@ -541,6 +512,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                       onRate: (level) => setState(() => _ratings[q.id] = level),
                     ),
                   ),
+                ],
               ],
             ),
           );
@@ -552,6 +524,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     return StudyDock(
       subjectId: widget.subjectId ?? _sessionSubjectId,
       studyContext: StudyContext.drill,
+      // Above the Check bar, not over it.
+      bottomInset: _showSummary ? 0 : kSessionBarHeight,
       child: scaffold,
     );
   }
@@ -605,166 +579,103 @@ class _SessionSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final percent = answered == 0 ? 0 : (correct * 100 / answered).round();
+    final p = context.palette;
 
-    return Center(
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.all(24),
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 420),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                'Session complete',
-                textAlign: TextAlign.center,
-                style: AppTheme.heading3.copyWith(
-                  color: context.palette.textPrimary,
-                ),
-              ),
-              const SizedBox(height: 24),
-
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 28),
-                decoration: BoxDecoration(
-                  color: context.palette.surface,
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: context.palette.border),
-                ),
-                child: Column(
-                  children: [
-                    Text(
-                      '$correct / $answered',
-                      style: TextStyle(
-                        color: context.palette.textStrong,
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold,
-                        height: 1,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      hinted == 0
-                          ? '$percent% correct'
-                          : '$percent% correct · $hinted with hints',
-                      style: AppTheme.bodyMd.copyWith(
-                        color: context.palette.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 16),
-
-              // The mastery row. Shown even when the level did not move,
-              // because "still Familiar" is the information a student
-              // needs in order to decide to go again.
-              Container(
-                padding: const EdgeInsets.all(18),
-                decoration: BoxDecoration(
-                  color: context.palette.surface,
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    color: _levelledUp ? accent : context.palette.border,
-                  ),
-                ),
-                child: Row(
-                  children: [
-                    MasteryCircle(level: after, accent: accent, size: 34),
-                    const SizedBox(width: 14),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            _levelledUp
-                                ? 'Now ${after.label.toLowerCase()}'
-                                : 'Still ${after.label.toLowerCase()}',
-                            style: AppTheme.bodyLg.copyWith(
-                              color: context.palette.textPrimary,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          const SizedBox(height: 2),
-                          Text(
-                            _levelledUp
-                                ? 'Up from ${before.label.toLowerCase()} '
-                                      'in this topic.'
-                                : 'Keep going to move up in this topic.',
-                            style: AppTheme.bodyMd.copyWith(
-                              color: context.palette.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              // The one screen in the app that tells a student they have
-              // reached a level. For a guest that level is written to a
-              // uid that will not exist tomorrow, so it is the worst place
-              // to leave the omission.
-              if (isGuest) ...[
-                const SizedBox(height: 16),
-                GuestNotice(
-                  message: GuestLimits.saveResultMessage(
-                    'your $correct/$answered',
-                  ),
-                ),
-              ],
-              const SizedBox(height: 24),
-
-              if (onChallenge != null) ...[
-                OutlinedButton.icon(
-                  onPressed: onChallenge,
-                  icon: const Icon(Icons.emoji_events_outlined),
-                  label: const Text('Challenge a friend'),
-                ),
-                const SizedBox(height: 10),
-              ],
-
-              SizedBox(
-                height: 48,
-                child: ElevatedButton(
-                  onPressed: onPractiseAgain,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                  ),
-                  child: const Text(
-                    'Practise again',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                height: 48,
-                child: OutlinedButton(
-                  onPressed: onDone,
-                  style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: context.palette.border),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                  ),
-                  child: Text(
-                    'Done',
-                    style: AppTheme.btnLabel.copyWith(
-                      color: context.palette.textPrimary,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+    return SingleChildScrollView(
+      padding: const EdgeInsets.fromLTRB(20, 32, 20, 32),
+      child: SessionSummary(
+        title: 'Session complete',
+        correct: correct,
+        total: answered,
+        subtitle: hinted == 0
+            ? '$percent% correct'
+            : '$percent% correct · $hinted with hints',
+        celebrate: SessionSummary.isWorthCelebrating(
+          correct: correct,
+          total: answered,
+          levelledUp: _levelledUp,
         ),
+        details: [
+          // The mastery row. Shown even when the level did not move,
+          // because "still Familiar" is the information a student needs in
+          // order to decide to go again.
+          SurfaceCard(
+            borderColor: _levelledUp ? accent : null,
+            padding: const EdgeInsets.all(18),
+            child: Row(
+              children: [
+                AnimatedSwitcher(
+                  duration: Motion.of(context, Motion.slow),
+                  child: MasteryCircle(
+                    key: ValueKey(after),
+                    level: after,
+                    accent: accent,
+                    size: 36,
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        _levelledUp
+                            ? 'Now ${after.label.toLowerCase()}'
+                            : 'Still ${after.label.toLowerCase()}',
+                        style: AppTheme.bodyLg.copyWith(
+                          color: p.textPrimary,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        _levelledUp
+                            ? 'Up from ${before.label.toLowerCase()} '
+                                  'in this topic.'
+                            : 'Keep going to move up in this topic.',
+                        style: AppTheme.bodyMd.copyWith(color: p.textSecondary),
+                      ),
+                    ],
+                  ),
+                ),
+                if (_levelledUp)
+                  const Tag(
+                    'Level up',
+                    tone: Tone.success,
+                    icon: Icons.arrow_upward_rounded,
+                  ),
+              ],
+            ),
+          ),
+          // The one screen in the app that tells a student they have
+          // reached a level. For a guest that level is written to a uid
+          // that will not exist tomorrow, so it is the worst place to
+          // leave the omission.
+          if (isGuest)
+            GuestNotice(
+              message: GuestLimits.saveResultMessage('your $correct/$answered'),
+            ),
+        ],
+        primary: AppButton(
+          label: 'Practise again',
+          onPressed: onPractiseAgain,
+          expand: true,
+        ),
+        secondary: AppButton(
+          label: 'Done',
+          tone: ButtonTone.secondary,
+          onPressed: onDone,
+          expand: true,
+        ),
+        tertiary: onChallenge == null
+            ? null
+            : AppButton(
+                label: 'Challenge a friend',
+                tone: ButtonTone.ghost,
+                icon: Icons.emoji_events_outlined,
+                onPressed: onChallenge,
+                expand: true,
+              ),
       ),
     );
   }
@@ -863,9 +774,7 @@ class _Locked extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: isTestGate ? onTakeTest : onSignIn,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: isTestGate
-                      ? AppColors.secondary
-                      : AppColors.primary,
+                  backgroundColor: AppColors.primary,
                   disabledBackgroundColor: context.palette.track,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
@@ -875,7 +784,7 @@ class _Locked extends StatelessWidget {
                       : access == DrillAccess.guestBlocked
                       ? 'Create an account'
                       : 'Sign in',
-                  style: AppTheme.btnLabel.copyWith(color: Colors.white),
+                  style: AppTheme.btnLabel.copyWith(color: AppColors.onPrimary),
                 ),
               ),
             ),

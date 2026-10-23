@@ -52,7 +52,7 @@ class WaecSubjectScreen extends ConsumerWidget {
         actions: [SearchAction()],
       ),
       body: subjectsAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const PageBody(children: [SkeletonPage(count: 3)]),
         error: (e, _) => LoadError(
           error: e,
           onRetry: () => ref.invalidate(subjectsProvider),
@@ -298,16 +298,16 @@ class _WaecSubjectTile extends StatelessWidget {
               ),
               // Paper 2, once there is enough of it to practise.
               if (_hasTheory && !locked)
-                TextButton(
-                  onPressed: () => context.push(
-                    '/waec/${SubjectCatalog.slugify(subject.name)}/theory',
-                  ),
-                  style: TextButton.styleFrom(
-                    padding: EdgeInsets.zero,
-                    minimumSize: const Size(0, 36),
-                  ),
-                  child: Text(
-                    'Theory practice · ${subject.theoryCount} questions',
+                Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: AppButton(
+                    label: 'Theory practice · ${subject.theoryCount} questions',
+                    tone: ButtonTone.ghost,
+                    size: ButtonSize.sm,
+                    icon: Icons.edit_note_rounded,
+                    onPressed: () => context.push(
+                      '/waec/${SubjectCatalog.slugify(subject.name)}/theory',
+                    ),
                   ),
                 ),
             ],

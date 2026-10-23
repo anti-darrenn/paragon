@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'all_set_dialog.dart';
 
 import '../../core/onboarding/onboarding_step.dart';
 import '../../core/providers/auth_provider.dart';
@@ -62,6 +63,8 @@ class _OnboardingProfileScreenState
             .read(userRepositoryProvider)
             .setProfile(uid: user.uid, profile: _form.toProfile());
       }
+      if (!mounted) return;
+      await showAllSetDialog(context);
       if (!mounted) return;
       context.go('/');
     } catch (_) {
