@@ -34,7 +34,10 @@ class NewQuestionScreen extends ConsumerStatefulWidget {
 }
 
 class _NewQuestionScreenState extends ConsumerState<NewQuestionScreen> {
-  final _math = MathEditing(prefsKey: 'studio', initialMode: MathInputMode.latex);
+  final _math = MathEditing(
+    prefsKey: 'studio',
+    initialMode: MathInputMode.latex,
+  );
   final _stem = TextEditingController();
   final _explanation = TextEditingController();
   final _options = [for (var i = 0; i < 4; i++) TextEditingController()];
@@ -159,11 +162,7 @@ class _NewQuestionScreenState extends ConsumerState<NewQuestionScreen> {
                       MathToolbar(editing: _math),
                       const SizedBox(height: 12),
                       _label('Question'),
-                      MathField(
-                        controller: _stem,
-                        editing: _math,
-                        minLines: 3,
-                      ),
+                      MathField(controller: _stem, editing: _math, minLines: 3),
                       const SizedBox(height: 16),
                       _label('Options: tap a letter to mark the answer'),
                       for (var i = 0; i < _options.length; i++)
@@ -173,7 +172,10 @@ class _NewQuestionScreenState extends ConsumerState<NewQuestionScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(top: 4, right: 8),
+                                padding: const EdgeInsets.only(
+                                  top: 4,
+                                  right: 8,
+                                ),
                                 child: ChoiceChip(
                                   label: Text(optionLetter(i)),
                                   selected: _correct == i,

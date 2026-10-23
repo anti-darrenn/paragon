@@ -218,7 +218,10 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
               ),
               error: (e, _) => Padding(
                 padding: const EdgeInsets.all(20),
-                child: StudioError(message: "Couldn't load this topic.", error: e),
+                child: StudioError(
+                  message: "Couldn't load this topic.",
+                  error: e,
+                ),
               ),
               data: (loaded) {
                 final items = _pending ?? loaded;

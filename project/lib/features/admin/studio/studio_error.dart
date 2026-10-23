@@ -76,10 +76,7 @@ Future<void> showErrorDetails(BuildContext context, Object error) {
           icon: Icons.copy_rounded,
           onPressed: () => Clipboard.setData(ClipboardData(text: text)),
         ),
-        AppButton(
-          label: 'Close',
-          onPressed: () => Navigator.of(dialog).pop(),
-        ),
+        AppButton(label: 'Close', onPressed: () => Navigator.of(dialog).pop()),
       ],
     ),
   );

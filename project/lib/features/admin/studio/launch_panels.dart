@@ -98,7 +98,8 @@ class UsagePanel extends ConsumerWidget {
         const SizedBox(height: 12),
         usage.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => StudioError(message: "Couldn't load usage.", error: e),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load usage.", error: e),
           data: (u) {
             if (u == null || u.days.isEmpty) {
               return Text(
@@ -400,7 +401,8 @@ class ContentQualityPanel extends ConsumerWidget {
     final audit = ref.watch(contentAuditProvider);
     return audit.when(
       loading: () => const StudioListSkeleton(),
-      error: (e, _) => StudioError(message: "Couldn't load the content audit.", error: e),
+      error: (e, _) =>
+          StudioError(message: "Couldn't load the content audit.", error: e),
       data: (a) {
         if (a == null) {
           return const EmptyState(
@@ -655,7 +657,8 @@ class FeedbackPanel extends ConsumerWidget {
         const SizedBox(height: 12),
         feedback.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => StudioError(message: "Couldn't load feedback.", error: e),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load feedback.", error: e),
           data: (all) {
             final open = all.where((f) => f.isOpen).toList();
             if (open.isEmpty) {
@@ -869,7 +872,8 @@ class TractionPanel extends ConsumerWidget {
         const SizedBox(height: 12),
         async.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => StudioError(message: "Couldn't load metrics.", error: e),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load metrics.", error: e),
           data: (days) => days.isEmpty
               ? Text(
                   'No metrics yet. The nightly job writes yesterday\'s.',

@@ -730,7 +730,8 @@ class _StatusQueue extends ConsumerWidget {
         const SizedBox(height: 12),
         items.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => StudioError(message: "Couldn't load this list.", error: e),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load this list.", error: e),
           data: (list) => list.isEmpty
               ? Text(
                   empty,
@@ -1166,7 +1167,8 @@ class _FlagQueueState extends ConsumerState<_FlagQueue> {
         ),
         queue.when(
           loading: () => const StudioListSkeleton(),
-          error: (e, _) => StudioError(message: "Couldn't load reports.", error: e),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load reports.", error: e),
           data: (rows) {
             final shown = _showResolved
                 ? rows
@@ -1342,7 +1344,8 @@ class _LessonReports extends ConsumerWidget {
         ),
         reports.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => StudioError(message: "Couldn't load lesson reports.", error: e),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load lesson reports.", error: e),
           data: (list) => list.isEmpty
               ? Text(
                   'No open lesson reports.',

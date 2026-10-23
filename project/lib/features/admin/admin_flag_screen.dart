@@ -456,7 +456,10 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             loading: () => const Center(child: CircularProgressIndicator()),
             error: (e, _) => Padding(
               padding: const EdgeInsets.all(20),
-              child: StudioError(message: "Couldn't load this question.", error: e),
+              child: StudioError(
+                message: "Couldn't load this question.",
+                error: e,
+              ),
             ),
             data: (row) => LayoutBuilder(
               builder: (context, box) {

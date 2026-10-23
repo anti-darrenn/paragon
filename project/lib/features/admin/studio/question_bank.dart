@@ -69,7 +69,8 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
     final subjects = ref.watch(subjectsProvider);
     return subjects.when(
       loading: () => const StudioListSkeleton(),
-      error: (e, _) => StudioError(message: "Couldn't load the subjects.", error: e),
+      error: (e, _) =>
+          StudioError(message: "Couldn't load the subjects.", error: e),
       data: (list) {
         final subjectId = _subjectId ?? (list.isEmpty ? null : list.first.id);
         final topics = subjectId == null
@@ -108,7 +109,8 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
             if (topics != null)
               topics.when(
                 loading: () => const StudioListSkeleton(),
-                error: (e, _) => StudioError(message: "Couldn't load the topics.", error: e),
+                error: (e, _) =>
+                    StudioError(message: "Couldn't load the topics.", error: e),
                 data: (ts) {
                   final pending = ts.fold<int>(0, (n, t) => n + t.pendingCount);
                   final vetted = ts.fold<int>(0, (n, t) => n + t.questionCount);

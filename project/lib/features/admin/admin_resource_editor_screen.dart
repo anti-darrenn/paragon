@@ -415,7 +415,11 @@ class _AdminResourceEditorScreenState
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               if (_error != null) ...[
-                InlineAlert(tone: Tone.danger, message: _error!, announce: true),
+                InlineAlert(
+                  tone: Tone.danger,
+                  message: _error!,
+                  announce: true,
+                ),
                 const SizedBox(height: 8),
               ],
               _actions(),
@@ -803,11 +807,7 @@ class _AdminResourceEditorScreenState
       }
       if (role.canReview && status == ResourceStatus.inReview) {
         buttons.add(
-          outline(
-            'Request changes',
-            context.palette.dangerFg,
-            _requestChanges,
-          ),
+          outline('Request changes', context.palette.dangerFg, _requestChanges),
         );
       }
       buttons.add(
@@ -817,11 +817,7 @@ class _AdminResourceEditorScreenState
 
     if (primary != null && primaryAction != null) {
       buttons.add(
-        AppButton(
-          label: primary,
-          loading: busy,
-          onPressed: primaryAction,
-        ),
+        AppButton(label: primary, loading: busy, onPressed: primaryAction),
       );
     }
 

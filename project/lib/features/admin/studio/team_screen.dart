@@ -201,7 +201,11 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 ),
               if (_error != null) ...[
                 const SizedBox(height: 12),
-                InlineAlert(tone: Tone.danger, message: _error!, announce: true),
+                InlineAlert(
+                  tone: Tone.danger,
+                  message: _error!,
+                  announce: true,
+                ),
               ],
               const SizedBox(height: 16),
               Align(
@@ -230,7 +234,8 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
               const SizedBox(height: 12),
               invites.when(
                 loading: () => const LinearProgressIndicator(minHeight: 2),
-                error: (e, _) => StudioError(message: "Couldn't load the team.", error: e),
+                error: (e, _) =>
+                    StudioError(message: "Couldn't load the team.", error: e),
                 data: (list) => list.isEmpty
                     ? Text(
                         'Nobody added yet.',
@@ -257,7 +262,8 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                                   confirmLabel: 'Remove from the team',
                                   destructive: true,
                                 );
-                                if (ok) await _save(role: 'none', email: i.email);
+                                if (ok)
+                                  await _save(role: 'none', email: i.email);
                               },
                               onForget: () async {
                                 final ok = await confirmDialog(

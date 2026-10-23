@@ -109,7 +109,8 @@ class _PictureReportsPanelState extends ConsumerState<PictureReportsPanel> {
         ),
         reports.when(
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (e, _) => StudioError(message: "Couldn't load reported photos.", error: e),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load reported photos.", error: e),
           data: (list) {
             if (list.isEmpty) {
               return Text(

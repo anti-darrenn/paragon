@@ -281,7 +281,9 @@ class _InsightEditorScreenState extends ConsumerState<InsightEditorScreen> {
                   children: [
                     Tag(
                       _status == 'published' ? 'Published' : 'Draft',
-                      tone: _status == 'published' ? Tone.success : Tone.neutral,
+                      tone: _status == 'published'
+                          ? Tone.success
+                          : Tone.neutral,
                     ),
                   ],
                 ),
@@ -304,17 +306,18 @@ class _InsightEditorScreenState extends ConsumerState<InsightEditorScreen> {
                         DropdownButtonFormField<int?>(
                           initialValue: _wrong,
                           decoration: const InputDecoration(
-                            labelText:
-                                'The wrong option most candidates chose',
+                            labelText: 'The wrong option most candidates chose',
                           ),
                           items: [
                             const DropdownMenuItem(
                               value: null,
                               child: Text('Not stated'),
                             ),
-                            for (var i = 0;
-                                i < (_question?.options.length ?? 4);
-                                i++)
+                            for (
+                              var i = 0;
+                              i < (_question?.options.length ?? 4);
+                              i++
+                            )
                               DropdownMenuItem(
                                 value: i,
                                 child: Text(String.fromCharCode(65 + i)),
