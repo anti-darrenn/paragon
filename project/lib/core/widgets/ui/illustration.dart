@@ -65,12 +65,7 @@ abstract final class IllustrationMarkers {
 /// carry the meaning), a fixed-size space while it loads, and nothing at
 /// all while [Illustration.hidden] is set (low-data mode).
 class Illustration extends StatelessWidget {
-  const Illustration(
-    this.asset, {
-    super.key,
-    this.height = 140,
-    this.accent,
-  });
+  const Illustration(this.asset, {super.key, this.height = 140, this.accent});
 
   final IllustrationAsset asset;
   final double height;

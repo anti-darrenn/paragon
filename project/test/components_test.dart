@@ -23,7 +23,11 @@ void main() {
 
       await tester.pumpWidget(
         _app(
-          AppButton(label: 'Save changes', loading: true, onPressed: () => taps++),
+          AppButton(
+            label: 'Save changes',
+            loading: true,
+            onPressed: () => taps++,
+          ),
         ),
       );
       expect(tester.getSize(find.byType(AppButton)), idle);
@@ -40,9 +44,17 @@ void main() {
           Column(
             children: [
               AppButton(label: 'a', onPressed: () {}),
-              AppButton(label: 'b', tone: ButtonTone.secondary, onPressed: () {}),
+              AppButton(
+                label: 'b',
+                tone: ButtonTone.secondary,
+                onPressed: () {},
+              ),
               AppButton(label: 'c', tone: ButtonTone.ghost, onPressed: () {}),
-              AppButton(label: 'd', tone: ButtonTone.destructive, onPressed: () {}),
+              AppButton(
+                label: 'd',
+                tone: ButtonTone.destructive,
+                onPressed: () {},
+              ),
             ],
           ),
         ),
@@ -123,7 +135,10 @@ void main() {
       ),
     );
     expect(
-      find.descendant(of: find.byType(Breadcrumbs), matching: find.byType(InkWell)),
+      find.descendant(
+        of: find.byType(Breadcrumbs),
+        matching: find.byType(InkWell),
+      ),
       findsOneWidget,
     );
     await tester.tap(find.text('Courses'));
@@ -189,7 +204,11 @@ void main() {
         const SizedBox(
           width: 300,
           child: SegmentedProgress(
-            states: [SegmentState.right, SegmentState.wrong, SegmentState.pending],
+            states: [
+              SegmentState.right,
+              SegmentState.wrong,
+              SegmentState.pending,
+            ],
             current: 2,
           ),
         ),

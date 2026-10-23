@@ -100,7 +100,11 @@ class InlineAlert extends StatelessWidget {
                 onPressed: onDismiss,
                 tooltip: 'Dismiss',
                 visualDensity: VisualDensity.compact,
-                icon: Icon(Icons.close_rounded, size: 18, color: p.textSecondary),
+                icon: Icon(
+                  Icons.close_rounded,
+                  size: 18,
+                  color: p.textSecondary,
+                ),
               ),
           ],
         ),
