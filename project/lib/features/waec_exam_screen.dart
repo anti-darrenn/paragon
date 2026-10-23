@@ -132,8 +132,9 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       // on `extra` validation) via addPostFrameCallback, since calling
       // context.go() during the current build would throw.
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted)
+        if (mounted) {
           context.go('/waec/${widget.routeKey ?? widget.subjectId}/setup');
+        }
       });
       return;
     }
