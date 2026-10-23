@@ -42,22 +42,30 @@ class SavedScreen extends ConsumerWidget {
             ],
           ),
         ),
-        body: const Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: GuestNotesPrompt(),
+        // In the reading column, like every other list page; it ran the
+        // full width of a laptop.
+        body: Align(
+          alignment: Alignment.topCenter,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
+            child: const Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: GuestNotesPrompt(),
+                ),
+                Expanded(
+                  child: TabBarView(
+                    children: [
+                      _BookmarkList(kind: BookmarkKind.lesson),
+                      _BookmarkList(kind: BookmarkKind.question),
+                      _NotesList(),
+                    ],
+                  ),
+                ),
+              ],
             ),
-            Expanded(
-              child: TabBarView(
-                children: [
-                  _BookmarkList(kind: BookmarkKind.lesson),
-                  _BookmarkList(kind: BookmarkKind.question),
-                  _NotesList(),
-                ],
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );
@@ -65,17 +73,22 @@ class SavedScreen extends ConsumerWidget {
 }
 
 /// An empty tab: what goes here and how to put something in it.
-Widget _empty(String text, {IconData icon = Icons.bookmark_outline_rounded}) =>
-    Align(
-      alignment: Alignment.topCenter,
-      child: SingleChildScrollView(
-        child: EmptyState(icon: icon, title: 'Nothing here yet', message: text),
-      ),
-    );
+Widget _empty(
+  String text, {
+  IconData icon = Icons.bookmark_outline_rounded,
+  String title = 'Nothing here yet',
+}) => Align(
+  alignment: Alignment.topCenter,
+  child: SingleChildScrollView(
+    child: EmptyState(icon: icon, title: title, message: text),
+  ),
+);
 
+/// Not "Nothing here yet": a failed load is not an empty list.
 Widget _loadFailed() => _empty(
-  "Couldn't load these. Check your connection and try again.",
+  'Check your connection and try again.',
   icon: Icons.cloud_off_rounded,
+  title: "Couldn't load these",
 );
 
 class _BookmarkList extends ConsumerWidget {
@@ -88,7 +101,7 @@ class _BookmarkList extends ConsumerWidget {
     return ref
         .watch(bookmarksProvider)
         .when(
-          loading: () => const Center(child: CircularProgressIndicator()),
+          loading: () => const LoadingView(),
           error: (_, _) => _loadFailed(),
           data: (all) {
             final items = all.values.where((b) => b.kind == kind).toList()
@@ -126,7 +139,7 @@ class _BookmarkList extends ConsumerWidget {
                   ),
                   trailing: IconButton(
                     tooltip: 'Remove from saved',
-                    icon: const Icon(Icons.bookmark, color: AppColors.primary),
+                    icon: Icon(Icons.bookmark, color: context.palette.primaryFg),
                     onPressed: () =>
                         ref.read(bookmarksProvider.notifier).remove(b.key),
                   ),
@@ -180,7 +193,7 @@ class SavedQuestionView extends ConsumerWidget {
     return ref
         .watch(savedQuestionProvider(questionId))
         .when(
-          loading: () => const Center(child: CircularProgressIndicator()),
+          loading: () => const LoadingView(),
           error: (_, _) => _loadFailed(),
           data: (q) => q == null
               ? _empty('This question is no longer available.')
@@ -235,7 +248,7 @@ class _NotesList extends ConsumerWidget {
     return ref
         .watch(allNotesProvider)
         .when(
-          loading: () => const Center(child: CircularProgressIndicator()),
+          loading: () => const LoadingView(),
           error: (_, _) => _loadFailed(),
           data: (notes) {
             if (notes.isEmpty) {

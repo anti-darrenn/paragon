@@ -59,6 +59,8 @@ class ReviewScreen extends ConsumerWidget {
         maxWidth: kContentMaxWidth,
         children: [
           const PageIntro(
+            // The app bar names the page on a phone.
+            wideOnly: true,
             title: 'Study',
             subtitle:
                 'Practise, revise and work things out. Short, regular '
@@ -92,7 +94,7 @@ class ReviewScreen extends ConsumerWidget {
               final offlineCard = _ReviewCard(
                 key: const ValueKey('review.offline'),
                 icon: Icons.download_for_offline_outlined,
-                accent: AppColors.correct,
+                accent: AppColors.neutral,
                 title: 'Saved for offline',
                 subtitle: switch (offline) {
                   0 =>
@@ -106,7 +108,7 @@ class ReviewScreen extends ConsumerWidget {
               final planner = _ReviewCard(
                 key: const ValueKey('review.planner'),
                 icon: Icons.event_note_rounded,
-                accent: AppColors.accentBlue,
+                accent: AppColors.correct,
                 title: 'Planner',
                 subtitle: today.isEmpty
                     ? 'Plan your week a day at a time, or let Paragon fill it'
@@ -194,6 +196,33 @@ class ReviewScreen extends ConsumerWidget {
             },
           ),
           const SizedBox(height: 28),
+          const SectionHeader('More ways to study'),
+          RowGroup(
+            children: [
+              ListRow(
+                icon: Icons.groups_rounded,
+                iconColor: AppColors.warning,
+                title: 'Live quiz',
+                subtitle: 'Join a quiz your teacher or a friend is hosting',
+                onTap: () => context.push('/join'),
+              ),
+              ListRow(
+                icon: Icons.flag_outlined,
+                iconColor: AppColors.primary,
+                title: 'Your plan',
+                subtitle: 'A weekly goal, your exam date and a grade estimate',
+                onTap: () => context.push('/plan'),
+              ),
+              ListRow(
+                icon: Icons.history_rounded,
+                iconColor: AppColors.accentBlue,
+                title: 'Quiz history',
+                subtitle: 'Live quizzes you have played',
+                onTap: () => context.push('/me/history'),
+              ),
+            ],
+          ),
+          const SizedBox(height: 28),
           const SectionHeader(
             'Tools',
             subtitle: 'The same tools as beside a lesson, on their own.',
@@ -234,21 +263,17 @@ class _CardsPanel extends ConsumerWidget {
     ];
     final totalDue = rows.fold<int>(0, (sum, r) => sum + r.$2);
 
-    return Container(
+    return SurfaceCard(
       key: const ValueKey('review.cards'),
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: context.palette.border),
-      ),
+      padding: EdgeInsets.zero,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
             padding: const EdgeInsets.all(16),
             child: _CardHeading(
-              icon: Icons.style_outlined,
-              accent: AppColors.secondary,
+              icon: Icons.layers_outlined,
+              accent: AppColors.medalGold,
               title: 'Revision cards',
               subtitle: rows.isEmpty
                   ? 'Definitions and formulas from published lessons become '
@@ -290,7 +315,7 @@ class _CardsPanel extends ConsumerWidget {
                       due > 0 ? '$due due' : '$total cards',
                       style: AppTheme.label.copyWith(
                         color: due > 0
-                            ? AppColors.primary
+                            ? context.palette.primaryFg
                             : context.palette.textSecondary,
                       ),
                     ),
@@ -329,19 +354,9 @@ class _ReviewCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: context.palette.surface,
-      borderRadius: BorderRadius.circular(14),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(14),
-        onTap: onTap,
-        child: Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: context.palette.border),
-          ),
-          child: Row(
+    return SurfaceCard(
+      onTap: onTap,
+      child: Row(
             children: [
               Expanded(
                 child: _CardHeading(
@@ -356,8 +371,6 @@ class _ReviewCard extends StatelessWidget {
                 color: context.palette.textSecondary,
               ),
             ],
-          ),
-        ),
       ),
     );
   }
@@ -380,15 +393,7 @@ class _CardHeading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          width: 42,
-          height: 42,
-          decoration: BoxDecoration(
-            color: accent.withAlpha(32),
-            borderRadius: BorderRadius.circular(11),
-          ),
-          child: Icon(icon, color: accent, size: 22),
-        ),
+        IconTile(icon: icon, color: accent, size: 42),
         const SizedBox(width: 14),
         Expanded(
           child: Column(

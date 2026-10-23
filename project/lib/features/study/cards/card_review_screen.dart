@@ -237,27 +237,42 @@ class _Chooser extends ConsumerWidget {
   final String subjectId;
   final void Function(List<IndexedCard>, CardDeck, String) onStart;
 
-  Widget _message(String text) => Builder(
-    builder: (context) => Center(
-      child: Padding(
-        padding: const EdgeInsets.all(32),
-        child: Text(text, textAlign: TextAlign.center, style: _muted(context)),
-      ),
-    ),
-  );
+  Widget _message(String title, String text, {VoidCallback? onRetry}) =>
+      Center(
+        child: SingleChildScrollView(
+          child: EmptyState(
+            illustration: onRetry == null
+                ? IllustrationAsset.empty
+                : IllustrationAsset.offline,
+            title: title,
+            message: text,
+            action: onRetry == null
+                ? null
+                : AppButton(label: 'Try again', onPressed: onRetry),
+          ),
+        ),
+      );
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final indexAsync = ref.watch(subjectIndexProvider(subjectId));
     if (indexAsync.hasError && !indexAsync.hasValue) {
-      return _message("Couldn't load the cards. Check your connection.");
+      return _message(
+        "Couldn't load the cards",
+        'Check your connection and try again.',
+        onRetry: () => ref.invalidate(subjectIndexProvider(subjectId)),
+      );
     }
     final deck = ref.watch(cardDeckProvider(subjectId));
     if (deck == null) {
-      return const Center(child: CircularProgressIndicator());
+      return const LoadingView(label: 'Loading your cards');
     }
     if (deck.cards.isEmpty) {
-      return _message('No revision cards for this subject yet.');
+      return _message(
+        'No revision cards yet',
+        "Definitions and formulas from this subject's lessons become cards "
+            'here as lessons are published.',
+      );
     }
 
     final index = indexAsync.asData?.value ?? SubjectIndex.empty;
@@ -272,8 +287,7 @@ class _Chooser extends ConsumerWidget {
     final dueSession = deck.dueSession();
     final due = deck.dueCount;
 
-    return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
+    return PageBody(
       children: [
         const _GuestCardsPrompt(),
         Text(
@@ -282,17 +296,16 @@ class _Chooser extends ConsumerWidget {
           style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 16),
-        FilledButton.icon(
+        AppButton(
           key: const ValueKey('cards.reviewDue'),
+          label: due > dueSession.length
+              ? 'Review ${dueSession.length} of $due due'
+              : 'Review all due ($due)',
+          icon: Icons.layers_outlined,
+          expand: true,
           onPressed: dueSession.isEmpty
               ? null
               : () => onStart(dueSession, deck, 'Due cards'),
-          icon: const Icon(Icons.style_outlined),
-          label: Text(
-            due > dueSession.length
-                ? 'Review ${dueSession.length} of $due due'
-                : 'Review all due ($due)',
-          ),
         ),
         if (dueSession.isEmpty) ...[
           const SizedBox(height: 8),
@@ -302,32 +315,29 @@ class _Chooser extends ConsumerWidget {
           ),
         ],
         const SizedBox(height: 28),
-        Text(
-          'Pick a topic',
-          style: AppTheme.label.copyWith(color: context.palette.textSecondary),
+        const SectionHeader('Pick a topic'),
+        RowGroup(
+          children: [
+            for (final t in topics)
+              Builder(
+                builder: (context) {
+                  final dueHere = t.cards.where(deck.isDue).length;
+                  final name = t.topicName.isEmpty ? t.topicId : t.topicName;
+                  return ListRow(
+                    key: ValueKey('cards.topic.${t.topicId}'),
+                    title: name,
+                    subtitle:
+                        '${t.cards.length} ${t.cards.length == 1 ? 'card' : 'cards'} · $dueHere due',
+                    trailing: dueHere > 0
+                        ? Tag('$dueHere due', tone: Tone.info)
+                        : null,
+                    onTap: () =>
+                        onStart(deck.topicSession(t.topicId), deck, name),
+                  );
+                },
+              ),
+          ],
         ),
-        const SizedBox(height: 8),
-        for (final t in topics)
-          Builder(
-            builder: (context) {
-              final dueHere = t.cards.where(deck.isDue).length;
-              final name = t.topicName.isEmpty ? t.topicId : t.topicName;
-              return ListTile(
-                key: ValueKey('cards.topic.${t.topicId}'),
-                contentPadding: EdgeInsets.zero,
-                title: Text(name, style: _text(context)),
-                subtitle: Text(
-                  '${t.cards.length} ${t.cards.length == 1 ? 'card' : 'cards'} · $dueHere due',
-                  style: _muted(context),
-                ),
-                trailing: Icon(
-                  Icons.chevron_right,
-                  color: context.palette.textSecondary,
-                ),
-                onTap: () => onStart(deck.topicSession(t.topicId), deck, name),
-              );
-            },
-          ),
       ],
     );
   }

@@ -34,12 +34,14 @@ class OfflineTopicsScreen extends ConsumerWidget {
             child: ListView(
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 60),
               children: [
-                Text(
-                  "Lessons you've saved can be read without a connection. "
-                  'Videos always need internet. Removing a topic takes it '
-                  'off this list; the copy already on this device is only '
-                  'cleared when space is needed for newer content.',
-                  style: caption,
+                const InlineAlert(
+                  tone: Tone.info,
+                  icon: Icons.wifi_off_rounded,
+                  message:
+                      "Lessons you've saved can be read without a connection. "
+                      'Videos always need internet. Removing a topic takes it '
+                      'off this list; the copy already on this device is only '
+                      'cleared when space is needed for newer content.',
                 ),
                 const SizedBox(height: 20),
                 if (topics.isEmpty)
@@ -49,19 +51,20 @@ class OfflineTopicsScreen extends ConsumerWidget {
                     message:
                         'Nothing saved yet. Open a topic and choose '
                         '"Save for offline".',
-                    action: OutlinedButton.icon(
+                    action: AppButton(
+                      label: 'Browse courses',
+                      tone: ButtonTone.secondary,
+                      icon: Icons.auto_stories_outlined,
                       onPressed: () => context.go('/courses'),
-                      icon: const Icon(Icons.auto_stories_outlined, size: 18),
-                      label: const Text('Browse courses'),
                     ),
                   )
                 else
                   for (final t in topics)
-                    Card(
-                      color: context.palette.surface,
-                      margin: const EdgeInsets.only(bottom: 10),
-                      clipBehavior: Clip.antiAlias,
-                      child: ListTile(
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: SurfaceCard(
+                        padding: EdgeInsets.zero,
+                        child: ListTile(
                         contentPadding: const EdgeInsets.fromLTRB(16, 6, 8, 6),
                         leading: const IconTile(
                           icon: Icons.download_done_rounded,
@@ -105,6 +108,7 @@ class OfflineTopicsScreen extends ConsumerWidget {
                           },
                         ),
                       ),
+                    ),
                     ),
               ],
             ),

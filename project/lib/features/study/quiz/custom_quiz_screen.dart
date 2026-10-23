@@ -99,9 +99,11 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
       setState(() => _questions = qs);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
+        showToast(
           context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't load questions: $e")));
+          "Couldn't load the questions. Check your connection and try again.",
+          tone: Tone.danger,
+        );
       }
     } finally {
       if (mounted) setState(() => _loading = false);
@@ -249,10 +251,7 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
           subtitle: '${_topics.length} of up to $kMaxQuizTopics chosen',
         ),
         if (course == null)
-          const Padding(
-            padding: EdgeInsets.all(12),
-            child: Center(child: CircularProgressIndicator()),
-          )
+          const SkeletonPage(title: false, count: 2, cardHeight: 96)
         else
           for (final m in course.modules)
             if (m.topics.any((t) => !t.isPlaceholder && t.counts.servable > 0))
@@ -348,11 +347,9 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
         if (_topics.isEmpty)
           Padding(
             padding: const EdgeInsets.only(top: 8),
-            child: Text(
-              'Choose at least one topic.',
-              style: AppTheme.caption.copyWith(
-                color: context.palette.warningFg,
-              ),
+            child: const InlineAlert(
+              tone: Tone.warning,
+              message: 'Choose at least one topic.',
             ),
           ),
       ],
