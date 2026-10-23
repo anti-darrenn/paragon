@@ -63,7 +63,8 @@ void main() {
         ),
         GoRoute(
           path: '/subject/:s/unit/:u/topic/:t/test',
-          builder: (_, s) => Scaffold(body: Text('TEST ${s.pathParameters['t']}')),
+          builder: (_, s) =>
+              Scaffold(body: Text('TEST ${s.pathParameters['t']}')),
         ),
       ],
     );
@@ -100,7 +101,9 @@ void main() {
     expect(find.text('TEST t1'), findsOneWidget);
   });
 
-  testWidgets('the sidebar shows progress and marks done items', (tester) async {
+  testWidgets('the sidebar shows progress and marks done items', (
+    tester,
+  ) async {
     await pump(tester, '/learn/topic/t1/b');
     expect(find.text('Number bases'), findsOneWidget);
     expect(find.text('1 of 2 done'), findsOneWidget);

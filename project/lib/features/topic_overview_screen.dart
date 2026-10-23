@@ -144,7 +144,10 @@ class _TopicBody extends ConsumerWidget {
 
         Breadcrumbs([
           Crumb('Courses', onTap: () => context.go('/courses')),
-          Crumb(course.name, onTap: () => context.go('/subject/${course.slug}/course')),
+          Crumb(
+            course.name,
+            onTap: () => context.go('/subject/${course.slug}/course'),
+          ),
           Crumb(module.name),
         ]),
         const SizedBox(height: 16),
@@ -665,8 +668,6 @@ class _PracticeRail extends StatelessWidget {
     );
   }
 }
-
-
 
 class _NotFound extends StatelessWidget {
   const _NotFound({required this.message});

@@ -28,10 +28,7 @@ class NotFoundScreen extends StatelessWidget {
                 spacing: 12,
                 runSpacing: 8,
                 children: [
-                  AppButton(
-                    label: 'Go home',
-                    onPressed: () => context.go('/'),
-                  ),
+                  AppButton(label: 'Go home', onPressed: () => context.go('/')),
                   // The static past-question pages live outside the app,
                   // so this is a page load, not a route.
                   AppButton(

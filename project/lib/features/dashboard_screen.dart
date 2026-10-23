@@ -1011,7 +1011,9 @@ class _StartHere extends ConsumerWidget {
         ref.watch(courseCatalogProvider).asData?.value ??
         const <CourseSummary>[];
     final first = courses
-        .where((c) => c.isLive && (selected.isEmpty || selected.contains(c.slug)))
+        .where(
+          (c) => c.isLive && (selected.isEmpty || selected.contains(c.slug)),
+        )
         .firstOrNull;
     final p = context.palette;
     final accent = first == null

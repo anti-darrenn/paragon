@@ -478,9 +478,6 @@ class _PlannedNotice extends StatelessWidget {
   }
 }
 
-
-
-
 class _CenteredMessage extends StatelessWidget {
   const _CenteredMessage({required this.child});
 
