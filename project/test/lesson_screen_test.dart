@@ -126,6 +126,6 @@ void main() {
 
   testWidgets('an unwritten or unknown item is not opened', (tester) async {
     await pump(tester, '/learn/topic/t1/gap');
-    expect(find.text('This lesson is not available.'), findsOneWidget);
+    expect(find.text('This lesson is not available'), findsOneWidget);
   });
 }

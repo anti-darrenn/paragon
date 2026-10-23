@@ -14,6 +14,7 @@ import '../../core/repositories/learning_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/page_layout.dart';
+import '../../core/widgets/ui/ui.dart';
 import '../../core/study/study_dock.dart';
 import '../../core/study/study_tool.dart';
 import 'article_pane.dart';
@@ -134,16 +135,26 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           ),
           Expanded(
             child: resourcesAsync.when(
-              loading: () => const Center(child: CircularProgressIndicator()),
-              error: (_, _) => const _Message(
-                "This lesson couldn't be loaded. Try refreshing.",
+              loading: () => const LoadingView(label: 'Loading the lesson'),
+              error: (_, _) => _Message(
+                icon: Icons.cloud_off_rounded,
+                title: "This lesson couldn't be loaded",
+                text: 'Check your connection and try again.',
+                backTo: _topicPagePath(topic),
+                onRetry: () =>
+                    ref.invalidate(topicResourcesProvider(widget.topicId)),
               ),
               data: (resources) {
                 final current = resources
                     .where((r) => r.id == widget.resourceId)
                     .firstOrNull;
                 if (current == null || !current.isAvailable) {
-                  return const _Message('This lesson is not available.');
+                  return _Message(
+                    illustration: IllustrationAsset.notFound,
+                    title: 'This lesson is not available',
+                    text: 'It may have moved, or not be published yet.',
+                    backTo: _topicPagePath(topic),
+                  );
                 }
                 return _layout(context, resources, current, topic);
               },
@@ -326,14 +337,12 @@ class _SidebarHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (path != null)
-            InkWell(
-              onTap: () => context.go(path),
-              child: Text(
-                '← Topic overview',
-                style: AppTheme.caption.copyWith(
-                  color: context.palette.primaryFg,
-                ),
-              ),
+            AppButton(
+              label: 'Topic overview',
+              tone: ButtonTone.ghost,
+              size: ButtonSize.sm,
+              icon: Icons.arrow_back_rounded,
+              onPressed: () => context.go(path),
             ),
           const SizedBox(height: 10),
           Text(
@@ -476,30 +485,61 @@ class _OfflineBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      color: AppColors.wrong.withAlpha(38),
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      child: Text(
-        "You're offline — showing what was already loaded.",
-        textAlign: TextAlign.center,
-        style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
-      ),
+    // A caution, not an error: being offline is normal, and what was
+    // loaded still works.
+    return const PageBanner(
+      tone: Tone.warning,
+      icon: Icons.wifi_off_rounded,
+      message: "You're offline — showing what was already loaded.",
     );
   }
 }
 
+/// Why there is no lesson to show, with a way back to the topic and, for a
+/// failed load, a retry.
 class _Message extends StatelessWidget {
-  const _Message(this.text);
+  const _Message({
+    this.icon,
+    this.illustration,
+    required this.title,
+    required this.text,
+    this.backTo,
+    this.onRetry,
+  });
 
+  final IconData? icon;
+  final IllustrationAsset? illustration;
+  final String title;
   final String text;
+  final String? backTo;
+  final VoidCallback? onRetry;
 
   @override
   Widget build(BuildContext context) {
+    final back = backTo;
     return Center(
-      child: Text(
-        text,
-        style: AppTheme.bodyLg.copyWith(color: context.palette.textSecondary),
+      child: SingleChildScrollView(
+        child: EmptyState(
+          icon: icon,
+          illustration: illustration,
+          title: title,
+          message: text,
+          action: onRetry != null
+              ? AppButton(label: 'Try again', onPressed: onRetry)
+              : back != null
+              ? AppButton(
+                  label: 'Back to the topic',
+                  onPressed: () => context.go(back),
+                )
+              : null,
+          secondaryAction: onRetry != null && back != null
+              ? AppButton(
+                  label: 'Back to the topic',
+                  tone: ButtonTone.ghost,
+                  onPressed: () => context.go(back),
+                )
+              : null,
+        ),
       ),
     );
   }

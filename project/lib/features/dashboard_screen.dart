@@ -15,6 +15,7 @@ import '../core/progress/mastery.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/theme/app_theme.dart';
+import '../core/theme/tokens.dart';
 import '../core/widgets/mastery_indicator.dart';
 import '../core/widgets/page_layout.dart';
 import '../core/widgets/ui/ui.dart';
@@ -125,7 +126,10 @@ class DashboardScreen extends ConsumerWidget {
         actions: [SearchAction()],
       ),
       body: userDataAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const PageBody(
+          maxWidth: kContentMaxWidth,
+          children: [SkeletonPage(count: 4, cardHeight: 96)],
+        ),
         error: (e, _) => LoadError(
           error: e,
           onRetry: () => ref.invalidate(userDataProvider),
@@ -608,19 +612,24 @@ class _QuickStart extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         const SectionHeader('Jump in'),
-        LayoutBuilder(
-          builder: (context, box) {
-            const gap = 10.0;
-            final width = (box.maxWidth - gap * (columns - 1)) / columns;
-            return Wrap(
-              spacing: gap,
-              runSpacing: gap,
+        // Rows of equal height: a tile whose line wraps no longer stands
+        // taller than its neighbour.
+        for (var r = 0; r < tiles.length; r += columns) ...[
+          if (r > 0) const SizedBox(height: 10),
+          IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                for (final t in tiles) SizedBox(width: width, child: t),
+                for (var i = r; i < r + columns; i++) ...[
+                  if (i > r) const SizedBox(width: 10),
+                  Expanded(
+                    child: i < tiles.length ? tiles[i] : const SizedBox(),
+                  ),
+                ],
               ],
-            );
-          },
-        ),
+            ),
+          ),
+        ],
         const SizedBox(height: kSectionGap),
       ],
     );
@@ -651,6 +660,7 @@ class _Tile extends StatelessWidget {
       padding: const EdgeInsets.all(14),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
         children: [
           IconTile(icon: icon, color: color, size: 34),
           const SizedBox(height: 10),
@@ -801,16 +811,24 @@ class _SubjectProgressCard extends StatelessWidget {
           '${progress.completedTopics} proficient';
     }
 
+    final p = context.palette;
     return SurfaceCard(
       onTap: () => context.go('/subject/${course.slug}/course'),
+      padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
       child: Row(
         children: [
           Container(
-            width: 4,
-            height: 36,
+            width: 48,
+            height: 48,
+            padding: const EdgeInsets.all(5),
             decoration: BoxDecoration(
-              color: accent,
-              borderRadius: BorderRadius.circular(2),
+              color: accent.withAlpha(30),
+              borderRadius: BorderRadius.circular(Radii.md),
+            ),
+            child: Illustration(
+              IllustrationAsset.forSubject(course.name),
+              height: 38,
+              accent: accent,
             ),
           ),
           const SizedBox(width: 14),
@@ -820,34 +838,38 @@ class _SubjectProgressCard extends StatelessWidget {
               children: [
                 Text(
                   course.name,
-                  style: TextStyle(
-                    color: context.palette.textStrong,
+                  style: AppTheme.bodyMd.copyWith(
+                    color: p.textStrong,
                     fontWeight: FontWeight.w600,
-                    fontSize: 14,
+                    height: 1.3,
                   ),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   detail,
-                  style: TextStyle(
-                    color: progress.isEmpty || !course.isLive
-                        ? context.palette.onLow
-                        : accent,
-                    fontSize: 12,
-                  ),
+                  style: AppTheme.label.copyWith(color: p.textSecondary),
                 ),
               ],
             ),
           ),
-          if (levels.isNotEmpty) ...[
+          // A 0% ring says nothing to someone who has not started; the
+          // ring arrives with the first practice.
+          if (course.isLive && progress.isEmpty)
+            Text(
+              'Start',
+              style: AppTheme.label.copyWith(
+                color: p.primaryFg,
+                fontWeight: FontWeight.w700,
+              ),
+            )
+          else if (levels.isNotEmpty)
             MasteryRing(
               fraction: masteryFraction(levels),
               accent: accent,
               size: 40,
             ),
-            const SizedBox(width: 6),
-          ],
-          Icon(Icons.chevron_right_rounded, color: context.palette.onLow),
+          const SizedBox(width: 6),
+          Icon(Icons.chevron_right_rounded, color: p.onLow),
         ],
       ),
     );
@@ -866,9 +888,11 @@ class _ContinueLearning extends ConsumerWidget {
     if (c == null) {
       // Hold the card's place while progress loads, so the page does not
       // jump down when it arrives.
-      return ref.watch(continueLearningLoadingProvider)
-          ? const _ContinueSkeleton()
-          : const SizedBox.shrink();
+      if (ref.watch(continueLearningLoadingProvider)) {
+        return const _ContinueSkeleton();
+      }
+      // Nothing to continue yet: say where to begin, instead of nothing.
+      return const _StartHere();
     }
     final next = c.next;
     final fraction = c.total == 0 ? 0.0 : c.done / c.total;
@@ -958,6 +982,111 @@ class _ContinueLearning extends ConsumerWidget {
                 ),
               ],
             ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// What a student with no progress sees where "Continue learning" will
+/// be: their first subject's course, and five quick questions to warm up.
+/// Brilliant and Khan both open on a single "start here"; Home used to open
+/// on a page of equal tiles, none of which said where to begin.
+///
+/// Costs no reads: the catalog and progress are already loaded for "Your
+/// subjects".
+class _StartHere extends ConsumerWidget {
+  const _StartHere();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final progress = ref.watch(userProgressProvider).asData?.value;
+    // Someone who has practised has places to go; this is for a first day.
+    if (progress == null || !progress.isEmpty) {
+      return const SizedBox.shrink();
+    }
+    final selected = ref.watch(selectedSubjectSlugsProvider);
+    final courses =
+        ref.watch(courseCatalogProvider).asData?.value ??
+        const <CourseSummary>[];
+    final first = courses
+        .where((c) => c.isLive && (selected.isEmpty || selected.contains(c.slug)))
+        .firstOrNull;
+    final p = context.palette;
+    final accent = first == null
+        ? AppColors.primary
+        : AppColors.forSubject(first.name);
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: kSectionGap),
+      child: SurfaceCard(
+        key: const ValueKey('dashboard.startHere'),
+        borderColor: AppColors.primary.withAlpha(110),
+        padding: const EdgeInsets.all(20),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'START HERE',
+                    style: AppTheme.caption.copyWith(
+                      color: p.primaryFg,
+                      letterSpacing: 0.9,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    first == null
+                        ? 'Pick a course to begin'
+                        : 'Begin with ${first.name}',
+                    style: AppTheme.heading3.copyWith(color: p.textStrong),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Each topic has a short test. Pass it to open unlimited '
+                    'practice, with the working after every answer.',
+                    style: AppTheme.bodyMd.copyWith(color: p.textSecondary),
+                  ),
+                  const SizedBox(height: 16),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      AppButton(
+                        label: first == null
+                            ? 'Browse courses'
+                            : 'Open ${first.name}',
+                        trailingIcon: Icons.arrow_forward_rounded,
+                        onPressed: () => context.go(
+                          first == null
+                              ? '/courses'
+                              : '/subject/${first.slug}/course',
+                        ),
+                      ),
+                      AppButton(
+                        label: 'Warm up: 5 questions',
+                        tone: ButtonTone.ghost,
+                        icon: Icons.bolt_rounded,
+                        onPressed: () => context.push('/try'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            if (first != null && MediaQuery.sizeOf(context).width >= 480) ...[
+              const SizedBox(width: 16),
+              Illustration(
+                IllustrationAsset.forSubject(first.name),
+                height: 88,
+                accent: accent,
+              ),
+            ],
           ],
         ),
       ),

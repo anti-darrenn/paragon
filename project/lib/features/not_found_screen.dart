@@ -18,7 +18,7 @@ class NotFoundScreen extends StatelessWidget {
         child: Center(
           child: SingleChildScrollView(
             child: EmptyState(
-              icon: Icons.search_off_rounded,
+              illustration: IllustrationAsset.notFound,
               title: "We couldn't find that page",
               message:
                   'The link may be old or mistyped. Everything in Paragon '
@@ -28,18 +28,19 @@ class NotFoundScreen extends StatelessWidget {
                 spacing: 12,
                 runSpacing: 8,
                 children: [
-                  ElevatedButton(
+                  AppButton(
+                    label: 'Go home',
                     onPressed: () => context.go('/'),
-                    child: const Text('Go home'),
                   ),
                   // The static past-question pages live outside the app,
                   // so this is a page load, not a route.
-                  OutlinedButton(
+                  AppButton(
+                    label: 'Past questions',
+                    tone: ButtonTone.secondary,
                     onPressed: () => launchUrl(
                       Uri.parse('$appOrigin/past-questions/'),
                       webOnlyWindowName: '_self',
                     ),
-                    child: const Text('Past questions'),
                   ),
                 ],
               ),
