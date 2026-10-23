@@ -26,7 +26,9 @@ class GoogleSignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
-    final c = dark ? AppColors.googleButtonOnDark : AppColors.googleButtonOnLight;
+    final c = dark
+        ? AppColors.googleButtonOnDark
+        : AppColors.googleButtonOnLight;
     return Semantics(
       label: loading ? '$label, loading' : null,
       excludeSemantics: loading,

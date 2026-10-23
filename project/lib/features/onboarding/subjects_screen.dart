@@ -91,7 +91,8 @@ class _OnboardingSubjectsScreenState
       primaryLabel: 'Continue',
       onPrimary: _selected.length >= _minSubjects ? _submit : null,
       child: catalogAsync.when(
-        loading: () => const SkeletonPage(title: false, count: 4, cardHeight: 64),
+        loading: () =>
+            const SkeletonPage(title: false, count: 4, cardHeight: 64),
         error: (_, _) => InlineAlert(
           tone: Tone.danger,
           message:

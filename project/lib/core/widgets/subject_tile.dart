@@ -79,9 +79,7 @@ class SubjectTile extends StatelessWidget {
                       const SizedBox(height: 2),
                       Text(
                         course.blurb,
-                        style: AppTheme.label.copyWith(
-                          color: p.textSecondary,
-                        ),
+                        style: AppTheme.label.copyWith(color: p.textSecondary),
                       ),
                     ],
                   ),
