@@ -530,6 +530,12 @@ emails).
 - **Moving through a list.** Previous and Next (Alt+←/→) step through the list it
   was opened from (`studioWorkListProvider`). Ctrl+S saves.
 
+**Studio errors** keep the raw text for staff, folded away: `StudioError` (an alert with
+Details and Copy) for a panel that failed to load, `showStudioFailure` (a toast with
+Details) for a failed action, both in `features/admin/studio/studio_error.dart`. Student
+screens never show it; they use `LoadError`. Every destructive studio action asks first
+with `confirmDialog(destructive: true)`.
+
 `/admin/topic/:topicId` is the topic planner: items in order, drag to
 reorder (reviewers only, since it moves published items), and "Preview as
 student". The editor has:
