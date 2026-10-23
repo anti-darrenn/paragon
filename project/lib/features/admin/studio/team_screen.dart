@@ -262,8 +262,9 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                                   confirmLabel: 'Remove from the team',
                                   destructive: true,
                                 );
-                                if (ok)
+                                if (ok) {
                                   await _save(role: 'none', email: i.email);
+                                }
                               },
                               onForget: () async {
                                 final ok = await confirmDialog(
