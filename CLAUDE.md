@@ -530,6 +530,12 @@ emails).
 - **Moving through a list.** Previous and Next (Alt+←/→) step through the list it
   was opened from (`studioWorkListProvider`). Ctrl+S saves.
 
+**Studio errors** keep the raw text for staff, folded away: `StudioError` (an alert with
+Details and Copy) for a panel that failed to load, `showStudioFailure` (a toast with
+Details) for a failed action, both in `features/admin/studio/studio_error.dart`. Student
+screens never show it; they use `LoadError`. Every destructive studio action asks first
+with `confirmDialog(destructive: true)`.
+
 `/admin/topic/:topicId` is the topic planner: items in order, drag to
 reorder (reviewers only, since it moves published items), and "Preview as
 student". The editor has:
@@ -866,6 +872,22 @@ cards**:
     what hints split on, so one Enter types the blank line; Shift+Enter, Enter
     on an empty line and Enter inside maths stay a single newline.
 
+**Question sessions** (UI pass, 2026-10-23) share `lib/core/widgets/session/`:
+`SessionLayout` (progress pinned at the top, a 720 column, a bar pinned at the bottom;
+inline when the height is unbounded, as an exercise inside a lesson is), `SessionHeader`
+("Question 3 of 10" over `SegmentedProgress`), `QuestionCard`, `FeedbackPanel` (the worked
+answer, edged in the verdict's colour), `SessionKeys` (A–E or 1–9, Enter) and two bars.
+- **Instant feedback** (drill, exercises, taster, challenge links, custom and flashcard
+  quizzes, mistakes practice) uses `SessionActionBar`: pick, then **Check**, then the verdict
+  and **Continue** ("See results" last). Nothing is marked on a tap.
+- **Marked at the end** (topic test, unit test, course challenge) uses `SessionNavBar`, Back
+  and Next, with no verdicts. The WAEC exam keeps its own tile and keys.
+- **Ends** on `SessionSummary`: a filling `ScoreRing`, what changed, `AppButton`s. Confetti and
+  the celebration sound only when `isWorthCelebrating` (80% or more, a pass, a level up).
+- **Slots, not built-ins:** the frame never builds `DifficultyRating` or a report button;
+  each screen passes them in (`difficulty_rating_test` reads the sources).
+- `StudyDock.bottomInset` keeps the tools panel above a pinned bar.
+
 **Answer options.** Every multiple-choice option a student answers is `AnswerOption`
 (`lib/core/widgets/answer_option.dart`): drill, the topic test, exercises, the taster,
 mistakes practice, the unit test and every review. Only the WAEC exam keeps its own tile, and
@@ -968,6 +990,9 @@ follows `prefers-reduced-motion`. `Confetti` lives in `core/widgets/motion/`.
   every tone is 4.5:1 on both backgrounds, with orange-on-white as its control.
 - **White text sits on `AppColors.successStrong` / `dangerStrong`**, never on `correct` or
   `wrong`.
+- **Text and icons on an orange fill are `AppColors.onPrimary`** (near-black, 6.2:1), never
+  white (2.7:1, which fails). Buttons get it from the theme; set it only on a hand-made
+  orange fill.
 - In a dialog builder, read the palette from the dialog's own context: the screen's
   context may be closing (the topic test's Leave dialog threw).
 

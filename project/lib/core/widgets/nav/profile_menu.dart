@@ -91,16 +91,16 @@ class ProfileMenuButton extends ConsumerWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Text(
-                    isGuest
-                        ? 'Progress is kept on this session'
-                        : (username == null || username.isEmpty
-                              ? ''
-                              : '@$username'),
-                    style: AppTheme.label.copyWith(
-                      color: context.palette.textSecondary,
+                  // No empty second line when there is no username.
+                  if (isGuest || (username != null && username.isNotEmpty))
+                    Text(
+                      isGuest
+                          ? 'Progress is kept on this session'
+                          : '@$username',
+                      style: AppTheme.label.copyWith(
+                        color: context.palette.textSecondary,
+                      ),
                     ),
-                  ),
                 ],
               ),
             ],

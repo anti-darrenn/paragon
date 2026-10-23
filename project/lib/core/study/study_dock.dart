@@ -25,6 +25,7 @@ class StudyDock extends ConsumerStatefulWidget {
     required this.studyContext,
     required this.child,
     this.tools,
+    this.bottomInset = 0,
   });
 
   /// Firestore subject id; resolved to a name through `subjectsProvider`.
@@ -35,6 +36,10 @@ class StudyDock extends ConsumerStatefulWidget {
 
   /// Overrides the registry. For tests.
   final List<StudyTool>? tools;
+
+  /// Room left at the bottom for a bar the panel must not cover — a
+  /// session's Check bar (`kSessionBarHeight`).
+  final double bottomInset;
 
   @override
   ConsumerState<StudyDock> createState() => _StudyDockState();
@@ -149,14 +154,14 @@ class _StudyDockState extends ConsumerState<StudyDock> {
                 wide
                     ? Positioned(
                         right: 44,
-                        bottom: 24,
+                        bottom: 24 + widget.bottomInset,
                         width: 360,
                         child: _Panel(tool: open, scope: scope, close: _close),
                       )
                     : Positioned(
                         left: 0,
                         right: 0,
-                        bottom: 0,
+                        bottom: widget.bottomInset,
                         child: ConstrainedBox(
                           constraints: BoxConstraints(
                             maxHeight: box.maxHeight * 0.6,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/learn/exercise_session.dart';
@@ -9,18 +8,19 @@ import '../../core/providers/analytics_provider.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/attempt_repository.dart';
 import '../../core/repositories/learn_repository.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/answer_option.dart';
-import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/report_problem_button.dart';
 import '../study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../../core/theme/app_palette.dart';
 import '../../core/learn/hints.dart';
 import '../../core/widgets/hint_panel.dart';
-import '../../core/widgets/question_image.dart';
 import '../../core/repositories/difficulty_vote_repository.dart';
 import '../../core/widgets/difficulty_rating.dart';
+import '../../core/sound/sfx.dart';
+import '../../core/widgets/session/session_frame.dart';
+import '../../core/widgets/session/session_summary.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// An in-lesson exercise: a short set of questions with immediate
 /// feedback, Khan-style. The rules live in [ExerciseSession].
@@ -55,7 +55,6 @@ class ExercisePane extends ConsumerStatefulWidget {
 class _ExercisePaneState extends ConsumerState<ExercisePane> {
   ExerciseSession? _session;
   List<Question>? _sessionFor;
-  final _focus = FocusNode();
 
   /// "How hard was this?" answers for this set, sent once: when the set is
   /// finished, or when the student leaves part-way.
@@ -84,7 +83,6 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
   @override
   void dispose() {
     _sendRatings();
-    _focus.dispose();
     super.dispose();
   }
 
@@ -164,10 +162,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
         ),
         const SizedBox(height: 20),
         async.when(
-          loading: () => const Padding(
-            padding: EdgeInsets.all(40),
-            child: Center(child: CircularProgressIndicator()),
-          ),
+          loading: () => const LoadingView(label: 'Loading questions'),
           error: (_, _) => _Note(
             "These questions couldn't be loaded. Check your connection and "
             'try again.',
@@ -200,6 +195,17 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
       if (s.isFinished) _finish(s);
     }
 
+    void pick(int i) {
+      if (s.wrongOptions.contains(i)) return;
+      Sfx.unlock();
+      act(() => s.select(i));
+    }
+
+    void check() {
+      act(s.check);
+      Sfx.play(s.step == ExerciseStep.correct ? SfxCue.correct : SfxCue.wrong);
+    }
+
     final resolved =
         s.step == ExerciseStep.correct || s.step == ExerciseStep.revealed;
 
@@ -213,46 +219,48 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
       return AnswerOptionState.idle;
     }
 
-    final primary = resolved
-        ? (
-            label: s.index == s.questions.length - 1
-                ? 'Finish'
-                : 'Next question',
-            onPressed: () => act(s.next),
-          )
-        : (label: 'Check', onPressed: s.canCheck ? () => act(s.check) : null);
+    final VoidCallback? primary = resolved
+        ? () => act(s.next)
+        : (s.canCheck ? check : null);
+    final tries = s.firstTries;
 
-    return Focus(
-      focusNode: _focus,
-      autofocus: true,
-      onKeyEvent: (node, event) {
-        if (event is! KeyDownEvent) return KeyEventResult.ignored;
-        final digit = int.tryParse(event.logicalKey.keyLabel);
-        if (digit != null && digit >= 1 && digit <= q.options.length) {
-          act(() => s.select(digit - 1));
-          return KeyEventResult.handled;
-        }
-        if (event.logicalKey == LogicalKeyboardKey.enter &&
-            primary.onPressed != null) {
-          primary.onPressed!();
-          return KeyEventResult.handled;
-        }
-        return KeyEventResult.ignored;
-      },
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+    return SessionKeys(
+      optionCount: q.options.length,
+      onSelect: resolved ? null : pick,
+      onEnter: primary,
+      // Inside the lesson's own scroll view, so the bar sits under the
+      // question rather than pinned to the window.
+      child: SessionLayout(
+        header: SessionHeader(
+          index: s.index,
+          total: s.questions.length,
+          states: [
+            for (var i = 0; i < s.questions.length; i++)
+              i < tries.length
+                  ? (tries[i].isCorrect
+                        ? SegmentState.right
+                        : SegmentState.wrong)
+                  : SegmentState.pending,
+          ],
+        ),
+        bar: SessionActionBar(
+          verdict: switch (s.step) {
+            ExerciseStep.correct => SessionVerdict.right,
+            ExerciseStep.revealed => SessionVerdict.wrong,
+            ExerciseStep.retrying => SessionVerdict.retry,
+            _ => SessionVerdict.none,
+          },
+          label: !resolved
+              ? 'Check'
+              : (s.index == s.questions.length - 1
+                    ? 'See results'
+                    : 'Continue'),
+          onPressed: primary,
+          optionCount: q.options.length,
+          message: _Feedback(session: s, question: q),
+        ),
         children: [
-          _Dots(session: s),
-          const SizedBox(height: 20),
-          FullLatexView(
-            latex: q.text,
-            textStyle: AppTheme.bodyLg.copyWith(
-              color: context.palette.textPrimary,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          QuestionImage(assetId: q.imageId),
-          const SizedBox(height: 20),
+          QuestionCard(question: q),
           for (var i = 0; i < q.options.length; i++)
             AnswerOption(
               index: i,
@@ -260,7 +268,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
               state: stateFor(i),
               onTap: resolved || s.wrongOptions.contains(i)
                   ? null
-                  : () => act(() => s.select(i)),
+                  : () => pick(i),
             ),
           if (s.canHint)
             HintPanel(
@@ -268,10 +276,13 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
               shown: s.hintsShown,
               onShowNext: () => act(s.useHint),
             ),
-          _Feedback(session: s, question: q),
-          const SizedBox(height: 8),
-          // On its own line: beside the button it overflowed a phone.
-          if (resolved)
+          if (resolved) ...[
+            FeedbackPanel(
+              question: q,
+              right: s.step == ExerciseStep.correct,
+              missingNote: null,
+            ),
+            // On its own line: beside the button it overflowed a phone.
             Align(
               alignment: Alignment.centerLeft,
               child: Wrap(
@@ -285,32 +296,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
                 ],
               ),
             ),
-          Row(
-            children: [
-              const Spacer(),
-              ElevatedButton(
-                onPressed: primary.onPressed,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primary,
-                  foregroundColor: Colors.white,
-                  minimumSize: const Size(140, 44),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                ),
-                child: Text(primary.label),
-              ),
-            ],
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Keys 1–${q.options.length} choose an answer, Enter checks it.',
-            style: AppTheme.caption.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-          // Optional and below the button, so it never pushes "Next" away.
-          if (resolved)
+            // Optional, and never between the student and Continue.
             Align(
               alignment: Alignment.centerLeft,
               child: DifficultyRating(
@@ -318,6 +304,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
                 onRate: (level) => setState(() => _ratings[q.id] = level),
               ),
             ),
+          ],
         ],
       ),
     );
@@ -326,75 +313,32 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
   Widget _summary(ExerciseSession s) {
     final total = s.firstTries.length;
     final isGuest = ref.watch(isGuestProvider);
-    return Container(
-      padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        border: Border.all(color: context.palette.border),
-        borderRadius: BorderRadius.circular(12),
+    return SessionSummary(
+      title: '${s.firstTryCorrect} of $total right first time',
+      correct: s.firstTryCorrect,
+      total: total,
+      subtitle: isGuest
+          ? 'Practice only — guest answers are not saved.'
+          : 'Practice only — this does not affect your mastery or the '
+                'topic test.',
+      celebrate: SessionSummary.isWorthCelebrating(
+        correct: s.firstTryCorrect,
+        total: total,
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            '${s.firstTryCorrect} of $total right first time',
-            style: AppTheme.heading2.copyWith(
-              color: context.palette.textPrimary,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            isGuest
-                ? 'Practice only — guest answers are not saved.'
-                : 'Practice only — this does not affect your mastery or the '
-                      'topic test.',
-            style: AppTheme.bodyMd.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-          const SizedBox(height: 20),
-          OutlinedButton(
-            onPressed: _newSet,
-            child: const Text('Try another set'),
-          ),
-        ],
+      primary: AppButton(
+        label: 'Try another set',
+        tone: ButtonTone.secondary,
+        icon: Icons.refresh_rounded,
+        expand: true,
+        onPressed: _newSet,
       ),
     );
   }
 }
 
-class _Dots extends StatelessWidget {
-  const _Dots({required this.session});
-
-  final ExerciseSession session;
-
-  @override
-  Widget build(BuildContext context) {
-    final tries = session.firstTries;
-    return Semantics(
-      label: 'Question ${session.index + 1} of ${session.questions.length}',
-      child: Row(
-        children: [
-          for (var i = 0; i < session.questions.length; i++)
-            Container(
-              width: 28,
-              height: 6,
-              margin: const EdgeInsets.only(right: 6),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(3),
-                color: i < tries.length
-                    ? (tries[i].isCorrect ? AppColors.correct : AppColors.wrong)
-                    : i == session.index
-                    ? AppColors.primary
-                    : context.palette.track,
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-}
-
+/// The verdict in the bar: "Correct!", "Not quite — try again." or the
+/// right answer, in words and an icon, announced as it appears. The
+/// worked answer itself is the page's [FeedbackPanel].
 class _Feedback extends StatelessWidget {
   const _Feedback({required this.session, required this.question});
 
@@ -403,56 +347,43 @@ class _Feedback extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final (String? headline, Color color) = switch (session.step) {
-      ExerciseStep.correct => ('Correct!', AppColors.correct),
-      ExerciseStep.retrying => ('Not quite — try again.', AppColors.warning),
-      ExerciseStep.revealed => (
-        'The right answer is ${AnswerOption.letter(question.correctIndex.clamp(0, 25))}.',
-        AppColors.wrong,
+    final p = context.palette;
+    final (
+      String? headline,
+      Color color,
+      IconData icon,
+    ) = switch (session.step) {
+      ExerciseStep.correct => ('Correct!', p.successFg, Icons.check_circle),
+      ExerciseStep.retrying => (
+        'Not quite — try again.',
+        p.warningFg,
+        Icons.replay_rounded,
       ),
-      _ => (null, context.palette.textSecondary),
+      ExerciseStep.revealed => (
+        'The right answer is '
+            '${AnswerOption.letter(question.correctIndex.clamp(0, 25))}.',
+        p.dangerFg,
+        Icons.cancel,
+      ),
+      _ => (null, p.textSecondary, Icons.circle),
     };
     if (headline == null) return const SizedBox.shrink();
-
-    final showExplanation =
-        (session.step == ExerciseStep.correct ||
-            session.step == ExerciseStep.revealed) &&
-        (question.explanation.trim().isNotEmpty ||
-            question.explanationImageId != null);
-
     return Semantics(
       liveRegion: true,
-      child: Container(
-        margin: const EdgeInsets.only(bottom: 12),
-        padding: const EdgeInsets.all(14),
-        decoration: BoxDecoration(
-          color: color.withAlpha(26),
-          border: Border.all(color: color.withAlpha(102)),
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
+      child: Row(
+        children: [
+          Icon(icon, color: color, size: 22),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
               headline,
-              style: AppTheme.bodyMd.copyWith(
+              style: AppTheme.bodyLg.copyWith(
                 color: color,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            if (showExplanation) ...[
-              const SizedBox(height: 8),
-              if (question.explanation.trim().isNotEmpty)
-                FullLatexView(
-                  latex: question.explanation,
-                  textStyle: AppTheme.bodyMd.copyWith(
-                    color: context.palette.onHigh,
-                  ),
-                ),
-              QuestionImage.workedAnswer(assetId: question.explanationImageId),
-            ],
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

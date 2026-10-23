@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/widgets/load_error.dart';
 import '../../core/models/question.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/questions/question_draft.dart';
@@ -57,8 +58,12 @@ class MyQuizzesScreen extends ConsumerWidget {
             )
           else
             quizzes.when(
-              loading: () => const Center(child: CircularProgressIndicator()),
-              error: (e, _) => Text("Couldn't load your quizzes.\n$e"),
+              loading: () => const SkeletonPage(title: false, count: 3),
+              error: (e, _) => LoadError(
+                error: e,
+                message: "Couldn't load your quizzes.",
+                onRetry: () => ref.invalidate(myQuizzesProvider),
+              ),
               data: (list) => list.isEmpty
                   ? const EmptyState(
                       icon: Icons.edit_note_rounded,
@@ -183,7 +188,13 @@ class _QuizEditorScreenState extends ConsumerState<QuizEditorScreen> {
       _add(q);
     }
     if (_qs.isEmpty) {
-      _add(const QuizQuestion(text: '', options: ['', '', '', ''], correctIndex: -1));
+      _add(
+        const QuizQuestion(
+          text: '',
+          options: ['', '', '', ''],
+          correctIndex: -1,
+        ),
+      );
     }
   }
 
@@ -206,9 +217,11 @@ class _QuizEditorScreenState extends ConsumerState<QuizEditorScreen> {
       return true;
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
+        showToast(
           context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't save: $e")));
+          "Couldn't save the quiz. Check your connection and try again.",
+          tone: Tone.danger,
+        );
       }
       return false;
     } finally {
@@ -261,9 +274,11 @@ class _QuizEditorScreenState extends ConsumerState<QuizEditorScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
+        showToast(
           context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't upload: $e")));
+          "Couldn't upload the picture. Try a smaller image.",
+          tone: Tone.danger,
+        );
       }
     } finally {
       if (mounted) setState(() => _uploadingFor = null);
@@ -355,7 +370,9 @@ class _QuizEditorScreenState extends ConsumerState<QuizEditorScreen> {
             ),
             DropdownButtonFormField<String?>(
               initialValue: _subjectId,
-              decoration: const InputDecoration(labelText: 'Subject (optional)'),
+              decoration: const InputDecoration(
+                labelText: 'Subject (optional)',
+              ),
               items: [
                 const DropdownMenuItem(value: null, child: Text('None')),
                 for (final s in subjects)
@@ -452,9 +469,9 @@ class _QuestionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final palette = context.palette;
-    final issues = checkDraft(boxes.draft)
-        .where((i) => i.blocks || i.field != 'explanation')
-        .toList();
+    final issues = checkDraft(
+      boxes.draft,
+    ).where((i) => i.blocks || i.field != 'explanation').toList();
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
       child: SurfaceCard(
@@ -545,8 +562,7 @@ class _QuestionCard extends StatelessWidget {
                     ),
                     IconButton(
                       tooltip: 'Remove option ${optionLetter(j)}',
-                      onPressed:
-                          boxes.options.length <= QuizQuestion.minOptions
+                      onPressed: boxes.options.length <= QuizQuestion.minOptions
                           ? null
                           : () {
                               boxes.options.removeAt(j).dispose();

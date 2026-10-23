@@ -8,11 +8,13 @@ import '../../core/models/question.dart';
 import '../../core/providers/analytics_provider.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/attempt_repository.dart';
+import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/guest_notice.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 import '../../core/widgets/question_runner.dart';
+import '../../core/widgets/session/session_summary.dart';
 import '../../core/widgets/ui/ui.dart';
 import 'challenge_share.dart';
 
@@ -133,9 +135,7 @@ class _ChallengeLinkScreenState extends ConsumerState<ChallengeLinkScreen> {
       );
     } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Couldn't create the challenge.")),
-        );
+        showToast(context, "Couldn't create the challenge.", tone: Tone.danger);
       }
     }
   }
@@ -164,9 +164,15 @@ class _ChallengeLinkScreenState extends ConsumerState<ChallengeLinkScreen> {
   );
 
   Widget _body(BuildContext context, ChallengeLink c) {
-    final palette = context.palette;
     final isGuest = ref.watch(isGuestProvider);
     final mineToShare = ref.watch(currentUserProvider)?.uid == c.userId;
+    // Playing fills the page, so the session's Check bar pins to the bottom.
+    if (_stage == _Stage.playing) {
+      return QuestionRunner(
+        questions: _questions!,
+        onFinished: (r) => _finished(c, r),
+      );
+    }
     return PageBody(
       children: [
         switch (_stage) {
@@ -181,10 +187,16 @@ class _ChallengeLinkScreenState extends ConsumerState<ChallengeLinkScreen> {
                     '${c.name} scored ${c.score}/${c.total} on ${c.topicName}. '
                     '${mineToShare ? 'Send it to a friend.' : 'Can you beat that?'}',
               ),
+              _ScoreToBeat(name: c.name, score: c.score, total: c.total),
+              const SizedBox(height: 20),
               if (_error != null)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 12),
-                  child: Text(_error!, style: AppTheme.bodyMd),
+                  child: InlineAlert(
+                    tone: Tone.danger,
+                    message: _error!,
+                    announce: true,
+                  ),
                 ),
               if (mineToShare)
                 ElevatedButton.icon(
@@ -213,55 +225,107 @@ class _ChallengeLinkScreenState extends ConsumerState<ChallengeLinkScreen> {
                 ),
             ],
           ),
-          _Stage.playing => QuestionRunner(
-            questions: _questions!,
-            onFinished: (r) => _finished(c, r),
-          ),
-          _Stage.done => Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              PageIntro(
-                title: '$_mine/${_answers.length}',
-                subtitle: scoreLine(
-                  mine: _mine,
-                  theirs: c.score,
-                  total: c.total,
-                  name: c.name,
-                ),
-              ),
-              if (isGuest) ...[
+          // Drawn above, as the whole page.
+          _Stage.playing => const SizedBox.shrink(),
+          _Stage.done => SessionSummary(
+            title: scoreLine(
+              mine: _mine,
+              theirs: c.score,
+              total: c.total,
+              name: c.name,
+            ),
+            correct: _mine,
+            total: _answers.length,
+            subtitle:
+                'Answers here count toward your mistakes notebook, not '
+                'toward topic mastery.',
+            celebrate: _mine > c.score,
+            details: [
+              if (isGuest)
                 GuestNotice(
                   message: GuestLimits.saveResultMessage(
                     'your $_mine/${_answers.length}',
                   ),
                 ),
-                const SizedBox(height: 16),
-              ],
-              SizedBox(
-                height: 48,
-                child: ElevatedButton(
-                  onPressed: () => context.go(
-                    '/subject/${c.subjectId}/course/topic/${c.topicId}',
-                  ),
-                  child: Text('Learn ${c.topicName}'),
-                ),
-              ),
-              const SizedBox(height: 10),
-              OutlinedButton.icon(
-                icon: const Icon(Icons.replay_rounded),
-                label: Text('Challenge ${c.name} back'),
-                onPressed: () => _challengeBack(c),
-              ),
-              const SizedBox(height: 16),
-              Text(
-                'Answers here count toward your mistakes notebook, not '
-                'toward topic mastery.',
-                style: AppTheme.caption.copyWith(color: palette.textSecondary),
-              ),
             ],
+            primary: AppButton(
+              label: 'Learn ${c.topicName}',
+              expand: true,
+              onPressed: () => context.go(
+                '/subject/${c.subjectId}/course/topic/${c.topicId}',
+              ),
+            ),
+            secondary: AppButton(
+              label: 'Challenge ${c.name} back',
+              tone: ButtonTone.secondary,
+              icon: Icons.replay_rounded,
+              expand: true,
+              onPressed: () => _challengeBack(c),
+            ),
           ),
         },
       ],
+    );
+  }
+}
+
+/// The score a friend set: their initial, their name and score, against
+/// a question mark for yours.
+class _ScoreToBeat extends StatelessWidget {
+  const _ScoreToBeat({
+    required this.name,
+    required this.score,
+    required this.total,
+  });
+
+  final String name;
+  final int score;
+  final int total;
+
+  @override
+  Widget build(BuildContext context) {
+    final p = context.palette;
+    Widget side(String who, String result, Color colour) => Expanded(
+      child: Column(
+        children: [
+          CircleAvatar(
+            radius: 24,
+            backgroundColor: colour.withAlpha(40),
+            child: Text(
+              who.isEmpty ? '?' : who.characters.first.toUpperCase(),
+              style: AppTheme.heading3.copyWith(color: p.textStrong),
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            who,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTheme.label.copyWith(color: p.textSecondary),
+          ),
+          Text(result, style: AppTheme.heading2.copyWith(color: p.textStrong)),
+        ],
+      ),
+    );
+    return Semantics(
+      label: '$name scored $score out of $total. Your turn.',
+      excludeSemantics: true,
+      child: SurfaceCard(
+        padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 12),
+        child: Row(
+          children: [
+            side(name, '$score/$total', AppColors.secondary),
+            Text(
+              'vs',
+              style: AppTheme.bodyLg.copyWith(
+                color: p.textSecondary,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            side('You', '?/$total', AppColors.primary),
+          ],
+        ),
+      ),
     );
   }
 }

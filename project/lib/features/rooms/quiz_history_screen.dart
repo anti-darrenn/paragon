@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/widgets/load_error.dart';
 import '../../core/rooms/quiz_history.dart';
 import '../../core/rooms/room.dart';
 import '../../core/theme/app_colors.dart';
@@ -27,8 +28,12 @@ class QuizHistoryScreen extends ConsumerWidget {
       body: PageBody(
         children: [
           history.when(
-            loading: () => const Center(child: CircularProgressIndicator()),
-            error: (e, _) => Text("Couldn't load your history.\n$e"),
+            loading: () => const SkeletonPage(title: false, count: 4),
+            error: (e, _) => LoadError(
+              error: e,
+              message: "Couldn't load your history.",
+              onRetry: () => ref.invalidate(myQuizHistoryProvider),
+            ),
             data: (list) {
               if (list.isEmpty) {
                 return EmptyState(
@@ -37,18 +42,14 @@ class QuizHistoryScreen extends ConsumerWidget {
                   message:
                       'Join one with a code from your teacher, or host your '
                       'own.',
-                  action: Wrap(
-                    spacing: 8,
-                    children: [
-                      FilledButton(
-                        onPressed: () => context.push('/join'),
-                        child: const Text('Join a quiz'),
-                      ),
-                      OutlinedButton(
-                        onPressed: () => context.push('/rooms/new'),
-                        child: const Text('Host one'),
-                      ),
-                    ],
+                  action: AppButton(
+                    label: 'Join a quiz',
+                    onPressed: () => context.push('/join'),
+                  ),
+                  secondaryAction: AppButton(
+                    label: 'Host one',
+                    tone: ButtonTone.secondary,
+                    onPressed: () => context.push('/rooms/new'),
                   ),
                 );
               }
@@ -56,10 +57,13 @@ class QuizHistoryScreen extends ConsumerWidget {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  // Spaced: the three cards touched.
                   Row(
                     children: [
                       _Stat(label: 'Played', value: t.games),
+                      const SizedBox(width: 12),
                       _Stat(label: 'Won', value: t.wins, accent: true),
+                      const SizedBox(width: 12),
                       _Stat(label: 'Hosted', value: t.hosted),
                     ],
                   ),

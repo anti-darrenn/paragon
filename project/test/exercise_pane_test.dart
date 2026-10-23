@@ -45,7 +45,10 @@ void main() {
     source: 'drill',
   );
 
-  final questions = [question('q1', 'right1', 'wrong1'), question('q2', 'right2', 'wrong2')];
+  final questions = [
+    question('q1', 'right1', 'wrong1'),
+    question('q2', 'right2', 'wrong2'),
+  ];
 
   const exercise = LearnResource(
     id: 'ex1',
@@ -105,27 +108,35 @@ void main() {
   }
 
   /// q1 right first time; q2 wrong, then wrong again (revealed).
+  /// Scrolls a button or option into view, then taps it: the exercise
+  /// sits in a scroll view, as in the lesson, and its bar is below the
+  /// question.
+  Future<void> tapText(WidgetTester tester, String text) async {
+    await tester.ensureVisible(find.text(text));
+    await tester.tap(find.text(text));
+  }
+
   Future<void> playSet(WidgetTester tester) async {
-    await tester.tap(find.text('right1'));
+    await tapText(tester, 'right1');
     await tester.pump();
-    await tester.tap(find.text('Check'));
+    await tapText(tester, 'Check');
     await tester.pump();
     expect(find.text('Correct!'), findsOneWidget);
     expect(find.text('Because right1.'), findsOneWidget);
-    await tester.tap(find.text('Next question'));
+    await tapText(tester, 'Continue');
     await tester.pump();
 
-    await tester.tap(find.text('wrong2'));
+    await tapText(tester, 'wrong2');
     await tester.pump();
-    await tester.tap(find.text('Check'));
+    await tapText(tester, 'Check');
     await tester.pump();
     expect(find.text('Not quite — try again.'), findsOneWidget);
-    await tester.tap(find.text('xq2'));
+    await tapText(tester, 'xq2');
     await tester.pump();
-    await tester.tap(find.text('Check'));
+    await tapText(tester, 'Check');
     await tester.pump();
     expect(find.text('The right answer is A.'), findsOneWidget);
-    await tester.tap(find.text('Finish'));
+    await tapText(tester, 'See results');
     await tester.pumpAndSettle();
   }
 
@@ -145,7 +156,11 @@ void main() {
     };
     expect(byQuestion['q1']!['isCorrect'], isTrue);
     expect(byQuestion['q2']!['isCorrect'], isFalse);
-    expect(byQuestion['q2']!['selectedIndex'], 1, reason: 'the first try, not the retry');
+    expect(
+      byQuestion['q2']!['selectedIndex'],
+      1,
+      reason: 'the first try, not the retry',
+    );
     expect(attempts.docs.every((d) => d['source'] == 'exercise'), isTrue);
     expect(attempts.docs.every((d) => d['userId'] == 'u1'), isTrue);
   });
@@ -173,7 +188,11 @@ void main() {
     await playSet(tester);
 
     expect(find.textContaining('guest answers are not saved'), findsOneWidget);
-    expect(finished, 1, reason: 'a guest still completes the item for the visit');
+    expect(
+      finished,
+      1,
+      reason: 'a guest still completes the item for the visit',
+    );
     expect((await db.collection('attempts').get()).docs, isEmpty);
   });
 
@@ -200,7 +219,7 @@ void main() {
     await tester.pump();
     await tester.tap(find.text('Check'));
     await tester.pump();
-    expect(find.text('Next question'), findsOneWidget);
+    expect(find.text('Continue'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 
@@ -238,7 +257,9 @@ void main() {
     expect(find.text('right1'), findsNothing);
   });
 
-  testWidgets('an empty bank says so instead of showing nothing', (tester) async {
+  testWidgets('an empty bank says so instead of showing nothing', (
+    tester,
+  ) async {
     await pump(tester, user: null, bank: const []);
     expect(find.textContaining('No practice questions'), findsOneWidget);
   });
