@@ -6,10 +6,10 @@ import '../../../core/data/read_meter.dart';
 import '../../../core/models/firestore_parsing.dart';
 import '../../../core/providers/auth_provider.dart';
 import '../../../core/repositories/avatar_photo_repository.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/ui/ui.dart';
+import 'studio_error.dart';
 
 /// Reported profile photos, one row per account with an open report
 /// (2026-10-17). "Remove" deletes the photo and blocks new ones
@@ -87,9 +87,7 @@ class _PictureReportsPanelState extends ConsumerState<PictureReportsPanel> {
       ref.invalidate(avatarPhotoProvider);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't save: $e")));
+        showStudioFailure(context, "Couldn't save.", e);
       }
     } finally {
       if (mounted) setState(() => _busy = null);
@@ -111,10 +109,8 @@ class _PictureReportsPanelState extends ConsumerState<PictureReportsPanel> {
         ),
         reports.when(
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (e, _) => Text(
-            "Couldn't load reported photos.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-          ),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load reported photos.", error: e),
           data: (list) {
             if (list.isEmpty) {
               return Text(
@@ -153,12 +149,26 @@ class _PictureReportsPanelState extends ConsumerState<PictureReportsPanel> {
                               onPressed: () => _resolve(r, remove: false),
                               child: const Text('Keep'),
                             ),
-                            FilledButton(
-                              style: FilledButton.styleFrom(
-                                backgroundColor: AppColors.wrong,
-                              ),
-                              onPressed: () => _resolve(r, remove: true),
-                              child: const Text('Remove'),
+                            AppButton(
+                              label: 'Remove',
+                              tone: ButtonTone.destructive,
+                              size: ButtonSize.sm,
+                              // Removing deletes the photo and blocks new
+                              // uploads from that account until an admin
+                              // lifts it: asked first.
+                              onPressed: () async {
+                                final ok = await confirmDialog(
+                                  context,
+                                  title: 'Remove this photo?',
+                                  message:
+                                      'The photo is deleted, and this account '
+                                      'cannot upload another until an admin '
+                                      'allows it again.',
+                                  confirmLabel: 'Remove photo',
+                                  destructive: true,
+                                );
+                                if (ok) _resolve(r, remove: true);
+                              },
                             ),
                           ],
                         ],
