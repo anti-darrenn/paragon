@@ -1411,7 +1411,9 @@ class _ResourceTitle extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final resource = ref
-        .watch(adminResourceProvider((topicId: topicId, resourceId: resourceId)))
+        .watch(
+          adminResourceProvider((topicId: topicId, resourceId: resourceId)),
+        )
         .asData
         ?.value;
     final title = resource?.title.trim() ?? '';

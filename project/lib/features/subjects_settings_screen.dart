@@ -226,7 +226,9 @@ class _Body extends StatelessWidget {
                     )
                   : Text(
                       'Save',
-                      style: AppTheme.btnLabel.copyWith(color: AppColors.onPrimary),
+                      style: AppTheme.btnLabel.copyWith(
+                        color: AppColors.onPrimary,
+                      ),
                     ),
             ),
           ),

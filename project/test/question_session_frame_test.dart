@@ -245,9 +245,15 @@ void main() {
       id: id,
       topicId: 't',
       subjectId: 's',
-      text: 'A trader buys goods for 2,400 naira and sells them at a profit '
+      text:
+          'A trader buys goods for 2,400 naira and sells them at a profit '
           'of 15 per cent. What is the selling price?',
-      options: const ['2,640 naira', '2,760 naira', '2,580 naira', '3,000 naira'],
+      options: const [
+        '2,640 naira',
+        '2,760 naira',
+        '2,580 naira',
+        '3,000 naira',
+      ],
       correctIndex: 1,
       explanation: '15% of 2,400 is 360, so 2,400 + 360 = 2,760.',
       source: 'drill',

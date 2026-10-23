@@ -98,7 +98,11 @@ class SubjectTile extends StatelessWidget {
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: isSelected
-                      ? const Icon(Icons.check, size: 16, color: AppColors.onPrimary)
+                      ? const Icon(
+                          Icons.check,
+                          size: 16,
+                          color: AppColors.onPrimary,
+                        )
                       : null,
                 ),
               ],

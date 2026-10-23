@@ -511,7 +511,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: const Text('Submit', style: TextStyle(color: AppColors.onPrimary)),
+            child: const Text(
+              'Submit',
+              style: TextStyle(color: AppColors.onPrimary),
+            ),
           ),
         ],
       ),
