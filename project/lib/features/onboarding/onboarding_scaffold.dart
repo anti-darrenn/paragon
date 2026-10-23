@@ -135,7 +135,7 @@ class OnboardingScaffold extends StatelessWidget {
                                 style: AppTheme.btnLabel.copyWith(
                                   color: onPrimary == null
                                       ? context.palette.textSecondary
-                                      : Colors.white,
+                                      : AppColors.onPrimary,
                                   fontSize: 15,
                                 ),
                               ),

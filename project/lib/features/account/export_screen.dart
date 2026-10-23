@@ -189,14 +189,14 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
                                 height: 20,
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2,
-                                  color: Colors.white,
+                                  color: AppColors.onPrimary,
                                 ),
                               )
                             : Text(
                                 'Download my data',
                                 style: AppTheme.btnLabel.copyWith(
                                   color: nextAllowed == null
-                                      ? Colors.white
+                                      ? AppColors.onPrimary
                                       : context.palette.textSecondary,
                                 ),
                               ),
