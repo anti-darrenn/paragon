@@ -866,6 +866,22 @@ cards**:
     what hints split on, so one Enter types the blank line; Shift+Enter, Enter
     on an empty line and Enter inside maths stay a single newline.
 
+**Question sessions** (UI pass, 2026-10-23) share `lib/core/widgets/session/`:
+`SessionLayout` (progress pinned at the top, a 720 column, a bar pinned at the bottom;
+inline when the height is unbounded, as an exercise inside a lesson is), `SessionHeader`
+("Question 3 of 10" over `SegmentedProgress`), `QuestionCard`, `FeedbackPanel` (the worked
+answer, edged in the verdict's colour), `SessionKeys` (A–E or 1–9, Enter) and two bars.
+- **Instant feedback** (drill, exercises, taster, challenge links, custom and flashcard
+  quizzes, mistakes practice) uses `SessionActionBar`: pick, then **Check**, then the verdict
+  and **Continue** ("See results" last). Nothing is marked on a tap.
+- **Marked at the end** (topic test, unit test, course challenge) uses `SessionNavBar`, Back
+  and Next, with no verdicts. The WAEC exam keeps its own tile and keys.
+- **Ends** on `SessionSummary`: a filling `ScoreRing`, what changed, `AppButton`s. Confetti and
+  the celebration sound only when `isWorthCelebrating` (80% or more, a pass, a level up).
+- **Slots, not built-ins:** the frame never builds `DifficultyRating` or a report button;
+  each screen passes them in (`difficulty_rating_test` reads the sources).
+- `StudyDock.bottomInset` keeps the tools panel above a pinned bar.
+
 **Answer options.** Every multiple-choice option a student answers is `AnswerOption`
 (`lib/core/widgets/answer_option.dart`): drill, the topic test, exercises, the taster,
 mistakes practice, the unit test and every review. Only the WAEC exam keeps its own tile, and
