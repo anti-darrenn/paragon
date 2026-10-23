@@ -128,7 +128,10 @@ void main() {
         ),
       );
       final screen = tester.getSize(find.byType(Scaffold));
-      expect(tester.getBottomLeft(find.text('bar')).dy, lessThanOrEqualTo(screen.height));
+      expect(
+        tester.getBottomLeft(find.text('bar')).dy,
+        lessThanOrEqualTo(screen.height),
+      );
       expect(find.byType(SingleChildScrollView), findsOneWidget);
     });
 
@@ -158,13 +161,14 @@ void main() {
       expect(SessionSummary.isWorthCelebrating(correct: 8, total: 10), isTrue);
       expect(SessionSummary.isWorthCelebrating(correct: 7, total: 10), isFalse);
       expect(
-        SessionSummary.isWorthCelebrating(correct: 2, total: 10, levelledUp: true),
+        SessionSummary.isWorthCelebrating(
+          correct: 2,
+          total: 10,
+          levelledUp: true,
+        ),
         isTrue,
       );
-      expect(
-        SessionSummary.isWorthCelebrating(correct: 0, total: 0),
-        isFalse,
-      );
+      expect(SessionSummary.isWorthCelebrating(correct: 0, total: 0), isFalse);
     });
 
     Widget summary({required bool celebrate}) => SingleChildScrollView(

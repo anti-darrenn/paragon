@@ -78,9 +78,7 @@ void main() {
           // and not what this file is measuring. The group at the bottom
           // pumps WITHOUT this override, so the gate cannot quietly break
           // behind it.
-          drillAccessProvider(
-            topicId,
-          ).overrideWithValue(DrillAccess.allowed),
+          drillAccessProvider(topicId).overrideWithValue(DrillAccess.allowed),
         ],
         child: const MaterialApp(home: DrillScreen(topicId: topicId)),
       ),
@@ -95,9 +93,7 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.text('Check'));
       await tester.pumpAndSettle();
-      await tester.tap(
-        find.text(i == count - 1 ? 'See results' : 'Continue'),
-      );
+      await tester.tap(find.text(i == count - 1 ? 'See results' : 'Continue'));
       await tester.pumpAndSettle();
     }
   }
@@ -191,11 +187,7 @@ void main() {
             ),
           ],
           child: const MaterialApp(
-            home: DrillScreen(
-              topicId: topicId,
-              subjectId: 's1',
-              unitId: 'u1',
-            ),
+            home: DrillScreen(topicId: topicId, subjectId: 's1', unitId: 'u1'),
           ),
         ),
       );

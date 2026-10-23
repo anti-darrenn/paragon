@@ -120,34 +120,38 @@ void main() {
   });
 
   group('MistakeEntry.subjectId', () {
-    MistakeEntry entry({required String attemptSubject, String? questionSubject}) =>
-        MistakeEntry(
-          Mistake(
-            AttemptRecord(
-              questionId: 'q1',
-              topicId: 't1',
-              subjectId: attemptSubject,
-              selectedIndex: 1,
-              isCorrect: false,
-              source: 'drill',
-            ),
-          ),
-          Question(
-            id: 'q1',
-            topicId: 't1',
-            subjectId: questionSubject ?? '',
-            text: 'Q',
-            options: const ['a', 'b'],
-            correctIndex: 0,
-            explanation: '',
-            source: 'drill',
-          ),
-        );
+    MistakeEntry entry({
+      required String attemptSubject,
+      String? questionSubject,
+    }) => MistakeEntry(
+      Mistake(
+        AttemptRecord(
+          questionId: 'q1',
+          topicId: 't1',
+          subjectId: attemptSubject,
+          selectedIndex: 1,
+          isCorrect: false,
+          source: 'drill',
+        ),
+      ),
+      Question(
+        id: 'q1',
+        topicId: 't1',
+        subjectId: questionSubject ?? '',
+        text: 'Q',
+        options: const ['a', 'b'],
+        correctIndex: 0,
+        explanation: '',
+        source: 'drill',
+      ),
+    );
 
     test("files a mistake under the question's subject, not a stale one", () {
       expect(
-        entry(attemptSubject: 'deleted-subject', questionSubject: 'maths')
-            .subjectId,
+        entry(
+          attemptSubject: 'deleted-subject',
+          questionSubject: 'maths',
+        ).subjectId,
         'maths',
       );
     });

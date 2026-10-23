@@ -115,7 +115,10 @@ class _SessionSummaryState extends State<SessionSummary> {
               const SizedBox(height: 24),
             const SizedBox(height: 4),
             w.primary,
-            if (w.secondary != null) ...[const SizedBox(height: 10), w.secondary!],
+            if (w.secondary != null) ...[
+              const SizedBox(height: 10),
+              w.secondary!,
+            ],
             if (w.tertiary != null) ...[const SizedBox(height: 6), w.tertiary!],
           ],
         ),

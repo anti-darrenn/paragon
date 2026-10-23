@@ -267,7 +267,10 @@ class _MistakesPracticeScreenState
               message:
                   "Your answers couldn't be saved, so the notebook hasn't "
                   'changed. Check your connection.',
-              action: TextButton(onPressed: _save, child: const Text('Try again')),
+              action: TextButton(
+                onPressed: _save,
+                child: const Text('Try again'),
+              ),
             ),
         ],
         primary: AppButton(
@@ -294,7 +297,11 @@ class _Verdict extends StatelessWidget {
       liveRegion: true,
       child: Row(
         children: [
-          Icon(right ? Icons.check_circle : Icons.cancel, color: colour, size: 22),
+          Icon(
+            right ? Icons.check_circle : Icons.cancel,
+            color: colour,
+            size: 22,
+          ),
           const SizedBox(width: 8),
           Expanded(
             child: Text(

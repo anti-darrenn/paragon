@@ -286,11 +286,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       );
     } catch (_) {
       if (mounted) {
-        showToast(
-          context,
-          "Couldn't create the challenge.",
-          tone: Tone.danger,
-        );
+        showToast(context, "Couldn't create the challenge.", tone: Tone.danger);
       }
     }
   }
@@ -513,8 +509,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     alignment: Alignment.centerLeft,
                     child: DifficultyRating(
                       selected: _ratings[q.id],
-                      onRate: (level) =>
-                          setState(() => _ratings[q.id] = level),
+                      onRate: (level) => setState(() => _ratings[q.id] = level),
                     ),
                   ),
                 ],
@@ -638,9 +633,7 @@ class _SessionSummary extends StatelessWidget {
                             ? 'Up from ${before.label.toLowerCase()} '
                                   'in this topic.'
                             : 'Keep going to move up in this topic.',
-                        style: AppTheme.bodyMd.copyWith(
-                          color: p.textSecondary,
-                        ),
+                        style: AppTheme.bodyMd.copyWith(color: p.textSecondary),
                       ),
                     ],
                   ),
@@ -660,9 +653,7 @@ class _SessionSummary extends StatelessWidget {
           // leave the omission.
           if (isGuest)
             GuestNotice(
-              message: GuestLimits.saveResultMessage(
-                'your $correct/$answered',
-              ),
+              message: GuestLimits.saveResultMessage('your $correct/$answered'),
             ),
         ],
         primary: AppButton(

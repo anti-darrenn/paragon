@@ -87,45 +87,50 @@ class _AnswerOptionState extends State<AnswerOption>
     final letter = AnswerOption.letter(index);
 
     // Border, fill tint, words, and the letter badge's fill and letter.
-    final (Color border, Color? tint, Color fg, Color badge, Color badgeFg) =
-        switch (state) {
-          AnswerOptionState.idle => (
-            p.outline,
-            null,
-            p.textPrimary,
-            p.track,
-            p.textPrimary,
-          ),
-          // Not white: the tile has no solid fill, and white vanished on light.
-          AnswerOptionState.selected => (
-            AppColors.primary,
-            AppColors.primary,
-            p.textStrong,
-            AppColors.primary,
-            Colors.white,
-          ),
-          AnswerOptionState.correct => (
-            AppColors.correct,
-            AppColors.correct,
-            p.successFg,
-            AppColors.successStrong,
-            Colors.white,
-          ),
-          AnswerOptionState.wrong => (
-            AppColors.wrong,
-            AppColors.wrong,
-            p.dangerFg,
-            AppColors.dangerStrong,
-            Colors.white,
-          ),
-          AnswerOptionState.ruledOut => (
-            p.outlineFaint,
-            null,
-            p.onLow,
-            p.outlineFaint,
-            p.onLow,
-          ),
-        };
+    final (
+      Color border,
+      Color? tint,
+      Color fg,
+      Color badge,
+      Color badgeFg,
+    ) = switch (state) {
+      AnswerOptionState.idle => (
+        p.outline,
+        null,
+        p.textPrimary,
+        p.track,
+        p.textPrimary,
+      ),
+      // Not white: the tile has no solid fill, and white vanished on light.
+      AnswerOptionState.selected => (
+        AppColors.primary,
+        AppColors.primary,
+        p.textStrong,
+        AppColors.primary,
+        Colors.white,
+      ),
+      AnswerOptionState.correct => (
+        AppColors.correct,
+        AppColors.correct,
+        p.successFg,
+        AppColors.successStrong,
+        Colors.white,
+      ),
+      AnswerOptionState.wrong => (
+        AppColors.wrong,
+        AppColors.wrong,
+        p.dangerFg,
+        AppColors.dangerStrong,
+        Colors.white,
+      ),
+      AnswerOptionState.ruledOut => (
+        p.outlineFaint,
+        null,
+        p.onLow,
+        p.outlineFaint,
+        p.onLow,
+      ),
+    };
     final verdict = switch (state) {
       AnswerOptionState.correct => ', correct',
       AnswerOptionState.wrong => ', incorrect',

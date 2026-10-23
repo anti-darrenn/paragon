@@ -203,9 +203,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
 
     void check() {
       act(s.check);
-      Sfx.play(
-        s.step == ExerciseStep.correct ? SfxCue.correct : SfxCue.wrong,
-      );
+      Sfx.play(s.step == ExerciseStep.correct ? SfxCue.correct : SfxCue.wrong);
     }
 
     final resolved =
@@ -350,22 +348,25 @@ class _Feedback extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final p = context.palette;
-    final (String? headline, Color color, IconData icon) =
-        switch (session.step) {
-          ExerciseStep.correct => ('Correct!', p.successFg, Icons.check_circle),
-          ExerciseStep.retrying => (
-            'Not quite — try again.',
-            p.warningFg,
-            Icons.replay_rounded,
-          ),
-          ExerciseStep.revealed => (
-            'The right answer is '
-                '${AnswerOption.letter(question.correctIndex.clamp(0, 25))}.',
-            p.dangerFg,
-            Icons.cancel,
-          ),
-          _ => (null, p.textSecondary, Icons.circle),
-        };
+    final (
+      String? headline,
+      Color color,
+      IconData icon,
+    ) = switch (session.step) {
+      ExerciseStep.correct => ('Correct!', p.successFg, Icons.check_circle),
+      ExerciseStep.retrying => (
+        'Not quite — try again.',
+        p.warningFg,
+        Icons.replay_rounded,
+      ),
+      ExerciseStep.revealed => (
+        'The right answer is '
+            '${AnswerOption.letter(question.correctIndex.clamp(0, 25))}.',
+        p.dangerFg,
+        Icons.cancel,
+      ),
+      _ => (null, p.textSecondary, Icons.circle),
+    };
     if (headline == null) return const SizedBox.shrink();
     return Semantics(
       liveRegion: true,

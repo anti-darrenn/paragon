@@ -45,7 +45,10 @@ void main() {
     source: 'drill',
   );
 
-  final questions = [question('q1', 'right1', 'wrong1'), question('q2', 'right2', 'wrong2')];
+  final questions = [
+    question('q1', 'right1', 'wrong1'),
+    question('q2', 'right2', 'wrong2'),
+  ];
 
   const exercise = LearnResource(
     id: 'ex1',
@@ -153,7 +156,11 @@ void main() {
     };
     expect(byQuestion['q1']!['isCorrect'], isTrue);
     expect(byQuestion['q2']!['isCorrect'], isFalse);
-    expect(byQuestion['q2']!['selectedIndex'], 1, reason: 'the first try, not the retry');
+    expect(
+      byQuestion['q2']!['selectedIndex'],
+      1,
+      reason: 'the first try, not the retry',
+    );
     expect(attempts.docs.every((d) => d['source'] == 'exercise'), isTrue);
     expect(attempts.docs.every((d) => d['userId'] == 'u1'), isTrue);
   });
@@ -181,7 +188,11 @@ void main() {
     await playSet(tester);
 
     expect(find.textContaining('guest answers are not saved'), findsOneWidget);
-    expect(finished, 1, reason: 'a guest still completes the item for the visit');
+    expect(
+      finished,
+      1,
+      reason: 'a guest still completes the item for the visit',
+    );
     expect((await db.collection('attempts').get()).docs, isEmpty);
   });
 
@@ -246,7 +257,9 @@ void main() {
     expect(find.text('right1'), findsNothing);
   });
 
-  testWidgets('an empty bank says so instead of showing nothing', (tester) async {
+  testWidgets('an empty bank says so instead of showing nothing', (
+    tester,
+  ) async {
     await pump(tester, user: null, bank: const []);
     expect(find.textContaining('No practice questions'), findsOneWidget);
   });

@@ -135,11 +135,7 @@ class _ChallengeLinkScreenState extends ConsumerState<ChallengeLinkScreen> {
       );
     } catch (_) {
       if (mounted) {
-        showToast(
-          context,
-          "Couldn't create the challenge.",
-          tone: Tone.danger,
-        );
+        showToast(context, "Couldn't create the challenge.", tone: Tone.danger);
       }
     }
   }
@@ -307,10 +303,7 @@ class _ScoreToBeat extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: AppTheme.label.copyWith(color: p.textSecondary),
           ),
-          Text(
-            result,
-            style: AppTheme.heading2.copyWith(color: p.textStrong),
-          ),
+          Text(result, style: AppTheme.heading2.copyWith(color: p.textStrong)),
         ],
       ),
     );

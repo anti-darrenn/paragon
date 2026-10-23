@@ -66,9 +66,7 @@ class _DeckStudyScreenState extends ConsumerState<DeckStudyScreen> {
     if (due.isEmpty) {
       pool.sort(
         (a, b) => (schedule[scheduleId(deck.id, a.id)]?.due ?? DateTime(0))
-            .compareTo(
-              schedule[scheduleId(deck.id, b.id)]?.due ?? DateTime(0),
-            ),
+            .compareTo(schedule[scheduleId(deck.id, b.id)]?.due ?? DateTime(0)),
       );
     }
     return pool.take(kCardsPerSession).toList();
@@ -230,7 +228,9 @@ class FlipCard extends StatelessWidget {
     );
     return Semantics(
       button: true,
-      label: showBack ? 'Answer. Tap to see the front' : 'Tap to see the answer',
+      label: showBack
+          ? 'Answer. Tap to see the front'
+          : 'Tap to see the answer',
       child: GestureDetector(
         onTap: onFlip,
         child: AnimatedSwitcher(
@@ -276,7 +276,10 @@ class _DeckQuizScreenState extends ConsumerState<DeckQuizScreen> {
     final deck = ref.watch(deckProvider(widget.deckId));
     final questions = deck == null
         ? const []
-        : quizFromDeck(deck, random: Random(_round * 7919 + widget.deckId.hashCode));
+        : quizFromDeck(
+            deck,
+            random: Random(_round * 7919 + widget.deckId.hashCode),
+          );
     return Scaffold(
       backgroundColor: context.palette.background,
       appBar: ParagonAppBar(title: Text(deck?.title ?? 'Quiz')),
