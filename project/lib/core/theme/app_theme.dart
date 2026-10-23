@@ -26,7 +26,7 @@ class AppTheme {
         (isDark ? const ColorScheme.dark() : const ColorScheme.light())
             .copyWith(
               primary: AppColors.primary,
-              onPrimary: Colors.white,
+              onPrimary: AppColors.onPrimary,
               secondary: AppColors.secondary,
               surface: p.surface,
               onSurface: p.textPrimary,
@@ -125,7 +125,7 @@ class AppTheme {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
+          foregroundColor: AppColors.onPrimary,
           disabledBackgroundColor: p.track,
           disabledForegroundColor: p.textSecondary,
           elevation: 0,
@@ -138,7 +138,7 @@ class AppTheme {
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
+          foregroundColor: AppColors.onPrimary,
           disabledBackgroundColor: p.track,
           disabledForegroundColor: p.textSecondary,
           padding: buttonPadding,
@@ -248,13 +248,13 @@ class AppTheme {
         ),
       ),
       switchTheme: SwitchThemeData(
-        thumbColor: whenSelected(Colors.white, p.textSecondary),
+        thumbColor: whenSelected(AppColors.onPrimary, p.textSecondary),
         trackColor: whenSelected(AppColors.primary, p.track),
         trackOutlineColor: whenSelected(Colors.transparent, p.border),
       ),
       checkboxTheme: CheckboxThemeData(
         fillColor: whenSelected(AppColors.primary, Colors.transparent),
-        checkColor: const WidgetStatePropertyAll(Colors.white),
+        checkColor: const WidgetStatePropertyAll(AppColors.onPrimary),
         side: BorderSide(color: p.textSecondary, width: 1.5),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
       ),
@@ -351,7 +351,7 @@ class AppTheme {
       ),
       floatingActionButtonTheme: FloatingActionButtonThemeData(
         backgroundColor: AppColors.primary,
-        foregroundColor: Colors.white,
+        foregroundColor: AppColors.onPrimary,
         elevation: 0,
         focusElevation: 0,
         hoverElevation: 0,

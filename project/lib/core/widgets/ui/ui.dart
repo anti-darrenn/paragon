@@ -7,6 +7,11 @@
 /// - [ListRow]: an icon tile, a title and a subtitle, usually a link.
 /// - [IconTile]: the tinted square an icon sits in.
 /// - [EmptyState]: what a list says when it has nothing in it.
+///
+/// Re-exported from here so a screen needs one import: [AppButton],
+/// [InlineAlert] / [PageBanner], [showToast], [LoadingView],
+/// [AppProgressBar] / [SegmentedProgress], [Tag], [Breadcrumbs],
+/// [confirmDialog], [Illustration] and the [Tone] they share.
 library;
 
 import 'package:flutter/material.dart';
@@ -15,6 +20,18 @@ import '../../theme/app_palette.dart';
 import '../nav/nav_destinations.dart';
 import '../../theme/app_theme.dart';
 import '../../theme/tokens.dart';
+import 'illustration.dart';
+
+export 'alert.dart';
+export 'breadcrumbs.dart';
+export 'buttons.dart';
+export 'dialogs.dart';
+export 'illustration.dart';
+export 'loading.dart';
+export 'progress.dart';
+export 'tag.dart';
+export 'toast.dart';
+export 'tone.dart';
 
 /// Reading width for text-and-list pages.
 const double kPageMaxWidth = 720;
@@ -317,45 +334,74 @@ class RowGroup extends StatelessWidget {
   }
 }
 
-/// A list with nothing in it: an icon, what is missing, and how to get
+/// A list with nothing in it: a picture, what is missing, and how to get
 /// some — never just a blank page.
+///
+/// Give an [illustration] for a page-sized empty state, or an [icon] for a
+/// smaller one; [compact] tightens the spacing for a panel inside a page.
+/// [action] is the main way forward, [secondaryAction] an alternative.
 class EmptyState extends StatelessWidget {
   const EmptyState({
     super.key,
-    required this.icon,
+    this.icon,
+    this.illustration,
+    this.illustrationAccent,
     required this.title,
     this.message,
     this.action,
-  });
+    this.secondaryAction,
+    this.compact = false,
+  }) : assert(
+         icon != null || illustration != null,
+         'An empty state needs an icon or an illustration.',
+       );
 
-  final IconData icon;
+  final IconData? icon;
+  final IllustrationAsset? illustration;
+  final Color? illustrationAccent;
   final String title;
   final String? message;
   final Widget? action;
+  final Widget? secondaryAction;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 48, horizontal: 16),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            width: 64,
-            height: 64,
+    final Widget picture = illustration != null
+        ? Illustration(
+            illustration!,
+            height: compact ? 96 : 140,
+            accent: illustrationAccent,
+          )
+        : Container(
+            width: compact ? 52 : 64,
+            height: compact ? 52 : 64,
             decoration: BoxDecoration(
               color: context.palette.surface,
               shape: BoxShape.circle,
               border: Border.all(color: context.palette.border),
             ),
-            child: Icon(icon, size: 28, color: context.palette.textSecondary),
-          ),
-          const SizedBox(height: 16),
+            child: Icon(
+              icon,
+              size: compact ? 24 : 28,
+              color: context.palette.textSecondary,
+            ),
+          );
+    return Padding(
+      padding: compact
+          ? const EdgeInsets.symmetric(vertical: 20, horizontal: 16)
+          : const EdgeInsets.symmetric(vertical: 48, horizontal: 16),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          picture,
+          SizedBox(height: compact ? 12 : 16),
           Text(
             title,
             textAlign: TextAlign.center,
-            style: AppTheme.heading3.copyWith(
+            style: (compact ? AppTheme.bodyLg : AppTheme.heading3).copyWith(
               color: context.palette.textPrimary,
+              fontWeight: FontWeight.w600,
             ),
           ),
           if (message != null) ...[
@@ -371,7 +417,15 @@ class EmptyState extends StatelessWidget {
               ),
             ),
           ],
-          if (action != null) ...[const SizedBox(height: 20), action!],
+          if (action != null || secondaryAction != null) ...[
+            SizedBox(height: compact ? 14 : 20),
+            Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 8,
+              runSpacing: 8,
+              children: [?action, ?secondaryAction],
+            ),
+          ],
         ],
       ),
     );

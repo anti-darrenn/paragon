@@ -8,6 +8,7 @@ import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import '../../../core/widgets/session/session_summary.dart';
 import '../../../core/widgets/question_runner.dart';
 import '../../../core/widgets/ui/ui.dart';
 import '../cards/card_deck.dart' show kCardsPerSession;
@@ -65,9 +66,7 @@ class _DeckStudyScreenState extends ConsumerState<DeckStudyScreen> {
     if (due.isEmpty) {
       pool.sort(
         (a, b) => (schedule[scheduleId(deck.id, a.id)]?.due ?? DateTime(0))
-            .compareTo(
-              schedule[scheduleId(deck.id, b.id)]?.due ?? DateTime(0),
-            ),
+            .compareTo(schedule[scheduleId(deck.id, b.id)]?.due ?? DateTime(0)),
       );
     }
     return pool.take(kCardsPerSession).toList();
@@ -118,12 +117,25 @@ class _DeckStudyScreenState extends ConsumerState<DeckStudyScreen> {
       body: PageBody(
         children: [
           if (done)
-            EmptyState(
-              icon: Icons.celebration_outlined,
-              title: 'Session done',
-              message:
-                  'You knew $_knew of ${_knew + _missed}. The ones you missed '
-                  'come back tomorrow.',
+            Padding(
+              padding: const EdgeInsets.only(top: 16),
+              child: SessionSummary(
+                title: 'Session done',
+                correct: _knew,
+                total: _knew + _missed,
+                subtitle:
+                    'You knew $_knew of ${_knew + _missed}. The ones you '
+                    'missed come back tomorrow.',
+                celebrate: SessionSummary.isWorthCelebrating(
+                  correct: _knew,
+                  total: _knew + _missed,
+                ),
+                primary: AppButton(
+                  label: 'Back to my decks',
+                  expand: true,
+                  onPressed: () => context.popOrGo(),
+                ),
+              ),
             )
           else ...[
             Text(
@@ -131,12 +143,7 @@ class _DeckStudyScreenState extends ConsumerState<DeckStudyScreen> {
               style: AppTheme.caption.copyWith(color: palette.textSecondary),
             ),
             const SizedBox(height: 8),
-            LinearProgressIndicator(
-              value: _index / queue.length,
-              minHeight: 3,
-              backgroundColor: palette.track,
-              color: AppColors.primary,
-            ),
+            AppProgressBar(value: _index / queue.length),
             const SizedBox(height: 20),
             FlipCard(
               key: ValueKey(queue[_index].id),
@@ -229,7 +236,9 @@ class FlipCard extends StatelessWidget {
     );
     return Semantics(
       button: true,
-      label: showBack ? 'Answer. Tap to see the front' : 'Tap to see the answer',
+      label: showBack
+          ? 'Answer. Tap to see the front'
+          : 'Tap to see the answer',
       child: GestureDetector(
         onTap: onFlip,
         child: AnimatedSwitcher(
@@ -275,38 +284,55 @@ class _DeckQuizScreenState extends ConsumerState<DeckQuizScreen> {
     final deck = ref.watch(deckProvider(widget.deckId));
     final questions = deck == null
         ? const []
-        : quizFromDeck(deck, random: Random(_round * 7919 + widget.deckId.hashCode));
+        : quizFromDeck(
+            deck,
+            random: Random(_round * 7919 + widget.deckId.hashCode),
+          );
     return Scaffold(
       backgroundColor: context.palette.background,
       appBar: ParagonAppBar(title: Text(deck?.title ?? 'Quiz')),
-      body: PageBody(
-        children: [
-          if (deck == null || questions.isEmpty)
-            const EmptyState(
-              icon: Icons.quiz_outlined,
-              title: 'Not enough cards for a quiz',
-              message: 'A quiz needs four cards with different answers.',
-            )
-          else if (_score != null)
-            Column(
+      body: deck == null || questions.isEmpty
+          ? const PageBody(
               children: [
                 EmptyState(
-                  icon: Icons.emoji_events_outlined,
-                  title: '$_score of $_total',
-                  message: 'Quizzes from your flashcards are just for you: '
-                      'nothing is recorded.',
+                  illustration: IllustrationAsset.empty,
+                  title: 'Not enough cards for a quiz',
+                  message: 'A quiz needs four cards with different answers.',
                 ),
-                FilledButton(
+              ],
+            )
+          : _score != null
+          ? SingleChildScrollView(
+              padding: const EdgeInsets.fromLTRB(20, 32, 20, 32),
+              child: SessionSummary(
+                title: 'Round done',
+                correct: _score!,
+                total: _total,
+                subtitle:
+                    'Quizzes from your flashcards are just for you: '
+                    'nothing is recorded.',
+                celebrate: SessionSummary.isWorthCelebrating(
+                  correct: _score!,
+                  total: _total,
+                ),
+                primary: AppButton(
+                  label: 'Another round',
+                  expand: true,
                   onPressed: () => setState(() {
                     _score = null;
                     _round++;
                   }),
-                  child: const Text('Another round'),
                 ),
-              ],
+                secondary: AppButton(
+                  label: 'Back to my decks',
+                  tone: ButtonTone.secondary,
+                  expand: true,
+                  onPressed: () => context.popOrGo(),
+                ),
+              ),
             )
-          else
-            QuestionRunner(
+          // The quiz fills the page, so its Check bar pins to the bottom.
+          : QuestionRunner(
               key: ValueKey(_round),
               questions: [...questions],
               showDifficulty: false,
@@ -315,8 +341,6 @@ class _DeckQuizScreenState extends ConsumerState<DeckQuizScreen> {
                 _total = results.length;
               }),
             ),
-        ],
-      ),
     );
   }
 }

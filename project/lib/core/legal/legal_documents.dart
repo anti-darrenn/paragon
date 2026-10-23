@@ -292,6 +292,8 @@ const LegalDocument privacyPolicy = LegalDocument(
             'have ticked off) is kept only on your device, for the account '
             'you made it with. It is not sent to us, and plans older than '
             'four weeks are removed.',
+        'Whether sound effects are on is kept only on your device. The '
+            'sounds are made by your browser; nothing is downloaded or sent.',
       ],
     ),
     LegalSection(

@@ -123,7 +123,7 @@ void main() {
   ) async {
     final router = await pumpSetup(tester);
     expect(find.text('Full paper'), findsOneWidget);
-    await tester.tap(find.text('Start Exam'));
+    await tester.tap(find.text('Start exam'));
     await tester.pumpAndSettle();
     expect(location(router), '/waec/s1/exam');
     expect(find.text('Question q1'), findsOneWidget);
@@ -138,7 +138,7 @@ void main() {
     expect(chip, findsOneWidget);
     expect(
       tester.getTopLeft(chip).dy,
-      greaterThan(tester.getTopLeft(find.text('Start Exam')).dy),
+      greaterThan(tester.getTopLeft(find.text('Start exam')).dy),
     );
     await tester.tap(chip);
     await tester.pumpAndSettle();

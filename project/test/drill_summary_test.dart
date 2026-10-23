@@ -78,9 +78,7 @@ void main() {
           // and not what this file is measuring. The group at the bottom
           // pumps WITHOUT this override, so the gate cannot quietly break
           // behind it.
-          drillAccessProvider(
-            topicId,
-          ).overrideWithValue(DrillAccess.allowed),
+          drillAccessProvider(topicId).overrideWithValue(DrillAccess.allowed),
         ],
         child: const MaterialApp(home: DrillScreen(topicId: topicId)),
       ),
@@ -93,11 +91,9 @@ void main() {
     for (var i = 0; i < count; i++) {
       await tester.tap(find.text('4'));
       await tester.pumpAndSettle();
-      await tester.tap(find.text('Submit Answer'));
+      await tester.tap(find.text('Check'));
       await tester.pumpAndSettle();
-      await tester.tap(
-        find.text(i == count - 1 ? 'See results' : 'Next Question'),
-      );
+      await tester.tap(find.text(i == count - 1 ? 'See results' : 'Continue'));
       await tester.pumpAndSettle();
     }
   }
@@ -191,11 +187,7 @@ void main() {
             ),
           ],
           child: const MaterialApp(
-            home: DrillScreen(
-              topicId: topicId,
-              subjectId: 's1',
-              unitId: 'u1',
-            ),
+            home: DrillScreen(topicId: topicId, subjectId: 's1', unitId: 'u1'),
           ),
         ),
       );
@@ -211,7 +203,7 @@ void main() {
       expect(find.text('Take the topic test'), findsOneWidget);
       // The thing that matters: no question leaks through the gate.
       expect(find.text('What is 2 + 2?'), findsNothing);
-      expect(find.text('Submit Answer'), findsNothing);
+      expect(find.text('Check'), findsNothing);
     });
 
     testWidgets('a guest is told to get an account, not to take a test', (

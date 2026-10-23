@@ -530,7 +530,7 @@ class PodiumSteps extends StatelessWidget {
                       child: Text(
                         '${rank + 1}',
                         style: AppTheme.heading2.copyWith(
-                          color: Colors.white,
+                          color: AppColors.onPrimary,
                           fontWeight: FontWeight.w900,
                         ),
                       ),

@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/repositories/learning_repository.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/math_field/math_field.dart';
@@ -123,9 +122,11 @@ class _DeckEditorScreenState extends ConsumerState<DeckEditorScreen> {
       return true;
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
+        showToast(
           context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't save the deck: $e")));
+          "Couldn't save the deck. Check your connection and try again.",
+          tone: Tone.danger,
+        );
       }
       return false;
     } finally {
@@ -134,25 +135,15 @@ class _DeckEditorScreenState extends ConsumerState<DeckEditorScreen> {
   }
 
   Future<void> _delete() async {
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Delete this deck?'),
-        content: const Text('Its cards and their schedule go too.'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
-            child: const Text('Keep it'),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.of(context).pop(true),
-            style: FilledButton.styleFrom(backgroundColor: AppColors.wrong),
-            child: const Text('Delete'),
-          ),
-        ],
-      ),
+    final ok = await confirmDialog(
+      context,
+      title: 'Delete this deck?',
+      message: 'Its cards and their schedule go too.',
+      confirmLabel: 'Delete',
+      cancelLabel: 'Keep it',
+      destructive: true,
     );
-    if (ok != true || !mounted) return;
+    if (!ok || !mounted) return;
     await ref.read(decksProvider.notifier).delete(_id);
     if (mounted) {
       _dirty = false;
@@ -166,7 +157,7 @@ class _DeckEditorScreenState extends ConsumerState<DeckEditorScreen> {
     final decks = ref.watch(decksProvider);
     if (!_loaded) {
       if (decks.isLoading && widget.deckId != 'new') {
-        return const Scaffold(body: Center(child: CircularProgressIndicator()));
+        return const Scaffold(body: LoadingView(label: 'Loading your deck'));
       }
       _load(ref.read(deckProvider(widget.deckId)));
     }

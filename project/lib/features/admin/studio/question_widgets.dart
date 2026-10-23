@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/widgets/ui/ui.dart';
 import '../../../core/providers/auth_provider.dart';
 import '../../../core/questions/question_draft.dart';
 import '../../../core/repositories/admin_flag_repository.dart';
@@ -248,22 +249,23 @@ class StudioListSkeleton extends StatelessWidget {
   const StudioListSkeleton({super.key, this.count = 3});
   final int count;
 
+  // Pulsing, like every other loading placeholder in the app; these were
+  // static grey boxes, which read as empty cards rather than loading ones.
   @override
-  Widget build(BuildContext context) => Column(
-    children: [
-      for (var i = 0; i < count; i++)
-        Padding(
-          padding: const EdgeInsets.only(bottom: 10),
-          child: Container(
-            height: 112,
-            decoration: BoxDecoration(
-              color: context.palette.surface,
-              borderRadius: BorderRadius.circular(14),
-              border: Border.all(color: context.palette.border),
+  Widget build(BuildContext context) => Semantics(
+    label: 'Loading',
+    liveRegion: true,
+    child: ExcludeSemantics(
+      child: Column(
+        children: [
+          for (var i = 0; i < count; i++)
+            const Padding(
+              padding: EdgeInsets.only(bottom: 10),
+              child: SkeletonBox(height: 112, radius: 14),
             ),
-          ),
-        ),
-    ],
+        ],
+      ),
+    ),
   );
 }
 
