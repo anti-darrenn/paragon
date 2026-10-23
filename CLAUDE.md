@@ -944,6 +944,20 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 A lone `$` in stored text is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. An author typing `$x$` in the editor's LaTeX mode is converted to `\(x\)` when the box loses focus (`dollarMathToParens`), so stored text never relies on it.
 
+**Tokens and text tones** (UI pass, 2026-10-23). `lib/core/theme/tokens.dart` holds
+`Space`, `Radii` (8 tags/chips, 12 buttons/fields/options, 16 cards/dialogs) and `Motion`
+(`Motion.of` is zero under reduced motion), plus `reduceMotion(context)`, which on the web
+follows `prefers-reduced-motion`. `Confetti` lives in `core/widgets/motion/`.
+- **Coloured text goes through the palette's tones:** `primaryFg`, `successFg`,
+  `dangerFg`, `warningFg`, `infoFg`. On dark they are the bright colours; on light,
+  deeper shades, because orange (2.7:1), green, red, amber and blue all fail as text on
+  white. The bright `AppColors` stay for fills and borders. `tokens_test.dart` checks
+  every tone is 4.5:1 on both backgrounds, with orange-on-white as its control.
+- **White text sits on `AppColors.successStrong` / `dangerStrong`**, never on `correct` or
+  `wrong`.
+- In a dialog builder, read the palette from the dialog's own context: the screen's
+  context may be closing (the topic test's Leave dialog threw).
+
 **Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` in dark — except `onLow`, raised from `white38`/`black38` to 50% white / 56% black so small text passes WCAG AA (4.5:1). **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
 
 ## Firestore conventions
