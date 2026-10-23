@@ -26,7 +26,12 @@ Widget _app(Widget body, {bool still = false, Size? size}) => MaterialApp(
 );
 
 void main() {
-  tearDown(() => Sfx.debugSink = null);
+  // Sounds are off by default; the cue tests switch them on.
+  setUp(() => Sfx.enabled = true);
+  tearDown(() {
+    Sfx.debugSink = null;
+    Sfx.enabled = false;
+  });
 
   group('SessionKeys', () {
     test('A–E and 1–9 name options; other keys do not', () {

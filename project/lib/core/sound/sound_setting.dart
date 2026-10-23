@@ -2,8 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/reading_settings_provider.dart';
 
-/// The device's sound-effects switch. **On unless turned off** (owner's
-/// decision, 2026-10-23).
+/// The device's sound-effects switch. **Off unless turned on** (owner's
+/// decision, 2026-10-23; it was on by default for its first day).
 ///
 /// Kept in SharedPreferences on this device only — not in
 /// `users/{uid}.prefs`, whose keys the rules fix (`prefsAreValid`), and
@@ -14,7 +14,7 @@ class SoundEffectsNotifier extends Notifier<bool> {
   @override
   bool build() {
     final prefs = ref.watch(readingPrefsProvider).asData?.value;
-    return prefs?.getBool(key) ?? true;
+    return prefs?.getBool(key) ?? false;
   }
 
   Future<void> setEnabled(bool on) async {
