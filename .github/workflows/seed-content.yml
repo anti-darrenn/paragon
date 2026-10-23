@@ -28,9 +28,10 @@
 #   FIREBASE_SERVICE_ACCOUNT — full service account JSON, as text
 name: seed-content
 
+# Manual only since 2026-10-23: all 64,800 generated questions are seeded,
+# so a daily run only spent reads finding nothing to do. And main is now a
+# protected branch, so the budget-state push below cannot land there.
 on:
-  schedule:
-    - cron: '30 8 * * *'
   workflow_dispatch: {}
 
 # Read-only unless a job says otherwise. Every third-party action is
@@ -104,4 +105,4 @@ jobs:
           git diff --cached --quiet && { echo "budget state unchanged"; exit 0; }
           git commit -m "chore(scraper): seeding budget state [skip ci]"
           # The token reaches this step only, not the checkout's git config.
-          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"             || echo "::warning::budget state not pushed (main is protected); the next run starts from the committed state"

@@ -324,7 +324,7 @@ them out entirely.
 corpus needs four to five days. An attempt to do it in one run exhausted both quotas and
 completed nothing. The seeders now share a daily budget via `data/_seed_budget.json` (keyed
 to the *Pacific* quota day), stop cleanly when spent, and resume next run;
-`.github/workflows/seed-content.yml` drives them daily. Counting uses `count()` aggregation
+`.github/workflows/seed-content.yml` drove them daily until the corpus was complete; it is manual-only since 2026-10-23. Counting uses `count()` aggregation
 — billed per 1000 index entries, not per document. Fetching whole topics just to size them
 is what drained the read quota the first time. Staying on Spark is deliberate: the hard
 ceiling is the cost guarantee until there's revenue.
