@@ -6,7 +6,6 @@ import '../../core/models/question.dart';
 import '../../core/progress/mistakes.dart';
 import '../../core/repositories/learning_repository.dart';
 import '../../core/repositories/mistakes_repository.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/answer_option.dart';
@@ -44,7 +43,7 @@ class _MistakesScreenState extends ConsumerState<MistakesScreen> {
       backgroundColor: context.palette.background,
       appBar: ParagonAppBar(title: const Text('Mistakes notebook')),
       body: async.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const PageBody(children: [SkeletonPage(count: 4)]),
         error: (e, _) => LoadError(
           error: e,
           onRetry: () => ref.invalidate(mistakesProvider),
@@ -166,20 +165,14 @@ class _PractiseButton extends StatelessWidget {
     final n = questions.length < kMistakesPracticeSize
         ? questions.length
         : kMistakesPracticeSize;
-    return ElevatedButton.icon(
+    return AppButton(
+      label: n == 1 ? 'Practise this question' : 'Practise $n questions',
+      icon: Icons.replay_rounded,
+      size: ButtonSize.lg,
+      expand: true,
       onPressed: () => context.push(
         '/mistakes/practice',
         extra: questions.take(kMistakesPracticeSize).toList(),
-      ),
-      icon: const Icon(Icons.replay_rounded, color: Colors.white),
-      label: Text(
-        n == 1 ? 'Practise this question' : 'Practise $n questions',
-        style: AppTheme.btnLabel.copyWith(color: Colors.white),
-      ),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.primary,
-        padding: const EdgeInsets.symmetric(vertical: 14),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
     );
   }
@@ -245,7 +238,9 @@ class _MistakeCard extends StatelessWidget {
                   tilePadding: EdgeInsets.zero,
                   title: Text(
                     'Show the working',
-                    style: AppTheme.bodyMd.copyWith(color: AppColors.primary),
+                    style: AppTheme.bodyMd.copyWith(
+                      color: context.palette.primaryFg,
+                    ),
                   ),
                   children: [
                     if (q.explanation.trim().isNotEmpty)

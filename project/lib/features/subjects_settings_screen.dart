@@ -199,7 +199,7 @@ class _Body extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               error!,
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
             ),
           ),
         Padding(
@@ -221,12 +221,14 @@ class _Body extends StatelessWidget {
                       height: 20,
                       child: CircularProgressIndicator(
                         strokeWidth: 2,
-                        color: Colors.white,
+                        color: AppColors.onPrimary,
                       ),
                     )
                   : Text(
                       'Save',
-                      style: AppTheme.btnLabel.copyWith(color: Colors.white),
+                      style: AppTheme.btnLabel.copyWith(
+                        color: AppColors.onPrimary,
+                      ),
                     ),
             ),
           ),

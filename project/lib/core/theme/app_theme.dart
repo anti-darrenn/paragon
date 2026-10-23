@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
 import 'app_palette.dart';
+import 'tokens.dart';
 
 class AppTheme {
   static ThemeData get dark => _build(Brightness.dark, AppPalette.dark);
 
   static ThemeData get light => _build(Brightness.light, AppPalette.light);
 
-  /// Corner radii, so cards, buttons and fields agree.
-  static const double radiusSm = 8;
-  static const double radiusMd = 12;
-  static const double radiusLg = 16;
+  /// Corner radii, so cards, buttons and fields agree. Aliases of
+  /// [Radii], kept so older call sites read the same.
+  static const double radiusSm = Radii.sm;
+  static const double radiusMd = Radii.md;
+  static const double radiusLg = Radii.lg;
 
   /// One theme for both brightnesses, built from the palette. Every
   /// Material component a screen uses without styling it — buttons,
@@ -24,7 +26,7 @@ class AppTheme {
         (isDark ? const ColorScheme.dark() : const ColorScheme.light())
             .copyWith(
               primary: AppColors.primary,
-              onPrimary: Colors.white,
+              onPrimary: AppColors.onPrimary,
               secondary: AppColors.secondary,
               surface: p.surface,
               onSurface: p.textPrimary,
@@ -48,6 +50,14 @@ class AppTheme {
         WidgetStateProperty.resolveWith(
           (s) => s.contains(WidgetState.selected) ? on : off,
         );
+    // A visible ring on a button that has keyboard focus. Material's own
+    // focus overlay is a 10% tint, which on an orange button is invisible.
+    WidgetStateProperty<BorderSide?> focusRing(BorderSide? rest) =>
+        WidgetStateProperty.resolveWith(
+          (s) => s.contains(WidgetState.focused)
+              ? BorderSide(color: p.textStrong, width: 2)
+              : rest,
+        );
 
     return ThemeData(
       useMaterial3: true,
@@ -55,10 +65,40 @@ class AppTheme {
       scaffoldBackgroundColor: p.background,
       canvasColor: p.background,
       colorScheme: scheme,
-      textTheme: GoogleFonts.spaceGroteskTextTheme(
-        base.textTheme,
-      ).apply(bodyColor: p.textPrimary, displayColor: p.textPrimary),
+      // Material's text theme, on the app's type scale where screens read
+      // it (`textTheme.titleMedium`, `bodySmall`), so a widget styled
+      // through the theme lands on the same sizes as one using AppTheme.
+      textTheme: GoogleFonts.spaceGroteskTextTheme(base.textTheme)
+          .copyWith(
+            displayLarge: display,
+            displayMedium: displayLg,
+            displaySmall: heading1,
+            headlineLarge: heading1,
+            headlineMedium: heading2,
+            headlineSmall: heading3,
+            titleLarge: heading2,
+            titleMedium: bodyLg.copyWith(
+              fontWeight: FontWeight.w600,
+              height: 1.45,
+            ),
+            titleSmall: bodyMd.copyWith(
+              fontWeight: FontWeight.w600,
+              height: 1.4,
+            ),
+            bodySmall: label,
+            labelLarge: btnLabel,
+            labelMedium: label,
+            labelSmall: caption,
+          )
+          .apply(bodyColor: p.textPrimary, displayColor: p.textPrimary),
       hoverColor: p.track.withAlpha(120),
+      focusColor: AppColors.primary.withAlpha(46),
+      pageTransitionsTheme: PageTransitionsTheme(
+        builders: {
+          for (final platform in TargetPlatform.values)
+            platform: const _FadePageTransitionsBuilder(),
+        },
+      ),
       dividerTheme: DividerThemeData(color: p.border, thickness: 1, space: 1),
       iconTheme: IconThemeData(color: p.textSecondary),
       cardTheme: CardThemeData(
@@ -85,7 +125,7 @@ class AppTheme {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
+          foregroundColor: AppColors.onPrimary,
           disabledBackgroundColor: p.track,
           disabledForegroundColor: p.textSecondary,
           elevation: 0,
@@ -93,17 +133,19 @@ class AppTheme {
           minimumSize: const Size(64, 48),
           shape: shapeMd,
           textStyle: buttonText,
-        ),
+        ).copyWith(side: focusRing(null)),
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
+          foregroundColor: AppColors.onPrimary,
+          disabledBackgroundColor: p.track,
+          disabledForegroundColor: p.textSecondary,
           padding: buttonPadding,
           minimumSize: const Size(64, 48),
           shape: shapeMd,
           textStyle: buttonText,
-        ),
+        ).copyWith(side: focusRing(null)),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
@@ -113,16 +155,20 @@ class AppTheme {
           minimumSize: const Size(64, 48),
           shape: shapeMd,
           textStyle: buttonText,
-        ),
+        ).copyWith(side: focusRing(BorderSide(color: p.border))),
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          foregroundColor: AppColors.primary,
+          foregroundColor: p.primaryFg,
+          // Tall enough to tap: it had no minimum and sat shorter than
+          // every other button.
+          minimumSize: const Size(48, 40),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(radiusSm),
           ),
           textStyle: buttonText,
-        ),
+        ).copyWith(side: focusRing(null)),
       ),
       iconButtonTheme: IconButtonThemeData(
         style: IconButton.styleFrom(
@@ -140,9 +186,9 @@ class AppTheme {
         ),
         hintStyle: bodyMd.copyWith(color: p.textSecondary),
         labelStyle: bodyMd.copyWith(color: p.textSecondary),
-        floatingLabelStyle: bodyMd.copyWith(color: AppColors.primary),
+        floatingLabelStyle: bodyMd.copyWith(color: p.primaryFg),
         helperStyle: label.copyWith(color: p.textSecondary),
-        errorStyle: label.copyWith(color: AppColors.wrong),
+        errorStyle: label.copyWith(color: p.dangerFg),
         prefixIconColor: p.textSecondary,
         suffixIconColor: p.textSecondary,
         border: fieldBorder(p.border),
@@ -181,7 +227,11 @@ class AppTheme {
         behavior: SnackBarBehavior.floating,
         backgroundColor: p.textStrong,
         contentTextStyle: bodyMd.copyWith(color: p.background),
-        actionTextColor: AppColors.primary,
+        // The snackbar is inverted (light on dark, dark on light), so the
+        // action takes the orange that reads on the snackbar's own fill.
+        actionTextColor: isDark
+            ? AppColors.primaryTextLight
+            : AppColors.primary,
         shape: shapeMd,
         insetPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
       ),
@@ -190,7 +240,7 @@ class AppTheme {
         selectedColor: AppColors.primary.withAlpha(40),
         side: BorderSide(color: p.border),
         labelStyle: label.copyWith(color: p.textPrimary),
-        secondaryLabelStyle: label.copyWith(color: AppColors.primary),
+        secondaryLabelStyle: label.copyWith(color: p.primaryFg),
         checkmarkColor: AppColors.primary,
         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
         shape: RoundedRectangleBorder(
@@ -198,13 +248,13 @@ class AppTheme {
         ),
       ),
       switchTheme: SwitchThemeData(
-        thumbColor: whenSelected(Colors.white, p.textSecondary),
+        thumbColor: whenSelected(AppColors.onPrimary, p.textSecondary),
         trackColor: whenSelected(AppColors.primary, p.track),
         trackOutlineColor: whenSelected(Colors.transparent, p.border),
       ),
       checkboxTheme: CheckboxThemeData(
         fillColor: whenSelected(AppColors.primary, Colors.transparent),
-        checkColor: const WidgetStatePropertyAll(Colors.white),
+        checkColor: const WidgetStatePropertyAll(AppColors.onPrimary),
         side: BorderSide(color: p.textSecondary, width: 1.5),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
       ),
@@ -272,19 +322,43 @@ class AppTheme {
       segmentedButtonTheme: SegmentedButtonThemeData(
         style: SegmentedButton.styleFrom(
           selectedBackgroundColor: AppColors.primary.withAlpha(40),
-          selectedForegroundColor: AppColors.primary,
+          selectedForegroundColor: p.primaryFg,
           foregroundColor: p.textSecondary,
           side: BorderSide(color: p.border),
           textStyle: label,
         ),
       ),
       tabBarTheme: TabBarThemeData(
-        labelColor: AppColors.primary,
+        labelColor: p.primaryFg,
         unselectedLabelColor: p.textSecondary,
         indicatorColor: AppColors.primary,
         dividerColor: p.border,
         labelStyle: bodyMd.copyWith(fontWeight: FontWeight.w600),
         unselectedLabelStyle: bodyMd,
+      ),
+      dropdownMenuTheme: DropdownMenuThemeData(
+        textStyle: bodyMd.copyWith(color: p.textPrimary),
+        menuStyle: MenuStyle(
+          backgroundColor: WidgetStatePropertyAll(p.surface),
+          surfaceTintColor: const WidgetStatePropertyAll(Colors.transparent),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(radiusMd),
+              side: BorderSide(color: p.border),
+            ),
+          ),
+        ),
+      ),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: AppColors.primary,
+        foregroundColor: AppColors.onPrimary,
+        elevation: 0,
+        focusElevation: 0,
+        hoverElevation: 0,
+        highlightElevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(radiusLg),
+        ),
       ),
       scrollbarTheme: ScrollbarThemeData(
         thumbColor: WidgetStatePropertyAll(p.border),
@@ -294,6 +368,22 @@ class AppTheme {
       extensions: [p],
     );
   }
+
+  /// The welcome page's headline: one size above [displayLg].
+  static TextStyle get display => GoogleFonts.spaceGrotesk(
+    fontSize: 40,
+    fontWeight: FontWeight.w700,
+    height: 1.15,
+    letterSpacing: -0.5,
+  );
+
+  /// A question's stem in a session: larger than body text, because it is
+  /// what the student is reading most closely.
+  static TextStyle get questionStem => GoogleFonts.spaceGrotesk(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    height: 1.5,
+  );
 
   // ── Text styles (Figma type scale, file 29nbJDmGOJI3bBj5AtburF,
   // "_Foundations" page) — family/size/lineHeight/weight read from Figma.
@@ -356,4 +446,24 @@ class AppTheme {
     fontWeight: FontWeight.w400,
     height: 1.2,
   );
+}
+
+/// Pages fade in, briefly; with reduced motion they simply appear.
+class _FadePageTransitionsBuilder extends PageTransitionsBuilder {
+  const _FadePageTransitionsBuilder();
+
+  @override
+  Widget buildTransitions<T>(
+    PageRoute<T> route,
+    BuildContext context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget child,
+  ) {
+    if (reduceMotion(context)) return child;
+    return FadeTransition(
+      opacity: CurvedAnimation(parent: animation, curve: Motion.curve),
+      child: child,
+    );
+  }
 }

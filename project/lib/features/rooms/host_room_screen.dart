@@ -116,10 +116,40 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final room = ref.watch(roomProvider(widget.code)).asData?.value;
+    final roomAsync = ref.watch(roomProvider(widget.code));
+    final room = roomAsync.asData?.value;
     final uid = ref.watch(currentUserProvider)?.uid;
     if (room == null) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      // Loading, or gone: a room that failed to load, or no longer exists,
+      // used to spin here for ever.
+      return Scaffold(
+        appBar: const ParagonAppBar(title: Text('Live quiz')),
+        body: roomAsync.isLoading
+            ? const LoadingView(label: 'Opening the room')
+            : Center(
+                child: SingleChildScrollView(
+                  child: EmptyState(
+                    illustration: IllustrationAsset.notFound,
+                    title: roomAsync.hasError
+                        ? "Couldn't open this room"
+                        : 'This room no longer exists',
+                    message: roomAsync.hasError
+                        ? 'Check your connection and try again.'
+                        : 'Rooms last a day. Start a new one for your class.',
+                    action: roomAsync.hasError
+                        ? AppButton(
+                            label: 'Try again',
+                            onPressed: () =>
+                                ref.invalidate(roomProvider(widget.code)),
+                          )
+                        : AppButton(
+                            label: 'Start a new room',
+                            onPressed: () => context.go('/rooms/new'),
+                          ),
+                  ),
+                ),
+              ),
+      );
     }
     if (room.hostUid != uid) {
       return Scaffold(
@@ -222,8 +252,7 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
                   : () => _do(() async {
                       if (room.isLast) {
                         await repo.podium(room.code, {
-                          for (final p in players.keys)
-                            p: room.scores[p] ?? 0,
+                          for (final p in players.keys) p: room.scores[p] ?? 0,
                         });
                       } else {
                         await repo.showQuestion(room.code, room.index + 1);
@@ -342,6 +371,17 @@ class _Lobby extends StatelessWidget {
           textAlign: TextAlign.center,
           style: AppTheme.bodyLg.copyWith(color: palette.textPrimary),
         ),
+        // An empty lobby says what to do, rather than "0 players" over
+        // nothing.
+        if (players.isEmpty) ...[
+          const SizedBox(height: 8),
+          const LoadingView(
+            label: 'Waiting for players to join with the code above',
+            showLabel: true,
+            delay: Duration.zero,
+            padding: EdgeInsets.symmetric(vertical: 24),
+          ),
+        ],
         const SizedBox(height: 12),
         Wrap(
           alignment: WrapAlignment.center,
@@ -458,7 +498,9 @@ class _QuestionStage extends StatelessWidget {
               child: Text(
                 '$answered',
                 key: ValueKey(answered),
-                style: AppTheme.heading2.copyWith(color: AppColors.primary),
+                style: AppTheme.heading2.copyWith(
+                  color: context.palette.primaryFg,
+                ),
               ),
             ),
             Text(
@@ -590,7 +632,7 @@ class _PodiumStage extends StatelessWidget {
             if (action != null) ...[const SizedBox(height: 16), action!],
           ],
         ),
-        const Positioned.fill(child: Confetti()),
+        Positioned.fill(child: Confetti(colours: kRoomConfettiColours)),
       ],
     );
   }

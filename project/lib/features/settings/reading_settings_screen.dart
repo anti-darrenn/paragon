@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/providers/appearance_provider.dart';
 import '../../core/providers/reading_settings_provider.dart';
+import '../../core/sound/sound_setting.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/math_text.dart';
@@ -103,9 +104,27 @@ class ReadingSettingsScreen extends ConsumerWidget {
                       ),
                     ),
 
-                    _LowDataToggle(
+                    _SwitchRow(
+                      switchKey: const ValueKey('low-data-switch'),
+                      title: 'Low-data mode',
+                      subtitle:
+                          'Lesson videos and images load only when you tap '
+                          'them.',
                       value: settings.lowDataMode,
                       onChanged: notifier.setLowDataMode,
+                    ),
+                    const SizedBox(height: 12),
+                    _SwitchRow(
+                      switchKey: const ValueKey('sound-switch'),
+                      title: 'Sound effects',
+                      subtitle:
+                          'Short tones for right and wrong answers and '
+                          'finished sessions. Never in a WAEC exam. Kept on '
+                          'this device.',
+                      value: ref.watch(soundEffectsProvider),
+                      onChanged: ref
+                          .read(soundEffectsProvider.notifier)
+                          .setEnabled,
                     ),
                     const SizedBox(height: 24),
 
@@ -285,50 +304,53 @@ class _Choices<T> extends StatelessWidget {
   }
 }
 
-class _LowDataToggle extends StatelessWidget {
-  const _LowDataToggle({required this.value, required this.onChanged});
+/// One setting with an on/off switch, in a card.
+class _SwitchRow extends StatelessWidget {
+  const _SwitchRow({
+    required this.switchKey,
+    required this.title,
+    required this.subtitle,
+    required this.value,
+    required this.onChanged,
+  });
 
+  final Key switchKey;
+  final String title;
+  final String subtitle;
   final bool value;
   final ValueChanged<bool> onChanged;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        border: Border.all(color: context.palette.border),
-        borderRadius: BorderRadius.circular(10),
-      ),
+    return SurfaceCard(
       padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
-      child: Row(
-        children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Low-data mode',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.textPrimary,
+      child: MergeSemantics(
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: AppTheme.bodyMd.copyWith(
+                      color: context.palette.textPrimary,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  'Lesson videos and images load only when you tap them.',
-                  style: AppTheme.caption.copyWith(
-                    color: context.palette.textSecondary,
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle,
+                    style: AppTheme.label.copyWith(
+                      color: context.palette.textSecondary,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          Switch(
-            key: const ValueKey('low-data-switch'),
-            value: value,
-            activeThumbColor: AppColors.primary,
-            onChanged: onChanged,
-          ),
-        ],
+            Switch(key: switchKey, value: value, onChanged: onChanged),
+          ],
+        ),
       ),
     );
   }

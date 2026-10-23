@@ -162,7 +162,9 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
             onPressed: () => Navigator.of(context).pop(true),
             child: Text(
               'Sign out everywhere',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.dangerFg,
+              ),
             ),
           ),
         ],
@@ -247,7 +249,9 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
             },
             child: Text(
               'Send link',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.primaryFg,
+              ),
             ),
           ),
         ],
@@ -475,7 +479,7 @@ class _NewPasswordDialogState extends State<_NewPasswordDialog> {
             const SizedBox(height: 10),
             Text(
               _error!,
-              style: AppTheme.caption.copyWith(color: AppColors.wrong),
+              style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
             ),
           ],
         ],
@@ -494,7 +498,7 @@ class _NewPasswordDialogState extends State<_NewPasswordDialog> {
           onPressed: _submit,
           child: Text(
             'Save',
-            style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+            style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
           ),
         ),
       ],

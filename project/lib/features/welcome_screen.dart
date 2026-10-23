@@ -11,6 +11,7 @@ import '../core/router/return_to.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import '../core/theme/tokens.dart';
 import 'account/guest_upgrade.dart';
 import 'account/upgrade_screen.dart';
 import '../core/theme/app_palette.dart';
@@ -18,6 +19,11 @@ import 'about_screen.dart';
 import '../core/widgets/paragon_logo.dart';
 import '../core/providers/analytics_provider.dart';
 import '../core/config/site_config.dart';
+import '../core/sound/sfx.dart';
+import '../core/widgets/answer_option.dart';
+import '../core/widgets/auth/google_button.dart';
+import '../core/widgets/math_text.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Pre-auth landing screen — the front door for signed-out visitors.
 /// See the redirect logic in app_router.dart: any signed-out navigation
@@ -104,16 +110,120 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.sizeOf(context).width;
+    final wide = width >= 900;
+    final p = context.palette;
+    final isGuest = ref.watch(isGuestProvider);
+
+    // Sign-in is the main action (owner's decision, 2026-10-23); the
+    // taster and guest browsing sit beneath it.
+    final actions = ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 420),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (_errorMessage != null) ...[
+            InlineAlert(
+              tone: Tone.danger,
+              message: _errorMessage!,
+              announce: true,
+            ),
+            const SizedBox(height: 12),
+          ],
+          GoogleSignInButton(
+            onPressed: _handleGoogleSignIn,
+            loading: _isLoading,
+          ),
+          const SizedBox(height: 12),
+          AppButton(
+            label: 'Sign in with email',
+            tone: ButtonTone.secondary,
+            size: ButtonSize.lg,
+            icon: Icons.mail_outline_rounded,
+            expand: true,
+            // welcome shouldn't stay on the back stack once we leave it
+            onPressed: _isLoading ? null : () => context.go('/signin'),
+          ),
+          const SizedBox(height: 16),
+          // Five questions before any decision: the quickest way to see
+          // what Paragon is. Starts a guest session, like browsing.
+          Align(
+            alignment: wide ? Alignment.centerLeft : Alignment.center,
+            child: AppButton(
+              label: 'Try 5 questions, no sign-up',
+              tone: ButtonTone.ghost,
+              icon: Icons.bolt_rounded,
+              onPressed: _isLoading
+                  ? null
+                  : () => _handleGuestSignIn(to: '/try'),
+            ),
+          ),
+          // A guest who came back to welcome (from the menu's "Welcome
+          // page") carries on where they were.
+          Align(
+            alignment: wide ? Alignment.centerLeft : Alignment.center,
+            child: AppButton(
+              label: isGuest ? 'Continue as guest' : 'Browse as a guest',
+              tone: ButtonTone.ghost,
+              size: ButtonSize.sm,
+              onPressed: _isLoading
+                  ? null
+                  : isGuest
+                  ? () => context.go('/')
+                  : () => _handleGuestSignIn(),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    final hero = Column(
+      crossAxisAlignment: wide
+          ? CrossAxisAlignment.start
+          : CrossAxisAlignment.center,
+      children: [
+        SizedBox(
+          height: wide ? 64 : 52,
+          child: const AspectRatio(
+            aspectRatio: 818 / 215,
+            child: ParagonLogo(semanticLabel: 'Project Paragon'),
+          ),
+        ),
+        SizedBox(height: wide ? 32 : 24),
+        // A plain placeholder until the owner picks one of the options in
+        // docs/COPY.md (audit C15).
+        Semantics(
+          header: true,
+          child: Text(
+            _headline,
+            textAlign: wide ? TextAlign.start : TextAlign.center,
+            style: (wide ? AppTheme.display : AppTheme.heading1).copyWith(
+              color: p.textStrong,
+            ),
+          ),
+        ),
+        const SizedBox(height: 12),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 520),
+          child: Text(
+            'Real WAEC past questions, worked answers, lessons and practice '
+            'for every topic. Free for every student.',
+            textAlign: wide ? TextAlign.start : TextAlign.center,
+            style: AppTheme.bodyLg.copyWith(color: p.textSecondary),
+          ),
+        ),
+        const SizedBox(height: 28),
+        actions,
+        const SizedBox(height: 32),
+        const _ValuePoints(),
+      ],
+    );
+
     return Scaffold(
-      backgroundColor: context.palette.background,
+      backgroundColor: p.background,
       // CustomScrollView + SliverFillRemaining(hasScrollBody: false) fills
-      // the child to exactly the remaining viewport space when content
-      // fits (no scrollbar, nothing to scroll), and lets the CustomScrollView
-      // become scrollable when content is taller than the viewport — the
-      // sliver-based tool built for exactly this "fill or scroll" case.
-      // Unlike a bare SingleChildScrollView, its child gets a properly
-      // bounded height, so the Spacer below works directly with no
-      // IntrinsicHeight workaround needed.
+      // the page when the content fits and scrolls when it does not, with
+      // a bounded height so the Spacer below can push the footer down.
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
@@ -121,324 +231,244 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
               hasScrollBody: false,
               child: Stack(
                 children: [
-                  // ── Decorative background layer (Figma:
-                  // "lo-effort-decor"). One exported SVG asset, not
-                  // hand-drawn shapes. BoxFit.cover preserves the shapes'
-                  // aspect ratio (crops, never stretches). Edge-to-edge —
-                  // not inset by the content's own vertical padding below.
+                  // Decorative background (Figma: "lo-effort-decor").
                   Positioned.fill(
                     child: SvgPicture.asset(
                       'assets/images/decor_background.svg',
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 32),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 24),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              const SizedBox(height: 48),
-
-                              // ── Logo — Figma: 818x215, capped at that
-                              // width, aspect ratio preserved, shrinks on
-                              // narrow screens (ConstrainedBox intersects
-                              // with the incoming width constraint
-                              // automatically). Also capped at ~22% of
-                              // viewport height so the divider/strip stay
-                              // above the fold on short-but-wide screens
-                              // (e.g. 1366x768), where width alone isn't
-                              // the binding constraint — AspectRatio picks
-                              // whichever of the two caps is tighter.
-                              Center(
-                                child: ConstrainedBox(
-                                  constraints: BoxConstraints(
-                                    maxWidth: 818,
-                                    maxHeight:
-                                        MediaQuery.sizeOf(context).height *
-                                        0.22,
-                                  ),
-                                  child: AspectRatio(
-                                    aspectRatio: 818 / 215,
-                                    child: const ParagonLogo(
-                                      semanticLabel: 'Project Paragon',
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 16),
-
-                              // ── Tagline — Figma: Heading 1 (24/1.25, Bold).
-                              // A plain placeholder until the owner picks one
-                              // of the options in docs/COPY.md (audit C15).
-                              Text(
-                                kTagline,
-                                textAlign: TextAlign.center,
-                                style: AppTheme.heading1.copyWith(
-                                  color: context.palette.textSecondary,
-                                ),
-                              ),
-
-                              const SizedBox(height: 56),
-
-                              // ── Auth entry points — reuse existing logic/
-                              // routes only, nothing rebuilt. Figma: both
-                              // buttons 420x52, 4px radius, 16px gap, centered.
-                              if (_errorMessage != null)
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 12),
-                                  child: Text(
-                                    _errorMessage!,
-                                    textAlign: TextAlign.center,
-                                    style: AppTheme.caption.copyWith(
-                                      color: AppColors.wrong,
-                                    ),
-                                  ),
-                                ),
-
-                              // Extra inset on phone-width screens so the
-                              // buttons read as an inset element rather
-                              // than edge-to-edge — the 420 cap below
-                              // already doesn't bind under ~470px (screen
-                              // width minus the 24px padding on each
-                              // side), so narrowing further here needs
-                              // its own margin, not a smaller maxWidth.
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal:
-                                      MediaQuery.sizeOf(context).width < 480
-                                      ? 16
-                                      : 0,
-                                ),
-                                child: Center(
-                                  child: ConstrainedBox(
-                                    constraints: const BoxConstraints(
-                                      maxWidth: 420,
-                                    ),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.stretch,
-                                      children: [
-                                        // btn/google — Figma: #D9D9D9 fill, real
-                                        // multi-color Google "G" PNG (not the
-                                        // hand-drawn circle), dark text.
-                                        SizedBox(
-                                          height: 52,
-                                          child: ElevatedButton(
-                                            onPressed: _isLoading
-                                                ? null
-                                                : _handleGoogleSignIn,
-                                            style: ElevatedButton.styleFrom(
-                                              backgroundColor:
-                                                  AppColors.buttonLight,
-                                              disabledBackgroundColor: AppColors
-                                                  .buttonLight
-                                                  .withAlpha(
-                                                    (0.6 * 255).round(),
-                                                  ),
-                                              shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(4),
-                                              ),
-                                              elevation: 0,
-                                            ),
-                                            child: _isLoading
-                                                ? const SizedBox(
-                                                    height: 20,
-                                                    width: 20,
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                          color: AppColors
-                                                              .backgroundDark,
-                                                          strokeWidth: 2,
-                                                        ),
-                                                  )
-                                                : Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      Image.asset(
-                                                        'assets/icons/google_g.png',
-                                                        width: 30,
-                                                        height: 30,
-                                                      ),
-                                                      const SizedBox(width: 10),
-                                                      Flexible(
-                                                        child: Text(
-                                                          'Continue with Google',
-                                                          maxLines: 1,
-                                                          overflow: TextOverflow
-                                                              .ellipsis,
-                                                          style: AppTheme
-                                                              .btnLabel
-                                                              .copyWith(
-                                                                color: AppColors
-                                                                    .backgroundDark,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                          ),
-                                        ),
-                                        const SizedBox(height: 16),
-
-                                        // btn/email — Figma: 2px primary-orange
-                                        // outline, mail icon, primary text color.
-                                        SizedBox(
-                                          height: 52,
-                                          child: OutlinedButton(
-                                            // welcome shouldn't stay on the back
-                                            // stack once we leave it
-                                            onPressed: _isLoading
-                                                ? null
-                                                : () => context.go('/signin'),
-                                            style: OutlinedButton.styleFrom(
-                                              side: const BorderSide(
-                                                color: AppColors.primary,
-                                                width: 2,
-                                              ),
-                                              shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(4),
-                                              ),
-                                            ),
-                                            child: Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                SvgPicture.asset(
-                                                  'assets/icons/mail_icon.svg',
-                                                  width: 24,
-                                                  height: 19,
-                                                ),
-                                                const SizedBox(width: 10),
-                                                Flexible(
-                                                  child: Text(
-                                                    'Sign in with E-Mail',
-                                                    maxLines: 1,
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
-                                                    style: AppTheme.btnLabel
-                                                        .copyWith(
-                                                          color: AppColors
-                                                              .textPrimaryDark,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-
-                              const SizedBox(height: 12),
-
-                              // Five questions before any decision: the
-                              // quickest way to see what Paragon is. Starts
-                              // a guest session, like "Browse as Guest".
-                              Center(
-                                child: TextButton.icon(
-                                  onPressed: _isLoading
-                                      ? null
-                                      : () => _handleGuestSignIn(to: '/try'),
-                                  icon: const Icon(
-                                    Icons.bolt_rounded,
-                                    color: AppColors.primary,
-                                  ),
-                                  label: Text(
-                                    'Try 5 questions now',
-                                    style: AppTheme.bodyMd.copyWith(
-                                      color: context.palette.textPrimary,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                              ),
-
-                              // ── Guest entry — Figma: Caption style,
-                              // centered, ghost/text button, no fill, no
-                              // border (spec §2.1.3). Routes into the WAEC
-                              // setup screen's guest restrictions once
-                              // signed in anonymously — see
-                              // waec_subject_screen.dart / waec_exam_setup_screen.dart.
-                              Center(
-                                child: TextButton(
-                                  // A guest who came back to welcome (from
-                                  // the menu's "Welcome page") carries on
-                                  // where they were.
-                                  onPressed: _isLoading
-                                      ? null
-                                      : ref.watch(isGuestProvider)
-                                      ? () => context.go('/')
-                                      : () => _handleGuestSignIn(),
-                                  child: Text(
-                                    ref.watch(isGuestProvider)
-                                        ? 'Continue as guest'
-                                        : 'Browse as Guest',
-                                    style: AppTheme.caption.copyWith(
-                                      color: context.palette.textSecondary,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 40),
-                            ],
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Align(
+                        alignment: Alignment.topCenter,
+                        child: ConstrainedBox(
+                          constraints: const BoxConstraints(maxWidth: 1120),
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(
+                              24,
+                              wide ? 72 : 40,
+                              24,
+                              40,
+                            ),
+                            child: wide
+                                ? Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Expanded(flex: 6, child: hero),
+                                      const SizedBox(width: 56),
+                                      const Expanded(
+                                        flex: 5,
+                                        child: _HeroArt(),
+                                      ),
+                                    ],
+                                  )
+                                : hero,
                           ),
                         ),
-
-                        // Pushes the divider/ticker/footer down to sit near the
-                        // bottom (as in Figma) on a tall viewport with short
-                        // content; contributes nothing when content already
-                        // fills or exceeds the viewport (works because
-                        // SliverFillRemaining(hasScrollBody: false) gives
-                        // this Column a bounded height, unlike a bare
-                        // SingleChildScrollView).
-                        const Spacer(),
-
-                        // ── Divider — Figma: full-bleed, context.palette.border
-                        // at 40% opacity, between the auth zone and the ticker.
-                        Container(
-                          height: 1,
-                          color: context.palette.border.withAlpha(
-                            (0.4 * 255).round(),
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-
-                        // ── Subject strip — seamless left-scrolling marquee,
-                        // full-bleed (not inset with the 24px content padding
-                        // above, matching Figma's wider-than-frame ticker track).
-                        const _SubjectTicker(),
-
-                        const SizedBox(height: 24),
-
-                        // About and contact — readable signed out, like
-                        // the legal pages below.
-                        const _FooterLinks(),
-                        const SizedBox(height: 12),
-
-                        // Consent line — the destinations now exist at
-                        // /terms and /privacy, both readable signed out.
-                        const _ConsentLine(),
-                        const SizedBox(height: 8),
-                      ],
-                    ),
+                      ),
+                      // Pushes the ticker and footer to the bottom of a
+                      // tall window; nothing when the content fills it.
+                      const Spacer(),
+                      Container(height: 1, color: p.border.withAlpha(102)),
+                      const SizedBox(height: 24),
+                      const _SubjectTicker(),
+                      const SizedBox(height: 24),
+                      // About and contact — readable signed out, like the
+                      // legal pages below.
+                      const _FooterLinks(),
+                      const SizedBox(height: 12),
+                      const _ConsentLine(),
+                      const SizedBox(height: 16),
+                    ],
                   ),
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// The welcome page's headline: the tagline once the owner has picked one
+/// from docs/COPY.md, and until then a plain statement of what Paragon is
+/// rather than the placeholder.
+const _headline = kTagline == 'To be determined'
+    ? 'Free WAEC past questions and practice'
+    : kTagline;
+
+/// Three things Paragon gives a student.
+class _ValuePoints extends StatelessWidget {
+  const _ValuePoints();
+
+  @override
+  Widget build(BuildContext context) {
+    const points = [
+      (
+        Icons.history_edu_rounded,
+        AppColors.primary,
+        'Real past questions',
+        'From WAEC papers, each marked with its year.',
+      ),
+      (
+        Icons.lightbulb_outline_rounded,
+        AppColors.medalGold,
+        'Worked answers',
+        'Hints and the working, not just the letter.',
+      ),
+      (
+        Icons.insights_rounded,
+        AppColors.secondary,
+        'Know where you stand',
+        'Mastery for every topic and a grade estimate.',
+      ),
+    ];
+    final p = context.palette;
+    // A column, not a Wrap: the page sizes itself from its content's
+    // intrinsic height, which a Wrap under-reports when it wraps.
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 420),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          for (final (icon, colour, title, text) in points)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 14),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  IconTile(icon: icon, color: colour, size: 36),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          title,
+                          style: AppTheme.bodyMd.copyWith(
+                            color: p.textStrong,
+                            fontWeight: FontWeight.w600,
+                            height: 1.3,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          text,
+                          style: AppTheme.label.copyWith(
+                            color: p.textSecondary,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// The wide screen's right half: the welcome illustration over a question
+/// to try on the spot.
+class _HeroArt extends StatelessWidget {
+  const _HeroArt();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Illustration(IllustrationAsset.welcome, height: 220),
+        SizedBox(height: 8),
+        _SampleQuestion(),
+      ],
+    );
+  }
+}
+
+/// One question to answer on the welcome page: instant feedback, nothing
+/// recorded, no account needed. The arithmetic is checked here, not drawn
+/// from the bank: 2³ × 2⁴ = 2⁷.
+class _SampleQuestion extends StatefulWidget {
+  const _SampleQuestion();
+
+  @override
+  State<_SampleQuestion> createState() => _SampleQuestionState();
+}
+
+class _SampleQuestionState extends State<_SampleQuestion> {
+  static const _options = [
+    r'\(2^7\)',
+    r'\(2^{12}\)',
+    r'\(4^7\)',
+    r'\(4^{12}\)',
+  ];
+  static const _right = 0;
+  int? _picked;
+
+  void _pick(int i) {
+    if (_picked != null) return;
+    Sfx.unlock();
+    Sfx.play(i == _right ? SfxCue.correct : SfxCue.wrong);
+    setState(() => _picked = i);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final p = context.palette;
+    final picked = _picked;
+    return SurfaceCard(
+      padding: const EdgeInsets.fromLTRB(18, 16, 18, 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              const Tag('Try one', tone: Tone.info),
+              const Spacer(),
+              if (picked != null)
+                AppButton(
+                  label: 'Again',
+                  tone: ButtonTone.ghost,
+                  size: ButtonSize.sm,
+                  onPressed: () => setState(() => _picked = null),
+                ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          MathText(
+            text: r'Simplify \(2^3 \times 2^4\)',
+            style: AppTheme.questionStem.copyWith(color: p.textStrong),
+          ),
+          const SizedBox(height: 12),
+          for (var i = 0; i < _options.length; i++)
+            AnswerOption(
+              index: i,
+              text: _options[i],
+              state: picked == null
+                  ? AnswerOptionState.idle
+                  : i == _right
+                  ? AnswerOptionState.correct
+                  : i == picked
+                  ? AnswerOptionState.wrong
+                  : AnswerOptionState.ruledOut,
+              onTap: picked == null ? () => _pick(i) : null,
+            ),
+          if (picked != null) ...[
+            AnswerVerdict(right: picked == _right, correctIndex: _right),
+            MathText(
+              text: r'Same base, so add the powers: \(2^{3+4} = 2^7\).',
+              style: AppTheme.bodyMd.copyWith(color: p.textSecondary),
+            ),
+            const SizedBox(height: 12),
+          ],
+        ],
       ),
     );
   }
@@ -561,7 +591,7 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
 
   Widget _ticker(List<Subject> subjects) {
     // Reduced motion: the same row, still, scrollable by hand.
-    if (MediaQuery.disableAnimationsOf(context)) {
+    if (reduceMotion(context)) {
       _controller.stop();
       return SizedBox(
         height: _height,

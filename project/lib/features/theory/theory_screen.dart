@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/app_colors.dart';
+import '../../core/widgets/motion/score_ring.dart';
+import '../../core/widgets/load_error.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/theory/theory_question.dart';
@@ -28,46 +30,69 @@ class _TheoryScreenState extends ConsumerState<TheoryScreen> {
   Widget build(BuildContext context) {
     final async = ref.watch(theoryQuestionsProvider(widget.subjectId));
     final open = _open;
-    return Scaffold(
-      appBar: ParagonAppBar(
-        title: Text(
-          open == null
-              ? 'Theory practice'
-              : 'WAEC ${open.examYear} · Q${open.number}',
+    // Back from a question returns to the list, not out of theory.
+    return PopScope(
+      canPop: open == null,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) setState(() => _open = null);
+      },
+      child: Scaffold(
+        appBar: ParagonAppBar(
+          title: Text(
+            open == null
+                ? 'Theory practice'
+                : 'WAEC ${open.examYear} · Q${open.number}',
+          ),
         ),
-      ),
-      body: async.when(
-        loading: () => const PageBody(children: [SkeletonPage()]),
-        error: (_, _) => const EmptyState(
-          icon: Icons.error_outline,
-          title: "Couldn't load the theory questions",
+        body: async.when(
+          loading: () => const PageBody(children: [SkeletonPage()]),
+          error: (e, _) => LoadError(
+            error: e,
+            message: "Couldn't load the theory questions.",
+            onRetry: () =>
+                ref.invalidate(theoryQuestionsProvider(widget.subjectId)),
+          ),
+          data: (list) => open != null
+              ? _SelfMark(
+                  key: ValueKey(open.id),
+                  question: open,
+                  onBack: () => setState(() => _open = null),
+                )
+              : PageBody(
+                  children: [
+                    const PageIntro(
+                      // The app bar names the page on a phone.
+                      wideOnly: true,
+                      title: 'Theory practice',
+                      subtitle:
+                          'Work each question on paper, then mark yourself '
+                          'against the scheme, one step at a time.',
+                    ),
+                    if (list.isEmpty)
+                      const EmptyState(
+                        illustration: IllustrationAsset.empty,
+                        title: 'No theory questions yet',
+                        message:
+                            'Paper 2 questions appear here once there are '
+                            'enough to practise.',
+                      )
+                    else
+                      RowGroup(
+                        children: [
+                          for (final q in list)
+                            ListRow(
+                              icon: Icons.edit_note_rounded,
+                              iconColor: AppColors.secondary,
+                              title:
+                                  'WAEC ${q.examYear} · Question ${q.number}',
+                              subtitle: '${q.totalMarks} marks',
+                              onTap: () => setState(() => _open = q),
+                            ),
+                        ],
+                      ),
+                  ],
+                ),
         ),
-        data: (list) => open != null
-            ? _SelfMark(
-                key: ValueKey(open.id),
-                question: open,
-                onBack: () => setState(() => _open = null),
-              )
-            : PageBody(
-                children: [
-                  const PageIntro(
-                    title: 'Theory practice',
-                    subtitle:
-                        'Work each question on paper, then mark yourself '
-                        'against the scheme, one step at a time.',
-                  ),
-                  RowGroup(
-                    children: [
-                      for (final q in list)
-                        ListRow(
-                          title: 'WAEC ${q.examYear} · Question ${q.number}',
-                          subtitle: '${q.totalMarks} marks',
-                          onTap: () => setState(() => _open = q),
-                        ),
-                    ],
-                  ),
-                ],
-              ),
       ),
     );
   }
@@ -115,9 +140,11 @@ class _SelfMarkState extends State<_SelfMark> {
                 ),
                 const SizedBox(height: 10),
                 if (!_revealed.contains(pi))
-                  OutlinedButton(
+                  AppButton(
+                    label: 'I have answered it: show the scheme',
+                    tone: ButtonTone.secondary,
+                    icon: Icons.visibility_outlined,
                     onPressed: () => setState(() => _revealed.add(pi)),
-                    child: const Text('I have answered it: show the scheme'),
                   )
                 else
                   for (final (si, step) in part.scheme.indexed)
@@ -137,16 +164,33 @@ class _SelfMarkState extends State<_SelfMark> {
           ),
           const SizedBox(height: 12),
         ],
-        if (done)
+        if (done) ...[
+          const SizedBox(height: 8),
+          Center(
+            child: ScoreRing(
+              fraction: q.totalMarks == 0
+                  ? 0
+                  : selfMarked(q, _ticked) / q.totalMarks,
+              label: '${selfMarked(q, _ticked)}/${q.totalMarks}',
+              caption: 'marks',
+              size: 128,
+            ),
+          ),
+          const SizedBox(height: 10),
           Text(
             'You gave yourself ${selfMarked(q, _ticked)}/${q.totalMarks}.',
             textAlign: TextAlign.center,
-            style: AppTheme.heading3.copyWith(color: AppColors.primary),
+            style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
           ),
-        const SizedBox(height: 12),
-        TextButton(
-          onPressed: widget.onBack,
-          child: const Text('All questions'),
+        ],
+        const SizedBox(height: 16),
+        Center(
+          child: AppButton(
+            label: 'All questions',
+            tone: ButtonTone.secondary,
+            icon: Icons.arrow_back_rounded,
+            onPressed: widget.onBack,
+          ),
         ),
       ],
     );

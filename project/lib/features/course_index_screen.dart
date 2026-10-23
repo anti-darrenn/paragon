@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/progress/mastery.dart';
 import '../core/progress/course_progress.dart';
 import '../core/auth/feature_access.dart';
 import '../core/learn/topic_test.dart';
@@ -126,12 +127,10 @@ class _CourseBody extends StatelessWidget {
         SizedBox(height: isCompact ? 24 : 40),
 
         // ── Breadcrumb ───────────────────────────────────────────────────
-        _Breadcrumb(
-          crumbs: [
-            const _Crumb('Courses', '/courses'),
-            _Crumb(course.name, null),
-          ],
-        ),
+        Breadcrumbs([
+          Crumb('Courses', onTap: () => context.go('/courses')),
+          Crumb(course.name),
+        ]),
         const SizedBox(height: 16),
 
         // ── Page heading ─────────────────────────────────────────────────
@@ -155,10 +154,7 @@ class _CourseBody extends StatelessWidget {
                     ),
                   ),
                   if (!course.isLive)
-                    const _StatusPill(
-                      label: 'Coming soon',
-                      color: AppColors.warning,
-                    ),
+                    const Tag('Coming soon', tone: Tone.warning),
                 ],
               ),
             ),
@@ -215,18 +211,12 @@ class _CourseBody extends StatelessWidget {
 
         if (course.isLive && canChallenge) ...[
           const SizedBox(height: 20),
-          OutlinedButton.icon(
+          AppButton(
+            label: 'Course challenge',
+            tone: ButtonTone.secondary,
+            icon: Icons.emoji_events_outlined,
             onPressed: () =>
                 context.push('/subject/${course.slug}/course/challenge'),
-            icon: Icon(Icons.emoji_events_outlined, color: accent),
-            label: Text(
-              'Course challenge',
-              style: AppTheme.bodyMd.copyWith(color: accent),
-            ),
-            style: OutlinedButton.styleFrom(
-              side: BorderSide(color: accent.withAlpha(120)),
-              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-            ),
           ),
         ],
 
@@ -234,16 +224,16 @@ class _CourseBody extends StatelessWidget {
 
         // ── Module cards ─────────────────────────────────────────────────
         if (course.modules.isEmpty)
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 48),
-            child: Text(
-              'No modules yet for this subject.',
-              style: AppTheme.bodyLg.copyWith(
-                color: context.palette.textSecondary,
-              ),
-            ),
+          const EmptyState(
+            illustration: IllustrationAsset.empty,
+            title: 'No modules yet',
+            message: 'The outline for this subject is still being written.',
           )
-        else
+        else ...[
+          if (course.isLive) ...[
+            const _MasteryLegend(),
+            const SizedBox(height: 16),
+          ],
           // Measured once for the whole list rather than per card, so every
           // module on the page breaks its grid at the same column count.
           LayoutBuilder(
@@ -272,15 +262,14 @@ class _CourseBody extends StatelessWidget {
                           : null,
                       onTopicTap: course.modules[i].isPlaceholder
                           ? null
-                          : (topic) => context.push(
-                              course.topicPath(topic),
-                            ),
+                          : (topic) => context.push(course.topicPath(topic)),
                     ),
                   ],
                 ],
               );
             },
           ),
+        ],
 
         const SizedBox(height: 64),
       ],
@@ -315,51 +304,117 @@ class _CourseProgressPanel extends StatelessWidget {
     // A topic test counts as starting a topic, as drill does (audit C4).
     final started = course.practisedCountIn(practised);
     final complete = course.completedCountIn(progress);
+    final next = upNextTopic(course, progress);
 
-    return Container(
+    return SurfaceCard(
       padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: context.palette.border),
-      ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          MasteryRing(
-            fraction: course.masteryIn(progress),
-            accent: accent,
-            size: 64,
-          ),
-          const SizedBox(width: 18),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  started == 0
-                      ? 'You have not started this course yet'
-                      : 'Course mastery',
-                  style: AppTheme.bodyLg.copyWith(
-                    color: context.palette.textPrimary,
-                    fontWeight: FontWeight.w600,
-                  ),
+          Row(
+            children: [
+              MasteryRing(
+                fraction: course.masteryIn(progress),
+                accent: accent,
+                size: 64,
+              ),
+              const SizedBox(width: 18),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      started == 0
+                          ? 'You have not started this course yet'
+                          : 'Course mastery',
+                      style: AppTheme.bodyLg.copyWith(
+                        color: context.palette.textPrimary,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      started == 0
+                          ? 'Pick any topic below to begin. Each circle fills as '
+                                'you practise that topic.'
+                          : '$started of $total topics started  ·  $complete at '
+                                'proficient or above',
+                      style: AppTheme.bodyMd.copyWith(
+                        color: context.palette.textSecondary,
+                      ),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 6),
-                Text(
-                  started == 0
-                      ? 'Pick any topic below to begin. Each circle fills as '
-                            'you practise that topic.'
-                      : '$started of $total topics started  ·  $complete at '
-                            'proficient or above',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.textSecondary,
-                  ),
+              ),
+            ],
+          ),
+          if (next != null) ...[
+            const SizedBox(height: 16),
+            Wrap(
+              spacing: 12,
+              runSpacing: 8,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                AppButton(
+                  key: const ValueKey('course.upNext'),
+                  label: started == 0
+                      ? 'Start with ${next.name}'
+                      : 'Up next: ${next.name}',
+                  trailingIcon: Icons.arrow_forward_rounded,
+                  onPressed: () => context.push(course.topicPath(next)),
                 ),
               ],
             ),
-          ),
+          ],
         ],
       ),
+    );
+  }
+}
+
+/// Khan's "up next": the first topic, in course order, that has questions
+/// and is not yet proficient. Null when every topic is.
+CourseTopic? upNextTopic(Course course, UserProgress progress) {
+  for (final module in course.modules) {
+    if (module.isPlaceholder) continue;
+    for (final topic in module.topics) {
+      if (topic.isPlaceholder || topic.questionCount == 0) continue;
+      final level = progress.forTopic(topic.id).level;
+      if (level.points < MasteryLevel.proficient.points) return topic;
+    }
+  }
+  return null;
+}
+
+/// What the circles mean, once, above the modules — as Khan does.
+class _MasteryLegend extends StatelessWidget {
+  const _MasteryLegend();
+
+  @override
+  Widget build(BuildContext context) {
+    final p = context.palette;
+    return Wrap(
+      spacing: 16,
+      runSpacing: 8,
+      children: [
+        for (final level in MasteryLevel.values)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              MasteryCircle(
+                level: level,
+                accent: AppColors.primary,
+                size: 16,
+                showTooltip: false,
+              ),
+              const SizedBox(width: 6),
+              Text(
+                level.label,
+                style: AppTheme.label.copyWith(color: p.textSecondary),
+              ),
+            ],
+          ),
+      ],
     );
   }
 }
@@ -413,105 +468,12 @@ class _PlannedNotice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      decoration: BoxDecoration(
-        color: AppColors.warning.withAlpha((0.08 * 255).round()),
-        border: Border.all(
-          color: AppColors.warning.withAlpha((0.35 * 255).round()),
-        ),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Icon(
-            Icons.info_outline_rounded,
-            size: 18,
-            color: AppColors.warning,
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              '$subjectName questions are not in Paragon yet. The outline '
-              'below is the planned syllabus — topics will become '
-              'practisable as content lands.',
-              style: AppTheme.bodyMd.copyWith(
-                color: context.palette.textSecondary,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _StatusPill extends StatelessWidget {
-  const _StatusPill({required this.label, required this.color});
-
-  final String label;
-  final Color color;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        color: color.withAlpha((0.12 * 255).round()),
-        border: Border.all(color: color.withAlpha((0.4 * 255).round())),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Text(label, style: AppTheme.caption.copyWith(color: color)),
-    );
-  }
-}
-
-class _Crumb {
-  const _Crumb(this.label, this.path);
-  final String label;
-  final String? path;
-}
-
-class _Breadcrumb extends StatelessWidget {
-  const _Breadcrumb({required this.crumbs});
-
-  final List<_Crumb> crumbs;
-
-  @override
-  Widget build(BuildContext context) {
-    return Wrap(
-      crossAxisAlignment: WrapCrossAlignment.center,
-      children: [
-        for (var i = 0; i < crumbs.length; i++) ...[
-          if (i > 0)
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: Text(
-                '/',
-                style: AppTheme.label.copyWith(color: context.palette.border),
-              ),
-            ),
-          if (crumbs[i].path == null)
-            Text(
-              crumbs[i].label,
-              style: AppTheme.label.copyWith(
-                color: context.palette.textSecondary,
-              ),
-            )
-          else
-            MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: GestureDetector(
-                onTap: () => context.go(crumbs[i].path!),
-                child: Text(
-                  crumbs[i].label,
-                  style: AppTheme.label.copyWith(color: AppColors.primary),
-                ),
-              ),
-            ),
-        ],
-      ],
+    return InlineAlert(
+      tone: Tone.warning,
+      message:
+          '$subjectName questions are not in Paragon yet. The outline '
+          'below is the planned syllabus — topics will become '
+          'practisable as content lands.',
     );
   }
 }
@@ -575,7 +537,9 @@ class _CourseError extends StatelessWidget {
             ),
             child: Text(
               'Back to courses',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.primaryFg,
+              ),
             ),
           ),
         ],

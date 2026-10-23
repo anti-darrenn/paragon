@@ -17,6 +17,7 @@ import '../../../core/repositories/admin_flag_repository.dart';
 import '../../../core/repositories/admin_question_repository.dart';
 import '../../../core/widgets/ui/ui.dart';
 import 'question_widgets.dart';
+import 'studio_error.dart';
 
 /// Studio panels that watch the live app rather than the content: how
 /// close today is to the Spark quota, and what students are telling us.
@@ -97,10 +98,8 @@ class UsagePanel extends ConsumerWidget {
         const SizedBox(height: 12),
         usage.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load usage.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-          ),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load usage.", error: e),
           data: (u) {
             if (u == null || u.days.isEmpty) {
               return Text(
@@ -402,10 +401,8 @@ class ContentQualityPanel extends ConsumerWidget {
     final audit = ref.watch(contentAuditProvider);
     return audit.when(
       loading: () => const StudioListSkeleton(),
-      error: (e, _) => Text(
-        "Couldn't load the content audit.\n$e",
-        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-      ),
+      error: (e, _) =>
+          StudioError(message: "Couldn't load the content audit.", error: e),
       data: (a) {
         if (a == null) {
           return const EmptyState(
@@ -439,7 +436,9 @@ class ContentQualityPanel extends ConsumerWidget {
               Text(
                 'This audit was published before questions could be listed. '
                 'Publish it again to open the questions behind each count.',
-                style: AppTheme.caption.copyWith(color: AppColors.warning),
+                style: AppTheme.caption.copyWith(
+                  color: context.palette.warningFg,
+                ),
               ),
             ],
             for (final (level, title, help) in groups)
@@ -547,7 +546,7 @@ class _RuleTileState extends ConsumerState<_RuleTile> {
         loading: () => const StudioListSkeleton(count: 2),
         error: (e, _) => Text(
           "Couldn't load these questions.\n$e",
-          style: AppTheme.caption.copyWith(color: AppColors.wrong),
+          style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
         ),
         data: (list) {
           final rule = widget.rule.rule;
@@ -566,7 +565,9 @@ class _RuleTileState extends ConsumerState<_RuleTile> {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
                     '$dismissed dismissed as nothing wrong',
-                    style: AppTheme.caption.copyWith(color: AppColors.correct),
+                    style: AppTheme.caption.copyWith(
+                      color: context.palette.successFg,
+                    ),
                   ),
                 ),
               for (final q in open)
@@ -656,10 +657,8 @@ class FeedbackPanel extends ConsumerWidget {
         const SizedBox(height: 12),
         feedback.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load feedback.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-          ),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load feedback.", error: e),
           data: (all) {
             final open = all.where((f) => f.isOpen).toList();
             if (open.isEmpty) {
@@ -873,10 +872,8 @@ class TractionPanel extends ConsumerWidget {
         const SizedBox(height: 12),
         async.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load metrics.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-          ),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load metrics.", error: e),
           data: (days) => days.isEmpty
               ? Text(
                   'No metrics yet. The nightly job writes yesterday\'s.',

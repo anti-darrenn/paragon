@@ -14,7 +14,6 @@ import '../../core/repositories/learning_repository.dart';
 import '../../core/rooms/room.dart';
 import '../../core/rooms/room_repository.dart';
 import '../../core/rooms/teacher_quiz.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/nav/back_navigation.dart';
@@ -115,7 +114,9 @@ class _NewRoomScreenState extends ConsumerState<NewRoomScreen> {
             i,
       ];
       if (items.isEmpty) {
-        setState(() => _error = 'Choose topics or a quiz with questions in it.');
+        setState(
+          () => _error = 'Choose topics or a quiz with questions in it.',
+        );
         return;
       }
       final title = quiz != null && bankIds.isEmpty
@@ -317,7 +318,7 @@ class _NewRoomScreenState extends ConsumerState<NewRoomScreen> {
             const SizedBox(height: 12),
             Text(
               _error!,
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
             ),
           ],
           const SizedBox(height: kSectionGap),
@@ -432,11 +433,8 @@ class _BankPicker extends ConsumerWidget {
           ref
               .watch(courseProvider(id))
               .when(
-                loading: () => const SkeletonPage(
-                  title: false,
-                  count: 4,
-                  cardHeight: 48,
-                ),
+                loading: () =>
+                    const SkeletonPage(title: false, count: 4, cardHeight: 48),
                 error: (_, _) => const Text("Couldn't load the topics."),
                 data: (course) => Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,

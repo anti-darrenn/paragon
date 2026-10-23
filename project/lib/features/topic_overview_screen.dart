@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/theme/tokens.dart';
 import '../core/learn/lesson_progress.dart';
 import '../core/learn/topic_test.dart';
 import '../core/models/learn_resource.dart';
@@ -141,13 +142,14 @@ class _TopicBody extends ConsumerWidget {
       children: [
         SizedBox(height: isCompact ? 24 : 40),
 
-        _Breadcrumb(
-          crumbs: [
-            const _Crumb('Courses', '/courses'),
-            _Crumb(course.name, '/subject/${course.slug}/course'),
-            _Crumb(module.name, null),
-          ],
-        ),
+        Breadcrumbs([
+          Crumb('Courses', onTap: () => context.go('/courses')),
+          Crumb(
+            course.name,
+            onTap: () => context.go('/subject/${course.slug}/course'),
+          ),
+          Crumb(module.name),
+        ]),
         const SizedBox(height: 16),
 
         Row(
@@ -280,11 +282,15 @@ class _LessonList extends ConsumerWidget {
         const SizedBox(height: 12),
 
         if (resourcesAsync.isLoading)
-          const LinearProgressIndicator(minHeight: 2)
+          const SkeletonPage(title: false, count: 2, cardHeight: 68)
         else if (resourcesAsync.hasError)
-          Text(
-            "This topic's lessons couldn't be loaded. Try refreshing.",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          InlineAlert(
+            tone: Tone.danger,
+            message: "This topic's lessons couldn't be loaded.",
+            action: TextButton(
+              onPressed: () => ref.invalidate(topicResourcesProvider(topic.id)),
+              child: const Text('Try again'),
+            ),
           )
         else if (resources.isNotEmpty) ...[
           _lessonButton(context, resources, completed),
@@ -306,27 +312,6 @@ class _LessonList extends ConsumerWidget {
         ] else
           _noLessons(context),
 
-        const SizedBox(height: 28),
-        _SectionHeading(label: 'Practice', accent: accent),
-        const SizedBox(height: 12),
-
-        _LessonRow(
-          icon: Icons.fitness_center_rounded,
-          kind: 'Exercise',
-          title: 'Practise ${topic.name}',
-          subtitle: needsTest
-              ? 'Pass the topic test ($kTopicTestPassPercent%) to unlock'
-              : canPractise
-              ? '${topic.counts.label} · instant feedback'
-              : topic.isPlaceholder
-              ? 'No questions yet'
-              : 'No questions with a verified answer yet',
-          accent: accent,
-          onTap: canPractise ? () => context.push(drillPath) : null,
-          disabledReason:
-              'This topic has no practisable questions in Paragon yet.',
-          isPrimary: true,
-        ),
         // No "module quiz" row: it was a permanently disabled stub, and
         // the unit test on the course page already covers a module
         // (audit C7, 2026-10-15).
@@ -399,16 +384,11 @@ class _LessonList extends ConsumerWidget {
             ),
           ),
           Flexible(
-            child: ElevatedButton(
+            child: AppButton(
+              label: label,
+              tone: ButtonTone.secondary,
+              icon: Icons.play_arrow_rounded,
               onPressed: () => context.push(lessonPath(topic.id, open.id)),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: Text(label, overflow: TextOverflow.ellipsis),
             ),
           ),
         ],
@@ -422,28 +402,15 @@ class _LessonList extends ConsumerWidget {
   /// content is written. Says so plainly and points at practice, never an
   /// empty list or "0 of 0 lessons".
   Widget _noLessons(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          needsTest
-              ? 'Lessons for this topic are on the way. You can still take '
-                    'the topic test now.'
-              : canPractise
-              ? 'Lessons for this topic are on the way. You can still '
-                    'practise now.'
-              : 'Lessons for this topic are on the way.',
-          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
-        ),
-        if (canPractise) ...[
-          const SizedBox(height: 12),
-          OutlinedButton.icon(
-            onPressed: () => context.push(drillPath),
-            icon: const Icon(Icons.fitness_center_rounded, size: 18),
-            label: Text(needsTest ? 'Take the topic test' : 'Practise now'),
-          ),
-        ],
-      ],
+    return EmptyState(
+      compact: true,
+      icon: Icons.menu_book_outlined,
+      title: 'Lessons on the way',
+      message: needsTest
+          ? 'You can still take the topic test now.'
+          : canPractise
+          ? 'You can still practise now.'
+          : 'Questions for this topic are on the way too.',
     );
   }
 }
@@ -487,7 +454,6 @@ class _LessonRow extends StatefulWidget {
     required this.accent,
     required this.onTap,
     required this.disabledReason,
-    this.isPrimary = false,
   });
 
   final IconData icon;
@@ -501,10 +467,6 @@ class _LessonRow extends StatefulWidget {
   /// disabled row never reads as a bug.
   final String disabledReason;
 
-  /// The practice row: given the accent border, since it's the action the
-  /// page exists to funnel students toward.
-  final bool isPrimary;
-
   @override
   State<_LessonRow> createState() => _LessonRowState();
 }
@@ -517,7 +479,7 @@ class _LessonRowState extends State<_LessonRow> {
     final isEnabled = widget.onTap != null;
     final borderColor = !isEnabled
         ? context.palette.border
-        : widget.isPrimary || _isHovered
+        : _isHovered
         ? widget.accent.withAlpha((_isHovered ? 0.85 * 255 : 0.5 * 255).round())
         : context.palette.border;
 
@@ -529,7 +491,7 @@ class _LessonRowState extends State<_LessonRow> {
             ? widget.accent.withAlpha((0.08 * 255).round())
             : context.palette.surface,
         border: Border.all(color: borderColor),
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(Radii.md),
       ),
       child: Row(
         children: [
@@ -556,10 +518,9 @@ class _LessonRowState extends State<_LessonRow> {
                 Text(
                   widget.kind.toUpperCase(),
                   style: AppTheme.caption.copyWith(
-                    color: isEnabled
-                        ? widget.accent
-                        : context.palette.textSecondary,
+                    color: context.palette.textSecondary,
                     letterSpacing: 0.8,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
                 const SizedBox(height: 3),
@@ -602,13 +563,17 @@ class _LessonRowState extends State<_LessonRow> {
       );
     }
 
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => _isHovered = true),
-      onExit: (_) => setState(() => _isHovered = false),
-      child: GestureDetector(
+    // A real button: focusable and read with its name. It was a
+    // GestureDetector a keyboard could not reach.
+    return Semantics(
+      button: true,
+      label: '${widget.kind}: ${widget.title}. ${widget.subtitle}',
+      excludeSemantics: true,
+      onTap: widget.onTap,
+      child: InkWell(
         onTap: widget.onTap,
-        behavior: HitTestBehavior.opaque,
+        onHover: (h) => setState(() => _isHovered = h),
+        borderRadius: BorderRadius.circular(Radii.md),
         child: row,
       ),
     );
@@ -650,12 +615,15 @@ class _PracticeRail extends StatelessWidget {
     final drill =
         'up to 20 questions a session$_drawnFrom, with feedback after '
         'every answer.';
+    final drillSentence =
+        'Up to 20 questions a session$_drawnFrom, with feedback after '
+        'every answer.';
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: accent.withAlpha((0.08 * 255).round()),
         border: Border.all(color: accent.withAlpha((0.3 * 255).round())),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(Radii.lg),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -677,7 +645,7 @@ class _PracticeRail extends StatelessWidget {
                 ? 'Score $kTopicTestPassPercent% on the topic test to open '
                       'drill: $drill'
                 : canPractise
-                ? 'U${drill.substring(1)}'
+                ? drillSentence
                 : 'Questions for this topic have not been added to Paragon '
                       'yet. Check back as content lands.',
             style: AppTheme.bodyMd.copyWith(
@@ -685,83 +653,18 @@ class _PracticeRail extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          SizedBox(
-            height: 44,
-            child: ElevatedButton(
-              onPressed: canPractise ? onPractise : null,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
-                disabledBackgroundColor: context.palette.track,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: Text(
-                needsTest
-                    ? 'Take the topic test'
-                    : canPractise
-                    ? 'Start practising'
-                    : 'Coming soon',
-                style: AppTheme.btnLabel.copyWith(
-                  color: canPractise
-                      ? Colors.white
-                      : context.palette.textSecondary,
-                ),
-              ),
-            ),
+          AppButton(
+            label: needsTest
+                ? 'Take the topic test'
+                : canPractise
+                ? 'Start practising'
+                : 'Coming soon',
+            icon: needsTest ? Icons.quiz_outlined : Icons.bolt_rounded,
+            expand: true,
+            onPressed: canPractise ? onPractise : null,
           ),
         ],
       ),
-    );
-  }
-}
-
-class _Crumb {
-  const _Crumb(this.label, this.path);
-  final String label;
-  final String? path;
-}
-
-class _Breadcrumb extends StatelessWidget {
-  const _Breadcrumb({required this.crumbs});
-
-  final List<_Crumb> crumbs;
-
-  @override
-  Widget build(BuildContext context) {
-    return Wrap(
-      crossAxisAlignment: WrapCrossAlignment.center,
-      children: [
-        for (var i = 0; i < crumbs.length; i++) ...[
-          if (i > 0)
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: Text(
-                '/',
-                style: AppTheme.label.copyWith(color: context.palette.border),
-              ),
-            ),
-          if (crumbs[i].path == null)
-            Text(
-              crumbs[i].label,
-              style: AppTheme.label.copyWith(
-                color: context.palette.textSecondary,
-              ),
-            )
-          else
-            MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: GestureDetector(
-                onTap: () => context.go(crumbs[i].path!),
-                child: Text(
-                  crumbs[i].label,
-                  style: AppTheme.label.copyWith(color: AppColors.primary),
-                ),
-              ),
-            ),
-        ],
-      ],
     );
   }
 }
@@ -802,7 +705,9 @@ class _NotFound extends StatelessWidget {
               ),
               child: Text(
                 'Back to courses',
-                style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+                style: AppTheme.btnLabel.copyWith(
+                  color: context.palette.primaryFg,
+                ),
               ),
             ),
           ],
@@ -833,4 +738,3 @@ class _OnFirstBuildState extends State<_OnFirstBuild> {
   @override
   Widget build(BuildContext context) => widget.child;
 }
-

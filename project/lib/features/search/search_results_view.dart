@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/widgets/ui/illustration.dart';
 import '../../core/search/search.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
@@ -323,8 +324,8 @@ class _Highlighted extends StatelessWidget {
           TextSpan(text: text.substring(0, at)),
           TextSpan(
             text: text.substring(at, at + q.length),
-            style: const TextStyle(
-              color: AppColors.primary,
+            style: TextStyle(
+              color: context.palette.primaryFg,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -351,11 +352,14 @@ class SearchEmptyMessage extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(
-            blank ? Icons.search_rounded : Icons.search_off_rounded,
-            size: 36,
-            color: context.palette.textSecondary,
-          ),
+          if (blank)
+            Icon(
+              Icons.search_rounded,
+              size: 36,
+              color: context.palette.textSecondary,
+            )
+          else
+            const Illustration(IllustrationAsset.searchEmpty, height: 96),
           const SizedBox(height: 10),
           Text(
             blank

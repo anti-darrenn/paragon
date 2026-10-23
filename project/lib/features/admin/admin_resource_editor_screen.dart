@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/widgets/ui/ui.dart';
 import '../../core/auth/staff_role.dart';
 import '../../core/lessons/lesson_check.dart';
 import '../../core/lessons/lesson_doc.dart';
@@ -287,6 +288,7 @@ class _AdminResourceEditorScreenState
                   ),
                 ),
         ),
+        bottomNavigationBar: missing || !_hydrated ? null : _actionBar(),
         body: SafeArea(
           child: StudioShortcuts(
             body: _body,
@@ -295,28 +297,28 @@ class _AdminResourceEditorScreenState
             },
             onSubmit: _primaryAction(),
             child: missing
-                ? Center(
-                    child: Text(
-                      'This resource no longer exists.',
-                      style: AppTheme.bodyMd.copyWith(
-                        color: context.palette.textSecondary,
-                      ),
+                ? const Center(
+                    child: EmptyState(
+                      illustration: IllustrationAsset.notFound,
+                      title: 'This item no longer exists',
+                      message:
+                          'It was deleted, or the link is from an old email.',
                     ),
                   )
                 : !_hydrated
-                ? const Center(child: CircularProgressIndicator())
+                ? const LoadingView(label: 'Loading the editor')
                 : LayoutBuilder(
                     builder: (context, constraints) =>
                         constraints.maxWidth >= 900
                         ? Row(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              Expanded(child: _editorPane()),
+                              Expanded(child: _readable(_editorPane())),
                               VerticalDivider(
                                 width: 1,
                                 color: context.palette.border,
                               ),
-                              Expanded(child: _previewPane()),
+                              Expanded(child: _readable(_previewPane())),
                             ],
                           )
                         : DefaultTabController(
@@ -379,16 +381,52 @@ class _AdminResourceEditorScreenState
           LearnResourceType.exercise => _exerciseFields(),
           _ => _articleFields(),
         },
-        if (_error != null) ...[
-          const SizedBox(height: 12),
-          Text(
-            _error!,
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-          ),
+        if (_loaded case final loaded?) ...[
+          const SizedBox(height: 24),
+          CommentsPanel(resource: loaded),
         ],
-        const SizedBox(height: 20),
-        _actions(),
       ],
+    );
+  }
+
+  /// A pane at a readable width, centred in its half of a wide screen.
+  Widget _readable(Widget pane) => Align(
+    alignment: Alignment.topCenter,
+    child: ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 820),
+      child: pane,
+    ),
+  );
+
+  /// The editor's actions, pinned under the page, with the last error.
+  Widget _actionBar() {
+    final p = context.palette;
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: p.surface,
+        border: Border(top: BorderSide(color: p.border)),
+      ),
+      child: SafeArea(
+        top: false,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (_error != null) ...[
+                InlineAlert(
+                  tone: Tone.danger,
+                  message: _error!,
+                  announce: true,
+                ),
+                const SizedBox(height: 8),
+              ],
+              _actions(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
@@ -717,10 +755,12 @@ class _AdminResourceEditorScreenState
     // Outside this account's subjects: look, but change nothing — the
     // rules would refuse every write.
     if (!role.canWrite) {
-      return Text(
-        'This subject is outside the ones you work on, so you can read this '
-        'but not change it.',
-        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+      return const InlineAlert(
+        tone: Tone.neutral,
+        icon: Icons.lock_outline_rounded,
+        message:
+            'This subject is outside the ones you work on, so you can read '
+            'this but not change it.',
       );
     }
 
@@ -745,8 +785,10 @@ class _AdminResourceEditorScreenState
       );
     } else if (status.isLive) {
       if (role.canReview) {
-        buttons.add(outline('Delete', AppColors.wrong, _delete));
-        buttons.add(outline('Unpublish', AppColors.warning, _unpublish));
+        buttons.add(outline('Delete', context.palette.dangerFg, _delete));
+        buttons.add(
+          outline('Unpublish', context.palette.warningFg, _unpublish),
+        );
         buttons.add(
           outline(
             'Save changes',
@@ -756,16 +798,16 @@ class _AdminResourceEditorScreenState
         );
       }
       buttons.add(
-        outline('Start a revision', AppColors.accentBlue, _startRevision),
+        outline('Start a revision', context.palette.infoFg, _startRevision),
       );
     } else {
       final ownDraft = loaded?.createdBy == ref.watch(currentUserProvider)?.uid;
       if (role.canReview || (status == ResourceStatus.draft && ownDraft)) {
-        buttons.add(outline('Delete', AppColors.wrong, _delete));
+        buttons.add(outline('Delete', context.palette.dangerFg, _delete));
       }
       if (role.canReview && status == ResourceStatus.inReview) {
         buttons.add(
-          outline('Request changes', AppColors.wrong, _requestChanges),
+          outline('Request changes', context.palette.dangerFg, _requestChanges),
         );
       }
       buttons.add(
@@ -775,44 +817,15 @@ class _AdminResourceEditorScreenState
 
     if (primary != null && primaryAction != null) {
       buttons.add(
-        ElevatedButton(
-          onPressed: busy ? null : primaryAction,
-          style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.primary,
-            foregroundColor: Colors.white,
-            minimumSize: const Size(0, 44),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8),
-            ),
-          ),
-          child: busy
-              ? const SizedBox(
-                  width: 18,
-                  height: 18,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2,
-                    color: Colors.white,
-                  ),
-                )
-              : Text(primary),
-        ),
+        AppButton(label: primary, loading: busy, onPressed: primaryAction),
       );
     }
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Wrap(
-          spacing: 12,
-          runSpacing: 12,
-          alignment: WrapAlignment.end,
-          children: buttons,
-        ),
-        if (loaded != null) ...[
-          const SizedBox(height: 20),
-          CommentsPanel(resource: loaded),
-        ],
-      ],
+    return Wrap(
+      spacing: 12,
+      runSpacing: 8,
+      alignment: WrapAlignment.end,
+      children: buttons,
     );
   }
 
@@ -1383,7 +1396,7 @@ class _QuestionPickerState extends ConsumerState<_QuestionPicker> {
         width: 640,
         height: 520,
         child: _error != null
-            ? Text(_error!, style: const TextStyle(color: AppColors.wrong))
+            ? Text(_error!, style: TextStyle(color: context.palette.dangerFg))
             : ListView(
                 children: [
                   for (final q in _questions)
@@ -1458,7 +1471,6 @@ class _OutlineAction extends StatelessWidget {
         foregroundColor: color,
         minimumSize: const Size(0, 44),
         side: BorderSide(color: color.withAlpha(140)),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
       child: Text(label),
     );

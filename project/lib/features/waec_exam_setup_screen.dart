@@ -167,7 +167,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
     return Scaffold(
       appBar: ParagonAppBar(title: Text(subjectName)),
       body: rangeAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => const PageBody(children: [SkeletonPage(count: 4)]),
         error: (e, _) => LoadError(
           error: e,
           onRetry: () =>
@@ -392,13 +392,15 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           ),
           error: (e, _) => Text(
             'Could not check availability.',
-            style: AppTheme.caption.copyWith(color: AppColors.wrong),
+            style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
           ),
           data: (available) {
             if (available == 0) {
               return Text(
                 'No questions found for this combination.',
-                style: AppTheme.caption.copyWith(color: AppColors.wrong),
+                style: AppTheme.caption.copyWith(
+                  color: context.palette.dangerFg,
+                ),
               );
             }
             final base = Text(
@@ -424,7 +426,9 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                   ),
                   child: Text(
                     'Only $available available — your exam will have $available questions.',
-                    style: AppTheme.caption.copyWith(color: AppColors.warning),
+                    style: AppTheme.caption.copyWith(
+                      color: context.palette.warningFg,
+                    ),
                   ),
                 ),
               ],
@@ -531,32 +535,19 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
   }
 
   Widget _guestUpsellChip() {
-    return GestureDetector(
-      // A guest links an account to the uid they already have: the
-      // upgrade page, not welcome, which reads as being signed out.
-      onTap: () => context.push('/account/upgrade'),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-        decoration: BoxDecoration(
-          color: AppColors.secondary.withAlpha((0.12 * 255).round()),
-          borderRadius: BorderRadius.circular(8),
-        ),
-        child: Row(
-          children: [
-            Expanded(
-              child: Text(
-                'Make an account for timed exams',
-                style: AppTheme.bodyMd.copyWith(color: AppColors.secondary),
-              ),
-            ),
-            const SizedBox(width: 8),
-            const Icon(
-              Icons.arrow_forward,
-              size: 16,
-              color: AppColors.secondary,
-            ),
-          ],
-        ),
+    // A real button (it was a GestureDetector a keyboard could not reach).
+    // A guest links an account to the uid they already have: the upgrade
+    // page, not welcome, which reads as being signed out.
+    return InlineAlert(
+      tone: Tone.info,
+      icon: Icons.timer_outlined,
+      message: 'Timed exams need an account, so your results are kept.',
+      action: AppButton(
+        label: 'Make an account for timed exams',
+        tone: ButtonTone.ghost,
+        size: ButtonSize.sm,
+        trailingIcon: Icons.arrow_forward_rounded,
+        onPressed: () => context.push('/account/upgrade'),
       ),
     );
   }
@@ -569,33 +560,19 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         if (_startError != null)
           Padding(
             padding: const EdgeInsets.only(bottom: 8),
-            child: Text(
-              _startError!,
-              style: AppTheme.caption.copyWith(color: AppColors.wrong),
+            child: InlineAlert(
+              tone: Tone.danger,
+              message: _startError!,
+              announce: true,
             ),
           ),
-        SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-            onPressed: disabled ? null : () => _startExam(isGuest),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.primary,
-              padding: const EdgeInsets.symmetric(vertical: 16),
-            ),
-            child: _starting
-                ? const SizedBox(
-                    height: 20,
-                    width: 20,
-                    child: CircularProgressIndicator(
-                      color: Colors.white,
-                      strokeWidth: 2,
-                    ),
-                  )
-                : Text(
-                    'Start Exam',
-                    style: AppTheme.btnLabel.copyWith(color: Colors.white),
-                  ),
-          ),
+        AppButton(
+          label: 'Start exam',
+          size: ButtonSize.lg,
+          icon: Icons.play_arrow_rounded,
+          expand: true,
+          loading: _starting,
+          onPressed: disabled ? null : () => _startExam(isGuest),
         ),
       ],
     );

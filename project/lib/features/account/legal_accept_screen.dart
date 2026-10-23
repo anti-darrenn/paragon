@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/widgets/paragon_logo.dart';
+import '../../core/widgets/ui/ui.dart';
 import '../../core/legal/legal_documents.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/user_repository.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'delete_account.dart';
 import '../../core/theme/app_palette.dart';
@@ -72,7 +73,9 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
             onPressed: () => Navigator.of(context).pop(true),
             child: Text(
               'Delete everything',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.dangerFg,
+              ),
             ),
           ),
         ],
@@ -104,6 +107,19 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  // Who is asking: this page stands outside the app's
+                  // shell, so it carries the logo itself.
+                  const Align(
+                    alignment: Alignment.centerLeft,
+                    child: SizedBox(
+                      height: 40,
+                      child: AspectRatio(
+                        aspectRatio: 818 / 215,
+                        child: ParagonLogo(),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
                   Text(
                     hadEarlier
                         ? 'We have updated our terms'
@@ -121,16 +137,39 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                     ),
                   ),
                   const SizedBox(height: 14),
-                  for (final change in kLegalChanges)
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
-                      child: Text(
-                        '•  $change',
-                        style: AppTheme.bodyMd.copyWith(
-                          color: context.palette.textPrimary,
-                        ),
-                      ),
+                  SurfaceCard(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        for (final change in kLegalChanges)
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 4),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Icon(
+                                    Icons.check_circle_outline_rounded,
+                                    size: 18,
+                                    color: context.palette.textSecondary,
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: Text(
+                                    change,
+                                    style: AppTheme.bodyMd.copyWith(
+                                      color: context.palette.textPrimary,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                      ],
                     ),
+                  ),
                   const SizedBox(height: 8),
                   Wrap(
                     spacing: 16,
@@ -147,34 +186,28 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                   ),
                   if (_message != null) ...[
                     const SizedBox(height: 12),
-                    Text(
-                      _message!,
-                      style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                    InlineAlert(
+                      tone: Tone.danger,
+                      message: _message!,
+                      announce: true,
                     ),
                   ],
                   const SizedBox(height: 20),
-                  SizedBox(
-                    height: 52,
-                    child: ElevatedButton(
-                      onPressed: _busy ? null : _accept,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.primary,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      child: Text(
-                        'Accept and continue',
-                        style: AppTheme.btnLabel.copyWith(color: Colors.white),
-                      ),
-                    ),
+                  // Shows that it is working: it used to sit disabled with
+                  // no sign of why.
+                  AppButton(
+                    label: 'Accept and continue',
+                    size: ButtonSize.lg,
+                    expand: true,
+                    loading: _busy,
+                    onPressed: _accept,
                   ),
                   const SizedBox(height: 16),
                   Text(
                     "If you don't agree, you can sign out, or delete your "
                     'account and everything in it.',
                     textAlign: TextAlign.center,
-                    style: AppTheme.caption.copyWith(
+                    style: AppTheme.label.copyWith(
                       color: context.palette.textSecondary,
                     ),
                   ),
@@ -197,7 +230,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                         child: Text(
                           'Delete my account',
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.wrong,
+                            color: context.palette.dangerFg,
                           ),
                         ),
                       ),

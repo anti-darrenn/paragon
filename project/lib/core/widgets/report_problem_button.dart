@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/auth_provider.dart';
 import '../repositories/flag_repository.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_palette.dart';
 
 /// "Report a problem" affordance shown wherever a student can see an answer.
@@ -27,7 +26,8 @@ class ReportProblemButton extends ConsumerStatefulWidget {
   final bool isGenerated;
 
   @override
-  ConsumerState<ReportProblemButton> createState() => _ReportProblemButtonState();
+  ConsumerState<ReportProblemButton> createState() =>
+      _ReportProblemButtonState();
 }
 
 class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
@@ -40,7 +40,9 @@ class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
 
     setState(() => _sending = true);
     try {
-      await ref.read(flagRepositoryProvider).create(
+      await ref
+          .read(flagRepositoryProvider)
+          .create(
             userId: user.uid,
             questionId: widget.questionId,
             reason: reason,
@@ -49,7 +51,9 @@ class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
     } catch (_) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Couldn't send your report. Try again.")),
+          const SnackBar(
+            content: Text("Couldn't send your report. Try again."),
+          ),
         );
       }
     } finally {
@@ -122,14 +126,14 @@ class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
   @override
   Widget build(BuildContext context) {
     if (_sent) {
-      return const Row(
+      return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.check, size: 14, color: AppColors.correct),
-          SizedBox(width: 6),
+          Icon(Icons.check, size: 14, color: context.palette.successFg),
+          const SizedBox(width: 6),
           Text(
             'Thanks — we\'ll check it',
-            style: TextStyle(color: AppColors.correct, fontSize: 12),
+            style: TextStyle(color: context.palette.successFg, fontSize: 12),
           ),
         ],
       );

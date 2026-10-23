@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/widgets/ui/ui.dart';
 import '../../core/onboarding/onboarding_step.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
@@ -55,10 +56,7 @@ class OnboardingScaffold extends StatelessWidget {
         body: SafeArea(
           child: Center(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 24,
-                vertical: 32,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 460),
                 child: Column(
@@ -101,7 +99,7 @@ class OnboardingScaffold extends StatelessWidget {
                             child: Text(
                               errorText!,
                               style: AppTheme.bodyMd.copyWith(
-                                color: AppColors.wrong,
+                                color: context.palette.dangerFg,
                               ),
                             ),
                           ),
@@ -137,7 +135,7 @@ class OnboardingScaffold extends StatelessWidget {
                                 style: AppTheme.btnLabel.copyWith(
                                   color: onPrimary == null
                                       ? context.palette.textSecondary
-                                      : Colors.white,
+                                      : AppColors.onPrimary,
                                   fontSize: 15,
                                 ),
                               ),
@@ -188,23 +186,13 @@ class _StepIndicator extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        Row(
-          children: [
-            for (var i = 1; i <= OnboardingStep.totalSteps; i++) ...[
-              if (i > 1) const SizedBox(width: 6),
-              Expanded(
-                child: Container(
-                  height: 3,
-                  decoration: BoxDecoration(
-                    color: i <= current
-                        ? AppColors.primary
-                        : context.palette.track,
-                    borderRadius: BorderRadius.circular(2),
-                  ),
-                ),
-              ),
-            ],
+        SegmentedProgress(
+          states: [
+            for (var i = 1; i <= OnboardingStep.totalSteps; i++)
+              i < current ? SegmentState.answered : SegmentState.pending,
           ],
+          current: current - 1,
+          semanticsLabel: 'Step $current of ${OnboardingStep.totalSteps}',
         ),
       ],
     );
@@ -250,7 +238,9 @@ class OnboardingTextField extends StatelessWidget {
         if (label != null) ...[
           Text(
             label!,
-            style: AppTheme.label.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.label.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 8),
         ],

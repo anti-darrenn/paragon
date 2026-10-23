@@ -46,17 +46,23 @@ class ExamReviewScreen extends ConsumerWidget {
       body = ref
           .watch(examReviewProvider(examId))
           .when(
-            loading: () => const Center(child: CircularProgressIndicator()),
+            loading: () => const LoadingView(label: 'Loading your exam'),
             error: (e, _) => LoadError(
               error: e,
               onRetry: () => ref.invalidate(examReviewProvider(examId)),
             ),
             data: (review) => review == null
                 ? Center(
-                    child: Text(
-                      'This exam could not be found.',
-                      style: AppTheme.bodyMd.copyWith(
-                        color: context.palette.textSecondary,
+                    child: SingleChildScrollView(
+                      child: EmptyState(
+                        illustration: IllustrationAsset.notFound,
+                        title: 'This exam could not be found',
+                        message:
+                            'It may have been removed with your account data.',
+                        action: AppButton(
+                          label: 'Back to WAEC Prep',
+                          onPressed: () => context.go('/waec'),
+                        ),
                       ),
                     ),
                   )
@@ -244,21 +250,12 @@ class _WeakTopicRow extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final course = ref.watch(courseProvider(subjectId)).asData?.value;
     final name = course?.findTopic(score.topicId)?.$2.name ?? 'A topic';
-    return ListTile(
-      contentPadding: EdgeInsets.zero,
-      leading: const Icon(Icons.trending_down_rounded, color: AppColors.wrong),
-      title: Text(
-        name,
-        style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
-      ),
-      subtitle: Text(
-        '${score.correct} of ${score.total} right',
-        style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
-      ),
-      trailing: Icon(
-        Icons.chevron_right_rounded,
-        color: context.palette.textSecondary,
-      ),
+    return ListRow(
+      icon: Icons.trending_down_rounded,
+      iconColor: AppColors.wrong,
+      title: name,
+      subtitle: '${score.correct} of ${score.total} right',
+      padding: const EdgeInsets.symmetric(vertical: 10),
       onTap: () =>
           context.push('/subject/$subjectId/course/topic/${score.topicId}'),
     );

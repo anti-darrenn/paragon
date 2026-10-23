@@ -530,6 +530,12 @@ emails).
 - **Moving through a list.** Previous and Next (Alt+←/→) step through the list it
   was opened from (`studioWorkListProvider`). Ctrl+S saves.
 
+**Studio errors** keep the raw text for staff, folded away: `StudioError` (an alert with
+Details and Copy) for a panel that failed to load, `showStudioFailure` (a toast with
+Details) for a failed action, both in `features/admin/studio/studio_error.dart`. Student
+screens never show it; they use `LoadError`. Every destructive studio action asks first
+with `confirmDialog(destructive: true)`.
+
 `/admin/topic/:topicId` is the topic planner: items in order, drag to
 reorder (reviewers only, since it moves published items), and "Preview as
 student". The editor has:
@@ -677,6 +683,19 @@ lead with a `PageIntro(wideOnly: true)`. Lay pages out with `lib/core/widgets/ui
 (`PageBody`, `SectionHeader`, `SurfaceCard`, `ListRow`, `RowGroup`, `EmptyState`…) at
 `kPageMaxWidth`; component styling (buttons, fields, dialogs, snackbars, chips) comes
 from `AppTheme`, so don't restyle them inline.
+
+**The component kit** (UI pass, 2026-10-23; `ui.dart` re-exports it, one import). Use these
+instead of styling Material widgets inline:
+- `AppButton` (tones primary/secondary/ghost/destructive/success, sizes 36/48/56, `icon`,
+  `loading`, `expand`), or `AppButtonStyle.of` on an existing button.
+- `InlineAlert` / `PageBanner` and `showToast`, in `Tone`s (info/success/warning/danger).
+- `EmptyState` with an `illustration` and a `secondaryAction`; `LoadingView` (a spinner
+  after 350 ms) where a skeleton doesn't fit; `AppProgressBar`, `SegmentedProgress`.
+- `Tag`, `Breadcrumbs`, and `confirmDialog(destructive:)`, whose labels name the action.
+- `Illustration`: the SVGs in `assets/illustrations/`, written by
+  `tools/illustrations/make.py` in marker colours that a `ColorMapper` swaps for the
+  palette. Edit the script, never the files, and re-run it. `illustrations_test.dart`
+  checks each is small, script-free, and uses only the markers. Low-data mode hides them.
 
 **Search** (`lib/core/search/search.dart`, pure; `features/search/`) covers courses,
 topics and lessons from the course catalog plus each live subject's `subjectIndex`
@@ -853,6 +872,22 @@ cards**:
     what hints split on, so one Enter types the blank line; Shift+Enter, Enter
     on an empty line and Enter inside maths stay a single newline.
 
+**Question sessions** (UI pass, 2026-10-23) share `lib/core/widgets/session/`:
+`SessionLayout` (progress pinned at the top, a 720 column, a bar pinned at the bottom;
+inline when the height is unbounded, as an exercise inside a lesson is), `SessionHeader`
+("Question 3 of 10" over `SegmentedProgress`), `QuestionCard`, `FeedbackPanel` (the worked
+answer, edged in the verdict's colour), `SessionKeys` (A–E or 1–9, Enter) and two bars.
+- **Instant feedback** (drill, exercises, taster, challenge links, custom and flashcard
+  quizzes, mistakes practice) uses `SessionActionBar`: pick, then **Check**, then the verdict
+  and **Continue** ("See results" last). Nothing is marked on a tap.
+- **Marked at the end** (topic test, unit test, course challenge) uses `SessionNavBar`, Back
+  and Next, with no verdicts. The WAEC exam keeps its own tile and keys.
+- **Ends** on `SessionSummary`: a filling `ScoreRing`, what changed, `AppButton`s. Confetti and
+  the celebration sound only when `isWorthCelebrating` (80% or more, a pass, a level up).
+- **Slots, not built-ins:** the frame never builds `DifficultyRating` or a report button;
+  each screen passes them in (`difficulty_rating_test` reads the sources).
+- `StudyDock.bottomInset` keeps the tools panel above a pinned bar.
+
 **Answer options.** Every multiple-choice option a student answers is `AnswerOption`
 (`lib/core/widgets/answer_option.dart`): drill, the topic test, exercises, the taster,
 mistakes practice, the unit test and every review. Only the WAEC exam keeps its own tile, and
@@ -943,6 +978,23 @@ the light background. Change both files together. `og:image` is an absolute URL,
 Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with no equation on it, so `\textbf{..}`, `\textit{..}`, `\vspace{..}` and `\$` showed literally unless the same line also held math; `latex_render_test.dart` now pins both cases. Inline math is also wrapped in a horizontal scroll view, so an expression wider than a phone screen scrolls instead of overflowing. Article quotes: consecutive `>` lines are one quote block (a blank line separates two).
 
 A lone `$` in stored text is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. An author typing `$x$` in the editor's LaTeX mode is converted to `\(x\)` when the box loses focus (`dollarMathToParens`), so stored text never relies on it.
+
+**Tokens and text tones** (UI pass, 2026-10-23). `lib/core/theme/tokens.dart` holds
+`Space`, `Radii` (8 tags/chips, 12 buttons/fields/options, 16 cards/dialogs) and `Motion`
+(`Motion.of` is zero under reduced motion), plus `reduceMotion(context)`, which on the web
+follows `prefers-reduced-motion`. `Confetti` lives in `core/widgets/motion/`.
+- **Coloured text goes through the palette's tones:** `primaryFg`, `successFg`,
+  `dangerFg`, `warningFg`, `infoFg`. On dark they are the bright colours; on light,
+  deeper shades, because orange (2.7:1), green, red, amber and blue all fail as text on
+  white. The bright `AppColors` stay for fills and borders. `tokens_test.dart` checks
+  every tone is 4.5:1 on both backgrounds, with orange-on-white as its control.
+- **White text sits on `AppColors.successStrong` / `dangerStrong`**, never on `correct` or
+  `wrong`.
+- **Text and icons on an orange fill are `AppColors.onPrimary`** (near-black, 6.2:1), never
+  white (2.7:1, which fails). Buttons get it from the theme; set it only on a hand-made
+  orange fill.
+- In a dialog builder, read the palette from the dialog's own context: the screen's
+  context may be closing (the topic test's Leave dialog threw).
 
 **Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` in dark — except `onLow`, raised from `white38`/`black38` to 50% white / 56% black so small text passes WCAG AA (4.5:1). **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
 

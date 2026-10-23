@@ -77,7 +77,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
         () => _error = blocked
             ? 'Your photo was removed by the Paragon team, so a new one '
                   'cannot be added. Choose a picture or your initials.'
-            : "Couldn't use that photo. ${e is Exception ? '$e' : 'Try another.'}",
+            : "Couldn't use that photo. Try another, or a smaller one.",
       );
     } finally {
       if (mounted) setState(() => _uploading = false);
@@ -138,10 +138,8 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                       uploading: _uploading,
                       onUpload: _uploadPhoto,
                       onRemove: () => setState(
-                        () => _avatar = Avatar.parse(
-                          null,
-                          seed: user?.uid ?? '',
-                        ),
+                        () =>
+                            _avatar = Avatar.parse(null, seed: user?.uid ?? ''),
                       ),
                     ),
                     const SizedBox(height: 24),
@@ -188,7 +186,9 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                       const SizedBox(height: 14),
                       Text(
                         _error!,
-                        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                        style: AppTheme.bodyMd.copyWith(
+                          color: context.palette.dangerFg,
+                        ),
                       ),
                     ],
                     const SizedBox(height: 24),
@@ -208,13 +208,13 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                                 height: 20,
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2,
-                                  color: Colors.white,
+                                  color: AppColors.onPrimary,
                                 ),
                               )
                             : Text(
                                 'Save',
                                 style: AppTheme.btnLabel.copyWith(
-                                  color: Colors.white,
+                                  color: AppColors.onPrimary,
                                 ),
                               ),
                       ),
@@ -314,7 +314,7 @@ class _PhotoChoice extends ConsumerWidget {
         'Your photo was removed by the Paragon team after a report, so a new '
         'one cannot be added. Choose a picture or your initials.',
         textAlign: TextAlign.center,
-        style: AppTheme.caption.copyWith(color: AppColors.warning),
+        style: AppTheme.caption.copyWith(color: context.palette.warningFg),
       );
     }
     return Column(

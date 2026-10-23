@@ -12,7 +12,8 @@ import 'app_colors.dart';
 ///
 /// Colours that are the same in both themes — the brand orange, the
 /// correct/wrong greens and reds, the subject colours — are still read from
-/// [AppColors] directly.
+/// [AppColors] directly as *fills*. As text they go through the `*Fg`
+/// fields below, which deepen them on light.
 @immutable
 class AppPalette extends ThemeExtension<AppPalette> {
   const AppPalette({
@@ -28,6 +29,11 @@ class AppPalette extends ThemeExtension<AppPalette> {
     required this.onLow,
     required this.outline,
     required this.outlineFaint,
+    required this.primaryFg,
+    required this.successFg,
+    required this.dangerFg,
+    required this.warningFg,
+    required this.infoFg,
   });
 
   /// Page background.
@@ -73,6 +79,27 @@ class AppPalette extends ThemeExtension<AppPalette> {
   /// `white12` on dark: the faintest outlines and fills.
   final Color outlineFaint;
 
+  // Text and icons in the brand and semantic colours. On dark these are the
+  // bright colours themselves; on light, deeper shades from [AppColors]
+  // (`*TextLight`), because orange, green, red, amber and blue all fall
+  // below 4.5:1 as text on white. Use these for words and icons, and the
+  // bright [AppColors] for fills and borders.
+
+  /// Links, the active tab, "Edit": the brand orange as text.
+  final Color primaryFg;
+
+  /// "Correct", a passed test.
+  final Color successFg;
+
+  /// "Not quite", an error message.
+  final Color dangerFg;
+
+  /// A caution.
+  final Color warningFg;
+
+  /// Neutral information.
+  final Color infoFg;
+
   static const dark = AppPalette(
     background: AppColors.backgroundDark,
     surface: AppColors.surfaceDark,
@@ -89,6 +116,11 @@ class AppPalette extends ThemeExtension<AppPalette> {
     onLow: Color(0x80FFFFFF),
     outline: Colors.white24,
     outlineFaint: Colors.white12,
+    primaryFg: AppColors.primary,
+    successFg: AppColors.correct,
+    dangerFg: AppColors.wrong,
+    warningFg: AppColors.warning,
+    infoFg: AppColors.accentBlue,
   );
 
   static const light = AppPalette(
@@ -106,6 +138,11 @@ class AppPalette extends ThemeExtension<AppPalette> {
     onLow: Color(0x8F000000),
     outline: Colors.black26,
     outlineFaint: Colors.black12,
+    primaryFg: AppColors.primaryTextLight,
+    successFg: AppColors.successTextLight,
+    dangerFg: AppColors.dangerTextLight,
+    warningFg: AppColors.warningTextLight,
+    infoFg: AppColors.infoTextLight,
   );
 
   @override
@@ -122,6 +159,11 @@ class AppPalette extends ThemeExtension<AppPalette> {
     Color? onLow,
     Color? outline,
     Color? outlineFaint,
+    Color? primaryFg,
+    Color? successFg,
+    Color? dangerFg,
+    Color? warningFg,
+    Color? infoFg,
   }) => AppPalette(
     background: background ?? this.background,
     surface: surface ?? this.surface,
@@ -135,6 +177,11 @@ class AppPalette extends ThemeExtension<AppPalette> {
     onLow: onLow ?? this.onLow,
     outline: outline ?? this.outline,
     outlineFaint: outlineFaint ?? this.outlineFaint,
+    primaryFg: primaryFg ?? this.primaryFg,
+    successFg: successFg ?? this.successFg,
+    dangerFg: dangerFg ?? this.dangerFg,
+    warningFg: warningFg ?? this.warningFg,
+    infoFg: infoFg ?? this.infoFg,
   );
 
   @override
@@ -153,6 +200,11 @@ class AppPalette extends ThemeExtension<AppPalette> {
       onLow: Color.lerp(onLow, other.onLow, t)!,
       outline: Color.lerp(outline, other.outline, t)!,
       outlineFaint: Color.lerp(outlineFaint, other.outlineFaint, t)!,
+      primaryFg: Color.lerp(primaryFg, other.primaryFg, t)!,
+      successFg: Color.lerp(successFg, other.successFg, t)!,
+      dangerFg: Color.lerp(dangerFg, other.dangerFg, t)!,
+      warningFg: Color.lerp(warningFg, other.warningFg, t)!,
+      infoFg: Color.lerp(infoFg, other.infoFg, t)!,
     );
   }
 }

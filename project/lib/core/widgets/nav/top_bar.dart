@@ -234,7 +234,7 @@ class _IslandCellState extends State<_IslandCell> {
     final active = widget.isActive;
     final lit = _hovered || widget.isOpen;
     final fg = active
-        ? AppColors.primary
+        ? context.palette.primaryFg
         : lit
         ? context.palette.textPrimary
         : context.palette.textSecondary;
@@ -248,9 +248,11 @@ class _IslandCellState extends State<_IslandCell> {
       cursor: SystemMouseCursors.click,
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
-      child: GestureDetector(
-        behavior: HitTestBehavior.opaque,
+      // An InkWell, not a GestureDetector: Tab reaches it and Enter opens
+      // it, with the theme's focus highlight.
+      child: InkWell(
         onTap: widget.onTap,
+        borderRadius: BorderRadius.circular(10),
         // The dot is pinned to the tab's own corner, not the label's, so
         // it sits clear of the text.
         child: Stack(
@@ -364,7 +366,7 @@ class _ActionButton extends ConsumerWidget {
                   child: Text(
                     label,
                     style: AppTheme.btnLabel.copyWith(
-                      color: Colors.white,
+                      color: AppColors.onPrimary,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -380,7 +382,7 @@ class _ActionButton extends ConsumerWidget {
                         ? Icons.cloud_upload_outlined
                         : Icons.arrow_forward_rounded,
                     size: 18,
-                    color: Colors.white,
+                    color: AppColors.onPrimary,
                   ),
                 ),
               ],
@@ -424,7 +426,9 @@ class _OfflineChip extends ConsumerWidget {
               const SizedBox(width: 6),
               Text(
                 'Offline',
-                style: AppTheme.label.copyWith(color: AppColors.warning),
+                style: AppTheme.label.copyWith(
+                  color: context.palette.warningFg,
+                ),
               ),
             ],
           ),
@@ -441,15 +445,14 @@ class _Logo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
+    return Semantics(
+      label: 'Project Paragon — home',
+      button: true,
+      excludeSemantics: true,
+      child: InkWell(
         onTap: onTap,
-        child: Semantics(
-          label: 'Project Paragon — home',
-          button: true,
-          child: ParagonLogo(height: height),
-        ),
+        borderRadius: BorderRadius.circular(8),
+        child: ParagonLogo(height: height),
       ),
     );
   }

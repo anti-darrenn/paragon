@@ -8,18 +8,27 @@ import '../../core/rooms/room.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/theme/tokens.dart';
 import '../../core/widgets/math_text.dart';
+
+export '../../core/theme/tokens.dart' show reduceMotion;
+export '../../core/widgets/motion/confetti.dart';
 
 /// The look of a live quiz (2026-10-17): coloured shapes for the options,
 /// a countdown ring, a leaderboard that moves, a podium with confetti.
-/// Every animation stops when the device asks for reduced motion.
+/// Every animation stops when the device asks for reduced motion
+/// ([reduceMotion] and [Confetti] live in core and are re-exported here).
 
-bool reduceMotion(BuildContext context) =>
-    MediaQuery.maybeDisableAnimationsOf(context) ?? false;
+/// Confetti in the option tiles' colours.
+final kRoomConfettiColours = [for (final s in roomShapes) s.color];
 
 /// One shape and colour per option, A to E.
 const roomShapes = <({IconData icon, Color color, String name})>[
-  (icon: Icons.change_history_rounded, color: AppColors.roomRed, name: 'triangle'),
+  (
+    icon: Icons.change_history_rounded,
+    color: AppColors.roomRed,
+    name: 'triangle',
+  ),
   (icon: Icons.diamond_rounded, color: AppColors.roomBlue, name: 'diamond'),
   (icon: Icons.circle, color: AppColors.roomYellow, name: 'circle'),
   (icon: Icons.square_rounded, color: AppColors.roomGreen, name: 'square'),
@@ -104,7 +113,8 @@ class ShapeTile extends StatelessWidget {
                     vertical: 12,
                   ),
                   decoration: BoxDecoration(
-                    border: state == TileState.selected ||
+                    border:
+                        state == TileState.selected ||
                             state == TileState.correct
                         ? Border.all(color: Colors.white, width: 3)
                         : null,
@@ -135,7 +145,9 @@ class ShapeTile extends StatelessWidget {
                       if (count != null)
                         Text(
                           '$count',
-                          style: AppTheme.heading3.copyWith(color: Colors.white),
+                          style: AppTheme.heading3.copyWith(
+                            color: Colors.white,
+                          ),
                         ),
                       if (state == TileState.correct)
                         const Padding(
@@ -169,7 +181,10 @@ class ShapeGrid extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             for (var i = 0; i < count; i++)
-              Padding(padding: const EdgeInsets.only(bottom: 10), child: tile(i)),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: tile(i),
+              ),
           ],
         );
       }
@@ -281,7 +296,11 @@ class _CountdownRingState extends State<CountdownRing>
 }
 
 class _RingPainter extends CustomPainter {
-  _RingPainter({required this.fraction, required this.colour, required this.track});
+  _RingPainter({
+    required this.fraction,
+    required this.colour,
+    required this.track,
+  });
   final double fraction;
   final Color colour;
   final Color track;
@@ -294,7 +313,13 @@ class _RingPainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke
       ..strokeCap = StrokeCap.round;
-    canvas.drawArc(rect.deflate(stroke / 2), 0, 2 * pi, false, paint..color = track);
+    canvas.drawArc(
+      rect.deflate(stroke / 2),
+      0,
+      2 * pi,
+      false,
+      paint..color = track,
+    );
     canvas.drawArc(
       rect.deflate(stroke / 2),
       -pi / 2,
@@ -370,10 +395,13 @@ class Leaderboard extends StatelessWidget {
                           child: Container(
                             height: 40,
                             decoration: BoxDecoration(
-                              color: (r.uid == highlight
-                                      ? AppColors.primary
-                                      : AppColors.accentBlue)
-                                  .withAlpha(r.uid == highlight ? 200 : 140),
+                              color:
+                                  (r.uid == highlight
+                                          ? AppColors.primary
+                                          : AppColors.accentBlue)
+                                      .withAlpha(
+                                        r.uid == highlight ? 200 : 140,
+                                      ),
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
@@ -399,7 +427,7 @@ class Leaderboard extends StatelessWidget {
                                 Text(
                                   '+${r.score - (before[r.uid] ?? 0)}  ',
                                   style: AppTheme.caption.copyWith(
-                                    color: AppColors.correct,
+                                    color: context.palette.successFg,
                                     fontWeight: FontWeight.w700,
                                   ),
                                 ),
@@ -427,7 +455,12 @@ class Leaderboard extends StatelessWidget {
 
 /// The first three on steps that rise, with confetti behind.
 class PodiumSteps extends StatelessWidget {
-  const PodiumSteps({super.key, required this.scores, required this.names, required this.avatar});
+  const PodiumSteps({
+    super.key,
+    required this.scores,
+    required this.names,
+    required this.avatar,
+  });
 
   final Map<String, int> scores;
   final Map<String, String> names;
@@ -472,12 +505,16 @@ class PodiumSteps extends StatelessWidget {
                   ),
                   Text(
                     '${r.score}',
-                    style: AppTheme.caption.copyWith(color: palette.textSecondary),
+                    style: AppTheme.caption.copyWith(
+                      color: palette.textSecondary,
+                    ),
                   ),
                   const SizedBox(height: 6),
                   TweenAnimationBuilder<double>(
                     tween: Tween(begin: still ? height : 0, end: height),
-                    duration: Duration(milliseconds: still ? 0 : 600 + rank * 300),
+                    duration: Duration(
+                      milliseconds: still ? 0 : 600 + rank * 300,
+                    ),
                     curve: Curves.easeOutBack,
                     builder: (context, h, _) => Container(
                       height: h.clamp(0, height),
@@ -493,7 +530,7 @@ class PodiumSteps extends StatelessWidget {
                       child: Text(
                         '${rank + 1}',
                         style: AppTheme.heading2.copyWith(
-                          color: Colors.white,
+                          color: AppColors.onPrimary,
                           fontWeight: FontWeight.w900,
                         ),
                       ),
@@ -506,85 +543,6 @@ class PodiumSteps extends StatelessWidget {
       ),
     );
   }
-}
-
-/// Falling confetti, drawn, no package. Nothing at all with reduced motion.
-class Confetti extends StatefulWidget {
-  const Confetti({super.key, this.pieces = 90});
-  final int pieces;
-
-  @override
-  State<Confetti> createState() => _ConfettiState();
-}
-
-class _ConfettiState extends State<Confetti> with SingleTickerProviderStateMixin {
-  late final AnimationController _c = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: 4),
-  );
-  final _random = Random();
-  late final _bits = [
-    for (var i = 0; i < widget.pieces; i++)
-      (
-        x: _random.nextDouble(),
-        delay: _random.nextDouble() * 0.5,
-        speed: 0.6 + _random.nextDouble() * 0.6,
-        spin: _random.nextDouble() * 6,
-        colour: roomShapes[i % roomShapes.length].color,
-      ),
-  ];
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (!reduceMotion(context) && !_c.isAnimating && _c.value == 0) _c.forward();
-  }
-
-  @override
-  void dispose() {
-    _c.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (reduceMotion(context)) return const SizedBox.shrink();
-    return IgnorePointer(
-      child: AnimatedBuilder(
-        animation: _c,
-        builder: (context, _) => CustomPaint(
-          size: Size.infinite,
-          painter: _ConfettiPainter(_bits, _c.value),
-        ),
-      ),
-    );
-  }
-}
-
-class _ConfettiPainter extends CustomPainter {
-  _ConfettiPainter(this.bits, this.t);
-  final List<({double x, double delay, double speed, double spin, Color colour})> bits;
-  final double t;
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint();
-    for (final b in bits) {
-      final p = ((t - b.delay) * b.speed).clamp(0.0, 1.2);
-      if (p <= 0) continue;
-      final y = p * size.height;
-      final x = b.x * size.width + sin(p * 8 + b.spin) * 18;
-      canvas.save();
-      canvas.translate(x, y);
-      canvas.rotate(p * b.spin * 3);
-      paint.color = b.colour.withAlpha(((1 - (p - 0.8).clamp(0, 1)) * 255).round());
-      canvas.drawRect(const Rect.fromLTWH(-4, -2, 8, 4), paint);
-      canvas.restore();
-    }
-  }
-
-  @override
-  bool shouldRepaint(_ConfettiPainter old) => old.t != t;
 }
 
 /// "3, 2, 1" before the first question; then [onDone]. With reduced motion
@@ -627,7 +585,9 @@ class _GetReadyState extends State<GetReady> {
             Text(
               widget.title!,
               textAlign: TextAlign.center,
-              style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
+              style: AppTheme.heading2.copyWith(
+                color: context.palette.textPrimary,
+              ),
             ),
           const SizedBox(height: 24),
           AnimatedSwitcher(

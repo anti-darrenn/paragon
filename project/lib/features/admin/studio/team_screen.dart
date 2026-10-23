@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/widgets/ui/ui.dart';
 import '../../../core/auth/staff_role.dart';
 import '../../../core/models/subject.dart';
 import '../../../core/providers/auth_provider.dart';
@@ -10,6 +11,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import 'studio_error.dart';
 
 /// `/admin/team`: who writes and reviews, and for which subjects. Admins
 /// only; the rules refuse everyone else.
@@ -32,6 +34,11 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
   bool _saving = false;
   String? _error;
 
+  /// Whose access the form is changing, once "Change" was chosen on a row.
+  /// Null while adding someone. Said above the form, with Cancel: the form
+  /// used to refill silently, out of sight at the top of the page.
+  String? _editing;
+
   @override
   void dispose() {
     _email.dispose();
@@ -40,6 +47,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
 
   void _edit(StaffInvite i) {
     setState(() {
+      _editing = i.email;
       _email.text = i.email;
       _role = i.role == 'none' ? 'writer' : i.role;
       _allSubjects = i.subjects.isEmpty;
@@ -49,6 +57,15 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
       _error = null;
     });
   }
+
+  void _cancelEdit() => setState(() {
+    _editing = null;
+    _email.clear();
+    _role = 'writer';
+    _allSubjects = true;
+    _subjects.clear();
+    _error = null;
+  });
 
   Future<void> _save({String? role, String? email}) async {
     final address = (email ?? _email.text).trim();
@@ -83,16 +100,16 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
       if (email == null) {
         _email.clear();
         setState(() {
+          _editing = null;
           _allSubjects = true;
           _subjects.clear();
         });
       }
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'Saved. It takes effect within 15 minutes; they then sign out and in again.',
-          ),
-        ),
+      showToast(
+        context,
+        'Saved. It takes effect within 15 minutes; they then sign out and in '
+        'again.',
+        tone: Tone.success,
       );
     } catch (e) {
       if (mounted) setState(() => _error = "Couldn't save: $e");
@@ -132,6 +149,17 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 ),
               ),
               const SizedBox(height: 20),
+              SectionHeader(
+                _editing == null ? 'Add someone' : 'Change $_editing',
+                action: _editing == null
+                    ? null
+                    : AppButton(
+                        label: 'Cancel',
+                        tone: ButtonTone.ghost,
+                        size: ButtonSize.sm,
+                        onPressed: _cancelEdit,
+                      ),
+              ),
               TextField(
                 controller: _email,
                 keyboardType: TextInputType.emailAddress,
@@ -173,21 +201,19 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 ),
               if (_error != null) ...[
                 const SizedBox(height: 12),
-                Text(
-                  _error!,
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                InlineAlert(
+                  tone: Tone.danger,
+                  message: _error!,
+                  announce: true,
                 ),
               ],
               const SizedBox(height: 16),
               Align(
                 alignment: Alignment.centerRight,
-                child: ElevatedButton(
-                  onPressed: _saving ? null : () => _save(),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    foregroundColor: Colors.white,
-                  ),
-                  child: const Text('Save'),
+                child: AppButton(
+                  label: _editing == null ? 'Add to the team' : 'Save changes',
+                  loading: _saving,
+                  onPressed: () => _save(),
                 ),
               ),
               const SizedBox(height: 32),
@@ -208,10 +234,8 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
               const SizedBox(height: 12),
               invites.when(
                 loading: () => const LinearProgressIndicator(minHeight: 2),
-                error: (e, _) => Text(
-                  "Couldn't load the team.\n$e",
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-                ),
+                error: (e, _) =>
+                    StudioError(message: "Couldn't load the team.", error: e),
                 data: (list) => list.isEmpty
                     ? Text(
                         'Nobody added yet.',
@@ -226,11 +250,39 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                               invite: i,
                               subjectNames: names,
                               onEdit: () => _edit(i),
-                              onRemove: () =>
-                                  _save(role: 'none', email: i.email),
-                              onForget: () => ref
-                                  .read(staffInviteRepositoryProvider)
-                                  .forget(i.email),
+                              // Both asked first: one takes a person's role
+                              // away, the other deletes the record.
+                              onRemove: () async {
+                                final ok = await confirmDialog(
+                                  context,
+                                  title: 'Remove ${i.email} from the team?',
+                                  message:
+                                      'Their role is taken away at the next '
+                                      'sign-in. Their work stays.',
+                                  confirmLabel: 'Remove from the team',
+                                  destructive: true,
+                                );
+                                if (ok) {
+                                  await _save(role: 'none', email: i.email);
+                                }
+                              },
+                              onForget: () async {
+                                final ok = await confirmDialog(
+                                  context,
+                                  title: 'Delete this record?',
+                                  message:
+                                      'The invite for ${i.email} is deleted. '
+                                      'It does not change any role already '
+                                      'given.',
+                                  confirmLabel: 'Delete record',
+                                  destructive: true,
+                                );
+                                if (ok) {
+                                  await ref
+                                      .read(staffInviteRepositoryProvider)
+                                      .forget(i.email);
+                                }
+                              },
                             ),
                         ],
                       ),

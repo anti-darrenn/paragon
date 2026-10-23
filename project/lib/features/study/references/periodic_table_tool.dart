@@ -85,7 +85,7 @@ class _PeriodicTableScreenState extends State<PeriodicTableScreen> {
           return Center(
             child: Text(
               'The periodic table could not be loaded.',
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
             ),
           );
         }

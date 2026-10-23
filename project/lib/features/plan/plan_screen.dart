@@ -73,6 +73,8 @@ class _PlanBody extends ConsumerWidget {
     return PageBody(
       children: [
         const PageIntro(
+          // The app bar names the page on a phone.
+          wideOnly: true,
           title: 'Your plan',
           subtitle:
               'A goal for the week and the topics worth the most marks '

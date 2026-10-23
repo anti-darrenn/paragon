@@ -120,34 +120,38 @@ void main() {
   });
 
   group('MistakeEntry.subjectId', () {
-    MistakeEntry entry({required String attemptSubject, String? questionSubject}) =>
-        MistakeEntry(
-          Mistake(
-            AttemptRecord(
-              questionId: 'q1',
-              topicId: 't1',
-              subjectId: attemptSubject,
-              selectedIndex: 1,
-              isCorrect: false,
-              source: 'drill',
-            ),
-          ),
-          Question(
-            id: 'q1',
-            topicId: 't1',
-            subjectId: questionSubject ?? '',
-            text: 'Q',
-            options: const ['a', 'b'],
-            correctIndex: 0,
-            explanation: '',
-            source: 'drill',
-          ),
-        );
+    MistakeEntry entry({
+      required String attemptSubject,
+      String? questionSubject,
+    }) => MistakeEntry(
+      Mistake(
+        AttemptRecord(
+          questionId: 'q1',
+          topicId: 't1',
+          subjectId: attemptSubject,
+          selectedIndex: 1,
+          isCorrect: false,
+          source: 'drill',
+        ),
+      ),
+      Question(
+        id: 'q1',
+        topicId: 't1',
+        subjectId: questionSubject ?? '',
+        text: 'Q',
+        options: const ['a', 'b'],
+        correctIndex: 0,
+        explanation: '',
+        source: 'drill',
+      ),
+    );
 
     test("files a mistake under the question's subject, not a stale one", () {
       expect(
-        entry(attemptSubject: 'deleted-subject', questionSubject: 'maths')
-            .subjectId,
+        entry(
+          attemptSubject: 'deleted-subject',
+          questionSubject: 'maths',
+        ).subjectId,
         'maths',
       );
     });
@@ -201,14 +205,14 @@ void main() {
       await tester.tap(find.text('Check'));
       await tester.pump();
       expect(find.text('Right this time.'), findsOneWidget);
-      await tester.tap(find.text('Next'));
+      await tester.tap(find.text('Continue'));
       await tester.pump();
       await tester.tap(find.text('wrongq2'));
       await tester.pump();
       await tester.tap(find.text('Check'));
       await tester.pump();
       expect(find.text('Not yet.'), findsOneWidget);
-      await tester.tap(find.text('Finish'));
+      await tester.tap(find.text('See results'));
       await tester.pumpAndSettle();
     }
 

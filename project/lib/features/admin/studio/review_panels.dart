@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/widgets/ui/ui.dart';
 import '../../../core/models/learn_resource.dart';
 import '../../../core/providers/auth_provider.dart';
 import '../../../core/repositories/admin_resource_repository.dart';
@@ -9,6 +10,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import 'staff_profile.dart';
 import '../../../core/theme/app_palette.dart';
+import 'studio_error.dart';
 
 String _when(DateTime? t) {
   if (t == null) return 'just now';
@@ -71,10 +73,7 @@ class _HistoryList extends ConsumerWidget {
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (e, _) => Padding(
         padding: const EdgeInsets.all(20),
-        child: Text(
-          "Couldn't load history.\n$e",
-          style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-        ),
+        child: StudioError(message: "Couldn't load history.", error: e),
       ),
       data: (list) => ListView(
         controller: scroll,
@@ -147,6 +146,18 @@ class _HistoryList extends ConsumerWidget {
                               onPressed: () async {
                                 final uid = ref.read(currentUserProvider)?.uid;
                                 if (uid == null) return;
+                                // Replaces what is in the editor: asked
+                                // first. The current text is kept in the
+                                // history, so it can be restored in turn.
+                                final ok = await confirmDialog(
+                                  context,
+                                  title: 'Restore this version?',
+                                  message:
+                                      'It replaces the current text. The '
+                                      'current text stays in the history.',
+                                  confirmLabel: 'Restore',
+                                );
+                                if (!ok) return;
                                 await ref
                                     .read(lessonWorkflowProvider)
                                     .restoreVersion(resource, v, uid: uid);

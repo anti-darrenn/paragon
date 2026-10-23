@@ -7,6 +7,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import '../../../core/widgets/load_error.dart';
 import '../../../core/widgets/ui/ui.dart';
 import '../cards/card_providers.dart';
 import '../hub/study_paths.dart';
@@ -44,27 +45,34 @@ class DecksScreen extends ConsumerWidget {
           ),
           if (isGuest) ...[
             const SizedBox(height: 8),
-            Text(
-              'Your decks are kept on this device. Make an account to keep '
-              'them everywhere.',
-              style: AppTheme.caption.copyWith(color: AppColors.warning),
+            const InlineAlert(
+              tone: Tone.info,
+              message:
+                  'Your decks are kept on this device. Make an account to keep '
+                  'them everywhere.',
             ),
           ],
           const SizedBox(height: 20),
           decks.when(
-            loading: () => const Center(child: CircularProgressIndicator()),
-            error: (e, _) => Text(
-              "Couldn't load your decks.\n$e",
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            loading: () => const SkeletonPage(title: false, count: 3),
+            error: (e, _) => LoadError(
+              error: e,
+              message: "Couldn't load your decks.",
+              onRetry: () => ref.invalidate(decksProvider),
             ),
             data: (list) {
               if (list.isEmpty) {
-                return const EmptyState(
-                  icon: Icons.style_outlined,
+                return EmptyState(
+                  illustration: IllustrationAsset.empty,
                   title: 'No decks yet',
                   message:
                       'Start one for a topic you keep forgetting: formulas, '
                       'definitions, symbols.',
+                  action: AppButton(
+                    label: 'New deck',
+                    icon: Icons.add_rounded,
+                    onPressed: () => context.push(deckEditPath('new')),
+                  ),
                 );
               }
               return Column(

@@ -147,14 +147,32 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
     return Scaffold(
       appBar: ParagonAppBar(title: Text('Room ${widget.code}')),
       body: async.isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const LoadingView(label: 'Finding the room')
           : room == null
-          ? EmptyState(
-              icon: Icons.meeting_room_outlined,
-              title: 'No room has that code',
-              action: TextButton(
-                onPressed: () => context.go('/join'),
-                child: const Text('Try another code'),
+          ? Center(
+              child: SingleChildScrollView(
+                child: EmptyState(
+                  illustration: async.hasError
+                      ? IllustrationAsset.offline
+                      : IllustrationAsset.notFound,
+                  // A failed load is not a wrong code.
+                  title: async.hasError
+                      ? "Couldn't reach the room"
+                      : 'No room has that code',
+                  message: async.hasError
+                      ? 'Check your connection and try again.'
+                      : null,
+                  action: async.hasError
+                      ? AppButton(
+                          label: 'Try again',
+                          onPressed: () =>
+                              ref.invalidate(roomProvider(widget.code)),
+                        )
+                      : AppButton(
+                          label: 'Try another code',
+                          onPressed: () => context.go('/join'),
+                        ),
+                ),
               ),
             )
           : PageBody(children: [_stage(context, room, palette)]),
@@ -164,9 +182,19 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
   Widget _stage(BuildContext context, Room room, AppPalette palette) {
     if (!_joined) {
       if (room.state == RoomState.closed || room.state == RoomState.podium) {
-        return const EmptyState(
+        return EmptyState(
           icon: Icons.flag_outlined,
           title: 'This quiz has finished',
+          message: 'Ask for the next code, or practise on your own.',
+          action: AppButton(
+            label: 'Join another quiz',
+            onPressed: () => context.go('/join'),
+          ),
+          secondaryAction: AppButton(
+            label: 'Go home',
+            tone: ButtonTone.ghost,
+            onPressed: () => context.go('/'),
+          ),
         );
       }
       return Column(
@@ -267,7 +295,9 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              mine == null ? 'Pick an answer.' : 'Locked in. Wait for the reveal.',
+              mine == null
+                  ? 'Pick an answer.'
+                  : 'Locked in. Wait for the reveal.',
               textAlign: TextAlign.center,
               style: AppTheme.bodyLg.copyWith(
                 color: palette.textPrimary,
@@ -281,9 +311,7 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
         final right = mine != null && mine == q.correctIndex;
         // Exact when this phone saw the question; unknown after a reload.
         final before = _scoreAtQuestion[room.index];
-        final gained = before == null
-            ? 0
-            : (room.scores[uid] ?? 0) - before;
+        final gained = before == null ? 0 : (room.scores[uid] ?? 0) - before;
         final rows = standings(room.scores);
         final me = rows.where((r) => r.uid == uid).firstOrNull;
         final run = room.streaks[uid] ?? 0;
@@ -373,7 +401,10 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
                 ),
               ],
             ),
-            if (top) const Positioned.fill(child: Confetti(pieces: 60)),
+            if (top)
+              Positioned.fill(
+                child: Confetti(pieces: 60, colours: kRoomConfettiColours),
+              ),
           ],
         );
     }
@@ -411,7 +442,8 @@ class _Verdict extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colour = right ? AppColors.correct : AppColors.wrong;
+    // The strong fills: white on `correct`/`wrong` was 2.5:1 and 3.4:1.
+    final colour = right ? AppColors.successStrong : AppColors.dangerStrong;
     final still = reduceMotion(context);
     return Semantics(
       liveRegion: true,
@@ -463,4 +495,3 @@ class _Verdict extends StatelessWidget {
     );
   }
 }
-

@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -9,6 +8,7 @@ import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/features/account/guest_upgrade.dart';
 import 'package:paragon/core/theme/app_colors.dart';
 import 'package:paragon/core/theme/app_theme.dart';
+import '../core/widgets/ui/ui.dart';
 import '../core/theme/app_palette.dart';
 import '../core/providers/analytics_provider.dart';
 
@@ -36,43 +36,20 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
   String? _message;
   bool _messageIsError = true;
 
-  // Hoisted to fields (rather than created inline in build()) so they can
-  // be disposed — TapGestureRecognizer holds gesture-arena state that
-  // leaks if never released. Each closure checks _isLoading at tap time,
-  // not at assignment time, so a single recognizer instance stays correct
-  // across the loading state changing.
-  late final TapGestureRecognizer _createAccountRecognizer;
-  late final TapGestureRecognizer _backToSignInRecognizer;
-
   bool get _isEmailValid => _emailRegExp.hasMatch(_emailController.text.trim());
 
-  @override
-  void initState() {
-    super.initState();
-    _createAccountRecognizer = TapGestureRecognizer()
-      ..onTap = () {
-        if (_isLoading) return;
-        setState(() {
-          _message = null;
-          _step = _AuthStep.createAccount;
-        });
-      };
-    _backToSignInRecognizer = TapGestureRecognizer()
-      ..onTap = () {
-        if (_isLoading) return;
-        setState(() {
-          _message = null;
-          _step = _AuthStep.password;
-        });
-      };
+  void _goTo(_AuthStep step) {
+    if (_isLoading) return;
+    setState(() {
+      _message = null;
+      _step = step;
+    });
   }
 
   @override
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
-    _createAccountRecognizer.dispose();
-    _backToSignInRecognizer.dispose();
     super.dispose();
   }
 
@@ -294,27 +271,13 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         onChanged: (_) => setState(() {}),
       ),
       const SizedBox(height: 24),
-      SizedBox(
-        height: 52,
-        child: ElevatedButton(
-          onPressed: _isEmailValid
-              ? () => setState(() => _step = _AuthStep.password)
-              : null,
-          style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.primary,
-            disabledBackgroundColor: AppColors.primary.withAlpha(
-              (0.4 * 255).round(),
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(4),
-            ),
-            elevation: 0,
-          ),
-          child: Text(
-            'Continue',
-            style: AppTheme.btnLabel.copyWith(color: Colors.white),
-          ),
-        ),
+      AppButton(
+        label: 'Continue',
+        size: ButtonSize.lg,
+        expand: true,
+        onPressed: _isEmailValid
+            ? () => setState(() => _step = _AuthStep.password)
+            : null,
       ),
     ];
   }
@@ -330,12 +293,12 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       // with it; creating one can. Say so before they choose.
       if (ref.watch(isGuestProvider)) ...[
         const SizedBox(height: 12),
-        Text(
-          "You're browsing as a guest. Signing in to an existing account "
-          "leaves this session's progress behind — create an account "
-          'instead to keep it.',
-          textAlign: TextAlign.center,
-          style: AppTheme.caption.copyWith(color: AppColors.warning),
+        const InlineAlert(
+          tone: Tone.warning,
+          message:
+              "You're browsing as a guest. Signing in to an existing account "
+              "leaves this session's progress behind — create an account "
+              'instead to keep it.',
         ),
       ],
       const SizedBox(height: 24),
@@ -377,64 +340,25 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       ),
       if (_message != null) ...[
         const SizedBox(height: 8),
-        Text(
-          _message!,
-          textAlign: TextAlign.center,
-          style: AppTheme.caption.copyWith(
-            color: _messageIsError ? AppColors.wrong : AppColors.correct,
-          ),
+        InlineAlert(
+          tone: _messageIsError ? Tone.danger : Tone.success,
+          message: _message!,
+          announce: true,
         ),
       ],
       const SizedBox(height: 24),
-      SizedBox(
-        height: 52,
-        child: ElevatedButton(
-          onPressed: _isLoading
-              ? null
-              : () => _submitPassword(createAccount: false),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.primary,
-            disabledBackgroundColor: AppColors.primary.withAlpha(
-              (0.4 * 255).round(),
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(4),
-            ),
-            elevation: 0,
-          ),
-          child: _isLoading
-              ? const SizedBox(
-                  height: 20,
-                  width: 20,
-                  child: CircularProgressIndicator(
-                    color: Colors.white,
-                    strokeWidth: 2,
-                  ),
-                )
-              : Text(
-                  'Sign in',
-                  style: AppTheme.btnLabel.copyWith(color: Colors.white),
-                ),
-        ),
+      AppButton(
+        label: 'Sign in',
+        size: ButtonSize.lg,
+        expand: true,
+        loading: _isLoading,
+        onPressed: () => _submitPassword(createAccount: false),
       ),
       const SizedBox(height: 24),
-      Center(
-        child: RichText(
-          text: TextSpan(
-            style: AppTheme.caption.copyWith(
-              color: context.palette.textSecondary,
-              decoration: TextDecoration.underline,
-            ),
-            children: [
-              const TextSpan(text: 'New here? '),
-              TextSpan(
-                text: 'Create an account!',
-                style: const TextStyle(color: AppColors.primary),
-                recognizer: _createAccountRecognizer,
-              ),
-            ],
-          ),
-        ),
+      _SwitchLink(
+        question: 'New here?',
+        action: 'Create an account',
+        onPressed: () => _goTo(_AuthStep.createAccount),
       ),
     ];
   }
@@ -471,64 +395,25 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       ),
       if (_message != null) ...[
         const SizedBox(height: 8),
-        Text(
-          _message!,
-          textAlign: TextAlign.center,
-          style: AppTheme.caption.copyWith(
-            color: _messageIsError ? AppColors.wrong : AppColors.correct,
-          ),
+        InlineAlert(
+          tone: _messageIsError ? Tone.danger : Tone.success,
+          message: _message!,
+          announce: true,
         ),
       ],
       const SizedBox(height: 24),
-      SizedBox(
-        height: 52,
-        child: ElevatedButton(
-          onPressed: _isLoading
-              ? null
-              : () => _submitPassword(createAccount: true),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.primary,
-            disabledBackgroundColor: AppColors.primary.withAlpha(
-              (0.4 * 255).round(),
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(4),
-            ),
-            elevation: 0,
-          ),
-          child: _isLoading
-              ? const SizedBox(
-                  height: 20,
-                  width: 20,
-                  child: CircularProgressIndicator(
-                    color: Colors.white,
-                    strokeWidth: 2,
-                  ),
-                )
-              : Text(
-                  'Create Account',
-                  style: AppTheme.btnLabel.copyWith(color: Colors.white),
-                ),
-        ),
+      AppButton(
+        label: 'Create account',
+        size: ButtonSize.lg,
+        expand: true,
+        loading: _isLoading,
+        onPressed: () => _submitPassword(createAccount: true),
       ),
       const SizedBox(height: 24),
-      Center(
-        child: RichText(
-          text: TextSpan(
-            style: AppTheme.caption.copyWith(
-              color: context.palette.textSecondary,
-              decoration: TextDecoration.underline,
-            ),
-            children: [
-              const TextSpan(text: 'Already have an account? '),
-              TextSpan(
-                text: 'Sign in',
-                style: const TextStyle(color: AppColors.primary),
-                recognizer: _backToSignInRecognizer,
-              ),
-            ],
-          ),
-        ),
+      _SwitchLink(
+        question: 'Already have an account?',
+        action: 'Sign in',
+        onPressed: () => _goTo(_AuthStep.password),
       ),
     ];
   }
@@ -576,6 +461,41 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// "New here? Create an account": a question and a real button — focusable,
+/// 40px tall, read as a button. It was underlined 11px text with a tap
+/// recognizer that a keyboard could not reach.
+class _SwitchLink extends StatelessWidget {
+  const _SwitchLink({
+    required this.question,
+    required this.action,
+    required this.onPressed,
+  });
+
+  final String question;
+  final String action;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      alignment: WrapAlignment.center,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: [
+        Text(
+          question,
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+        ),
+        AppButton(
+          label: action,
+          tone: ButtonTone.ghost,
+          size: ButtonSize.sm,
+          onPressed: onPressed,
+        ),
+      ],
     );
   }
 }

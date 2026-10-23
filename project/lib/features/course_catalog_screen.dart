@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/widgets/load_error.dart';
+import '../core/theme/tokens.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/theme/app_colors.dart';
@@ -52,18 +54,12 @@ class CourseCatalogScreen extends ConsumerWidget {
 
           catalogAsync.when(
             loading: () => const SkeletonPage(title: false, count: 5),
-            error: (error, _) => Padding(
-              padding: const EdgeInsets.symmetric(vertical: 60),
-              child: Center(
-                child: Text(
+            error: (error, _) => LoadError(
+              error: error,
+              message:
                   "Courses couldn't be loaded. Check your connection and try "
                   'again.',
-                  textAlign: TextAlign.center,
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.textSecondary,
-                  ),
-                ),
-              ),
+              onRetry: () => ref.invalidate(courseCatalogProvider),
             ),
             data: (courses) => _CourseGrid(
               courses: courses,
@@ -113,8 +109,7 @@ class _CourseGrid extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             if (mine.isNotEmpty) ...[
-              _GroupLabel('YOUR SUBJECTS'),
-              const SizedBox(height: 12),
+              const GroupLabel('Your subjects'),
               Wrap(
                 spacing: _gap,
                 runSpacing: _gap,
@@ -127,8 +122,7 @@ class _CourseGrid extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 32),
-              _GroupLabel('EVERYTHING ELSE'),
-              const SizedBox(height: 12),
+              const GroupLabel('Everything else'),
             ],
             Wrap(
               spacing: _gap,
@@ -164,121 +158,90 @@ class _CourseCardState extends State<_CourseCard> {
   Widget build(BuildContext context) {
     final course = widget.course;
     final accent = AppColors.forSubject(course.name);
+    final p = context.palette;
+    final radius = BorderRadius.circular(Radii.lg);
+    final duration = Motion.of(context, Motion.fast);
 
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => _isHovered = true),
-      onExit: (_) => setState(() => _isHovered = false),
-      child: GestureDetector(
-        onTap: () => context.push('/subject/${course.slug}/course'),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 140),
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            color: accent.withAlpha(((_isHovered ? 0.18 : 0.10) * 255).round()),
-            border: Border.all(
-              color: accent.withAlpha(
-                ((_isHovered ? 0.7 : 0.35) * 255).round(),
-              ),
+    // A real button: focusable, a ripple, and read with its name. It was a
+    // GestureDetector a keyboard could not reach.
+    return Semantics(
+      button: true,
+      label: course.isLive ? course.name : '${course.name}, coming soon',
+      excludeSemantics: true,
+      child: Material(
+        color: Color.alphaBlend(
+          accent.withAlpha(_isHovered ? 46 : 26),
+          p.surface,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: radius,
+          side: BorderSide(color: accent.withAlpha(_isHovered ? 180 : 90)),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: () => context.push('/subject/${course.slug}/course'),
+          onHover: (h) => setState(() => _isHovered = h),
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Illustration(
+                      IllustrationAsset.forSubject(course.name),
+                      height: 56,
+                      accent: accent,
+                    ),
+                    const Spacer(),
+                    if (!course.isLive)
+                      const Tag('Coming soon', tone: Tone.warning),
+                  ],
+                ),
+                const SizedBox(height: 14),
+                Text(
+                  course.name,
+                  style: AppTheme.heading2.copyWith(
+                    color: p.textStrong,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  course.blurb,
+                  style: AppTheme.bodyMd.copyWith(
+                    color: p.textSecondary,
+                    height: 1.45,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Text(
+                      course.moduleCount == 0
+                          ? 'Outline in progress'
+                          : '${course.moduleCount} '
+                                '${course.moduleCount == 1 ? 'module' : 'modules'}'
+                                '${course.isLive ? '' : ' planned'}',
+                      style: AppTheme.label.copyWith(color: p.textSecondary),
+                    ),
+                    const Spacer(),
+                    AnimatedSlide(
+                      duration: duration,
+                      offset: Offset(_isHovered ? 0.18 : 0, 0),
+                      child: Icon(
+                        Icons.arrow_forward_rounded,
+                        size: 18,
+                        color: p.textPrimary,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
-            borderRadius: BorderRadius.circular(14),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 10,
-                    height: 10,
-                    decoration: BoxDecoration(
-                      color: accent,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                  const Spacer(),
-                  if (!course.isLive)
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 8,
-                        vertical: 3,
-                      ),
-                      decoration: BoxDecoration(
-                        color: AppColors.warning.withAlpha(
-                          (0.14 * 255).round(),
-                        ),
-                        borderRadius: BorderRadius.circular(999),
-                      ),
-                      child: Text(
-                        'Coming soon',
-                        style: AppTheme.caption.copyWith(
-                          color: AppColors.warning,
-                        ),
-                      ),
-                    ),
-                ],
-              ),
-              const SizedBox(height: 18),
-              Text(
-                course.name,
-                style: AppTheme.heading2.copyWith(
-                  color: context.palette.textPrimary,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                course.blurb,
-                style: AppTheme.bodyMd.copyWith(
-                  color: context.palette.textSecondary,
-                  height: 1.45,
-                ),
-              ),
-              const SizedBox(height: 16),
-              Row(
-                children: [
-                  Text(
-                    course.moduleCount == 0
-                        ? 'Outline in progress'
-                        : '${course.moduleCount} '
-                              '${course.moduleCount == 1 ? 'module' : 'modules'}'
-                              '${course.isLive ? '' : ' planned'}',
-                    style: AppTheme.label.copyWith(
-                      color: context.palette.textSecondary,
-                    ),
-                  ),
-                  const Spacer(),
-                  AnimatedSlide(
-                    duration: const Duration(milliseconds: 140),
-                    offset: Offset(_isHovered ? 0.18 : 0, 0),
-                    child: Icon(
-                      Icons.arrow_forward_rounded,
-                      size: 18,
-                      color: accent,
-                    ),
-                  ),
-                ],
-              ),
-            ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class _GroupLabel extends StatelessWidget {
-  const _GroupLabel(this.text);
-
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: AppTheme.caption.copyWith(
-        color: context.palette.textSecondary,
-        letterSpacing: 0.8,
       ),
     );
   }

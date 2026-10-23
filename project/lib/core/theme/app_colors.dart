@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 class AppColors {
   // ── Primary brand color ───────────────────────────────────────────
   static const primary = Color(0xFFFF7700); // Orange — from Figma
+
+  /// Words and icons on an orange fill: a primary button, a selected
+  /// option's letter. Near-black, 6.2:1 on the orange; white was 2.7:1,
+  /// which fails WCAG AA for text (UI pass, 2026-10-23). Also reads on the
+  /// subject colours and the medal colours.
+  static const onPrimary = Color(0xFF1B1F24);
   static const primaryDark = Color(
     0xFFCC5F00,
   ); // Pressed shade — primary at 80% (~20% darker)
@@ -31,6 +37,23 @@ class AppColors {
   static const submitGreen = Color(
     0xFF238636,
   ); // exam submit CTA — distinct from `correct` · Figma: success-overlay
+
+  /// Fills that carry white text: a verdict bar, a destructive button.
+  /// `correct` and `wrong` are too light for white on them (2.5:1, 3.4:1);
+  /// these pass WCAG AA (4.6:1, 5.4:1).
+  static const successStrong = submitGreen;
+  static const dangerStrong = Color(0xFFCF222E);
+
+  // ── Text tones for the light theme ────────────────────────────────
+  // The brand and semantic colours above are bright enough to read as text
+  // on the dark background (5.6:1 to 7.5:1) but not on white (2.4:1 to
+  // 3.4:1). The light theme's palette uses these deeper shades for text,
+  // each at least 4.5:1 on its background. Fills keep the bright colours.
+  static const primaryTextLight = Color(0xFFB35300);
+  static const successTextLight = Color(0xFF1A7F37);
+  static const dangerTextLight = Color(0xFFCF222E);
+  static const warningTextLight = Color(0xFF9A6700);
+  static const infoTextLight = Color(0xFF0969DA);
 
   // ── Dark mode surfaces (elevated / inactive) ──────────────────────
   static const trackDark = Color(
@@ -71,6 +94,21 @@ class AppColors {
   static const googleBlue = Color(
     0xFF4285F4,
   ); // Google "G" mark, per Google brand guidelines
+
+  /// The "Continue with Google" button, in Google's own two versions
+  /// (Sign in with Google branding guidelines): white with a grey outline
+  /// on a light page, near-black with a grey outline on a dark one. Fixed
+  /// by Google, so not part of the palette.
+  static const googleButtonOnLight = (
+    fill: Color(0xFFFFFFFF),
+    stroke: Color(0xFF747775),
+    text: Color(0xFF1F1F1F),
+  );
+  static const googleButtonOnDark = (
+    fill: Color(0xFF131314),
+    stroke: Color(0xFF8E918F),
+    text: Color(0xFFE3E3E3),
+  );
 
   // ── Text ──────────────────────────────────────────────────────────
   static const textPrimaryDark = Color(0xFFE6EDF3);

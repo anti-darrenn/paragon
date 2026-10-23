@@ -34,9 +34,7 @@ class AboutScreen extends StatelessWidget {
           child: ListView(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
             children: [
-              Center(
-                child: ParagonLogo(height: 64, semanticLabel: 'Paragon'),
-              ),
+              Center(child: ParagonLogo(height: 64, semanticLabel: 'Paragon')),
               const SizedBox(height: 24),
               // The same text as the static /about/ page
               // (`about_content.dart`).
@@ -193,7 +191,7 @@ class _Link extends StatelessWidget {
       child: Text(
         label,
         style: AppTheme.bodyMd.copyWith(
-          color: AppColors.primary,
+          color: context.palette.primaryFg,
           decoration: TextDecoration.underline,
           decorationColor: AppColors.primary,
         ),

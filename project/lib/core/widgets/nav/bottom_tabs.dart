@@ -34,7 +34,7 @@ class BottomTabs extends StatelessWidget {
           labelTextStyle: WidgetStateProperty.resolveWith(
             (states) => states.contains(WidgetState.selected)
                 ? AppTheme.navLabelActive.copyWith(
-                    color: AppColors.primary,
+                    color: context.palette.primaryFg,
                     fontSize: 11,
                   )
                 : AppTheme.navLabelInactive.copyWith(

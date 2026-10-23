@@ -27,6 +27,10 @@ import '../core/theme/app_palette.dart';
 import '../core/widgets/question_image.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import 'plan/plan_widgets.dart';
+import '../core/theme/app_theme.dart';
+import '../core/widgets/session/session_frame.dart';
+import '../core/widgets/session/session_summary.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Data handed from WaecExamSetupScreen via route `extra`. The exam screen
 /// never queries Firestore itself — per spec §2.3.3, setup fetches once
@@ -59,13 +63,13 @@ class WaecExamSessionData {
 /// cannot be used in the router's `is` check.
 Widget waecExamRoute(String subjectId, Object? extra, {String? routeKey}) =>
     WaecExamScreen(
-  subjectId: subjectId,
-  routeKey: routeKey,
-  // Direct URL / bad deep link with no route extra is handled inside
-  // WaecExamScreen itself (redirects back to setup) rather than crashing
-  // on a bad cast — see its initState.
-  session: extra is WaecExamSessionData ? extra : null,
-);
+      subjectId: subjectId,
+      routeKey: routeKey,
+      // Direct URL / bad deep link with no route extra is handled inside
+      // WaecExamScreen itself (redirects back to setup) rather than crashing
+      // on a bad cast — see its initState.
+      session: extra is WaecExamSessionData ? extra : null,
+    );
 
 class WaecExamScreen extends ConsumerStatefulWidget {
   final String subjectId;
@@ -132,7 +136,9 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       // on `extra` validation) via addPostFrameCallback, since calling
       // context.go() during the current build would throw.
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) context.go('/waec/${widget.routeKey ?? widget.subjectId}/setup');
+        if (mounted) {
+          context.go('/waec/${widget.routeKey ?? widget.subjectId}/setup');
+        }
       });
       return;
     }
@@ -393,10 +399,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               _forgetSaved();
               context.go('/waec/${widget.routeKey ?? widget.subjectId}/setup');
             },
-            child: const Text(
+            child: Text(
               'Exit Exam',
               style: TextStyle(
-                color: AppColors.wrong,
+                color: dialogContext.palette.dangerFg,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -505,7 +511,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: const Text('Submit', style: TextStyle(color: Colors.white)),
+            child: const Text(
+              'Submit',
+              style: TextStyle(color: AppColors.onPrimary),
+            ),
           ),
         ],
       ),
@@ -618,6 +627,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       child: StudyDock(
         subjectId: widget.subjectId,
         studyContext: StudyContext.waecExam,
+        // Above the Back/Next bar while the paper is open.
+        bottomInset: _examSubmitted ? 0 : kSessionBarHeight,
         child: scaffold,
       ),
     );
@@ -681,195 +692,158 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
           ),
         ),
 
-        // Question + options
+        // Question + options, in a readable column on a wide screen.
         Expanded(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 100),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: context.palette.surface,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: context.palette.border),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: kSessionMaxWidth),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: context.palette.surface,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: context.palette.border),
+                      ),
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Expanded(
-                            // No difficulty in a timed paper: WAEC does
-                            // not say which questions are the hard ones.
-                            child: QuestionSourceBadge(
-                              question: q,
-                              showDifficulty: false,
-                            ),
-                          ),
-                          _FlagButton(
-                            flagged: _flagged.contains(_currentIndex),
-                            onPressed: _toggleFlag,
-                          ),
-                        ],
-                      ),
-                      FullLatexView(
-                        latex: q.text,
-                        textStyle: TextStyle(
-                          color: context.palette.textStrong,
-                          fontSize: 16,
-                          height: 1.6,
-                        ),
-                      ),
-                      QuestionImage(assetId: q.imageId),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 14),
-                ...List.generate(q.options.length, (i) {
-                  final isSelected = selectedOption == i;
-                  final letter = String.fromCharCode(65 + i);
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
-                    child: Semantics(
-                      button: true,
-                      selected: isSelected,
-                      inMutuallyExclusiveGroup: true,
-                      label: 'Option $letter: ${speakText(q.options[i])}',
-                      // excludeSemantics drops the InkWell's own action, so
-                      // the tap is given here — without it a screen reader
-                      // could hear an option but never choose it.
-                      onTap: () => _selectOption(i),
-                      excludeSemantics: true,
-                      child: InkWell(
-                        onTap: () => _selectOption(i),
-                        borderRadius: BorderRadius.circular(10),
-                        child: AnimatedContainer(
-                          duration: const Duration(milliseconds: 160),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 14,
-                            vertical: 13,
-                          ),
-                          decoration: BoxDecoration(
-                            color: isSelected
-                                ? AppColors.primary.withAlpha(
-                                    (0.1 * 255).round(),
-                                  )
-                                : context.palette.surface,
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: isSelected
-                                  ? AppColors.primary
-                                  : context.palette.border,
-                              width: 1.5,
-                            ),
-                          ),
-                          child: Row(
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              AnimatedContainer(
-                                duration: const Duration(milliseconds: 160),
-                                width: 28,
-                                height: 28,
-                                alignment: Alignment.center,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: isSelected
-                                      ? AppColors.primary
-                                      : context.palette.track,
-                                ),
-                                child: Text(
-                                  letter,
-                                  style: TextStyle(
-                                    color: isSelected
-                                        ? Colors.white
-                                        : context.palette.onMedium,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 13,
-                                  ),
+                              Expanded(
+                                // No difficulty in a timed paper: WAEC does
+                                // not say which questions are the hard ones.
+                                child: QuestionSourceBadge(
+                                  question: q,
+                                  showDifficulty: false,
                                 ),
                               ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: MathText(
-                                  text: q.options[i],
-                                  useLightRenderer: true,
-                                  style: TextStyle(
-                                    color: isSelected
-                                        ? context.palette.textStrong
-                                        : context.palette.onHigh,
-                                    fontSize: 15,
-                                  ),
-                                ),
+                              _FlagButton(
+                                flagged: _flagged.contains(_currentIndex),
+                                onPressed: _toggleFlag,
                               ),
                             ],
                           ),
-                        ),
+                          FullLatexView(
+                            latex: q.text,
+                            textStyle: AppTheme.questionStem.copyWith(
+                              color: context.palette.textStrong,
+                            ),
+                          ),
+                          QuestionImage(assetId: q.imageId),
+                        ],
                       ),
                     ),
-                  );
-                }),
-              ],
+                    const SizedBox(height: 14),
+                    ...List.generate(q.options.length, (i) {
+                      final isSelected = selectedOption == i;
+                      final letter = String.fromCharCode(65 + i);
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: Semantics(
+                          button: true,
+                          selected: isSelected,
+                          inMutuallyExclusiveGroup: true,
+                          label: 'Option $letter: ${speakText(q.options[i])}',
+                          // excludeSemantics drops the InkWell's own action, so
+                          // the tap is given here — without it a screen reader
+                          // could hear an option but never choose it.
+                          onTap: () => _selectOption(i),
+                          excludeSemantics: true,
+                          child: InkWell(
+                            onTap: () => _selectOption(i),
+                            borderRadius: BorderRadius.circular(10),
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 160),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 14,
+                                vertical: 13,
+                              ),
+                              decoration: BoxDecoration(
+                                color: isSelected
+                                    ? AppColors.primary.withAlpha(
+                                        (0.1 * 255).round(),
+                                      )
+                                    : context.palette.surface,
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: isSelected
+                                      ? AppColors.primary
+                                      : context.palette.border,
+                                  width: 1.5,
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  AnimatedContainer(
+                                    duration: const Duration(milliseconds: 160),
+                                    width: 28,
+                                    height: 28,
+                                    alignment: Alignment.center,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: isSelected
+                                          ? AppColors.primary
+                                          : context.palette.track,
+                                    ),
+                                    child: Text(
+                                      letter,
+                                      style: TextStyle(
+                                        color: isSelected
+                                            ? AppColors.onPrimary
+                                            : context.palette.onMedium,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 13,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 12),
+                                  Expanded(
+                                    child: MathText(
+                                      text: q.options[i],
+                                      useLightRenderer: true,
+                                      style: TextStyle(
+                                        color: isSelected
+                                            ? context.palette.textStrong
+                                            : context.palette.onHigh,
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    }),
+                  ],
+                ),
+              ),
             ),
           ),
         ),
 
         // Navigation + submit
-        SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-            child: Row(
-              children: [
-                if (_currentIndex > 0)
-                  Expanded(
-                    child: OutlinedButton(
-                      onPressed: () => _goToQuestion(_currentIndex - 1),
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(color: context.palette.border),
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      child: Text(
-                        '← Prev',
-                        style: TextStyle(color: context.palette.onHigh),
-                      ),
-                    ),
-                  ),
-                if (_currentIndex > 0) const SizedBox(width: 10),
-                Expanded(
-                  flex: 2,
-                  child: ElevatedButton(
-                    onPressed: _currentIndex < questions.length - 1
-                        ? () => _goToQuestion(_currentIndex + 1)
-                        : () => _confirmSubmit(questions),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: _currentIndex < questions.length - 1
-                          ? AppColors.primary
-                          : AppColors.submitGreen,
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                    child: Text(
-                      _currentIndex < questions.length - 1
-                          ? 'Next →'
-                          : 'Submit Exam',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+        SessionNavBar(
+          onBack: _currentIndex > 0
+              ? () => _goToQuestion(_currentIndex - 1)
+              : null,
+          nextLabel: _currentIndex < questions.length - 1
+              ? 'Next'
+              : 'Submit exam',
+          nextTone: _currentIndex < questions.length - 1
+              ? ButtonTone.primary
+              : ButtonTone.success,
+          onNext: _currentIndex < questions.length - 1
+              ? () => _goToQuestion(_currentIndex + 1)
+              : () => _confirmSubmit(questions),
         ),
       ],
     );
@@ -908,125 +882,52 @@ class _ResultsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pct = total > 0 ? ((score / total) * 100).round() : 0;
-    final Color scoreColor = pct >= 50 ? AppColors.correct : AppColors.wrong;
 
+    // Calm on purpose: no confetti and no sound after a timed paper, the
+    // same as the exam itself. The grade card says what the score means.
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        children: [
-          const SizedBox(height: 24),
-          Text(
-            'Exam Complete',
-            style: TextStyle(
-              color: context.palette.textStrong,
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            '$score / $total  ($pct%)',
-            style: TextStyle(
-              color: scoreColor,
-              fontSize: 36,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 16),
+      padding: const EdgeInsets.fromLTRB(20, 32, 20, 40),
+      child: SessionSummary(
+        title: 'Exam complete',
+        correct: score,
+        total: total,
+        subtitle: '$pct% correct',
+        sound: false,
+        details: [
           GradeEstimateCard(percent: total > 0 ? score * 100 / total : 0),
           PracticeComparison(
             subjectId: questions.isEmpty ? '' : questions.first.subjectId,
             percent: total > 0 ? score * 100 / total : 0,
           ),
-          if (isGuest) ...[
-            const SizedBox(height: 16),
+          if (isGuest)
             GuestNotice(
               message: GuestLimits.saveResultMessage('this $score/$total'),
             ),
-          ],
-          if (saveFailed) ...[
-            const SizedBox(height: 20),
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                color: AppColors.wrong.withAlpha((0.12 * 255).round()),
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: AppColors.wrong.withAlpha((0.4 * 255).round()),
-                ),
-              ),
-              child: Row(
-                children: [
-                  const Icon(
-                    Icons.error_outline,
-                    color: AppColors.wrong,
-                    size: 18,
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      "Couldn't save your results.",
-                      style: TextStyle(
-                        color: context.palette.onHigh,
-                        fontSize: 13,
-                      ),
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: saving ? null : onRetry,
-                    child: Text(
-                      saving ? 'Retrying…' : 'Retry',
-                      style: const TextStyle(
-                        color: AppColors.wrong,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
+          if (saveFailed)
+            InlineAlert(
+              tone: Tone.danger,
+              announce: true,
+              message: "Couldn't save your results.",
+              action: AppButton(
+                label: 'Retry',
+                tone: ButtonTone.ghost,
+                size: ButtonSize.sm,
+                loading: saving,
+                onPressed: onRetry,
               ),
             ),
-          ],
-          const SizedBox(height: 32),
-          SizedBox(
-            width: double.infinity,
-            child: OutlinedButton(
-              onPressed: onReview,
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(color: context.palette.border),
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              child: Text(
-                'Review Answers',
-                style: TextStyle(color: context.palette.onHigh),
-              ),
-            ),
-          ),
-          const SizedBox(height: 12),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: onExit,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              child: const Text(
-                'Back to Subjects',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
-          ),
         ],
+        primary: AppButton(
+          label: 'Review answers',
+          expand: true,
+          onPressed: onReview,
+        ),
+        secondary: AppButton(
+          label: 'Back to WAEC Prep',
+          tone: ButtonTone.secondary,
+          expand: true,
+          onPressed: onExit,
+        ),
       ),
     );
   }
@@ -1101,7 +1002,7 @@ class _StripItem extends StatelessWidget {
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
                     color: isActive
-                        ? Colors.white
+                        ? AppColors.onPrimary
                         : isAnswered
                         ? context.palette.textStrong
                         : context.palette.onMedium,

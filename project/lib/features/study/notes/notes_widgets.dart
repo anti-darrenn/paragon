@@ -33,7 +33,9 @@ class GuestNotesPrompt extends ConsumerWidget {
           Expanded(
             child: Text(
               '$kGuestNotesPrompt. Right now they are kept on this device only.',
-              style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
+              style: AppTheme.caption.copyWith(
+                color: context.palette.textSecondary,
+              ),
             ),
           ),
         ],
@@ -117,7 +119,10 @@ class _AnnotatedBlockState extends ConsumerState<AnnotatedBlock> {
   }
 
   Future<void> _editNote() async {
-    final text = await showNoteEditor(context, initial: widget.note?.text ?? '');
+    final text = await showNoteEditor(
+      context,
+      initial: widget.note?.text ?? '',
+    );
     if (text == null || !mounted) return;
     await _run(() => _notes.setText(widget.block, text));
   }
@@ -140,7 +145,10 @@ class _AnnotatedBlockState extends ConsumerState<AnnotatedBlock> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop('delete'),
-            child: const Text('Delete', style: TextStyle(color: AppColors.wrong)),
+            child: Text(
+              'Delete',
+              style: TextStyle(color: ctx.palette.dangerFg),
+            ),
           ),
           TextButton(
             onPressed: () => Navigator.of(ctx).pop('edit'),
@@ -262,7 +270,9 @@ class _BlockActionsSheet extends StatelessWidget {
           children: [
             Text(
               'Highlight',
-              style: AppTheme.label.copyWith(color: context.palette.textPrimary),
+              style: AppTheme.label.copyWith(
+                color: context.palette.textPrimary,
+              ),
             ),
             const SizedBox(height: 10),
             Wrap(
@@ -272,9 +282,9 @@ class _BlockActionsSheet extends StatelessWidget {
                   _Swatch(
                     colour: c,
                     selected: c == current,
-                    onTap: () => Navigator.of(context).pop(
-                      _SetColour(c == current ? null : c),
-                    ),
+                    onTap: () => Navigator.of(
+                      context,
+                    ).pop(_SetColour(c == current ? null : c)),
                   ),
                 if (current != null)
                   TextButton(
@@ -287,7 +297,10 @@ class _BlockActionsSheet extends StatelessWidget {
             const SizedBox(height: 8),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Icon(Icons.sticky_note_2_outlined, color: context.palette.textPrimary),
+              leading: Icon(
+                Icons.sticky_note_2_outlined,
+                color: context.palette.textPrimary,
+              ),
               title: Text(
                 note?.hasText == true ? 'Edit note' : 'Add a note',
                 style: TextStyle(color: context.palette.textPrimary),
@@ -297,10 +310,13 @@ class _BlockActionsSheet extends StatelessWidget {
             if (note != null)
               ListTile(
                 contentPadding: EdgeInsets.zero,
-                leading: const Icon(Icons.delete_outline, color: AppColors.wrong),
-                title: const Text(
+                leading: const Icon(
+                  Icons.delete_outline,
+                  color: AppColors.wrong,
+                ),
+                title: Text(
                   'Remove highlight and note',
-                  style: TextStyle(color: AppColors.wrong),
+                  style: TextStyle(color: context.palette.dangerFg),
                 ),
                 onTap: () => Navigator.of(context).pop(const _RemoveAll()),
               ),
@@ -313,7 +329,11 @@ class _BlockActionsSheet extends StatelessWidget {
 }
 
 class _Swatch extends StatelessWidget {
-  const _Swatch({required this.colour, required this.selected, required this.onTap});
+  const _Swatch({
+    required this.colour,
+    required this.selected,
+    required this.onTap,
+  });
 
   final HighlightColour colour;
   final bool selected;
@@ -336,7 +356,9 @@ class _Swatch extends StatelessWidget {
             color: colour.colour,
             shape: BoxShape.circle,
             border: Border.all(
-              color: selected ? context.palette.textPrimary : context.palette.border,
+              color: selected
+                  ? context.palette.textPrimary
+                  : context.palette.border,
               width: selected ? 3 : 1,
             ),
           ),
@@ -348,7 +370,10 @@ class _Swatch extends StatelessWidget {
 
 /// Asks for a note's text. Returns the text on Done, null on Cancel —
 /// the only point at which a note is written.
-Future<String?> showNoteEditor(BuildContext context, {required String initial}) {
+Future<String?> showNoteEditor(
+  BuildContext context, {
+  required String initial,
+}) {
   return showDialog<String>(
     context: context,
     builder: (_) => _NoteEditor(initial: initial),
@@ -508,7 +533,10 @@ class QuestionBookmarkButton extends StatelessWidget {
 
 // ─── The lesson's notes ──────────────────────────────────────────────
 
-Future<void> showLessonNotesSheet(BuildContext context, LearnResource resource) {
+Future<void> showLessonNotesSheet(
+  BuildContext context,
+  LearnResource resource,
+) {
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
@@ -531,7 +559,8 @@ class LessonNotesSheet extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lesson = lessonRefOf(resource);
-    final notes = ref.watch(lessonNotesProvider(lesson)).asData?.value ??
+    final notes =
+        ref.watch(lessonNotesProvider(lesson)).asData?.value ??
         const <LessonNote>[];
     final parts = partitionNotes(notes, parseLessonDoc(resource.body));
 
@@ -558,12 +587,16 @@ class LessonNotesSheet extends ConsumerWidget {
         children: [
           Text(
             'Your notes',
-            style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
+            style: AppTheme.heading3.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 4),
           Text(
             'Long-press any paragraph to highlight it or add a note.',
-            style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.caption.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const GuestNotesPrompt(),
           const SizedBox(height: 8),
@@ -572,7 +605,9 @@ class LessonNotesSheet extends ConsumerWidget {
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Text(
                 'No notes on this lesson yet.',
-                style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+                style: AppTheme.bodyMd.copyWith(
+                  color: context.palette.textSecondary,
+                ),
               ),
             ),
           for (final n in parts.attached) tile(n, detached: false),
@@ -581,12 +616,14 @@ class LessonNotesSheet extends ConsumerWidget {
             Text(
               'From an earlier version of this lesson',
               key: const ValueKey('detached-heading'),
-              style: AppTheme.label.copyWith(color: AppColors.warning),
+              style: AppTheme.label.copyWith(color: context.palette.warningFg),
             ),
             const SizedBox(height: 4),
             Text(
               'The paragraph these were written on has since been changed.',
-              style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
+              style: AppTheme.caption.copyWith(
+                color: context.palette.textSecondary,
+              ),
             ),
             const SizedBox(height: 8),
             for (final n in parts.detached) tile(n, detached: true),
@@ -664,7 +701,10 @@ class NoteTile extends StatelessWidget {
                   visualDensity: VisualDensity.compact,
                   iconSize: 18,
                   onPressed: onDelete,
-                  icon: Icon(Icons.delete_outline, color: context.palette.textSecondary),
+                  icon: Icon(
+                    Icons.delete_outline,
+                    color: context.palette.textSecondary,
+                  ),
                 ),
             ],
           ),
