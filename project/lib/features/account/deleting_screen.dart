@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/widgets/ui/ui.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/account_repository.dart';
 import '../../core/theme/app_colors.dart';
@@ -79,10 +80,10 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const Icon(
-                    Icons.schedule_rounded,
-                    size: 40,
+                  const IconTile(
+                    icon: Icons.schedule_rounded,
                     color: AppColors.warning,
+                    size: 56,
                   ),
                   const SizedBox(height: 16),
                   Text(
@@ -105,43 +106,26 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
                   ),
                   if (_message != null) ...[
                     const SizedBox(height: 16),
-                    Text(
-                      _message!,
-                      style: AppTheme.bodyMd.copyWith(
-                        color: context.palette.dangerFg,
-                      ),
+                    InlineAlert(
+                      tone: Tone.danger,
+                      message: _message!,
+                      announce: true,
                     ),
                   ],
                   const SizedBox(height: 28),
-                  SizedBox(
-                    height: 52,
-                    child: ElevatedButton(
-                      onPressed: _busy ? null : _restore,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.primary,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      child: Text(
-                        'Keep my account',
-                        style: AppTheme.btnLabel.copyWith(color: Colors.white),
-                      ),
-                    ),
+                  AppButton(
+                    label: 'Keep my account',
+                    size: ButtonSize.lg,
+                    expand: true,
+                    loading: _busy,
+                    onPressed: _restore,
                   ),
                   const SizedBox(height: 12),
-                  OutlinedButton(
+                  AppButton(
+                    label: 'Delete it now',
+                    tone: ButtonTone.destructive,
+                    expand: true,
                     onPressed: _busy ? null : _deleteNow,
-                    style: OutlinedButton.styleFrom(
-                      minimumSize: const Size.fromHeight(48),
-                      side: const BorderSide(color: AppColors.wrong),
-                    ),
-                    child: Text(
-                      'Delete it now',
-                      style: AppTheme.btnLabel.copyWith(
-                        color: context.palette.dangerFg,
-                      ),
-                    ),
                   ),
                   const SizedBox(height: 8),
                   TextButton(

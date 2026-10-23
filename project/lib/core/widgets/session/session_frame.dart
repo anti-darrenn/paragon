@@ -371,6 +371,13 @@ class SessionKeys extends StatelessWidget {
   }
 }
 
+/// A bar's padding: the same side gutter as [SessionLayout]'s column, so
+/// the bar's edges line up with the question's.
+EdgeInsets barPadding(BuildContext context) {
+  final gutter = MediaQuery.sizeOf(context).width < 600 ? 16.0 : 24.0;
+  return EdgeInsets.fromLTRB(gutter, 12, gutter, 12);
+}
+
 /// Where an instant-feedback question stands.
 enum SessionVerdict {
   /// Not checked yet.
@@ -457,7 +464,7 @@ class SessionActionBar extends StatelessWidget {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: kSessionMaxWidth + 48),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: barPadding(context),
               child: wide
                   ? Row(
                       children: [
@@ -494,6 +501,7 @@ class SessionNavBar extends StatelessWidget {
     this.onBack,
     this.backLabel = 'Back',
     this.nextLoading = false,
+    this.nextTone = ButtonTone.primary,
   });
 
   final String nextLabel;
@@ -503,6 +511,9 @@ class SessionNavBar extends StatelessWidget {
   final VoidCallback? onBack;
   final String backLabel;
   final bool nextLoading;
+
+  /// [ButtonTone.success] for a final submit.
+  final ButtonTone nextTone;
 
   @override
   Widget build(BuildContext context) {
@@ -519,7 +530,7 @@ class SessionNavBar extends StatelessWidget {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: kSessionMaxWidth + 48),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: barPadding(context),
               child: Row(
                 children: [
                   AppButton(
@@ -532,6 +543,7 @@ class SessionNavBar extends StatelessWidget {
                   Expanded(
                     child: AppButton(
                       label: nextLabel,
+                      tone: nextTone,
                       onPressed: onNext,
                       loading: nextLoading,
                       expand: true,

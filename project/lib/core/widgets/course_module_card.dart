@@ -10,6 +10,7 @@ import '../repositories/course_repository.dart';
 import '../repositories/progress_repository.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/tokens.dart';
 import 'page_layout.dart';
 import 'mastery_indicator.dart';
 import '../theme/app_palette.dart';
@@ -442,10 +443,12 @@ class _TopicLinkState extends State<TopicLink> {
   @override
   Widget build(BuildContext context) {
     final isInteractive = !widget.topic.isPlaceholder && widget.onTap != null;
+    // Words stay in the palette's readable colours: subject colours are
+    // for marks and fills, and several fall short as text on white.
     final nameColor = !isInteractive
         ? context.palette.textSecondary
         : _isHovered
-        ? widget.accent
+        ? context.palette.textStrong
         : context.palette.textPrimary;
 
     final content = Row(
@@ -491,12 +494,11 @@ class _TopicLinkState extends State<TopicLink> {
                     // is left in it.
                     ? widget.level.label
                     : widget.topic.counts.label,
-                style: AppTheme.caption.copyWith(
-                  color: widget.level.isStarted
-                      ? widget.accent
-                      : context.palette.textSecondary.withAlpha(
-                          (0.75 * 255).round(),
-                        ),
+                style: AppTheme.label.copyWith(
+                  color: context.palette.textSecondary,
+                  fontWeight: widget.level.isStarted
+                      ? FontWeight.w600
+                      : FontWeight.w500,
                 ),
               ),
               if (!widget.topic.isPlaceholder && widget.topic.lessonCount > 0)
@@ -523,14 +525,23 @@ class _TopicLinkState extends State<TopicLink> {
       );
     }
 
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      onEnter: (_) => setState(() => _isHovered = true),
-      onExit: (_) => setState(() => _isHovered = false),
-      child: GestureDetector(
+    // A real link: focusable, with a ripple and a hover state, read as
+    // the topic's name and level. It was a GestureDetector a keyboard
+    // could not reach.
+    return Semantics(
+      link: true,
+      label: widget.topic.name,
+      value: widget.level.label,
+      excludeSemantics: true,
+      onTap: () => widget.onTap!(widget.topic),
+      child: InkWell(
         onTap: () => widget.onTap!(widget.topic),
-        behavior: HitTestBehavior.opaque,
-        child: content,
+        onHover: (h) => setState(() => _isHovered = h),
+        borderRadius: BorderRadius.circular(Radii.sm),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+          child: content,
+        ),
       ),
     );
   }

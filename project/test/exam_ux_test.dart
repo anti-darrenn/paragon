@@ -227,7 +227,7 @@ void main() {
 
       await tester.tap(find.text('Submit'));
       await tester.pumpAndSettle();
-      expect(find.text('Exam Complete'), findsOneWidget);
+      expect(find.text('Exam complete'), findsOneWidget);
       expect(store.saved, isEmpty);
     });
 

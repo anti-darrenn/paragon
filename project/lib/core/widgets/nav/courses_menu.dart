@@ -189,9 +189,10 @@ class _CourseTileState extends State<_CourseTile> {
       cursor: SystemMouseCursors.click,
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
-      child: GestureDetector(
+      child: InkWell(
         key: ValueKey('nav.course.${c.slug}'),
         onTap: widget.onTap,
+        borderRadius: BorderRadius.circular(10),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 120),
           width: 290,

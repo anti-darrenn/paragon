@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 class AppColors {
   // ── Primary brand color ───────────────────────────────────────────
   static const primary = Color(0xFFFF7700); // Orange — from Figma
+
+  /// Words and icons on an orange fill: a primary button, a selected
+  /// option's letter. Near-black, 6.2:1 on the orange; white was 2.7:1,
+  /// which fails WCAG AA for text (UI pass, 2026-10-23). Also reads on the
+  /// subject colours and the medal colours.
+  static const onPrimary = Color(0xFF1B1F24);
   static const primaryDark = Color(
     0xFFCC5F00,
   ); // Pressed shade — primary at 80% (~20% darker)
@@ -88,6 +94,21 @@ class AppColors {
   static const googleBlue = Color(
     0xFF4285F4,
   ); // Google "G" mark, per Google brand guidelines
+
+  /// The "Continue with Google" button, in Google's own two versions
+  /// (Sign in with Google branding guidelines): white with a grey outline
+  /// on a light page, near-black with a grey outline on a dark one. Fixed
+  /// by Google, so not part of the palette.
+  static const googleButtonOnLight = (
+    fill: Color(0xFFFFFFFF),
+    stroke: Color(0xFF747775),
+    text: Color(0xFF1F1F1F),
+  );
+  static const googleButtonOnDark = (
+    fill: Color(0xFF131314),
+    stroke: Color(0xFF8E918F),
+    text: Color(0xFFE3E3E3),
+  );
 
   // ── Text ──────────────────────────────────────────────────────────
   static const textPrimaryDark = Color(0xFFE6EDF3);
