@@ -117,12 +117,25 @@ class _DeckStudyScreenState extends ConsumerState<DeckStudyScreen> {
       body: PageBody(
         children: [
           if (done)
-            EmptyState(
-              icon: Icons.celebration_outlined,
-              title: 'Session done',
-              message:
-                  'You knew $_knew of ${_knew + _missed}. The ones you missed '
-                  'come back tomorrow.',
+            Padding(
+              padding: const EdgeInsets.only(top: 16),
+              child: SessionSummary(
+                title: 'Session done',
+                correct: _knew,
+                total: _knew + _missed,
+                subtitle:
+                    'You knew $_knew of ${_knew + _missed}. The ones you '
+                    'missed come back tomorrow.',
+                celebrate: SessionSummary.isWorthCelebrating(
+                  correct: _knew,
+                  total: _knew + _missed,
+                ),
+                primary: AppButton(
+                  label: 'Back to my decks',
+                  expand: true,
+                  onPressed: () => context.popOrGo(),
+                ),
+              ),
             )
           else ...[
             Text(
@@ -130,12 +143,7 @@ class _DeckStudyScreenState extends ConsumerState<DeckStudyScreen> {
               style: AppTheme.caption.copyWith(color: palette.textSecondary),
             ),
             const SizedBox(height: 8),
-            LinearProgressIndicator(
-              value: _index / queue.length,
-              minHeight: 3,
-              backgroundColor: palette.track,
-              color: AppColors.primary,
-            ),
+            AppProgressBar(value: _index / queue.length),
             const SizedBox(height: 20),
             FlipCard(
               key: ValueKey(queue[_index].id),

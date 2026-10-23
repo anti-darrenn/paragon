@@ -221,14 +221,14 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                                 width: 20,
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2,
-                                  color: Colors.white,
+                                  color: AppColors.onPrimary,
                                 ),
                               )
                             : Text(
                                 'Create account',
                                 style: AppTheme.btnLabel.copyWith(
                                   color: _emailFormValid
-                                      ? Colors.white
+                                      ? AppColors.onPrimary
                                       : context.palette.textSecondary,
                                 ),
                               ),

@@ -511,7 +511,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: const Text('Submit', style: TextStyle(color: Colors.white)),
+            child: const Text(
+              'Submit',
+              style: TextStyle(color: AppColors.onPrimary),
+            ),
           ),
         ],
       ),
@@ -793,7 +796,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                                       letter,
                                       style: TextStyle(
                                         color: isSelected
-                                            ? Colors.white
+                                            ? AppColors.onPrimary
                                             : context.palette.onMedium,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 13,
@@ -999,7 +1002,7 @@ class _StripItem extends StatelessWidget {
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
                     color: isActive
-                        ? Colors.white
+                        ? AppColors.onPrimary
                         : isAnswered
                         ? context.palette.textStrong
                         : context.palette.onMedium,

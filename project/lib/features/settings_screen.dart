@@ -236,36 +236,16 @@ class SettingsScreen extends ConsumerWidget {
                     const _AnalyticsToggle(),
                     const SizedBox(height: 20),
 
-                    SizedBox(
-                      height: 48,
-                      child: OutlinedButton(
-                        onPressed: () async {
-                          await signOutToWelcome(context);
-                        },
-                        style: OutlinedButton.styleFrom(
-                          side: BorderSide(color: context.palette.border),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                        ),
-                        child: Text(
-                          'Sign out',
-                          style: AppTheme.btnLabel.copyWith(
-                            color: context.palette.textPrimary,
-                          ),
-                        ),
-                      ),
+                    AppButton(
+                      label: 'Sign out',
+                      tone: ButtonTone.secondary,
+                      icon: Icons.logout_rounded,
+                      expand: true,
+                      onPressed: () => signOutToWelcome(context),
                     ),
 
                     const SizedBox(height: 36),
-                    Text(
-                      'DANGER ZONE',
-                      style: AppTheme.caption.copyWith(
-                        color: context.palette.dangerFg,
-                        letterSpacing: 0.8,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
+                    GroupLabel('Danger zone', color: context.palette.dangerFg),
                     const _DeleteAccountPanel(),
                   ],
                 ),
@@ -331,25 +311,19 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
               ),
             ),
           ),
-          TextButton(
+          // The gentler choice is the main one; going at once is the
+          // red one beside it.
+          AppButton(
+            label: isGuest ? 'Delete everything' : 'Delete now',
+            tone: isGuest ? ButtonTone.destructive : ButtonTone.ghost,
             onPressed: () => Navigator.of(context).pop(_DeleteChoice.now),
-            child: Text(
-              isGuest ? 'Delete everything' : 'Delete now',
-              style: AppTheme.btnLabel.copyWith(
-                color: context.palette.dangerFg,
-              ),
-            ),
           ),
           if (!isGuest)
-            TextButton(
+            AppButton(
+              label: 'Delete in $days days',
+              tone: ButtonTone.destructive,
               onPressed: () =>
                   Navigator.of(context).pop(_DeleteChoice.scheduled),
-              child: Text(
-                'Delete in $days days',
-                style: AppTheme.btnLabel.copyWith(
-                  color: context.palette.dangerFg,
-                ),
-              ),
             ),
         ],
       ),
@@ -383,15 +357,8 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: AppColors.wrong.withAlpha((0.07 * 255).round()),
-        border: Border.all(
-          color: AppColors.wrong.withAlpha((0.35 * 255).round()),
-        ),
-        borderRadius: BorderRadius.circular(10),
-      ),
+    return SurfaceCard(
+      borderColor: AppColors.wrong.withAlpha(90),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -412,37 +379,17 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
           ),
           if (_message != null) ...[
             const SizedBox(height: 12),
-            Text(
-              _message!,
-              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-            ),
+            InlineAlert(tone: Tone.danger, message: _message!, announce: true),
           ],
           const SizedBox(height: 14),
-          SizedBox(
-            height: 44,
-            child: OutlinedButton(
-              onPressed: _isDeleting ? null : _confirmAndDelete,
-              style: OutlinedButton.styleFrom(
-                side: const BorderSide(color: AppColors.wrong),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: _isDeleting
-                  ? const SizedBox(
-                      height: 18,
-                      width: 18,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: AppColors.wrong,
-                      ),
-                    )
-                  : Text(
-                      'Delete my account',
-                      style: AppTheme.btnLabel.copyWith(
-                        color: context.palette.dangerFg,
-                      ),
-                    ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: AppButton(
+              label: 'Delete my account',
+              tone: ButtonTone.destructive,
+              icon: Icons.delete_outline_rounded,
+              loading: _isDeleting,
+              onPressed: _confirmAndDelete,
             ),
           ),
         ],
@@ -459,13 +406,8 @@ class _Card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: context.palette.surface,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppTheme.radiusMd + 2),
-        side: BorderSide(color: context.palette.border),
-      ),
-      clipBehavior: Clip.antiAlias,
+    return SurfaceCard(
+      padding: EdgeInsets.zero,
       child: Column(children: children),
     );
   }
@@ -561,10 +503,8 @@ class _Row extends StatelessWidget {
                   const SizedBox(height: 2),
                   Text(
                     hint!,
-                    style: AppTheme.caption.copyWith(
-                      color: context.palette.textSecondary.withAlpha(
-                        (0.7 * 255).round(),
-                      ),
+                    style: AppTheme.label.copyWith(
+                      color: context.palette.textSecondary,
                     ),
                   ),
                 ],
@@ -575,15 +515,18 @@ class _Row extends StatelessWidget {
           // One line, shrunk to fit if it must be: an email has no spaces
           // to wrap at, so wrapping broke it mid-word ("…gmail.co" / "m").
           Flexible(
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
+            child: Align(
               alignment: Alignment.centerRight,
-              child: Text(
-                value,
-                maxLines: 1,
-                style: AppTheme.bodyMd.copyWith(
-                  color: context.palette.textPrimary,
-                  fontWeight: FontWeight.w600,
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerRight,
+                child: Text(
+                  value,
+                  maxLines: 1,
+                  style: AppTheme.bodyMd.copyWith(
+                    color: context.palette.textPrimary,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             ),
@@ -612,11 +555,11 @@ class _EditableRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: onTap,
-        behavior: HitTestBehavior.opaque,
+    // A real button (it was a GestureDetector a keyboard could not reach).
+    return InkWell(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.only(right: 12),
         child: Row(
           children: [
             Expanded(
@@ -692,12 +635,7 @@ class _AnalyticsToggle extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final enabled = ref.watch(analyticsEnabledProvider);
 
-    return Container(
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        border: Border.all(color: context.palette.border),
-        borderRadius: BorderRadius.circular(10),
-      ),
+    return SurfaceCard(
       padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
       child: Row(
         children: [
@@ -715,7 +653,7 @@ class _AnalyticsToggle extends ConsumerWidget {
                 Text(
                   'Anonymous statistics about which topics get practised. '
                   'Never your name, answers or anything you typed.',
-                  style: AppTheme.caption.copyWith(
+                  style: AppTheme.label.copyWith(
                     color: context.palette.textSecondary,
                   ),
                 ),
@@ -724,7 +662,6 @@ class _AnalyticsToggle extends ConsumerWidget {
           ),
           Switch(
             value: enabled,
-            activeThumbColor: AppColors.primary,
             onChanged: (v) =>
                 ref.read(analyticsEnabledProvider.notifier).set(v),
           ),

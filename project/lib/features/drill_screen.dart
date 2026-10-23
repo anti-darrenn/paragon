@@ -774,9 +774,7 @@ class _Locked extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: isTestGate ? onTakeTest : onSignIn,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: isTestGate
-                      ? AppColors.secondary
-                      : AppColors.primary,
+                  backgroundColor: AppColors.primary,
                   disabledBackgroundColor: context.palette.track,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
@@ -786,7 +784,7 @@ class _Locked extends StatelessWidget {
                       : access == DrillAccess.guestBlocked
                       ? 'Create an account'
                       : 'Sign in',
-                  style: AppTheme.btnLabel.copyWith(color: Colors.white),
+                  style: AppTheme.btnLabel.copyWith(color: AppColors.onPrimary),
                 ),
               ),
             ),

@@ -107,7 +107,7 @@ class _AnswerOptionState extends State<AnswerOption>
         AppColors.primary,
         p.textStrong,
         AppColors.primary,
-        Colors.white,
+        AppColors.onPrimary,
       ),
       AnswerOptionState.correct => (
         AppColors.correct,
