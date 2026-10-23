@@ -37,62 +37,63 @@ class _TheoryScreenState extends ConsumerState<TheoryScreen> {
         if (!didPop) setState(() => _open = null);
       },
       child: Scaffold(
-      appBar: ParagonAppBar(
-        title: Text(
-          open == null
-              ? 'Theory practice'
-              : 'WAEC ${open.examYear} · Q${open.number}',
+        appBar: ParagonAppBar(
+          title: Text(
+            open == null
+                ? 'Theory practice'
+                : 'WAEC ${open.examYear} · Q${open.number}',
+          ),
         ),
-      ),
-      body: async.when(
-        loading: () => const PageBody(children: [SkeletonPage()]),
-        error: (e, _) => LoadError(
-          error: e,
-          message: "Couldn't load the theory questions.",
-          onRetry: () =>
-              ref.invalidate(theoryQuestionsProvider(widget.subjectId)),
-        ),
-        data: (list) => open != null
-            ? _SelfMark(
-                key: ValueKey(open.id),
-                question: open,
-                onBack: () => setState(() => _open = null),
-              )
-            : PageBody(
-                children: [
-                  const PageIntro(
-                    // The app bar names the page on a phone.
-                    wideOnly: true,
-                    title: 'Theory practice',
-                    subtitle:
-                        'Work each question on paper, then mark yourself '
-                        'against the scheme, one step at a time.',
-                  ),
-                  if (list.isEmpty)
-                    const EmptyState(
-                      illustration: IllustrationAsset.empty,
-                      title: 'No theory questions yet',
-                      message:
-                          'Paper 2 questions appear here once there are '
-                          'enough to practise.',
-                    )
-                  else
-                    RowGroup(
-                      children: [
-                        for (final q in list)
-                          ListRow(
-                            icon: Icons.edit_note_rounded,
-                            iconColor: AppColors.secondary,
-                            title: 'WAEC ${q.examYear} · Question ${q.number}',
-                            subtitle: '${q.totalMarks} marks',
-                            onTap: () => setState(() => _open = q),
-                          ),
-                      ],
+        body: async.when(
+          loading: () => const PageBody(children: [SkeletonPage()]),
+          error: (e, _) => LoadError(
+            error: e,
+            message: "Couldn't load the theory questions.",
+            onRetry: () =>
+                ref.invalidate(theoryQuestionsProvider(widget.subjectId)),
+          ),
+          data: (list) => open != null
+              ? _SelfMark(
+                  key: ValueKey(open.id),
+                  question: open,
+                  onBack: () => setState(() => _open = null),
+                )
+              : PageBody(
+                  children: [
+                    const PageIntro(
+                      // The app bar names the page on a phone.
+                      wideOnly: true,
+                      title: 'Theory practice',
+                      subtitle:
+                          'Work each question on paper, then mark yourself '
+                          'against the scheme, one step at a time.',
                     ),
-                ],
-              ),
+                    if (list.isEmpty)
+                      const EmptyState(
+                        illustration: IllustrationAsset.empty,
+                        title: 'No theory questions yet',
+                        message:
+                            'Paper 2 questions appear here once there are '
+                            'enough to practise.',
+                      )
+                    else
+                      RowGroup(
+                        children: [
+                          for (final q in list)
+                            ListRow(
+                              icon: Icons.edit_note_rounded,
+                              iconColor: AppColors.secondary,
+                              title:
+                                  'WAEC ${q.examYear} · Question ${q.number}',
+                              subtitle: '${q.totalMarks} marks',
+                              onTap: () => setState(() => _open = q),
+                            ),
+                        ],
+                      ),
+                  ],
+                ),
+        ),
       ),
-    ),
     );
   }
 }

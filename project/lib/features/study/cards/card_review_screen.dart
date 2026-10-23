@@ -237,21 +237,20 @@ class _Chooser extends ConsumerWidget {
   final String subjectId;
   final void Function(List<IndexedCard>, CardDeck, String) onStart;
 
-  Widget _message(String title, String text, {VoidCallback? onRetry}) =>
-      Center(
-        child: SingleChildScrollView(
-          child: EmptyState(
-            illustration: onRetry == null
-                ? IllustrationAsset.empty
-                : IllustrationAsset.offline,
-            title: title,
-            message: text,
-            action: onRetry == null
-                ? null
-                : AppButton(label: 'Try again', onPressed: onRetry),
-          ),
-        ),
-      );
+  Widget _message(String title, String text, {VoidCallback? onRetry}) => Center(
+    child: SingleChildScrollView(
+      child: EmptyState(
+        illustration: onRetry == null
+            ? IllustrationAsset.empty
+            : IllustrationAsset.offline,
+        title: title,
+        message: text,
+        action: onRetry == null
+            ? null
+            : AppButton(label: 'Try again', onPressed: onRetry),
+      ),
+    ),
+  );
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

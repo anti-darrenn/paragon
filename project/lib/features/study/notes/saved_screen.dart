@@ -139,7 +139,10 @@ class _BookmarkList extends ConsumerWidget {
                   ),
                   trailing: IconButton(
                     tooltip: 'Remove from saved',
-                    icon: Icon(Icons.bookmark, color: context.palette.primaryFg),
+                    icon: Icon(
+                      Icons.bookmark,
+                      color: context.palette.primaryFg,
+                    ),
                     onPressed: () =>
                         ref.read(bookmarksProvider.notifier).remove(b.key),
                   ),

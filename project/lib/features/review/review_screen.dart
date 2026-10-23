@@ -357,20 +357,20 @@ class _ReviewCard extends StatelessWidget {
     return SurfaceCard(
       onTap: onTap,
       child: Row(
-            children: [
-              Expanded(
-                child: _CardHeading(
-                  icon: icon,
-                  accent: accent,
-                  title: title,
-                  subtitle: subtitle,
-                ),
-              ),
-              Icon(
-                Icons.chevron_right_rounded,
-                color: context.palette.textSecondary,
-              ),
-            ],
+        children: [
+          Expanded(
+            child: _CardHeading(
+              icon: icon,
+              accent: accent,
+              title: title,
+              subtitle: subtitle,
+            ),
+          ),
+          Icon(
+            Icons.chevron_right_rounded,
+            color: context.palette.textSecondary,
+          ),
+        ],
       ),
     );
   }

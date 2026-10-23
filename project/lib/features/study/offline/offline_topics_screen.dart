@@ -65,50 +65,57 @@ class OfflineTopicsScreen extends ConsumerWidget {
                       child: SurfaceCard(
                         padding: EdgeInsets.zero,
                         child: ListTile(
-                        contentPadding: const EdgeInsets.fromLTRB(16, 6, 8, 6),
-                        leading: const IconTile(
-                          icon: Icons.download_done_rounded,
-                          color: AppColors.correct,
-                          size: 36,
-                        ),
-                        key: ValueKey('offline.row.${t.topicId}'),
-                        onTap: t.courseKey.isEmpty
-                            ? null
-                            : () => context.push(t.path),
-                        title: Text(
-                          t.name.isEmpty ? 'Untitled topic' : t.name,
-                          style: AppTheme.bodyMd.copyWith(
-                            color: context.palette.textPrimary,
+                          contentPadding: const EdgeInsets.fromLTRB(
+                            16,
+                            6,
+                            8,
+                            6,
+                          ),
+                          leading: const IconTile(
+                            icon: Icons.download_done_rounded,
+                            color: AppColors.correct,
+                            size: 36,
+                          ),
+                          key: ValueKey('offline.row.${t.topicId}'),
+                          onTap: t.courseKey.isEmpty
+                              ? null
+                              : () => context.push(t.path),
+                          title: Text(
+                            t.name.isEmpty ? 'Untitled topic' : t.name,
+                            style: AppTheme.bodyMd.copyWith(
+                              color: context.palette.textPrimary,
+                            ),
+                          ),
+                          subtitle: Text(
+                            [
+                              'Saved ${formatSavedDate(t.savedAt)}',
+                              'about ${t.itemCount} items',
+                              if (t.videoCount > 0)
+                                t.videoCount == 1
+                                    ? 'video needs internet'
+                                    : '${t.videoCount} videos need internet',
+                            ].join(' · '),
+                            style: caption,
+                          ),
+                          trailing: IconButton(
+                            key: ValueKey('offline.remove.${t.topicId}'),
+                            tooltip: 'Remove from list',
+                            color: context.palette.textSecondary,
+                            icon: const Icon(Icons.delete_outline_rounded),
+                            onPressed: () async {
+                              await ref
+                                  .read(savedTopicsProvider.notifier)
+                                  .remove(t.topicId);
+                              if (!context.mounted) return;
+                              ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+                                const SnackBar(
+                                  content: Text(kOfflineRemoveNote),
+                                ),
+                              );
+                            },
                           ),
                         ),
-                        subtitle: Text(
-                          [
-                            'Saved ${formatSavedDate(t.savedAt)}',
-                            'about ${t.itemCount} items',
-                            if (t.videoCount > 0)
-                              t.videoCount == 1
-                                  ? 'video needs internet'
-                                  : '${t.videoCount} videos need internet',
-                          ].join(' · '),
-                          style: caption,
-                        ),
-                        trailing: IconButton(
-                          key: ValueKey('offline.remove.${t.topicId}'),
-                          tooltip: 'Remove from list',
-                          color: context.palette.textSecondary,
-                          icon: const Icon(Icons.delete_outline_rounded),
-                          onPressed: () async {
-                            await ref
-                                .read(savedTopicsProvider.notifier)
-                                .remove(t.topicId);
-                            if (!context.mounted) return;
-                            ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-                              const SnackBar(content: Text(kOfflineRemoveNote)),
-                            );
-                          },
-                        ),
                       ),
-                    ),
                     ),
               ],
             ),
