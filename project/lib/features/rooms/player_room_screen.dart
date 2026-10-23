@@ -147,14 +147,32 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
     return Scaffold(
       appBar: ParagonAppBar(title: Text('Room ${widget.code}')),
       body: async.isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const LoadingView(label: 'Finding the room')
           : room == null
-          ? EmptyState(
-              icon: Icons.meeting_room_outlined,
-              title: 'No room has that code',
-              action: TextButton(
-                onPressed: () => context.go('/join'),
-                child: const Text('Try another code'),
+          ? Center(
+              child: SingleChildScrollView(
+                child: EmptyState(
+                  illustration: async.hasError
+                      ? IllustrationAsset.offline
+                      : IllustrationAsset.notFound,
+                  // A failed load is not a wrong code.
+                  title: async.hasError
+                      ? "Couldn't reach the room"
+                      : 'No room has that code',
+                  message: async.hasError
+                      ? 'Check your connection and try again.'
+                      : null,
+                  action: async.hasError
+                      ? AppButton(
+                          label: 'Try again',
+                          onPressed: () =>
+                              ref.invalidate(roomProvider(widget.code)),
+                        )
+                      : AppButton(
+                          label: 'Try another code',
+                          onPressed: () => context.go('/join'),
+                        ),
+                ),
               ),
             )
           : PageBody(children: [_stage(context, room, palette)]),
@@ -164,9 +182,19 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
   Widget _stage(BuildContext context, Room room, AppPalette palette) {
     if (!_joined) {
       if (room.state == RoomState.closed || room.state == RoomState.podium) {
-        return const EmptyState(
+        return EmptyState(
           icon: Icons.flag_outlined,
           title: 'This quiz has finished',
+          message: 'Ask for the next code, or practise on your own.',
+          action: AppButton(
+            label: 'Join another quiz',
+            onPressed: () => context.go('/join'),
+          ),
+          secondaryAction: AppButton(
+            label: 'Go home',
+            tone: ButtonTone.ghost,
+            onPressed: () => context.go('/'),
+          ),
         );
       }
       return Column(

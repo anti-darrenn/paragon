@@ -77,7 +77,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
         () => _error = blocked
             ? 'Your photo was removed by the Paragon team, so a new one '
                   'cannot be added. Choose a picture or your initials.'
-            : "Couldn't use that photo. ${e is Exception ? '$e' : 'Try another.'}",
+            : "Couldn't use that photo. Try another, or a smaller one.",
       );
     } finally {
       if (mounted) setState(() => _uploading = false);
