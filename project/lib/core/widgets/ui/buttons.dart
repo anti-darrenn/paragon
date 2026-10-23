@@ -155,7 +155,7 @@ abstract final class AppButtonStyle {
       ButtonTone.primary => base.merge(
         FilledButton.styleFrom(
           backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
+          foregroundColor: AppColors.onPrimary,
           disabledBackgroundColor: p.track,
           disabledForegroundColor: p.textSecondary,
         ),

@@ -26,6 +26,7 @@ import 'studio/picture_reports.dart';
 import 'studio/question_bank.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import 'studio/studio_error.dart';
 
 /// The studio's sections, in the rail's order. [name] is the `?s=` value
 /// (`adminSectionPath`), so every section has its own address.
@@ -729,10 +730,8 @@ class _StatusQueue extends ConsumerWidget {
         const SizedBox(height: 12),
         items.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load this list.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-          ),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load this list.", error: e),
           data: (list) => list.isEmpty
               ? Text(
                   empty,
@@ -881,9 +880,7 @@ class _MapSummaryState extends ConsumerState<_MapSummary> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't rebuild: $e")));
+        showStudioFailure(context, "Couldn't rebuild.", e);
       }
     } finally {
       if (mounted) setState(() => _rebuilding = false);
@@ -932,7 +929,21 @@ class _MapSummaryState extends ConsumerState<_MapSummary> {
           // Once after the search index gained topics and lessons, and
           // whenever topics are renamed or added outside the studio.
           TextButton.icon(
-            onPressed: _rebuilding ? null : () => _rebuild(all: true),
+            onPressed: _rebuilding
+                ? null
+                : () async {
+                    // Reads every subject's published lessons: asked first.
+                    final ok = await confirmDialog(
+                      context,
+                      title: 'Rebuild every subject?',
+                      message:
+                          'Search, the glossary and revision cards are rebuilt '
+                          'for every subject. It reads all published lessons, '
+                          'so it uses part of the day\'s reads.',
+                      confirmLabel: 'Rebuild all',
+                    );
+                    if (ok) _rebuild(all: true);
+                  },
             icon: const Icon(Icons.sync_rounded, size: 18),
             label: const Text('Rebuild all subjects'),
           ),
@@ -1156,10 +1167,8 @@ class _FlagQueueState extends ConsumerState<_FlagQueue> {
         ),
         queue.when(
           loading: () => const StudioListSkeleton(),
-          error: (e, _) => Text(
-            "Couldn't load reports.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-          ),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load reports.", error: e),
           data: (rows) {
             final shown = _showResolved
                 ? rows
@@ -1335,23 +1344,16 @@ class _LessonReports extends ConsumerWidget {
         ),
         reports.when(
           loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load lesson reports.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-          ),
+          error: (e, _) =>
+              StudioError(message: "Couldn't load lesson reports.", error: e),
           data: (list) => list.isEmpty
-              ? Text(
-                  'No open lesson reports.',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.textSecondary,
-                  ),
+              ? const EmptyState(
+                  compact: true,
+                  icon: Icons.check_circle_outline_rounded,
+                  title: 'No open lesson reports',
                 )
-              : Container(
-                  decoration: BoxDecoration(
-                    color: context.palette.surface,
-                    border: Border.all(color: context.palette.border),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
+              : SurfaceCard(
+                  padding: EdgeInsets.zero,
                   child: Column(
                     children: [
                       for (final r in list)
@@ -1369,11 +1371,11 @@ class _LessonReports extends ConsumerWidget {
                               color: context.palette.textPrimary,
                             ),
                           ),
-                          subtitle: Text(
-                            r.resourceId,
-                            style: AppTheme.caption.copyWith(
-                              color: context.palette.textSecondary,
-                            ),
+                          // The lesson's title, not its id: one metered read
+                          // per open report, staff only.
+                          subtitle: _ResourceTitle(
+                            topicId: r.topicId,
+                            resourceId: r.resourceId,
                           ),
                           trailing: Wrap(
                             children: [
@@ -1394,6 +1396,32 @@ class _LessonReports extends ConsumerWidget {
                 ),
         ),
       ],
+    );
+  }
+}
+
+/// A reported lesson's title, read once; its id while it loads or if it
+/// has gone.
+class _ResourceTitle extends ConsumerWidget {
+  const _ResourceTitle({required this.topicId, required this.resourceId});
+
+  final String topicId;
+  final String resourceId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final resource = ref
+        .watch(
+          adminResourceProvider((topicId: topicId, resourceId: resourceId)),
+        )
+        .asData
+        ?.value;
+    final title = resource?.title.trim() ?? '';
+    return Text(
+      title.isEmpty ? resourceId : '${resource!.type.label}: $title',
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+      style: AppTheme.label.copyWith(color: context.palette.textSecondary),
     );
   }
 }

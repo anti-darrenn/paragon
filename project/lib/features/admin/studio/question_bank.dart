@@ -14,6 +14,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/ui/ui.dart';
 import '../admin_paths.dart';
 import 'question_widgets.dart';
+import 'studio_error.dart';
 
 /// The founder's question bank (owner's decision, 2026-10-17).
 ///
@@ -55,9 +56,7 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
       await openQuestion(context, ref, ids.first, list: ids);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Couldn't load the pending questions: $e")),
-        );
+        showStudioFailure(context, "Couldn't load the pending questions.", e);
       }
     } finally {
       if (mounted) setState(() => _loadingTopic = null);
@@ -70,10 +69,8 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
     final subjects = ref.watch(subjectsProvider);
     return subjects.when(
       loading: () => const StudioListSkeleton(),
-      error: (e, _) => Text(
-        "Couldn't load the subjects.\n$e",
-        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
-      ),
+      error: (e, _) =>
+          StudioError(message: "Couldn't load the subjects.", error: e),
       data: (list) {
         final subjectId = _subjectId ?? (list.isEmpty ? null : list.first.id);
         final topics = subjectId == null
@@ -112,12 +109,8 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
             if (topics != null)
               topics.when(
                 loading: () => const StudioListSkeleton(),
-                error: (e, _) => Text(
-                  "Couldn't load the topics.\n$e",
-                  style: AppTheme.bodyMd.copyWith(
-                    color: context.palette.dangerFg,
-                  ),
-                ),
+                error: (e, _) =>
+                    StudioError(message: "Couldn't load the topics.", error: e),
                 data: (ts) {
                   final pending = ts.fold<int>(0, (n, t) => n + t.pendingCount);
                   final vetted = ts.fold<int>(0, (n, t) => n + t.questionCount);

@@ -116,10 +116,40 @@ class _HostRoomScreenState extends ConsumerState<HostRoomScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final room = ref.watch(roomProvider(widget.code)).asData?.value;
+    final roomAsync = ref.watch(roomProvider(widget.code));
+    final room = roomAsync.asData?.value;
     final uid = ref.watch(currentUserProvider)?.uid;
     if (room == null) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      // Loading, or gone: a room that failed to load, or no longer exists,
+      // used to spin here for ever.
+      return Scaffold(
+        appBar: const ParagonAppBar(title: Text('Live quiz')),
+        body: roomAsync.isLoading
+            ? const LoadingView(label: 'Opening the room')
+            : Center(
+                child: SingleChildScrollView(
+                  child: EmptyState(
+                    illustration: IllustrationAsset.notFound,
+                    title: roomAsync.hasError
+                        ? "Couldn't open this room"
+                        : 'This room no longer exists',
+                    message: roomAsync.hasError
+                        ? 'Check your connection and try again.'
+                        : 'Rooms last a day. Start a new one for your class.',
+                    action: roomAsync.hasError
+                        ? AppButton(
+                            label: 'Try again',
+                            onPressed: () =>
+                                ref.invalidate(roomProvider(widget.code)),
+                          )
+                        : AppButton(
+                            label: 'Start a new room',
+                            onPressed: () => context.go('/rooms/new'),
+                          ),
+                  ),
+                ),
+              ),
+      );
     }
     if (room.hostUid != uid) {
       return Scaffold(
@@ -341,6 +371,17 @@ class _Lobby extends StatelessWidget {
           textAlign: TextAlign.center,
           style: AppTheme.bodyLg.copyWith(color: palette.textPrimary),
         ),
+        // An empty lobby says what to do, rather than "0 players" over
+        // nothing.
+        if (players.isEmpty) ...[
+          const SizedBox(height: 8),
+          const LoadingView(
+            label: 'Waiting for players to join with the code above',
+            showLabel: true,
+            delay: Duration.zero,
+            padding: EdgeInsets.symmetric(vertical: 24),
+          ),
+        ],
         const SizedBox(height: 12),
         Wrap(
           alignment: WrapAlignment.center,
