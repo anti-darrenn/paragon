@@ -697,131 +697,131 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: kSessionMaxWidth),
                 child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: context.palette.surface,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: context.palette.border),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: context.palette.surface,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: context.palette.border),
+                      ),
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Expanded(
-                            // No difficulty in a timed paper: WAEC does
-                            // not say which questions are the hard ones.
-                            child: QuestionSourceBadge(
-                              question: q,
-                              showDifficulty: false,
-                            ),
-                          ),
-                          _FlagButton(
-                            flagged: _flagged.contains(_currentIndex),
-                            onPressed: _toggleFlag,
-                          ),
-                        ],
-                      ),
-                      FullLatexView(
-                        latex: q.text,
-                        textStyle: AppTheme.questionStem.copyWith(
-                          color: context.palette.textStrong,
-                        ),
-                      ),
-                      QuestionImage(assetId: q.imageId),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 14),
-                ...List.generate(q.options.length, (i) {
-                  final isSelected = selectedOption == i;
-                  final letter = String.fromCharCode(65 + i);
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
-                    child: Semantics(
-                      button: true,
-                      selected: isSelected,
-                      inMutuallyExclusiveGroup: true,
-                      label: 'Option $letter: ${speakText(q.options[i])}',
-                      // excludeSemantics drops the InkWell's own action, so
-                      // the tap is given here — without it a screen reader
-                      // could hear an option but never choose it.
-                      onTap: () => _selectOption(i),
-                      excludeSemantics: true,
-                      child: InkWell(
-                        onTap: () => _selectOption(i),
-                        borderRadius: BorderRadius.circular(10),
-                        child: AnimatedContainer(
-                          duration: const Duration(milliseconds: 160),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 14,
-                            vertical: 13,
-                          ),
-                          decoration: BoxDecoration(
-                            color: isSelected
-                                ? AppColors.primary.withAlpha(
-                                    (0.1 * 255).round(),
-                                  )
-                                : context.palette.surface,
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: isSelected
-                                  ? AppColors.primary
-                                  : context.palette.border,
-                              width: 1.5,
-                            ),
-                          ),
-                          child: Row(
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              AnimatedContainer(
-                                duration: const Duration(milliseconds: 160),
-                                width: 28,
-                                height: 28,
-                                alignment: Alignment.center,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: isSelected
-                                      ? AppColors.primary
-                                      : context.palette.track,
-                                ),
-                                child: Text(
-                                  letter,
-                                  style: TextStyle(
-                                    color: isSelected
-                                        ? Colors.white
-                                        : context.palette.onMedium,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 13,
-                                  ),
+                              Expanded(
+                                // No difficulty in a timed paper: WAEC does
+                                // not say which questions are the hard ones.
+                                child: QuestionSourceBadge(
+                                  question: q,
+                                  showDifficulty: false,
                                 ),
                               ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: MathText(
-                                  text: q.options[i],
-                                  useLightRenderer: true,
-                                  style: TextStyle(
-                                    color: isSelected
-                                        ? context.palette.textStrong
-                                        : context.palette.onHigh,
-                                    fontSize: 15,
-                                  ),
-                                ),
+                              _FlagButton(
+                                flagged: _flagged.contains(_currentIndex),
+                                onPressed: _toggleFlag,
                               ),
                             ],
                           ),
-                        ),
+                          FullLatexView(
+                            latex: q.text,
+                            textStyle: AppTheme.questionStem.copyWith(
+                              color: context.palette.textStrong,
+                            ),
+                          ),
+                          QuestionImage(assetId: q.imageId),
+                        ],
                       ),
                     ),
-                  );
-                }),
-              ],
-            ),
+                    const SizedBox(height: 14),
+                    ...List.generate(q.options.length, (i) {
+                      final isSelected = selectedOption == i;
+                      final letter = String.fromCharCode(65 + i);
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: Semantics(
+                          button: true,
+                          selected: isSelected,
+                          inMutuallyExclusiveGroup: true,
+                          label: 'Option $letter: ${speakText(q.options[i])}',
+                          // excludeSemantics drops the InkWell's own action, so
+                          // the tap is given here — without it a screen reader
+                          // could hear an option but never choose it.
+                          onTap: () => _selectOption(i),
+                          excludeSemantics: true,
+                          child: InkWell(
+                            onTap: () => _selectOption(i),
+                            borderRadius: BorderRadius.circular(10),
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 160),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 14,
+                                vertical: 13,
+                              ),
+                              decoration: BoxDecoration(
+                                color: isSelected
+                                    ? AppColors.primary.withAlpha(
+                                        (0.1 * 255).round(),
+                                      )
+                                    : context.palette.surface,
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: isSelected
+                                      ? AppColors.primary
+                                      : context.palette.border,
+                                  width: 1.5,
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  AnimatedContainer(
+                                    duration: const Duration(milliseconds: 160),
+                                    width: 28,
+                                    height: 28,
+                                    alignment: Alignment.center,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: isSelected
+                                          ? AppColors.primary
+                                          : context.palette.track,
+                                    ),
+                                    child: Text(
+                                      letter,
+                                      style: TextStyle(
+                                        color: isSelected
+                                            ? Colors.white
+                                            : context.palette.onMedium,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 13,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 12),
+                                  Expanded(
+                                    child: MathText(
+                                      text: q.options[i],
+                                      useLightRenderer: true,
+                                      style: TextStyle(
+                                        color: isSelected
+                                            ? context.palette.textStrong
+                                            : context.palette.onHigh,
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    }),
+                  ],
+                ),
               ),
             ),
           ),

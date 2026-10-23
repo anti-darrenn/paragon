@@ -408,8 +408,7 @@ class _Questions extends StatelessWidget {
             const SizedBox(height: 4),
             InlineAlert(
               tone: Tone.warning,
-              message:
-                  '$unanswered unanswered. Blank answers count as wrong.',
+              message: '$unanswered unanswered. Blank answers count as wrong.',
             ),
           ],
           const SizedBox(height: 8),
