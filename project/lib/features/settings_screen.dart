@@ -518,17 +518,17 @@ class _Row extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerRight,
               child: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: Alignment.centerRight,
-              child: Text(
-                value,
-                maxLines: 1,
-                style: AppTheme.bodyMd.copyWith(
-                  color: context.palette.textPrimary,
-                  fontWeight: FontWeight.w600,
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerRight,
+                child: Text(
+                  value,
+                  maxLines: 1,
+                  style: AppTheme.bodyMd.copyWith(
+                    color: context.palette.textPrimary,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
-            ),
             ),
           ),
         ],
