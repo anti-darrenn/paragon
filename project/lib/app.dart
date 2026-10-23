@@ -12,6 +12,7 @@ import 'core/theme/app_palette.dart';
 import 'core/data/error_reporter.dart';
 import 'core/data/read_meter_overlay.dart';
 import 'core/widgets/quota_banner.dart';
+import 'core/widgets/ui/illustration.dart';
 import 'core/web/page_title.dart';
 
 class ParagonApp extends ConsumerWidget {
@@ -33,6 +34,8 @@ class ParagonApp extends ConsumerWidget {
     // The browser tab's title follows the page (page_title.dart).
     final titles = ref.watch(pageTitleBindingProvider);
     final readingSettingsLoading = ref.watch(readingPrefsProvider).isLoading;
+    // Low-data mode leaves out decorative drawings (illustration.dart).
+    Illustration.hidden.value = ref.watch(lowDataModeProvider);
 
     return MaterialApp.router(
       // Not a fixed 'Paragon': a rebuild here must keep the page's title.

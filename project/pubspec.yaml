@@ -95,6 +95,7 @@ flutter:
     - assets/icons/google_g.png
     - assets/icons/mail_icon.svg
     - assets/icons/dot.svg
+    - assets/illustrations/
     - assets/data/periodic_table.json
     # Space Grotesk, bundled so google_fonts never fetches it from
     # fonts.gstatic.com at startup (audit F2). Named as google_fonts expects;
