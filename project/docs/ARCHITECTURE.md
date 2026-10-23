@@ -381,6 +381,32 @@ Rules:
 
 ---
 
+### 4.6 The UI layer (UI pass, 2026-10-23)
+
+Every screen is built from one kit, so a change of look is made once:
+
+- **Tokens** (`core/theme/tokens.dart`): `Space`, `Radii` (8 tags, 12 buttons and
+  fields and options, 16 cards and dialogs), `Motion` (zero under reduced motion, which
+  on the web follows `prefers-reduced-motion`).
+- **Colour.** `AppColors` defines every colour. `AppPalette` holds the per-theme ones,
+  including text tones (`primaryFg`, `successFg`, `dangerFg`, `warningFg`, `infoFg`),
+  which deepen on light so coloured words pass WCAG AA. Text on an orange fill is
+  `AppColors.onPrimary` (near-black, 6.2:1); white on the orange was 2.7:1. White text
+  sits only on `successStrong`, `dangerStrong` and the room tile colours.
+- **The kit** (`core/widgets/ui/`, one import): `AppButton`, `InlineAlert`/`PageBanner`,
+  `showToast`, `EmptyState`, `LoadingView`, skeletons, `AppProgressBar`,
+  `SegmentedProgress`, `Tag`, `Breadcrumbs`, `confirmDialog`, `Illustration`.
+- **Illustrations** (`assets/illustrations/`, written by `tools/illustrations/make.py`):
+  flat SVGs in marker colours swapped for the palette at run time; a motif per subject.
+- **Question sessions** (`core/widgets/session/`): `SessionLayout`, `QuestionCard`,
+  `FeedbackPanel`, `SessionKeys`, `SessionActionBar` (instant feedback: Check, then
+  Continue), `SessionNavBar` (marked at the end) and `SessionSummary` (score ring,
+  confetti only for a result worth it).
+- **Sound** (`core/sound/`): synthesised by Web Audio, on by default, a device-only
+  switch in Reading and display, silent off the web and never in the WAEC exam.
+- **Studio errors** (`features/admin/studio/studio_error.dart`): raw text for staff,
+  folded under Details.
+
 ## 5. Routing, the redirect pipeline and every route
 
 `lib/core/router/app_router.dart` is the only router.

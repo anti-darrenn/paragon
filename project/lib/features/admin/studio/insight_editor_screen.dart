@@ -2,12 +2,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/widgets/answer_option.dart';
 import '../../../core/data/read_meter.dart';
 import '../../../core/insights/examiner_insight.dart';
 import '../../../core/models/firestore_parsing.dart';
 import '../../../core/models/question.dart';
 import '../../../core/providers/auth_provider.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
@@ -176,105 +176,209 @@ class _InsightEditorScreenState extends ConsumerState<InsightEditorScreen> {
     final palette = context.palette;
     final role = ref.watch(staffAccessProvider).roleIn(_subjectId);
     final run = _sharedRun;
+    final question = _question;
+    final tooClose = run >= kMaxSharedRun;
     return Scaffold(
+      backgroundColor: palette.background,
       appBar: ParagonAppBar(
         title: Text(
           _isTopic ? 'Where students lose marks' : 'What examiners saw',
         ),
       ),
+      // Save and Publish stay in reach, under the form, instead of at the
+      // end of it.
+      bottomNavigationBar: _loading
+          ? null
+          : DecoratedBox(
+              decoration: BoxDecoration(
+                color: palette.surface,
+                border: Border(top: BorderSide(color: palette.border)),
+              ),
+              child: SafeArea(
+                top: false,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: _error == null
+                            ? Text(
+                                tooClose && _source.text.trim().isNotEmpty
+                                    ? 'Too close to the report to publish.'
+                                    : '',
+                                style: AppTheme.label.copyWith(
+                                  color: palette.dangerFg,
+                                ),
+                              )
+                            : Text(
+                                _error!,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTheme.label.copyWith(
+                                  color: palette.dangerFg,
+                                ),
+                              ),
+                      ),
+                      AppButton(
+                        label: 'Save draft',
+                        tone: ButtonTone.secondary,
+                        onPressed: _saving || !role.canWrite
+                            ? null
+                            : () => _save('draft'),
+                      ),
+                      if (role.canReview) ...[
+                        const SizedBox(width: 8),
+                        AppButton(
+                          label: 'Publish',
+                          loading: _saving,
+                          onPressed: () => _save('published'),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ),
+            ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
+          ? const LoadingView(label: 'Loading the insight')
           : PageBody(
               children: [
+                // What it is about: the topic, or the question with its
+                // right answer marked.
                 if (_isTopic)
                   PageIntro(title: _topicName.isEmpty ? _topicId : _topicName)
-                else if (_question != null) ...[
-                  FullLatexView(latex: _question!.text),
-                  const SizedBox(height: 8),
-                  for (var i = 0; i < _question!.options.length; i++)
-                    Text(
-                      '${String.fromCharCode(65 + i)}. ${_question!.options[i]}'
-                      '${i == _question!.correctIndex ? '  ✓' : ''}',
-                      style: AppTheme.bodyMd,
-                    ),
-                  const SizedBox(height: 16),
-                ] else
-                  const Text('No question has that id.'),
-                Text(
-                  'Status: $_status',
-                  style: AppTheme.caption.copyWith(
-                    color: palette.textSecondary,
-                  ),
-                ),
-                const SizedBox(height: 12),
-                TextField(
-                  controller: _summary,
-                  minLines: 3,
-                  maxLines: 8,
-                  maxLength: 1000,
-                  decoration: const InputDecoration(
-                    labelText: 'What candidates did, in your own words',
-                  ),
-                ),
-                if (!_isTopic)
-                  DropdownButtonFormField<int?>(
-                    initialValue: _wrong,
-                    decoration: const InputDecoration(
-                      labelText: 'The wrong option most candidates chose',
-                    ),
-                    items: [
-                      const DropdownMenuItem(
-                        value: null,
-                        child: Text('Not stated'),
-                      ),
-                      for (var i = 0; i < (_question?.options.length ?? 4); i++)
-                        DropdownMenuItem(
-                          value: i,
-                          child: Text(String.fromCharCode(65 + i)),
+                else if (question != null)
+                  SurfaceCard(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        FullLatexView(
+                          latex: question.text,
+                          textStyle: AppTheme.bodyLg.copyWith(
+                            color: palette.textStrong,
+                          ),
                         ),
-                    ],
-                    onChanged: (v) => setState(() => _wrong = v),
+                        const SizedBox(height: 10),
+                        for (var i = 0; i < question.options.length; i++)
+                          AnswerOption(
+                            index: i,
+                            text: question.options[i],
+                            state: i == question.correctIndex
+                                ? AnswerOptionState.correct
+                                : AnswerOptionState.idle,
+                          ),
+                      ],
+                    ),
+                  )
+                else
+                  const EmptyState(
+                    icon: Icons.search_off_rounded,
+                    title: 'No question has that id',
+                    message: 'It may have been deleted or retired.',
                   ),
-                TextField(
-                  controller: _tip,
-                  maxLength: 300,
-                  decoration: const InputDecoration(
-                    labelText: 'Tip (optional)',
-                  ),
-                ),
+                const SizedBox(height: 16),
                 Row(
                   children: [
-                    Expanded(
-                      child: TextField(
-                        controller: _year,
-                        keyboardType: TextInputType.number,
-                        decoration: const InputDecoration(
-                          labelText: 'Report year',
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      flex: 3,
-                      child: TextField(
-                        controller: _ref,
-                        maxLength: 160,
-                        decoration: const InputDecoration(
-                          labelText:
-                              'Reference, e.g. WASSCE May/June 2018, Q12',
-                        ),
-                      ),
+                    Tag(
+                      _status == 'published' ? 'Published' : 'Draft',
+                      tone: _status == 'published'
+                          ? Tone.success
+                          : Tone.neutral,
                     ),
                   ],
                 ),
-                if (_isTopic)
-                  TextField(
-                    controller: _years,
-                    decoration: const InputDecoration(
-                      labelText:
-                          'Years it was reported (e.g. 2016, 2018, 2021)',
-                    ),
+                const SizedBox(height: 16),
+                const SectionHeader('The insight'),
+                SurfaceCard(
+                  child: Column(
+                    children: [
+                      TextField(
+                        controller: _summary,
+                        minLines: 3,
+                        maxLines: 8,
+                        maxLength: 1000,
+                        decoration: const InputDecoration(
+                          labelText: 'What candidates did, in your own words',
+                        ),
+                      ),
+                      if (!_isTopic) ...[
+                        const SizedBox(height: 8),
+                        DropdownButtonFormField<int?>(
+                          initialValue: _wrong,
+                          decoration: const InputDecoration(
+                            labelText: 'The wrong option most candidates chose',
+                          ),
+                          items: [
+                            const DropdownMenuItem(
+                              value: null,
+                              child: Text('Not stated'),
+                            ),
+                            for (
+                              var i = 0;
+                              i < (_question?.options.length ?? 4);
+                              i++
+                            )
+                              DropdownMenuItem(
+                                value: i,
+                                child: Text(String.fromCharCode(65 + i)),
+                              ),
+                          ],
+                          onChanged: (v) => setState(() => _wrong = v),
+                        ),
+                        const SizedBox(height: 16),
+                      ],
+                      TextField(
+                        controller: _tip,
+                        maxLength: 300,
+                        decoration: const InputDecoration(
+                          labelText: 'Tip (optional)',
+                        ),
+                      ),
+                    ],
                   ),
+                ),
+                const SizedBox(height: kSectionGap),
+                const SectionHeader('Where it comes from'),
+                SurfaceCard(
+                  child: Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: TextField(
+                              controller: _year,
+                              keyboardType: TextInputType.number,
+                              decoration: const InputDecoration(
+                                labelText: 'Report year',
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            flex: 3,
+                            child: TextField(
+                              controller: _ref,
+                              maxLength: 160,
+                              decoration: const InputDecoration(
+                                labelText:
+                                    'Reference, e.g. WASSCE May/June 2018, Q12',
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      if (_isTopic)
+                        TextField(
+                          controller: _years,
+                          decoration: const InputDecoration(
+                            labelText:
+                                'Years it was reported (e.g. 2016, 2018, 2021)',
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
                 const SizedBox(height: kSectionGap),
                 const SectionHeader(
                   'Originality check',
@@ -289,45 +393,15 @@ class _InsightEditorScreenState extends ConsumerState<InsightEditorScreen> {
                     hintText: 'Report text, for checking only',
                   ),
                 ),
-                const SizedBox(height: 6),
+                const SizedBox(height: 8),
                 if (_source.text.trim().isNotEmpty)
-                  Text(
-                    run >= kMaxSharedRun
+                  InlineAlert(
+                    tone: tooClose ? Tone.danger : Tone.success,
+                    message: tooClose
                         ? '$run words in a row match the report: too close to publish.'
                         : 'Longest shared run: $run words. Fine.',
-                    style: AppTheme.bodyMd.copyWith(
-                      color: run >= kMaxSharedRun
-                          ? AppColors.wrong
-                          : AppColors.correct,
-                    ),
                   ),
-                if (_error != null) ...[
-                  const SizedBox(height: 12),
-                  Text(
-                    _error!,
-                    style: AppTheme.bodyMd.copyWith(
-                      color: context.palette.dangerFg,
-                    ),
-                  ),
-                ],
-                const SizedBox(height: 16),
-                Wrap(
-                  spacing: 12,
-                  runSpacing: 8,
-                  children: [
-                    OutlinedButton(
-                      onPressed: _saving || !role.canWrite
-                          ? null
-                          : () => _save('draft'),
-                      child: const Text('Save draft'),
-                    ),
-                    if (role.canReview)
-                      ElevatedButton(
-                        onPressed: _saving ? null : () => _save('published'),
-                        child: const Text('Publish'),
-                      ),
-                  ],
-                ),
+                const SizedBox(height: 24),
               ],
             ),
     );

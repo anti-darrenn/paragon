@@ -15,6 +15,7 @@ import 'image_upload.dart' deferred as image_upload;
 import '../../../core/questions/servable.dart' show kBulkVetTag;
 import 'question_widgets.dart' show subjectTopicsProvider;
 import 'staff_profile.dart';
+import 'studio_error.dart';
 
 /// The founder's parts of the question workbench (2026-10-17): whether a
 /// question is vetted, and where it sits and comes from. Reviewers never
@@ -217,9 +218,7 @@ class _PlacementCardState extends ConsumerState<PlacementCard> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text("Couldn't upload: $e")));
+        showStudioFailure(context, "Couldn't upload.", e);
       }
     } finally {
       if (mounted) setState(() => _uploading = false);

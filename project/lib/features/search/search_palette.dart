@@ -331,7 +331,7 @@ class _Suggestions extends StatelessWidget {
         row(Icons.auto_stories_outlined, 'All courses', '/courses'),
         row(Icons.assignment_outlined, 'WAEC past papers', '/waec'),
         row(Icons.replay_rounded, 'Mistakes notebook', '/mistakes'),
-        row(Icons.style_outlined, 'Review', '/review'),
+        row(Icons.school_outlined, 'Study', '/review'),
       ],
     );
   }
