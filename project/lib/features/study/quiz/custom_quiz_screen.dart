@@ -12,7 +12,6 @@ import '../../../core/repositories/difficulty_vote_repository.dart';
 import '../../../core/repositories/learn_progress_repository.dart';
 import '../../../core/repositories/learning_repository.dart';
 import '../../../core/repositories/progress_repository.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
@@ -335,7 +334,7 @@ class _CustomQuizScreenState extends ConsumerState<CustomQuizScreen> {
             padding: const EdgeInsets.only(top: 8),
             child: Text(
               'Choose at least one topic.',
-              style: AppTheme.caption.copyWith(color: AppColors.warning),
+              style: AppTheme.caption.copyWith(color: context.palette.warningFg),
             ),
           ),
       ],

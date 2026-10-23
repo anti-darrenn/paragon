@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../core/legal/legal_documents.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/theme/app_palette.dart';
 
@@ -74,7 +73,7 @@ Future<void> showAccountHelp(BuildContext context, {String? uid}) {
           },
           child: Text(
             'Write an email',
-            style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+            style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
           ),
         ),
       ],

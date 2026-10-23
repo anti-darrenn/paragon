@@ -331,7 +331,7 @@ class _QuestionBrowserState extends ConsumerState<QuestionBrowser> {
     if (_error != null) {
       return Text(
         "Couldn't load these questions.\n$_error",
-        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
       );
     }
     if (_loading && _rows.isEmpty) return const StudioListSkeleton();

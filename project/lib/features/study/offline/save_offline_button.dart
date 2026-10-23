@@ -219,7 +219,7 @@ class _SaveTopicOfflineButtonState
                 ? "Couldn't save. Check your connection and try again."
                 : 'Read these lessons without a connection. Videos still '
                       'need internet.',
-            style: _failed ? caption.copyWith(color: AppColors.wrong) : caption,
+            style: _failed ? caption.copyWith(color: context.palette.dangerFg) : caption,
           ),
         ],
       );

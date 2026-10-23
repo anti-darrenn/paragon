@@ -200,7 +200,7 @@ class _UsernameInputState extends State<UsernameInput> {
             const SizedBox(height: 8),
             Text(
               '@${_c.raw} is available.',
-              style: AppTheme.caption.copyWith(color: AppColors.correct),
+              style: AppTheme.caption.copyWith(color: context.palette.successFg),
             ),
           ],
         ],

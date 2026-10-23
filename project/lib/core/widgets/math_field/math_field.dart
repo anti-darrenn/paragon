@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../latex/tex_preprocess.dart';
-import '../../theme/app_colors.dart';
 import '../../theme/app_palette.dart';
 import '../../theme/app_theme.dart';
 import '../full_latex_view.dart';
@@ -296,7 +295,7 @@ class _MathFieldState extends State<MathField> {
             child: Text(
               'This has LaTeX that Normal mode cannot show. Switch to LaTeX '
               'to edit it.',
-              style: AppTheme.caption.copyWith(color: AppColors.warning),
+              style: AppTheme.caption.copyWith(color: context.palette.warningFg),
             ),
           ),
         if (widget.showPreview && hasMaths && stored.trim().isNotEmpty)

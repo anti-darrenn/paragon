@@ -188,7 +188,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                       const SizedBox(height: 14),
                       Text(
                         _error!,
-                        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                       ),
                     ],
                     const SizedBox(height: 24),
@@ -314,7 +314,7 @@ class _PhotoChoice extends ConsumerWidget {
         'Your photo was removed by the Paragon team after a report, so a new '
         'one cannot be added. Choose a picture or your initials.',
         textAlign: TextAlign.center,
-        style: AppTheme.caption.copyWith(color: AppColors.warning),
+        style: AppTheme.caption.copyWith(color: context.palette.warningFg),
       );
     }
     return Column(

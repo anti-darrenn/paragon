@@ -199,7 +199,7 @@ class _Body extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               error!,
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
             ),
           ),
         Padding(

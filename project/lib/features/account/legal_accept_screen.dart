@@ -72,7 +72,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
             onPressed: () => Navigator.of(context).pop(true),
             child: Text(
               'Delete everything',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+              style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
             ),
           ),
         ],
@@ -149,7 +149,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                     const SizedBox(height: 12),
                     Text(
                       _message!,
-                      style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                      style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                     ),
                   ],
                   const SizedBox(height: 20),
@@ -197,7 +197,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                         child: Text(
                           'Delete my account',
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.wrong,
+                            color: context.palette.dangerFg,
                           ),
                         ),
                       ),

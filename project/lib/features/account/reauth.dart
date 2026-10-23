@@ -127,7 +127,7 @@ class _PasswordDialogState extends State<_PasswordDialog> {
             const SizedBox(height: 10),
             Text(
               _error!,
-              style: AppTheme.caption.copyWith(color: AppColors.wrong),
+              style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
             ),
           ],
         ],
@@ -146,7 +146,7 @@ class _PasswordDialogState extends State<_PasswordDialog> {
           onPressed: _busy ? null : _confirm,
           child: Text(
             'Continue',
-            style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+            style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
           ),
         ),
       ],

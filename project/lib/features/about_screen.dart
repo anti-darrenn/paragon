@@ -193,7 +193,7 @@ class _Link extends StatelessWidget {
       child: Text(
         label,
         style: AppTheme.bodyMd.copyWith(
-          color: AppColors.primary,
+          color: context.palette.primaryFg,
           decoration: TextDecoration.underline,
           decorationColor: AppColors.primary,
         ),

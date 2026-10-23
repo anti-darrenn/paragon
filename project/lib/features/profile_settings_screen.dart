@@ -107,7 +107,7 @@ class _ProfileSettingsScreenState extends ConsumerState<ProfileSettingsScreen> {
                           child: Text(
                             _error!,
                             style: AppTheme.bodyMd.copyWith(
-                              color: AppColors.wrong,
+                              color: context.palette.dangerFg,
                             ),
                           ),
                         ),

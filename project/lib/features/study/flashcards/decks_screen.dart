@@ -47,7 +47,7 @@ class DecksScreen extends ConsumerWidget {
             Text(
               'Your decks are kept on this device. Make an account to keep '
               'them everywhere.',
-              style: AppTheme.caption.copyWith(color: AppColors.warning),
+              style: AppTheme.caption.copyWith(color: context.palette.warningFg),
             ),
           ],
           const SizedBox(height: 20),
@@ -55,7 +55,7 @@ class DecksScreen extends ConsumerWidget {
             loading: () => const Center(child: CircularProgressIndicator()),
             error: (e, _) => Text(
               "Couldn't load your decks.\n$e",
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
             ),
             data: (list) {
               if (list.isEmpty) {

@@ -87,7 +87,7 @@ class _UsernameSettingsScreenState
             onPressed: () => Navigator.of(context).pop(true),
             child: Text(
               'Change it',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+              style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
             ),
           ),
         ],
@@ -193,7 +193,7 @@ class _UsernameSettingsScreenState
                         Text(
                           _input.message!,
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.wrong,
+                            color: context.palette.dangerFg,
                           ),
                         ),
                       ],

@@ -72,7 +72,7 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
       loading: () => const StudioListSkeleton(),
       error: (e, _) => Text(
         "Couldn't load the subjects.\n$e",
-        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
       ),
       data: (list) {
         final subjectId =
@@ -115,7 +115,7 @@ class _QuestionBankPanelState extends ConsumerState<QuestionBankPanel> {
                 loading: () => const StudioListSkeleton(),
                 error: (e, _) => Text(
                   "Couldn't load the topics.\n$e",
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                  style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                 ),
                 data: (ts) {
                   final pending = ts.fold<int>(0, (n, t) => n + t.pendingCount);
@@ -299,7 +299,7 @@ class _VettedListState extends ConsumerState<_VettedList> {
           if (_error != null)
             Text(
               "Couldn't load the vetted questions.\n$_error",
-              style: AppTheme.caption.copyWith(color: AppColors.wrong),
+              style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
             ),
           if (!_loading && _rows.isEmpty && _error == null)
             Text(

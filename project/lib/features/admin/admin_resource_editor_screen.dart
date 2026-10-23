@@ -383,7 +383,7 @@ class _AdminResourceEditorScreenState
           const SizedBox(height: 12),
           Text(
             _error!,
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
         ],
         const SizedBox(height: 20),
@@ -1383,7 +1383,7 @@ class _QuestionPickerState extends ConsumerState<_QuestionPicker> {
         width: 640,
         height: 520,
         child: _error != null
-            ? Text(_error!, style: const TextStyle(color: AppColors.wrong))
+            ? Text(_error!, style: TextStyle(color: context.palette.dangerFg))
             : ListView(
                 children: [
                   for (final q in _questions)

@@ -6,7 +6,6 @@ import '../../lessons/lesson_doc.dart';
 import '../../models/lesson_asset.dart';
 import '../../providers/reading_settings_provider.dart';
 import '../../repositories/learn_repository.dart';
-import '../../theme/app_colors.dart';
 import '../../theme/app_theme.dart';
 import '../full_latex_view.dart';
 import '../../theme/app_palette.dart';
@@ -156,7 +155,7 @@ class _TapToLoad extends StatelessWidget {
               ),
               Text(
                 'Tap to load image',
-                style: AppTheme.caption.copyWith(color: AppColors.primary),
+                style: AppTheme.caption.copyWith(color: context.palette.primaryFg),
               ),
             ],
           ),

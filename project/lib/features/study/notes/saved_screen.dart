@@ -211,7 +211,7 @@ class SavedQuestionView extends ConsumerWidget {
         if (!answered)
           Text(
             'This question has no verified answer yet.',
-            style: AppTheme.caption.copyWith(color: AppColors.warning),
+            style: AppTheme.caption.copyWith(color: context.palette.warningFg),
           ),
         if (q.explanation.trim().isNotEmpty) ...[
           const SizedBox(height: 8),

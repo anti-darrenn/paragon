@@ -99,7 +99,7 @@ class UsagePanel extends ConsumerWidget {
           loading: () => const LinearProgressIndicator(minHeight: 2),
           error: (e, _) => Text(
             "Couldn't load usage.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
           data: (u) {
             if (u == null || u.days.isEmpty) {
@@ -404,7 +404,7 @@ class ContentQualityPanel extends ConsumerWidget {
       loading: () => const StudioListSkeleton(),
       error: (e, _) => Text(
         "Couldn't load the content audit.\n$e",
-        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
       ),
       data: (a) {
         if (a == null) {
@@ -439,7 +439,7 @@ class ContentQualityPanel extends ConsumerWidget {
               Text(
                 'This audit was published before questions could be listed. '
                 'Publish it again to open the questions behind each count.',
-                style: AppTheme.caption.copyWith(color: AppColors.warning),
+                style: AppTheme.caption.copyWith(color: context.palette.warningFg),
               ),
             ],
             for (final (level, title, help) in groups)
@@ -547,7 +547,7 @@ class _RuleTileState extends ConsumerState<_RuleTile> {
         loading: () => const StudioListSkeleton(count: 2),
         error: (e, _) => Text(
           "Couldn't load these questions.\n$e",
-          style: AppTheme.caption.copyWith(color: AppColors.wrong),
+          style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
         ),
         data: (list) {
           final rule = widget.rule.rule;
@@ -566,7 +566,7 @@ class _RuleTileState extends ConsumerState<_RuleTile> {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
                     '$dismissed dismissed as nothing wrong',
-                    style: AppTheme.caption.copyWith(color: AppColors.correct),
+                    style: AppTheme.caption.copyWith(color: context.palette.successFg),
                   ),
                 ),
               for (final q in open)
@@ -658,7 +658,7 @@ class FeedbackPanel extends ConsumerWidget {
           loading: () => const LinearProgressIndicator(minHeight: 2),
           error: (e, _) => Text(
             "Couldn't load feedback.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
           data: (all) {
             final open = all.where((f) => f.isOpen).toList();
@@ -875,7 +875,7 @@ class TractionPanel extends ConsumerWidget {
           loading: () => const LinearProgressIndicator(minHeight: 2),
           error: (e, _) => Text(
             "Couldn't load metrics.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
           data: (days) => days.isEmpty
               ? Text(

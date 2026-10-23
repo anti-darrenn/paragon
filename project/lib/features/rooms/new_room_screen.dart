@@ -14,7 +14,6 @@ import '../../core/repositories/learning_repository.dart';
 import '../../core/rooms/room.dart';
 import '../../core/rooms/room_repository.dart';
 import '../../core/rooms/teacher_quiz.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/nav/back_navigation.dart';
@@ -317,7 +316,7 @@ class _NewRoomScreenState extends ConsumerState<NewRoomScreen> {
             const SizedBox(height: 12),
             Text(
               _error!,
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
             ),
           ],
           const SizedBox(height: kSectionGap),

@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/learn_resource.dart';
 import '../providers/auth_provider.dart';
 import '../repositories/flag_repository.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
 import '../theme/app_palette.dart';
 
@@ -109,7 +108,7 @@ class _ReportLessonButtonState extends ConsumerState<ReportLessonButton> {
         padding: const EdgeInsets.symmetric(horizontal: 8),
         child: Text(
           'Thanks, we\'ll check it',
-          style: AppTheme.caption.copyWith(color: AppColors.correct),
+          style: AppTheme.caption.copyWith(color: context.palette.successFg),
         ),
       );
     }

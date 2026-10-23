@@ -392,7 +392,7 @@ class _TodoNote extends StatelessWidget {
           Expanded(
             child: Text(
               'To do (students don\'t see this): $text',
-              style: base.copyWith(color: AppColors.warning, fontSize: 14),
+              style: base.copyWith(color: context.palette.warningFg, fontSize: 14),
             ),
           ),
         ],

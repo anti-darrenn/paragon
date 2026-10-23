@@ -323,8 +323,8 @@ class _Highlighted extends StatelessWidget {
           TextSpan(text: text.substring(0, at)),
           TextSpan(
             text: text.substring(at, at + q.length),
-            style: const TextStyle(
-              color: AppColors.primary,
+            style: TextStyle(
+              color: context.palette.primaryFg,
               fontWeight: FontWeight.w700,
             ),
           ),

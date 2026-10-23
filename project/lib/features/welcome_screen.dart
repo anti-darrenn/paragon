@@ -195,7 +195,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                                     _errorMessage!,
                                     textAlign: TextAlign.center,
                                     style: AppTheme.caption.copyWith(
-                                      color: AppColors.wrong,
+                                      color: context.palette.dangerFg,
                                     ),
                                   ),
                                 ),

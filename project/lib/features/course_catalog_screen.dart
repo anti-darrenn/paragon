@@ -212,7 +212,7 @@ class _CourseCardState extends State<_CourseCard> {
                       child: Text(
                         'Coming soon',
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.warning,
+                          color: context.palette.warningFg,
                         ),
                       ),
                     ),

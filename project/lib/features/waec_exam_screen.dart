@@ -393,10 +393,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               _forgetSaved();
               context.go('/waec/${widget.routeKey ?? widget.subjectId}/setup');
             },
-            child: const Text(
+            child: Text(
               'Exit Exam',
               style: TextStyle(
-                color: AppColors.wrong,
+                color: dialogContext.palette.dangerFg,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -977,8 +977,8 @@ class _ResultsView extends StatelessWidget {
                     onPressed: saving ? null : onRetry,
                     child: Text(
                       saving ? 'Retrying…' : 'Retry',
-                      style: const TextStyle(
-                        color: AppColors.wrong,
+                      style: TextStyle(
+                        color: context.palette.dangerFg,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

@@ -284,7 +284,7 @@ class _LessonList extends ConsumerWidget {
         else if (resourcesAsync.hasError)
           Text(
             "This topic's lessons couldn't be loaded. Try refreshing.",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           )
         else if (resources.isNotEmpty) ...[
           _lessonButton(context, resources, completed),
@@ -756,7 +756,7 @@ class _Breadcrumb extends StatelessWidget {
                 onTap: () => context.go(crumbs[i].path!),
                 child: Text(
                   crumbs[i].label,
-                  style: AppTheme.label.copyWith(color: AppColors.primary),
+                  style: AppTheme.label.copyWith(color: context.palette.primaryFg),
                 ),
               ),
             ),
@@ -802,7 +802,7 @@ class _NotFound extends StatelessWidget {
               ),
               child: Text(
                 'Back to courses',
-                style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+                style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
               ),
             ),
           ],

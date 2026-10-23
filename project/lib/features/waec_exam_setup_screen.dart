@@ -392,13 +392,13 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           ),
           error: (e, _) => Text(
             'Could not check availability.',
-            style: AppTheme.caption.copyWith(color: AppColors.wrong),
+            style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
           ),
           data: (available) {
             if (available == 0) {
               return Text(
                 'No questions found for this combination.',
-                style: AppTheme.caption.copyWith(color: AppColors.wrong),
+                style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
               );
             }
             final base = Text(
@@ -424,7 +424,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                   ),
                   child: Text(
                     'Only $available available — your exam will have $available questions.',
-                    style: AppTheme.caption.copyWith(color: AppColors.warning),
+                    style: AppTheme.caption.copyWith(color: context.palette.warningFg),
                   ),
                 ),
               ],
@@ -571,7 +571,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
             padding: const EdgeInsets.only(bottom: 8),
             child: Text(
               _startError!,
-              style: AppTheme.caption.copyWith(color: AppColors.wrong),
+              style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
             ),
           ),
         SizedBox(

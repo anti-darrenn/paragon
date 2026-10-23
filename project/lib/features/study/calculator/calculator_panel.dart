@@ -218,7 +218,7 @@ class _Display extends StatelessWidget {
                 Text(
                   'S',
                   key: const ValueKey('calc-shift-indicator'),
-                  style: indicator.copyWith(color: AppColors.primary),
+                  style: indicator.copyWith(color: context.palette.primaryFg),
                 ),
               if (state.shift) const SizedBox(width: 8),
               if (state.hasMemory)

@@ -49,7 +49,7 @@ class HintPanel extends StatelessWidget {
                   Text(
                     'Hint ${i + 1}',
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.accentBlue,
+                      color: context.palette.infoFg,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -77,7 +77,7 @@ class HintPanel extends StatelessWidget {
                   shown == 0
                       ? 'Get a hint'
                       : 'Next hint (${shown + 1} of ${steps.length})',
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.accentBlue),
+                  style: AppTheme.bodyMd.copyWith(color: context.palette.infoFg),
                 ),
               ),
             ),

@@ -458,7 +458,7 @@ class _QuestionStage extends StatelessWidget {
               child: Text(
                 '$answered',
                 key: ValueKey(answered),
-                style: AppTheme.heading2.copyWith(color: AppColors.primary),
+                style: AppTheme.heading2.copyWith(color: context.palette.primaryFg),
               ),
             ),
             Text(
@@ -590,7 +590,7 @@ class _PodiumStage extends StatelessWidget {
             if (action != null) ...[const SizedBox(height: 16), action!],
           ],
         ),
-        const Positioned.fill(child: Confetti()),
+        Positioned.fill(child: Confetti(colours: kRoomConfettiColours)),
       ],
     );
   }

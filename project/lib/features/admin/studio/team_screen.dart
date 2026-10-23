@@ -175,7 +175,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 const SizedBox(height: 12),
                 Text(
                   _error!,
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                  style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                 ),
               ],
               const SizedBox(height: 16),
@@ -210,7 +210,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 loading: () => const LinearProgressIndicator(minHeight: 2),
                 error: (e, _) => Text(
                   "Couldn't load the team.\n$e",
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                  style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                 ),
                 data: (list) => list.isEmpty
                     ? Text(

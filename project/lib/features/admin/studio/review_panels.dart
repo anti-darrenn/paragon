@@ -73,7 +73,7 @@ class _HistoryList extends ConsumerWidget {
         padding: const EdgeInsets.all(20),
         child: Text(
           "Couldn't load history.\n$e",
-          style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
         ),
       ),
       data: (list) => ListView(

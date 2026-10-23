@@ -373,7 +373,9 @@ class _PlayerRoomScreenState extends ConsumerState<PlayerRoomScreen> {
                 ),
               ],
             ),
-            if (top) const Positioned.fill(child: Confetti(pieces: 60)),
+            if (top) Positioned.fill(
+                child: Confetti(pieces: 60, colours: kRoomConfettiColours),
+              ),
           ],
         );
     }

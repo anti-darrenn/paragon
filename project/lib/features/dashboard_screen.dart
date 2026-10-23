@@ -294,7 +294,7 @@ class _HomeHero extends ConsumerWidget {
                           '${_monthNames[now.month - 1]}'
                       .toUpperCase(),
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.primary,
+                    color: context.palette.primaryFg,
                     letterSpacing: 1.1,
                     fontWeight: FontWeight.w700,
                   ),
@@ -900,7 +900,7 @@ class _ContinueLearning extends ConsumerWidget {
                       Text(
                         next == null ? 'LESSON FINISHED' : 'CONTINUE LEARNING',
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.primary,
+                          color: context.palette.primaryFg,
                           letterSpacing: 0.9,
                           fontWeight: FontWeight.w700,
                         ),

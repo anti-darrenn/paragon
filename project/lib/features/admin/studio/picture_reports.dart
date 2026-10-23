@@ -113,7 +113,7 @@ class _PictureReportsPanelState extends ConsumerState<PictureReportsPanel> {
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (e, _) => Text(
             "Couldn't load reported photos.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
           data: (list) {
             if (list.isEmpty) {

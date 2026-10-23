@@ -14,6 +14,7 @@ import 'package:flutter/material.dart';
 import '../../theme/app_palette.dart';
 import '../nav/nav_destinations.dart';
 import '../../theme/app_theme.dart';
+import '../../theme/tokens.dart';
 
 /// Reading width for text-and-list pages.
 const double kPageMaxWidth = 720;
@@ -397,7 +398,19 @@ class _SkeletonBoxState extends State<SkeletonBox>
     vsync: this,
     duration: const Duration(milliseconds: 900),
     lowerBound: 0.45,
-  )..repeat(reverse: true);
+  );
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Still, at a middle grey, when the device asks for reduced motion.
+    if (reduceMotion(context)) {
+      _pulse.stop();
+      _pulse.value = 0.7;
+    } else if (!_pulse.isAnimating) {
+      _pulse.repeat(reverse: true);
+    }
+  }
 
   @override
   void dispose() {

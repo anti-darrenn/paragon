@@ -417,7 +417,7 @@ class _DayCard extends ConsumerWidget {
                   child: Text(
                     'Today',
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.primary,
+                      color: context.palette.primaryFg,
                       fontWeight: FontWeight.w700,
                     ),
                   ),

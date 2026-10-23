@@ -215,7 +215,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                       const SizedBox(height: 14),
                       Text(
                         _error!,
-                        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                       ),
                     ],
                     const SizedBox(height: 20),
@@ -325,7 +325,7 @@ Future<bool> confirmSignInToExistingAccount(
           onPressed: () => Navigator.of(context).pop(true),
           child: Text(
             'Sign in to it',
-            style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+            style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
           ),
         ),
       ],

@@ -64,7 +64,7 @@ class GuestNotice extends StatelessWidget {
             ),
             child: Text(
               'Keep it',
-              style: AppTheme.caption.copyWith(color: AppColors.primary),
+              style: AppTheme.caption.copyWith(color: context.palette.primaryFg),
             ),
           ),
         ],

@@ -261,7 +261,7 @@ class SettingsScreen extends ConsumerWidget {
                     Text(
                       'DANGER ZONE',
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.wrong,
+                        color: context.palette.dangerFg,
                         letterSpacing: 0.8,
                       ),
                     ),
@@ -335,7 +335,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
             onPressed: () => Navigator.of(context).pop(_DeleteChoice.now),
             child: Text(
               isGuest ? 'Delete everything' : 'Delete now',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+              style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
             ),
           ),
           if (!isGuest)
@@ -344,7 +344,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
                   Navigator.of(context).pop(_DeleteChoice.scheduled),
               child: Text(
                 'Delete in $days days',
-                style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+                style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
               ),
             ),
         ],
@@ -410,7 +410,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
             const SizedBox(height: 12),
             Text(
               _message!,
-              style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+              style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
             ),
           ],
           const SizedBox(height: 14),
@@ -435,7 +435,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
                     )
                   : Text(
                       'Delete my account',
-                      style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+                      style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
                     ),
             ),
           ),

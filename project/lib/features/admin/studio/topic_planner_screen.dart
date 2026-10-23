@@ -109,9 +109,9 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
           ),
           TextButton(
             onPressed: () => Navigator.of(dialog).pop(true),
-            child: const Text(
+            child: Text(
               'Delete',
-              style: TextStyle(color: AppColors.wrong),
+              style: TextStyle(color: dialog.palette.dangerFg),
             ),
           ),
         ],
@@ -204,7 +204,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                 padding: const EdgeInsets.all(20),
                 child: Text(
                   "Couldn't load this topic.\n$e",
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                  style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                 ),
               ),
               data: (loaded) {
@@ -360,7 +360,7 @@ class _StudentPreview extends StatelessWidget {
                 ),
                 child: Text(
                   'Preview including drafts. Students see only published items. Revisions are not shown; they replace their original when approved.',
-                  style: AppTheme.caption.copyWith(color: AppColors.warning),
+                  style: AppTheme.caption.copyWith(color: context.palette.warningFg),
                 ),
               ),
               for (final r in shown) ...[
@@ -420,9 +420,9 @@ class _ItemMenu extends ConsumerWidget {
       itemBuilder: (_) => [
         const PopupMenuItem(value: 'open', child: Text('Open')),
         if (canDelete)
-          const PopupMenuItem(
+          PopupMenuItem(
             value: 'delete',
-            child: Text('Delete', style: TextStyle(color: AppColors.wrong)),
+            child: Text('Delete', style: TextStyle(color: context.palette.dangerFg)),
           ),
       ],
     );

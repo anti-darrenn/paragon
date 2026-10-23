@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../core/content/subject_tools.dart';
 import '../../../core/lessons/subject_index.dart';
 import '../../../core/study/study_tool.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/article_view.dart';
 import '../glossary/glossary_tool.dart' show IndexPage;
@@ -73,7 +72,7 @@ class FormulaSheetScreen extends StatelessWidget {
               padding: const EdgeInsets.only(top: 16, bottom: 6),
               child: Text(
                 t.topicName.isEmpty ? t.topicId : t.topicName,
-                style: AppTheme.label.copyWith(color: AppColors.primary),
+                style: AppTheme.label.copyWith(color: context.palette.primaryFg),
               ),
             ),
           );

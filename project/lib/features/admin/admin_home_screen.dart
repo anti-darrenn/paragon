@@ -328,7 +328,7 @@ class _Badge extends StatelessWidget {
     child: Text(
       count > 99 ? '99+' : '$count',
       style: AppTheme.caption.copyWith(
-        color: AppColors.warning,
+        color: context.palette.warningFg,
         fontWeight: FontWeight.w700,
       ),
     ),
@@ -731,7 +731,7 @@ class _StatusQueue extends ConsumerWidget {
           loading: () => const LinearProgressIndicator(minHeight: 2),
           error: (e, _) => Text(
             "Couldn't load this list.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
           data: (list) => list.isEmpty
               ? Text(
@@ -808,7 +808,7 @@ class _CourseMap extends ConsumerWidget {
     if (resources.hasError) {
       return Text(
         "Couldn't load this subject's lessons.\n${resources.error}",
-        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
       );
     }
 
@@ -1158,7 +1158,7 @@ class _FlagQueueState extends ConsumerState<_FlagQueue> {
           loading: () => const StudioListSkeleton(),
           error: (e, _) => Text(
             "Couldn't load reports.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
           data: (rows) {
             final shown = _showResolved
@@ -1280,7 +1280,7 @@ class _ReportedQuestionState extends ConsumerState<_ReportedQuestion> {
             child: Text(
               reasons,
               style: AppTheme.caption.copyWith(
-                color: AppColors.warning,
+                color: context.palette.warningFg,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -1337,7 +1337,7 @@ class _LessonReports extends ConsumerWidget {
           loading: () => const LinearProgressIndicator(minHeight: 2),
           error: (e, _) => Text(
             "Couldn't load lesson reports.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
           ),
           data: (list) => list.isEmpty
               ? Text(

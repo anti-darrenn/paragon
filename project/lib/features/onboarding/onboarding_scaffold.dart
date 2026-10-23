@@ -101,7 +101,7 @@ class OnboardingScaffold extends StatelessWidget {
                             child: Text(
                               errorText!,
                               style: AppTheme.bodyMd.copyWith(
-                                color: AppColors.wrong,
+                                color: context.palette.dangerFg,
                               ),
                             ),
                           ),

@@ -107,7 +107,7 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
                     const SizedBox(height: 16),
                     Text(
                       _message!,
-                      style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                      style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
                     ),
                   ],
                   const SizedBox(height: 28),
@@ -136,7 +136,7 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
                     ),
                     child: Text(
                       'Delete it now',
-                      style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+                      style: AppTheme.btnLabel.copyWith(color: context.palette.dangerFg),
                     ),
                   ),
                   const SizedBox(height: 8),

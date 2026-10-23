@@ -391,7 +391,7 @@ class _SittingState extends ConsumerState<_Sitting> {
                     : 'You unlocked practice for ${_unlocked.length} topics.',
                 textAlign: TextAlign.center,
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.correct,
+                  color: context.palette.successFg,
                   fontWeight: FontWeight.w700,
                 ),
               ),

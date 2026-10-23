@@ -424,7 +424,7 @@ class _OfflineChip extends ConsumerWidget {
               const SizedBox(width: 6),
               Text(
                 'Offline',
-                style: AppTheme.label.copyWith(color: AppColors.warning),
+                style: AppTheme.label.copyWith(color: context.palette.warningFg),
               ),
             ],
           ),

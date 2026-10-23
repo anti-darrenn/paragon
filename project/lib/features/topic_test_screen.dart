@@ -197,9 +197,9 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
           ),
           TextButton(
             onPressed: () => Navigator.of(dialogContext).pop(true),
-            child: const Text(
+            child: Text(
               'Leave',
-              style: TextStyle(color: AppColors.wrong),
+              style: TextStyle(color: dialogContext.palette.dangerFg),
             ),
           ),
         ],
@@ -456,7 +456,7 @@ class _Questions extends StatelessWidget {
             Text(
               '${questions.length - answeredCount} unanswered. '
               'Blank answers count as wrong.',
-              style: AppTheme.caption.copyWith(color: AppColors.wrong),
+              style: AppTheme.caption.copyWith(color: context.palette.dangerFg),
             ),
           ],
           const SizedBox(height: 16),
@@ -573,7 +573,7 @@ class _Result extends StatelessWidget {
                 'Your score above is right, but it could not be saved — so '
                 'this attempt has not unlocked anything yet. Check your '
                 'connection and take the test again.',
-                style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+                style: AppTheme.bodyMd.copyWith(color: context.palette.dangerFg),
               ),
             ),
           ],
@@ -771,7 +771,7 @@ class _EmptyBank extends StatelessWidget {
             ),
             child: Text(
               'Back',
-              style: AppTheme.btnLabel.copyWith(color: AppColors.primary),
+              style: AppTheme.btnLabel.copyWith(color: context.palette.primaryFg),
             ),
           ),
         ],

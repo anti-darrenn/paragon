@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/theory/theory_question.dart';
@@ -141,7 +140,7 @@ class _SelfMarkState extends State<_SelfMark> {
           Text(
             'You gave yourself ${selfMarked(q, _ticked)}/${q.totalMarks}.',
             textAlign: TextAlign.center,
-            style: AppTheme.heading3.copyWith(color: AppColors.primary),
+            style: AppTheme.heading3.copyWith(color: context.palette.primaryFg),
           ),
         const SizedBox(height: 12),
         TextButton(

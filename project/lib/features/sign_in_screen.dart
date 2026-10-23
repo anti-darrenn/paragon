@@ -335,7 +335,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           "leaves this session's progress behind — create an account "
           'instead to keep it.',
           textAlign: TextAlign.center,
-          style: AppTheme.caption.copyWith(color: AppColors.warning),
+          style: AppTheme.caption.copyWith(color: context.palette.warningFg),
         ),
       ],
       const SizedBox(height: 24),
@@ -429,7 +429,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
               const TextSpan(text: 'New here? '),
               TextSpan(
                 text: 'Create an account!',
-                style: const TextStyle(color: AppColors.primary),
+                style: TextStyle(color: context.palette.primaryFg),
                 recognizer: _createAccountRecognizer,
               ),
             ],
@@ -523,7 +523,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
               const TextSpan(text: 'Already have an account? '),
               TextSpan(
                 text: 'Sign in',
-                style: const TextStyle(color: AppColors.primary),
+                style: TextStyle(color: context.palette.primaryFg),
                 recognizer: _backToSignInRecognizer,
               ),
             ],

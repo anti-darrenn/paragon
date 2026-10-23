@@ -32,6 +32,23 @@ class AppColors {
     0xFF238636,
   ); // exam submit CTA — distinct from `correct` · Figma: success-overlay
 
+  /// Fills that carry white text: a verdict bar, a destructive button.
+  /// `correct` and `wrong` are too light for white on them (2.5:1, 3.4:1);
+  /// these pass WCAG AA (4.6:1, 5.4:1).
+  static const successStrong = submitGreen;
+  static const dangerStrong = Color(0xFFCF222E);
+
+  // ── Text tones for the light theme ────────────────────────────────
+  // The brand and semantic colours above are bright enough to read as text
+  // on the dark background (5.6:1 to 7.5:1) but not on white (2.4:1 to
+  // 3.4:1). The light theme's palette uses these deeper shades for text,
+  // each at least 4.5:1 on its background. Fills keep the bright colours.
+  static const primaryTextLight = Color(0xFFB35300);
+  static const successTextLight = Color(0xFF1A7F37);
+  static const dangerTextLight = Color(0xFFCF222E);
+  static const warningTextLight = Color(0xFF9A6700);
+  static const infoTextLight = Color(0xFF0969DA);
+
   // ── Dark mode surfaces (elevated / inactive) ──────────────────────
   static const trackDark = Color(
     0xFF21262D,

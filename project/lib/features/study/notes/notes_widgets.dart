@@ -140,7 +140,7 @@ class _AnnotatedBlockState extends ConsumerState<AnnotatedBlock> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop('delete'),
-            child: const Text('Delete', style: TextStyle(color: AppColors.wrong)),
+            child: Text('Delete', style: TextStyle(color: ctx.palette.dangerFg)),
           ),
           TextButton(
             onPressed: () => Navigator.of(ctx).pop('edit'),
@@ -298,9 +298,9 @@ class _BlockActionsSheet extends StatelessWidget {
               ListTile(
                 contentPadding: EdgeInsets.zero,
                 leading: const Icon(Icons.delete_outline, color: AppColors.wrong),
-                title: const Text(
+                title: Text(
                   'Remove highlight and note',
-                  style: TextStyle(color: AppColors.wrong),
+                  style: TextStyle(color: context.palette.dangerFg),
                 ),
                 onTap: () => Navigator.of(context).pop(const _RemoveAll()),
               ),
@@ -581,7 +581,7 @@ class LessonNotesSheet extends ConsumerWidget {
             Text(
               'From an earlier version of this lesson',
               key: const ValueKey('detached-heading'),
-              style: AppTheme.label.copyWith(color: AppColors.warning),
+              style: AppTheme.label.copyWith(color: context.palette.warningFg),
             ),
             const SizedBox(height: 4),
             Text(
